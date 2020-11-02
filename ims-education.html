@@ -287,92 +287,47 @@ nav.pure-menu-horizontal .pure-menu-heading {
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-= Action Cards =-=-=-=-=-=-=-=-=-=-=-=-=-= */
 .zs-action-card {
+	border: 2px solid #C0BFc0;
 	border-radius: 2px;
 	background-color: #fff;
 	margin: 0 4.1667% 1.5em 0;
 	text-align: center;
 	box-sizing: border-box;
-	padding: 1em;
+	padding: 3em;
 	transition: all .2s ease-in-out;
 	cursor: pointer;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    box-shadow: 1px 2px 4px grey;
 
 }
 
 .zs-action-card:last-child {
 	margin: 0 0 1.5em 0;
 }
-
-
-
+.zs-action-card:hover{
+	box-shadow: 0 5px 10px 0 rgba(216,216,216,0.80);
+	border-color: #2d74da;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
 
 .zs-action-card svg {
 	margin: 18px 0 30px 0;
 }
 
-.zs-action-card p {
-      min-height:160px;
-}
 .zs-action-card h2 {
 	transition: all .5s linear;
   color: #25467a;
 
 }
 
-.zs-action-card h3 {
-  color: #4F2196;
+.zs-action-card:hover h2 {
+	color: #2d74da;
 }
 
-.zs-action-card1 {
-	border: 1px solid #4F2196;
-	border-radius: 2px;
-	background-color: #FFF;
-	margin: 0 4.1667% 1.5em 0;
-	text-align: center;
-	box-sizing: border-box;
-	padding: 1em;
-	transition: all .2s ease-in-out;
-	cursor: pointer;
-    padding-bottom: 48px;
-}
-
-.zs-action-card1:last-child {
-	margin: 0 0 1.5em 0;
-}
-
-
-.zs-action-card1 svg {
-	margin: 18px 0 30px 0;
-}
-
-.zs-action-card1 ul {
-	 padding-bottom: 24px;
-    margin: 0;
-    text-align: left;
-
-}
-
-.zs-action-card1 h2 {
-	transition: all .5s linear;
-  color: #fff;
-
-}
-
-.zs-action-card1 h3 {
-	color: #4F2196;
-    padding-top: 36px;
-}
-
-.zs-action-card1 p {
-	color: #fff;
+.zs-action-card p {
+	color: #4c4d53;
 	line-height: 1.4em;
 	margin-bottom: 0;
-    padding-bottom: 24px;
-    padding-top: 16px;
 }
-
 .container3 {
     padding: 12px 24px;
 }
@@ -1235,33 +1190,214 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 </div>
 
 <!-- =========================== Playlists  =========================== -->
-<!-- <div class="zs-section wrapper">
+<div style="padding: 5% 10% 5% 10%">
 	<h2 style="color:black; letter-spacing: normal;">IMS videos</h2>
 	<p style="margin-bottom:50px;">Use these videos to facilitate your learning journey.</p>
 
-<div class="pure-g"> -->
+<div class="pure-g" style="margin-left:30px;">
 
-		<!-- card 1 -->
-		<!-- <div class="pure-u-1-3 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;">
-		<a href="https://www.ibm.com/support/knowledgecenter/SS4SVW_3.0.0/overview/why-zosconnect.html" target="_blank" rel="noopener noreferrer">
-			<div class="ibm-card__content pure-g" style="flex: 0 100%;padding: 0 0 0 0 !important;">
-				<div class="pure-u-1-2">
-					<img class="ims-card-icon" src="wp-content/AA_IMS_DB_01.svg" style="max-width:80px;">
+	<!-- card 1 -->
+	<div class="pure-u-7-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;min-height:330px; margin-right:15px !important;">
+		<div class="ibm-card__content pure-g" style="flex: 0 100%;height: 100%;padding: 0 0 0 0 !important;position:relative;">
+
+			<!-- Card header -->
+			<div>
+				<div class="pure-u-1-3">
+					<img class="ims-card-icon" src="wp-content/purpleLogo.svg" style="max-width:80px;margin-top:15px;margin-left:15px;">
 				</div>
-				<div class="pure-u-1-2">
-					<h3 style="text-align:center;">APIs</h3>
-					<p>
-						Not sure how the mainframe and APIs mix? Learn how to enable your IMS
-						applications to provide or consume data using APIs.
-					</p>
+				<div class="pure-u-2-3" style="letter-spacing:normal;min-height:100px;">
+					<h3 style="text-align:left;display:inline-block;margin-top:15px;">Intorduction to IMS Series</h3>
 				</div>
+					<hr / style="margin-bottom:17px;">
 			</div>
-			</a>
-		</div> -->
+			<!-- Description -->
+			<div class="ibm-padding-top-0 ibm-padding-bottom-0" style="position:absolute;bottom:0;letter-spacing:normal;">
+				<p>
+					Several short videos introducing the IMS product, with specific sections on the transaction manager and the database system.
+				</p>
+			<!-- Link -->
+				<a href="https://mediacenter.ibm.com/channel/Intro+to+IMS+Series/" class="ibm-btn-pri ibm-btn-systems-blue-6" target="_blank" rel="noopener noreferrer">Explore</a>
+			</div>
+		</div>
+	</div>
 
-		<!-- Card 2 -->
+	<!-- card 2 -->
+	<div class="pure-u-7-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;min-height:330px; margin-right:15px !important;">
+		<div class="ibm-card__content pure-g" style="flex: 0 100%;height: 100%;padding: 0 0 0 0 !important;position:relative;">
 
-<!-- </div></div> -->
+			<!-- Card header -->
+			<div>
+				<div class="pure-u-1-3">
+					<img class="ims-card-icon" src="wp-content/AA_IMS_DB_01.svg" style="max-width:80px;margin-top:15px;margin-left:15px;">
+				</div>
+				<div class="pure-u-2-3" style="letter-spacing:normal;min-height:100px;">
+					<h3 style="text-align:left;display:inline-block;margin-top:15px;">Database Application Programming</h3>
+				</div>
+					<hr / style="margin-bottom:17px;">
+			</div>
+			<!-- Description -->
+			<div class="ibm-padding-top-0 ibm-padding-bottom-0" style="position:absolute;bottom:0;letter-spacing:normal;">
+				<p>
+					Learn how to write application programs that use Data Language One (DL/I) to process Information Management System (IMS) databases.
+				</p>
+			<!-- Link -->
+				<a href="https://mediacenter.ibm.com/playlist/details/0_4fixix6b" class="ibm-btn-pri ibm-btn-systems-blue-6" target="_blank" rel="noopener noreferrer">Explore</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- card 3 -->
+	<div class="pure-u-7-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;min-height:330px; margin-right:15px !important;">
+		<div class="ibm-card__content pure-g" style="flex: 0 100%;height: 100%;padding: 0 0 0 0 !important;position:relative;">
+
+			<!-- Card header -->
+			<div>
+				<div class="pure-u-1-3">
+					<img class="ims-card-icon" src="wp-content/AA_IMS_DB_01.svg" style="max-width:80px;margin-top:15px;margin-left:15px;">
+				</div>
+				<div class="pure-u-2-3" style="letter-spacing:normal;min-height:100px;">
+					<h3 style="text-align:left;display:inline-block;margin-top:15px;">Physical Organization of Databases</h3>
+				</div>
+					<hr / style="margin-bottom:17px;">
+			</div>
+			<!-- Description -->
+			<div class="ibm-padding-top-0 ibm-padding-bottom-0" style="position:absolute;bottom:0;letter-spacing:normal;">
+				<p>
+					Learn how to design, implement, reorganize, and recover Information Management System (IMS) databases.
+				</p>
+			<!-- Link -->
+				<a href="https://mediacenter.ibm.com/playlist/details/0_qq6xjgsm" class="ibm-btn-pri ibm-btn-systems-blue-6" target="_blank" rel="noopener noreferrer">Explore</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- card 4 -->
+	<div class="pure-u-7-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;min-height:330px; margin-right:15px !important;">
+		<div class="ibm-card__content pure-g" style="flex: 0 100%;height: 100%;padding: 0 0 0 0 !important;position:relative;">
+
+			<!-- Card header -->
+			<div>
+				<div class="pure-u-1-3">
+					<img class="ims-card-icon" src="wp-content/AA_IMS_DB_01.svg" style="max-width:80px;margin-top:15px;margin-left:15px;">
+				</div>
+				<div class="pure-u-2-3" style="letter-spacing:normal;min-height:100px;">
+					<h3 style="text-align:left;display:inline-block;margin-top:15px;">High Availability Large Database</h3>
+				</div>
+					<hr / style="margin-bottom:17px;">
+			</div>
+			<!-- Description -->
+			<div class="ibm-padding-top-0 ibm-padding-bottom-0" style="position:absolute;bottom:0;letter-spacing:normal;">
+				<p>
+					An intermediate level course for database administrators that manage IMS DB.
+				</p>
+			<!-- Link -->
+				<a href="https://mediacenter.ibm.com/playlist/dedicated/122579632/0_q26cihuy/0_7esga2kl" class="ibm-btn-pri ibm-btn-systems-blue-6" target="_blank" rel="noopener noreferrer">Explore</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- card 5 -->
+	<div class="pure-u-7-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;min-height:330px; margin-right:15px !important;">
+		<div class="ibm-card__content pure-g" style="flex: 0 100%;height: 100%;padding: 0 0 0 0 !important;position:relative;">
+
+			<!-- Card header -->
+			<div>
+				<div class="pure-u-1-3">
+					<img class="ims-card-icon" src="wp-content/imsTM.png" style="max-width:80px;margin-top:15px;margin-left:15px;">
+				</div>
+				<div class="pure-u-2-3" style="letter-spacing:normal;min-height:100px;">
+					<h3 style="text-align:left;display:inline-block;margin-top:15px;">TM Application Programming</h3>
+				</div>
+					<hr / style="margin-bottom:17px;">
+			</div>
+			<!-- Description -->
+			<div class="ibm-padding-top-0 ibm-padding-bottom-0" style="position:absolute;bottom:0;letter-spacing:normal;">
+				<p>
+					Learn about the IMS message queue and the DL/I calls used for IMS TM.
+				</p>
+			<!-- Link -->
+				<a href="https://mediacenter.ibm.com/playlist/details/0_vmdh2lj6" class="ibm-btn-pri ibm-btn-systems-blue-6" target="_blank" rel="noopener noreferrer">Explore</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- card 6 -->
+	<div class="pure-u-7-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;min-height:330px; margin-right:15px !important;">
+		<div class="ibm-card__content pure-g" style="flex: 0 100%;height: 100%;padding: 0 0 0 0 !important;position:relative;">
+
+			<!-- Card header -->
+			<div style="width:100%;">
+				<div class="pure-u-1-3">
+					<img class="ims-card-icon" src="wp-content/stetho.svg" style="max-width:80px;margin-top:15px;margin-left:15px;">
+				</div>
+				<div class="pure-u-2-3" style="letter-spacing:normal;min-height:100px;">
+					<h3 style="text-align:left;display:inline-block;margin-top:15px;">IMS Diagnostics</h3>
+				</div>
+					<hr / style="margin-bottom:17px;">
+			</div>
+			<!-- Description -->
+			<div class="ibm-padding-top-0 ibm-padding-bottom-0" style="position:absolute;bottom:0;letter-spacing:normal;">
+				<p>
+					Learn how to navigate IMS address space and Task Control Block (TCB) structures, offering you a roadmap to maneuver through the diagnostic maze.
+				</p>
+			<!-- Link -->
+				<a href="https://mediacenter.ibm.com/playlist/details/0_iezr36x5" class="ibm-btn-pri ibm-btn-systems-blue-6" target="_blank" rel="noopener noreferrer">Explore</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- card 7 -->
+	<div class="pure-u-7-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;min-height:330px; margin-right:15px !important;">
+		<div class="ibm-card__content pure-g" style="flex: 0 100%;height: 100%;padding: 0 0 0 0 !important;position:relative;">
+
+			<!-- Card header -->
+			<div style="width:100%;">
+				<div class="pure-u-1-3">
+					<img class="ims-card-icon" src="wp-content/stetho.svg" style="max-width:80px;margin-top:15px;margin-left:15px;">
+				</div>
+				<div class="pure-u-2-3" style="letter-spacing:normal;min-height:100px;">
+					<h3 style="text-align:left;display:inline-block;margin-top:15px;">IMS health check</h3>
+				</div>
+					<hr / style="margin-bottom:17px;">
+			</div>
+			<!-- Description -->
+			<div class="ibm-padding-top-0 ibm-padding-bottom-0" style="position:absolute;bottom:0;letter-spacing:normal;">
+				<p>
+					Understand the importance of health checks while also learning about the IMS Performance Analyzer and Problem Investigator tools.
+				</p>
+			<!-- Link -->
+				<a href="https://mediacenter.ibm.com/media/0_briq0f9s" class="ibm-btn-pri ibm-btn-systems-blue-6" target="_blank" rel="noopener noreferrer">Explore</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- card 8 -->
+	<div class="pure-u-7-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;min-height:330px; margin-right:15px !important;">
+		<div class="ibm-card__content pure-g" style="flex: 0 100%;height: 100%;padding: 0 0 0 0 !important;position:relative;">
+
+			<!-- Card header -->
+			<div style="width:100%;">
+				<div class="pure-u-1-3">
+					<img class="ims-card-icon" src="wp-content/Explorer.svg" style="max-width:80px;margin-top:15px;margin-left:15px;">
+				</div>
+				<div class="pure-u-2-3" style="letter-spacing:normal;min-height:100px;">
+					<h3 style="text-align:left;display:inline-block;margin-top:15px;">IMS Explorer</h3>
+				</div>
+					<hr / style="margin-bottom:17px;">
+			</div>
+			<!-- Description -->
+			<div class="ibm-padding-top-0 ibm-padding-bottom-0" style="position:absolute;bottom:0;letter-spacing:normal;">
+				<p>
+					Learn about the Eclipse-based graphical tool that simplifies common IMS tasks that are related to IMS application development.
+				</p>
+			<!-- Link -->
+				<a href="https://mediacenter.ibm.com/playlist/details/0_3n5xj4z6" class="ibm-btn-pri ibm-btn-systems-blue-6" target="_blank" rel="noopener noreferrer">Explore</a>
+			</div>
+		</div>
+	</div>
+
+
+</div><hr / style="margin-top:30px;"></div>
 
 <!-- =========================== Badges & courses  =========================== -->
 <div class="zs-white-section">
