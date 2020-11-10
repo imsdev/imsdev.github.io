@@ -121,6 +121,10 @@ img.emoji {
 <link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
 <link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" id="ytremove" type="text/css" href="">
+<style>
 <style id='pagepost_css-inline-css' type='text/css'>
 
 
@@ -184,7 +188,6 @@ nav.pure-menu-horizontal .pure-menu-heading {
 }
 
 .zs-margin-section {
-
 	margin-bottom: 40px;
 }
 
@@ -562,8 +565,6 @@ nav.pure-menu-horizontal .pure-menu-heading {
 	float: left;
 }
 
-/*  .zs-link-list .zs-event a:hover {
-    background-color: rgba(0, 0, 0, 0.1); }*/
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Tutorial Page Footer =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 .zs-pg-nav {
 	margin: 60px 0;
@@ -963,7 +964,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 	 </script>
 </head>
 
-<body id="ibm-com" class="page-template page-template-page-brochureware page-template-page-brochureware-php page page-id-4058 page-parent ibm-com ibm-type group-blog">
+<body id="ibm-com" onload="addstyle()" class="page-template page-template-page-brochureware page-template-page-brochureware-php page page-id-4058 page-parent ibm-com ibm-type group-blog">
 	<style>
 .code_p_announcement .code_content__wrap {
     background: #4178be;
@@ -997,8 +998,8 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
     cursor: pointer;
     padding: 1rem 0;
 }
+
 </style>
-	<div style="display:none">page-brochureware.php</div>
 <!--div id="page" class="site"-->
 <div id="ibm-top" class="ibm-landing-page">
 	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
@@ -1010,20 +1011,41 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 <!-- MASTHEAD_SITENAV_BEGIN -->
 <div class="ibm-sitenav-menu-container">
   <div class="ibm-sitenav-menu-name">
-    <a href="index.html" rel="home">IMS Developer</a>
+    <a href="index.html" rel="home">IMS</a>
   </div>
     <style>#primary-menu > li:first-child{display:none !important;}</style>
     <div class="ibm-sitenav-menu-list" ><ul id="primary-menu" class="menu"><li id="menu-item-4904" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4058 current_page_item menu-item-4904"><a href="index.html">IMS Developer</a></li>
 <li id="menu-item-20240" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041" style="font-size: 150%;margin-top: 12px;margin-left: 25px;">|</li>
-<li id="menu-item-2040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Java" href="ims-java.html">Java</a></li>
-<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="DevOps" href="ims-devops.html">DevOps</a></li>
-<li id="menu-item-2020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Makerspace" href="ims-makerspace.html">Makerspace</a></li>
-<li id="menu-item-2010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Gold" href="ims-gold.html">Gold</a></li>
-<li id="menu-item-1090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Internship" href="ims-internship.html">Internship</a></li>
-<li id="menu-item-1091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Education" href="ims-education.html">Education</a></li>
-<li id="menu-item-20140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041" style="font-size: 150%;margin-top: 12px;margin-left: 25px;">|</li>
-<li id="menu-item-2041" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Blogs" href="https://developer.ibm.com/zsystems/category/ims/">Blogs</a></li>
-<li id="menu-item-4861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4861"><a href="https://mediacenter.ibm.com/channel/IMS+Education+Videos/">Videos</a></li>
+
+<li class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Transform <i class="fa fa-caret-down"></i></a>
+	<ul class="dropdown-menu fade-in">
+		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="APIs" href="https://www.ibm.com/support/knowledgecenter/SS4SVW_3.0.0/overview/why-zosconnect.html">APIs</a></li>
+		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="DevOps" href="ims-devops.html">DevOps</a></li>
+		<li id="menu-item-2040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Java" href="ims-java.html">Java</a></li>
+		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Open DB" href="https://www.ibm.com/support/knowledgecenter/en/SSEPH2_15.1.0/com.ibm.ims15.doc.sk/ims_openacc_java.htm">Open DB</a></li>
+	</ul>
+</li>
+
+<li class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <i class="fa fa-caret-down"></i></a>
+	<ul class="dropdown-menu fade-in">
+		<li id="menu-item-2020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Makerspace" href="ims-makerspace.html">Makerspace</a></li>
+		<li id="menu-item-2010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Gold" href="ims-gold.html">Gold</a></li>
+		<!-- <li id="menu-item-1090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Internship" href="ims-internship.html">Internship</a></li> -->
+		<li id="menu-item-2041" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Blogs" href="https://developer.ibm.com/zsystems/category/ims/">Blogs</a></li>
+	</ul>
+</li>
+
+<li class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn <i class="fa fa-caret-down"></i></a>
+	<ul class="dropdown-menu fade-in">
+		<li id="menu-item-1091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Education" href="ims-education.html">Skills Launchpad</a></li>
+		<li id="menu-item-4861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4861"><a href="https://mediacenter.ibm.com/channel/IMS+Education+Videos/">Videos</a></li>
+		<li id="menu-item-1090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="IMS GitHub" href="ims-repos.html">IMS GitHub</a></li>
+	</ul>
+</li>
+
 </ul></div></div>
 <!-- MASTHEAD_SITENAV_END -->
   	</header>
@@ -1063,6 +1085,60 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 </style>
 
 <style type="text/css">
+
+.fade-in {
+animation: fadeIn ease .4s;
+-webkit-animation: fadeIn ease .4s;
+-moz-animation: fadeIn ease .4s;
+-o-animation: fadeIn ease .4s;
+-ms-animation: fadeIn ease .4s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+	.ibm-sitenav-menu-list li {
+		margin-left: 10px;
+		margin-right: 10px;
+		font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+		font-size: 12pt;
+		font-weight: bold;
+	}
+	.ibm-sitenav-menu-list>ul>li>a {
+		margin-left: 0px !important;
+	}
+	ul.dropdown-menu {
+		display:inline-block;
+		margin-top: -5px;
+		/* width: 150px; */
+		height: auto;
+		max-width: 160px;
+		border-style: none !important;
+		border-radius: .3em;
+		transition: 0.5s;
+		background-color: rgba(1, 39, 73, 0.9) !important;
+	}
   .dark-button {
     color: black;
     background-color: #8c8c8c;
@@ -1145,6 +1221,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
     color: white;
   }
   .ibm-sitenav-menu-name a {
+		font-size: 15pt;
     color:white;
   }
   .ibm-sitenav-menu-name a:hover {
@@ -1189,7 +1266,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 
 <!-- Newsletter -->
 <div role="alert" class="alert alert-info" style="background-color:#4287f5;width:100%;letter-spacing:normal;margin-top:-5px;margin-bottom:-15px;">
-	<button type="button" data-dismiss="alert" class="close" style="color:black;font-size:180%;">x</button>
+	<!-- <button type="button" data-dismiss="alert" class="close" style="color:black;font-size:180%;">x</button> -->
 	<p><b>New!</b> The IMS newsletter, <b>eNews</b> is now available! Subscribe <a href="https://www.pages02.net/ibm-zsystemsservices/IBM_IMS_Email/" style="color:white"><u>here</u></a> to get the latest updates from the IMS team!</p>
 </div>
 <!-- Welcome banner -->
@@ -1256,7 +1333,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
             <div class="videoWrapper" style="margin:auto;position: relative; overflow: hidden;">
               <iframe style="display:block;margin-left:auto;margin-right:auto;" id="kaltura_player"
                 src="https://www.youtube.com/embed/2-lhvpdrcz4"
-                width="100%" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+                width="100%" height="380" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
             </div>
           </div>
         </div>
@@ -1335,7 +1412,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 
   <!-- zOS Connect EE -->
       <div class="pure-u-1 pure-u-md-22-24 pure-u-lg-4-24 zs-action-card ibm-left ims-m-card" style="padding:1em;float:right;">
-      <a href="https://developer.ibm.com/mainframe/products/zosconnect/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.ibm.com/support/knowledgecenter/SS4SVW_3.0.0/overview/why-zosconnect.html" target="_blank" rel="noopener noreferrer">
         <div class="ibm-card__content" style="flex: 0 100%;">
           <img class="ims-card-icon" src="wp-content/uploads/sites/75/2019/08/card-icons-09.png">
           <h3 style="text-align:center;">APIs</h3>
@@ -1702,7 +1779,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
       <div class="ibm-col-12-4 ibm-col-medium-12-12 ibm-padding-bottom-1" 2aria-label="Connect with us">
           <h3 class="ibm-bold" style="color:white">Resources</h3>
           <ul class="ibm-plain-list ibm-textcolumns-small-2 ibm-ind-link">
-            <li><a class="ibm-forward-link" href="https://www.ibm.com/mysupport/s/forumshome?language=en_US" target="_blank" rel="noopener noreferrer">dwAnswers</a></li>
+            <li><a class="ibm-forward-link" href="https://www.ibm.com/mysupport/s/forumshome" target="_blank" rel="noopener noreferrer">Support Forums</a></li>
             <li><a class="ibm-forward-link" href="http://imslistserv.bmc.com/scripts/wa-BMC.exe?SUBED1=IMS-L&amp;A=1" target="_blank" rel="noopener noreferrer">Listserv</a></li>
             <li><a class="ibm-forward-link" href="https://github.com/imsdev" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             <li><a class="ibm-forward-link" href="https://stackoverflow.com/search?q=IBM+IMS" target="_blank" rel="noopener noreferrer">StackOverflow</a></li>
@@ -1825,7 +1902,9 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
           });
 
         });
-      </script><script type='text/javascript' src='wp-content/themes/boomer-v18/js/navigation.js'></script>
+      </script>
+
+<script type='text/javascript' src='wp-content/themes/boomer-v18/js/navigation.js'></script>
 <script type='text/javascript' src='wp-content/themes/boomer-v18/js/skip-link-focus-fix.js'></script>
 <script type='text/javascript' src='https://developer.ibm.com/about/'></script>
 
@@ -1930,6 +2009,16 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 		})( jQuery );
 	</script>
 
+
+				<!-- attempting to remove YT bs -->
+				<script type='text/javascript'>
+				function addstyle()
+				{
+					setTimeout(function(){ document.getElementById('ytremove').href='wp-includes/css/ytremove.css' }, 3000);
+
+				}
+				</script>
+				<!-- End of YT removal -->
 
 </body>
 

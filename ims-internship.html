@@ -127,6 +127,8 @@ img.emoji {
 <link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
 <link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style id='pagepost_css-inline-css' type='text/css'>
 
 
@@ -1149,6 +1151,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 	color: white;
 }
 .ibm-sitenav-menu-name a {
+	font-size: 15pt;
 	color:white;
 }
 .ibm-sitenav-menu-name a:hover {
@@ -1169,6 +1172,60 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 .ibm-sitenav-menu-container #primary-menu li:hover > a, .ibm-sitenav-menu-container #primary-menu li.focus > a {
 	color:#00b9eb;
 }
+
+.fade-in {
+animation: fadeIn ease .4s;
+-webkit-animation: fadeIn ease .4s;
+-moz-animation: fadeIn ease .4s;
+-o-animation: fadeIn ease .4s;
+-ms-animation: fadeIn ease .4s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.ibm-sitenav-menu-list li {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+}
+.ibm-sitenav-menu-list>ul>li>a {
+	margin-left: 0px !important;
+}
+ul.dropdown-menu {
+	display:inline-block;
+	margin-top: -5px;
+	/* width: 150px; */
+	height: auto;
+	max-width: 160px;
+	border-style: none !important;
+	border-radius: .3em;
+	transition: 0.5s;
+	background-color: rgba(1, 39, 73, 0.9) !important;
+}
 </style>
 	<div style="display:none">page-brochureware.php</div>
 <!--div id="page" class="site"-->
@@ -1182,20 +1239,41 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 <!-- MASTHEAD_SITENAV_BEGIN -->
 <div class="ibm-sitenav-menu-container">
   <div class="ibm-sitenav-menu-name">
-    <a href="index.html" rel="home">IMS Developer</a>
+    <a href="index.html" rel="home">IMS</a>
   </div>
     <style>#primary-menu > li:first-child{display:none !important;}</style>
-		<div class="ibm-sitenav-menu-list"><ul id="primary-menu" class="menu"><li id="menu-item-4904" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4058 current_page_item menu-item-4904"><a href="index.html">IMS Developer</a></li>
+    <div class="ibm-sitenav-menu-list" ><ul id="primary-menu" class="menu"><li id="menu-item-4904" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4058 current_page_item menu-item-4904"><a href="index.html">IMS Developer</a></li>
 <li id="menu-item-20240" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041" style="font-size: 150%;margin-top: 12px;margin-left: 25px;">|</li>
-<li id="menu-item-2040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Java" href="ims-java.html">Java</a></li>
-<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="DevOps" href="ims-devops.html">DevOps</a></li>
-<li id="menu-item-2020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Makerspace" href="ims-makerspace.html">Makerspace</a></li>
-<li id="menu-item-2010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Gold" href="ims-gold.html">Gold</a></li>
-<li id="menu-item-1090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Internship" href="ims-internship.html">Internship</a></li>
-<li id="menu-item-1091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Education" href="ims-education.html">Education</a></li>
-<li id="menu-item-20140" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041" style="font-size: 150%;margin-top: 12px;margin-left: 25px;">|</li>
-<li id="menu-item-2041" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Blogs" href="https://developer.ibm.com/zsystems/category/ims/">Blogs</a></li>
-<li id="menu-item-4861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4861"><a href="https://mediacenter.ibm.com/channel/IMS+Education+Videos/">Videos</a></li>
+
+<li class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Transform <i class="fa fa-caret-down"></i></a>
+	<ul class="dropdown-menu fade-in">
+		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="APIs" href="https://www.ibm.com/support/knowledgecenter/SS4SVW_3.0.0/overview/why-zosconnect.html">APIs</a></li>
+		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="DevOps" href="ims-devops.html">DevOps</a></li>
+		<li id="menu-item-2040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Java" href="ims-java.html">Java</a></li>
+		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Open DB" href="https://www.ibm.com/support/knowledgecenter/en/SSEPH2_15.1.0/com.ibm.ims15.doc.sk/ims_openacc_java.htm">Open DB</a></li>
+	</ul>
+</li>
+
+<li class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community <i class="fa fa-caret-down"></i></a>
+	<ul class="dropdown-menu fade-in">
+		<li id="menu-item-2020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Makerspace" href="ims-makerspace.html">Makerspace</a></li>
+		<li id="menu-item-2010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Gold" href="ims-gold.html">Gold</a></li>
+		<!-- <li id="menu-item-1090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Internship" href="ims-internship.html">Internship</a></li> -->
+		<li id="menu-item-2041" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Blogs" href="https://developer.ibm.com/zsystems/category/ims/">Blogs</a></li>
+	</ul>
+</li>
+
+<li class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn <i class="fa fa-caret-down"></i></a>
+	<ul class="dropdown-menu fade-in">
+		<li id="menu-item-1091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Education" href="ims-education.html">Skills Launchpad</a></li>
+		<li id="menu-item-4861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4861"><a href="https://mediacenter.ibm.com/channel/IMS+Education+Videos/">Videos</a></li>
+		<li id="menu-item-1090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="IMS GitHub" href="ims-repos.html">IMS GitHub</a></li>
+	</ul>
+</li>
+
 </ul></div></div>
 <!-- MASTHEAD_SITENAV_END -->
   	</header>

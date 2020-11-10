@@ -1,0 +1,323 @@
+/*/ Font declarations /*/
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-light.woff") format("woff"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regular.woff") format("woff"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-medium.woff") format("woff"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibold.woff") format("woff"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-bold.woff") format("woff"), url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*/ Style Reset /*/
+html, body, div, main, nav, aside, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*/ Page Classes /*/
+.clickable {
+  cursor: pointer;
+}
+
+.panel {
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 10px;
+  height: 250px;
+}
+
+.panel:hover {
+  box-shadow: 0 5px 8px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  /* Safari */
+  transition: 0.5s;
+}
+
+.no-style {
+  text-decoration: none;
+}
+
+.no-style:hover {
+  text-decoration: none;
+}
+
+.alert-text {
+  text-align: center;
+}
+
+.alert-box {
+  margin: 0 auto;
+  display: block;
+  padding: 20px 0;
+  width: 80%;
+}
+
+@media (max-width: 540px) {
+  .alert-box {
+    width: 100%;
+  }
+}
+
+.query-class {
+  text-align: center;
+}
+
+.panel-heading {
+  background-image: none;
+  padding: 10px;
+}
+
+.panel-title {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.panel-title-name {
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.panel-image {
+  width: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.panel-body {
+  font-size: 16px;
+}
+
+html {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#body-text {
+  font-family: "ibm-plex-sans";
+}
+
+#ims-logo {
+  width: 60px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  #ims-logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+#ims-title {
+  display: inline-block;
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  #ims-title {
+    display: block;
+    text-align: center;
+  }
+}
+
+.center-header {
+  padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+  .center-header {
+    padding-top: 0px;
+  }
+}
+
+.welcome-header {
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .welcome-header {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.ims-button {
+  border: 1px solid #d0d0d0;
+  border-radius: 100px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  width: 175px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .ims-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.ims-button:hover {
+  background: #0869ff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  /* Safari */
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.find-out-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .find-out-button {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+}
+
+.find-out-image {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .find-out-image {
+    width: 260px;
+  }
+}
+
+#link-clear {
+  text-decoration: none;
+  color: #333;
+}
+
+.welcome-description {
+  margin-top: 30px;
+  font-size: 16px;
+  width: 85%;
+}
+
+@media (max-width: 767px) {
+  .welcome-description {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.section-space {
+  margin-top: 60px;
+}
+
+#section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+/* SVG Classes */
+#svg-container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media (max-width: 767px) {
+  #svg-container {
+    display: none;
+  }
+}
+
+#ims-picture {
+  width: 430px;
+  display: block;
+  margin: 0 auto;
+}
+
+.base-shadow {
+  display: block;
+}
+
+.ibm-footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .ibm-footer {
+    margin-top: 10px;
+  }
+}
+
+.test {
+  border: 1px solid #D2D2D2;
+  background-color: #EBEBEB;
+  text-align: center;
+  padding: 20px;
+}
+
+/* SVG Animation */
+.float-ims {
+  animation: 1.5s float alternate infinite;
+}
+
+@media (max-width: 991px) {
+  .float-ims {
+    animation: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(7px);
+  }
+}
