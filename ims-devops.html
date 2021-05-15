@@ -791,11 +791,12 @@ position:relative;
 }
 
 .banner {
-background-image: url(wp-content/uploads/sites/75/2018/10/devops_banner1.png);
+background-image: url(wp-content/uploads/sites/75/2018/05/Splash.png);
 background-repeat:no-repeat;
-background-attachment:scroll;
 background-position: center center;
+background-attachment:fixed;
 background-size:cover;
+margin-bottom:30px;
 }
 
 .center {
@@ -944,7 +945,6 @@ h2 {
  /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #061976;
 }
 
 /* Slides */
@@ -1004,7 +1004,7 @@ h2 {
 q {font-style: italic; color:white;}
 
 /* Add a blue color to the author */
-.author {color: #A37DDD;}
+.author {color: #1563ee;}
 
 .dot-container {
   text-align: center;
@@ -1273,6 +1273,24 @@ ul.dropdown-menu {
 	transition: 0.5s;
 	background-color: rgba(1, 39, 73, 0.9) !important;
 }
+
+.ibm-carousel__controls--light .slick-dots li button {
+    color:black;
+    border-color:black;
+  }
+.ibm-carousel__controls--light .slick-dots li.slick-active button {
+    background:#0869ff;
+  }
+.ibm-carousel__controls--light .ibm-carousel-controls, .ibm-carousel__controls--light .ibm-carousel-controls button, .ibm-carousel__controls--light .slick-dots button, .ibm-carousel__controls--light > button {
+    color:black;
+  }
+.ibm-carousel__controls--light .ibm-carousel-controls button:focus, .ibm-carousel__controls--light .ibm-carousel-controls button:hover, .ibm-carousel__controls--light .ibm-carousel-controls:focus, .ibm-carousel__controls--light .ibm-carousel-controls:hover, .ibm-carousel__controls--light .slick-dots button:focus, .ibm-carousel__controls--light .slick-dots button:hover, .ibm-carousel__controls--light > button:focus, .ibm-carousel__controls--light > button:hover {
+    color:black;
+  }
+.ibm-carousel__controls--light .ibm-carousel-controls button:hover, .ibm-carousel__controls--light .ibm-carousel-controls:hover, .ibm-carousel__controls--light .slick-dots button:hover, .ibm-carousel__controls--light > button:hover {
+    color:#0869ff;
+  }
+
 </style>
 	<div style="display:none">page-brochureware.php</div>
 <!--div id="page" class="site"-->
@@ -1298,17 +1316,16 @@ ul.dropdown-menu {
 		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="APIs" href="https://www.ibm.com/support/knowledgecenter/SS4SVW_3.0.0/overview/why-zosconnect.html">APIs</a></li>
 		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="DevOps" href="ims-devops.html">DevOps</a></li>
 		<li id="menu-item-2040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Java" href="ims-java.html">Java</a></li>
-		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Open DB" href="https://www.ibm.com/support/knowledgecenter/en/SSEPH2_15.1.0/com.ibm.ims15.doc.sk/ims_openacc_java.htm">Open DB</a></li>
+		<li id="menu-item-2030" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Open Access" href="https://www.ibm.com/support/knowledgecenter/en/SSEPH2_15.1.0/com.ibm.ims15.doc.sk/ims_openacc_java.htm">Open Access</a></li>
 	</ul>
 </li>
 
 <li class="dropdown">
 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Engage <i class="fa fa-caret-down"></i></a>
 	<ul class="dropdown-menu fade-in">
-		<li id="menu-item-2020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Makerspace" href="ims-makerspace.html">Makerspace</a></li>
 		<li id="menu-item-2010" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Gold" href="ims-gold.html">Gold</a></li>
+		<li id="menu-item-2020" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Makerspace" href="ims-makerspace.html">Makerspace</a></li>
 		<!-- <li id="menu-item-1090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Internship" href="ims-internship.html">Internship</a></li> -->
-		<!-- <li id="menu-item-2041" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2041"><a title="Blogs" href="https://developer.ibm.com/zsystems/category/ims/">Blogs</a></li> -->
 	</ul>
 </li>
 
@@ -1350,38 +1367,55 @@ ul.dropdown-menu {
     </section>
 </div>
 
-<!-- =========================== Slideshow of quotes =========================== -->
+<!-- =========================== Testimonials carosel ===========================-->
+<!-- NEEDS to be gutted and made compliable with Pure grids, otherwise overrides get sloppy -->
+<div id="ibm-leadspace-head" class="zs-purpsection"
+  style="background-image: linear-gradient(to top, #ededed, rgb(255, 255, 255)); background-position:center;background-repeat: no-repeat;">
+  <div id="ibm-leadspace-body" class="ibm-padding-bottom-2">
+    <div data-widget="carousel" data-autoplay="true" class="ibm-carousel__controls--light" data-infinite="true">
 
-<div class="slideshow-container">
+<!-- Slide 1 -->
+    <div class="ibm-columns content-area-restricted ibm-alternate-background">
+      <div class="pn-col-medium-1-1 ibm-nospacing" style="color:black;">
+        <center>
+          <div style="margin-top:50px;"></div>
+		  <div >
+			<h3><q style="color:black">The easier we can make it for developers, the better off and more viable the Z platform remains.</q></h3>
+			<p class="author">
+				<b>-Major North American Bank</b>
+			</p>
+		  </div> </center>
+      </div>
+    </div>
 
-  <div class="mySlides">
-    <h4><q>The easier we can make it for developers, the better off and more viable the Z platform remains.</q></h4>
-    <p class="author">-Major North American Bank</p>
+<!-- Slide 2 -->
+      <div class="ibm-columns content-area-restricted ibm-alternate-background">
+        <div class="pn-col-medium-1-1 ibm-nospacing" style="color:black;">
+          <center>
+			<div style="margin-top:50px;"></div>
+			<div >
+				<h3><q style="color:black">If there is a way that application and database changes can be modernized, it would be beneficial to our newer people.</q></h3>
+				<p class="author"><b>-Major Insurance Company</b></p>
+			  </div>
+          </center>
+        </div>
+      </div>
+
+<!-- Slide 1 -->
+      <div class="ibm-columns content-area-restricted ibm-alternate-background">
+        <div class="pn-col-medium-1-1 ibm-nospacing" style="color:black;">
+			<center>			<div style="margin-top:50px;"></div>
+				<div >
+					<h3><q style="color:black">We have many different platforms and systems… which need to be connected to the distributed environments.</q></h3>
+					<p class="author"><b>-International Bank Based in Europe</b></p>
+				  </div>
+			</center>
+        </div>
+      </div>
+
+    </div>
   </div>
-
-  <div class="mySlides">
-    <h4><q>If there is a way that application and database changes can be modernized, it would be beneficial to our newer people.</q></h4>
-    <p class="author">-Major Insurance Company</p>
-  </div>
-
-  <div class="mySlides">
-    <h4><q>We have many different platforms and systems… which need to be connected to the distributed environments.</q></h4>
-    <p class="author">-International Bank Based in Europe</p>
-  </div>
-
-  <!-- Next/prev buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-
-<!-- Dots/bullets/indicators -->
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-
 
 
 <!-- =========================== Value Icons =========================== -->
@@ -1468,20 +1502,20 @@ ul.dropdown-menu {
 <!--          <img src="http://developer.ibm.com/zsystems/wp-content/uploads/sites/75/2018/07/DevOps.png" class="center2"> -->
           <h4>DevOps and IMS: Getting Started</h4>
 <p>Start here to learn about the IBM solutions and tooling for DevOps, as well as several open source and third-party offerings.</p>
-         <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2018/02/20/devops-ims-getting-started/">
-          Read More</a>
+         <!-- <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2018/02/20/devops-ims-getting-started/">
+          Read More</a> -->
         </div>
 
         <div class="pure-u-1 pure-u-md-5-24 zs-action-card">
         <h4>DevOps and IMS: The Journey Continues</h4>
 <p>Check out this blogpost to learn how to use open source DevOps tools like Jenkins to drive a fully automated end-to-end deployment process.</p>
-          <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2018/09/13/devops-ims-journey-continues/">Read More</a>
+          <!-- <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2018/09/13/devops-ims-journey-continues/">Read More</a> -->
         </div>
 
         <div class="pure-u-1 pure-u-md-5-24 zs-action-card">
           <h4>New IMS DevOps Functions with Zowe</h4>
 <p>See the new Zowe enhancements that add DevOps capabilities to IMS application development and deployment.</p>
-          <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2019/08/16/new-zowe-enhancements-add-devops-value-to-ibm-ims/">Read More</a>
+          <!-- <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2019/08/16/new-zowe-enhancements-add-devops-value-to-ibm-ims/">Read More</a> -->
  </div>
 
     <div class="pure-u-1 pure-u-md-5-24">
@@ -1493,21 +1527,21 @@ ul.dropdown-menu {
         <div class="pure-u-1 pure-u-md-5-24 zs-action-card">
           <h4>Get IMS and the Cloud to Your z/OS Environment</h4>
 <p>Learn to use IBM z/OSMF to take advantage of cloud capabilities on your z/OS system with the optional IBM Cloud Provisioning and Management plug-in.</p>
-         <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2019/04/04/get-ims-and-the-cloud-to-your-z-os-environment/">
-          Read More</a>
+         <!-- <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2019/04/04/get-ims-and-the-cloud-to-your-z-os-environment/">
+          Read More</a> -->
         </div>
 
         <div class="pure-u-1 pure-u-md-5-24 zs-action-card">
 
           <h4>Tutorial: Provision an IMS System with z/OSPT</h4>
 <p>Learn how to use the IBM z/OS Provisioning Toolkit (z/OS PT) to provision a new IMS DB/TM instance in minutes.</p>
-          <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2019/05/15/how-to-provision-an-ims-db-tm-system-with-the-ibm-z-os-provisioning-toolkit/">Read More</a>
+          <!-- <a class="zs-button-secondary" href="https://developer.ibm.com/zsystems/2019/05/15/how-to-provision-an-ims-db-tm-system-with-the-ibm-z-os-provisioning-toolkit/">Read More</a> -->
  </div>
 
         <div class="pure-u-1 pure-u-md-5-24 zs-action-card">
           <h4>Video: You Don’t Need a PhD on IBM Z to Build IMS Apps</h4>
 <p>Watch this short video to see how to use VSCode, the Wazi and Zowe CLI, and the IMS Operations API to develop and deploy IMS applications.</p>
-          <a class="zs-button-secondary" href="https://www.youtube.com/watch?v=stiHn3VdDb0">Read More</a>
+          <!-- <a class="zs-button-secondary" href="https://www.youtube.com/watch?v=stiHn3VdDb0">Read More</a> -->
  </div>
     </div>
 
@@ -1545,12 +1579,13 @@ ul.dropdown-menu {
 				<div class="ibm-col-1-1">
 					<div class="ibm-footer-corporate-links">
 						<ul>
-              <li><a href="http://developer.ibm.com/feedback/">Contact</a></li>
+              <li><a href="https://www.ibm.com/contact/us">Contact</a></li>
               <li><a href="http://www.ibm.com/privacy/us/en/">Privacy</a></li>
-              <li><a href="http://developer.ibm.com/terms/ibm-developer-terms-of-use/">Terms of use</a></li>
+              <li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen">Terms of use</a></li>
               <li><a href="http://www.ibm.com/accessibility/us/en/">Accessibility</a></li>
-              <li class="ibm-feedbacklink"><a href="#">Feedback</a></li>
-							<li><a href="https://www.ibm.com/developerworks/secure/report/">Report Abuse</a></li>
+              <!-- <li class="ibm-feedbacklink"><a href="#">Feedback</a></li> -->
+              <!-- Switch to a feedback widget or survey later -->
+							<li><a href="https://github.com/imsdev/imsdev.github.io/issues">Report an issue</a></li>
               <li id="ibm-truste-cp"><a onclick="truste.eu.clickListener();return false;" href="#">Cookie Preferences</a></li>
           	</ul>
 					</div>
