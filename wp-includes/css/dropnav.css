@@ -147,6 +147,8 @@ a {
     z-index: 400;
     background-color: #42a7ec; 
     cursor: pointer;
+    top: 0;
+    right: 0;
   }
 
   .burg-bars {
