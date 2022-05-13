@@ -50,8 +50,10 @@
 <!-- MASTHEAD_SITENAV_BEGIN -->
 <body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
 	<div class="ibm-landing-page" style="width: 97%; margin-left: 3%; position: relative;background: #282828 !important;">
-	  <img src="wp-content/IMS_logo_small.png" style="width: 30px;display: inline-block;margin:10px 5px 12px 0;margin: 10px 5px 12px 8px; position: fixed; left: 0;" />
-		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+    <img src="wp-content/IMS_logo_small.png" 
+    style="display: inline-block;margin:10px 5px 12px 5px; position: fixed; left: 0;" 
+    id="left-bar-brand"/>		
+    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 	  <div id="ibm-content-wrapper" class="sticky-nav">
 		  <header role="banner" aria-labelledby="ibm-pagetitle-h1">
     
@@ -103,14 +105,14 @@
           <a title="APIs" href="ims-apis.html">
             <div class="navcard">
               <h5>APIs</h5>
-              <p>Use z/OS Connect EE to create APIs in minutes to access IBM Z applications and data.</p>
+              <p>Unlock the vlaue of your IMS applications by making easily consumable APIs in minutes.</p>
             </div>
           </a>
           <!-- 2 -->
           <a title="DevOps" href="ims-devops.html">
             <div class="navcard">
               <h5>Automation</h5>
-              <p>Learn how to automate your IBM Z IT infrastructure and applications by using Ansible.</p>
+              <p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
             </div>
           </a>
           <!-- 3 -->
@@ -239,10 +241,10 @@
       <div id="intro-header" class="pure-u-1">
       </div>
       <div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
-         <h1 style= "color:white">z/OS Connect Enterprise Edition</h1>
-         <p id="p-style" style="color: white;">Create and deploy RESTful APIs that access IMS applications and data 
+         <h1 style= "color:white">IBM z/OS Connect Enterprise Edition</h1>
+         <p id="p-style" style="color: white;">Create and deploy RESTful APIs that access IMS™ applications and data 
           in minutes with point and click Eclipse tooling.
-          Want to see what z/OS Connect EE is capable of? Try it out with no installation required!</p>
+          Want to see what IBM z/OS Connect® is capable of? Try it out with no installation required!</p>
       </div>
 
     </section>
@@ -260,7 +262,7 @@
     <div class="pure-u-1 pure-u-lg-1-2">
         <h2>Call APIs from Z</h2>
         <p style="margin-top: 1em;">
-          Create APIs in minutes to access IBM Z applications and data. 
+          Create APIs in minutes to access IBM Z® applications and data. 
           <p><a target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/downloads/cas/9DQBDQRB"><u>Learn more</u></a></p>
         
         </p>
@@ -273,7 +275,7 @@
             <h4 style="color: black;letter-spacing: normal;">Designed for DevOps</h4>
             <p style="letter-spacing: normal;">Drive agility across your development teams with parallel 
               development for APIs and services using source code management systems like Git (or RTC/Jazz). 
-              Orchestrate the deployment of your API and service artifacts with tools like Jenkins and UrbanCode 
+              Orchestrate the deployment of your API and service artifacts with tools like Jenkins and UrbanCode® 
               Deploy.</p>
               <p><a href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=edition-devops-zos-connect-ee"><u>Learn more</u></a></p>
         </div>
@@ -299,20 +301,20 @@
         <!-- 1 -->
         <div class="pure-u-sm-1 pure-u-md-5-12">
             <h4 style="color: black;letter-spacing: normal;">Monitor end-to-end API requests</h4>
-            <p style="letter-spacing: normal;">Keep all your z/OS Connect EE APIs running smoothly using tools 
+            <p style="letter-spacing: normal;">Keep all your IBM z/OS Connect APIs running smoothly using tools 
               like AppDynamics, IBM APM, Splunk and ELK. Monitor your API workloads and quickly identify any 
               issues across your essential Z assets before they become a problem.</p>
               <p><a href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=monitoring"><u>Learn more about monitoring methods</u></a></p>
-              <p><a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/yun-han-li1/2020/08/10/using-splunk-with-zos-connect-ee"><u>Learn more about Splunk and z/OS Connect EE</u></a></p>
+              <p><a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/yun-han-li1/2020/08/10/using-splunk-with-zos-connect-ee"><u>Learn more about Splunk and IBM z/OS Connect</u></a></p>
         </div>
         <div class="pure-u-md-1-12"></div>
         <!-- 2 -->
         <div class="pure-u-sm-1 pure-u-md-5-12">
             <h4 style="color: black;letter-spacing: normal;">Active 3rd party ecosystem</h4>
-            <p style="letter-spacing: normal;">z/OS Connect EE is pluggable and extensible, offering 3rd party 
+            <p style="letter-spacing: normal;">IBM z/OS Connect is pluggable and extensible, offering 3rd party 
               support for tools like File Manager (to access VSAM data), IBM Data Virtualization Manager 
               (to provide single views to data), Host Access Transformation Services (for 3270 interfaces), 
-              and over 30 z/OS Connect EE service interfaces provided by DXC to HOGAN CAMS II core 
+              and over 30 IBM z/OS Connect service interfaces provided by DXC to HOGAN CAMS II core 
               banking functions.</p>
               <p><a href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=extending-zos-connect-ee"><u>Learn more</u></a></p>
           </div>
@@ -336,7 +338,7 @@
         <img src="wp-content/Icon05.png" alt="Information booklet icon" style="height: 40px;">
 		<h3 style="color: black;">IBM Z software trials</h3>
         <p><b>No installation required.</b></p>
-		<p>Get a free trial environment with tutorials showing how to rapidly expose CICS and IMS 
+		<p>Get a free trial environment with tutorials showing how to rapidly expose CICS® and IMS 
             applications as RESTful APIs.</p>
             <a style="color: #4477e0;;" target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/account/reg/signup?formid=urx-14224">
                 <u>Learn more</u></a>
@@ -345,7 +347,7 @@
     <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 white-link" style="padding-right: 2.5em;">
         <img src="wp-content/Icon_Toolkit.png" alt="Information booklet icon" style="height: 40px;">
 		<h3 style="color: black;">Get the API toolkit</h3>
-		<p>z/OS Connect EE base already installed? Design, map, and deploy your APIs with our Eclipse-based tooling.</p>
+		<p>IBM z/OS Connect base already installed? Design, map, and deploy your APIs with our Eclipse-based tooling.</p>
             <a style="color: #4477e0;" target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/products/zos-connect-enterprise-edition/pricing">
                 <u>Learn more</u></a>
     </div>
@@ -376,8 +378,8 @@
     <!-- s2 -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 white-link" style="padding-right: 2.5em;">
 		<h3>Wüstenrot</h3>
-		<p>Responding to customer expectations, Wüstenrot exploited Container Pricing for IBM® Z® 
-            and implemented IBM z/OS® Connect Enterprise Edition.</p>
+		<p>Responding to customer expectations, Wüstenrot exploited Container Pricing for IBM Z 
+            and implemented IBM z/OS Connect Enterprise Edition.</p>
             <a target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/case-studies/wustenrot-systems-software-container-pricing-development">
                 <b>Read the case study</b></a>
         </div>
@@ -407,7 +409,7 @@
 	</div>
     <!-- s2 -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 white-link" style="padding-right: 2.5em;">
-		<h3>CICS Portfolio: z/OS Connect EE - From PoC to production webinar</h3>
+		<h3>CICS Portfolio: IBM z/OS Connect - From PoC to production webinar</h3>
 		<p>Explore how key CICS Tools can reduce risk and effort while maximizing return on 
       investment and efficiency at every stage of an application's lifecycle.</p>
             <a target="_blank" rel="noopener noreferrer" href="https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&referrer=&eventid=2745637&sessionid=1&key=7373B86AF7EEF3A5879E661DD9B3CDF5&regTag=&V2=false&sourcepage=register&_ga=2.121445512.1058035363.1623199990-2051871492.1623199990">
@@ -438,7 +440,7 @@
 	</div>
     <!-- s2 -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 white-link" style="padding-right: 2.5em;">
-		<h3>IBM Developer Community: z/OS Connect</h3>
+		<h3>IBM Developer Community: IBM z/OS Connect</h3>
 		<p>Access open source projects, developer advocates and a global community of developers 
             for IBM z/OS Connect Enterprise Edition.</p>
             <a target="_blank" rel="noopener noreferrer" href="https://developer.ibm.com/components/zos-connect/">

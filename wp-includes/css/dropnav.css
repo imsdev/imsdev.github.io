@@ -58,7 +58,7 @@ a {
   }
   
   #toggle1:checked ~ .menu1 {
-    height: 400px;
+    height: auto;
   }
   
 
@@ -118,6 +118,11 @@ a {
 
   .pages {
       padding: 2em;
+      margin-bottom: -40px;
+  }
+  .pages > div > a {
+    width: 100%;
+    min-height: 115px !important;
   }
 
   .sitename-wrap {
@@ -166,15 +171,28 @@ a {
     text-align: center;
   }
 
+  #left-bar-brand {
+    width: 3%;
+    padding: 7px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   @media (max-width: 1200px) {
     .ibm-landing-page {
       width: 95% !important;
       margin-left: 5% !important;
     }
+    #left-bar-brand {
+      width:5% !important;
+    }
   }
   @media (max-width: 800px) {
     .ibm-landing-page {
-      width: 91% !important;
-      margin-left: 9% !important;
+      width: 92% !important;
+      margin-left: 8% !important;
+    }
+    #left-bar-brand {
+      width:8% !important;
     }
   }
