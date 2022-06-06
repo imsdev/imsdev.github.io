@@ -58,7 +58,7 @@ a {
   }
   
   #toggle1:checked ~ .menu1 {
-    height: auto;
+    height: 450px;
   }
   
 
