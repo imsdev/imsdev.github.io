@@ -304,10 +304,6 @@ html {
 .banner b {
   font-weight: 900 !important;
 }
-/* SVG Animation */
-/* .float-ims {
-  animation: 1.5s float alternate infinite;
-} */
 
 @media (max-width: 991px) {
   .float-ims {
