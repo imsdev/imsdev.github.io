@@ -137,11 +137,12 @@ a {
   }
 
   .search-wrap {
-      justify-self: center;
+      /* justify-self: center; */
       position: absolute;
       margin-top: inherit;
       padding: 10px;
       width: 30%;
+      transform: translateX(110%);
   }
 
   .burg-wrap {
