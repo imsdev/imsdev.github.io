@@ -303,7 +303,7 @@ nav.pure-menu-horizontal .pure-menu-heading {
 .zs-button-secondary:hover {
 	border: 1px solid transparent;
     color: #fafafa;
-	background: linear-gradient(to right, #4F2196 0%,#0F6FFE 100%);
+	background: linear-gradient(to right, #0F6FFE 0%, #000005 100%);
 	text-decoration: none;
 }
 
