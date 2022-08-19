@@ -38,7 +38,6 @@ http://www.tipue.com/search
 #tipue_search_input
 {
      color: #333;
-     max-width: 210px;
 	padding: 17px;
 	border: 1px solid #e3e3e3;
 	border-radius: 0;
@@ -60,6 +59,7 @@ http://www.tipue.com/search
 }
 .tipue_search_right
 {
+     width: 100%;
      float: left;
 }
 
@@ -70,7 +70,6 @@ http://www.tipue.com/search
 #tipue_search_content
 {
      max-width: 750px;
-	padding-top: 15px;
 	margin: 0;
 }
 #tipue_search_results_count
@@ -196,8 +195,7 @@ http://www.tipue.com/search
 
 .tipue_search_spinner
 {
-     width: 50px;
-     height: 28px;
+     display: none !important;
 }
 .tipue_search_spinner > div
 {

@@ -843,10 +843,10 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
   /* Search stuff */
 
 div#tipue_search_content.search_content {
-	margin-left: 33%;
+	margin-left: 30%;
 	background-color: #282828;
 	color: white;
-	width: 34%;
+	width: 40%;
   }
 
 div#tipue_search_results_count {
@@ -882,11 +882,9 @@ div#tipue_search_warning {
 	 transition: .2s;
 
  }
- /* #tipue_search_input:focus {
-
-	border-width: 2px;
-	border-color: gray;
- } */
+ .tipue_search_foot_box {
+	color: #00bbff;
+ }
  .tipue_search_right > #tipue_search_input {
 	border: solid;
 	border-radius: 2px;
