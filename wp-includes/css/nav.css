@@ -844,7 +844,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 
 div#tipue_search_content.search_content {
 	margin-left: 30%;
-	background-color: #282828;
+	background-color: whitesmoke;
 	color: white;
 	width: 40%;
   }
@@ -951,7 +951,7 @@ div#tipue_search_warning {
 }
 .result:hover {
     box-shadow: black;
-    background-color: #424242;
+    background-color: #a5a5a5;
 } 
 .gap {
 	border: none !important;
