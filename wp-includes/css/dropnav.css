@@ -39,7 +39,7 @@ a {
   #toggle1 {
     display: none;
   }
-
+  
   #toggle1:checked + .hamburger1 .top {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -100,7 +100,6 @@ a {
       padding: 5px 20px 0px 20px;
       color: white;
       line-height: 1.5 !important;
-      transition: 0.3s;
   }
 
   .navcard:hover {
@@ -135,19 +134,10 @@ a {
     color: white;
     font-family: "ibm-plex-sans","Helvetica Neue",Arial,sans-serif;
     margin-top: inherit;
-    /* background: linear-gradient(to right, #171717 0%,#282828  100%);
-    background-position: -190px;
-    transition: .3s;
-    background-repeat: no-repeat; */
-  }
-  .sitename-wrap:hover {
-    background-position: center;
-  }
-  .sitename-wrap h4 {
-    color: black !important;
   }
 
   .search-wrap {
+      /* justify-self: center; */
       position: absolute;
       margin-top: inherit;
       padding: 10px;

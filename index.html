@@ -63,24 +63,6 @@
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-
-<!-- Additional styling for content after navigation -->
-
-<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-<script src="wp-includes/js/jquery.min.js"></script>
-
-<!-- TipueSearch -->
-<link rel="stylesheet" href="jekyll-tipue-search/assets/main.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
-<link rel="stylesheet" href="/jekyll-tipue-search/assets/tipuesearch/css/tipuesearch.css">
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
-<!-- delayed search -->
-<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
-
 </head>
 
 <!-- MASTHEAD_SITENAV_BEGIN -->
@@ -110,6 +92,12 @@
       </span>
       <!-- == Header wrapper -->
 
+      <!-- Search wrapper -->
+      <span class="search-wrap">
+        <input class="search-bar" type="text" placeholder="Search feature coming soon!" disabled>
+      </span>
+      <!-- == search wrapper -->
+
       <!-- Burgie wrapper -->
       <label class="burg-wrap" for="toggle1">
         <span class="burg-bars">
@@ -121,41 +109,6 @@
       <!-- == Burgie wrapper -->
       <!-- == Main navbar -->
     </label>
-
-      <!-- Search wrapper -->
-
-      <form style="margin-left: 30%;width: 40%;top: 0;margin-top: 15px; position: absolute;" id="searchbar">
-        <div class="tipue_search_right">
-          <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                }
-              </style>
-            </defs>
-            <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-            <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-          </svg>
-          <input type="text" name="q" id="tipue_search_input"
-          pattern=".{3,}" title="Search bar"
-          placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-          <svg id="search-clr" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-          </svg>
-        </div>
-        <div style="clear: both;"></div>
-    </form>
-
-
-  <!-- On page-load activation -->
-    <script>
-    $(document).ready(function() {
-    $('#tipue_search_input').tipuesearch();
-    $(toggle1).prop("checked", false);
-    });
-    </script>
-
-  <!-- == search wrapper -->
   
     <!-- Dropdown menu options -->
     <nav class="menu1">
@@ -278,10 +231,11 @@
       </div>
     </nav>
 </nav>
-<div id="tipue_search_content" class="search_content" style="position: absolute"></div>
 </section>
 
 <!-- DROP NAV END -->
+
+
 
 </div>
 </header>
@@ -291,6 +245,13 @@
 <article class="page type-page">
 <div class="entry-content">
 
+<!-- Additional styling for content after navigation -->
+<head>
+<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+<script src="wp-includes/js/jquery.min.js"></script>
+</head>
 
 <div id="content" class="site-content">
   <main class="zs-main pure-g">
@@ -653,11 +614,7 @@ style="background-image: url(wp-content/BG02.png) !important;width:100%">
 		</div>
 	</footer>
 </div><!-- #page -->
-<!-- Search box functions -->
-<script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
 
-<!-- post-load actions/listeners -->
-<script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
 
 </body>
 </html>
