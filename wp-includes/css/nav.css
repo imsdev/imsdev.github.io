@@ -845,7 +845,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 div#tipue_search_content.search_content {
 	margin-left: 30%;
 	background-color: whitesmoke;
-	color: white;
+	color: black;
 	width: 40%;
   }
 
@@ -939,7 +939,7 @@ div#tipue_search_warning {
 	font-weight: bold;
 }
 .tipue_search_content_title a {
-	color: white;
+	color: black;
 	width: 100%;
  }
 .result {
@@ -951,7 +951,7 @@ div#tipue_search_warning {
 }
 .result:hover {
     box-shadow: black;
-    background-color: #a5a5a5;
+    background-color: #d9d9d9;
 } 
 .gap {
 	border: none !important;
