@@ -845,6 +845,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 div#tipue_search_content.search_content {
 	margin-left: 30%;
 	background-color: whitesmoke;
+	box-shadow: 0px 2px 4px 1px rgba(0,0,0,.4);
 	color: black;
 	width: 40%;
   }
@@ -869,7 +870,7 @@ div#tipue_search_warning {
 /* Search window appearence */
  #tipue_search_input {
 	 height: 44px;
-	 background-color: white;
+	 background-color: whitesmoke;
 	 font-size: 110%;
 	 border: 0;
 	 outline: none;
@@ -932,10 +933,6 @@ div#tipue_search_warning {
 	margin-bottom: 10px;
 }
 .search-link {
-	transition: 250ms;
-}
-.search-link:hover {
-	transition: 350ms;
 	font-weight: bold;
 }
 .tipue_search_content_title a {
