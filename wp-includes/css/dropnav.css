@@ -101,6 +101,7 @@ a {
       color: white;
       line-height: 1.5 !important;
       transition: 0.3s;
+      min-height: 100px !important;
   }
 
   .navcard:hover {
