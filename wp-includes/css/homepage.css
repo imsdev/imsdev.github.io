@@ -159,8 +159,9 @@
       }
       .ims-c-card {
         min-width:240px;
-        min-height: 200px;
-        margin: 1em 0;
+        min-height: 270px;
+        height: 90%;
+        margin: 1em;
         border: solid lightgray;
         border-width: 2px;
         /* transition: all .2s ease-in-out; */
@@ -168,7 +169,7 @@
         background-color: white;
       }
       .ims-c-card:hover {
-        box-shadow: 0 5px 10px 0 rgba(216,216,216,0.80);
+        box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8);
         /* -webkit-transform: translateY(-3px);
         transform: translateY(-3px); */
       }
