@@ -1,351 +1,380 @@
 /* Paired with 'landing.css' to recreate the hardcoded styles before & after navigation is rendered */
 
 .fade-in {
-    animation: fadeIn ease .4s;
-    -webkit-animation: fadeIn ease .4s;
-    -moz-animation: fadeIn ease .4s;
-    -o-animation: fadeIn ease .4s;
-    -ms-animation: fadeIn ease .4s;
-    }
-    @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
+  animation: fadeIn ease .4s;
+  -webkit-animation: fadeIn ease .4s;
+  -moz-animation: fadeIn ease .4s;
+  -o-animation: fadeIn ease .4s;
+  -ms-animation: fadeIn ease .4s;
+  }
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
 
-      .b-width-fix {
-        min-width:190px !important;
+    .b-width-fix {
+      min-width:190px !important;
+    }
+      .ibm-sitenav-menu-list li {
+          margin-left: 10px;
+          margin-right: 10px;
+          font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+          font-size: 12pt;
+          font-weight: bold;
       }
-        .ibm-sitenav-menu-list li {
-            margin-left: 10px;
-            margin-right: 10px;
-            font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-            font-size: 12pt;
-            font-weight: bold;
-        }
-        .ibm-sitenav-menu-list>ul>li>a {
-            margin-left: 0px !important;
-        }
-        ul.dropdown-menu {
-            display:inline-block;
-            margin-top: -5px;
-            white-space: nowrap;
-            height: auto;
-            max-width: 160px;
-            border-style: none !important;
-            border-radius: 1px;
-            transition: 0.5s;
-            background-color: rgba(255, 255, 255, 0.9) !important;
-        }
-      .dark-button {
-        color: black;
-        background-color: #8c8c8c;
-        border: solid 1px #8c8c8c;
+      .ibm-sitenav-menu-list>ul>li>a {
+          margin-left: 0px !important;
       }
-      .zs-button-transparent {
-        width: 100%;
+      ul.dropdown-menu {
+          display:inline-block;
+          margin-top: -5px;
+          white-space: nowrap;
+          height: auto;
+          max-width: 160px;
+          border-style: none !important;
+          border-radius: 1px;
+          transition: 0.5s;
+          background-color: rgba(255, 255, 255, 0.9) !important;
       }
-      .ims-card-icon-small {
-        max-height: 35px;
-        max-width: 35px;
+
+    div[id*="hotjar-survey"] {
+      --hjFeedbackAccentColor: #6130bd !important;
+      --hjFeedbackAccentHoverColor: #4a2490 !important;
+      --hjFeedbackAccentActiveColor: #4a2490 !important;
+    }
+    div[class*="surveyContainer"] label {
+      --hjFeedbackAccentColor: #6130bd !important;
+      --hjFeedbackAccentHoverColor: #4a2490 !important;
+      --hjFeedbackAccentActiveColor: #4a2490 !important;
+    }
+    a[class*="surveySignupButton"] {
+      display: none !important;
+    }
+    div[class*="surveyContainer"] {
+      background-color: #f4f4f4 !important;
+    }
+    button[class*="styles__openStateToggle"] {
+      background-color: #f4f4f4 !important;
+    }
+    div[class*="surveyContainer"] img {
+      width: 0px !important;
+    }
+    div[class*="surveyActions"] {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    
+
+    .dark-button {
+      color: black;
+      background-color: #8c8c8c;
+      border: solid 1px #8c8c8c;
+    }
+    .zs-button-transparent {
+      width: 100%;
+    }
+    .ims-card-icon-small {
+      max-height: 35px;
+      max-width: 35px;
+    }
+    .ims-e-card .zs-action-card .zs-action-card-inactive {
+      padding: 2em !important;
+    }
+    .ibm-btn-systems-purp{
+      background:#4a2490;
+      border-color:#4a2490}
+    .ibm-btn-systems-purp:focus, .ibm-btn-systems-purp:hover{
+      background:#4287f5;border-color:#4287f5;
+      display: inline-block;
+    }
+    .doc-btn {
+      transition: margin .5s ease-in-out;
+      margin-left:0px;
+    }
+    .doc-btn:hover {
+      transition: margin .5s ease-in-out;
+      transition: color .3 ease-in-out;
+      margin-left:15px;
+      color: #3c89ff;
+    }
+    .ims-e-card {
+      height:22em;
+      margin:0px 3px 5px 0px;
+      max-height: 40em;
+      min-height: 22em;
+      min-width:18em;
+    }
+    .white-link a{
+      color: white;
+    }
+    .white-link a:hover{
+      color: lightgray;
+    }
+    .card-linksec {
+      margin-top:15%;
+    }
+    .ims-i-card {
+      /* max-height: 15em; */
+      padding-left: 10px;
+    }
+    .ims-i-card h1 {
+      margin:10px 0 0 0 !important;
+    }
+    .ims-i-head > * {
+      display: inline-block;"
+    }
+    .ims-i-card img {
+      height:80px !important;
+    }
+    .ims-i-lower > * {
+      display: inline-block;"
+    }
+    .ims-t-card {
+      min-width:320px;
+      /* margin:1em; */
+      min-height: 20em;
+      font-size: 12pt;
+      text-align: center;
+    }
+    .ims-t-card h4 {
+      font-size: 12pt !important;
+    }
+    .blue-links a {
+      color: #0F62FE !important;
+    }
+    .white-links a {
+      color: white !important;
+      font-weight: bold;
+    }
+    .white-links a:visited {
+      color: lightgray !important;
+    }
+    .white-links a:hover {
+      color: lightgray  !important;
+    }
+    .ims-m-card {
+      min-width:240px;
+      max-width:450px;
+      /* margin:1em; */
+      min-height: 25em;
+      /* transition: all .2s ease-in-out; */
+      /* cursor: pointer; */
+    }
+    .ims-m-card:hover {
+      box-shadow: 0 5px 10px 0 rgba(216,216,216,0.80);
+      /* -webkit-transform: translateY(-3px);
+      transform: translateY(-3px); */
+      background-color: white;
+    }
+    .ims-c-card {
+      min-width:240px;
+      min-height: 270px;
+      height: 90%;
+      margin: 1em;
+      border: solid lightgray;
+      border-width: 2px;
+      /* transition: all .2s ease-in-out; */
+      /* cursor: pointer; */
+      background-color: white;
+    }
+    .ims-c-card:hover {
+      box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8);
+      /* -webkit-transform: translateY(-3px);
+      transform: translateY(-3px); */
+    }
+    .ims-course-card {
+      min-width:240px;
+      margin: 1em;
+      border: solid lightgray;
+      border-width: 2px;
+      /* transition: all .2s ease-in-out; */
+      /* cursor: pointer; */
+      background-color: white;
+    }
+    .ims-course-card:hover {
+      box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8);
+      /* -webkit-transform: translateY(-3px);
+      transform: translateY(-3px); */
+    }
+    .ims-m-card h3 {
+      color: black;
+    }
+    .ims-card-icon {
+      max-height: 75px;
+      max-width: 75px;
+      margin-bottom:20px;
+    }
+    .blueg-bg {
+      color: white;
+      background-image: linear-gradient(to right, blue,black);
+    }
+    .blueg-bg h2,h3,h4{
+      color: white;
+    }
+    .blue-purp {
+      color: white;
+      background-image:linear-gradient(to right, #427ce4, #5543b9);
+    }
+    .blue-purp h2,h3,h4{
+      color: white;
+    }
+    .tr-bg {
+      background-image: url(wp-content/BG01.png) !important;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 20px;
+    }
+    .ims-icon {
+      display: inline-block !important;
+      margin: 0px 7% 20px 0px;
+      color:#054ada;
+      width:50px;
+      height:50px;
+      filter:gray;
+      -webkit-filter: grayscale(1);
+      -webkit-transition: all .1s ease-in-out;
+    }
+    .ims-icon:hover {
+      width:60px;
+      height:60px;
+      margin: 0px 4% 10px 0px;
+      filter: none;
+      -webkit-filter: grayscale(0) !important;
+      -webkit-transform: scale(1.01) !important;
+    }
+    .imsc-learn-section {
+      color: white;
+      background-repeat:no-repeat;
+      background-position: center center;
+      background-size:cover;
+    }
+    .ibm-sitenav-menu-container {
+      background-color: #282828;
+      color: white;
+      width: 100% !important;
+      position: fixed !important;
+    }
+    .container-fluid h3 {
+      color:black !important;
+    }
+    .menu-item {
+      color: black !important;
+    }
+    .ibm-sitenav-menu-list li ul a:hover {
+      background-color: black !important;
+      transition:ease-in-out .2s;
+    }
+    .ibm-sitenav-menu-name a {
+      font-size: 15pt;
+      color:white;
+      font-weight: lighter;
+    }
+    .ibm-sitenav-menu-name a:hover {
+      color:white;
+    }
+    .ims-addlinks-section a {
+      color:white;
+    }
+    .ims-addlinks-section a:hover {
+      color:#00b9eb;
+    }
+    .ibm-sitenav-menu-list a:hover {
+      color:#00b9eb;
+    }
+    .menu-item-type-taxonomy a:hover {
+      color:#00b9eb;
+    }
+    .ibm-sitenav-menu-container #primary-menu li:hover > a, .ibm-sitenav-menu-container #primary-menu li.focus > a {
+      color:white;
+    }
+    .ibm-carousel__controls--light .slick-dots li button {
+      color:black;
+      border-color:black;
+    }
+    .ibm-carousel__controls--light .slick-dots li.slick-active button {
+      background:#0869ff;
+    }
+    .ibm-carousel__controls--light .ibm-carousel-controls, .ibm-carousel__controls--light .ibm-carousel-controls button, .ibm-carousel__controls--light .slick-dots button, .ibm-carousel__controls--light > button {
+      color:black;
+    }
+    .ibm-carousel__controls--light .ibm-carousel-controls button:focus, .ibm-carousel__controls--light .ibm-carousel-controls button:hover, .ibm-carousel__controls--light .ibm-carousel-controls:focus, .ibm-carousel__controls--light .ibm-carousel-controls:hover, .ibm-carousel__controls--light .slick-dots button:focus, .ibm-carousel__controls--light .slick-dots button:hover, .ibm-carousel__controls--light > button:focus, .ibm-carousel__controls--light > button:hover {
+      color:black;
+    }
+    .ibm-carousel__controls--light .ibm-carousel-controls button:hover, .ibm-carousel__controls--light .ibm-carousel-controls:hover, .ibm-carousel__controls--light .slick-dots button:hover, .ibm-carousel__controls--light > button:hover {
+      color:#0869ff;
+    }
+    .image-preview {
+      /* background: url(../../wp-content/introIMS.png); */
+      position: relative;
+      opacity: 1;
+      width: 100%;
+      height: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .image-preview:hover {
+      position: relative;
+      opacity: 0;
+      width: 100%;
+      height: auto;
+      transition: .4s ease all;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .vid-preview {
+      position: absolute;
+      max-height: 340px;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .vid-preview:hover {
+      /* background: url(../../wp-content/introIMSclip.gif); */
+      position: absolute;
+      max-height: 340px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      opacity: 1;
+      transition: .4s ease all;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    /* video margin for tablets */
+    @media screen and (min-width:1024px) and (max-width:1220px) {
+      .vid-margin {
+        margin-top: 20% !important;
       }
-      .ims-e-card .zs-action-card .zs-action-card-inactive {
-        padding: 2em !important;
+    }
+    /* take off the margin for smalller devices */
+    @media screen and (min-width:0px) and (max-width:1023px) {
+      .vid-margin {
+        margin-top: 15px !important;
       }
-      .ibm-btn-systems-purp{
-        background:#4a2490;
-        border-color:#4a2490}
-      .ibm-btn-systems-purp:focus, .ibm-btn-systems-purp:hover{
-        background:#4287f5;border-color:#4287f5;
-        display: inline-block;
-      }
-      .doc-btn {
-        transition: margin .5s ease-in-out;
-        margin-left:0px;
-      }
-      .doc-btn:hover {
-        transition: margin .5s ease-in-out;
-        transition: color .3 ease-in-out;
-        margin-left:15px;
-        color: #3c89ff;
-      }
-      .ims-e-card {
-        height:22em;
-        margin:0px 3px 5px 0px;
-        max-height: 40em;
-        min-height: 22em;
-        min-width:18em;
-      }
-      .white-link a{
-        color: white;
-      }
-      .white-link a:hover{
-        color: lightgray;
-      }
-      .card-linksec {
-        margin-top:15%;
-      }
-      .ims-i-card {
-        /* max-height: 15em; */
-        padding-left: 10px;
-      }
-      .ims-i-card h1 {
-        margin:10px 0 0 0 !important;
-      }
-      .ims-i-head > * {
-        display: inline-block;"
-      }
-      .ims-i-card img {
-        height:80px !important;
-      }
-      .ims-i-lower > * {
-        display: inline-block;"
-      }
-      .ims-t-card {
-        min-width:320px;
-        /* margin:1em; */
-        min-height: 20em;
-        font-size: 12pt;
-        text-align: center;
-      }
-      .ims-t-card h4 {
-        font-size: 12pt !important;
-      }
-      .blue-links a {
-        color: #0F62FE !important;
-      }
-      .white-links a {
-        color: white !important;
-        font-weight: bold;
-      }
-      .white-links a:visited {
-        color: lightgray !important;
-      }
-      .white-links a:hover {
-        color: lightgray  !important;
-      }
-      .ims-m-card {
-        min-width:240px;
-        max-width:450px;
-        /* margin:1em; */
-        min-height: 25em;
-        /* transition: all .2s ease-in-out; */
-        /* cursor: pointer; */
-      }
-      .ims-m-card:hover {
-        box-shadow: 0 5px 10px 0 rgba(216,216,216,0.80);
-        /* -webkit-transform: translateY(-3px);
-        transform: translateY(-3px); */
-        background-color: white;
-      }
-      .ims-c-card {
-        min-width:240px;
-        min-height: 270px;
-        height: 90%;
-        margin: 1em;
-        border: solid lightgray;
-        border-width: 2px;
-        /* transition: all .2s ease-in-out; */
-        /* cursor: pointer; */
-        background-color: white;
-      }
-      .ims-c-card:hover {
-        box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8);
-        /* -webkit-transform: translateY(-3px);
-        transform: translateY(-3px); */
-      }
-      .ims-course-card {
-        min-width:240px;
-        margin: 1em;
-        border: solid lightgray;
-        border-width: 2px;
-        /* transition: all .2s ease-in-out; */
-        /* cursor: pointer; */
-        background-color: white;
-      }
-      .ims-course-card:hover {
-        box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8);
-        /* -webkit-transform: translateY(-3px);
-        transform: translateY(-3px); */
-      }
-      .ims-m-card h3 {
-        color: black;
-      }
-      .ims-card-icon {
-        max-height: 75px;
-        max-width: 75px;
-        margin-bottom:20px;
-      }
-      .blueg-bg {
-        color: white;
-        background-image: linear-gradient(to right, blue,black);
-      }
-      .blueg-bg h2,h3,h4{
-        color: white;
-      }
-      .blue-purp {
-        color: white;
-        background-image:linear-gradient(to right, #427ce4, #5543b9);
-      }
-      .blue-purp h2,h3,h4{
-        color: white;
-      }
-      .tr-bg {
-        background-image: url(wp-content/BG01.png) !important;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 20px;
-      }
-      .ims-icon {
-        display: inline-block !important;
-        margin: 0px 7% 20px 0px;
-        color:#054ada;
-        width:50px;
-        height:50px;
-        filter:gray;
-        -webkit-filter: grayscale(1);
-        -webkit-transition: all .1s ease-in-out;
-      }
-      .ims-icon:hover {
-        width:60px;
-        height:60px;
-        margin: 0px 4% 10px 0px;
-        filter: none;
-        -webkit-filter: grayscale(0) !important;
-        -webkit-transform: scale(1.01) !important;
-      }
-      .imsc-learn-section {
-        color: white;
-        background-repeat:no-repeat;
-        background-position: center center;
-        background-size:cover;
-      }
-      .ibm-sitenav-menu-container {
-        background-color: #282828;
-        color: white;
-        width: 100% !important;
-        position: fixed !important;
-      }
-      .container-fluid h3 {
-        color:black !important;
-      }
-      .menu-item {
-        color: black !important;
-      }
-      .ibm-sitenav-menu-list li ul a:hover {
-        background-color: black !important;
-        transition:ease-in-out .2s;
-      }
-      .ibm-sitenav-menu-name a {
-        font-size: 15pt;
-        color:white;
-        font-weight: lighter;
-      }
-      .ibm-sitenav-menu-name a:hover {
-        color:white;
-      }
-      .ims-addlinks-section a {
-        color:white;
-      }
-      .ims-addlinks-section a:hover {
-        color:#00b9eb;
-      }
-      .ibm-sitenav-menu-list a:hover {
-        color:#00b9eb;
-      }
-      .menu-item-type-taxonomy a:hover {
-        color:#00b9eb;
-      }
-      .ibm-sitenav-menu-container #primary-menu li:hover > a, .ibm-sitenav-menu-container #primary-menu li.focus > a {
-        color:white;
-      }
-      .ibm-carousel__controls--light .slick-dots li button {
-        color:black;
-        border-color:black;
-      }
-      .ibm-carousel__controls--light .slick-dots li.slick-active button {
-        background:#0869ff;
-      }
-      .ibm-carousel__controls--light .ibm-carousel-controls, .ibm-carousel__controls--light .ibm-carousel-controls button, .ibm-carousel__controls--light .slick-dots button, .ibm-carousel__controls--light > button {
-        color:black;
-      }
-      .ibm-carousel__controls--light .ibm-carousel-controls button:focus, .ibm-carousel__controls--light .ibm-carousel-controls button:hover, .ibm-carousel__controls--light .ibm-carousel-controls:focus, .ibm-carousel__controls--light .ibm-carousel-controls:hover, .ibm-carousel__controls--light .slick-dots button:focus, .ibm-carousel__controls--light .slick-dots button:hover, .ibm-carousel__controls--light > button:focus, .ibm-carousel__controls--light > button:hover {
-        color:black;
-      }
-      .ibm-carousel__controls--light .ibm-carousel-controls button:hover, .ibm-carousel__controls--light .ibm-carousel-controls:hover, .ibm-carousel__controls--light .slick-dots button:hover, .ibm-carousel__controls--light > button:hover {
-        color:#0869ff;
-      }
-      .image-preview {
-        /* background: url(../../wp-content/introIMS.png); */
-        position: relative;
-        opacity: 1;
-        width: 100%;
-        height: auto;
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-      .image-preview:hover {
-        position: relative;
-        opacity: 0;
-        width: 100%;
-        height: auto;
-        transition: .4s ease all;
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-      .vid-preview {
-        position: absolute;
-        max-height: 340px;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        width: 100%;
-        height: auto;
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-      .vid-preview:hover {
-        /* background: url(../../wp-content/introIMSclip.gif); */
-        position: absolute;
-        max-height: 340px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        opacity: 1;
-        transition: .4s ease all;
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
-      /* video margin for tablets */
-      @media screen and (min-width:1024px) and (max-width:1220px) {
-        .vid-margin {
-          margin-top: 20% !important;
-        }
-      }
-      /* take off the margin for smalller devices */
-      @media screen and (min-width:0px) and (max-width:1023px) {
-        .vid-margin {
-          margin-top: 15px !important;
-        }
-      }
-      @media screen and (min-width:0px) and (max-width:1452px)
+    }
+    @media screen and (min-width:0px) and (max-width:1452px)
