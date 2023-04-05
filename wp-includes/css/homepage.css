@@ -141,13 +141,13 @@
       margin:10px 0 0 0 !important;
     }
     .ims-i-head > * {
-      display: inline-block;"
+      display: inline-block;
     }
     .ims-i-card img {
       height:80px !important;
     }
     .ims-i-lower > * {
-      display: inline-block;"
+      display: inline-block;
     }
     .ims-t-card {
       min-width:320px;
@@ -377,4 +377,4 @@
         margin-top: 15px !important;
       }
     }
-    @media screen and (min-width:0px) and (max-width:1452px)
+    /* @media screen and (min-width:0px) and (max-width:1452px) */
