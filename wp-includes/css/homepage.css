@@ -83,7 +83,10 @@
       margin-left: auto !important;
       margin-right: auto !important;
     }
-    
+    div[class*="branding"] {
+      display: none !important;
+      width: 0px;
+    }
 
     .dark-button {
       color: black;
