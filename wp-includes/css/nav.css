@@ -40,7 +40,7 @@ nav.pure-menu-horizontal .pure-menu-heading {
 
 /* ---------------- Sections --------------- */
 .zs-section {
-	padding: 5em 2em;
+	padding: 2em 2em;
 	position: relative;
 }
 
@@ -92,7 +92,7 @@ nav.pure-menu-horizontal .pure-menu-heading {
 
 .zs-gray-section {
 	background: #F9F9F9;
-	padding: 0em 2em;
+	padding: 2em 2em;
 }
 
 .zs-color-section {
@@ -310,11 +310,10 @@ nav.pure-menu-horizontal .pure-menu-heading {
 }
 
 .zs-w-button-transparent {
-	border: 1px solid #ffffff;
 	padding: 1em 1.5em;
-	color: black;
+	color: #ffffff !important;
     box-sizing: border-box;
-    background-color:white;
+    background-color:#475bfa;
     margin-right:1.25em;
 	line-height: 26px;
 	width: 100%;
@@ -323,13 +322,11 @@ nav.pure-menu-horizontal .pure-menu-heading {
 .zs-w-button-transparent:hover {
 	background-color: #3181f1;
 	color: #ffffff;
-    border: 1px solid transparent;
 }
 
 .zs-button-transparent {
-	border: 1px solid #ffffff;
 	padding: 1em 1.5em;
-	color: #ffffff;
+	color: #ffffff !important;
     box-sizing: border-box;
     background-color:transparent;
     margin-right:1.25em;
@@ -339,11 +336,9 @@ nav.pure-menu-horizontal .pure-menu-heading {
 .zs-button-transparent:hover {
 	background-color: #3181f1;
 	color: #ffffff;
-    border: 1px solid transparent;
-}
+    border: 1px solid transparent;}
 
 .zs-button-transparent:visited {
-	border: 1px solid #ffffff;
 	color: #ffffff;
 }
 
@@ -609,14 +604,14 @@ a.zs-pic-tab {
 
 .banner {
 width:100%;
-background-color:#000000;
+background-color:#1c1c1c;
 background-repeat:no-repeat;
 background-size:cover;
 }
 
 .zs-purpsection {
 	background: #EDE8F2;
-	padding: 0em 2em;
+	padding: 2em 4em;
 }
 
 .zs-purpsection h2{
@@ -843,9 +838,10 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
   /* Search stuff */
 
 div#tipue_search_content.search_content {
-	margin-left: 30%;
+	right:0;
+	margin-right: 50px;
 	background-color: whitesmoke;
-	box-shadow: 0px 2px 4px 1px rgba(0,0,0,.4);
+	/* box-shadow: 0px 2px 4px 1px rgba(0,0,0,.4); */
 	color: black;
 	width: 40%;
   }
@@ -894,8 +890,16 @@ div#tipue_search_warning {
  }
 
 /* Search window appearence */
+#searchbar {
+	width: 40%;
+	top: 0; 
+	position: absolute;
+	right:0;
+	margin-right: 50px;
+}
+
  #tipue_search_input {
-	 height: 45px;
+	 height: 50px;
 	 background-color: whitesmoke;
 	 font-size: 110%;
 	 border: 0;
@@ -924,12 +928,12 @@ div#tipue_search_warning {
  #search-mag {
 	left: 15px;
 	position: absolute;
-	margin-top: 13px;
+	margin-top: 15px;
  }
  #search-clr {
 	position: absolute;
 	right: 15px;
-	top: 15px;
+	top: 17px;
  }
  #search-clr:hover {
 	cursor: pointer;
@@ -1041,4 +1045,11 @@ div#tipue_search_warning {
 }
 .search_content ol > li::before, ul:first-child > li::before {
 	display: none !important;
+}
+
+#dw-footer {
+	background-color: #1c1c1c !important;
+}
+#dw-footer a {
+	color: #0F62FE;
 }

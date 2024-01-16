@@ -12,25 +12,25 @@ a {
   .sticky-nav {
     position: sticky;
     top: 0;
-    background: #282828 !important;
     z-index: 300;
   }
   
   /* Hamburger */
   .hamburger1 {
-    height: 60px;
+    height: 50px;
     display: -ms-grid;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     z-index: 120;
     align-items: center;
+    background-color: #1c1c1c;
   }
   
   .hamburger1 div {
     background-color: white;
     position: relative;
-    width: 40px;
-    height: 5px;
+    width: 30px;
+    height: 3px;
     margin-top: 7px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -43,13 +43,13 @@ a {
   #toggle1:checked + .hamburger1 .top {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    margin-top: 22.5px;
+    margin-top: 18px;
   }
   
   #toggle1:checked + .hamburger1 .meat {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    margin-top: -5px;
+    margin-top: -3px;
   }
   
   #toggle1:checked + .hamburger1 .bottom {
@@ -89,7 +89,7 @@ a {
     margin-bottom: 40px;
   }
   .menu1 h3{
-    color: #b48cff;
+    color: #71a3e9;
     font-family: "ibm-plex-sans","Helvetica Neue",Arial,sans-serif;
     font-weight: lighter !important;
     padding-left: 15px;
@@ -101,7 +101,7 @@ a {
       color: white;
       line-height: 1.5 !important;
       transition: 0.3s;
-      min-height: 100px !important;
+      /* min-height: 100px !important; */
   }
 
   .navcard:hover {
@@ -124,16 +124,16 @@ a {
   }
   .pages > div > a {
     width: 100%;
-    min-height: 115px !important;
+    min-height: 55px !important;
   }
 
   .sitename-wrap {
     font-weight: lighter;
     height: 100%;
-    padding: 10px;
+    padding: 5px;
     justify-self: left;
     position: absolute;
-    color: white;
+    color: #171717;
     font-family: "ibm-plex-sans","Helvetica Neue",Arial,sans-serif;
     margin-top: inherit;
     /* background: linear-gradient(to right, #171717 0%,#282828  100%);
@@ -145,7 +145,7 @@ a {
     background-position: center;
   }
   .sitename-wrap h4 {
-    color: black !important;
+    color: white !important;
   }
 
   .search-wrap {
@@ -159,10 +159,10 @@ a {
   .burg-wrap {
     justify-self: right;
     position: absolute;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     z-index: 400;
-    background-color: #42a7ec; 
+    background-color: #1c1c1c; 
     cursor: pointer;
     top: 0;
     right: 0;
@@ -170,8 +170,8 @@ a {
 
   .burg-bars {
     position: absolute;
-    margin-top: 7px;
-    margin-left: 10px;
+    margin-top: 4px;
+    margin-left: 12px;
   }
 
   .search-bar {
@@ -184,8 +184,9 @@ a {
   }
 
   #left-bar-brand {
-    width: 3%;
-    padding: 7px;
+    width: 40px;
+    float: left;
+    padding: 5px;
     margin-left: auto !important;
     margin-right: auto !important;
   }

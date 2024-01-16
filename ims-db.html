@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- v18 basic meta -->
+	<meta name="geo.country" content="ZZ" />
+	<meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
+	<meta name="dcterms.date" content="2020-07-18" />
+	<meta name="keywords" content="IMS Central, IMS Developer, IMS" />
+	<meta name="robots" content="index, follow" />
+<!-- Favicon -->
+	<link id="favicon"
+	rel="shortcut icon"
+	type="image/x-icon"
+	href="wp-content/IMS_logo_small.png">
+
+<!-- Pageittle -->
+<title>IMS Database</title>
+
+<!-- Meta -->
+<link rel="canonical" href="ims-db.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="IMS Database" />
+<meta property="og:description" content="Automation" />
+<meta property="og:url" content="http://www/imsdev.github.io/ims-db.html" />
+<meta property="og:site_name" content="IMS Central" />
+<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="IMS Database" />
+<meta name="twitter:title" content="IMS Database" />
+<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+
+<!-- Sheets -->
+<link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="wp-includes/css/nav.css">
+<link rel="stylesheet" href="wp-includes/css/dropnav.css">
+<link href="wp-includes/css/www.css" rel="stylesheet" />
+<link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
+<link href="wp-includes/css/tables.css" rel="stylesheet">
+
+<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
+<script>
+	(function(h,o,t,j,a,r){
+		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		h._hjSettings={hjid:132193,hjsv:6};
+		a=o.getElementsByTagName('head')[0];
+		r=o.createElement('script');r.async=1;
+		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		a.appendChild(r);
+	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+
+<!-- Additional styling for content after navigation -->
+
+<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+<script src="wp-includes/js/jquery.min.js"></script>
+
+<!-- TipueSearch -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
+<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
+<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
+
+<!-- delayed search -->
+<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
+
+</head>
+
+<!-- MASTHEAD_SITENAV_BEGIN -->
+<body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
+	<div class="ibm-landing-page" style="position: relative;background: #282828 !important;">
+		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+	  <div id="ibm-content-wrapper" class="sticky-nav">
+		  <header role="banner" aria-labelledby="ibm-pagetitle-h1">
+	
+	
+	
+<!-- DROP NAV -->
+<section class="p-menu1 ">
+
+	<nav id="navbar" class="navigation" role="navigation">
+	  <input id="toggle1" type="checkbox" />
+	  <label class="hamburger1">
+  
+		<!-- Header wrapper -->
+		<span class="sitename-wrap">
+		  <a href="index.html" style="display: inline-block;float: left;">
+			<img src="wp-content/IMS_logo_small.png"
+			style="z-index:900;" 
+			id="left-bar-brand"/>
+		  </a>
+			<h4 style="line-height: 2;display: inline-block;">
+			  IBM <b>IMS Central</b>
+			</h4>
+		</span>
+		<!-- == Header wrapper -->
+  
+		<!-- Burgie wrapper -->
+		<label class="burg-wrap" for="toggle1">
+		  <span class="burg-bars">
+			<div class="top"></div>
+			<div class="meat"></div>
+			<div class="bottom"></div>
+		  </span>
+		</label>
+		<!-- == Burgie wrapper -->
+		<!-- == Main navbar -->
+	  </label>
+	  
+		<!-- Search wrapper -->
+  
+		<form class id="searchbar">
+		  <div class="tipue_search_right">
+			<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+			  <defs>
+				<style>
+				  .cls-1 {
+					fill: none;
+				  }
+				</style>
+			  </defs>
+			  <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+			  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+			</svg>
+			<input type="text" name="q" id="tipue_search_input"
+			pattern=".{3,}" title="Search bar"
+			placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+			<svg id="search-clr" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+			</svg>
+		  </div>
+		  <div style="clear: both;"></div>
+	  </form>
+  
+  
+	<!-- On page-load activation -->
+	  <script>
+	  $(document).ready(function() {
+	  $('#tipue_search_input').tipuesearch();
+	  $(toggle1).prop("checked", false);
+	  });
+	  </script>
+  
+  <!-- == search wrapper -->
+  
+    <!-- Dropdown menu options -->
+    <nav class="menu1">
+		<div class="pages pure-g">
+  
+		  <!-- Innovate -->
+		  <div class="pure-u-1 pure-u-sm-1-4">
+			<h3>
+			  Innovate
+			</h3>
+			<!-- cards/pages -->
+			<!-- 1 -->
+			<a title="APIs" href="ims-apis.html">
+			  <div class="navcard">
+				<h5>APIs</h5>
+				<p>Unlock the vlaue of your IMS applications by making easily consumable APIs in minutes.</p>
+			  </div>
+			</a>
+			<!-- 2 -->
+			<a title="DevOps" href="ims-devops.html">
+			  <div class="navcard">
+				<h5>Automation</h5>
+				<p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
+			  </div>
+			</a>
+			<!-- 3 -->
+			<a title="Java" href="ims-java.html">
+			  <div class="navcard">
+				<h5>Java</h5>
+				<p>Build Java applications to run inside or outside IMS.</p>
+			  </div>
+			</a>
+			<!-- 4 -->
+			<a title="Database" href="ims-db.html">
+			  <div class="navcard">
+				<h5>IMS Database</h5>
+				<p>IMS Database: fast, secure, reliable.</p>
+			  </div>
+			</a>
+		  </div>
+  
+		  <!-- Engage -->
+		  <div class="pure-u-1 pure-u-sm-1-4">
+			<h3>
+			  Engage
+			</h3>
+			<!-- cards/pages -->
+			<!-- 1 -->
+			<a title="Gold" href="ims-gold.html">
+			  <div class="navcard">
+				<h5>IMS Gold</h5>
+				<p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
+			  </div>
+			</a>
+			<!-- 2 -->
+			<a title="Makerspace" href="ims-makerspace.html">
+			  <div class="navcard">
+				<h5>Makerspace</h5>
+				<p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
+			  </div>
+			</a>
+			<!-- 3 -->
+			<a title="IMS Community"  target="_blank" rel="noopener noreferrer"
+			href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
+			  <div class="navcard">
+				<h5>IMS community<img src="wp-content/Icon07.png" style="height: 15px; width: 15px;margin-left:10px"></img>
+				</h5>
+				<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
+			  </div>
+			</a>
+		  </div>
+  
+  
+		  <!-- Learn -->
+		  <div class="pure-u-1 pure-u-sm-1-4">
+			<h3>
+			  Learn
+			</h3>
+			<!-- cards/pages -->
+			<!-- 1 -->
+			<a title="IMS Videos" href="ims-videos.html">
+			  <div class="navcard">
+				<h5>IMS videos</h5>
+				<p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
+			  </div>
+			</a>
+			<!-- 2 -->
+			<a title="IMS Courses" href="ims-education.html">
+			  <div class="navcard">
+				<h5>IMS courses</h5>
+				<p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
+			  </div>
+			</a>
+			<!-- 3 -->
+			<a title="IMS Repos on GitHub" href="ims-repos.html">
+			  <div class="navcard">
+				<h5>IMS repos on GitHub</h5>
+				<p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
+			  </div>
+			</a>
+		  </div>
+  
+  
+  
+		  <!-- Docs & Support -->
+		  <div class="pure-u-1 pure-u-sm-1-4">
+			<h3>
+			  Documentation & support
+			</h3>
+			<!-- cards/pages -->
+			<!-- 1 -->
+			<a title="IMS Docs" href="ims-docs.html">
+			  <div class="navcard">
+				<h5>IMS documentation</h5>
+				<p>Find information on IMS, tools, and other IBM products.</p>
+			  </div>
+			</a>
+			<!-- 2 -->
+			<a title="IMS Support" href="ims-support.html">
+			  <div class="navcard">
+				<h5>IMS support</h5>
+				<p>Get help with IMS or other IBM products.</p>
+			  </div>
+			</a>
+			<hr style="background-color: gray !important;" />
+			<!-- 3 special -->
+			  <div style="padding: 5px 20px 0px 20px;
+			  color: white;">
+				<h5>IMS Advocacy</h5>
+				<p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
+				  IMS advocate, please contact <a href="mailto:deepakk@us.ibm.com" 
+				  style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
+			  </div>
+  
+		  </div>
+		</div>
+	  </nav>
+  </nav>
+  <div id="tipue_search_content" class="search_content" style="position: absolute"></div>
+  </section>
+  
+  <!-- DROP NAV END -->
+
+	</div>
+	</header>
+<!-- Additional styling for content after navigation -->
+<head>
+	<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+	<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+</head>
+<div id="content" class="site-content">
+
+<div class="content-area" id="content-area">
+
+<article id="post-2654" class="post-2654 page type-page status-publish hentry">
+<div class="entry-content">
+
+<div aria-role="presentation">
+<main class="zs-main" >
+<!-- =========================== IMS Database =========================== -->
+<div class="banner white-bg">
+    <section id="intro-section" class="pure-g zs-section" style="padding: 3em;">
+      <div id="intro-header" class="pure-u-1">
+      </div>
+      <div class="pure-u-3-25">
+        <img class="ims-card-icon" src="wp-content/Icon_Banner_IMS DatabasePage.svg" style="margin-top: 65px;">
+      </div>
+      <div id="intro-info" class="pure-u-1 pure-u-sm-15-24" style="margin-left: 30px;">
+        <h6 style="padding:0 !important">Innovate</h6>
+         <h1 >IMS Database: fast, secure, reliable.</h1>
+         <p id="p-style" >Data integrity, performance, simplified use of SQL, and powerful recovery tools make IMS Database Manager
+			the best choice to protect your enterprise assets.</p>
+      </div>
+
+    </section>
+</div>
+
+
+  <!-- =========================== Expanded description =========================== -->
+
+<div class="zs-gray-section ibm-background-white-core" style="padding: 2em 4.5em;">
+	<section class="zs-section">
+  
+  <!-- Section contents -->
+	  <div class="pure-u-11-24">
+		<h2 style="margin-bottom: 20px;">Managed ACBs</h2>
+		<!-- left contents -->
+		<div class="pure-g">
+		<div class="pure-u-1">
+			<h4 style="color: black;">IMS Paradigm Shifts: Managed ACBs</h4>
+			<p>This video describes the benefits and high-level steps to convert to IMS managed ACBs.</p>
+			<a target="_blank" rel="noopener noreferrer" 
+			href="https://mediacenter.ibm.com/media/1_u4hy5e26" style="color: #0F62FE;">Watch →</a>
+		</div>
+
+	  <!-- right contents -->
+		<div class="pure-u-1" >
+			<h4 style="color: black;margin-top: 20px;">Converting to Managed ACBs</h4>
+			<p>Ready to migrate to using managed ACBs? <br>We're here to help.</p>
+			<a target="_blank" rel="noopener noreferrer" 
+			href="https://mediacenter.ibm.com/media/1_u4hy5e26" style="color: #0F62FE;">Watch →</a>
+		</div>
+		</div>
+		
+		</div>
+		<!-- Banner vid preview container -->
+		<div class="pure-u-11-24" style="float: right;">
+			<!-- Video window -->
+					  <div style="margin-top: 30px;position: relative;" class="vid-margin">
+						<a href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+DB/1_hiplkqw3/139456202"
+						style="width: 100%;" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+						  <img src="wp-content/imsdbprev.png" class="image-preview" 
+						  style="height: 100% !important;max-height: 300px !important;max-width: 590px !important;"></img>
+						  <img src="wp-content/imsdbclip.gif" class="vid-preview" 
+						  style="height: 100% !important;max-height: 300px !important;max-width: 590px !important;"></img>
+						</a>
+					  </div>
+				  </div>
+
+	<!-- More resources -->
+	  <div class="pure-u-1" style="margin-top: 20px;">
+		<h4 style="color: black;margin-bottom: 20px;margin-top: 40px;">More resources</h4>
+		<!-- left contents -->
+		<div class="pure-g">
+			<div class="pure-u-1-3" >
+					<div class="pure-u-1-8"><img src="wp-content/Icon_Using DDL_IMS DatabasePage.svg" style="height: 25px;float:left;"></div>
+					<div class="pure-u-3-4"><h3 style="color: black;">Managed ACBs and IMS Catalog</h3>
+						<a href="https://mediacenter.ibm.com/playlist/details/1_6yvvheln/categoryId/122579632" target="_blank" rel="noopener noreferrer" 
+						style="color: #0F62FE;">Read more →</a></div>
+			</div>
+		  <!-- mid contents -->
+			<div class="pure-u-1-3" >
+				<div class="pure-u-1-8"><img src="wp-content/Icon_Using DDL_IMS DatabasePage.svg" style="height: 25px;float:left;"></div>
+				<div class="pure-u-3-4"><h3 style="color: black;">IMS management of ACBs</h3>
+					<a href="https://www.ibm.com/docs/en/ims/15.4.0?topic=tailoring-ims-management-acbs" target="_blank" rel="noopener noreferrer" 
+					style="color: #0F62FE;">Read more →</a></div>
+			</div>
+			<!-- right contents -->
+			<div class="pure-u-1-3" >
+				<div class="pure-u-1-8"><img src="wp-content/Icon_IMS and Ansible_IMS DatabasePage.svg" style="height: 25px;float:left;"></div>
+				<div class="pure-u-3-4"><h3 style="color: black;">IMS and Ansible for managed ACBs
+				and IMS Catalog for self-provisioning</h3>
+					<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/haley-fung1/2023/05/25/ansible-ims-collections" target="_blank" rel="noopener noreferrer" 
+					style="color: #0F62FE;">Read more →</a></div>
+			</div>
+			</div>
+			</div>
+		</div>
+
+	<!--zDDL Util -->
+	<div class="zs-gray-section" style="padding: 2em 6.5em;">
+		<div class="pure-u-1"  style="margin-top: 40px;"><h2>IMS Native z/OS DDL Utility</h2></div>
+		<div class="pure-g">
+		<div class="pure-u-1" >
+			<p>DDL provides for three intuitive and easy to use verbs: CREATE, ALTER, and DROP. The language 
+				is so popular that it has become the de facto industry standard.</p>
+			<p>Starting with IMS 15.3, you can now use the IMS Data Definition utility to submit DDL.<br/>
+			This utility does not require ims Connect and ODBM, and runs in a BMP region of IMS.</p>
+			</div>
+
+
+	<!-- More resources 2 -->
+	  <div class="pure-u-1" style="margin-top: 30px;">
+		<h4 style="color: black;margin-bottom:20px">More resources</h4>
+
+		<!-- left contents -->
+		<div class="pure-g">
+		<div class="pure-u-1-3" >
+				<div class="pure-u-1-8"><img src="wp-content/Icon_Using DDL_IMS DatabasePage.svg" style="height: 25px;float:left;"></div>
+				<div class="pure-u-3-4"><h3 style="color: black;">Data Definition utility</h3>
+					<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/deepak-kohli/2022/06/03/ims-zddl-intro" style="color: #0F62FE;">Read more →</a></div>
+		</div>
+	  <!-- mid contents -->
+		<div class="pure-u-1-3" >
+			<div class="pure-u-1-8"><img src="wp-content/Icon_Using DDL_IMS DatabasePage.svg" style="height: 25px;float:left;"></div>
+			<div class="pure-u-3-4"><h3 style="color: black;">Using DDL to define databases and programviews</h3>
+				<a href="https://www.ibm.com/docs/en/ims/15.4.0?topic=design-using-ddl-define-databases-program-views" style="color: #0F62FE;">Read more →</a></div>
+		</div>
+		<!-- right contents -->
+		<div class="pure-u-1-3" >
+			<div class="pure-u-1-8"><img src="wp-content/Icon_Using DDL_IMS DatabasePage.svg" style="height: 25px;float:left;"></div>
+			<div class="pure-u-3-4"><h3 style="color: black;">IMS Data Definition utility (DFS3ID00) batch enhancement</h3>
+				<a href="https://www.ibm.com/docs/en/ims/15.4.0?topic=idme-ims-data-definition-utility-dfs3id00-dli-batch-enhancement" style="color: #0F62FE;">Read more →</a></div>
+		</div>
+		</div>
+		</div>
+
+  </div>
+  </section>
+  </div>
+
+
+<!-- =========================== Doc / Support =========================== -->
+<div class="zs-gray-section ibm-background-white-core" 
+style="color:white;background-color:#2c2c2c;">
+	<section class="zs-section" style="padding: 2em 4.5em;">
+  
+  <!--Header -->
+	  <div class="pure-u-1 pure-u-sm-1 pure-u-lg-6-24 ibm-padding-bottom-1">
+		  <h2>IMS Blogs</h2>
+	  </div>
+	  <div class="pure-u-lg-2-24" style="margin-right: -22px;"></div>
+  
+  
+  <!-- Selection container -->
+  <div class="pure-u-lg-16-24 pure-u-1">
+	<div class="pure-g" style="display:inline-block;">
+  
+	  <!-- IBM Docs -->
+	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2" style="padding-right: 2.5em;padding-left: 1em;margin-bottom:3em;">
+		<div>
+		  <h3 style="color: white;">IMS database: versatile, powerful, and still running the world</h3>
+		  <p>Some 2000 customers worldwise use IBM IMS. And not just on a small scale: banks, insurance companies, brokerage houses, 
+			hospitals, automotive manufacturers, airplane...
+		  </p>
+		  <!-- <a 
+		  href="ims-docs.html" style="color: #78A9FF;">Read the blog →</a> -->
+		  </div>
+		</div>
+  
+	 <!-- Get help -->
+	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2" style="padding-right: 2.5em;padding-left: 1em;margin-bottom:3em;">
+		<div>
+		  <h3 style="color: white;">Rediscover why enterprises trust IMS DB to manage their critical data</h3>
+		  <p>IMS has been around for over half a century and some of the top fortune 100 companies continue to use IMS including...
+		  </p>
+		  <!-- <a  
+		  href="ims-support.html" style="color: #78A9FF;">Read the blog →</a> -->
+		  </div>
+		</div>
+  
+		</div>
+		</div>
+  
+	  </section>
+	</div>
+
+
+</div>
+</main>
+</div><!-- .entry-content -->
+</article><!-- #post-## -->
+</div>
+</div><!-- #content -->
+</div><!-- end of ibm-content-wrapper -->
+
+	<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
+		<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
+	</p>
+
+	<footer role="contentinfo" aria-label="IBM" id="themeFooter">
+		<div id="boomer-footer" class="boomer_footer_menu"></div>
+		<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
+		  <div class="ibm-columns ibm-padding-bottom-0">
+			<div class="ibm-col-1-1">
+			  <div class="ibm-footer-corporate-links">
+				<ul>
+				<li><a href="https://www.ibm.com/contact/us" style="color: #78A9FF;">Contact</a></li>
+				<li><div></div></li>
+				<li><a href="http://www.ibm.com/privacy/us/en/" style="color: #78A9FF;">Privacy</a></li>
+				<li><div></div></li>
+				<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" style="color: #78A9FF;">Terms of use</a></li>
+				<li><div></div></li>
+				<li><a href="http://www.ibm.com/accessibility/us/en/" style="color: #78A9FF;">Accessibility</a></li>
+					  </ul>
+			  </div>
+			  <div id="ibm-footer-locale-selector"></div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+</div><!-- #page -->
+<!-- Search box functions -->
+<script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
+
+<!-- post-load actions/listeners -->
+<script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
+
+</body>
+</html>

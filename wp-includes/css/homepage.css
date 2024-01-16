@@ -176,29 +176,29 @@
       color: lightgray  !important;
     }
     .ims-m-card {
+      padding: 1.5em;
+      display: inline-block;
       min-width:240px;
-      max-width:450px;
-      /* margin:1em; */
-      min-height: 25em;
-      /* transition: all .2s ease-in-out; */
+      width:49%;
+      background-color: #f4f4f4;
+      min-height: 14em;
+      transition: all .2s ease-in-out;
       /* cursor: pointer; */
     }
     .ims-m-card:hover {
-      box-shadow: 0 5px 10px 0 rgba(216,216,216,0.80);
       /* -webkit-transform: translateY(-3px);
       transform: translateY(-3px); */
-      background-color: white;
+      background-color: #e3e3e3;
     }
     .ims-c-card {
       min-width:240px;
       min-height: 270px;
       height: 90%;
       margin: 1em;
-      border: solid lightgray;
+      background-color: #f4f4f4;
       border-width: 2px;
       /* transition: all .2s ease-in-out; */
       /* cursor: pointer; */
-      background-color: white;
     }
     .ims-c-card:hover {
       box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8);
@@ -208,14 +208,16 @@
     .ims-course-card {
       min-width:240px;
       margin: 1em;
-      border: solid lightgray;
+      margin-top: 2em;
+      height: 360px;
+      border-bottom: dotted lightgray;
       border-width: 2px;
       /* transition: all .2s ease-in-out; */
       /* cursor: pointer; */
       background-color: white;
     }
     .ims-course-card:hover {
-      box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8);
+      /* box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8); */
       /* -webkit-transform: translateY(-3px);
       transform: translateY(-3px); */
     }
@@ -236,7 +238,7 @@
     }
     .blue-purp {
       color: white;
-      background-image:linear-gradient(to right, #427ce4, #5543b9);
+      background-color: #2c2c2c;
     }
     .blue-purp h2,h3,h4{
       color: white;
@@ -367,6 +369,45 @@
       transition: .4s ease all;
       background-size: contain;
       background-repeat: no-repeat;
+    }
+
+    .banner p {
+      font-size: 14pt !important;
+    }
+
+    .ibm-footer-corporate-links div {
+      height: 15px;
+      border-right: solid gray;
+      border-width: 2px;
+      margin-bottom: -3px;
+    }
+    .sitename-wrap h4 {
+      margin-left: 10px;
+    }
+
+    .ibm-card_content a {
+      color: #0F62FE !important;
+    }
+
+    .white-bg {
+      background-image: url(../../wp-content/Innovate_HomepageBG.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .white-bg2 {
+      background-image: url(../../wp-content/Learn_HomepageBG.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .engage-bg {
+      background-image: url(../../wp-content/Engage_HomepageBG.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .support-bg {
+      background-image: url(../../wp-content/IMS_Support_PageBanner.png);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     /* video margin for tablets */
     @media screen and (min-width:1024px) and (max-width:1220px) {
