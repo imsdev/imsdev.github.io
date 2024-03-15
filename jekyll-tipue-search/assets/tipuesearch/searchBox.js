@@ -14,6 +14,7 @@ $(function() {
     // click out pull-up
     $(content).click(function() {
       $(".search_content").delay(100).hide(0);
+      $(toggle1).prop("checked", false);
     });
     // nav click pull-up
     $('.burg-wrap').click(function() {

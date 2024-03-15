@@ -1053,3 +1053,20 @@ div#tipue_search_warning {
 #dw-footer a {
 	color: #0F62FE;
 }
+
+/* scroll to top stuff */
+html {
+	scroll-behavior: smooth;
+}
+#btt {
+	display: none; /* Hidden by default */
+	z-index: 99; 
+	transition: transform .2s;
+	position: fixed; 
+	bottom: 5%;
+	right: 5%;
+}
+#btt:hover {
+	filter: invert(5%);
+	transform: scale(1.2)
+}
