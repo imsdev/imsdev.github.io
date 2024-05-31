@@ -201,7 +201,8 @@
       /* cursor: pointer; */
     }
     .ims-c-card:hover {
-      box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8);
+      background-color: #e3e3e3;
+      /* box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8); */
       /* -webkit-transform: translateY(-3px);
       transform: translateY(-3px); */
     }
@@ -372,7 +373,7 @@
     }
 
     .banner p {
-      font-size: 14pt !important;
+      font-size: 16pt !important;
     }
 
     .ibm-footer-corporate-links div {

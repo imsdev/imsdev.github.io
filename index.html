@@ -93,217 +93,233 @@
 <!-- DROP NAV -->
 <section class="p-menu1 ">
 
-  <nav id="navbar" class="navigation" role="navigation">
-    <input id="toggle1" type="checkbox" />
-    <label class="hamburger1">
-
-      <!-- Header wrapper -->
-      <span class="sitename-wrap">
-        <a href="index.html" style="display: inline-block;float: left;">
-          <img src="wp-content/IMS_logo_small.png"
-          style="z-index:900;" 
-          id="left-bar-brand"/>
-        </a>
-        <a href="index.html" style="display: inline-block;float: left;">
-          <h4 style="line-height: 2;display: inline-block;">
-            IBM <b>IMS Central</b>
-          </h4>
-        </a>
-      </span>
-      <!-- == Header wrapper -->
-
-      <!-- Burgie wrapper -->
-      <label class="burg-wrap" for="toggle1">
-        <span class="burg-bars">
-          <div class="top"></div>
-          <div class="meat"></div>
-          <div class="bottom"></div>
-        </span>
-      </label>
-      <!-- == Burgie wrapper -->
-      <!-- == Main navbar -->
-    </label>
-
-      <!-- Search wrapper -->
-
-      <form class id="searchbar">
-        <div class="tipue_search_right">
-          <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: none;
-                }
-              </style>
-            </defs>
-            <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-            <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-          </svg>
-          <input type="text" name="q" id="tipue_search_input"
-          pattern=".{3,}" title="Search bar"
-          placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-          <svg id="search-clr" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-          </svg>
-        </div>
-        <div style="clear: both;"></div>
-    </form>
-
-
-  <!-- On page-load activation -->
-    <script>
-    $(document).ready(function() {
-    $('#tipue_search_input').tipuesearch();
-    $(toggle1).prop("checked", false);
-    });
-    </script>
-
+	<nav id="navbar" class="navigation" role="navigation">
+	  <input id="toggle1" type="checkbox" />
+	  <label class="hamburger1">
+  
+		<!-- Header wrapper -->
+		<span class="sitename-wrap">
+			<a href="index.html" style="display: inline-block;float: left;">
+				<img src="wp-content/IMS_logo_small.png"
+				style="z-index:900;" 
+				id="left-bar-brand"/>
+			  </a>
+			  <a href="index.html" style="display: inline-block;float: left;">
+				<h4 style="line-height: 2;display: inline-block;">
+				  IBM <b>IMS Central</b>
+				</h4>
+			  </a>
+		</span>
+		<!-- == Header wrapper -->
+  
+		<!-- Burgie wrapper -->
+		<label class="burg-wrap" for="toggle1">
+		  <span class="burg-bars">
+			<div class="top"></div>
+			<div class="meat"></div>
+			<div class="bottom"></div>
+		  </span>
+		</label>
+		<!-- == Burgie wrapper -->
+		<!-- == Main navbar -->
+	  </label>
+  
+		<!-- Search wrapper -->
+  
+		<form class id="searchbar">
+		  <div class="tipue_search_right">
+			<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+			  <defs>
+				<style>
+				  .cls-1 {
+					fill: none;
+				  }
+				</style>
+			  </defs>
+			  <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+			  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+			</svg>
+			<input type="text" name="q" id="tipue_search_input"
+			pattern=".{3,}" title="Search bar"
+			placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+			<svg id="search-clr" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+			</svg>
+		  </div>
+		  <div style="clear: both;"></div>
+	  </form>
+  
+  
+	<!-- On page-load activation -->
+	  <script>
+	  $(document).ready(function() {
+	  $('#tipue_search_input').tipuesearch();
+	  $(toggle1).prop("checked", false);
+	  });
+	  </script>
+  
   <!-- == search wrapper -->
   
     <!-- Dropdown menu options -->
     <nav class="menu1">
-      <div class="pages pure-g">
-
-        <!-- Innovate -->
-        <div class="pure-u-1 pure-u-sm-1-4">
-          <h3>
-            Innovate
-          </h3>
-          <!-- cards/pages -->
-          <!-- 1 -->
-          <a title="APIs" href="ims-apis.html">
-            <div class="navcard">
-              <h5>APIs</h5>
-              <p>Unlock the vlaue of your IMS applications by making easily consumable APIs in minutes.</p>
-            </div>
-          </a>
-          <!-- 2 -->
-          <a title="DevOps" href="ims-devops.html">
-            <div class="navcard">
-              <h5>Automation</h5>
-              <p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
-            </div>
-          </a>
-          <!-- 3 -->
-          <a title="Java" href="ims-java.html">
-            <div class="navcard">
-              <h5>Java</h5>
-              <p>Build Java applications to run inside or outside IMS.</p>
-            </div>
-          </a>
-          <!-- 4 -->
-          <a title="Database" href="ims-db.html">
-            <div class="navcard">
-              <h5>IMS Database</h5>
-              <p>IMS Database: fast, secure, reliable.</p>
-            </div>
-          </a>
-        </div>
-
-        <!-- Engage -->
-        <div class="pure-u-1 pure-u-sm-1-4">
-          <h3>
-            Engage
-          </h3>
-          <!-- cards/pages -->
-          <!-- 1 -->
-          <a title="Gold" href="ims-gold.html">
-            <div class="navcard">
-              <h5>IMS Gold</h5>
-              <p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
-            </div>
-          </a>
-          <!-- 2 -->
-          <a title="Makerspace" href="ims-makerspace.html">
-            <div class="navcard">
-              <h5>Makerspace</h5>
-              <p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
-            </div>
-          </a>
-          <!-- 3 -->
-          <a title="IMS Community"  target="_blank" rel="noopener noreferrer"
-          href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
-            <div class="navcard">
-              <h5>IMS community<img src="wp-content/Icon07.png" style="height: 15px; width: 15px;margin-left:10px"></img>
-              </h5>
-              <p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
-            </div>
-          </a>
-        </div>
-
-
-        <!-- Learn -->
-        <div class="pure-u-1 pure-u-sm-1-4">
-          <h3>
-            Learn
-          </h3>
-          <!-- cards/pages -->
-          <!-- 1 -->
-          <a title="IMS Videos" href="ims-videos.html">
-            <div class="navcard">
-              <h5>IMS videos</h5>
-              <p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
-            </div>
-          </a>
-          <!-- 2 -->
-          <a title="IMS Courses" href="ims-education.html">
-            <div class="navcard">
-              <h5>IMS courses</h5>
-              <p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
-            </div>
-          </a>
-          <!-- 3 -->
-          <a title="IMS Repos on GitHub" href="ims-repos.html">
-            <div class="navcard">
-              <h5>IMS repos on GitHub</h5>
-              <p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
-            </div>
-          </a>
-        </div>
-
-
-
-        <!-- Docs & Support -->
-        <div class="pure-u-1 pure-u-sm-1-4">
-          <h3>
-            Documentation & support
-          </h3>
-          <!-- cards/pages -->
-          <!-- 1 -->
-          <a title="IMS Docs" href="ims-docs.html">
-            <div class="navcard">
-              <h5>IMS documentation</h5>
-              <p>Find information on IMS, tools, and other IBM products.</p>
-            </div>
-          </a>
-          <!-- 2 -->
-          <a title="IMS Support" href="ims-support.html">
-            <div class="navcard">
-              <h5>IMS support</h5>
-              <p>Get help with IMS or other IBM products.</p>
-            </div>
-          </a>
-          <hr style="background-color: gray !important;" />
-          <!-- 3 special -->
-            <div style="padding: 5px 20px 0px 20px;
-            color: white;">
-              <h5>IMS Advocacy</h5>
-              <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
-                IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
-                style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
-            </div>
-
-        </div>
-      </div>
-    </nav>
-</nav>
-<div id="tipue_search_content" class="search_content" style="position: absolute"></div>
-</section>
-
-<!-- DROP NAV END -->
+		<div class="pages pure-g">
+  
+		  <!-- Innovate -->
+		  <div class="pure-u-1 pure-u-sm-1-4">
+			<h3>
+			  Innovate
+			</h3>
+			<!-- cards/pages -->
+			<!-- 1 -->
+			<a title="APIs" href="ims-apis.html">
+			  <div class="navcard">
+				<h5>APIs</h5>
+				<p>Unlock the vlaue of your IMS applications by making easily consumable APIs in minutes.</p>
+			  </div>
+			</a>
+			<!-- 2 -->
+			<a title="DevOps" href="ims-devops.html">
+			  <div class="navcard">
+				<h5>Automation</h5>
+				<p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
+			  </div>
+			</a>
+			<!-- 3 -->
+			<a title="Java" href="ims-java.html">
+			  <div class="navcard">
+				<h5>Java</h5>
+				<p>Build Java applications to run inside or outside IMS.</p>
+			  </div>
+			</a>
+			<!-- 4 -->
+			<a title="Database" href="ims-db.html">
+			  <div class="navcard">
+				<h5>IMS Database</h5>
+				<p>IMS Database: fast, secure, reliable.</p>
+			  </div>
+			</a>
+		  </div>
+  
+		  <!-- Engage -->
+		  <div class="pure-u-1 pure-u-sm-1-4">
+			<h3>
+			  Engage
+			</h3>
+			<!-- cards/pages -->
+			<!-- 1 -->
+			<a title="Gold" href="ims-gold.html">
+			  <div class="navcard">
+				<h5>IMS Gold</h5>
+				<p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
+			  </div>
+			</a>
+			<!-- 2 -->
+			<a title="Makerspace" href="ims-makerspace.html">
+			  <div class="navcard">
+				<h5>Makerspace</h5>
+				<p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
+			  </div>
+			</a>
+			<!-- 3 -->
+			<a title="IMS Community"  target="_blank" rel="noopener noreferrer"
+			href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
+			  <div class="navcard">
+				<h5>IMS community<img src="wp-content/Icon07.png" style="height: 15px; width: 15px;margin-left:10px"></img>
+				</h5>
+				<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
+			  </div>
+			</a>
+      <!-- 4 -->
+			<a title="Advocacy" href="ims-advocate.html">
+          <div class="navcard">
+            <h5>Advocacy</h5>
+            <p>Get or change your IMS advocate.</p>
+          </div>
+        </a>
+		  </div>
+  
+  
+		  <!-- Learn -->
+		  <div class="pure-u-1 pure-u-sm-1-4">
+			<h3>
+			  Learn
+			</h3>
+			<!-- cards/pages -->
+			<!-- 1 -->
+			<a title="IMS Videos" href="ims-videos.html">
+			  <div class="navcard">
+				<h5>IMS videos</h5>
+				<p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
+			  </div>
+			</a>
+			<!-- 2 -->
+			<a title="IMS Courses" href="ims-education.html">
+			  <div class="navcard">
+				<h5>IMS courses</h5>
+				<p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
+			  </div>
+			</a>
+			<!-- 3 -->
+			<a title="IMS Repos on GitHub" href="ims-repos.html">
+			  <div class="navcard">
+				<h5>IMS repos on GitHub</h5>
+				<p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
+			  </div>
+			</a>
+		  </div>
+  
+  
+  
+		  <!-- Docs & Support -->
+		  <div class="pure-u-1 pure-u-sm-1-4">
+			<h3>
+			  Documentation & support
+			</h3>
+			<!-- cards/pages -->
+			<!-- 1 -->
+			<a title="IMS Docs" href="ims-docs.html">
+			  <div class="navcard">
+				<h5>IMS documentation</h5>
+				<p>Find information on IMS, tools, and other IBM products.</p>
+			  </div>
+			</a>
+			<!-- 2 -->
+			<a title="IMS Support" href="ims-support.html">
+			  <div class="navcard">
+				<h5>IMS support</h5>
+				<p>Get help with IMS or other IBM products.</p>
+			  </div>
+			</a>
+			<hr style="background-color: gray !important;" />
+			<!-- 3 special -->
+			  <div style="padding: 5px 20px 0px 20px;
+			  color: white;">
+				<h5>IMS Advocacy</h5>
+				<p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
+				  IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
+				  style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
+			  </div>
+  
+		  </div>
+		</div>
+	  </nav>
+  </nav>
+  <div id="tipue_search_content" class="search_content" style="position: absolute"></div>
+  </section>
+  
+  <!-- DROP NAV END -->
 
 </div>
 </header>
+<!-- RULES:
+Main header                 ~48 (should be already)
+sub header/banner text       22px
 
+section header                36px
+  text underneath sections      22px
+sub-section header            ~should be 25px  
+
+p text                        18px 
+-->
 <div id="content" class="site-content">
 <div class="content-area" id="content-area">
 <article class="page type-page">
@@ -314,7 +330,7 @@
   <main class="zs-main pure-g">
 
     <!-- Banner notification -->
-    <div class="banner-notification pure-g" style="width: 100%;z-index: 30;">
+    <!-- <div class="banner-notification pure-g" style="width: 100%;z-index: 30;">
       <a class="pure-u-1" 
       href="https://mediacenter.ibm.com/media/t/1_fxvmw56g" target="_blank" rel="noopener noreferrer" >      
       <span>  
@@ -325,7 +341,7 @@
       </span>
       </a>
 
-    </div>
+    </div> -->
 
 <!-- Welcome banner -->
   <div class="banner" style="height:auto;padding-top:20px;">
@@ -337,7 +353,7 @@
         <div class="pure-u-1 pure-u-md-18-24 pure-u-lg-12-24" style="float:left;margin-left:30px;margin-top: 50px;color: #78A9FF !important;">
           <div id="intro-info" class="pure-u-1">
 
-            <h1 class="pure-u-4-6 pure-u-lg-2-3" style="color:white;display:inline-block;">IBM IMS <b>Central</b></h1>
+            <h1 class="pure-u-4-6 pure-u-lg-2-3" style="color:white;display:inline-block;">IBM <b>IMS Central</b></h1>
             <p style="color:white" class="zs-margin-section pure-u-5-6 pure-u-lg-4-5">
               Welcome to IMS™ Central.
               <br><br>
@@ -383,7 +399,7 @@
     <div class="pure-u-lg-6-24 pure-u-1 pure-u-sm-1 pure-u-md-1 ibm-padding-bottom-1">
       <div>
         <h2>Innovate</h2>
-        <p class="pure-u-lg-7-8 pure-u-1" style="font-size: 14pt;">Discover how to modernize your IMS system and business applications.</p>
+        <p class="pure-u-lg-7-8 pure-u-1" style="font-size: 17pt;">Discover how to modernize your IMS system and business applications.</p>
       </div>
     </div>
 
@@ -478,7 +494,7 @@ style="background-image: url(wp-content/BG02.png) !important;width:100%">
 <!--Header -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-lg-6-24 ibm-padding-bottom-1">
         <h2>Engage</h2>
-        <p style="font-size: 14pt;">Stay engaged with the IBM IMS team and other customers.</p>
+        <p style="font-size: 17pt;">Stay engaged with the IBM IMS team and other customers.</p>
     </div>
     <div class="pure-u-lg-2-24"></div>
 
@@ -552,15 +568,15 @@ style="background-image: url(wp-content/BG02.png) !important;width:100%">
   	</div>
 <!-- =========================== Learn / Education =========================== -->
 
-<div class="zs-gray-section white-bg2" style="margin-bottom: -50px;">
+<div class="zs-gray-section white-bg2" style="margin-bottom: -50px;width: 100%;">
   <section class="zs-section">
 
 <!--Header -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-lg-6-24 ibm-padding-bottom-1">
         <h2>Learn</h2>
-        <p style="font-size: 14pt;">Build your IMS skills through courses, videos, and code repos.</p>
+        <p style="font-size: 17pt;">Build your IMS skills through courses, videos, and code repos.</p>
     </div>
-
+    <div class="pure-u-lg-2-24" style="margin-right: -9px;"></div>
 
 <!-- Selection container -->
 <div class="pure-u-lg-16-24 pure-u-1">
@@ -568,7 +584,7 @@ style="background-image: url(wp-content/BG02.png) !important;width:100%">
 
   <!-- IBM Videos -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24" style="padding-right: 2.5em;margin-bottom:3em;">
-      <div style="padding: 15px;">
+      <div>
         <img src="wp-content/Icon_Banner_IMS VideosPage.svg" alt="Information booklet icon" style="margin-bottom:15px;height: 30px;">
         <h3 style="color: black;">IMS videos</h3>
         <p>Check out IMS educational videos on Java, version migration, 
@@ -580,7 +596,7 @@ style="background-image: url(wp-content/BG02.png) !important;width:100%">
     
   <!-- Skills Launchpad -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24" style="padding-right: 2.5em;margin-bottom:3em;">
-      <div style="padding: 15px;">
+      <div>
         <img src="wp-content/Icon_Banner_IMS CoursesPage.svg" alt="Information booklet icon" style="margin-bottom:15px;height: 30px;">
         <h3 style="color: black;">IMS courses</h3>
         <p>Your education portal for role-based, self-paced learning. See the latest 
@@ -592,7 +608,7 @@ style="background-image: url(wp-content/BG02.png) !important;width:100%">
 
    <!-- IBM GitHub -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24" style="padding-right: 2.5em;margin-bottom:3em;">
-      <div style="padding: 15px;">
+      <div>
         <img src="wp-content/Icon_Homepage_IMS GitHub.svg" alt="Information booklet icon" style="margin-bottom:15px;height: 30px;">
         <h3 style="color: black;">IMS GitHub</h3>
         <p>See the IMS GitHub repositories to grab sample code, learn 
@@ -605,7 +621,7 @@ style="background-image: url(wp-content/BG02.png) !important;width:100%">
 </div>
 </div>
 
-  </section>
+</section>
 </div>
 
 <!-- =========================== Doc / Support =========================== -->
@@ -615,7 +631,7 @@ style="background-image: url(wp-content/BG02.png) !important;width:100%">
 <!--Header -->
     <div class="pure-u-1 pure-u-sm-1 pure-u-lg-6-24 ibm-padding-bottom-1">
         <h2>Docs and Support</h2>
-        <p style="font-size: 14pt;">Find IMS documentation or get help with IMS.</p>
+        <p style="font-size: 17pt;">Find IMS documentation or get help with IMS.</p>
     </div>
     <div class="pure-u-lg-1-24" style="margin-right: -22px;"></div>
 
