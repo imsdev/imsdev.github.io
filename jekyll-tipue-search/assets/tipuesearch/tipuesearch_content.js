@@ -151,12 +151,17 @@ var tipuesearch = {"pages": [{
     "title": "IMS Physical Organization of Databases <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "These videos show you how to design, implement, and recover IMS databases.",
     "tags": "learn courses badges db_organization db organization",
-    "url": "ims-videos.html#ims-phys-db"
+    "url": "ims-education.html#ims-phys-db"
   },{
     "title": "Introduction to the PL/I Programming Language <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This course covers the basics of PL/I, including language syntax, program structure, and more.",
     "tags": "learn courses badges pli pl/i programming_language",
-    "url": "ims-videos.html#ims-intro-pli"
+    "url": "ims-education.html#ims-intro-pli"
+  },{
+    "title": "IMS Database Repair <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn about the tools and techniques you need to recover corrupted IMS databases.",
+    "tags": "learn courses badges database_repair db_repair repair corrupted_db dedb haldb full-function integrity",
+    "url": "ims-education.html#ims-dbrc"
   },{
     "title": "IMS Diagnostics <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This course shows you how to diagnose IMS problems, resolve common abends, and more.",
