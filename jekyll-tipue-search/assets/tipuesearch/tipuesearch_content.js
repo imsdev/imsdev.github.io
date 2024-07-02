@@ -61,50 +61,77 @@ var tipuesearch = {"pages": [{
   },
   // Videos
   {
+    "title": "IMS Community Calls <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Find out the latest news in the world of IMS.",
+    "tags": "community_call latest",
+    "url": "ims-videos.html#ims-comm"
+  },{
     "title": "Introduction to IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch a quick high-level overview of the IMS product.",
     "tags": "introduction basics ims_basics",
     "url": "ims-videos.html#ims-intro"
-  },{
-    "title": "Migrating to IMS 15 <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "Watch these videos to help plan for your migration to IMS 15.",
-    "tags": "mig migration",
-    "url": "ims-videos.html#ims-mig"
   },{
     "title": "Ansible for IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "This video shows how to use Ansible for IBM Z to automate IMS workloads.",
     "tags": "ansible ims_ansible",
     "url": "ims-videos.html#ims-ansible"
   },{
-    "title": "IMS DBRC <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "Watch these videos to learn how to implement IMS DBRC.",
-    "tags": "dbrc ims_dbrc",
-    "url": "ims-videos.html#ims-dbrc"
+    "title": "IMS Tools <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Watch videos on various IMS tools for reporting, transaction analysis, and more.",
+    "tags": "ims_tools performance_analyzer administration_foundation transaction_analysis_workbench",
+    "url": "ims-videos.html#ims-tools"
+  },
+  // {
+  //   "title": "Migrating to IMS 15 <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+  //   "text": "Watch these videos to help plan for your migration to IMS 15.",
+  //   "tags": "mig migration",
+  //   "url": "ims-videos.html#ims-mig"
+  // },
+  {
+    "title": "IMS Managed ACBs <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Watch this video to learn about the advantages of allowing IMS to manage ACBs for databases and program views for you.",
+    "tags": "introduction mACB",
+    "url": "ims-videos.html#ims-macb"
   },{
     "title": "Intro to IMS Catalog <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "Get an introduction to the IMS catalog in these short videos. ",
+    "text": "Get an introduction to the IMS catalog in these short videos.",
     "tags": "ims_catalog catalog",
-    "url": "ims-videos.html#ims-cat"
+    "url": "ims-videos.html#ims-macb"
   },{
-    "title": "IMS DRD for MODBLKS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "Watch these videos to learn about IMS dynamic resource definition for MODBLKS.",
-    "tags": "ims_drd drd mdblk",
-    "url": "ims-videos.html#ims-drd-mdblk"
+    "title": "IMS Catalog Database Repair and Recovery <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Learn how to repair and recover the IMS catalog HALDB database.",
+    "tags": "ims_catalog catalog db_repair HALDB",
+    "url": "ims-videos.html#ims-cat-db"
   },{
-    "title": "IMS DRD for IMSRSC <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "This video series covers using IMS DRD for the IMSRSC repository.",
-    "tags": "ims_drd drd imsrsc",
-    "url": "ims-videos.html#ims-drd-imsrsc"
+    "title": "IMS Full-Function Log Record Analysis <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Watch these videos to learn about log records for full-function databases.",
+    "tags": "ims_logs log_record full-function scheduling",
+    "url": "ims-videos.html#ims-ff-log"
   },{
-    "title": "IMS Dynamic Commands <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "This video series offers an introduction to IMS dynamic commands.",
-    "tags": "ims cmd cmds ims_commands commands",
-    "url": "ims-videos.html#ims-dyn-cmds"
+    "title": "How to Reorganize the IMS DBRC RECON Data Sets <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Watch these videos to learn how to reorganize IMS DBRC RECON data sets.",
+    "tags": "ims_dbrc dbrc recon",
+    "url": "ims-videos.html#ims-reorg-dbrc"
   },{
-    "title": "IMS High Availability and Resiliency <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "This video provides strategies to support IMS operations, change, growth, and address failures in IMS.",
-    "tags": "ims_ha high_availability",
-    "url": "ims-videos.html#ims-ha"
+    "title": "IMS Security Audits: Gathering the Right Documentation <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Watch these videos to learn how to conduct an effective IMS security health check.",
+    "tags": "ims_security_audit ims_health health_check",
+    "url": "ims-videos.html#ims-sec-aud"
+  },{
+    "title": "IMS Monitor Reports <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Watch these videos to learn how to create reports using the IMS Monitor.",
+    "tags": "ims_monitor report",
+    "url": "ims-videos.html#ims-mon-rep"
+  },{
+    "title": "IMS Diagnostic Techniques <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Watch these videos to learn how to resolve common problems during IMS restart.",
+    "tags": "ims_diagnostic_techniques ims_problems ims_restart",
+    "url": "ims-videos.html#ims-dg-tech"
+  },{
+    "title": "IMS and Distributed Environment Security <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+    "text": "Watch these videos to learn how to secure distributed environments connected to IMS.",
+    "tags": "distributed_environments ims_security security",
+    "url": "ims-videos.html#ims-dis-env"
   },{
     "title": "Java IMS Demos<img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "These short videos show you how to add various functions in your Java applications for IMS.",
@@ -116,16 +143,6 @@ var tipuesearch = {"pages": [{
     "tags": "ims_explorer explorer_for_development development",
     "url": "ims-videos.html#ims-exp"
   },{
-    "title": "IMS Tools <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "Watch videos on various IMS tools for reporting, transaction analysis, and more.",
-    "tags": "ims_tools tools",
-    "url": "ims-videos.html#ims-tools"
-  },{
-    "title": "IMS Managed ACBs <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "Watch this video to learn about the advantages of allowing IMS to manage ACBs for databases and program views for you.",
-    "tags": "introduction mACB",
-    "url": "ims-videos.html#ims-macb"
-  },{
     "title": "Java and IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "This introductory video series helps you learn how to create Java applications for IMS.",
     "tags": "introduction java",
@@ -136,6 +153,32 @@ var tipuesearch = {"pages": [{
     "tags": "introduction java",
     "url": "ims-videos.html#ims-interop"
   },
+  // {
+  //   "title": "IMS DBRC <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+  //   "text": "Watch these videos to learn how to implement IMS DBRC.",
+  //   "tags": "dbrc ims_dbrc",
+  //   "url": "ims-videos.html#ims-dbrc"
+  // },{
+  //   "title": "IMS DRD for MODBLKS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+  //   "text": "Watch these videos to learn about IMS dynamic resource definition for MODBLKS.",
+  //   "tags": "ims_drd drd mdblk",
+  //   "url": "ims-videos.html#ims-drd-mdblk"
+  // },{
+  //   "title": "IMS DRD for IMSRSC <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+  //   "text": "This video series covers using IMS DRD for the IMSRSC repository.",
+  //   "tags": "ims_drd drd imsrsc",
+  //   "url": "ims-videos.html#ims-drd-imsrsc"
+  // },{
+  //   "title": "IMS Dynamic Commands <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+  //   "text": "This video series offers an introduction to IMS dynamic commands.",
+  //   "tags": "ims cmd cmds ims_commands commands",
+  //   "url": "ims-videos.html#ims-dyn-cmds"
+  // },{
+  //   "title": "IMS High Availability and Resiliency <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
+  //   "text": "This video provides strategies to support IMS operations, change, growth, and address failures in IMS.",
+  //   "tags": "ims_ha high_availability",
+  //   "url": "ims-videos.html#ims-ha"
+  // },
   // Courses
   {
     "title": "IMS Physical Organization of Databases <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
