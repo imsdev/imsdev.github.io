@@ -111,11 +111,6 @@ var tipuesearch = {"pages": [{
     "tags": "ims_java java",
     "url": "ims-videos.html#ims-java"
   },{
-    "title": "Database Application Programming <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "Learn about database application programming in IMS.",
-    "tags": "ims_db database_programming drivers",
-    "url": "ims-videos.html#ims-db-prog"
-  },{
     "title": "IMS Explorer <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "What this video to learn about an Eclipse-based tool that simplifies IMS tasks for application development.",
     "tags": "ims_explorer explorer_for_development development",
@@ -161,7 +156,22 @@ var tipuesearch = {"pages": [{
     "title": "IMS Database Repair <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn about the tools and techniques you need to recover corrupted IMS databases.",
     "tags": "learn courses badges database_repair db_repair repair corrupted_db dedb haldb full-function integrity",
-    "url": "ims-education.html#ims-dbrc"
+    "url": "ims-education.html#ims-db-repair"
+  },{
+    "title": "IMS TM Performance Analysis <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn how to run the IMS Transaction Manager system efficiently.",
+    "tags": "learn courses badges ims_tm tm transaction_manager ims-performance performance",
+    "url": "ims-education.html#ims-tm-performance"
+  },{
+    "title": "IMS TM Application Programming <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "This courses show you how to write application programs for IMS Transaction Manager.",
+    "tags": "learn courses badges ims_tm tm application_programming tm_application dl/i ",
+    "url": "ims-education.html#ims-tm-prog"
+  },{
+    "title": "Database Application Programming <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn about database application programming in IMS.",
+    "tags": "learn courses badges ims_db database_programming drivers",
+    "url": "ims-education.html#ims-db-prog"
   },{
     "title": "IMS Diagnostics <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This course shows you how to diagnose IMS problems, resolve common abends, and more.",
