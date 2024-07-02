@@ -138,11 +138,6 @@ var tipuesearch = {"pages": [{
   },
   // Courses
   {
-    "title": "IMS Fundamentals <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
-    "text": "Take this comprehensive course to learn about IMS DB, TM, and core IMS functions.",
-    "tags": "learn courses badges ims_fundamentals",
-    "url": "ims-education.html#ims-fundamentals"
-  },{
     "title": "IMS Physical Organization of Databases <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "These videos show you how to design, implement, and recover IMS databases.",
     "tags": "learn courses badges db_organization db organization",
@@ -165,7 +160,7 @@ var tipuesearch = {"pages": [{
   },{
     "title": "IMS TM Application Programming <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This courses show you how to write application programs for IMS Transaction Manager.",
-    "tags": "learn courses badges ims_tm tm application_programming tm_application dl/i ",
+    "tags": "learn courses badges ims_tm tm application_programming tm_application dl/i dli",
     "url": "ims-education.html#ims-tm-prog"
   },{
     "title": "Database Application Programming <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
@@ -173,40 +168,10 @@ var tipuesearch = {"pages": [{
     "tags": "learn courses badges ims_db database_programming drivers",
     "url": "ims-education.html#ims-db-prog"
   },{
-    "title": "IMS Diagnostics <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
-    "text": "This course shows you how to diagnose IMS problems, resolve common abends, and more.",
-    "tags": "learn courses badges ims_diagnostics",
-    "url": "ims-education.html#ims-diagnostics"
-  },{
-    "title": "IMS DBCTL <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
-    "text": "Learn how to implement an IMS DB and CICS system (DBCTL).",
-    "tags": "learn courses badges ims_diagnostics",
-    "url": "ims-education.html#ims-dbctl"
-  },{
-    "title": "IMS Shared Queues <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
-    "text": "Learn how to implement and manage an IMS shared queues environment.",
-    "tags": "learn courses badges ims_shared_queues",
-    "url": "ims-education.html#ims-squeues"
-  },{
-    "title": "IMS Fast Path implementation <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
-    "text": "Learn how to implement and manage transactions and DEDBs an IMS Fast Path environment.",
-    "tags": "learn courses badges ims_fast_path",
-    "url": "ims-education.html#ims-fpimpl"
-  },{
-    "title": "IMS Database Fundamentals <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
-    "text": "Learn about IMS databases, the structure of database records, and how those records are accessed.",
-    "tags": "learn courses badges ims_database_fundamentals database",
-    "url": "ims-education.html#ims-dbfund"
-  },{
-    "title": "IMS System Programming: DB and TM <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
-    "text": "Learn about system programming tasks for IMS database and transaction flows.",
-    "tags": "learn courses badges sys_prog system programming db tm",
-    "url": "ims-education.html#ims-dbtm"
-  },{
-    "title": "IMS Data Sharing <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
-    "text": "Learn about how to implement and maintain a data sharing environment that offers concurrent database access.",
-    "tags": "learn courses badges data_sharing",
-    "url": "ims-education.html#ims-datashare"
+    "title": "IMS Database Performance and Tuning <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "This course shows you how to tune IBM® IMS™ databases.",
+    "tags": "learn courses badges tuning performance ims_db db_tuning database_tuning VSAM OSAM",
+    "url": "ims-education.html#ims-db-tune"
   },{
     "title": "IMS Database Recovery Control (DBRC) <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn how to implement and use DBRC to recover IMS databases.",
@@ -217,4 +182,45 @@ var tipuesearch = {"pages": [{
     "text": "Learn how to implement, maintain, and migrate to IMS HALDBs.",
     "tags": "learn courses badges haldb db database",
     "url": "ims-education.html#ims-haldb"
-  }]};
+  },{
+    "title": "IMS Data Sharing <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn about how to implement and maintain a data sharing environment that offers concurrent database access.",
+    "tags": "learn courses badges data_sharing",
+    "url": "ims-education.html#ims-datashare"
+  },{
+    "title": "IMS System Programming: DB and TM <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn about system programming tasks for IMS database and transaction flows.",
+    "tags": "learn courses badges sys_prog system programming db tm",
+    "url": "ims-education.html#ims-dbtm"
+  },{
+    "title": "IMS Database Fundamentals <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn about IMS databases, the structure of database records, and how those records are accessed.",
+    "tags": "learn courses badges ims_database_fundamentals database dbd psb dl/i dli secondary_index logical_relationship",
+    "url": "ims-education.html#ims-dbfund"
+  },{
+    "title": "IMS Fundamentals <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Take this comprehensive course to learn about IMS DB, TM, and core IMS functions.",
+    "tags": "learn courses badges ims_fundamentals",
+    "url": "ims-education.html#ims-fundamentals"
+  },{
+    "title": "IMS Diagnostics <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "This course shows you how to diagnose IMS problems, resolve common abends, and more.",
+    "tags": "learn courses badges ims_diagnostics ipsc ipsc-commands interactive_dump_formatter ims-abends debugging",
+    "url": "ims-education.html#ims-diagnostics"
+  },{
+    "title": "IMS DBCTL <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn how to implement an IMS DB and CICS system (DBCTL).",
+    "tags": "learn courses badges ims_diagnostics dbctl cics",
+    "url": "ims-education.html#ims-dbctl"
+  },{
+    "title": "IMS Shared Queues <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn how to implement and manage an IMS shared queues environment.",
+    "tags": "learn courses badges ims_shared_queues sysplex",
+    "url": "ims-education.html#ims-squeues"
+  },{
+    "title": "IMS Fast Path implementation <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "Learn how to implement and manage transactions and DEDBs an IMS Fast Path environment.",
+    "tags": "learn courses badges ims_fast_path system_admin ims_tm dbctl cics",
+    "url": "ims-education.html#ims-fpimpl"
+  }
+]};
