@@ -58,7 +58,9 @@ var tipuesearch = {"pages": [{
     "text": "Get help to resolve problems with IMS components, open cases, or request enhancements. ",
     "tags": "support ims_support ",
     "url": "ims-support.html"
-  },{
+  },
+  // Videos
+  {
     "title": "Introduction to IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch a quick high-level overview of the IMS product.",
     "tags": "introduction basics ims_basics",
@@ -78,11 +80,6 @@ var tipuesearch = {"pages": [{
     "text": "Watch these videos to learn how to implement IMS DBRC.",
     "tags": "dbrc ims_dbrc",
     "url": "ims-videos.html#ims-dbrc"
-  },{
-    "title": "IMS Physical Organization of Databases <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-    "text": "These videos show you how to design, implement, and recover IMS databases.",
-    "tags": "db_organization db organization",
-    "url": "ims-videos.html#ims-db-org"
   },{
     "title": "Intro to IMS Catalog <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Get an introduction to the IMS catalog in these short videos. ",
@@ -143,11 +140,23 @@ var tipuesearch = {"pages": [{
     "text": "This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications.",
     "tags": "introduction java",
     "url": "ims-videos.html#ims-interop"
-  },{
+  },
+  // Courses
+  {
     "title": "IMS Fundamentals <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Take this comprehensive course to learn about IMS DB, TM, and core IMS functions.",
     "tags": "learn courses badges ims_fundamentals",
     "url": "ims-education.html#ims-fundamentals"
+  },{
+    "title": "IMS Physical Organization of Databases <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "These videos show you how to design, implement, and recover IMS databases.",
+    "tags": "learn courses badges db_organization db organization",
+    "url": "ims-videos.html#ims-phys-db"
+  },{
+    "title": "Introduction to the PL/I Programming Language <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
+    "text": "This course covers the basics of PL/I, including language syntax, program structure, and more.",
+    "tags": "learn courses badges pli pl/i programming_language",
+    "url": "ims-videos.html#ims-intro-pli"
   },{
     "title": "IMS Diagnostics <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This course shows you how to diagnose IMS problems, resolve common abends, and more.",
