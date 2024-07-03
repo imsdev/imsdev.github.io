@@ -63,22 +63,22 @@ var tipuesearch = {"pages": [{
   {
     "title": "IMS Community Calls <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Find out the latest news in the world of IMS.",
-    "tags": "community_call latest",
+    "tags": "community_call latest upcoming events conferences webinars enhancements advocacy_program ai hybrid_cloud",
     "url": "ims-videos.html#ims-comm"
   },{
     "title": "Introduction to IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch a quick high-level overview of the IMS product.",
-    "tags": "introduction basics ims_basics",
+    "tags": "introduction basics ims_basics fundamentals intro application_development tm db",
     "url": "ims-videos.html#ims-intro"
   },{
     "title": "Ansible for IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "This video shows how to use Ansible for IBM Z to automate IMS workloads.",
-    "tags": "ansible ims_ansible",
+    "tags": "ansible ims_ansible install_ansible control_node automate",
     "url": "ims-videos.html#ims-ansible"
   },{
     "title": "IMS Tools <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch videos on various IMS tools for reporting, transaction analysis, and more.",
-    "tags": "ims_tools performance_analyzer administration_foundation transaction_analysis_workbench",
+    "tags": "ims_tools performance_analyzer administration_foundation transaction_analysis_workbench management_console administration_tool integrity_utility dbd_viewer workload_router cloning_tool otma_workload setup_utility buffer_pool_analyzer splunk ims_connect browser_interface",
     "url": "ims-videos.html#ims-tools"
   },
   // {
@@ -100,12 +100,12 @@ var tipuesearch = {"pages": [{
   },{
     "title": "IMS Catalog Database Repair and Recovery <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Learn how to repair and recover the IMS catalog HALDB database.",
-    "tags": "ims_catalog catalog db_repair HALDB",
+    "tags": "ims_catalog catalog db_repair haldb phidam osam database_repair haldb_repair",
     "url": "ims-videos.html#ims-cat-db"
   },{
     "title": "IMS Full-Function Log Record Analysis <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn about log records for full-function databases.",
-    "tags": "ims_logs log_record full-function scheduling",
+    "tags": "ims_logs log_record full-function full_function scheduling",
     "url": "ims-videos.html#ims-ff-log"
   },{
     "title": "How to Reorganize the IMS DBRC RECON Data Sets <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
@@ -115,27 +115,27 @@ var tipuesearch = {"pages": [{
   },{
     "title": "IMS Security Audits: Gathering the Right Documentation <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to conduct an effective IMS security health check.",
-    "tags": "ims_security_audit ims_health health_check",
+    "tags": "ims_security_audit ims_health health_check encryption psb_security vsam_security security racf documentation",
     "url": "ims-videos.html#ims-sec-aud"
   },{
     "title": "IMS Monitor Reports <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to create reports using the IMS Monitor.",
-    "tags": "ims_monitor report",
+    "tags": "ims_monitor report pool_statistics statistics",
     "url": "ims-videos.html#ims-mon-rep"
   },{
     "title": "IMS Diagnostic Techniques <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to resolve common problems during IMS restart.",
-    "tags": "ims_diagnostic_techniques ims_problems ims_restart",
+    "tags": "ims_diagnostic_techniques ims_problems tuning tm tm_performance ims_monitor performance_analyzer logger olds wads pool message_format_service mfs ims_connect configuration_member otma",
     "url": "ims-videos.html#ims-dg-tech"
   },{
     "title": "IMS and Distributed Environment Security <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to secure distributed environments connected to IMS.",
-    "tags": "distributed_environments ims_security security",
+    "tags": "distributed_environments ims_security security racf distributed_identities flood_control credential_propagation tpipe ytip atee",
     "url": "ims-videos.html#ims-dis-env"
   },{
     "title": "Java IMS Demos<img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "These short videos show you how to add various functions in your Java applications for IMS.",
-    "tags": "ims_java java",
+    "tags": "ims_java java jdbc",
     "url": "ims-videos.html#ims-java"
   },{
     "title": "IMS Explorer <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
@@ -145,12 +145,12 @@ var tipuesearch = {"pages": [{
   },{
     "title": "Java and IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "This introductory video series helps you learn how to create Java applications for IMS.",
-    "tags": "introduction java",
+    "tags": "introduction java modernize",
     "url": "ims-videos.html#ims-javaims"
   },{
     "title": "31-bit COBOL and 64-bit Java Interoperability <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications.",
-    "tags": "introduction java",
+    "tags": "introduction java modernize cobol",
     "url": "ims-videos.html#ims-interop"
   },
   // {
