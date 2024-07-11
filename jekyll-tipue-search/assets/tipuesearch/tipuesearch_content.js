@@ -183,87 +183,87 @@ var tipuesearch = {"pages": [{
   {
     "title": "IMS Physical Organization of Databases <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "These videos show you how to design, implement, and recover IMS databases.",
-    "tags": "learn courses badges db_organization db organization dbd psb dl/i dli hisam test_program hierarchic_direct hd hidam hdam database_reorganization secondary_index haldb database_recovery database_design",
+    "tags": "learn courses badges database db_organization db dbd dbdgen psb psbgen hisam vsam osam dfsddlt0 dl/i_test_program hierarchy hierarchic_direct hd hidam hdam gsam shisam database_reorganization secondary_index haldb database_recovery recovery_utility database_design",
     "url": "ims-education.html#ims-phys-db"
   },{
     "title": "Introduction to the PL/I Programming Language <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This course covers the basics of PL/I, including language syntax, program structure, and more.",
-    "tags": "learn courses badges pli pl/i programming_language directives",
+    "tags": "learn courses badges pli pl/i programming_language directives loops function bit array string recursion",
     "url": "ims-education.html#ims-intro-pli"
   },{
     "title": "IMS Database Repair <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn about the tools and techniques you need to recover corrupted IMS databases.",
-    "tags": "learn courses badges database_repair db_repair repair corrupted_db dedb integrity hierarchic_direct hd full-function",
+    "tags": "learn courses badges database_repair db_repair repair corrupted_db dedb integrity hierarchic_direct hd storage full-function access_method pointers sdep sequential_dependent_segments",
     "url": "ims-education.html#ims-db-repair"
   },{
     "title": "IMS TM Performance Analysis <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn how to run the IMS Transaction Manager system efficiently.",
-    "tags": "learn courses badges ims_tm tm transaction_manager ims-performance performance vtam ims_connect ims_logger scheduling",
+    "tags": "learn courses badges ims_tm tm transaction_manager ims-performance performance vtam ims_logger pool_management scheduling scheduling_flows mfs message_format_service message_queue configuration_member ims_connect work_load_manager wlm program_load elapsed_time buffering",
     "url": "ims-education.html#ims-tm-performance"
   },{
     "title": "IMS TM Application Programming <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This courses show you how to write application programs for IMS Transaction Manager.",
-    "tags": "learn courses badges ims_tm tm application_programming tm_application dl/i dli batch message_processing message_format gsam conversational_programming",
+    "tags": "learn courses badges ims_tm tm application_programming tm_application dl/i dli batch message_processing gsam conversational_programming logical_terminals message_format_service mfs queuing message_queues queues message message_input_descriptor mid message_output_descriptor mod ",
     "url": "ims-education.html#ims-tm-prog"
   },{
     "title": "Database Application Programming <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn about database application programming in IMS.",
-    "tags": "learn courses badges ims_db database_programming drivers dl/i dli haldb ssa dl/i_test_program system_service_call",
+    "tags": "learn courses badges ims_db database_programming drivers dl/i dli haldb ssa dl/i_test_program system_service_call database_hierarchy dbd psb pcb_mask gu gn get_unique get_next update_call segment_retrieval dlt0",
     "url": "ims-education.html#ims-db-prog"
   },{
     "title": "IMS Database Performance and Tuning <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This course shows you how to tune IBM® IMS™ databases.",
-    "tags": "learn courses badges tuning performance ims_db db_tuning database_tuning VSAM OSAM access_method hd_pointers secondary_index hdam osam",
+    "tags": "learn courses badges tuning performance ims_db db_tuning database_tuning vsam_buffer vsam_lsr_pool esds ksds access_method hd_pointers secondary_index_tuning hdam_tuning osam_tuning hisam hidam ims_monitor segment_compression",
     "url": "ims-education.html#ims-db-tune"
   },{
     "title": "IMS Database Recovery Control (DBRC) <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn how to implement and use DBRC to recover IMS databases.",
-    "tags": "learn courses badges dbrc recovery db database data_sharing genjcl skeletal_jcl utilities recon",
+    "tags": "learn courses badges dbrc recovery db database data_sharing genjcl skeletal_jcl utilities recon database_registration db_registration full-function_registration fast_path_registration haldb_registration batch_logs online_logging",
     "url": "ims-education.html#ims-dbrc"
   },{
     "title": "IMS High Availability Large Database (HALDB) <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn how to implement, maintain, and migrate to IMS HALDBs.",
-    "tags": "learn courses badges haldb db database partition high_availability_large_database",
+    "tags": "learn courses badges haldb db database partition high_availability_large_database self-healing_pointers extended_pointer_sets ilds ddname dbdgen haldb_candidates online_reorganization haldb_secondary_indexes migrating_haldb",
     "url": "ims-education.html#ims-haldb"
   },{
     "title": "IMS Data Sharing <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn about how to implement and maintain a data sharing environment that offers concurrent database access.",
-    "tags": "learn courses badges data_sharing ims_system sysplex ims_subsystem irlm coupling_facilities lock",
+    "tags": "learn courses badges data_sharing ims_system sysplex ims_subsystem irlm coupling_facilities lock_management database_authorizations buffer_invalidations lock_manager osam_caching dedb_vso_caching dedb_sdep_caching irlm_failures arm fdbr disaster_recovery monitor_reports cmf cics_monitoring_facility deadlock_reports rmf_reports lock_trace irlm_component_trace sysplex_dumps",
     "url": "ims-education.html#ims-datashare"
   },{
     "title": "IMS System Programming: DB and TM <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn about system programming tasks for IMS database and transaction flows.",
-    "tags": "learn courses badges sys_prog system programming db tm system_architecture ivp",
+    "tags": "learn courses badges sys_prog system programming db tm system_architecture ivp smp/e system_modification_program/extended installation_verification_program message_format_services message_queuing conversational_program scheduling_control_blocks database_buffering ims_locking logging dbrc syncpoint_processing bmp cics db2 jclin drd ims_catalog online_change dynamic_resource_definition data_sharing shared_queues csl_components spoc_facility single_point_of_control common_service_layer ivp execution",
     "url": "ims-education.html#ims-dbtm"
   },{
     "title": "IMS Database Fundamentals <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn about IMS databases, the structure of database records, and how those records are accessed.",
-    "tags": "learn courses badges ims_database_fundamentals database dbd psb dl/i dli secondary_index logical_relationship sequential direct_access full-function haldb fast_path dedb msdb common_service_layer csl dynamic_resource_definition drd dbrc",
+    "tags": "learn courses badges ims_database_fundamentals database dbd psb pcb_masks ssa segment_search_argument get_unique get_next repl dlet isrt chkp checkpoint extended_restart xrst test_program dfsddlt0 physical_storage dl/i dli secondary_index logical_relationship field-level_sensitivity compression_routines variable-length_segments bmp batch_message_processing common_logging_facility ims_security olds wads dbrc database_recovery_control recon registered_databased transaction-oriented program_isolation sequential direct_access full-function haldb fast_path dedb data_entry_database main_storage_database msdb mads multiple_area_data_sets subset_pointers sdeps hsam hisam hd hdam hidam phidam phdam storage_format dedb msdb common_service_layer csl dynamic_resource_definition drd dbrc hierarchical_database ",
     "url": "ims-education.html#ims-dbfund"
   },{
     "title": "IMS Fundamentals <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Take this comprehensive course to learn about IMS DB, TM, and core IMS functions.",
-    "tags": "learn courses badges ims_fundamentals db tm database transaction_manager dl/i dli online_system fast_path",
+    "tags": "learn courses badges ims_fundamentals db tm database transaction_manager dl/i dli online_system fast_path hierarchical_database dbd psb application_control_blocks batch_execution ims_catalog database_logging segment_search_argument ssa get_unique get_next repl dlet isrt checkpoint chkp extended_restart xrst physical_storage hd hsam hisam hdam phdam hidam phidam logical_relationship secondary_index variable-length_segment compression_routines field-level_sensitivity online_system dependent_region batch_message_processing bmp common_logging_facility olds wads database_recovery recon program_isolation restart ims_generation database_recovery_facility logical_terminals message_queues message_format_service mfs scheduling wfi wait-for-input dynamic_transaction_backout conversational_programming advanced_program-to-program_communication appc otma ims_connect dedb sdep subset_pointers partitioning vso field_call main_storage_database msdb expedited_message_handler emh distributed_database db2 cics open_database_access odba dfsms concurrent_copy remote_site_recovery ims_failure data_sharing dbrc_share-level n-way osam_caching fdbr shared_queues common_service_layer csl operations_manager om imsplex single_point_of_control spoc dynamic_resource_definition drd call-in call-out java_distributed_access",
     "url": "ims-education.html#ims-fundamentals"
   },{
     "title": "IMS Diagnostics <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "This course shows you how to diagnose IMS problems, resolve common abends, and more.",
-    "tags": "learn courses badges ims_diagnostics ipsc interactive_dump_formatter ims-abends debugging ims_dump address_space task_control_block tcb interactive_problem_control_system",
+    "tags": "learn courses badges ims_diagnostics ipcs itask dumps interactive_dump_formatter ims-abends debugging abends sap save_area_sets 0c4_abends wait loop failure address_space task_control_block tcb interactive_problem_control_system address_spaces ",
     "url": "ims-education.html#ims-diagnostics"
   },{
     "title": "IMS DBCTL <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn how to implement an IMS DB and CICS system (DBCTL).",
-    "tags": "learn courses badges ims_diagnostics dbctl cics ispf ivp_dialogue dasd_logging internal_resource_lock_manager irlm image_copy open_database_access odba open_database_manager odbm",
+    "tags": "learn courses badges ims_diagnostics cics ispf ivp ivp_dialogue dasd_logging internal_resource_lock_manager irlm image_copy open_database_access odba open_database_manager odbm installation smp/e sysgen ims_gen_macros authorized_program_facility apf program_properties_table ppt ims_svcs resource_cleanup_module dfsmrcl0 dynamic_dump_formatter program_isolation_lock logging commit_point internal_resource_lock_manager irlm common_logging_facility dasd_logging wads database_recovery_control dbrc application_syncpoint dbdgens pcbgens acbgens proclib dynamic_allocation_members syntax_checker user_exit csl common_service_layer online_change olc acblib image_copy olic online_image_copy fuzzy_user_image_copy timestamp_recovery dra dl/i_batch threads psts tcbs pools subpools osam_encryption non_message-driven resource_recovery_services abend_u0113 irlm_system_failure dbrc_recon bmp_restart database_backout restart_matrix_table",
     "url": "ims-education.html#ims-dbctl"
   },{
     "title": "IMS Shared Queues <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn how to implement and manage an IMS shared queues environment.",
-    "tags": "learn courses badges ims_shared_queues sysplex expedited_message_handler emh emhq emh_queues common_queue_server cqs multiple_systems_coupling msc cross-system_coupling_facility xcf",
+    "tags": "learn courses badges shared_queues shared_message_queues msgq sysplex expedited_message_handler emh emhq emh_queues common_queue_server cqs uowid event_queues client_queues registration_of_interest appc otma_ready_queues fast_path_emh mainline_processing coupling_facility multiple_systems_coupling conversational_processing serial_transactions extended_terminal_option eto cqs_trace msc cross-system_coupling_facility xcf execution_time_parameters primary_master_terminals secondary_master_terminals proclib_members jcl cqsslxxx cqssgxxx cfrm_policy mvs_system_logger parallel_sysplex",
     "url": "ims-education.html#ims-squeues"
   },{
     "title": "IMS Fast Path implementation <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Learn how to implement and manage transactions and DEDBs an IMS Fast Path environment.",
-    "tags": "learn courses badges ims_fast_path system_admin ims_tm dbctl cics expedited_message_handler emh tm debd msdb virtual_storage_option vso fast_path",
+    "tags": "learn courses badges ims_fast_path system_admin dbctl cics expedited_message_handler emh ifp_region psbs input_edit routing_exit dbfhagu0 dedb data_entry_database partitioning sequential_dependents sdep_segment ci_format msdb main_storage_databases msdb_pcbs msdb_locking msdb_utilities virtual_storage_option vso multiple_area_data_sets mads dedb_secondary_index dedb_alter_utility automatic_sdep_buffer_management buffer_management locking deadlock_detection logical_logging physical_logging commit_processing output_thread_processing high_speed_reorganization sequential_processing sysplex_data_sharing cache_structures private_buffer_pools shared_vso shared_emh dbds psbs dedb_randomizer dedb_utilities system_generation emergency_restart irlm_reconnection field_calls fld setr hssp bmp_checkpoint",
     "url": "ims-education.html#ims-fpimpl"
   }
 ]};
