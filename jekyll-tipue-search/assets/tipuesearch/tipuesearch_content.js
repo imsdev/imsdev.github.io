@@ -68,17 +68,17 @@ var tipuesearch = {"pages": [{
   },{
     "title": "Introduction to IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch a quick high-level overview of the IMS product.",
-    "tags": "introduction basics ims_basics fundamentals intro application_development tm db",
+    "tags": "introduction basics ims_basics fundamentals intro application_development tm db transaction_manager database_manager",
     "url": "ims-videos.html#ims-intro"
   },{
     "title": "Ansible for IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "This video shows how to use Ansible for IBM Z to automate IMS workloads.",
-    "tags": "ansible ims_ansible install_ansible control_node automate",
+    "tags": "install_ansible control_node automate",
     "url": "ims-videos.html#ims-ansible"
   },{
     "title": "IMS Tools <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch videos on various IMS tools for reporting, transaction analysis, and more.",
-    "tags": "ims_tools performance_analyzer administration_foundation transaction_analysis_workbench management_console administration_tool integrity_utility dbd_viewer workload_router cloning_tool otma_workload setup_utility buffer_pool_analyzer splunk ims_connect browser_interface",
+    "tags": "ims_tools performance_analyzer slas administration_foundation transaction_analysis_workbench workbench exception_notification elastic splunk cics db2 ispf_dialog management_console administration_tool library_integrity_utility dbd_viewer workload_router cloning_tool otma_workload setup_utility buffer_pool_analyzer copybooks dba database_administrator ims_connect_extensions ims_connect browser_interface setup_utility",
     "url": "ims-videos.html#ims-tools"
   },
   // {
@@ -90,67 +90,67 @@ var tipuesearch = {"pages": [{
   {
     "title": "IMS Managed ACBs <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch this video to learn about the advantages of allowing IMS to manage ACBs for databases and program views for you.",
-    "tags": "introduction mACB",
+    "tags": "introduction mACB progress_report",
     "url": "ims-videos.html#ims-macb"
   },{
     "title": "Intro to IMS Catalog <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Get an introduction to the IMS catalog in these short videos.",
-    "tags": "ims_catalog catalog",
+    "tags": "ims_catalog catalog haldb high_availability_large_database dfsc catalog_dbd catalog_psb acblib dfs3uacb catalog_alias unregistered_catalog populate_utility dfs3pu00 record_purge_utility dfs3pu10 cobol_copybook ical ims_call",
     "url": "ims-videos.html#ims-macb"
   },{
     "title": "IMS Catalog Database Repair and Recovery <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Learn how to repair and recover the IMS catalog HALDB database.",
-    "tags": "ims_catalog catalog db_repair haldb phidam osam database_repair haldb_repair",
+    "tags": "db_repair haldb high_availability_large_database secondary_index bit_map phidam osam database_repair haldb_repair ilds image_copy forward_recover pointer_checker rebuild_utility hd_reload",
     "url": "ims-videos.html#ims-cat-db"
   },{
     "title": "IMS Full-Function Log Record Analysis <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn about log records for full-function databases.",
-    "tags": "ims_logs log_record full-function full_function scheduling",
+    "tags": "ims_logs log_record logging full-function full_function scheduling message_flows",
     "url": "ims-videos.html#ims-ff-log"
   },{
     "title": "How to Reorganize the IMS DBRC RECON Data Sets <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to reorganize IMS DBRC RECON data sets.",
-    "tags": "ims_dbrc dbrc recon",
+    "tags": "ims_dbrc dbrc recon ksds vsam listc_ent",
     "url": "ims-videos.html#ims-reorg-dbrc"
   },{
     "title": "IMS Security Audits: Gathering the Right Documentation <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to conduct an effective IMS security health check.",
-    "tags": "ims_security_audit ims_health health_check encryption psb_security vsam_security security racf documentation",
+    "tags": "ims_security_audit ims_health health_check encryption psb_security vsam_security security racf documentation user_access_points appc_security static_terminal_security eto_terminal_security otma_client_security vsam_password_protection racf verification transaction_authorization command_authorization log_records trn sgn isis rfc dfspbxxx dfsdcxxx hwscfg automation security_exit",
     "url": "ims-videos.html#ims-sec-aud"
   },{
     "title": "IMS Monitor Reports <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to create reports using the IMS Monitor.",
-    "tags": "ims_monitor report pool_statistics statistics",
+    "tags": "ims_monitor report pool_statistics statistics vsam_buffer_pool osam_buffer_pool not-iwait_time scheduling_control_block region_occupancy_percentage pool_space_failure deadlock_event sample",
     "url": "ims-videos.html#ims-mon-rep"
   },{
     "title": "IMS Diagnostic Techniques <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to resolve common problems during IMS restart.",
-    "tags": "ims_diagnostic_techniques ims_problems tuning tm tm_performance ims_monitor performance_analyzer logger olds wads pool message_format_service mfs ims_connect configuration_member otma",
+    "tags": "ims_diagnostic_techniques ims_problems tuning tmtransaction_manager ims_monitor performance_analyzer performance_evaluation tcb_structure itasks iwaits pools reca hiop dlisas_region message_processing_regions monitor_region ims_pa transit_time logger olds wads write-ahead_data_sets online_log_data_sets fixed_pool_manager variable_pool_manager vtam_message save_area_prefix saps message_format_service mfs message_queue buffer_pools multi_segmented_messages spanned_messages ims_connect parmlib hwscfgxx tcpip_statement configuration_member otma open_transaction_manager_access racf passticket xcf cross-coupling_facility",
     "url": "ims-videos.html#ims-dg-tech"
   },{
     "title": "IMS and Distributed Environment Security <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Watch these videos to learn how to secure distributed environments connected to IMS.",
-    "tags": "distributed_environments ims_security security racf distributed_identities flood_control credential_propagation tpipe ytip atee",
+    "tags": "distributed_environments security racf distributed_identities flood_control credential_propagation tpipe ytip atee accessor_environment_elements least_recently_used lru otma security_credential_propagation open_transaction_manager_access transaction_pipe",
     "url": "ims-videos.html#ims-dis-env"
   },{
     "title": "Java IMS Demos<img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "These short videos show you how to add various functions in your Java applications for IMS.",
-    "tags": "ims_java java jdbc",
+    "tags": "ims_java java jdbc dli_type_4 jdbc_trace universal_drivers",
     "url": "ims-videos.html#ims-java"
   },{
     "title": "IMS Explorer <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "What this video to learn about an Eclipse-based tool that simplifies IMS tasks for application development.",
-    "tags": "ims_explorer explorer_for_development development",
+    "tags": "ims_explorer explorer_for_development development graphical_editor enterprise_suite demo sql",
     "url": "ims-videos.html#ims-exp"
   },{
     "title": "Java and IMS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "This introductory video series helps you learn how to create Java applications for IMS.",
-    "tags": "introduction java modernize",
+    "tags": "introduction java modernize jmp java_message_processing jvm java_virtual_machine jni java_native_interfaces jdbc jbp ziip alternate_wait_management awm u0101 le_u403x remote_debugging eclipse visual_studio_code",
     "url": "ims-videos.html#ims-javaims"
   },{
     "title": "31-bit COBOL and 64-bit Java Interoperability <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications.",
-    "tags": "introduction java modernize cobol",
+    "tags": "introduction java modernize cobol demo",
     "url": "ims-videos.html#ims-interop"
   },
   // {
