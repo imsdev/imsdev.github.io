@@ -794,6 +794,10 @@ a, a:visited {
 	transition: .3s ease all;
 }
 
+.override a {
+	color: #fff;
+}
+
 a:hover {
   border-color: #007faf;
   text-decoration:none !important;
