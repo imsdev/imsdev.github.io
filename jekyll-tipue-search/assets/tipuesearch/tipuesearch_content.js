@@ -6,57 +6,67 @@ var tipuesearch = {"pages": [{
   },{
     "title": "APIs <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Use z/OS Connect EE to create APIs in minutes to access IBM Z applications and data.",
-    "tags": "api apis IMS-apis",
+    "tags": "api apis IMS-apis restful-apis devops git rtc jenkins urbancode_deploy appdynamics ibm_apm splunk elk monitoring jwt oauth 3rd_party file_manager data_virtualization_manager host_access_transformation_services dxc hogan_cams_ii z/os_connect_designer atruvia webinars cics z/os_connect eclipse",
     "url": "ims-apis.html"
   },{
     "title": "Automation with Ansible <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Learn how to automate your IBM Z IT infrastructure and applications by using Ansible.",
-    "tags": "automation ansible",
+    "tags": "automation ansible red_hat_ansible_certified_content ims_collections galaxy",
     "url": "ims-devops.html"
   },{
     "title": "Java <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Learn how you can run Java applications to run inside or outside IMS.",
-    "tags": "Java java_solution",
+    "tags": "Java java_solution jdbc_universal_drivers sql co-location travelers north_american_bank fiducia_gad_zukunftserfahren",
     "url": "ims-java.html"
+  },{
+    "title": "IMS Database <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
+    "text": "Use IMS Database Manager to protect your enterprise assets.",
+    "tags": "db managed_acbs ims_catalog self-provisioning ansible ddl_utility data_definition_utility dfs3id00",
+    "url": "ims-db.html"
   },{
     "title": "IMS Gold: Feedback program <img class=\"search-icon\" src=\"wp-content/Edit.svg\"></img>",
     "text": "Join the IMS client feedback program for the latest IMS news and engage with other customers.",
-    "tags": "gold ims_gold customer sponsor",
+    "tags": "gold ims_gold customer sponsor enroll collaborate client_feedback_program zcf",
     "url": "ims-gold.html"
   },{
     "title": "IMS Makerspace: Collaborate with IMS <img class=\"search-icon\" src=\"wp-content/Edit.svg\"></img>",
     "text": "Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.",
-    "tags": "makerspace ims_makerspace",
+    "tags": "makerspace ims_makerspace modernize modernization design_thinking prototype apis open_database devops java enroll",
     "url": "ims-makerspace.html"
   },{
     "title": "IMS Community <img class=\"search-icon\" src=\"wp-content/Community.svg\"></img>",
     "text": "See the latest IMS blogs, engage in IMS forums, and more by visiting the IMS Community.",
-    "tags": "community engage blogs blog",
+    "tags": "community engage blogs blog forums",
     "url": "https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560"
+  },{
+    "title": "IMS Advocacy <img class=\"search-icon\" src=\"wp-content/Edit.svg\"></img>",
+    "text": "Request an IMS advocate to help you with all your IMS needs.",
+    "tags": "advocate ims_developers help business_need issues",
+    "url": "ims-advocacy.html"
   },{
     "title": "IMS Videos <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
     "text": "Choose from hundreds of educational videos on IMS components, functions, and tools.",
-    "tags": "makerspace ims_makerspace",
+    "tags": "education learn videos mediacenter",
     "url": "ims-videos.html"
   },{
     "title": "IMS Courses <img class=\"search-icon\" src=\"wp-content/CapGown.svg\"></img>",
     "text": "Get comprehensive IMS education with these self-paced courses and earn digital badges.",
-    "tags": "learn courses badges ims_courses learn_ims",
+    "tags": "learn courses badges ims_courses learn_ims credly",
     "url": "ims-education.html"
   },{
     "title": "IMS Repos <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Get code samples and tutorials on IMS components, workflows, Java, and more.",
-    "tags": "repos ims_repos git github",
+    "tags": "repos ims_repos git github resources fastpath_database java_sample springboot tomcat java jmp z/osmf ims_catalog managed_acbs rest_api java_ee jdbc open_database cobol nodejs node.js labs jenkins zowe ansible",
     "url": "ims-repos.html"
   },{
     "title": "IMS Documentation <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Find information on IMS, tools, and other IBM products. ",
-    "tags": "docs ims_docs documentation dfs sql abend parameters parm jcl logs",
+    "tags": "docs ims_docs documentation dfs sql abend parameters parm jcl logs release_planning pdf ims_tools",
     "url": "ims-docs.html"
   },{
     "title": "IMS Support <img class=\"search-icon\" src=\"wp-content/Edit.svg\"></img>",
     "text": "Get help to resolve problems with IMS components, open cases, or request enhancements. ",
-    "tags": "support ims_support ",
+    "tags": "support ims_support cases fix_central update software hardware operating_system forums rfe request_for_enhancement listserv stack_overflow",
     "url": "ims-support.html"
   },
   // _____ VIDEOS _____
