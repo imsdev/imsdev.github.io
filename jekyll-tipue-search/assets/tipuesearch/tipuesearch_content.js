@@ -6,17 +6,17 @@ var tipuesearch = {"pages": [{
   },{
     "title": "APIs <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Use z/OS Connect EE to create APIs in minutes to access IBM Z applications and data.",
-    "tags": "api apis IMS-apis restful-apis devops git rtc jenkins urbancode_deploy appdynamics ibm_apm splunk elk monitoring jwt oauth 3rd_party file_manager data_virtualization_manager host_access_transformation_services dxc hogan_cams_ii z/os_connect_designer atruvia webinars cics z/os_connect eclipse",
+    "tags": "api apis IMS-apis restful-apis devops git rtc jenkins urbancode_deploy appdynamics ibm_apm splunk elk omegamon appdynamics monitoring jwt oauth 3rd_party file_manager data_virtualization_manager host_access_transformation_services dxc hogan_cams_ii z/os_connect_designer atruvia webinars cics z/os_connect eclipse open_api saf system_authorization_facility tai trust_authentication_interceptor angel",
     "url": "ims-apis.html"
   },{
     "title": "Automation with Ansible <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Learn how to automate your IBM Z IT infrastructure and applications by using Ansible.",
-    "tags": "automation ansible red_hat_ansible_certified_content ims_collections galaxy",
+    "tags": "automation ansible red_hat_ansible_certified_content ims_collections galaxy ansible_automation_hub",
     "url": "ims-devops.html"
   },{
     "title": "Java <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Learn how you can run Java applications to run inside or outside IMS.",
-    "tags": "Java java_solution jdbc_universal_drivers sql co-location travelers north_american_bank fiducia_gad_zukunftserfahren",
+    "tags": "Java java_solution jdbc_universal_drivers sql co-location demos code_samples",
     "url": "ims-java.html"
   },{
     "title": "IMS Database <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
@@ -26,7 +26,7 @@ var tipuesearch = {"pages": [{
   },{
     "title": "IMS Gold: Feedback program <img class=\"search-icon\" src=\"wp-content/Edit.svg\"></img>",
     "text": "Join the IMS client feedback program for the latest IMS news and engage with other customers.",
-    "tags": "gold ims_gold customer sponsor enroll collaborate client_feedback_program zcf",
+    "tags": "gold ims_gold customer sponsor enroll collaborate client_feedback_program zcf solution infrastructure enhance",
     "url": "ims-gold.html"
   },{
     "title": "IMS Makerspace: Collaborate with IMS <img class=\"search-icon\" src=\"wp-content/Edit.svg\"></img>",
@@ -36,7 +36,7 @@ var tipuesearch = {"pages": [{
   },{
     "title": "IMS Community <img class=\"search-icon\" src=\"wp-content/Community.svg\"></img>",
     "text": "See the latest IMS blogs, engage in IMS forums, and more by visiting the IMS Community.",
-    "tags": "community engage blogs blog forums",
+    "tags": "community engage blogs blog forums new webinars community_call feedback linkedin trials",
     "url": "https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560"
   },{
     "title": "IMS Advocacy <img class=\"search-icon\" src=\"wp-content/Edit.svg\"></img>",
@@ -56,7 +56,7 @@ var tipuesearch = {"pages": [{
   },{
     "title": "IMS Repos <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
     "text": "Get code samples and tutorials on IMS components, workflows, Java, and more.",
-    "tags": "repos ims_repos git github resources fastpath_database java_sample springboot tomcat java jmp z/osmf ims_catalog managed_acbs rest_api java_ee jdbc open_database cobol nodejs node.js labs jenkins zowe ansible",
+    "tags": "repos ims_repos git github resources fastpath_database dedb z/os_management_facility z/osmf workflow_samples java_sample springboot microservices tm_resource_adapter connection_pooling tomcat sample java_message_processing java jmp ims_catalog workflow managed_acbs rest_api connect_ee connect_enterprise_edition jee universal_drivers jdbc open_database cobol nodejs node.js labs jenkins open_source devops zowe ansible",
     "url": "ims-repos.html"
   },{
     "title": "IMS Documentation <img class=\"search-icon\" src=\"wp-content/Documentation.svg\"></img>",
