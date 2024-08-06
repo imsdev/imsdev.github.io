@@ -1005,6 +1005,8 @@ div#tipue_search_warning {
 	float: right;
 	color: #00bbff;
 	margin-top: 5px;
+	filter: grayscale(1);
+	filter: brightness(0);
 }
 
 #tipue_search_foot_boxes li {
