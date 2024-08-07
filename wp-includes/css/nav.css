@@ -785,6 +785,7 @@ body .pn-listing .pn-list__item .entry-content p {
 	font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
 }
 
+/* link */
 a, a:visited {
 	display: inline-block;
 	color: #0F62FE;
@@ -792,6 +793,10 @@ a, a:visited {
 	line-height: 2em;
 /*border-bottom: 2px solid transparent;*/
 	transition: .3s ease all;
+}
+
+.list-link-override a {
+	line-height: 0em;
 }
 
 .override a {
