@@ -853,7 +853,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
 div#tipue_search_content.search_content {
 	right:0;
 	margin-right: 50px;
-	background-color: whitesmoke;
+	background-color: white;
 	/* box-shadow: 0px 2px 4px 1px rgba(0,0,0,.4); */
 	color: black;
 	width: 40%;
@@ -873,15 +873,17 @@ div#tipue_search_warning {
 	margin-top: -10px;
 }
 .tipue_search_content_text {
-	padding-right: 15px;
+	padding-right: 10%;
 	padding-left: 10%;
 	overflow: hidden;
 	width: 100%;
-	max-height:0;
+	max-height: 0;
 	transition: .2s;
 }
+/* Adds padding to search result dropdown text */
 .search_content_drop {
-	max-height: 50px;
+	max-height: 60px;
+	padding-bottom: 15px;
 	transition: .2s;
 	overflow: hidden;
 	background-color: #ffffff;
@@ -894,11 +896,12 @@ div#tipue_search_warning {
 	width: 92%;
 	float: right;
  }
- .fa-angle-down {
+ /* Smooths rotation transition back to right arrow from down arrow */
+ .fa-angle-right {
 	transition: .2s;
  }
  .rotArrow {
-	transform: rotate(-180deg);
+	transform: rotate(90deg);
 	transition: .2s;
  }
 
@@ -936,7 +939,6 @@ div#tipue_search_warning {
 	border: solid;
 	border-width: 2px;
 	border-color: #42a7ec;
-
  }
  #search-mag {
 	left: 15px;
@@ -957,7 +959,6 @@ div#tipue_search_warning {
  .inactive-text {
 	color: lightgray !important;
  }
-
 
 /* search results formatting */
 
@@ -981,6 +982,7 @@ div#tipue_search_warning {
     box-shadow: black;
     background-color: #dddddd;
 } 
+
 .fa-angle-down {
 	position: absolute;
 	float: left;
@@ -1008,10 +1010,13 @@ div#tipue_search_warning {
  }
 .search-icon {
 	float: right;
-	color: #00bbff;
-	margin-top: 5px;
-	filter: grayscale(1);
-	filter: brightness(0);
+	height: 20px;
+	width: 20px;
+	margin-top: 1%;
+	margin-right: 1%;
+	/* color: #00bbff; */
+	/* filter: grayscale(1);
+	filter: brightness(0); */
 }
 
 #tipue_search_foot_boxes li {
