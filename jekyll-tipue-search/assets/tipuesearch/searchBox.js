@@ -20,6 +20,12 @@ $(function() {
     $('.burg-wrap').click(function() {
       $(".search_content").delay(100).hide(0);
     });
+    // nav enter pull-up
+    $('.support-enter').on('keydown', function(event) {
+      if (event.which === 13) {
+        $(".search_content").delay(100).hide(0);
+      }
+    });
     // clear search contents
     $('#search-clr').click(function() {
       $('#tipue_search_input').val("");

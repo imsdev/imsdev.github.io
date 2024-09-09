@@ -857,6 +857,7 @@ div#tipue_search_content.search_content {
 	/* box-shadow: 0px 2px 4px 1px rgba(0,0,0,.4); */
 	color: black;
 	width: 40%;
+	margin-top: 50px;
   }
 
 div#tipue_search_results_count {

@@ -37,7 +37,10 @@ a {
   }
   
   #toggle1 {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
   }
 
   #toggle1:checked + .hamburger1 .top {
@@ -60,7 +63,6 @@ a {
   #toggle1:checked ~ .menu1 {
     height: 450px;
   }
-  
 
   /* Menu */
   .menu1 {
