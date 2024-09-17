@@ -193,18 +193,62 @@
     .ims-c-card {
       min-width:240px;
       min-height: 270px;
-      height: 90%;
+      /* height: 90%; */
+      height: 350px;
       margin: 1em;
       background-color: #f4f4f4;
       border-width: 2px;
+      position: relative;
       /* transition: all .2s ease-in-out; */
       /* cursor: pointer; */
     }
     .ims-c-card:hover {
-      background-color: #e3e3e3;
+      /* background-color: #e3e3e3; */
       /* box-shadow: 0 5px 10px 0 rgba(83, 69, 69, 0.8); */
       /* -webkit-transform: translateY(-3px);
       transform: translateY(-3px); */
+    }
+    .ims-c-card-content {
+      padding: 2em;
+      margin-right: -10px;
+    }
+    .video-section-header {
+      letter-spacing: normal;
+      margin-top: 30px;
+      color: black;
+      width: 100%;
+      margin-left: 15px;
+    }
+    .video-card-header {
+      color: black;
+      font-weight: normal !important;
+    }
+    .video-card-link {
+      /* position: relative; */
+      /* bottom: 0; */
+      /* margin-bottom: 30px; */
+      /* text-align: left; */
+      position: absolute;
+      bottom: 10%;
+    }
+    .hide-label {
+      visibility: hidden;
+    }
+    #anchor-link-menu {
+      padding: 1em 5em 0em 5em;
+      background-color: white;
+      top: 0;
+      border-bottom: solid lightgray;
+    }
+    #anchor-link-menu-items {
+      display: flex;
+      width: 100%;
+      -webkit-box-flex: 1;
+      flex: auto;
+    }
+    .video-card-container {
+      margin-left: auto;
+      margin-right: auto;
     }
     .ims-course-card {
       min-width:240px;

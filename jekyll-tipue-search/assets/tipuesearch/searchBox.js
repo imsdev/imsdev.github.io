@@ -21,15 +21,20 @@ $(function() {
       $(".search_content").delay(100).hide(0);
     });
     // nav enter pull-up
-    $('.support-enter').on('keydown', function(event) {
-      if (event.which === 13) {
-        $(".search_content").delay(100).hide(0);
-      }
+    $('.support-enter').on('focus', function(event) {
+      $(".search_content").delay(100).hide(0);
     });
     // clear search contents
     $('#search-clr').click(function() {
       $('#tipue_search_input').val("");
       $("#searchbar").submit();
+    });
+    // clear contents with keyboard via enter key
+    $('#search-clr').on('keydown', function(event) {
+      if (event.which === 13) {
+        $('#tipue_search_input').val("");
+        $("#searchbar").submit();
+      }
     });
     // static listener
     // $(".cordion").click(function() {

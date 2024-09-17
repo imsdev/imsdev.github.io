@@ -1,1050 +1,979 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- v18 basic meta -->
-	<meta name="geo.country" content="ZZ" />
-	<meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
-	<meta name="dcterms.date" content="2020-07-18" />
-	<meta name="keywords" content="IMS Central, IMS Developer, IMS" />
-	<meta name="robots" content="index, follow" />
-<!-- Favicon -->
-	<link id="favicon"
-	rel="shortcut icon"
-	type="image/x-icon"
-	href="wp-content/IMS_logo_small.png">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- v18 basic meta -->
+    <meta name="geo.country" content="ZZ" />
+    <meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
+    <meta name="dcterms.date" content="2020-07-18" />
+    <meta name="keywords" content="IMS Central, IMS Developer, IMS" />
+    <meta name="robots" content="index, follow" />
+    <!-- Favicon -->
+    <link id="favicon"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="wp-content/IMS_logo_small.png">
 
-<!-- Pageittle -->
-<title>IMS Videos</title>
+    <!-- Pageittle -->
+    <title>IMS Videos</title>
 
-<!-- Meta -->
-<link rel="canonical" href="ims-videos.html" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="IMS Videos" />
-<meta property="og:description" content="IMS Videos" />
-<meta property="og:url" content="http://www/imsdev.github.io/ims-videos.html" />
-<meta property="og:site_name" content="IMS Central" />
-<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="IMS Videos" />
-<meta name="twitter:title" content="IMS Videos" />
-<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+    <!-- Meta -->
+    <link rel="canonical" href="ims-videos.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="IMS Videos" />
+    <meta property="og:description" content="IMS Videos" />
+    <meta 
+      property="og:url" 
+      content="http://www/imsdev.github.io/ims-videos.html" />
+    <meta property="og:site_name" content="IMS Central" />
+    <meta 
+      property="og:image" 
+      content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="IMS Videos" />
+    <meta name="twitter:title" content="IMS Videos" />
+    <meta 
+      property="og:image" 
+      content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
 
-<!-- Sheets -->
-<link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="wp-includes/css/nav.css">
-<link rel="stylesheet" href="wp-includes/css/dropnav.css">
-<link href="wp-includes/css/www.css" rel="stylesheet" />
-<link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
-<link href="wp-includes/css/tables.css" rel="stylesheet">
+    <!-- Sheets -->
+    <link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="wp-includes/css/nav.css">
+    <link rel="stylesheet" href="wp-includes/css/dropnav.css">
+    <link href="wp-includes/css/www.css" rel="stylesheet" />
+    <link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
+    <link href="wp-includes/css/tables.css" rel="stylesheet">
 
-<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:132193,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:132193,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 
-<!-- Additional styling for content after navigation -->
+  <!-- Additional styling for content after navigation -->
+    <link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+    <link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+    <link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+    <script src="wp-includes/js/jquery.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-<script src="wp-includes/js/jquery.min.js"></script>
+  <!-- TipueSearch -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
 
-<!-- TipueSearch -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
+  <!-- delayed search -->
+    <script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
 
-<!-- delayed search -->
-<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
+  <!-- Dropdown nav menu -->
+    <script src="wp-includes/js/navbar.js"></script>
+  </head>
 
-<!-- Hamburger menu -->
-<script src="wp-includes/js/navbar.js"></script>
-
-</head>
-
-<!-- MASTHEAD_SITENAV_BEGIN -->
-<body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
-  <div class="ibm-landing-page" style="position: relative;background: #282828 !important;">
-    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-		<div id="ibm-content-wrapper" class="sticky-nav">
-			<header role="banner" aria-labelledby="ibm-pagetitle-h1">
-	  
-			<!-- DROP NAV -->
-			<section class="p-menu1 ">
-			  <nav id="navbar" class="navigation" role="navigation">
-			  
-				<!-- Header wrapper -->
-				<span class="sitename-wrap">
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<img src="wp-content/IMS_logo_small.png"
-					style="z-index:900;" 
-					id="left-bar-brand"/>
-				  </a>
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<h4 style="line-height: 2; display: inline-block;">
-					  IBM <b>IMS Central</b>
-					</h4>
-				  </a>
-				</span>
-				<!-- == Header wrapper -->
-			  
-				<!-- Search wrapper -->
-				<form class id="searchbar">
-				  <div class="tipue_search_right">
-					<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-					  <defs>
-						<style>
-						  .cls-1 {
-						  fill: none;
-						  }
-						</style>
-					  </defs>
-					  <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-					  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-					</svg>
-					<input type="text" name="q" id="tipue_search_input"
-					  pattern=".{3,}" title="Search bar"
-					  placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-					<svg id="search-clr" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-					</svg>
-				  </div>
-				  <div style="clear: both;"></div>
-				</form>
-	  
-				<!-- On page-load activation -->
-				<script>
-				  $(document).ready(function() {
-					$('#tipue_search_input').tipuesearch();
-				  });
-				</script>
-	  
-				<!-- Search drop-down -->
-				<div id="tipue_search_content" class="search_content" style="position: absolute"></div>
-				<!-- == Search wrapper -->
-	  
-				<!-- Hamburger dropdown menu -->
-				<input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
-				
-				<label class="hamburger1">
-				  <!-- Burgie wrapper -->
-				  <label class="burg-wrap" for="toggle1">
-					<span class="burg-bars">
-					  <div class="top"></div>
-					  <div class="meat"></div>
-					  <div class="bottom"></div>
-					</span>
-				  </label>
-				</label>
-			  
-				<!-- Dropdown menu options -->
-				<nav class="menu1">
-				<div class="pages pure-g">
-				  <!-- Innovate -->
-				  <div class="pure-u-1 pure-u-sm-1-4">
-					<h3>Innovate</h3>
-					<!-- cards/pages -->
-					<!-- 1 -->
-					<a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
-					  <div class="navcard">
-						<h5>APIs</h5>
-						<p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
-					  </div>
-					</a>
-					<!-- 2 -->
-					<a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>Automation</h5>
-						<p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
-					  </div>
-					</a>
-					<!-- 3 -->
-					<a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>Java</h5>
-						<p>Build Java applications to run inside or outside IMS.</p>
-					  </div>
-					</a>
-					<!-- 4 -->
-					<a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS Database</h5>
-						<p>IMS Database: fast, secure, reliable.</p>
-					  </div>
-					</a>
-				  </div>
-			  
-				  <!-- Engage -->
-				  <div class="pure-u-1 pure-u-sm-1-4">
-					<h3>Engage</h3>
-					<!-- cards/pages -->
-					<!-- 1 -->
-					<a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS Gold</h5>
-						<p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
-					  </div>
-					</a>
-					<!-- 2 -->
-					<a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>Makerspace</h5>
-						<p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
-					  </div>
-					</a>
-					<!-- 3 -->
-					<a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
-					  href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
-					  <div class="navcard">
-						<h5>IMS community<img src="wp-content/Icon07.png" style="height: 15px; width: 15px;margin-left:10px"></img></h5>
-						<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
-					  </div>
-					</a>
-					<!-- 4 -->
-					<a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>Advocacy</h5>
-						<p>Get or change your IMS advocate.</p>
-					  </div>
-					</a>
-				  </div>
-			  
-				  <!-- Learn -->
-				  <div class="pure-u-1 pure-u-sm-1-4">
-					<h3>Learn</h3>
-					<!-- cards/pages -->
-					<!-- 1 -->
-					<a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS videos</h5>
-						<p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
-					  </div>
-					</a>
-					<!-- 2 -->
-					<a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS courses</h5>
-						<p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
-					  </div>
-					</a>
-					<!-- 3 -->
-					<a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS repos on GitHub</h5>
-						<p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
-					  </div>
-					</a>
-				  </div>
-			  
-				  <!-- Docs & Support -->
-				  <div class="pure-u-1 pure-u-sm-1-4">
-					<h3>
-					  Documentation & support
-					</h3>
-					<!-- cards/pages -->
-					<!-- 1 -->
-					<a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS documentation</h5>
-						<p>Find information on IMS, tools, and other IBM products.</p>
-					  </div>
-					</a>
-					<!-- 2 -->
-					<a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS support</h5>
-						<p>Get help with IMS or other IBM products.</p>
-					  </div>
-					</a>
-					<hr style="background-color: gray !important;" />
-					<!-- 3 special -->
-					<div style="padding: 5px 20px 0px 20px; color: white;">
-					  <h5>IMS Advocacy</h5>
-					  <!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
-						IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
-						style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
-					  <p style="color: rgb(199, 199, 199); margin-top: -5px; font-size: 14px;">If you don't have an advocate, contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com"
-						class="nav-item" tabindex="-1" style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
-					</div>
-				  </div>
-				</div>
-			  </nav>
-			</section>
-			<!-- DROP NAV END -->
-		  </header>
-		</div>
-<!-- Additional styling for content after navigation -->
-<head>
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-</head>
-
-<div id="content" class="site-content">
-<div class="content-area" id="content-area">
-
-<article id="post-3305" class="post-3305 page type-page status-publish has-post-thumbnail hentry tag-agile tag-design-thinking tag-feedback tag-gold tag-ims tag-qpp">
-<div class="entry-content">
-<div aria-role="presentation">
-<!-- MAIN CONTENT -->
-<div aria-role="presentation">
-<main class="zs-main" >
-
-<!-- =========================== IMS Courses banner =========================== -->
-
-<div style="width: 100%;z-index:300;">
-
-
-  <section id="intro-section" class="pure-g zs-section white-bg2" style="padding: 2em;">
-		<div id="intro-header" class="pure-u-1">
-		</div>
-		<div class="pure-u-3-25">
-		  <img class="ims-card-icon" src="wp-content/Icon_Managed ACBs_IMS DatabasePage.svg" style="margin-top: 65px;height: 30px;">
-		</div>
-		<div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
-      <h6 style="padding:0 !important">Learn</h6>
-		   <h1>IMS videos</h1>
-		   <p id="p-style">Build your knowledge of IMS™ by viewing our 
-        featured educational videos or by searching IBM MediaCenter.</p>
-		   <div class="pure-u-1" style="max-width: 240px;margin-top: 20px;">
-			<a class="zs-w-button-transparent" onfocus="closeNavMenu()" href="https://mediacenter.ibm.com/channel/IMS%2BEducational%2BVideos/122579632" target="_blank" rel="noopener noreferrer">
-				Visit IBM MediaCenter</a>
-		</div>
-		</div>
-	  </section>
-</div>
-
-<!-- =========================== Row for filtering =========================== -->
-<!-- remember, the behaviour is that clicking pulls you to the anchors -->
-<div class="zs-section" 
-style="padding: 1em !important;background-color: white;position: sticky;top:0;
-padding: 1em 5em 0em 5em !important;border-bottom: solid lightgray;">
-  <div class="pure-g">
-    <!-- Filter list -->
-    <div class="ibm-sitenav-menu-list"
-    style="display: flex; width: 100% !important;-webkit-box-flex: 1;flex: auto;">
-      <ul class="menu" style="letter-spacing: normal;">
-        <li style="margin-right: 2em;"><a href="#all">All roles</a></li>
-        <li style="margin-right: 2em;"><a href="#imsdb">IMS database</a></li>
-        <li style="margin-right: 2em;"><a href="#sysprog">System programming</a></li>
-        <li style="margin-right: 2em;"><a href="#appdev">Application development</a></li>
-        <!-- <li style="margin-right: 2em;"><a href="#imstools">IMS Tools</a></li> -->
-      </ul>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<!-- =========================== Videos list =========================== -->
-
-<!-- Section -->
-<div id="all" class="zs-gray-section" style="background-color: white;">
-	<section class="zs-section">
-  
-  <!-- Info cards container -->
-	<div class="pure-g" style="margin-left: auto;margin-right: auto;">
-
-      <!-- playlist -->
-      <div class="pure-u-1 pure-u-md-1-2">
-          <div style="position: absolute; margin-top:-60px;" id="ims-comm"></div>
-          <div class="ims-c-card">
-					<div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-            <h2 style="font-size: 1.65rem !important;">IMS Community Calls</h2>
-						<p></p>
-						<p>These calls cover the latest in what's going on in the world of IMS.</p>
-            <div class="pure-u-1 pure-u-md-1">
-              <div>
-              </div>
-              <div>
-              <a  alt="IMS Community Calls" 
-              title="IMS Community Calls" target="_blank" rel="noopener noreferrer" 
-              href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_lgy10u5e/" 
-              style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-              
-            </a>
-              </div>
-          </div>
-					
-					</div>
-				</div>
-			</div>
-
-      <!-- card 1 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-          <div style="position: absolute; margin-top:-60px;" id="ims-intro"></div>
-          <div class="ims-c-card">
-					<div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-            <h2 style="font-size: 1.65rem !important;">Introduction to IMS</h2>
-						<p></p>
-						<p>If you're new to IMS, watch these short, high-level videos on IMS, database, transaction management, and application development.</p>		
-            <div class="pure-u-1 pure-u-md-1">
-              <div>
-                <p>
-                  <b>Level</b>: Beginner
-                  &ensp;
-                  <b>Time</b>: 1 hour
-                </p>
-              </div>
-              <div>
-              <a  alt="Intro to IMS" 
-              title="Intro to IMS" target="_blank" rel="noopener noreferrer" 
-              href="https://mediacenter.ibm.com/channel/Intro+to+IMS+Series/139456202" 
-              style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-              
-            </a>
-              </div>
-          </div>
-					
-					</div>
-				</div>
-			</div>
-
-      <!-- card 2 -->
-      <!-- <div class="pure-u-1 pure-u-md-1-2">
-          <div style="position: absolute; margin-top:-60px;" id="ims-mig"></div>
-          <div class="ims-c-card">
-					<div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-            <h2 style="font-size: 1.65rem !important;">Migrating to IMS 15</h2>
-						<p></p>
-						<p>This series of videos takes you through many of the tasks you need to consider before you migrate to IMS 15.</p>		
-            <div class="pure-u-1 pure-u-md-1">
-              <div >
-                <p>
-                  <b>Level</b>: Intermediate
-                  &ensp;
-                  <b>Time</b>: 40 minutes
-                </p>
-              </div>
-              <div>
-              <a  alt="Migrating to IMS 15" 
-              title="Migrating to IMS 15" target="_blank" rel="noopener noreferrer" 
-              href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_4iev4osi/1_mq67d39n" 
-              style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-              
-            </a>
-              </div>
-          </div>
-
-					</div>
-				</div>
-			</div> -->
-
-
-      <!-- card 3 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-          <div style="position: absolute; margin-top:-60px;" id="ims-ansible"></div>
-          <div class="ims-c-card">
-					<div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-            <h2 style="font-size: 1.65rem !important;">Ansible for IBM Z: Control Node</h2>
-						<p>Get an overview of how to set up your Red Hat® Ansible® control node to get started automating processes for IBM Z® with Ansible.</p>		
-            <div class="pure-u-1 pure-u-md-1">
-              <div >
-                <p>
-                  <b>Level</b>: Beginner
-                  &ensp;
-                  <b>Time</b>: 6 minutes
-                </p>
-              </div>
-              <div>
-              <a  alt="Ansible for IBM Z" 
-              title="Ansible for IBM Z" target="_blank" rel="noopener noreferrer" 
-              href="https://mediacenter.ibm.com/media/Set%20up%20your%20Ansible%20control%20node%20for%20getting%20started%20with%20Ansible%20for%20IBM%20Z/1_r9g0duq3" 
-              style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-              
-            </a>
-              </div>
-          </div>
-
-					</div>
-				</div>
-        </div>
-
-      <!-- tools -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-tools"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">IMS Tools</h2>
-          <p></p>
-          <p>Review the various videos on IMS Tools.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Varies
-                &ensp;
-                <b>Time</b>: Varies
-              </p>
-            </div>
-            <div>
-            <a  alt="IMS Tools" 
-            title="IMS Tools" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/dedicated/189147413/1_cvhwa8r2/1_5xtr9qnf"
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
+  <!-- PAGE CONTENT -->
+  <body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
+    <div class="ibm-landing-page" style="position: relative; background: #282828 !important;">
+      <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+      
+      <!-- MASTHEAD AND SITE NAV BAR -->
+      <div id="ibm-content-wrapper" class="sticky-nav">
+        <header role="banner" id="ibm-pageheader" aria-label="Site Navigation Bar">
+          <section class="p-menu1">
+            <nav id="navbar" class="navigation" role="navigation" aria-labelledby="ibm-pageheader">
             
-          </a>
-            </div>
-        </div>
-
-        </div>
-      </div>
-      </div>
-
-		
-
-<h3 id="imsdb" style="letter-spacing:normal;margin-top:30px;color: black; width: 100%;">IMS database</h3>
-
-      <!-- card 1 -->
-				<div class="pure-u-1 pure-u-md-1-2">
-          <div style="position: absolute; margin-top:-60px;" id="ims-macb"></div>
-          <div class="ims-c-card">
-					<div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-            <h2 style="font-size: 1.65rem !important;">IMS Managed ACBs and IMS Catalog</h2>
-						<p>Check out this video series that describes the IMS catalog, how to implement it, and how to implement managed ACBs.</p>		
-              <div class="pure-u-1 pure-u-md-1">
-                <div >
-                  <p>
-                    <b>Level</b>: Beginner
-                    &ensp;
-                    <b>Time</b>: 11 hours
-                  </p>
-                </div>
-                <div>
-                <a  alt="IMS catalog and MACBs" 
-                title="IMS catalog and MACBs" target="_blank" rel="noopener noreferrer" 
-                href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_6yvvheln/" 
-                style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-                
+            <!-- Header wrapper -->
+            <span class="sitename-wrap">
+              <a href="index.html" style="float: left;">
+                <img src="wp-content/IMS_logo_small.png"
+                  style="z-index:900;" 
+                  id="left-bar-brand"
+                  alt="IMS logo"
+                  aria-label="Return to Homepage"
+                />
               </a>
-                </div>
-            </div>
-
-					</div>
-				</div>
-			</div>
-
-      <!-- card 2 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-          <div style="position: absolute; margin-top:-60px;" id="ims-cat-db"></div>
-          <div class="ims-c-card">
-					<div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-            <h2 style="font-size: 1.65rem !important;">IMS Catalog Database Repair and Recovery</h2>
-						<p></p>
-						<p>Learn how to repair and recover the IMS catalog database, which is an IMS high availability large database (HALDB).</p>		
-            <div class="pure-u-1 pure-u-md-1">
-              <div >
-                <p>
-                  <b>Level</b>: Intermediate
-                  &ensp;
-                  <b>Time</b>: 45 minutes
-                </p>
-              </div>
-              <div>
-              <a  alt="IMS Catalog Database Repair and Recovery" 
-              title="IMS Catalog Database Repair and Recovery" target="_blank" rel="noopener noreferrer" 
-              href="https://mediacenter.ibm.com/playlist/details/1_0qff2gc8/categoryId/122579632" 
-              style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-              
-            </a>
-              </div>
-          </div>
-
-					</div>
-				</div>
-			</div>
-
-      <!-- card 3 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-ff-log"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">IMS Full-Function Log Record Analysis</h2>
-          <p></p>
-          <p>These videos describe log records associated with input and output message flows, application scheduling, and full-function database updates.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 1 hour
-              </p>
-            </div>
-            <div>
-            <a  alt="Full-Function Log Record Analysis" 
-            title="Full-Function Log Record Analysis" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/details/1_khzutnim/categoryId/122579632" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
-
-        </div>
-      </div>
-      </div>
-
-      <!-- card 4 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-reorg-dbrc"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">How to Reorganize the IMS DBRC RECON Data Sets</h2>
-          <p></p>
-          <p>These videos show you the general steps for reorganizing IMS DBRC RECON data sets.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 25 minutes
-              </p>
-            </div>
-            <div>
-            <a  alt="Reorganize the IMS DBRC RECON data sets" 
-            title="Reorganize the IMS DBRC RECON data sets" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/details/1_8b576zt9/categoryId/122579632" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
-
-        </div>
-      </div>
-      </div>
-
-      <!-- card 5 -->
-      <!-- <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-macb"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">Introduction to managed ACBs</h2>
-          <p></p>
-          <p>Watch this video to learn about the advantages of allowing IMS to manage ACBs for databases and program views for you.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 17 minutes
-              </p>
-            </div>
-            <div>
-            <a  alt="Introduction to managed ACBs" 
-            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/media/Introduction%20to%20IMS%20Managed%20ACBs/1_2jpxbv4g" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-            </a>
-              </div>
-        </div>
-
-					</div>
-				</div>
-        </div> -->
-
-        <!-- card 6 -->
-				<!-- <div class="pure-u-1 pure-u-md-1-2">
-          <div style="position: absolute; margin-top:-60px;" id="ims-dbrc"></div>
-          <div class="ims-c-card">
-					<div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-            <h2 style="font-size: 1.65rem !important;">IMS Managed ACBs and IMS Catalog</h2>
-						<p>Learn about IMS Managed ACBs and the IMS Catalog by watching this playlist that covers both features in detail.</p>		
-              <div class="pure-u-1 pure-u-md-1">
-                <div >
-                  <p>
-                    <b>Level</b>: Intermediate
-                    &ensp;
-                    <b>Time</b>: 3 hours 45 minutes
-                  </p>
-                </div>
-                <div>
-                <a  alt="IMS DBRC" 
-                title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-                href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_6yvvheln/" 
-                style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-                
+              <a href="index.html" style="float: left;">
+              <h4 style="line-height: 2; display: inline-block;">
+                IBM <b>IMS Central</b>
+              </h4>
               </a>
+            </span>
+            <!-- == Header wrapper -->
+            
+            <!-- Search wrapper -->
+            <form class id="searchbar">
+              <div class="tipue_search_right">
+              <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+                <defs>
+                <style>
+                  .cls-1 {
+                  fill: none;
+                  }
+                </style>
+                </defs>
+                <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+                <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+              </svg>
+              <input type="text" name="q" id="tipue_search_input"
+                pattern=".{3,}" title="Search bar"
+                placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+              <svg id="search-clr" aria-label="Clear Search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+              </svg>
+              </div>
+              <div style="clear: both;"></div>
+            </form>
+        
+            <!-- On page-load activation -->
+            <script>
+              $(document).ready(function() {
+              $('#tipue_search_input').tipuesearch();
+              });
+            </script>
+        
+            <!-- Search drop-down -->
+            <div id="tipue_search_content" class="search_content" style="position: absolute"></div>
+            <!-- == Search wrapper -->
+        
+            <!-- Hamburger dropdown menu -->
+            <input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Dropdown Navigation Menu"/>
+            <label class="hamburger1">
+              <span class="hide-label">Label for input</span>
+              <!-- Burgie wrapper -->
+              <label class="burg-wrap" for="toggle1">
+                <span class="burg-bars">
+                  <div class="top"></div>
+                  <div class="meat"></div>
+                  <div class="bottom"></div>
+                </span>
+              </label>
+            </label>
+            
+            <!-- Dropdown menu options -->
+            <nav class="menu1" aria-label="Dropdown Menu Options">
+            <div class="pages pure-g">
+              <!-- Innovate -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+              <h3>Innovate</h3>
+              <!-- cards/pages -->
+              <!-- 1 -->
+              <a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
+                <div class="navcard">
+                <h5>APIs</h5>
+                <p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
                 </div>
-            </div>
-
-					</div>
-				</div>
-			</div> -->
-
-
-<h3 id="sysprog" style="letter-spacing:normal;margin-top:30px;color: black; width: 100%;">System programming</h3>
-
-      <!-- card 1 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-sec-aud"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">IMS Security Audits: Gathering the Right Documentation</h2>
-          <p></p>
-          <p>Learn what information to obtain and what some important settings and parameters mean when you need to do an IMS security health check.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 1 hour
-              </p>
-            </div>
-            <div>
-            <a  alt="IMS Security Audits" 
-            title="IMS Security Audits" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_zdruhxrk/" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
-
-        </div>
-      </div>
-    </div>
-
-      <!-- card 2 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-mon-rep"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">IMS Monitor Reports</h2>
-          <p></p>
-          <p>The IMS Monitor is a no-cost tool provided with IMS. The IMS Monitor can create many types of reports, including buffer pool statistics program, program I/O, and message queuing.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 45 minutes
-              </p>
-            </div>
-            <div>
-            <a  alt="IMS Monitor Reports" 
-            title="IMS Monitor Reports" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_3g7mquxe/" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
-
-        </div>
-      </div>
-    </div>
-
-
-        <!-- card 3 -->
-				<div class="pure-u-1 pure-u-md-1-2">
-          <div style="position: absolute; margin-top:-60px;" id="ims-dg-tech"></div>
-          <div class="ims-c-card">
-          <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-            <h2 style="font-size: 1.65rem !important;">IMS Diagnostic Techniques</h2>
-            <p></p>
-            <p>Learn how to analyze and potentially resolve problems in IMS such as loops, waits, hangs, and problems during restart.</p>		
-            <div class="pure-u-1 pure-u-md-1">
-              <div >
-                <p>
-                  <b>Level</b>: Advanced
-                  &ensp;
-                  <b>Time</b>: 4.5 hours
-                </p>
+              </a>
+              <!-- 2 -->
+              <a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>Automation</h5>
+                <p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
+                </div>
+              </a>
+              <!-- 3 -->
+              <a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>Java</h5>
+                <p>Build Java applications to run inside or outside IMS.</p>
+                </div>
+              </a>
+              <!-- 4 -->
+              <a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>IMS Database</h5>
+                <p>IMS Database: fast, secure, reliable.</p>
+                </div>
+              </a>
               </div>
-              <div>
-              <a  alt="IMS Diagnostic Techniques" 
-              title="IMS Diagnostic Techniques" target="_blank" rel="noopener noreferrer" 
-              href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_juy279ab/" 
-              style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-              
-            </a>
+            
+              <!-- Engage -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+              <h3>Engage</h3>
+              <!-- cards/pages -->
+              <!-- 1 -->
+              <a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>IMS Gold</h5>
+                <p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
+                </div>
+              </a>
+              <!-- 2 -->
+              <a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>Makerspace</h5>
+                <p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
+                </div>
+              </a>
+              <!-- 3 -->
+              <a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
+                href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
+                <div class="navcard">
+                <h5>IMS community<img src="wp-content/Icon07.png" alt="External Page Icon" style="height: 15px; width: 15px;margin-left:10px"/></h5>
+                <p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
+                </div>
+              </a>
+              <!-- 4 -->
+              <a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>Advocacy</h5>
+                <p>Get or change your IMS advocate.</p>
+                </div>
+              </a>
               </div>
-          </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- card 4 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-dis-env"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">IMS and Distributed Environment Security</h2>
-          <p></p>
-          <p>Learn how to secure frontend or distributed environments as they relate to IMS.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Advanced
-                &ensp;
-                <b>Time</b>: 1 hour, 25 minutes
-              </p>
-            </div>
-            <div>
-            <a  alt="IMS and Distributed Environment Security" 
-            title="IMS and Distributed Environment Security" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_9uja2ely/" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
             
-          </a>
-            </div>
-        </div>
-
-        </div>
-      </div>
-      </div>
-
-      <!-- card 5 -->
-       <!-- <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-intro"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">IMSplex, CSL, and SPOC Overview</h2>
-          <p></p>
-          <p>Get an overview of IMSplex, what components are required to configure an IMSplex, and the roles of the Common Service Layer (CSL) and single point of control (SPOC).</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 45 minutes
-              </p>
-            </div>
-            <div>
-            <a  alt="IMSplex, CSL, and SPOC Overview" 
-            title="IMSplex, CSL, and SPOC Overview" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/media/IBM%20IMS%3A%20IMSplex%2C%20CSL%20and%20SPOC%20overview/1_dl1nlccn" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
+              <!-- Learn -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+              <h3>Learn</h3>
+              <!-- cards/pages -->
+              <!-- 1 -->
+              <a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>IMS videos</h5>
+                <p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
+                </div>
+              </a>
+              <!-- 2 -->
+              <a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>IMS courses</h5>
+                <p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
+                </div>
+              </a>
+              <!-- 3 -->
+              <a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>IMS repos on GitHub</h5>
+                <p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
+                </div>
+              </a>
+              </div>
             
-          </a>
+              <!-- Docs & Support -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+              <h3>
+                Documentation & support
+              </h3>
+              <!-- cards/pages -->
+              <!-- 1 -->
+              <a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>IMS documentation</h5>
+                <p>Find information on IMS, tools, and other IBM products.</p>
+                </div>
+              </a>
+              <!-- 2 -->
+              <a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
+                <div class="navcard">
+                <h5>IMS support</h5>
+                <p>Get help with IMS or other IBM products.</p>
+                </div>
+              </a>
+              <hr style="background-color: gray !important;" />
+              <!-- 3 special -->
+              <div style="padding: 5px 20px 0px 20px; color: white;">
+                <h5>IMS Advocacy</h5>
+                <p style="color: rgb(199, 199, 199); margin-top: -5px; font-size: 14px;">If you don't have an advocate, contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com"
+                class="nav-item" tabindex="-1" style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
+              </div>
+              </div>
             </div>
-        </div>
-
-        </div>
-      </div>
-      </div> -->
-
-      <!-- card 6 -->
-      <!-- <div class="pure-u-1 pure-u-md-1-2">
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">IMS DB and TM System Programming</h2>
-          <p></p>
-          <p>Learn about system programming tasks for IMS database and transaction flows.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 8 hours
-              </p>
-            </div>
-            <div>
-            <a  alt="IMS DB and TM System Programming" 
-            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_7gabhka0/1_73039h0u" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
-
-        </div>
-      </div>
-    </div> -->
-
-<h3 id="appdev" style="letter-spacing:normal;margin-top:30px;color: black;width: 100%;">Application development</h3>
-
-      <!-- card 1 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-java"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">Java in IMS demos</h2>
-          <p></p>
-          <p>Watch now these short demos showing how to build Java™ applications for IMS.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate    
-                &ensp;
-                <b>Time</b>: 27 minutes
-              </p>
-            </div>
-            <div>
-            <a  alt="Java IMS demos" 
-            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_owktz0jm/1_ye4uoner" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
-
-        </div>
-      </div>
+            </nav>
+          </section>
+        </header>
       </div>
 
+      <!-- MAIN CONTENT -->
+      <div id="content" class="site-content">
+        <div class="content-area" id="content-area">
+          <article id="post-3305" class="post-3305 page type-page status-publish has-post-thumbnail hentry tag-agile tag-design-thinking tag-feedback tag-gold tag-ims tag-qpp">
+            <div class="entry-content">
+                <main class="zs-main" >
 
-      <!-- card 2 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-exp"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">IMS Explorer</h2>
-          <p></p>
-          <p>Learn about the Eclipse-based graphical tool that simplifies common IMS tasks that are related to IMS application development.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 1.15 hours
-              </p>
-            </div>
-            <div>
-            <a  alt="IMS Explorer" 
-            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/0_3n5xj4z6/0_ky5ochli" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
+                  <!-- =========================== IMS Courses banner =========================== -->
+                  <div style="width: 100%;z-index:300;">
+                    <section id="intro-section" class="pure-g zs-section white-bg2" style="padding: 2em;">
+                      <div id="intro-header" class="pure-u-1"></div>
+                      <div class="pure-u-3-25">
+                        <img class="ims-card-icon" src="wp-content/Icon_Managed ACBs_IMS DatabasePage.svg" alt="" style="margin-top: 65px;height: 30px;"/>
+                      </div>
+                      <div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
+                        <h6 style="padding:0 !important; color: #555555;">Learn</h6>
+                        <h1>IMS videos</h1>
+                        <p id="p-style" style="font-size: 18px;">Build your knowledge of IMS™ by viewing our 
+                          featured educational videos on IBM MediaCenter.</p>
+                        <div class="pure-u-1" style="max-width: 240px;margin-top: 20px;">
+                          <a class="zs-w-button-transparent" onfocus="closeNavMenu()" href="https://mediacenter.ibm.com/channel/IMS%2BEducational%2BVideos/122579632" target="_blank" rel="noopener noreferrer">
+                            Visit IBM MediaCenter &nbsp; →</a>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
 
-        </div>
-      </div>
-      </div>
+                  <!-- =========================== Row for filtering =========================== -->
+                  <!-- remember, the behaviour is that clicking pulls you to the anchors -->
+                  <div class="zs-section" id="anchor-link-menu">
+                    <div class="pure-g">
+                      <!-- Filter list -->
+                      <div class="ibm-sitenav-menu-list" id="anchor-link-menu-items">
+                        <ul class="menu" style="letter-spacing: normal;">
+                          <li style="margin-right: 2em; font-weight: 500;"><a href="#all">All roles</a></li>
+                          <li style="margin-right: 2em; font-weight: 500;"><a href="#imsdb">IMS database</a></li>
+                          <li style="margin-right: 2em; font-weight: 500;"><a href="#sysprog">System programming</a></li>
+                          <li style="margin-right: 2em; font-weight: 500;"><a href="#appdev">Application development</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
-      <!-- card 3 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-javaims"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">Java and IMS</h2>
-          <p></p>
-          <p>This introductory video series helps you learn how to create Java applications for IMS.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate
-                &ensp;
-                <b>Time</b>: 20 minutes
-              </p>
-            </div>
-            <div>
-            <a  alt="Java and IMS" 
-            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_bf4e6c7p/1_coy64ih0" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
+                  <!-- =========================== Videos list =========================== -->
+                  <div id="all" class="zs-gray-section" style="background-color: white;">
+                    <section class="zs-section">
+                      <!-- Info cards container -->
+                      <div class="pure-g video-card-container">
+                        
+                        <!-- IMS Community Calls -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-comm"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Community Calls</h3>
+                              <p>These calls cover the latest in what's going on in the world of IMS.</p>
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <a  alt="IMS Community Calls" 
+                                    title="IMS Community Calls" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_lgy10u5e/" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-        </div>
-      </div>
-      </div>
+                        <!-- IMS Intro -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-intro"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">Introduction to IMS</h3>
+                              <p></p>
+                              <p>If you're new to IMS, watch these short, high-level videos on IMS, database, transaction management, and application development.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Beginner
+                                    &ensp;
+                                    <b>Time</b>: 1 hour
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="Intro to IMS" 
+                                    title="Intro to IMS" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/channel/Intro+to+IMS+Series/139456202" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-      <!-- card 4 -->
-      <div class="pure-u-1 pure-u-md-1-2">
-        <div style="position: absolute; margin-top:-60px;" id="ims-interop"></div>
-        <div class="ims-c-card">
-        <div class="pure-u-1 pure-u-md-1" style="padding:2em;margin-right: -10px;">
-          <h2 style="font-size: 1.65rem !important;">Modernize Legacy Applications with 31-bit COBOL and 64-bit Java interoperability</h2>
-          <p></p>
-          <p>This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications.</p>		
-          <div class="pure-u-1 pure-u-md-1">
-            <div >
-              <p>
-                <b>Level</b>: Intermediate    
-                &ensp;
-                <b>Time</b>: 13 minutes
-              </p>
-            </div>
-            <div>
-            <a  alt="31-bit COBOL and 64-bit Java Interoperability" 
-            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-            href="https://mediacenter.ibm.com/media/Modernize+legacy+applications+with+31-bit+COBOL+and+64-bit+Java+interoperability/1_jj3fq6io" 
-            style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Watch now →
-            
-          </a>
-            </div>
-        </div>
+                        <!-- IMS Ansible -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-ansible"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">Getting Started with Ansible for IBM Z</h3>
+                              <p>Get an overview of how to set up your Red Hat® Ansible® control node to get started automating processes for IBM Z® with Ansible.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Beginner
+                                    &ensp;
+                                    <b>Time</b>: 6 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a  alt="Ansible for IBM Z" 
+                                    title="Ansible for IBM Z" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/media/Set%20up%20your%20Ansible%20control%20node%20for%20getting%20started%20with%20Ansible%20for%20IBM%20Z/1_r9g0duq3" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-        </div>
-      </div>
-      </div>
+                        <!-- IMS Insights Series -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-insights"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Insights Series</h3>
+                              <p>These webinars cover timely topics such as new customer perspectives on IMS and managed ACBs.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Varies
+                                    &ensp;
+                                    <b>Time</b>: Varies
+                                  </p>
+                                </div>
+                                <div>
+                                  <a  alt="IMS Insights Series" 
+                                    title="IMS Insights Series" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_05jsq9yl/" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
+                        <!-- IMS Tools -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-tools"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Tools</h3>
+                              <p></p>
+                              <p>Review the various videos on IMS Tools.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div >
+                                  <p>
+                                    <b>Level</b>: Varies
+                                    &ensp;
+                                    <b>Time</b>: Varies
+                                  </p>
+                                </div>
+                                <div>
+                                  <a  alt="IMS Tools" 
+                                    title="IMS Tools" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/189147413/1_cvhwa8r2/1_5xtr9qnf"
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-    </div>
+                        <!-- === IMS DATABASE SECTION === -->
+                        <h3 id="imsdb" class="video-section-header">IMS database</h3>
 
+                        <!-- IMS MACB -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-macb"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Managed ACBs and IMS Catalog</h3>
+                              <p>Check out this video series that describes the IMS catalog, how to implement it, and how to implement managed ACBs.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Beginner
+                                    &ensp;
+                                    <b>Time</b>: 11 hours
+                                  </p>
+                                </div>
+                                <div>
+                                  <a  alt="IMS catalog and MACBs" 
+                                    title="IMS catalog and MACBs" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_6yvvheln/" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-<!-- =========================== back to top =========================== -->
+                        <!-- IMS Catalog Database -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-cat-db"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Catalog Database Repair and Recovery</h3>
+                              <p>Learn how to repair and recover the IMS catalog database, which is an IMS high availability large database (HALDB).</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 45 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a  alt="IMS Catalog Database Repair and Recovery" 
+                                    title="IMS Catalog Database Repair and Recovery" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/details/1_0qff2gc8/categoryId/122579632" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-<div>
-  <img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="back to top">
-</div>
+                        <!-- IMS Full Function Log -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-ff-log"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Full-Function Log Record Analysis</h3>
+                              <p>These videos describe log records associated with input and output message flows, application scheduling, and full-function database updates.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 1 hour
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="Full-Function Log Record Analysis" 
+                                    title="Full-Function Log Record Analysis" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/details/1_khzutnim/categoryId/122579632" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-</div>
-</main>
+                        <!-- IMS Reorg DBRC -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-reorg-dbrc"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">How to Reorganize the IMS DBRC RECON Data Sets</h3>
+                              <p>These videos show you the general steps for reorganizing IMS DBRC RECON data sets.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 25 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="Reorganize the IMS DBRC RECON data sets" 
+                                    title="Reorganize the IMS DBRC RECON data sets" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/details/1_8b576zt9/categoryId/122579632" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-</div><!-- .entry-content -->
-</article><!-- #post-## -->
-</div>
-</div><!-- #content -->
-</div><!-- end of ibm-content-wrapper -->
+                        <!-- IMS Buffers -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-buffers"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">Managing IMS Buffers</h3>
+                              <p>Check out these three playlists on VSAM, OSAM, and dynamic full-function databases buffers.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: Varies
+                                  </p>
+                                </div>
+                                <div class="video-card-link"> 
+                                  <a alt="Managing VSAM Buffers" 
+                                    title="Managing VSAM Buffers" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/details/1_ap436b3k/categoryId/122579632" 
+                                    >Watch VSAM →
+                                  </a>
+                                  <br/>
+                                  <a alt="Managing OSAM Buffers" 
+                                    title="Managing OSAM Buffers" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/details/1_ywfjxcwn/categoryId/122579632" 
+                                    >Watch OSAM →
+                                  </a>
+                                  <br/>
+                                  <a alt="Managing Dynamic Buffers" 
+                                    title="Managing Dynamic Buffers" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_tzpfuwh2/1_zowuthrl" 
+                                    >Watch dynamic →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
-  <a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
-</p>
+                        <!-- IMS DDL Utility -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-ddl-util"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS z/OS Native DDL Utility</h3>
+                              <p>Get an overview of a new IMS utility that submits SQL data definition language (DDL) statements against an IMS database.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Beginner
+                                    &ensp;
+                                    <b>Time</b>: 12 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="IMS z/OS Native DDL Utility" 
+                                    title="IMS z/OS Native DDL Utility" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/details/1_4u3gq2f0/categoryId/122579632" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-<footer role="contentinfo" aria-label="IBM" id="themeFooter">
-  <div id="boomer-footer" class="boomer_footer_menu"></div>
-  <div id="dw-footer" class="ibm-alternate ibm-padding-normal">
-    <div class="ibm-columns ibm-padding-bottom-0">
-      <div class="ibm-col-1-1">
-        <div class="ibm-footer-corporate-links">
-          <ul>
-          <li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
-          <li><div></div></li>
-          <li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
-          <li><div></div></li>
-          <li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
-          <li><div></div></li>
-          <li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
+                        <!-- === SYSTEM PROGRAMMING SECTION === -->
+                        <h3 id="sysprog" class="video-section-header">System programming</h3>
+
+                        <!-- IMS Security Audit -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-sec-aud"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Security Audits: Gathering the Right Documentation</h3>
+                              <p>Learn what information to obtain and what some important settings and parameters mean when you need to do an IMS security health check.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 1 hour
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="IMS Security Audits" 
+                                    title="IMS Security Audits" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_zdruhxrk/" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- IMS Monitor Reports -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-mon-rep"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Monitor Reports</h3>
+                              <p>The IMS Monitor is a no-cost tool provided with IMS. The IMS Monitor can create many types of reports, including buffer pool statistics program, program I/O, and message queuing.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 45 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="IMS Monitor Reports" 
+                                    title="IMS Monitor Reports" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_3g7mquxe/" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- z/OS Logger Reports IMS Shared Queues -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="shared-queue-log-reports"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">z/OS Logger Reports IMS Shared Queues</h3>
+                              <p>Learn to use the z/OS Logger so that you can monitor the performance of an IMS shared queues environment.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 50 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="z/OS Logger Reports IMS Shared Queues" 
+                                    title="z/OS Logger Reports IMS Shared Queues" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/details/1_b9i8fwj8/categoryId/122579632" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- IMS Distributed Environments -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-dis-env"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS and Distributed Environment Security</h3>
+                              <p>Learn how to secure frontend or distributed environments as they relate to IMS.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Advanced
+                                    &ensp;
+                                    <b>Time</b>: 1 hour, 25 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="IMS and Distributed Environment Security" 
+                                    title="IMS and Distributed Environment Security" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_9uja2ely/" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- XCF and Support of IMS Facilities for Shared Queues -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="xcf-shared-queues"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">XCF and Support of IMS Facilities for Shared Queues</h3>
+                              <p>Learn about the z/OS cross-system coupling facility (XCF) that offers a set of communication services that you use for IMS shared queues.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 50 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="XCF and Support of IMS Facilities for Shared Queues" 
+                                    title="XCF and Support of IMS Facilities for Shared Queues" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/details/1_cxmb4bin/categoryId/122579632" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Tuning IMS Scheduling by Using PWFI -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-scheduling-pwfi"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header"><b>Coming soon:</b> Tuning IMS Scheduling using PWFI</h3>
+                              <p>Learn about IMS scheduling parameters such as PARLIM, PROCLIM, and regions WFI and PWFI to help you run transactions more efficiently.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <!-- <b>Time</b>:  -->
+                                  </p>
+                                </div>
+                                <!-- <div>
+                                  <a alt="Tuning IMS Scheduling using PWFI" 
+                                    title="Tuning IMS Scheduling using PWFI" target="_blank" rel="noopener noreferrer" 
+                                    href="" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- === APPLICATION DEVELOPMENT SECTION === -->
+                        <h3 id="appdev" class="video-section-header">Application development</h3>
+
+                        <!-- IMS Java Demos -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-java"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">Java in IMS demos</h3>
+                              <p>Watch these short demos showing how to build Java™ applications for IMS.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate    
+                                    &ensp;
+                                    <b>Time</b>: 27 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="Java IMS demos" 
+                                    title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_owktz0jm/1_ye4uoner" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- IMS Explorer -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-exp"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">IMS Explorer</h3>
+                              <p>Learn about the Eclipse-based graphical tool that simplifies common IMS tasks that are related to IMS application development.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 1.15 hours
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="IMS Explorer" 
+                                    title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/0_3n5xj4z6/0_ky5ochli" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- IMS Java Applications -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-javaims"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">Java and IMS</h3>
+                              <p>This introductory video series helps you learn how to create Java applications for IMS.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate
+                                    &ensp;
+                                    <b>Time</b>: 20 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="Java and IMS" 
+                                    title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_bf4e6c7p/1_coy64ih0" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- IMS Interoperability -->
+                        <div class="pure-u-1 pure-u-lg-1-3">
+                          <div style="position: absolute; margin-top:-60px;" id="ims-interop"></div>
+                          <div class="ims-c-card">
+                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
+                              <h3 class="video-card-header">Modernize Legacy Applications with 31-bit COBOL and 64-bit Java interoperability</h3>
+                              <p>This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications.</p>		
+                              <div class="pure-u-1 pure-u-md-1">
+                                <div>
+                                  <p>
+                                    <b>Level</b>: Intermediate    
+                                    &ensp;
+                                    <b>Time</b>: 13 minutes
+                                  </p>
+                                </div>
+                                <div>
+                                  <a alt="31-bit COBOL and 64-bit Java Interoperability" 
+                                    title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
+                                    href="https://mediacenter.ibm.com/media/Modernize+legacy+applications+with+31-bit+COBOL+and+64-bit+Java+interoperability/1_jj3fq6io" 
+                                    class="video-card-link">Watch now →
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </section>
+                  </div>
+
+                  <!-- =========================== back to top =========================== -->
+                  <div>
+                    <img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="back to top">
+                    <!-- Accessibility code for back to top button -->
+                    <p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
+                      <a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
+                    </p>
+                  </div>
+
+                </main>
+            </div> <!-- .entry-content -->
+          </article> <!-- #post-## -->
+        </div> <!-- .content-area -->
+      </div> <!-- #content -->
+
+      <!-- FOOTER -->
+      <footer role="contentinfo" aria-label="IBM" id="themeFooter">
+        <div id="boomer-footer" class="boomer_footer_menu"></div>
+        <div id="dw-footer" class="ibm-alternate ibm-padding-normal">
+          <div class="ibm-columns ibm-padding-bottom-0">
+            <div class="ibm-col-1-1">
+              <div class="ibm-footer-corporate-links">
+                <ul>
+                  <li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
+                  <li><div></div></li>
+                  <li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
+                  <li><div></div></li>
+                  <li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
+                  <li><div></div></li>
+                  <li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
                 </ul>
+              </div>
+              <p style="color: gray;margin:-25px 0 -25px 0;">Copyright IBM Corporation 2024</p>
+              <div id="ibm-footer-locale-selector"></div>
+            </div>
+          </div>
         </div>
-        <p style="color: gray;margin:-25px 0 -25px 0;">Copyright IBM Corporation 2024</p>
-        <div id="ibm-footer-locale-selector"></div>
-      </div>
+      </footer>
     </div>
-  </div>
-</footer>
-</div><!-- #page -->
-<!-- Search box functions -->
-<script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
 
-<!-- post-load actions/listeners -->
-<script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
+  <!-- Search box functions -->
+  <script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
 
-</body>
+  <!-- post-load actions/listeners -->
+  <script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
+
+  </body>
 </html>
