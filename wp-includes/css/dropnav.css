@@ -198,8 +198,8 @@ a {
 
   @media (max-width: 1200px) {
     .ibm-landing-page {
-      width: 95% !important;
-      margin-left: 5% !important;
+      /* width: 95% !important;
+      margin-left: 5% !important; */
     }
     #left-bar-brand {
       width:5% !important;
@@ -207,8 +207,8 @@ a {
   }
   @media (max-width: 800px) {
     .ibm-landing-page {
-      width: 92% !important;
-      margin-left: 8% !important;
+      /* width: 92% !important;
+      margin-left: 8% !important; */
     }
     #left-bar-brand {
       width:8% !important;

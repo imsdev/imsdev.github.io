@@ -208,6 +208,24 @@
       /* -webkit-transform: translateY(-3px);
       transform: translateY(-3px); */
     }
+    @media (width <= 1020px) {
+      .ims-c-card {
+        height: 300px;
+      }
+    }
+
+    @media (1020px < width < 1440px) {
+      .ims-c-card {
+        height: 480px;
+      }
+    }
+
+    @media (width >= 1440px) {
+      .ims-c-card {
+        height: 350px;
+      }
+    }
+
     .ims-c-card-content {
       padding: 2em;
       margin-right: -10px;
