@@ -5986,6 +5986,10 @@ body.admin-bar .ibm-mobilemenu {
 .site-footer ul li:before {
   display: none;
 }
+.copyright {
+  color: #a8a8a8;
+  margin: -25px 0 -25px 0;
+}
 .page-template-page-classic-php #autogen {
   padding-top: 40px;
   padding-bottom: 40px;
