@@ -250,6 +250,7 @@
       bottom: 10%;
     }
     .hide-label {
+      position:absolute;
       visibility: hidden;
     }
     #anchor-link-menu {
