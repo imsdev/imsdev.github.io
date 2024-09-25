@@ -249,10 +249,6 @@
       position: absolute;
       bottom: 10%;
     }
-    .hide-label {
-      position:absolute;
-      visibility: hidden;
-    }
     #anchor-link-menu {
       padding: 1em 5em 0em 5em;
       background-color: white;
