@@ -13,6 +13,14 @@
     background-size:cover;
   }
 
+  .banner b {
+    font-weight: 900 !important;
+  }
+
+  .banner p {
+    font-size: 16pt !important;
+  }
+
   .p-menu1{
      height: 100%;
      position: relative;

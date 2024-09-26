@@ -738,7 +738,7 @@ a:hover {
   text-decoration:none !important;
 }
 
-/* ---------------- Footer --------------- */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-= Footer =-=-=-=-=-=-=-=-=-=-=-=-=-= */
 #dw-footer {
 	background-color: #1c1c1c !important;
 }
@@ -785,7 +785,7 @@ a.zs-pg-nav-next:hover, a.zs-pg-nav-prev:hover {
   background-color: #55A8FD;
   text-decoration: none; }		
 
-/* ---------------- Scroll to Top --------------- */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-= Scroll to Top =-=-=-=-=-=-=-=-=-=-=-=-=-= */
 html {
 	scroll-behavior: smooth;
 }

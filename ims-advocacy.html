@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
 	<meta charset="UTF-8">
@@ -18,7 +17,7 @@
 	href="wp-content/IMS_logo_small.png">
 
 <!-- Pageittle -->
-<title>IMS Advocate</title>
+<title>IMS Advocacy</title>
 
 <!-- Meta -->
 <link rel="canonical" href="ims-advocacy.html" />
@@ -56,6 +55,7 @@
 <link href="wp-includes/css/www.css" rel="stylesheet" />
 <link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
 <link href="wp-includes/css/tables.css" rel="stylesheet">
+<link href="wp-includes/css/pages/advocacy.css" rel="stylesheet">
 
 <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
 <script>
@@ -90,472 +90,425 @@
 
 </head>
 
-
 <!-- MASTHEAD_SITENAV_BEGIN -->
-<body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
-	<div class="ibm-landing-page" style="position: relative;background: #282828 !important;">
-		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-		<div id="ibm-content-wrapper" class="sticky-nav">
-			<header role="banner" aria-labelledby="ibm-pagetitle-h1">
-	  
-			<!-- DROP NAV -->
-			<section class="p-menu1 ">
-			  <nav id="navbar" class="navigation" role="navigation">
-			  
-				<!-- Header wrapper -->
-				<span class="sitename-wrap">
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<img src="wp-content/IMS_logo_small.png"
-					style="z-index:900;" 
-					id="left-bar-brand"
-					alt="IMS logo"
-					/>
-				  </a>
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<h4 style="line-height: 2; display: inline-block;">
-					  IBM <b>IMS Central</b>
-					</h4>
-				  </a>
-				</span>
-				<!-- == Header wrapper -->
-			  
-				<!-- Search wrapper -->
-				<form class id="searchbar">
-				  <div class="tipue_search_right">
-					<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-					  <defs>
-						<style>
-						  .cls-1 {
-						  fill: none;
-						  }
-						</style>
-					  </defs>
-					  <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-					  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-					</svg>
-					<input type="text" name="q" id="tipue_search_input"
-					  pattern=".{3,}" title="Search bar"
-					  placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-					<svg id="search-clr" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-					</svg>
-				  </div>
-				  <div style="clear: both;"></div>
-				</form>
-	  
-				<!-- On page-load activation -->
-				<script>
-				  $(document).ready(function() {
-					$('#tipue_search_input').tipuesearch();
-				  });
-				</script>
-	  
-				<!-- Search drop-down -->
-				<div id="tipue_search_content" class="search_content" style="position: absolute"></div>
-				<!-- == Search wrapper -->
-	  
-				<!-- Hamburger dropdown menu -->
-				<input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
-				
-				<label class="hamburger1">
-				  <!-- Burgie wrapper -->
-				  <label class="burg-wrap" for="toggle1">
-					<span class="burg-bars">
-					  <div class="top"></div>
-					  <div class="meat"></div>
-					  <div class="bottom"></div>
-					</span>
-				  </label>
-				</label>
-			  
-				<!-- Dropdown menu options -->
-				<nav class="menu1">
-				<div class="pages pure-g">
-				  <!-- Innovate -->
-				  <div class="pure-u-1 pure-u-sm-1-4">
-					<h3>Innovate</h3>
-					<!-- cards/pages -->
-					<!-- 1 -->
-					<a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
-					  <div class="navcard">
-						<h5>APIs</h5>
-						<p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
-					  </div>
-					</a>
-					<!-- 2 -->
-					<a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>Automation</h5>
-						<p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
-					  </div>
-					</a>
-					<!-- 3 -->
-					<a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>Java</h5>
-						<p>Build Java applications to run inside or outside IMS.</p>
-					  </div>
-					</a>
-					<!-- 4 -->
-					<a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS Database</h5>
-						<p>IMS Database: fast, secure, reliable.</p>
-					  </div>
-					</a>
-				  </div>
-			  
-				  <!-- Engage -->
-				  <div class="pure-u-1 pure-u-sm-1-4">
-					<h3>Engage</h3>
-					<!-- cards/pages -->
-					<!-- 1 -->
-					<a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS Gold</h5>
-						<p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
-					  </div>
-					</a>
-					<!-- 2 -->
-					<a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>Makerspace</h5>
-						<p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
-					  </div>
-					</a>
-					<!-- 3 -->
-					<a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
-					  href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
-					  <div class="navcard">
-						<h5>IMS community<img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img></h5>
-						<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
-					  </div>
-					</a>
-					<!-- 4 -->
-					<a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>Advocacy</h5>
-						<p>Get or change your IMS advocate.</p>
-					  </div>
-					</a>
-				  </div>
-			  
-				  <!-- Learn -->
-				  <div class="pure-u-1 pure-u-sm-1-4">
-					<h3>Learn</h3>
-					<!-- cards/pages -->
-					<!-- 1 -->
-					<a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS videos</h5>
-						<p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
-					  </div>
-					</a>
-					<!-- 2 -->
-					<a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS courses</h5>
-						<p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
-					  </div>
-					</a>
-					<!-- 3 -->
-					<a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS repos on GitHub</h5>
-						<p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
-					  </div>
-					</a>
-				  </div>
-			  
-				  <!-- Docs & Support -->
-				  <div class="pure-u-1 pure-u-sm-1-4">
-					<h3>
-					  Documentation & support
-					</h3>
-					<!-- cards/pages -->
-					<!-- 1 -->
-					<a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS documentation</h5>
-						<p>Find information on IMS, tools, and other IBM products.</p>
-					  </div>
-					</a>
-					<!-- 2 -->
-					<a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
-					  <div class="navcard">
-						<h5>IMS support</h5>
-						<p>Get help with IMS or other IBM products.</p>
-					  </div>
-					</a>
-					<hr style="background-color: gray !important;" />
-					<!-- 3 special -->
-					<div style="padding: 5px 20px 0px 20px; color: white;">
-					  <h5>IMS Advocacy</h5>
-					  <!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
-						IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
-						style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
-					  <p style="color: rgb(199, 199, 199); margin-top: -5px; font-size: 14px;">If you don't have an advocate, contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com"
-						class="nav-item" tabindex="-1" style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
-					</div>
-				  </div>
+<body id="ibm-com" class="ibm-com ibm-type nav-bar">
+    <div id="ibm-content-wrapper" class="sticky-nav">
+  	  <header id="ibm-pageheader" aria-label="Site navigation bar">
+        <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+        <!-- --------------- NAV BAR --------------- -->
+        <section class="p-menu1">
+          <nav id="navbar" class="navigation" aria-labelledby="ibm-pageheader">
+        
+          <!-- Site name wrapper -->
+          <span class="sitename-wrap">
+            <a href="index.html" class="logo-container">
+              <img src="wp-content/IMS_logo_small.png"
+                id="left-bar-brand"
+                alt="IMS logo"
+              >
+            </a>
+            <a href="index.html" class="logo-container">
+              <h4 class="site-header-text">
+                IBM <b>IMS Central</b>
+              </h4>
+            </a>
+          </span>
+        
+          <!-- Search wrapper -->
+          <form id="searchbar" aria-label="Search">
+            <div class="tipue_search_right">
+              <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+                <defs>
+                  <style> .cls-1 { fill: none; } </style>
+                </defs>
+                <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+                <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+              </svg>
+              <input type="text" name="q" id="tipue_search_input"
+                pattern=".{3,}" title="Search bar"
+                placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+              <svg id="search-clr" aria-label="Clear search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px">
+                <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+              </svg>
+            </div>
+          </form>
+
+          <!-- On page-load activation -->
+          <script>
+            $(document).ready(function() {
+              $('#tipue_search_input').tipuesearch();
+            });
+          </script>
+
+          <!-- Search drop-down -->
+          <div id="tipue_search_content" class="search_content search-dropdown"></div>
+
+          <!-- Hamburger drop-down menu -->
+          <input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
+          
+          <label class="hamburger1">
+            <!-- Burgie wrapper -->
+            <label class="burg-wrap" for="toggle1">
+              <span class="hide-label">Label for input</span>
+              <span class="burg-bars">
+                <span class="hide-label">Label for input</span>
+                <div class="top"></div>
+                <div class="meat"></div>
+                <div class="bottom"></div>
+              </span>
+            </label>
+          </label>
+        
+          <!-- Hamburger drop-down menu options -->
+          <nav class="menu1" aria-label="Dropdown menu items">
+            <div class="pages pure-g">
+              <!-- Innovate -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+                <h3>Innovate</h3>
+                <!-- cards/pages -->
+                <!-- 1 -->
+                <a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
+                  <div class="navcard">
+                    <h5>APIs</h5>
+                    <p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>Automation</h5>
+                    <p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>Java</h5>
+                    <p>Build Java applications to run inside or outside IMS.</p>
+                  </div>
+                </a>
+                <!-- 4 -->
+                <a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS Database</h5>
+                    <p>IMS Database: fast, secure, reliable.</p>
+                  </div>
+                </a>
+              </div>
+          
+              <!-- Engage -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+                <h3>Engage</h3>
+                <!-- cards/pages -->
+                <!-- 1 -->
+                <a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS Gold</h5>
+                    <p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>Makerspace</h5>
+                    <p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
+                  href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
+                  <div class="navcard">
+                    <h5>IMS community
+                      <img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img>
+                    </h5>
+                    <p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
+                  </div>
+                </a>
+                <!-- 4 -->
+                <a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>Advocacy</h5>
+                    <p>Get or change your IMS advocate.</p>
+                  </div>
+                </a>
+              </div>
+          
+              <!-- Learn -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+                <h3>Learn</h3>
+                <!-- cards/pages -->
+                <!-- 1 -->
+                <a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS videos</h5>
+                    <p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS courses</h5>
+                    <p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS repos on GitHub</h5>
+                    <p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
+                  </div>
+                </a>
+              </div>
+          
+              <!-- Docs & Support -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+                <h3>
+                  Documentation & support
+                </h3>
+                <!-- cards/pages -->
+                <!-- 1 -->
+                <a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS documentation</h5>
+                    <p>Find information on IMS, tools, and other IBM products.</p>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS support</h5>
+                    <p>Get help with IMS or other IBM products.</p>
+                  </div>
+                </a>
+                <hr class="nav-divider"/>
+                <!-- 3 special -->
+                <div class="navcard-special">
+                  <h5>IMS Advocacy</h5>
+                  <!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
+                    IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
+                    style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
+                  <p>If you don't have an advocate, contact Deepak Kohli at 
+                    <a href="mailto:deepakk@us.ibm.com"
+                      class="nav-item" 
+                      tabindex="-1">
+                      <u>deepakk@us.ibm.com</u>
+                    </a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </section>
+      </header>
+    </div>
+
+	<!-- Additional styling for content after navigation -->
+	<head>
+		<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+		<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+		<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+	</head>
+
+	<div id="content" class="site-content">
+		<div class="entry-content">
+			<main id="main">
+
+				<!-- =========================== IMS Advocacy Hero Banner =========================== -->
+				<div class="banner engage-bg advocacy-hero">
+					<section id="intro-section" class="pure-g zs-section">
+						<div class="pure-u-3-25">
+						<img class="ims-card-icon" src="wp-content/Icon_02_IMS MakerspacePage.svg" alt="">
+						</div>
+						<div id="intro-info" class="pure-u-1 pure-u-sm-1-2 advocacy-hero-text">
+							<h6>Engage</h6>
+							<h1>IMS Advocacy: A seat at the table</h1>
+							<p>Every IMS™ client is entitled to an IMS Advocate. Available at no cost to you.</p>
+							<div class="pure-u-1">
+								<a 	onfocus="closeNavMenu()" 
+									class="zs-w-button-transparent" 
+									href="mailto:deepakk@us.ibm.com"
+								>
+									Request an IMS advocate
+								</a>
+							</div>
+						</div>
+					</section>
 				</div>
-			  </nav>
-			</section>
-			<!-- DROP NAV END -->
-		  </header>
-		</div>
 
-<!-- Additional styling for content after navigation -->
-<head>
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-</head>
+				<!-- =========================== Who are they? =========================== -->
+				<div class="zs-gray-section ibm-background-white-core">
+					<section class="zs-section">
+						<div class="pure-g">
+							<div class="pure-u-1 pure-u-sm-1 ibm-padding-bottom-1">
+								<!--Header -->
+								<h2>Who are they?</h2>
+								<div class="pure-u-1-4">
+									<p>IMS Advocates are folks 
+									<br> that work at the IMS lab.</p>
+								</div>
+								<div class="pure-u-lg-2-24"></div>
+								<!-- Section contents -->
+								<div class="pure-u-md-1-4">
+									<img src="wp-content/Development.svg" alt="" class="advocacy-list" style="height: 30px;">
+									<div class="pure-u-18-24"><p>IMS Developers</p></div>
+								</div>
+								<div class="pure-u-md-1-4">
+									<img src="wp-content/Exam-mode.svg" alt="" class="advocacy-list" style="height: 30px;">
+									<div class="pure-u-18-24"><p>IMS Testers</p></div>
+								</div>
+								<!-- 2nd level -->
+								<div class="pure-u-8-24"></div>
+								<div class="pure-u-md-1-4">
+									<img src="wp-content/Help-desk.svg" alt="" class="advocacy-list" style="height: 30px;">
+									<div class="pure-u-18-24"><p>IMS Level 2 support</p></div>
+								</div>
+								<div class="pure-u-md-1-4">
+									<img src="wp-content/User-profile.svg" alt="" class="advocacy-list" style="height: 30px;">
+									<div class="pure-u-18-24"><p>IMS Product managers</p></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
 
-<div id="content" class="site-content">
+				<!-- =========================== What do they do? =========================== -->
+				<div class="zs-section ibm-background-white-core advocacy-section-gray">
+					<section class="zs-section">
+						<div class="pure-g">
+							<div class="pure-u-1 pure-u-sm-1 ibm-padding-bottom-1">
+								<!--Header -->
+								<h2>What do they do?</h2>
+								<div class="pure-u-1-4">
+									<p>An IMS Advocates job 
+									<br> is to help IMS clients.</p>
+								</div>
+								<div class="pure-u-lg-2-24"></div>
+								<!-- Section contents -->
+								<div class="pure-u-md-1-4">
+									<div class="advocacy-list"><h2 class="advocacy-list-num">1</h2></div>
+									<div class="pure-u-18-24"><p>They are there to get you what you need to be successful with IMS.</p></div>
+								</div>
+								<div class="pure-u-md-1-4">
+									<div class="advocacy-list"><h2 class="advocacy-list-num">2</h2></div>
+									<div class="pure-u-18-24"><p>A good IMS advocate is a lobbyist for their IMS clients.</p></div>
+								</div>
+								<!-- 2nd level -->
+								<div class="pure-u-8-24"></div>
+								<div class="pure-u-md-1-4 advocacy-list-bottom-row">
+									<div class="advocacy-list"><h2 class="advocacy-list-num">3</h2></div>
+									<div class="pure-u-18-24"><p>IMS advocates ensure to have regular calls with their clients.</p></div>
+								</div>
+								<div class="pure-u-md-1-4 advocacy-list-bottom-row">
+									<div class="advocacy-list"><h2 class="advocacy-list-num">4</h2></div>
+									<div class="pure-u-18-24"><p>IMS advocates are NOT salespeople, they don't earn commission.</p></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
 
-<div class="content-area" id="content-area">
+				<!-- =========================== Examples of Advocacy =========================== -->
+				<div class="zs-gray-section ibm-background-white-core advocacy-section-black" id="enroll">
+					<section class="zs-section">
+						<!--Header -->
+						<div class="pure-u-1 ibm-padding-bottom-1"><h2>Examples of advocacy</h2></div>
+						<div class="pure-u-lg-2-24"></div>
+						<!-- Section contents -->
+						<div class="pure-u-sm-1">
+							<div class="pure-u-sm-1 pure-u-md-7-24 advocacy-action-header">
+								<img src="wp-content/Db2-buffer-pool.svg" alt="">
+								<p>A client made their Db2 DBA in charge of IMS.</p>
+								<br/>
+								<p>
+									<h4 class="advocacy-action">Advocacy action</h4>
+									The IMS team set up educational webinars for Db2 DBA's.
+								</p>
+							</div>
+							<div class="pure-u-sm-1 pure-u-md-7-24 advocacy-action-header">
+								<img src="wp-content/File-storage.svg" alt="">
+								<p>A client requested to have a DEDB greater than 2K AREAs.</p>
+								<p>
+									<h4 class="advocacy-action">Advocacy action</h4>
+									Enhancement released to increase DEDBs storage to 9,999 AREAs.
+								</p>
+							</div>
+							<div class="pure-u-sm-1 pure-u-md-7-24 advocacy-action-header">
+								<img src="wp-content/Time.svg" alt="">
+								<p>A client opened a case for an issue regarding a PoC.</p>
+								<p>
+									<h4 class="advocacy-action">Advocacy action</h4>
+									Made sure to escalate the matter to get attention to the case and to get it resolved sooner.
+								</p>
+							</div>
+						</div>
 
-<article id="post-3305" class="post-3305 page type-page status-publish has-post-thumbnail hentry tag-agile tag-design-thinking tag-feedback tag-gold tag-ims tag-qpp">
-<div class="entry-content">
-<div aria-role="presentation">
-<main class="zs-main" >
+						<hr class="advocacy-hr">
+						<div class="pure-u-sm-16-24">
+							<q class="advocacy-quote">An IBM advocate is a must-have. 
+								<span>Our present issues are handled with the utmost priority and 
+								thoughtful planning</span> is dedicated to our future goals.</q>
+							<p class="citation">Mainframe system administrator at a Global Technology Services company</p>
+						</div>
 
-<!-- =========================== IMS Advocacy =========================== -->
-<div class="banner engage-bg" style="padding: 20px;">
+						<div class="pure-u-22-24 testimonial-section">
+							<!-- card 1 -->
+							<div class="ims-m-card testimonial-card">
+								<div class="pure-u-1">
+									<div class="pure-u-1 testimonial">
+										<q>We've enjoyed and benefited from our advocate relationship. Not only
+											does our advocate keep us aware of product direction in a way we 
+											might not be able to accomplish on our own, but they are also 
+											participate in developing a deeper understanding of our issues and 
+											how they impact our business so we can prioritize solutions in a way
+											that the case severity rating on the IBM support site really doesn't 
+											capture and communicate.</q>
+											<p class="citation testimonial-citation">Mainframe system administrator lead at a Global Technology Services company</p>
+									</div>
+								</div>
+							</div>
+							<!-- card 2 -->
+							<div class="ims-m-card testimonial-card">
+								<div class="pure-u-1">
+									<div class="pure-u-1 testimonial">
+										<q>An IMS advocate is an essential tool in your product arsenal providing 
+											awareness, escalation and education about all things IMS. It provides you
+											a seat at the table to help guide the product direction to fulfill business
+											needs and eliminate pain points.</q>
+										<p class="citation testimonial-citation">Vice President - System Operations & Administration at a Global Technology Services company</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
 
-	<section id="intro-section" class="pure-g zs-section" style="padding: 2em;color: white;">
-		<div id="intro-header" class="pure-u-1">
-		</div>
-		<div class="pure-u-3-25">
-		  <img class="ims-card-icon" src="wp-content/Icon_02_IMS MakerspacePage.svg" alt="" style="margin-top: 65px;">
-		</div>
-		<div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
-			<h6 style="padding:0 !important">Engage</h6>
-		   <h1>IMS Advocacy: A seat at the table</h1>
-		   <p id="p-style">Every IMS™ client is entitled to an IMS Advocate. Available at no cost to you.</p>
-		   <div class="pure-u-1" style="max-width: 240px;margin-top: 20px;">
-			<a onfocus="closeNavMenu()" class="zs-w-button-transparent" href="mailto:deepakk@us.ibm.com">
-				Request an IMS advocate</a>
-		</div>
-		</div>
+				<!-- =========================== Request an advocate =========================== -->
+				<!-- <div class="zs-section ibm-background-white-core" 
+					style="margin-top: -20px;background-color:#153979;color:white;">
+						<div class="pure-u-g">
+							<div class="pure-u-md-1-12">
+								<img src="" alt="Signup identifier">
+							</div>
+							<div class="pure-u-md-5-12">
+								<h2>Request and advocate</h2>
 
-	  </section>
+							</div>
+						</div>
+					</div> -->
 
-	</section>
-</div>
-
-
-
-<!-- =========================== How do Clients Benefit from IMS Gold? =========================== -->
-
-<div class="zs-gray-section ibm-background-white-core">
-	<section class="zs-section">
-        <div class="pure-g">
-  <!--Header -->
-	  <div class="pure-u-1 pure-u-sm-1 ibm-padding-bottom-1">
-		  <h2>Who are they?</h2>
-          <div class="pure-u-1-4">
-          <p>IMS Advocates are folks 
-            <br> that work at the IMS lab.</p>
-        </div>
-	  <div class="pure-u-lg-2-24"></div>
-  <!-- Section contents -->
-		<div class="pure-u-md-1-4" style="margin-left: -5px;">
-            <div style="display: inline-block; margin-right: 10px;"><img src="wp-content/Development.svg" alt="" style="height: 30px;"></div>
-			<div class="pure-u-18-24"><p>IMS Developers</p></div>
-        </div>
-        <div class="pure-u-md-1-4">
-            <div style="display: inline-block; margin-right: 10px;"><img src="wp-content/Exam-mode.svg" alt="" style="height: 30px;"></div>
-			<div class="pure-u-18-24"><p>IMS Testers</p></div>
-        </div>
-    <!-- 2nd level -->
-    <div class="pure-u-8-24"></div>
-    <div class="pure-u-md-1-4">
-        <div style="display: inline-block; margin-right: 10px;"><img src="wp-content/Help-desk.svg" alt="" style="height: 30px;"></div>
-        <div class="pure-u-18-24"><p>IMS Level 2 support</p></div>
-    </div>
-    <div class="pure-u-md-1-4">
-        <div style="display: inline-block; margin-right: 10px;"><img src="wp-content/User-profile.svg" alt="" style="height: 30px;"></div>
-        <div class="pure-u-18-24"><p>IMS Product managers</p></div>
-    </div>
-
-  </div>
-  </section>
-  </div>
-<!-- =========================== What do they do? =========================== -->
-
-<div class="zs-section ibm-background-white-core" style="background-color: #f4f4f4;">
-	<section class="zs-section">
-        <div class="pure-g">
-  <!--Header -->
-	  <div class="pure-u-1 pure-u-sm-1 ibm-padding-bottom-1">
-		  <h2>What do they do?</h2>
-          <div class="pure-u-1-4">
-          <p>An IMS Advocates job 
-            <br> is to help IMS clients.</p>
-        </div>
-	  <div class="pure-u-lg-2-24"></div>
-  <!-- Section contents -->
-		<div class="pure-u-md-1-4" style="margin-left: -5px;">
-            <div style="display: inline-block; margin-right: 10px;">
-                <h2 style="color:#0f62fe;margin-top: -10px;">1</h2></div>
-			<div class="pure-u-18-24"><p>They are there to get you what you need to be successful with IMS.</p></div>
-        </div>
-        <div class="pure-u-md-1-4">
-            <div style="display: inline-block; margin-right: 10px;">
-                <h2 style="color:#0f62fe;margin-top: -10px;">2</h2></div>
-			<div class="pure-u-18-24"><p>A good IMS advocate is a lobbyist for their IMS clients.</p></div>
-        </div>
-    <!-- 2nd level -->
-    <div class="pure-u-8-24"></div>
-    <div class="pure-u-md-1-4" style="margin-top: 20px;">
-        <div style="display: inline-block; margin-right: 10px;">
-            <h2 style="color:#0f62fe;margin-top: -10px;">3</h2></div>
-        <div class="pure-u-18-24"><p>IMS advocates ensure to have regular calls with their clients.</p></div>
-    </div>
-    <div class="pure-u-md-1-4" style="margin-top: 20px;">
-        <div style="display: inline-block; margin-right: 10px;">
-            <h2 style="color:#0f62fe;margin-top: -10px;">4</h2></div>
-        <div class="pure-u-18-24"><p>IMS advocates are NOT salespeople, they don't earn commission.</p></div>
-    </div>
-
-  </div>
-  </section>
-  </div>
-
-  <!-- =========================== Enroll info =========================== -->
-
-  <div class="zs-gray-section ibm-background-white-core" 
-  style="margin-top: -20px;background-color:#2c2c2c;color:white;" id="enroll">
-	<section class="zs-section">
-  
-  <!--Header -->
-	  <div class="pure-u-1 ibm-padding-bottom-1">
-		  <h2>Examples of advocacy</h2>
-	  </div>
-	  <div class="pure-u-lg-2-24"></div>
-
-  <!-- Section contents -->
-
-	<div class="pure-u-sm-1">
-		<div class="pure-u-sm-1 pure-u-md-7-24" style="margin-right: 3%;font-size: 18px;">
-			<img src="wp-content/Db2-buffer-pool.svg" alt="" style="height: 40px; width: 40px; margin-bottom: 15px;">
-			<p>A client made their Db2 DBA in charge of <br>IMS.</p>
-            <p>
-                <h4 style="color: #418bff;margin-bottom: -15px;">Advocacy action</h4>
-                The IMS team set up educational webinars for Db2 DBA's.
-            </p>
-		</div>
-		<div class="pure-u-sm-1 pure-u-md-7-24" style="margin-right: 3%;font-size: 18px;">
-			<img src="wp-content/File-storage.svg" alt="" style="height: 40px; width: 40px; margin-bottom: 15px;">
-			<p>A client requested to have a DEDB greater than 2K AREAs.</p>
-            <p>
-                <h4 style="color: #418bff;margin-bottom: -15px;">Advocacy action</h4>
-                Enhancement released to increase DEDBs storage to 9,999 AREAs.
-            </p>
-		</div>
-		<div class="pure-u-sm-1 pure-u-md-7-24" style="margin-right: 3%;font-size: 18px;">
-			<img src="wp-content/Time.svg" alt="" style="height: 40px; width: 40px; margin-bottom: 15px;">
-			<p>A client opened a case for an issue regarding a PoC.</p>
-            <p>
-                <h4 style="color: #418bff;margin-bottom: -15px;">Advocacy action</h4>
-                Made sure to escalate the matter to get attention to the case and to get it resolved sooner.
-            </p>
-		</div>
-	</div>
-
-				<hr style="margin-top: 40px;color: lightgray;margin-bottom: 3em;">
-
-		<div class="pure-u-sm-16-24">
-		<h2 style="font-family: Georgia, 'Times New Roman', Times, serif;float: left;font-weight:lighter;line-height: normal;">
-            "An IBM advocate is a must-have. 
-            <span style="color: #4089fc;">Our present issues are handled with the utmost priority and 
-                thoughtful planning</span> is dedicated to our future goals."</h2>
-            <p style="font-size: 10px;">Mainframe system administrator at a Global Technology Services company</p>
-		</div>
-			  
-<!-- =========================== Testimonial carousel =========================== -->
-
-<div class="pure-u-22-24" style="margin-left:auto; margin-right:auto;width: 100%;margin-top: 30px;">
-    <div style="align-content: center;">
-    <!-- card 1 -->
-    <div class="ims-m-card" style="background-color: #418bff; height: 290px;">
-        <div class="pure-u-1">
-            <div class="pure-u-1" style="padding:15px;">
-                <p>"We've enjoyed and benefited from our advocate relationship. Not only
-                    does our advocate keep us aware of product direction in a way we 
-                    might not be able to accomplish on our own, but they are also 
-                    participate in developing a deeper understanding of our issues and 
-                    how they impact our business so we can prioritize solutions in a way
-                    that the case severity rating on the IBM support site really doesn't 
-                    capture and communicate."</p>
-                    <p style="font-size: 10px;">Mainframe system administrator lead at a Global Technology Services company</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- card 2 -->
-    <div class="ims-m-card" style="background-color: #418bff; height: 290px;">
-        <div class="pure-u-1">
-            <div class="pure-u-1" style="padding:15px;">
-                <p>"An IMS advocate is an essential tool in your product arsenal providing 
-                    awareness, escalation and education about all things IMS. It provides you
-                    a seat at the table to help guide the product direction to fulfill business
-                    needs and eliminate pain points."</p>
-                    <p style="font-size: 10px;">Vice President - System Operations
-                        & Administration at a Global Technology Services company</p>
-
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
-
-  </section>
-  </div>
-
-<!-- =========================== Request an advocate =========================== -->
-    <!-- <div class="zs-section ibm-background-white-core" 
-    style="margin-top: -20px;background-color:#153979;color:white;">
-        <div class="pure-u-g">
-            <div class="pure-u-md-1-12">
-                <img src="" alt="Signup identifier">
-            </div>
-            <div class="pure-u-md-5-12">
-                <h2>Request and advocate</h2>
-
-            </div>
-        </div>
-    </div> -->
-
-  	</div>
-      </section>
-</div>
-
-<!-- =========================== back to top =========================== -->
-
-<div>
-    <img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
-</div>
-
-</main>
-<div>
-
-	</div><!-- .entry-content -->
-</article><!-- #post-## -->
-
-		</div>
-
-
-
-		</div><!-- #content -->
+				<!-- =========================== back to top =========================== -->
+				<div>
+					<img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
+					<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
+					<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
+					</p>
+				</div>
+			</main>
+		</div><!-- .entry-content -->
 	</div><!-- end of ibm-content-wrapper -->
 
-	<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
-		<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
-	</p>
-
-	<footer role="contentinfo" aria-label="IBM" id="themeFooter">
+	<footer aria-label="IBM" id="themeFooter">
 		<div id="boomer-footer" class="boomer_footer_menu"></div>
 		<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
 		  <div class="ibm-columns ibm-padding-bottom-0">
@@ -576,14 +529,13 @@
 			</div>
 		  </div>
 		</div>
-	  </footer>
-</div><!-- #page -->
+	</footer>
+
 <!-- Search box functions -->
 <script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
 
 <!-- post-load actions/listeners -->
 <script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
-
 
 </body>
 </html>
