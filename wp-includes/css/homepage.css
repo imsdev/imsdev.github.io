@@ -289,6 +289,10 @@
       max-width: 75px;
       margin-bottom:20px;
     }
+    .ims-card-icon-lg {
+      max-height: 75px;
+      margin-bottom:20px;
+    }
     .blueg-bg {
       color: white;
       background-image: linear-gradient(to right, blue,black);

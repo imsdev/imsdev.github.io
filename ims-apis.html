@@ -1,594 +1,571 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- v18 basic meta -->
-	<meta name="geo.country" content="ZZ" />
-	<meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
-	<meta name="dcterms.date" content="2020-07-18" />
-	<meta name="keywords" content="IMS Central, IMS Developer, IMS" />
-	<meta name="robots" content="index, follow" />
-<!-- Favicon -->
-	<link id="favicon"
-	rel="shortcut icon"
-	type="image/x-icon"
-	href="wp-content/IMS_logo_small.png">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- v18 basic meta -->
+		<meta name="geo.country" content="ZZ" />
+		<meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
+		<meta name="dcterms.date" content="2020-07-18" />
+		<meta name="keywords" content="IMS Central, IMS Developer, IMS" />
+		<meta name="robots" content="index, follow" />
+	<!-- Favicon -->
+		<link id="favicon"
+		rel="shortcut icon"
+		type="image/x-icon"
+		href="wp-content/IMS_logo_small.png">
 
-<!-- Pageittle -->
-<title>IMS and APIs</title>
+	<!-- Pageittle -->
+	<title>IMS and APIs</title>
 
-<!-- Meta -->
-<link rel="canonical" href="ims-apis.html" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="APIs & IMS" />
-<meta property="og:description" content="IMS and APIs" />
-<meta property="og:url" content="http://www/imsdev.github.io/ims-apis.html" />
-<meta property="og:site_name" content="IMS Central" />
-<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="IMS and APIs" />
-<meta name="twitter:title" content="IMS and APIs" />
-<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+	<!-- Meta -->
+	<link rel="canonical" href="ims-apis.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="APIs & IMS" />
+	<meta property="og:description" content="IMS and APIs" />
+	<meta property="og:url" content="http://www/imsdev.github.io/ims-apis.html" />
+	<meta property="og:site_name" content="IMS Central" />
+	<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="IMS and APIs" />
+	<meta name="twitter:title" content="IMS and APIs" />
+	<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
 
-<!-- Sheets -->
-<link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="wp-includes/css/nav.css">
-<link rel="stylesheet" href="wp-includes/css/dropnav.css">
-<link href="wp-includes/css/www.css" rel="stylesheet" />
-<link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
-<link href="wp-includes/css/tables.css" rel="stylesheet">
+	<!-- Sheets -->
+	<link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="wp-includes/css/nav.css">
+	<link rel="stylesheet" href="wp-includes/css/dropnav.css">
+	<link href="wp-includes/css/www.css" rel="stylesheet" />
+	<link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
+	<link href="wp-includes/css/tables.css" rel="stylesheet">
+	<link href="wp-includes/css/pages/apis.css" rel="stylesheet">
 
-<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:132193,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+	<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
+	<script>
+	(function(h,o,t,j,a,r){
+		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		h._hjSettings={hjid:132193,hjsv:6};
+		a=o.getElementsByTagName('head')[0];
+		r=o.createElement('script');r.async=1;
+		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		a.appendChild(r);
+	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
 
-<!-- Additional styling for content after navigation -->
+	<!-- Additional styling for content after navigation -->
 
-<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-<script src="wp-includes/js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+	<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+	<script src="wp-includes/js/jquery.min.js"></script>
 
-<!-- TipueSearch -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
+	<!-- TipueSearch -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
+	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
+	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
 
-<!-- delayed search -->
-<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
+	<!-- delayed search -->
+	<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
 
-<!-- Hamburger menu -->
-<script src="wp-includes/js/navbar.js"></script>
+	<!-- Hamburger menu -->
+	<script src="wp-includes/js/navbar.js"></script>
 
-</head>
+	</head>
 
-<!-- MASTHEAD_SITENAV_BEGIN -->
-<body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
-  <div class="ibm-landing-page" style="position: relative;background: #282828 !important;">
-    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-	<div id="ibm-content-wrapper" class="sticky-nav">
-		<header role="banner" aria-labelledby="ibm-pagetitle-h1">
-  
-		<!-- DROP NAV -->
-		<section class="p-menu1 ">
-		  <nav id="navbar" class="navigation" role="navigation">
-		  
-			<!-- Header wrapper -->
-			<span class="sitename-wrap">
-			  <a href="index.html" style="display: inline-block; float: left;">
-				<img src="wp-content/IMS_logo_small.png"
-				style="z-index:900;" 
-				id="left-bar-brand"
-				alt="IMS logo"
-				/>
-			  </a>
-			  <a href="index.html" style="display: inline-block; float: left;">
-				<h4 style="line-height: 2; display: inline-block;">
-				  IBM <b>IMS Central</b>
-				</h4>
-			  </a>
-			</span>
-			<!-- == Header wrapper -->
-		  
-			<!-- Search wrapper -->
-			<form class id="searchbar">
-			  <div class="tipue_search_right">
-				<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-				  <defs>
-					<style>
-					  .cls-1 {
-					  fill: none;
-					  }
-					</style>
-				  </defs>
-				  <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-				  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-				</svg>
-				<input type="text" name="q" id="tipue_search_input"
-				  pattern=".{3,}" title="Search bar"
-				  placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-				<svg id="search-clr" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-				</svg>
-			  </div>
-			  <div style="clear: both;"></div>
-			</form>
-  
-			<!-- On page-load activation -->
-			<script>
-			  $(document).ready(function() {
-				$('#tipue_search_input').tipuesearch();
-			  });
-			</script>
-  
-			<!-- Search drop-down -->
-			<div id="tipue_search_content" class="search_content" style="position: absolute"></div>
-			<!-- == Search wrapper -->
-  
-			<!-- Hamburger dropdown menu -->
-			<input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
-			
-			<label class="hamburger1">
-			  <!-- Burgie wrapper -->
-			  <label class="burg-wrap" for="toggle1">
-				<span class="burg-bars">
-				  <div class="top"></div>
-				  <div class="meat"></div>
-				  <div class="bottom"></div>
+	<!-- --------------- SITE CONTENT --------------- -->
+	<body id="ibm-com" class="ibm-com ibm-type nav-bar">
+		<div id="ibm-content-wrapper" class="sticky-nav">
+			<header id="ibm-pageheader" aria-label="Site navigation bar">
+				<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+				<!-- --------------- NAV BAR --------------- -->
+				<section class="p-menu1">
+				<nav id="navbar" class="navigation" aria-labelledby="ibm-pageheader">
+				
+				<!-- Site name wrapper -->
+				<span class="sitename-wrap">
+					<a href="index.html" class="logo-container">
+					<img src="wp-content/IMS_logo_small.png"
+						id="left-bar-brand"
+						alt="IMS logo"
+					>
+					</a>
+					<a href="index.html" class="logo-container">
+					<h4 class="site-header-text">
+						IBM <b>IMS Central</b>
+					</h4>
+					</a>
 				</span>
-			  </label>
-			</label>
-		  
-			<!-- Dropdown menu options -->
-			<nav class="menu1">
-			<div class="pages pure-g">
-			  <!-- Innovate -->
-			  <div class="pure-u-1 pure-u-sm-1-4">
-				<h3>Innovate</h3>
-				<!-- cards/pages -->
-				<!-- 1 -->
-				<a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
-				  <div class="navcard">
-					<h5>APIs</h5>
-					<p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
-				  </div>
-				</a>
-				<!-- 2 -->
-				<a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>Automation</h5>
-					<p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
-				  </div>
-				</a>
-				<!-- 3 -->
-				<a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>Java</h5>
-					<p>Build Java applications to run inside or outside IMS.</p>
-				  </div>
-				</a>
-				<!-- 4 -->
-				<a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>IMS Database</h5>
-					<p>IMS Database: fast, secure, reliable.</p>
-				  </div>
-				</a>
-			  </div>
-		  
-			  <!-- Engage -->
-			  <div class="pure-u-1 pure-u-sm-1-4">
-				<h3>Engage</h3>
-				<!-- cards/pages -->
-				<!-- 1 -->
-				<a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>IMS Gold</h5>
-					<p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
-				  </div>
-				</a>
-				<!-- 2 -->
-				<a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>Makerspace</h5>
-					<p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
-				  </div>
-				</a>
-				<!-- 3 -->
-				<a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
-				  href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
-				  <div class="navcard">
-					<h5>IMS community<img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img></h5>
-					<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
-				  </div>
-				</a>
-				<!-- 4 -->
-				<a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>Advocacy</h5>
-					<p>Get or change your IMS advocate.</p>
-				  </div>
-				</a>
-			  </div>
-		  
-			  <!-- Learn -->
-			  <div class="pure-u-1 pure-u-sm-1-4">
-				<h3>Learn</h3>
-				<!-- cards/pages -->
-				<!-- 1 -->
-				<a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>IMS videos</h5>
-					<p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
-				  </div>
-				</a>
-				<!-- 2 -->
-				<a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>IMS courses</h5>
-					<p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
-				  </div>
-				</a>
-				<!-- 3 -->
-				<a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>IMS repos on GitHub</h5>
-					<p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
-				  </div>
-				</a>
-			  </div>
-		  
-			  <!-- Docs & Support -->
-			  <div class="pure-u-1 pure-u-sm-1-4">
-				<h3>
-				  Documentation & support
-				</h3>
-				<!-- cards/pages -->
-				<!-- 1 -->
-				<a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>IMS documentation</h5>
-					<p>Find information on IMS, tools, and other IBM products.</p>
-				  </div>
-				</a>
-				<!-- 2 -->
-				<a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
-				  <div class="navcard">
-					<h5>IMS support</h5>
-					<p>Get help with IMS or other IBM products.</p>
-				  </div>
-				</a>
-				<hr style="background-color: gray !important;" />
-				<!-- 3 special -->
-				<div style="padding: 5px 20px 0px 20px; color: white;">
-				  <h5>IMS Advocacy</h5>
-				  <!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
-					IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
-					style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
-				  <p style="color: rgb(199, 199, 199); margin-top: -5px; font-size: 14px;">If you don't have an advocate, contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com"
-					class="nav-item" tabindex="-1" style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
+				
+				<!-- Search wrapper -->
+				<form id="searchbar" aria-label="Search">
+					<div class="tipue_search_right">
+					<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+						<defs>
+						<style> .cls-1 { fill: none; } </style>
+						</defs>
+						<path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+						<rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+					</svg>
+					<input type="text" name="q" id="tipue_search_input"
+						pattern=".{3,}" title="Search bar"
+						placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+					<svg id="search-clr" aria-label="Clear search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px">
+						<path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+					</svg>
+					</div>
+				</form>
+
+				<!-- On page-load activation -->
+				<script>
+					$(document).ready(function() {
+					$('#tipue_search_input').tipuesearch();
+					});
+				</script>
+
+				<!-- Search drop-down -->
+				<div id="tipue_search_content" class="search_content search-dropdown"></div>
+
+				<!-- Hamburger drop-down menu -->
+				<input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
+				
+				<label class="hamburger1">
+					<!-- Burgie wrapper -->
+					<label class="burg-wrap" for="toggle1">
+					<span class="hide-label">Label for input</span>
+					<span class="burg-bars">
+						<span class="hide-label">Label for input</span>
+						<div class="top"></div>
+						<div class="meat"></div>
+						<div class="bottom"></div>
+					</span>
+					</label>
+				</label>
+				
+				<!-- Hamburger drop-down menu options -->
+				<nav class="menu1" aria-label="Dropdown menu items">
+					<div class="pages pure-g">
+					<!-- Innovate -->
+					<div class="pure-u-1 pure-u-sm-1-4">
+						<h3>Innovate</h3>
+						<!-- cards/pages -->
+						<!-- 1 -->
+						<a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
+						<div class="navcard">
+							<h5>APIs</h5>
+							<p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
+						</div>
+						</a>
+						<!-- 2 -->
+						<a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>Automation</h5>
+							<p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
+						</div>
+						</a>
+						<!-- 3 -->
+						<a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>Java</h5>
+							<p>Build Java applications to run inside or outside IMS.</p>
+						</div>
+						</a>
+						<!-- 4 -->
+						<a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS Database</h5>
+							<p>IMS Database: fast, secure, reliable.</p>
+						</div>
+						</a>
+					</div>
+				
+					<!-- Engage -->
+					<div class="pure-u-1 pure-u-sm-1-4">
+						<h3>Engage</h3>
+						<!-- cards/pages -->
+						<!-- 1 -->
+						<a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS Gold</h5>
+							<p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
+						</div>
+						</a>
+						<!-- 2 -->
+						<a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>Makerspace</h5>
+							<p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
+						</div>
+						</a>
+						<!-- 3 -->
+						<a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
+						href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
+						<div class="navcard">
+							<h5>IMS community
+							<img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img>
+							</h5>
+							<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
+						</div>
+						</a>
+						<!-- 4 -->
+						<a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>Advocacy</h5>
+							<p>Get or change your IMS advocate.</p>
+						</div>
+						</a>
+					</div>
+				
+					<!-- Learn -->
+					<div class="pure-u-1 pure-u-sm-1-4">
+						<h3>Learn</h3>
+						<!-- cards/pages -->
+						<!-- 1 -->
+						<a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS videos</h5>
+							<p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
+						</div>
+						</a>
+						<!-- 2 -->
+						<a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS courses</h5>
+							<p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
+						</div>
+						</a>
+						<!-- 3 -->
+						<a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS repos on GitHub</h5>
+							<p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
+						</div>
+						</a>
+					</div>
+				
+					<!-- Docs & Support -->
+					<div class="pure-u-1 pure-u-sm-1-4">
+						<h3>
+						Documentation & support
+						</h3>
+						<!-- cards/pages -->
+						<!-- 1 -->
+						<a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS documentation</h5>
+							<p>Find information on IMS, tools, and other IBM products.</p>
+						</div>
+						</a>
+						<!-- 2 -->
+						<a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS support</h5>
+							<p>Get help with IMS or other IBM products.</p>
+						</div>
+						</a>
+						<hr class="nav-divider"/>
+						<!-- 3 special -->
+						<div class="navcard-special">
+						<h5>IMS Advocacy</h5>
+						<!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
+							IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
+							style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
+						<p>If you don't have an advocate, contact Deepak Kohli at 
+							<a href="mailto:deepakk@us.ibm.com"
+							class="nav-item" 
+							tabindex="-1">
+							<u>deepakk@us.ibm.com</u>
+							</a>.
+						</p>
+						</div>
+					</div>
+					</div>
+				</nav>
+				</section>
+			</header>
+		</div>
+
+		<div id="content" class="site-content">
+			<div class="entry-content">
+				<main id="main" class="zs-main" >
+
+					<!-- =========================== IMS APIs Hero Banner =========================== -->
+					<div class="banner white-bg">
+						<section id="intro-section" class="pure-g zs-section apis-hero">
+							<div class="pure-u-3-25">
+								<img class="ims-card-icon" src="wp-content/Icon_Banner_z OS ConnectPage.svg" alt="">
+							</div>
+							<div id="intro-info" class="pure-u-1 pure-u-sm-15-24 apis-hero-text">
+								<h6>Innovate</h6>
+								<h1 >IBM z/OS Connect</h1>
+								<p id="p-style" >Create and deploy RESTful APIs that access IMS™ applications and data 
+								in minutes with point and click Eclipse tooling.
+								</p>
+							</div>
+						</section>
+					</div>
+
+					<!-- =========================== Call APIs from Z =========================== -->
+					<div class="zs-gray-section apis-section-white">
+						<section class="zs-section">
+							<!-- Info cards container -->
+							<div class="pure-g apis-card-container">
+							
+								<!-- Row 1 -->
+								<div class="pure-u-1">
+									<h2>Call APIs from Z</h2>
+									<p class="apis-section-text">
+										Create application programming interfaces (APIs) in minutes to access IBM Z® applications and data.
+										<p>
+											<a onfocus="closeNavMenu()" 
+												target="_blank" 
+												rel="noopener noreferrer" 
+												href="https://www.ibm.com/downloads/cas/9DQBDQRB"
+												class="apis-link">Download PDF →
+											</a>
+										</p>
+									</p>
+									<!-- button -->
+									<!-- <div class="pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-3 b-width-fix" style="margin-top: 3em;">
+										<a class="zs-button-transparent" href="https://www.ibm.com/it-infrastructure/z/software-trials" style="background-color:indigo;">
+											Start your free trial</a>
+									</div> -->
+									<div>
+										<div class="pure-u-5-12 apis-card">
+											<h4>Designed for DevOps</h4>
+											<p>Drive agility across your development teams with parallel 
+											development for APIs and services using source code management systems like Git (or RTC/Jazz). 
+											Orchestrate the deployment of your API and service artifacts with tools like Jenkins and UrbanCode® 
+											Deploy.</p>
+											<p><a class="apis-link" target="_blank" rel="noopener noreferrer"
+												href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=edition-devops-zos-connect-ee">Learn more →</a></p>
+										</div>
+										<div class="pure-u-md-1-12"></div>
+										
+										<div class="pure-u-sm-1 pure-u-md-5-12 apis-card">
+											<h4>Monitor end-to-end API requests</h4>
+											<p>Keep all your IBM z/OS Connect APIs running smoothly using tools 
+											like AppDynamics, IBM APM, Splunk and ELK. Monitor your API workloads and quickly identify any 
+											issues across your essential Z assets before they become a problem.</p>
+											<p><a class="apis-link"  target="_blank" rel="noopener noreferrer"
+												href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=monitoring">Learn more about monitoring methods →</a></p>
+											<p><a class="apis-link"  target="_blank" rel="noopener noreferrer"
+												href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/yun-han-li1/2020/08/10/using-splunk-with-zos-connect-ee">
+												Learn more about Splunk and IBM z/OS Connect →</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Row 2 -->
+								<div class="pure-u-1 apis-section-text">
+									<!-- 1 -->
+									<div class="pure-u-5-12 apis-card">
+										<h4>Enterprise-ready security</h4>
+										<p>Scale to over 100m API requests per day across highly available 
+										configurations on one of the most reliable platforms in the world. Secure those API calls both in 
+										and out of Z using web security patterns like JWT and OAuth to propagate user identities across 
+										end-to-end API flows.</p>
+										<p><a class="apis-link" target="_blank" rel="noopener noreferrer"
+											href="https://www.ibm.com/docs/en/zos-connect/zosconnect/3.0?topic=securing-zos-connect-resources">Learn more →</a></p>
+									</div>
+									<div class="pure-u-md-1-12"></div>
+									<!-- 2 -->
+									<div class="pure-u-sm-1 pure-u-md-5-12 apis-card">
+										<h4>Active 3rd party ecosystem</h4>
+										<p>IBM z/OS Connect is pluggable and extensible, offering 3rd party 
+										support for tools like File Manager (to access VSAM data), IBM Data Virtualization Manager 
+										(to provide single views to data), Host Access Transformation Services (for 3270 interfaces), 
+										and over 30 IBM z/OS Connect service interfaces provided by DXC to HOGAN CAMS II core 
+										banking functions.</p>
+										<p><a class="apis-link" target="_blank" rel="noopener noreferrer"
+											href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=extending-zos-connect-ee">Learn more →</a></p>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<!-- =========================== Try it out! =========================== -->
+					<div class="zs-gray-section ibm-background-gray">
+						<section class="zs-section apis-gray-card-container">
+							<!--Header -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
+								<h2>Check it out!</h2>
+							</div>
+							<div class="pure-u-lg-2-24"></div>
+
+							<!-- Section contents -->
+							<!-- s1 -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 apis-gray-card">
+								<img src="wp-content/Icon_ZTrials_z OS ConnectPage.svg" alt="">
+								<h3>z/OS Connect Designer tutorials</h3>
+								<p><b>No installation required.</b></p>
+								<p>Check out these videos on how to use z/OS Connect Designer.</p>
+									<a target="_blank" rel="noopener noreferrer" href="https://mediacenter.ibm.com/playlist/details/1_ykaqj9pe">
+									Watch →</a>
+							</div>
+							<!-- s2 -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 apis-gray-card">
+								<img src="wp-content/Icon_API toolkit_z OS ConnectPage.svg" alt="">
+								<h3>Get the API toolkit</h3>
+								<p>IBM z/OS Connect base already installed? Design, map, and deploy your APIs with our Eclipse-based tooling.</p>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/products/zos-connect-enterprise-edition/pricing">
+									Learn more →</a>
+							</div>
+						</section>
+					</div>
+
+					<!-- =========================== Case studies =========================== -->
+					<div class="zs-gray-section ibm-background-white-core blue-purp apis-section-black">
+						<section class="zs-section">
+					
+							<!--Header -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
+								<h2>Case studies</h2>
+							</div>
+							<div class="pure-u-lg-2-24"></div>
+
+							<!-- Section contents -->
+							<!-- s1 -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 apis-black-card">
+								<h3>Efficient, low-risk modernization of core banking applications</h3>
+								<p>Java alongside COBOL preserves the best of both the IBM zSystems and distributed worlds. </p>
+								<div>
+									<img class="ims-card-icon-lg" src="wp-content/Icon_Atruvia_z OS ConnectPage.svg" alt="Atruvia logo">
+								</div>
+								<a target="_blank" 
+								rel="noopener noreferrer" href="https://www.ibm.com/case-studies/atruvia-ag">
+								Read the case study →</a>
+							</div>
+							<!-- s2 -->
+							<!-- <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
+								<h3>Wüstenrot</h3>
+								<p>Responding to customer expectations, Wüstenrot exploited Container Pricing for IBM Z 
+									and implemented IBM z/OS Connect Enterprise Edition.</p>
+									<a target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/case-studies/wustenrot-systems-software-container-pricing-development">
+									Read the case study</a>
+							</div> -->
+							<hr class="apis-hr">
+						</section>
+					</div>
+					
+					<!-- =========================== Webinars =========================== -->
+					<div class="zs-gray-section ibm-background-white-core blue-purp apis-section-black apis-hr-section">
+						<section class="zs-section">
+							<!--Header -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
+								<h2 >On-demand webinars</h2>
+							</div>
+							<div class="pure-u-lg-2-24"></div>
+
+							<!-- Section contents -->
+							<!-- s1 -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 apis-black-card">
+								<img class="ims-card-icon" src="wp-content/Icon_APIs on IBM Z_z OS ConnectPage.svg" alt="">
+								<h3>A look at APIs on IBM Z</h3>
+								<p>Learn more about IBM z/OS Connect and how it accesses core System of 
+									Record transaction servers exposing applications as RESTful APIs.</p>
+								<a target="_blank" rel="noopener noreferrer" 
+									href="https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&referrer=&eventid=2612255&sessionid=1&key=9F83B003AE38BB81CBD1EF1EF373C47A&regTag=&V2=false&sourcepage=register&_ga=2.121445512.1058035363.1623199990-2051871492.1623199990">
+									Register →
+								</a>
+							</div>
+							<!-- s2 -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 apis-black-card">
+								<img class="ims-card-icon" src="wp-content/Icon_CICS Portfolio_z OS ConnectPage.svg" alt="">
+								<h3>CICS Portfolio: IBM z/OS Connect - From PoC to production webinar</h3>
+								<p>Explore how key CICS tools can reduce risk and effort while maximizing return on 
+								investment and efficiency at every stage of an application's lifecycle.</p>
+								<a target="_blank" rel="noopener noreferrer" 
+								href="https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&referrer=&eventid=2745637&sessionid=1&key=7373B86AF7EEF3A5879E661DD9B3CDF5&regTag=&V2=false&sourcepage=register&_ga=2.121445512.1058035363.1623199990-2051871492.1623199990">
+								Register →</a>
+							</div>
+							<hr class="apis-hr">
+						</section>
+					</div>
+  
+					<!-- =========================== Communities =========================== -->
+					<div class="zs-gray-section ibm-background-white-core blue-purp apis-section-black apis-hr-section">
+						<section class="zs-section">
+					
+							<!--Header -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
+								<h2>Communities</h2>
+							</div>
+							<div class="pure-u-lg-2-24"></div>
+
+							<!-- Section contents -->
+							<!-- s1 -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 apis-black-card">
+								<img class="ims-card-icon" src="wp-content/Icon_Enterprise Edition Community_z OS ConnectPage.svg" alt="">
+								<h3>IBM z/OS Connect Community</h3>
+								<p>Join a rich community of business and technical expertise and access blogs and forums for IBM z/OS Connect.</p>
+								<a target="_blank"
+									rel="noopener noreferrer" href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=53f7f9ef-d807-4db9-99ec-d3a45a7fc9f4">
+									Join →
+								</a>
+							</div>
+							<!-- s2 -->
+							<div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24 apis-black-card">
+								<img class="ims-card-icon" src="wp-content/Icon_IBM Developer Community_z OS ConnectPage.svg" alt="">
+								<h3>IBM Developer Community: IBM z/OS Connect</h3>
+								<p>Access open source projects, developer advocates and a global community of developers 
+								for IBM z/OS Connect.</p>
+								<a target="_blank"
+								rel="noopener noreferrer" href="https://developer.ibm.com/components/zos-connect/">
+								Join →</a>
+							</div>
+
+						</section>
+					</div>
+
+					<!-- =========================== back to top =========================== -->
+					<div>
+						<img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
+						<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
+						<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
+						</p>
+					</div>
+
+				</main>
+			</div><!-- .entry-content -->
+		</div><!-- #content -->
+
+		<footer aria-label="IBM" id="themeFooter">
+		<div id="boomer-footer" class="boomer_footer_menu"></div>
+		<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
+			<div class="ibm-columns ibm-padding-bottom-0">
+			<div class="ibm-col-1-1">
+				<div class="ibm-footer-corporate-links">
+				<ul>
+				<li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
+				<li><div></div></li>
+				<li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
+				<li><div></div></li>
+				<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
+				<li><div></div></li>
+				<li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
+						</ul>
 				</div>
-			  </div>
+				<p class="copyright">Copyright IBM Corporation 2024</p>
+				<div id="ibm-footer-locale-selector"></div>
 			</div>
-		  </nav>
-		</section>
-		<!-- DROP NAV END -->
-	  </header>
-	</div>
+			</div>
+		</div>
+		</footer>
 
-<div id="content" class="site-content">
+	<!-- Search box functions -->
+	<script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
 
-<div class="content-area" id="content-area">
+	<!-- post-load actions/listeners -->
+	<script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
 
-<article id="post-2654" class="post-2654 page type-page status-publish hentry">
-<div class="entry-content">
-
-<div aria-role="presentation">
-<main class="zs-main" >
-
-<!-- =========================== IMS APIs =========================== -->
-<div class="banner white-bg">
-    <section id="intro-section" class="pure-g zs-section" style="padding: 2em 2em 4em 2em;">
-      <div id="intro-header" class="pure-u-1">
-      </div>
-      <div class="pure-u-3-25">
-        <img class="ims-card-icon" src="wp-content/Icon_Banner_z OS ConnectPage.svg" alt="" style="margin-top: 65px;">
-      </div>
-      <div id="intro-info" class="pure-u-1 pure-u-sm-15-24" style="margin-left: 30px;">
-        <h6 style="padding:0 !important">Innovate</h6>
-         <h1 >IBM z/OS Connect</h1>
-         <p id="p-style" >Create and deploy RESTful APIs that access IMS™ applications and data 
-          in minutes with point and click Eclipse tooling.
-          </p>
-      </div>
-
-    </section>
-</div>
-
-<!-- =========================== Information =========================== -->
-<!-- Section -->
-<div class="zs-gray-section" style="background-color:white;margin-top: -35px;margin-bottom:-30px;padding: 0 4em;">
-	<section class="zs-section">
-  
-  <!-- Info cards container -->
-	<div class="pure-g" style="margin-left: auto;margin-right: auto;">
-    
-    <!-- Info 1st half -->
-    <div class="pure-u-1">
-        <h2>Call APIs from Z</h2>
-        <p style="margin-top: 1em;">
-			Create application programming interfaces (APIs) in minutes to access IBM Z® applications and data.
-          <p><a onfocus="closeNavMenu()" target="_blank" rel="noopener noreferrer" 
-            href="https://www.ibm.com/downloads/cas/9DQBDQRB"
-            style="color: #0F62FE;">Download PDF →</a></p>
-        
-        </p>
-        <!-- button -->
-        <!-- <div class="pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-3 b-width-fix" style="margin-top: 3em;">
-            <a class="zs-button-transparent" href="https://www.ibm.com/it-infrastructure/z/software-trials" style="background-color:indigo;">
-                Start your free trial</a>
-        </div> -->
-        <div>
-          <div class="pure-u-5-12" style="margin-top: 3em;">
-            <h4 style="color: black;letter-spacing: normal;">Designed for DevOps</h4>
-            <p style="letter-spacing: normal;">Drive agility across your development teams with parallel 
-              development for APIs and services using source code management systems like Git (or RTC/Jazz). 
-              Orchestrate the deployment of your API and service artifacts with tools like Jenkins and UrbanCode® 
-              Deploy.</p>
-              <p><a style="color: #0F62FE;"  target="_blank" rel="noopener noreferrer"
-                href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=edition-devops-zos-connect-ee">Learn more →</a></p>
-        </div>
-        <div class="pure-u-md-1-12"></div>
-                <!-- 1 -->
-        <div class="pure-u-sm-1 pure-u-md-5-12"  style="margin-top: 3em;">
-            <h4 style="color: black;letter-spacing: normal;">Monitor end-to-end API requests</h4>
-            <p style="letter-spacing: normal;">Keep all your IBM z/OS Connect APIs running smoothly using tools 
-              like AppDynamics, IBM APM, Splunk and ELK. Monitor your API workloads and quickly identify any 
-              issues across your essential Z assets before they become a problem.</p>
-              <p><a style="color: #0F62FE;"  target="_blank" rel="noopener noreferrer"
-                href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=monitoring">Learn more about monitoring methods →</a></p>
-              <p><a style="color: #0F62FE;"  target="_blank" rel="noopener noreferrer"
-                href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/yun-han-li1/2020/08/10/using-splunk-with-zos-connect-ee">
-                Learn more about Splunk and IBM z/OS Connect →</a></p>
-        </div>
-        </div>
-
-
-    </div>
-
-    <!-- Info quad -->
-    <!-- top2 -->
-    <div class="pure-u-1" style="margin-top: 40px;">
-      <!-- 1 -->
-      <div class="pure-u-5-12" style="margin-top: 3em;">
-        <h4 style="color: black;letter-spacing: normal;">Enterprise-ready security</h4>
-        <p style="letter-spacing: normal;">Scale to over 100m API requests per day across highly available 
-          configurations on one of the most reliable platforms in the world. Secure those API calls both in 
-          and out of Z using web security patterns like JWT and OAuth to propagate user identities across 
-          end-to-end API flows.</p>
-          <p><a style="color: #0F62FE;"  target="_blank" rel="noopener noreferrer"
-            href="https://www.ibm.com/docs/en/zos-connect/zosconnect/3.0?topic=securing-zos-connect-resources">Learn more →</a></p>
-
-    </div>
-        <div class="pure-u-md-1-12"></div>
-        <!-- 2 -->
-        <div class="pure-u-sm-1 pure-u-md-5-12" style="margin-top: 2.5em;">
-            <h4 style="color: black;letter-spacing: normal;">Active 3rd party ecosystem</h4>
-            <p style="letter-spacing: normal;">IBM z/OS Connect is pluggable and extensible, offering 3rd party 
-              support for tools like File Manager (to access VSAM data), IBM Data Virtualization Manager 
-              (to provide single views to data), Host Access Transformation Services (for 3270 interfaces), 
-              and over 30 IBM z/OS Connect service interfaces provided by DXC to HOGAN CAMS II core 
-              banking functions.</p>
-              <p><a  style="color: #0F62FE;"  target="_blank" rel="noopener noreferrer"
-                href="https://www.ibm.com/docs/en/zosconnect/3.0?topic=extending-zos-connect-ee">Learn more →</a></p>
-          </div>
-    </div>
-    </section>
-</div>
-
-<!-- =========================== Try it out! =========================== -->
-<div class="zs-gray-section ibm-background-gray">
-	<section class="zs-section" style="padding: 2em 4em;">
-  
-  <!--Header -->
-	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
-		  <h2>Check it out!</h2>
-	  </div>
-	  <div class="pure-u-lg-2-24"></div>
-
-  <!-- Section contents -->
-  <!-- s1 -->
-	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
-        <img src="wp-content/Icon_ZTrials_z OS ConnectPage.svg" alt="" style="height: 40px;">
-		<h3 style="color: black;">z/OS Connect Designer tutorials</h3>
-        <p><b>No installation required.</b></p>
-		<p>Check out these videos on how to use z/OS Connect Designer.</p>
-            <a style="color: #4477e0;;" target="_blank" rel="noopener noreferrer" href="https://mediacenter.ibm.com/playlist/details/1_ykaqj9pe">
-              Watch →</a>
-	  </div>
-    <!-- s2 -->
-    <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
-        <img src="wp-content/Icon_API toolkit_z OS ConnectPage.svg" alt="" style="height: 40px;">
-		<h3 style="color: black;">Get the API toolkit</h3>
-		<p>IBM z/OS Connect base already installed? Design, map, and deploy your APIs with our Eclipse-based tooling.</p>
-            <a style="color: #4477e0;" target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/products/zos-connect-enterprise-edition/pricing">
-              Learn more →</a>
-    </div>
-  
-  </div>
-  </section>
-  </div>
-  <!-- =========================== Case studies =========================== -->
-
-  <div class="zs-gray-section ibm-background-white-core blue-purp" style="padding: 2em 4em;">
-	<section class="zs-section">
-  
-  <!--Header -->
-	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
-		  <h2>Case studies</h2>
-	  </div>
-	  <div class="pure-u-lg-2-24"></div>
-
-  <!-- Section contents -->
-  <!-- s1 -->
-	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
-		<h3>Efficient, low-risk modernization of core banking applications</h3>
-		<p>Java alongside COBOL preserves the best of both the IBM zSystems and distributed worlds. 
-            </p>
-            <div>
-              <img class="ims-card-icon" src="wp-content/Icon_Atruvia_z OS ConnectPage.svg" alt="Atruvia logo">
-            </div>
-            <a target="_blank"  style="color: #78A9FF;"
-            rel="noopener noreferrer" href="https://www.ibm.com/case-studies/atruvia-ag">
-              Read the case study →</a>
-	</div>
-    <!-- s2 -->
-    <!-- <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
-		<h3>Wüstenrot</h3>
-		<p>Responding to customer expectations, Wüstenrot exploited Container Pricing for IBM Z 
-            and implemented IBM z/OS Connect Enterprise Edition.</p>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/case-studies/wustenrot-systems-software-container-pricing-development">
-              Read the case study</a>
-        </div> -->
-
-        <hr style="margin-top: 60px;">
-  </div>
-  </section>
-  </div>
-<!-- =========================== Webinars =========================== -->
-
-<div class="zs-gray-section ibm-background-white-core blue-purp" style="padding: 2em 4em;">
-	<section class="zs-section">
-  
-  <!--Header -->
-	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
-		  <h2 >On-demand webinars</h2>
-	  </div>
-	  <div class="pure-u-lg-2-24"></div>
-
-  <!-- Section contents -->
-  <!-- s1 -->
-	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
-        <img class="ims-card-icon" src="wp-content/Icon_APIs on IBM Z_z OS ConnectPage.svg" alt="">
-		<h3>A look at APIs on IBM Z</h3>
-		<p>Learn more about IBM z/OS Connect and how it accesses core System of 
-            Record transaction servers exposing applications as RESTful APIs.</p>
-            <a target="_blank" style="color: #78A9FF;"
-            rel="noopener noreferrer" href="https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&referrer=&eventid=2612255&sessionid=1&key=9F83B003AE38BB81CBD1EF1EF373C47A&regTag=&V2=false&sourcepage=register&_ga=2.121445512.1058035363.1623199990-2051871492.1623199990">
-              Register →</a>
-	</div>
-    <!-- s2 -->
-    <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
-      <img class="ims-card-icon" src="wp-content/Icon_CICS Portfolio_z OS ConnectPage.svg" alt="">
-		<h3>CICS Portfolio: IBM z/OS Connect - From PoC to production webinar</h3>
-		<p>Explore how key CICS tools can reduce risk and effort while maximizing return on 
-      investment and efficiency at every stage of an application's lifecycle.</p>
-            <a target="_blank" style="color: #78A9FF;"
-            rel="noopener noreferrer" href="https://event.on24.com/eventRegistration/EventLobbyServlet?target=reg20.jsp&referrer=&eventid=2745637&sessionid=1&key=7373B86AF7EEF3A5879E661DD9B3CDF5&regTag=&V2=false&sourcepage=register&_ga=2.121445512.1058035363.1623199990-2051871492.1623199990">
-              Register →</a>
-        </div>
-  <hr style="margin-top: 60px;">
-  </div>
-  </section>
-  </div>
-  <!-- =========================== Communities =========================== -->
-  <div class="zs-gray-section ibm-background-white-core blue-purp" style="margin-top: -100px;padding: 2em 4em;">
-	<section class="zs-section">
-  
-  <!--Header -->
-	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
-		  <h2>Communities</h2>
-	  </div>
-	  <div class="pure-u-lg-2-24"></div>
-
-  <!-- Section contents -->
-  <!-- s1 -->
-	  <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
-      <img class="ims-card-icon" src="wp-content/Icon_Enterprise Edition Community_z OS ConnectPage.svg" alt="">
-		<h3>IBM z/OS Connect Community</h3>
-		<p>Join a rich community of business and technical expertise and access blogs and forums for IBM z/OS Connect.</p>
-            <a target="_blank" style="color: #78A9FF;"
-            rel="noopener noreferrer" href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=53f7f9ef-d807-4db9-99ec-d3a45a7fc9f4">
-              Join →</a>
-	</div>
-    <!-- s2 -->
-    <div class="pure-u-1 pure-u-sm-1 pure-u-md-8-24" style="padding-right: 2.5em;">
-      <img class="ims-card-icon" src="wp-content/Icon_IBM Developer Community_z OS ConnectPage.svg" alt="">
-		<h3>IBM Developer Community: IBM z/OS Connect</h3>
-		<p>Access open source projects, developer advocates and a global community of developers 
-            for IBM z/OS Connect.</p>
-            <a target="_blank" style="color: #78A9FF;"
-            rel="noopener noreferrer" href="https://developer.ibm.com/components/zos-connect/">
-              Join →</a>
-        </div>
-  
-  </div>
-  </section>
-  </div>
-
-<!-- =========================== back to top =========================== -->
-
-<div>
-  <img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
-</div>
-
-</div>
-</main>
-</div><!-- .entry-content -->
-</article><!-- #post-## -->
-</div>
-</div><!-- #content -->
-</div><!-- end of ibm-content-wrapper -->
-
-<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
-  <a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
-</p>
-
-<footer role="contentinfo" aria-label="IBM" id="themeFooter">
-  <div id="boomer-footer" class="boomer_footer_menu"></div>
-  <div id="dw-footer" class="ibm-alternate ibm-padding-normal">
-    <div class="ibm-columns ibm-padding-bottom-0">
-      <div class="ibm-col-1-1">
-        <div class="ibm-footer-corporate-links">
-          <ul>
-          <li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
-          <li><div></div></li>
-          <li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
-          <li><div></div></li>
-          <li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
-          <li><div></div></li>
-          <li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
-                </ul>
-        </div>
-        <p class="copyright">Copyright IBM Corporation 2024</p>
-        <div id="ibm-footer-locale-selector"></div>
-      </div>
-    </div>
-  </div>
-</footer>
-</div><!-- #page -->
-<!-- Search box functions -->
-<script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
-
-<!-- post-load actions/listeners -->
-<script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
-
-
-</body>
+	</body>
 </html>
