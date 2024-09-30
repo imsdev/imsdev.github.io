@@ -249,9 +249,6 @@
       position: absolute;
       bottom: 10%;
     }
-    .hide-label {
-      visibility: hidden;
-    }
     #anchor-link-menu {
       padding: 1em 5em 0em 5em;
       background-color: white;
@@ -290,6 +287,10 @@
     .ims-card-icon {
       max-height: 75px;
       max-width: 75px;
+      margin-bottom:20px;
+    }
+    .ims-card-icon-lg {
+      max-height: 75px;
       margin-bottom:20px;
     }
     .blueg-bg {
@@ -432,10 +433,6 @@
       transition: .4s ease all;
       background-size: contain;
       background-repeat: no-repeat;
-    }
-
-    .banner p {
-      font-size: 16pt !important;
     }
 
     .ibm-footer-corporate-links div {

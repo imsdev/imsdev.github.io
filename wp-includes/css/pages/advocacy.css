@@ -1,0 +1,110 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-= Advocacy Page Styling =-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.advocacy-hero {
+	padding: 20px;
+}
+
+.advocacy-hero section {
+	padding: 2em;
+	color: white;
+}
+
+.advocacy-hero img {
+	margin-top: 65px;
+}
+
+.advocacy-hero-text {
+	margin-left: 30px;
+}
+
+.advocacy-hero-text h6 {
+	padding: 0 !important;
+}
+
+.advocacy-hero-text div {
+	max-width: 240px;
+	margin-top: 20px;
+}
+
+.advocacy-list {
+	display: inline-block; 
+	margin-right: 10px;
+}
+
+.advocacy-list-num {
+	color:#0f62fe;
+	margin-top: -10px;
+}
+
+.advocacy-list-bottom-row {
+	margin-top: 20px;
+}
+
+.advocacy-section-gray {
+	background-color: #f4f4f4 !important;
+}
+
+.advocacy-section-black {
+    margin-top: -20px;
+    background-color:#2c2c2c;
+    color:white;
+}
+
+.advocacy-action-header {
+    margin-right: 3% !important;
+    font-size: 18px;
+}
+
+.advocacy-action-header img {
+    height: 40px; 
+    width: 40px; 
+    margin-bottom: 15px;
+}
+
+.advocacy-action {
+	color: #a6c8ff;
+	margin-bottom: -15px;
+}
+
+.advocacy-hr {
+    margin-top: 40px !important;
+    color: lightgray !important;
+    margin-bottom: 3em !important;
+}
+
+.advocacy-quote {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	float: left;
+	font-weight: lighter;
+	line-height: normal;
+	font-size: 36px;
+    padding-bottom: 15px;
+}
+
+.advocacy-quote span {
+	color: #78a9ff;
+}
+
+.citation {
+    font-size: 10px !important;
+}
+
+.testimonial-section {
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100% !important;
+    margin-top: 30px;
+    align-content: center;
+}
+
+.testimonial-card {
+	background-color: #0043ce !important;
+	height: 290px;
+}
+
+.testimonial {
+    padding: 15px;
+}
+
+.testimonial-citation {
+    margin-top: 15px;
+}
