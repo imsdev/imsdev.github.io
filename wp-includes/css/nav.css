@@ -729,10 +729,6 @@ a, a:visited {
 	line-height: 0em;
 }
 
-.override a {
-	color: #fff;
-}
-
 a:hover {
   border-color: #007faf;
   text-decoration:none !important;
