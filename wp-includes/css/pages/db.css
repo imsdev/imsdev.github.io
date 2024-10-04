@@ -1,0 +1,132 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-= Database Page Styling =-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.db-hero {
+    padding: 3em !important;
+}
+
+.db-hero img {
+    margin-top: 65px;
+}
+
+.db-hero-text {
+    margin-left: 30px;
+}
+
+.db-hero-text h6 {
+    padding:0 !important
+}
+
+.macb-section {
+    padding: 2em 4.5em;
+    font-size: 18px;
+}
+
+.macb-section h2 {
+    margin-bottom: 20px;
+}
+
+.macb-section h4 {
+    color: black;
+    margin-top: 20px;
+}
+
+.macb-section a {
+    color: #0F62FE;
+    font-size: 18px;
+}
+
+.macb-video {
+    float: right;
+}
+
+.macb-video div {
+    margin-top: 30px;
+    position: relative;
+}
+
+.macb-video a {
+    width: 100%;
+}
+
+.macb-video img {
+    height: 100% !important;
+    max-height: 300px !important;
+    max-width: 590px !important;
+}
+
+.macb-resources {
+    margin-top: 20px;
+}
+
+.macb-resources h4 {
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.resource-card img {
+    height: 25px;
+    float: left;
+}
+
+.resource-card h3 {
+    color: black;
+}
+
+.resource-card a {
+    color: #0F62FE;
+    font-size: 18px;
+}
+
+.ddl-section {
+    padding: 2em 6.5em;
+}
+
+.ddl-section-header {
+    margin-top: 40px;
+}
+
+.ddl-section p {
+    font-size: 18px;
+}
+
+.ddl-resources {
+    margin-top: 30px;
+}
+
+.ddl-resources h4 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.db-black-bg {
+    color:white;
+    background-color:#2c2c2c;
+}
+
+.blog-section {
+    padding: 2em 4.5em;
+}
+
+.blog-section-space {
+    margin-right: -22px;
+}
+
+.blog-section-text {
+    display:inline-block;
+}
+
+.blog-card {
+    padding-right: 2.5em;
+    padding-left: 1em;
+    margin-bottom:3em;
+}
+
+.blog-card h3 {
+    color: white;
+}
+
+.blog-card a {
+    color: #78A9FF;
+    font-size: 18px;
+}
