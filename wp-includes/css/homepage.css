@@ -441,6 +441,11 @@
       border-width: 2px;
       margin-bottom: -3px;
     }
+
+    .ibm-footer-corporate-links a {
+      color: #78A9FF !important;
+    }
+
     .sitename-wrap h4 {
       margin-left: 10px;
     }
