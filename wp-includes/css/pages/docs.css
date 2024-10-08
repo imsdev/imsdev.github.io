@@ -25,6 +25,14 @@
     margin-right: auto;
 }
 
+.docs-card-c {
+    margin-bottom: 5px !important;
+}
+
+.docs-card {
+    height: 200px;
+}
+
 .docs-card-text {
     padding:15px;
     margin-right: -10px;
