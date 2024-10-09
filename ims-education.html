@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
 	<meta charset="UTF-8">
@@ -45,6 +44,7 @@
 <link href="wp-includes/css/www.css" rel="stylesheet" />
 <link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
 <link href="wp-includes/css/tables.css" rel="stylesheet">
+<link href="wp-includes/css/pages/education.css" rel="stylesheet">
 
 <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
 <script>
@@ -82,81 +82,76 @@
 <!-- MASTHEAD_SITENAV_BEGIN -->
 <body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
 	<div class="ibm-landing-page" style="position: relative;background: #282828 !important;">
-		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-		<div id="ibm-content-wrapper" class="sticky-nav">
-			<header role="banner" aria-labelledby="ibm-pagetitle-h1">
-	  
-			<!-- DROP NAV -->
-			<section class="p-menu1 ">
-			  <nav id="navbar" class="navigation" role="navigation">
-			  
-				<!-- Header wrapper -->
-				<span class="sitename-wrap">
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<img src="wp-content/IMS_logo_small.png"
-					style="z-index:900;" 
+	    <div id="ibm-content-wrapper" class="sticky-nav">
+			<header id="ibm-pageheader" aria-label="Site navigation bar">
+			<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+	
+			<!-- --------------- NAV BAR --------------- -->
+			<section class="p-menu1">
+			  <nav id="navbar" class="navigation" aria-labelledby="ibm-pageheader">
+			
+			  <!-- Site name wrapper -->
+			  <span class="sitename-wrap">
+				<a href="index.html" class="logo-container">
+				  <img src="wp-content/IMS_logo_small.png"
 					id="left-bar-brand"
 					alt="IMS logo"
-					/>
-				  </a>
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<h4 style="line-height: 2; display: inline-block;">
-					  IBM <b>IMS Central</b>
-					</h4>
-				  </a>
-				</span>
-				<!-- == Header wrapper -->
+				  >
+				</a>
+				<a href="index.html" class="logo-container">
+				  <h4 class="site-header-text">
+					IBM <b>IMS Central</b>
+				  </h4>
+				</a>
+			  </span>
+			
+			  <!-- Search wrapper -->
+			  <form id="searchbar" aria-label="Search">
+				<div class="tipue_search_right">
+				  <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+					<defs>
+					  <style> .cls-1 { fill: none; } </style>
+					</defs>
+					<path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+					<rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+				  </svg>
+				  <input type="text" name="q" id="tipue_search_input"
+					pattern=".{3,}" title="Search bar"
+					placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+				  <svg id="search-clr" aria-label="Clear search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px">
+					<path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+				  </svg>
+				</div>
+			  </form>
+	
+			  <!-- On page-load activation -->
+			  <script>
+				$(document).ready(function() {
+				  $('#tipue_search_input').tipuesearch();
+				});
+			  </script>
+	
+			  <!-- Search drop-down -->
+			  <div id="tipue_search_content" class="search_content search-dropdown"></div>
+	
+			  <!-- Hamburger drop-down menu -->
+			  <input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
 			  
-				<!-- Search wrapper -->
-				<form class id="searchbar">
-				  <div class="tipue_search_right">
-					<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-					  <defs>
-						<style>
-						  .cls-1 {
-						  fill: none;
-						  }
-						</style>
-					  </defs>
-					  <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-					  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-					</svg>
-					<input type="text" name="q" id="tipue_search_input"
-					  pattern=".{3,}" title="Search bar"
-					  placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-					<svg id="search-clr" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-					</svg>
-				  </div>
-				  <div style="clear: both;"></div>
-				</form>
-	  
-				<!-- On page-load activation -->
-				<script>
-				  $(document).ready(function() {
-					$('#tipue_search_input').tipuesearch();
-				  });
-				</script>
-	  
-				<!-- Search drop-down -->
-				<div id="tipue_search_content" class="search_content" style="position: absolute"></div>
-				<!-- == Search wrapper -->
-	  
-				<!-- Hamburger dropdown menu -->
-				<input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
-				
-				<label class="hamburger1">
-				  <!-- Burgie wrapper -->
-				  <label class="burg-wrap" for="toggle1">
-					<span class="burg-bars">
-					  <div class="top"></div>
-					  <div class="meat"></div>
-					  <div class="bottom"></div>
-					</span>
-				  </label>
+			  <label class="hamburger1">
+				<!-- Burgie wrapper -->
+				<label class="burg-wrap" for="toggle1">
+				  <span class="hide-label">Label for input</span>
+				  <span class="burg-bars">
+					<span class="hide-label">Label for input</span>
+					<div class="top"></div>
+					<div class="meat"></div>
+					<div class="bottom"></div>
+				  </span>
 				</label>
-			  
-				<!-- Dropdown menu options -->
-				<nav class="menu1">
+			  </label>
+			
+			  <!-- Hamburger drop-down menu options -->
+			  <nav class="menu1" aria-label="Dropdown menu items">
 				<div class="pages pure-g">
 				  <!-- Innovate -->
 				  <div class="pure-u-1 pure-u-sm-1-4">
@@ -214,7 +209,9 @@
 					<a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
 					  href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
 					  <div class="navcard">
-						<h5>IMS community<img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img></h5>
+						<h5>IMS community
+						  <img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img>
+						</h5>
 						<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
 					  </div>
 					</a>
@@ -274,912 +271,910 @@
 						<p>Get help with IMS or other IBM products.</p>
 					  </div>
 					</a>
-					<hr style="background-color: gray !important;" />
+					<hr class="nav-divider"/>
 					<!-- 3 special -->
-					<div style="padding: 5px 20px 0px 20px; color: white;">
+					<div class="navcard-special">
 					  <h5>IMS Advocacy</h5>
 					  <!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
 						IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
 						style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
-					  <p style="color: rgb(199, 199, 199); margin-top: -5px; font-size: 14px;">If you don't have an advocate, contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com"
-						class="nav-item" tabindex="-1" style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
+					  <p>If you don't have an advocate, contact Deepak Kohli at 
+						<a href="mailto:deepakk@us.ibm.com"
+						  class="nav-item" 
+						  tabindex="-1">
+						  <u>deepakk@us.ibm.com</u>
+						</a>.
+					  </p>
 					</div>
 				  </div>
 				</div>
 			  </nav>
 			</section>
-			<!-- DROP NAV END -->
 		  </header>
 		</div>
-<!-- Additional styling for content after navigation -->
-<head>
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-</head>
-<div id="content" class="site-content">
 
-<div class="content-area" id="content-area">
+		<!-- Additional styling for content after navigation -->
+		<head>
+			<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+			<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+			<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+		</head>
 
-<article id="post-3305" class="post-3305 page type-page status-publish has-post-thumbnail hentry tag-agile tag-design-thinking tag-feedback tag-gold tag-ims tag-qpp">
-<div class="entry-content">
-<div aria-role="presentation">
-<!-- MAIN CONTENT -->
-<div aria-role="presentation">
-<main class="zs-main" >
+		<div id="content" class="site-content">
+			<div class="content-area" id="content-area">
+				<div class="entry-content">
+					<!-- MAIN CONTENT -->
+					<main class="zs-main" >
+						<div>
+								
+							<!-- =========================== IMS Courses banner =========================== -->
+							<div class="banner white-bg2" style="padding: 20px;">
 
-<!-- =========================== IMS Courses banner =========================== -->
-<div class="banner white-bg2" style="padding: 20px;">
-
-  <section id="intro-section" class="pure-g zs-section " style="padding: 2em;">
-		<div id="intro-header" class="pure-u-1">
-		</div>
-		<div class="pure-u-3-25">
-		  <img class="ims-card-icon" src="wp-content/course.svg" alt="" style="margin-top: 65px;height: 35px;">
-		</div>
-		<div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
-			<h6 style="padding:0 !important">Learn</h6>
-		   <h1>IMS courses</h1>
-		   <p id="p-style">Get comprehensive IMS™ education by taking these self-paced, digital courses.</p>
-		   <p style="font-weight: lighter;">You can also earn a digital badge!</p>
-			<div class="pure-u-1" style="max-width: 240px;margin-top: 20px;">
-				<a class="zs-w-button-transparent" onfocus="closeNavMenu()"
-				href="https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D9fe3fe66-c22f-4c7b-8e5d-01dfc0e8defa%26client_id%3DMyIBMDallasProdCI" target="_blank" rel="noopener noreferrer">
-					Sign up for an IBM ID →</a>
-				</div>
-		</div>
-	  </section>
-
-</div>
-
-<!-- =========================== Row for filtering =========================== -->
-<!-- remember, the behaviour is that clicking pulls you to the anchors -->
-<div class="zs-section" 
-style="padding: 1em !important;background-color: white;position: sticky;top:0;
-padding: 1em 5em 0em 5em !important;border-bottom: solid lightgray;">
-  <div class="pure-g">
-    <!-- Filter list -->
-    <div class="ibm-sitenav-menu-list"
-    style="display: flex; width: 100% !important;-webkit-box-flex: 1;flex: auto;">
-      <ul class="menu" style="letter-spacing: normal;">
-        <li style="margin-right: 2em; font-weight: 500;"><a href="#all">All roles</a></li>
-        <li style="margin-right: 2em; font-weight: 500;"><a href="#imsdb">IMS database</a></li>
-        <li style="margin-right: 2em; font-weight: 500;"><a href="#sysprog">System programming</a></li>
-        <li style="margin-right: 2em; font-weight: 500;"><a href="#appdev">Application development</a></li>
-        <li style="margin-right: 2em; font-weight: 500;"><a href="#faq">FAQs</a></li>
-        <li style="margin-right: 2em; font-weight: 500;"><a href="#support">Support</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<!-- =========================== Badges & courses  =========================== -->
-<div class="zs-gray-section zs-white-section" style="padding-top:-90;background-color: white;">
-	<section id="intro-section" class="zs-section pure-g">
-		<div class="pure-u-22-24" style="margin-left: auto; margin-right:auto;">
-
-
-	<!-- ALL ROLES header -->
-	<h2 id="all" style="color: black;margin-left: 16px;">All roles</h2>
-
-
-			<!-- card -->
-			<div class="ims-course-card" style="margin-top: 3.5em;">
-				<div style="position: absolute; margin-top:-60px;" id="ims-fundamentals"></div>
-				<div class="pure-u-1">
-					<div class="pure-u-1 pure-u-md-6-24">
-						<img src="wp-content/badge_ims_fundamentals.png" alt="IMS Fundamentals badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-					</div>
-					<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-						<h3 style="color: black;">IMS Fundamentals</h3>
-						<p>Learn about the main components of IBM IMS: IMS Database Manager (IMS DB), 
-							IMS Transaction Manager (IMS TM), and common system services for IMS DB and IMS TM. 
-							Learn how these components work and interact with applications, how IMS databases differ from each other 
-							and differ from relational databases message types, security, maintenance, troubleshooting, and more.</p>	
-							<div class="pure-u-1 pure-u-md-1">
-								<div style=" margin-top:15px;">
-									<p>
-										<b>Level</b>: Beginner
-										&ensp;
-										<b>Cost</b>: None
-										&ensp;
-										<b>Badge</b>: Yes
-										&ensp;
-										<b>Time</b>: 32 hours
-									</p>
-								</div>
-								 <div style="margin-top:15px;" >
-								<a  alt="IMS Fundamentals" 
-								title="IMS Fundamentals" target="_blank" rel="noopener noreferrer" 
-								href="https://learn.ibm.com/course/view.php?id=8829" 
-								style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-								</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-		<!-- card -->
-		<div class="ims-course-card">
-			<div style="position: absolute; margin-top:-60px;" id="ims-intro-pli"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/Intro_PLI.png" alt="Introduction to PL/I badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">Introduction to the PL/I Programming Language</h3>
-					<p>In this 8-hour, introductory course, you’ll learn about the parallels and differences 
-						between C and PL/I, particularly in language syntax, program structure, declarations, 
-						loops, data types, arrays, structures, and more.</p>	
-						  <div class="pure-u-1 pure-u-md-1">
-							 <div style="margin-top:15px;" >
-								<p>
-									<b>Level</b>: Beginner
-									&ensp;
-									<b>Cost</b>: None
-									&ensp;
-									<b>Badge</b>: Yes
-									&ensp;
-									<b>Time</b>: 8 hours
-								</p>
-							</div>
-							 <div style="margin-top:15px;" >
-							<a  alt="IMS Diagnostics" 
-							title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-							href="https://www.ibm.com/training/course/introduction-to-the-pli-programming-language-DL00964G" 
-							style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-							</div>
-						</div>
-
-				</div>
-			</div>
-		</div>		
-
-	<!-- DB header -->
-	<h2 id="imsdb" style="color: black;margin-left: 16px;">IMS database</h2>
-
-				<!-- card 1 -->
-				<div class="ims-course-card" style="margin-top: 3.5em;">
-					<div style="position: absolute; margin-top:-60px;" id="ims-dbfund"></div>
-					<div class="pure-u-1">
-						<div class="pure-u-1 pure-u-md-6-24">
-							<img src="wp-content/ims_database_fundamentals.png" alt="IMS Database Fundamentals badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-						</div>
-						<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-							<h3 style="color: black;">IMS Database Fundamentals</h3>
-							<p>
-								Learn about IMS databases, including the 
-								structure of database records, how those records are accessed, DBDs, PSBs, DL/I calls, 
-								secondary indexes, logical relationships, database types, 
-								access methods, database recovery, and more.</p>	
-								<div class="pure-u-1 pure-u-md-1">
-									<div style=" margin-top:15px;">
-										<p>
-											<b>Level</b>: Beginner
-											&ensp;
-											<b>Cost</b>: None
-											&ensp;
-											<b>Badge</b>: Yes
-											&ensp;
-											<b>Time</b>: 24 hours
-										</p>
+							<section id="intro-section" class="pure-g zs-section " style="padding: 2em;">
+									<div id="intro-header" class="pure-u-1">
 									</div>
-									 <div style="margin-top:15px;" >
-									<a  alt="IMS DB Fundamentals" 
-									title="IMS DB Fundamentals" target="_blank" rel="noopener noreferrer" 
-									href="https://learn.ibm.com/course/view.php?id=10118" 
-									style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+									<div class="pure-u-3-25">
+									<img class="ims-card-icon" src="wp-content/course.svg" alt="" style="margin-top: 65px;height: 35px;">
 									</div>
-							</div>
-	
-						</div>
-					</div>
-				</div>
+									<div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
+										<h6 style="padding:0 !important">Learn</h6>
+									<h1>IMS courses</h1>
+									<p id="p-style">Get comprehensive IMS™ education by taking these self-paced, digital courses.</p>
+									<p style="font-weight: lighter;">You can also earn a digital badge!</p>
+										<div class="pure-u-1" style="max-width: 240px;margin-top: 20px;">
+											<a class="zs-w-button-transparent" onfocus="closeNavMenu()"
+											href="https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D9fe3fe66-c22f-4c7b-8e5d-01dfc0e8defa%26client_id%3DMyIBMDallasProdCI" target="_blank" rel="noopener noreferrer">
+												Sign up for an IBM ID →</a>
+											</div>
+									</div>
+								</section>
 
-		<!-- Card -->
-		<div class="ims-course-card">
-			<div style="position: absolute; margin-top:-60px;" id="ims-dbrc"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/dbrc_badge.png" alt="DBRC badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS Database Recovery Control (DBRC)</h3>
-					<p>IMS DBRC, which is a feature of the IMS Database Manager, helps with the recovery of IMS databases.</p>	
-					<p>In this comprehensive course, you'll learn how to install, customize, administer, and maintain DBRC. 
-						This course is for experienced IMS system programmers and database administrators who need to work with DBRC.
-					</p>
-					<div class="pure-u-1 pure-u-md-1">
-						 <div style="margin-top:15px;" >
-							<p>
-								<b>Level</b>: Intermediate
-								&ensp;
-								<b>Cost</b>: None
-								&ensp;
-								<b>Badge</b>: Yes
-								&ensp;
-								<b>Time</b>: 32 hours
+							</div>
+
+							<!-- =========================== Row for filtering =========================== -->
+							<!-- remember, the behaviour is that clicking pulls you to the anchors -->
+							<div class="zs-section" 
+							style="padding: 1em !important;background-color: white;position: sticky;top:0;
+							padding: 1em 5em 0em 5em !important;border-bottom: solid lightgray;">
+							<div class="pure-g">
+								<!-- Filter list -->
+								<div class="ibm-sitenav-menu-list"
+								style="display: flex; width: 100% !important;-webkit-box-flex: 1;flex: auto;">
+								<ul class="menu" style="letter-spacing: normal;">
+									<li style="margin-right: 2em; font-weight: 500;"><a href="#all">All roles</a></li>
+									<li style="margin-right: 2em; font-weight: 500;"><a href="#imsdb">IMS database</a></li>
+									<li style="margin-right: 2em; font-weight: 500;"><a href="#sysprog">System programming</a></li>
+									<li style="margin-right: 2em; font-weight: 500;"><a href="#appdev">Application development</a></li>
+									<li style="margin-right: 2em; font-weight: 500;"><a href="#faq">FAQs</a></li>
+									<li style="margin-right: 2em; font-weight: 500;"><a href="#support">Support</a></li>
+								</ul>
+								</div>
+							</div>
+							</div>
+
+						</div>
+
+						<!-- =========================== Badges & courses  =========================== -->
+						<div class="zs-gray-section zs-white-section" style="padding-top:-90;background-color: white;">
+							<section id="courses-section" class="zs-section pure-g">
+								<div class="pure-u-22-24" style="margin-left: auto; margin-right:auto;">
+
+
+							<!-- ALL ROLES header -->
+							<h2 id="all" style="color: black;margin-left: 16px;">All roles</h2>
+
+
+									<!-- card -->
+									<div class="ims-course-card" style="margin-top: 3.5em;">
+										<div style="position: absolute; margin-top:-60px;" id="ims-fundamentals"></div>
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/badge_ims_fundamentals.png" alt="IMS Fundamentals badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+												<h3 style="color: black;">IMS Fundamentals</h3>
+												<p>Learn about the main components of IBM IMS: IMS Database Manager (IMS DB), 
+													IMS Transaction Manager (IMS TM), and common system services for IMS DB and IMS TM. 
+													Learn how these components work and interact with applications, how IMS databases differ from each other 
+													and differ from relational databases message types, security, maintenance, troubleshooting, and more.</p>	
+													<div class="pure-u-1 pure-u-md-1">
+														<div style=" margin-top:15px;">
+															<p>
+																<b>Level</b>: Beginner
+																&ensp;
+																<b>Cost</b>: None
+																&ensp;
+																<b>Badge</b>: Yes
+																&ensp;
+																<b>Time</b>: 32 hours
+															</p>
+														</div>
+														<div style="margin-top:15px;" >
+														<a  alt="IMS Fundamentals" 
+														title="IMS Fundamentals" target="_blank" rel="noopener noreferrer" 
+														href="https://learn.ibm.com/course/view.php?id=8829" 
+														style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+														</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+
+								<!-- card -->
+								<div class="ims-course-card">
+									<div style="position: absolute; margin-top:-60px;" id="ims-intro-pli"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/Intro_PLI.png" alt="Introduction to PL/I badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">Introduction to the PL/I Programming Language</h3>
+											<p>In this 8-hour, introductory course, you’ll learn about the parallels and differences 
+												between C and PL/I, particularly in language syntax, program structure, declarations, 
+												loops, data types, arrays, structures, and more.</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<div style="margin-top:15px;" >
+														<p>
+															<b>Level</b>: Beginner
+															&ensp;
+															<b>Cost</b>: None
+															&ensp;
+															<b>Badge</b>: Yes
+															&ensp;
+															<b>Time</b>: 8 hours
+														</p>
+													</div>
+													<div style="margin-top:15px;" >
+													<a  alt="IMS Diagnostics" 
+													title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+													href="https://www.ibm.com/training/course/introduction-to-the-pli-programming-language-DL00964G" 
+													style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+													</div>
+												</div>
+
+										</div>
+									</div>
+								</div>		
+
+							<!-- DB header -->
+							<h2 id="imsdb" style="color: black;margin-left: 16px;">IMS database</h2>
+
+										<!-- card 1 -->
+										<div class="ims-course-card" style="margin-top: 3.5em;">
+											<div style="position: absolute; margin-top:-60px;" id="ims-dbfund"></div>
+											<div class="pure-u-1">
+												<div class="pure-u-1 pure-u-md-6-24">
+													<img src="wp-content/ims_database_fundamentals.png" alt="IMS Database Fundamentals badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+												</div>
+												<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+													<h3 style="color: black;">IMS Database Fundamentals</h3>
+													<p>
+														Learn about IMS databases, including the 
+														structure of database records, how those records are accessed, DBDs, PSBs, DL/I calls, 
+														secondary indexes, logical relationships, database types, 
+														access methods, database recovery, and more.</p>	
+														<div class="pure-u-1 pure-u-md-1">
+															<div style=" margin-top:15px;">
+																<p>
+																	<b>Level</b>: Beginner
+																	&ensp;
+																	<b>Cost</b>: None
+																	&ensp;
+																	<b>Badge</b>: Yes
+																	&ensp;
+																	<b>Time</b>: 24 hours
+																</p>
+															</div>
+															<div style="margin-top:15px;" >
+															<a  alt="IMS DB Fundamentals" 
+															title="IMS DB Fundamentals" target="_blank" rel="noopener noreferrer" 
+															href="https://learn.ibm.com/course/view.php?id=10118" 
+															style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+															</div>
+													</div>
+							
+												</div>
+											</div>
+										</div>
+
+								<!-- Card -->
+								<div class="ims-course-card">
+									<div style="position: absolute; margin-top:-60px;" id="ims-dbrc"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/dbrc_badge.png" alt="DBRC badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS Database Recovery Control (DBRC)</h3>
+											<p>IMS DBRC, which is a feature of the IMS Database Manager, helps with the recovery of IMS databases.</p>	
+											<p>In this comprehensive course, you'll learn how to install, customize, administer, and maintain DBRC. 
+												This course is for experienced IMS system programmers and database administrators who need to work with DBRC.
+											</p>
+											<div class="pure-u-1 pure-u-md-1">
+												<div style="margin-top:15px;" >
+													<p>
+														<b>Level</b>: Intermediate
+														&ensp;
+														<b>Cost</b>: None
+														&ensp;
+														<b>Badge</b>: Yes
+														&ensp;
+														<b>Time</b>: 32 hours
+													</p>
+												</div>
+												<div style="margin-top:15px;" >
+												<a  alt="IMS Diagnostics" 
+												title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+												href="https://learn.ibm.com/course/view.php?id=12150" 
+												style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+												</div>
+										</div>
+
+										</div>
+									</div>
+								</div>
+
+								<!-- card -->
+								<div class="ims-course-card" style="margin-top: 3.5em;">
+									<div style="position: absolute; margin-top:-60px;" id="ims-datashare"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/ims-data-sharing.png" alt="IMS Data Sharing badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS Data Sharing</h3>
+											<p>When more than one IMS system has concurrent access to an IMS database, those systems are sharing data. 
+												In this advanced course, you'll learn about IMS data sharing capabilities, how multiple 
+												IMS systems on different LPARs and processors can access and update the same databases 
+												with complete integrity, and how to implement and maintain a data sharing environment.</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<div style=" margin-top:15px;">
+														<p>
+															<b>Level</b>: Advanced
+															&ensp;
+															<b>Cost</b>: None
+															&ensp;
+															<b>Badge</b>: Yes
+															&ensp;
+															<b>Time</b>: 12 hours
+														</p>
+													</div>
+													<div style="margin-top:15px;" >
+													<a  alt="IMS Diagnostics" 
+													title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+													href="https://learn.ibm.com/course/view.php?id=11499" 
+													style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+													</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<!-- Card -->
+								<div class="ims-course-card" style="margin-top: 3.5em;">
+									<div style="position: absolute; margin-top:-60px;" id="ims-haldb"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/haldb_badge.png" alt="HALDB badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS HALDB</h3>
+											<p>In this intermediate course, you’ll learn how to design, implement, 
+												maintain, troubleshoot, and recover IMS High Availability Large Databases (HALDBs). 
+												You’ll learn how other IMS databases can be migrated to HALDB and the advantages of using HALDBs.</p>	
+												<p>This is an intermediate course for experienced IMS database administrators who implement and manage HALDBs.</p>
+												<div class="pure-u-1 pure-u-md-1">
+													<div style="margin-top:15px;" >
+														<p>
+															<b>Level</b>: Intermediate
+															&ensp;
+															<b>Cost</b>: None
+															&ensp;
+															<b>Badge</b>: Yes
+															&ensp;
+															<b>Time</b>: 10 hours
+														</p>
+													</div>
+													<div style="margin-top:15px;" >
+													<a  alt="IMS Diagnostics" 
+													title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+													href="https://learn.ibm.com/course/view.php?id=12157" 
+													style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+													</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<!-- card 6 -->
+									<div class="ims-course-card" style="margin-top: 3.5em;">
+										<div style="position: absolute; margin-top:-60px;" id="ims-fpimpl"></div>
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/IMS-FP-Implementation.png" alt="Fast Path Implementation badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+												<h3 style="color: black;">IMS Fast Path Implementation</h3>
+												<p>This is an advanced course for IBM IMS system administrators, database administrators, 
+													and application programmers who design or implement IMS Fast Path applications in an 
+													IMS Transaction Management (TM) or IBM CICS Database Control (DBCTL) environment. 
+													</p>		
+													<div class="pure-u-1 pure-u-md-1">
+														<div style=" margin-top:15px;">
+															<p>
+																<b>Level</b>: Advanced
+																&ensp;
+																<b>Cost</b>: None
+																&ensp;
+																<b>Badge</b>: Yes
+																&ensp;
+																<b>Time</b>: 18 hours
+															</p>
+														</div>
+														<div style="margin-top:15px;" >
+														<a  alt="IMS Diagnostics" 
+														title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
+														href="https://learn.ibm.com/course/view.php?id=9907" 
+														style="position: relative;bottom:0;margin-bottom:30px;">Learn more →</a>
+														</div>
+												</div>
+							
+											</div>
+										</div>
+									</div>
+
+								<!-- Course -->
+								<div class="ims-course-card">
+									<div style="position: absolute; margin-top:-60px;" id="ims-db-repair"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/db_repair_badge.png" alt="Database Repair badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS Database Repair</h3>
+											<p>This advanced course shows you techniques and tools for diagnosing 
+												and repairing corrupted IMS databases, including full-function, 
+												DEDB, and HALDB. To do that, you’ll need to understand 
+												database access methods, secondary indexes, database layouts, 
+												control interval (CI) layouts, sequential dependents (SDEPs), 
+												and other database components, features, and structures.</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<div style="margin-top:15px;" >
+														<p>
+															<b>Level</b>: Advanced
+															&ensp;
+															<b>Cost</b>: None
+															&ensp;
+															<b>Badge</b>: Yes
+															&ensp;
+															<b>Time</b>: 11 hours
+														</p>
+													</div>
+													<div style="margin-top:15px;" >
+													<a  alt="IMS Diagnostics" 
+													title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+													href="https://www.ibm.com/training/course/ims-database-repair-DL00963G" 
+													style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+													</div>
+												</div>
+
+										</div>
+									</div>
+								</div>		
+
+								<!-- Card -->
+								<div class="ims-course-card">
+									<div style="position: absolute; margin-top:-60px;" id="ims-db-tune"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/perf_tuning.png" alt="Database Performance and Tuning badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS Database Performance and Tuning</h3>
+											<p>This course shows you how to tune IBM® IMS™ databases. 
+												It also discusses IMS database options that affect performance such as data set considerations 
+												and buffering for Virtual Storage Access Method (VSAM) and Overflow Sequential Access Method 
+												(OSAM) databases.</p>	
+										
+												<div class="pure-u-1 pure-u-md-1">
+													<div style="margin-top:15px;" >
+														<p>
+															<b>Level</b>: Advanced
+															&ensp;
+															<b>Cost</b>: None
+															&ensp;
+															<b>Badge</b>: Yes
+															&ensp;
+															<b>Time</b>: 36 hours
+														</p>
+													</div>
+													<div style="margin-top:15px;" >
+													<a  alt="IMS Diagnostics" 
+													title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+													href="https://learn.ibm.com/course/view.php?id=12404" 
+													style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+													</div>	</div>
+							
+										</div>
+									</div>
+								</div>
+
+								<!-- course card -->
+								<div class="ims-course-card">
+									<div style="position: absolute; margin-top:-60px;" id="ims-phys-db"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/physical_org_db_badge.png" alt="Physical Organization of Databases badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS Physical Organization of Databases</h3>
+											<p>In this comprehensive course, you’ll learn about IMS DB access methods, 
+												how to code DBDs and PSBs, use IMS utilities to reorganize and recover 
+												databases,  use the DL/I test program, and how to prepare a job stream 
+												to load a database.</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<div style="margin-top:15px;" >
+														<p>
+															<b>Level</b>: Intermediate
+															&ensp;
+															<b>Cost</b>: None
+															&ensp;
+															<b>Badge</b>: Yes
+															&ensp;
+															<b>Time</b>: 33 hours
+														</p>
+													</div>
+													<div style="margin-top:15px;" >
+													<a  alt="IMS Diagnostics" 
+													title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+													href="https://www.ibm.com/training/course/ims-physical-organization-of-databases-DL00965G" 
+													style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+													</div>
+												</div>
+
+										</div>
+									</div>
+								</div>	
+
+
+							<!-- SYS header -->
+							<h2 id="sysprog" style="color: black;margin-left: 16px;">System programming</h2>
+
+
+									<!-- card-->
+									<div class="ims-course-card" style="margin-top: 3.5em;">
+										<div style="position: absolute; margin-top:-60px;" id="ims-dmtm"></div>
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/db_tm_sysprog.png" alt="System Programming badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+												<h3 style="color: black;">IMS System Programming</h3>
+												<p>Learn about IMS architecture, installation, transaction management, locking, logging, connecting IMS to IBM CICS® and IBM Db2®,  
+													data sharing, shared queues, preparing and starting the system, and more.</p>	
+													<div class="pure-u-1 pure-u-md-1">
+														<div style=" margin-top:15px;">
+															<p>
+																<b>Level</b>: Intermediate
+																&ensp;
+																<b>Cost</b>: None
+																&ensp;
+																<b>Badge</b>: Yes
+																&ensp;
+																<b>Time</b>: 13 hours
+															</p>
+														</div>
+														<div style="margin-top:15px;" >
+														<a  alt="IMS Diagnostics" 
+														title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+														href="https://learn.ibm.com/course/view.php?id=10973" 
+														style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+														</div>
+												</div>
+							
+											</div>
+										</div>
+									</div>
+
+									<!-- card 3 -->
+									<div class="ims-course-card" style="margin-top: 3.5em;">
+										<div style="position: absolute; margin-top:-60px;" id="ims-diagnostics"></div>
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/badge_ims_diagnostics.png" alt="IMS Diagnostics badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+												<h3 style="color: black;">IMS Diagnostics</h3>
+												<p>Learn about the relationships between IMS components so that you can explain IBM's recommendations for IMS
+													diagnostic setup. Learn how to use the IMS Interactive Dump Formatter, identify the key z/OS® IPCS commands
+														that are useful for IMS problem diagnostics, perform the methodology for debugging IMS abends, and understand the
+														methodology for debugging IMS waits and loops.</p>
+														<div class="pure-u-1 pure-u-md-1">
+															<div style=" margin-top:15px;">
+																<p>
+																	<b>Level</b>: Intermediate
+																	&ensp;
+																	<b>Cost</b>: None
+																	&ensp;
+																	<b>Badge</b>: Yes
+																	&ensp;
+																	<b>Time</b>: 10 hours
+																</p>
+															</div>
+															<div style="margin-top:15px;" >
+															<a  alt="IMS Diagnostics" 
+															title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
+															href="https://learn.ibm.com/course/view.php?id=7405" 
+															style="position: relative;bottom:0;margin-bottom:30px;">Learn more →</a>
+															</div>
+													</div>
+
+											</div>
+										</div>
+									</div>
+
+									<!-- card 5 -->
+									<div class="ims-course-card" style="margin-top: 3.5em;">
+										<div style="position: absolute; margin-top:-60px;" id="ims-squeues"></div>
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/ims-shared-queues.png" alt="Shared Queues badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+												<h3 style="color: black;">IMS Shared Queues</h3>
+												<p>Learn how shared message queues work in IBM IMS, and how full-function queues and Fast Path expedited message handler (EMH) queues 
+													are shared within a parallel sysplex environment. Learn how to prepare and implement IMS shared queues 
+													and manage and troubleshoot an IMS shared queues environment.</p>		
+													<div class="pure-u-1 pure-u-md-1">
+														<div style=" margin-top:15px;">
+															<p>
+																<b>Level</b>: Intermediate
+																&ensp;
+																<b>Cost</b>: None
+																&ensp;
+																<b>Badge</b>: Yes
+																&ensp;
+																<b>Time</b>: 17 hours
+															</p>
+														</div>
+														<div style="margin-top:15px;" >
+														<a  alt="IMS Diagnostics" 
+														title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
+														href="https://learn.ibm.com/course/view.php?id=9359" 
+														style="position: relative;bottom:0;margin-bottom:30px;">Learn more →</a>
+														</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								<!-- upcoming course -->
+								<div class="ims-course-card">
+									<div style="position: absolute; margin-top:-60px;" id="ims-tm-performance"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/IMS_TM_tuning_badge.png" alt="TM Performance Analysis badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS TM Performance Analysis</h3>
+											<p>In this advanced course, you'll learn how to use and adjust IMS 
+												Transaction Manager (IMS TM), other components in the IMS system, and z/OS 
+												components, commands, processes, parameters, and more to ensure that the 
+												IMS TM system is running as efficiently as possible.</p>	
+													<div class="pure-u-1 pure-u-md-1">
+														<div style="margin-top:15px;" >
+														<p>
+															<b>Level</b>: Advanced
+															&ensp;
+															<b>Cost</b>: None
+															&ensp;
+															<b>Badge</b>: Yes
+															&ensp;
+															<b>Time</b>: 11 hours
+														</p>
+													</div>
+														<div style="margin-top:15px;" >
+													<a  alt="IMS Diagnostics" 
+													title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+													href="https://www.ibm.com/training/course/ims-transaction-manager-performance-analysis-DL00962G" 
+													style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+													</div>
+												</div>
+
+										</div>
+									</div>
+								</div>		
+
+									<!-- card 4 -->
+									<div class="ims-course-card" style="margin-top: 3.5em;">
+										<div style="position: absolute; margin-top:-60px;" id="ims-dbctl"></div>
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/badge_ims_dbctl.png" alt="DBCTL System Programming badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+												<h3 style="color: black;">IMS System Programming in a DBCTL Environment</h3>
+												<p>Learn about the IMS database control (DBCTL) environment, which provides access between CICS and
+													IMS-managed databases. Learn  how to install, configure, maintain, troubleshoot, and support
+													an IMS DBCTL system, and understand the IMS architecture that applies to database management and attaching 
+													to CICS systems and transactions.</p>		
+													<div class="pure-u-1 pure-u-md-1">
+														<div style=" margin-top:15px;">
+															<p>
+																<b>Level</b>: Intermediate
+																&ensp;
+																<b>Cost</b>: None
+																&ensp;
+																<b>Badge</b>: Yes
+																&ensp;
+																<b>Time</b>: 12 hours
+															</p>
+														</div>
+														<div style="margin-top:15px;" >
+														<a  alt="IMS Diagnostics" 
+														title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
+														href="https://learn.ibm.com/course/view.php?id=8352" 
+														style="position: relative;bottom:0;margin-bottom:30px;">Learn more →</a>
+														</div>
+													</div>
+
+											</div>
+										</div>
+									</div>
+
+							<!-- APPDEV header -->
+							<h2 id="appdev" style="color: black;margin-left: 16px;">Application development</h2>
+
+
+								<!-- card -->
+								<div class="ims-course-card">
+									<div style="position: absolute; margin-top:-60px;" id="ims-tm-prog"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/tm_app_prog_badge.png" alt="TM Application Programming badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS TM Application Programming</h3>
+											<p>This course shows you through lectures and lab demos how to write
+												application programs that use Data Language One (DL/I) to process
+												terminal input and output messages in an IMS Transaction manager system.</p>	
+												<p>This course does not teach basic COBOL or PL/I. You
+													should already have experience developing applications with one or both of those languages.</p>
+													<div class="pure-u-1 pure-u-md-1">
+														<div style="margin-top:15px;" >
+															<p>
+																<b>Level</b>: Intermediate
+																&ensp;
+																<b>Cost</b>: None
+																&ensp;
+																<b>Badge</b>: Yes
+																&ensp;
+																<b>Time</b>: 14 hours
+															</p>
+														</div>
+														<div style="margin-top:15px;" >
+														<a  alt="IMS Diagnostics" 
+														title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+														href="https://learn.ibm.com/course/view.php?id=13017" 
+														style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+														</div>
+													</div>
+
+										</div>
+									</div>
+								</div>
+
+								<!-- Card -->
+								<div class="ims-course-card">
+									<div style="position: absolute; margin-top:-60px;" id="ims-db-prog"></div>
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-6-24">
+											<img src="wp-content/db_app_prog.png" alt="Database Application Programming badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
+										</div>
+										<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
+											<h3 style="color: black;">IMS Database Application Programming</h3>
+											<p>In this course, you'll learn how to code application programs that perform processing
+												on IMS database records. You'll learn about the hierarchic structure of IMS databases,
+												how to construct DL/I calls, how to test your applications, and more.</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<div style="margin-top:15px;" >
+														<p>
+															<b>Level</b>: Intermediate
+															&ensp;
+															<b>Cost</b>: None
+															&ensp;
+															<b>Badge</b>: Yes
+															&ensp;
+															<b>Time</b>: 20 hours
+														</p>
+													</div>
+													<div style="margin-top:15px;" >
+													<a  alt="IMS Diagnostics" 
+													title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
+													href="https://learn.ibm.com/course/view.php?id=12691" 
+													style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
+													</div>
+												</div>
+
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+								</div>
+							</section>
+						</div>	
+
+						<!-- =========================== FAQ =========================== -->
+						<div class="zs-gray-section">
+							<section id="faq-section"class="zs-section pure-g">
+								<!-- Header -->
+								<div class="pure-u-1 pure-u-md-5-24">
+									<h2 style="color:black" id="faq">Frequently <br>asked <br>questions</h2>
+								</div>
+								<!-- Contents -->
+								<div class="pure-u-sm-1 pure-u-md-18-24">
+
+									<div class="pure-u-1" style="margin-bottom:25px;">
+										<p>Have questions about IMS courses, or the badge program? Here are 
+											some quick answers that can help you.</p>
+									</div>
+
+									<!-- row1 -->
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-5-12">
+											<p>
+												<b>How do I earn a badge?</b>
+											</p>
+											<p>Courses that offer badges include one or more exams. 
+												You must pass those exams and complete required activities. 
+												See the "Grading and badge" topic in the course to see the grading policy and how exams are graded.</p>
+										</div>
+										<div class="pure-u-1 pure-u-md-1-12"></div>
+
+										<div class="pure-u-1 pure-u-md-5-12">
+											<p>
+												<b>If I pass the course, when do I get the badge?</b>
+											</p>
+											<p>Badges are typically issued automatically after you meet the course requirements and grading policy. You should get an email notification of receiving the badge in one to four days.</p>
+										</div>
+									</div>
+									<!-- row2 -->
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-5-12">
+											<p>
+												<b>Whom do I contact if I have problems with course content?</b>
+											</p>
+											<p>You can contact the IMS Education team at <a href="mailto:ibmimsom@us.ibm.com">ibmimsom@us.ibm.com</a>.</p>
+										</div>
+										<div class="pure-u-1 pure-u-md-1-12"></div>
+
+										<div class="pure-u-1 pure-u-md-5-12">
+											<p>
+												<b>Where can I find more information about digital badges?</b>
+											</p>
+											<p>For more information about badges, see <a 
+												target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/training/credentials/faq">Frequently asked questions</a> on IBM Training.</p>
+										</div>
+									</div>
+									<!-- row3 -->
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-5-12">
+											<p>
+												<b>Credly Support</b>
+											</p>
+											<p>For questions related to your Credly badge earner account and 
+												profile, as well as issues related to claiming your badge after receiving a notification,
+												go to <a target="_blank" rel="noopener noreferrer" href="https://support.credly.com/hc/en-us">support.credly.com</a>.</p>
+										</div>
+										<div class="pure-u-1 pure-u-md-1-12"></div>
+
+										<div class="pure-u-1 pure-u-md-5-12">
+											<!-- <p>
+												<b>Where can I find more information about digital badges?</b>
+											</p>
+											<p>For more information about badges, see <a href="https://www.ibm.com/training/P430723G05904L37">Frequently asked questions</a> on IBM Training.</p> -->
+										</div>
+									</div>
+
+
+								</div>
+						
+						</section>
+						</div>
+
+						<!-- =========================== Support =========================== -->
+						<div class="zs-gray-section" style="background-color:#ececec;">
+							<section id="support-section" class="zs-section pure-g">
+								<!-- Header -->
+								<div class="pure-u-1 pure-u-md-5-24">
+									<h2 style="color:black" id="support">Support</h2>
+								</div>
+								<!-- Contents -->
+								<div class="pure-u-sm-1 pure-u-md-18-24">
+
+									<!-- row1 -->
+									<div class="pure-u-1">
+										<div class="pure-u-1 pure-u-md-5-12">
+											<p>Receiving a badge notification that allows you to accept your badge can take 1 - 2 weeks after you complete the activities required to earn a badge.</p>
+											<p>If you have questions about IBM IMS badges, contact <a href="mailto:ibmimsom@us.ibm.com">ibmimsom@us.ibm.com.</a></p>
+										</div>
+										<div class="pure-u-1 pure-u-md-1-12"></div>
+
+										<div class="pure-u-1 pure-u-md-5-12">
+											<p>For questions related to your badge earner account and profile or issues related to claiming your badge after receiving a notification, go to <a 
+												target="_blank" rel="noopener noreferrer" href="https://support.credly.com/hc/en-us">https://support.credly.com/hc/en-us.</a></p>
+										</div>
+									</div>
+
+									<!-- Notice -->
+									<div class="pure-u-1" style="margin-top:25px;">
+										<p style="color:rgb(51, 51, 51)">IBM leverages the services of Credly, a 3rd party data 
+											processor authorized by IBM and located in the United States, to assist in the 
+											administration of the IBM Digital Badge program. In order to issue you an IBM 
+											Digital Badge, your personal information (name, email address, and badge earned) 
+											will be shared with Credly. You will receive an email notification from Credly 
+											with instructions for claiming the badge. Your personal information is used to 
+											issue your badge and for program reporting and operational purposes. IBM may 
+											share the personal information collected with IBM subsidiaries and third parties 
+											globally. It will be handled in a manner consistent with IBM privacy practices. 
+											The IBM Privacy Statement can be viewed here: 
+											<a  target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/privacy/us/en/"> https://www.ibm.com/privacy/us/en/</a>. 
+											IBM employees can view the IBM Internal Privacy Statement here:  
+											<a  target="_blank" rel="noopener noreferrer" href="https://w3.ibm.com/w3publisher/w3-privacy-notice">https://w3.ibm.com/w3publisher/w3-privacy-notice.</a></p>
+									</div>
+
+
+								</div>
+						
+						</section>
+						</div>
+
+						<!-- =========================== back to top =========================== -->
+						<div>
+							<img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
+							<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
+							<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
 							</p>
 						</div>
-						 <div style="margin-top:15px;" >
-						<a  alt="IMS Diagnostics" 
-						title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-						href="https://learn.ibm.com/course/view.php?id=12150" 
-						style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-						</div>
-				</div>
 
+					</main>
+				</div><!-- .entry-content -->
+			</div>
+		</div><!-- #content -->
+
+		<footer aria-label="IBM" id="themeFooter">
+			<div id="boomer-footer" class="boomer_footer_menu"></div>
+			<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
+			<div class="ibm-columns ibm-padding-bottom-0">
+				<div class="ibm-col-1-1">
+				<div class="ibm-footer-corporate-links">
+					<ul>
+					<li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
+					<li><div></div></li>
+					<li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
+					<li><div></div></li>
+					<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
+					<li><div></div></li>
+					<li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
+						</ul>
+				</div>
+				<p class="copyright">Copyright IBM Corporation 2024</p>
+				<div id="ibm-footer-locale-selector"></div>
 				</div>
 			</div>
-		</div>
-
-		<!-- card -->
-		<div class="ims-course-card" style="margin-top: 3.5em;">
-			<div style="position: absolute; margin-top:-60px;" id="ims-datashare"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/ims-data-sharing.png" alt="IMS Data Sharing badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS Data Sharing</h3>
-					<p>When more than one IMS system has concurrent access to an IMS database, those systems are sharing data. 
-						In this advanced course, you'll learn about IMS data sharing capabilities, how multiple 
-						IMS systems on different LPARs and processors can access and update the same databases 
-						with complete integrity, and how to implement and maintain a data sharing environment.</p>	
-						<div class="pure-u-1 pure-u-md-1">
-							<div style=" margin-top:15px;">
-								<p>
-									<b>Level</b>: Advanced
-									&ensp;
-									<b>Cost</b>: None
-									&ensp;
-									<b>Badge</b>: Yes
-									&ensp;
-									<b>Time</b>: 12 hours
-								</p>
-							</div>
-							 <div style="margin-top:15px;" >
-							<a  alt="IMS Diagnostics" 
-							title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-							href="https://learn.ibm.com/course/view.php?id=11499" 
-							style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-							</div>
-					</div>
-
-				</div>
 			</div>
-		</div>
+		</footer>
+	</div><!-- #page -->
 
-		<!-- Card -->
-		<div class="ims-course-card" style="margin-top: 3.5em;">
-			<div style="position: absolute; margin-top:-60px;" id="ims-haldb"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/haldb_badge.png" alt="HALDB badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS HALDB</h3>
-					<p>In this intermediate course, you’ll learn how to design, implement, 
-						maintain, troubleshoot, and recover IMS High Availability Large Databases (HALDBs). 
-						You’ll learn how other IMS databases can be migrated to HALDB and the advantages of using HALDBs.</p>	
-						<p>This is an intermediate course for experienced IMS database administrators who implement and manage HALDBs.</p>
-						<div class="pure-u-1 pure-u-md-1">
-							 <div style="margin-top:15px;" >
-								<p>
-									<b>Level</b>: Intermediate
-									&ensp;
-									<b>Cost</b>: None
-									&ensp;
-									<b>Badge</b>: Yes
-									&ensp;
-									<b>Time</b>: 10 hours
-								</p>
-							</div>
-							 <div style="margin-top:15px;" >
-							<a  alt="IMS Diagnostics" 
-							title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-							href="https://learn.ibm.com/course/view.php?id=12157" 
-							style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-							</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<!-- card 6 -->
-			<div class="ims-course-card" style="margin-top: 3.5em;">
-				<div style="position: absolute; margin-top:-60px;" id="ims-fpimpl"></div>
-				<div class="pure-u-1">
-					<div class="pure-u-1 pure-u-md-6-24">
-						<img src="wp-content/IMS-FP-Implementation.png" alt="Fast Path Implementation badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-					</div>
-					<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-						<h3 style="color: black;">IMS Fast Path Implementation</h3>
-						<p>This is an advanced course for IBM IMS system administrators, database administrators, 
-							and application programmers who design or implement IMS Fast Path applications in an 
-							IMS Transaction Management (TM) or IBM CICS Database Control (DBCTL) environment. 
-							</p>		
-							<div class="pure-u-1 pure-u-md-1">
-								<div style=" margin-top:15px;">
-									<p>
-										<b>Level</b>: Advanced
-										&ensp;
-										<b>Cost</b>: None
-										&ensp;
-										<b>Badge</b>: Yes
-										&ensp;
-										<b>Time</b>: 18 hours
-									</p>
-								</div>
-								 <div style="margin-top:15px;" >
-								<a  alt="IMS Diagnostics" 
-								title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-								href="https://learn.ibm.com/course/view.php?id=9907" 
-								style="position: relative;bottom:0;margin-bottom:30px;">Learn more →</a>
-								</div>
-						</div>
-	
-					</div>
-				</div>
-			</div>
-
-		<!-- Course -->
-		<div class="ims-course-card">
-			<div style="position: absolute; margin-top:-60px;" id="ims-db-repair"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/db_repair_badge.png" alt="Database Repair badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS Database Repair</h3>
-					<p>This advanced course shows you techniques and tools for diagnosing 
-						and repairing corrupted IMS databases, including full-function, 
-						DEDB, and HALDB. To do that, you’ll need to understand 
-						database access methods, secondary indexes, database layouts, 
-						control interval (CI) layouts, sequential dependents (SDEPs), 
-						and other database components, features, and structures.</p>	
-						  <div class="pure-u-1 pure-u-md-1">
-							 <div style="margin-top:15px;" >
-								<p>
-									<b>Level</b>: Advanced
-									&ensp;
-									<b>Cost</b>: None
-									&ensp;
-									<b>Badge</b>: Yes
-									&ensp;
-									<b>Time</b>: 11 hours
-								</p>
-							</div>
-							 <div style="margin-top:15px;" >
-							<a  alt="IMS Diagnostics" 
-							title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-							href="https://www.ibm.com/training/course/ims-database-repair-DL00963G" 
-							style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-							</div>
-						</div>
-
-				</div>
-			</div>
-		</div>		
-
-		<!-- Card -->
-		<div class="ims-course-card">
-			<div style="position: absolute; margin-top:-60px;" id="ims-db-tune"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/perf_tuning.png" alt="Database Performance and Tuning badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS Database Performance and Tuning</h3>
-					<p>This course shows you how to tune IBM® IMS™ databases. 
-						It also discusses IMS database options that affect performance such as data set considerations 
-						and buffering for Virtual Storage Access Method (VSAM) and Overflow Sequential Access Method 
-						(OSAM) databases.</p>	
-				
-						<div class="pure-u-1 pure-u-md-1">
-							 <div style="margin-top:15px;" >
-								<p>
-									<b>Level</b>: Advanced
-									&ensp;
-									<b>Cost</b>: None
-									&ensp;
-									<b>Badge</b>: Yes
-									&ensp;
-									<b>Time</b>: 36 hours
-								</p>
-							</div>
-							 <div style="margin-top:15px;" >
-							<a  alt="IMS Diagnostics" 
-							title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-							href="https://learn.ibm.com/course/view.php?id=12404" 
-							style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-							</div>	</div>
-	
-				</div>
-			</div>
-		</div>
-
-		<!-- course card -->
-		<div class="ims-course-card">
-			<div style="position: absolute; margin-top:-60px;" id="ims-phys-db"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/physical_org_db_badge.png" alt="Physical Organization of Databases badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS Physical Organization of Databases</h3>
-					<p>In this comprehensive course, you’ll learn about IMS DB access methods, 
-						how to code DBDs and PSBs, use IMS utilities to reorganize and recover 
-						databases,  use the DL/I test program, and how to prepare a job stream 
-						to load a database.</p>	
-						  <div class="pure-u-1 pure-u-md-1">
-							 <div style="margin-top:15px;" >
-								<p>
-									<b>Level</b>: Intermediate
-									&ensp;
-									<b>Cost</b>: None
-									&ensp;
-									<b>Badge</b>: Yes
-									&ensp;
-									<b>Time</b>: 33 hours
-								</p>
-							</div>
-							 <div style="margin-top:15px;" >
-							<a  alt="IMS Diagnostics" 
-							title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-							href="https://www.ibm.com/training/course/ims-physical-organization-of-databases-DL00965G" 
-							style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-							</div>
-						</div>
-
-				</div>
-			</div>
-		</div>	
-
-
-	<!-- SYS header -->
-	<h2 id="sysprog" style="color: black;margin-left: 16px;">System programming</h2>
-
-
-			<!-- card-->
-			<div class="ims-course-card" style="margin-top: 3.5em;">
-				<div style="position: absolute; margin-top:-60px;" id="ims-dmtm"></div>
-				<div class="pure-u-1">
-					<div class="pure-u-1 pure-u-md-6-24">
-						<img src="wp-content/db_tm_sysprog.png" alt="System Programming badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-					</div>
-					<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-						<h3 style="color: black;">IMS System Programming</h3>
-						<p>Learn about IMS architecture, installation, transaction management, locking, logging, connecting IMS to IBM CICS® and IBM Db2®,  
-							data sharing, shared queues, preparing and starting the system, and more.</p>	
-							<div class="pure-u-1 pure-u-md-1">
-								<div style=" margin-top:15px;">
-									<p>
-										<b>Level</b>: Intermediate
-										&ensp;
-										<b>Cost</b>: None
-										&ensp;
-										<b>Badge</b>: Yes
-										&ensp;
-										<b>Time</b>: 13 hours
-									</p>
-								</div>
-								 <div style="margin-top:15px;" >
-								<a  alt="IMS Diagnostics" 
-								title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-								href="https://learn.ibm.com/course/view.php?id=10973" 
-								style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-								</div>
-						</div>
-	
-					</div>
-				</div>
-			</div>
-
-			<!-- card 3 -->
-			<div class="ims-course-card" style="margin-top: 3.5em;">
-				<div style="position: absolute; margin-top:-60px;" id="ims-diagnostics"></div>
-				<div class="pure-u-1">
-					<div class="pure-u-1 pure-u-md-6-24">
-						<img src="wp-content/badge_ims_diagnostics.png" alt="IMS Diagnostics badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-					</div>
-					<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-						<h3 style="color: black;">IMS Diagnostics</h3>
-						<p>Learn about the relationships between IMS components so that you can explain IBM's recommendations for IMS
-							diagnostic setup. Learn how to use the IMS Interactive Dump Formatter, identify the key z/OS® IPCS commands
-								that are useful for IMS problem diagnostics, perform the methodology for debugging IMS abends, and understand the
-								methodology for debugging IMS waits and loops.</p>
-								<div class="pure-u-1 pure-u-md-1">
-									<div style=" margin-top:15px;">
-										<p>
-											<b>Level</b>: Intermediate
-											&ensp;
-											<b>Cost</b>: None
-											&ensp;
-											<b>Badge</b>: Yes
-											&ensp;
-											<b>Time</b>: 10 hours
-										</p>
-									</div>
-									 <div style="margin-top:15px;" >
-									<a  alt="IMS Diagnostics" 
-									title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-									href="https://learn.ibm.com/course/view.php?id=7405" 
-									style="position: relative;bottom:0;margin-bottom:30px;">Learn more →</a>
-									</div>
-							</div>
-
-					</div>
-				</div>
-			</div>
-
-			<!-- card 5 -->
-			<div class="ims-course-card" style="margin-top: 3.5em;">
-				<div style="position: absolute; margin-top:-60px;" id="ims-squeues"></div>
-				<div class="pure-u-1">
-					<div class="pure-u-1 pure-u-md-6-24">
-						<img src="wp-content/ims-shared-queues.png" alt="Shared Queues badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-					</div>
-					<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-						<h3 style="color: black;">IMS Shared Queues</h3>
-						<p>Learn how shared message queues work in IBM IMS, and how full-function queues and Fast Path expedited message handler (EMH) queues 
-							are shared within a parallel sysplex environment. Learn how to prepare and implement IMS shared queues 
-							and manage and troubleshoot an IMS shared queues environment.</p>		
-							<div class="pure-u-1 pure-u-md-1">
-								<div style=" margin-top:15px;">
-									<p>
-										<b>Level</b>: Intermediate
-										&ensp;
-										<b>Cost</b>: None
-										&ensp;
-										<b>Badge</b>: Yes
-										&ensp;
-										<b>Time</b>: 17 hours
-									</p>
-								</div>
-								 <div style="margin-top:15px;" >
-								<a  alt="IMS Diagnostics" 
-								title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-								href="https://learn.ibm.com/course/view.php?id=9359" 
-								style="position: relative;bottom:0;margin-bottom:30px;">Learn more →</a>
-								</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-		<!-- upcoming course -->
-		<div class="ims-course-card">
-			<div style="position: absolute; margin-top:-60px;" id="ims-tm-performance"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/IMS_TM_tuning_badge.png" alt="TM Performance Analysis badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS TM Performance Analysis</h3>
-					<p>In this advanced course, you'll learn how to use and adjust IMS 
-						Transaction Manager (IMS TM), other components in the IMS system, and z/OS 
-						components, commands, processes, parameters, and more to ensure that the 
-						IMS TM system is running as efficiently as possible.</p>	
-							<div class="pure-u-1 pure-u-md-1">
-								<div style="margin-top:15px;" >
-								<p>
-									<b>Level</b>: Advanced
-									&ensp;
-									<b>Cost</b>: None
-									&ensp;
-									<b>Badge</b>: Yes
-									&ensp;
-									<b>Time</b>: 11 hours
-								</p>
-							</div>
-								<div style="margin-top:15px;" >
-							<a  alt="IMS Diagnostics" 
-							title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-							href="https://www.ibm.com/training/course/ims-transaction-manager-performance-analysis-DL00962G" 
-							style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-							</div>
-						</div>
-
-				</div>
-			</div>
-		</div>		
-
-			<!-- card 4 -->
-			<div class="ims-course-card" style="margin-top: 3.5em;">
-				<div style="position: absolute; margin-top:-60px;" id="ims-dbctl"></div>
-				<div class="pure-u-1">
-					<div class="pure-u-1 pure-u-md-6-24">
-						<img src="wp-content/badge_ims_dbctl.png" alt="DBCTL System Programming badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-					</div>
-					<div class="pure-u-1 pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-						<h3 style="color: black;">IMS System Programming in a DBCTL Environment</h3>
-						<p>Learn about the IMS database control (DBCTL) environment, which provides access between CICS and
-							IMS-managed databases. Learn  how to install, configure, maintain, troubleshoot, and support
-							   an IMS DBCTL system, and understand the IMS architecture that applies to database management and attaching 
-							   to CICS systems and transactions.</p>		
-							   <div class="pure-u-1 pure-u-md-1">
-								<div style=" margin-top:15px;">
-									<p>
-										<b>Level</b>: Intermediate
-										&ensp;
-										<b>Cost</b>: None
-										&ensp;
-										<b>Badge</b>: Yes
-										&ensp;
-										<b>Time</b>: 12 hours
-									</p>
-								</div>
-								 <div style="margin-top:15px;" >
-								<a  alt="IMS Diagnostics" 
-								title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-								href="https://learn.ibm.com/course/view.php?id=8352" 
-								style="position: relative;bottom:0;margin-bottom:30px;">Learn more →</a>
-								</div>
-							</div>
-
-					</div>
-				</div>
-			</div>
-
-	<!-- APPDEV header -->
-	<h2 id="appdev" style="color: black;margin-left: 16px;">Application development</h2>
-
-
-		<!-- card -->
-		<div class="ims-course-card">
-			<div style="position: absolute; margin-top:-60px;" id="ims-tm-prog"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/tm_app_prog_badge.png" alt="TM Application Programming badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS TM Application Programming</h3>
-					<p>This course shows you through lectures and lab demos how to write
-						 application programs that use Data Language One (DL/I) to process
-						  terminal input and output messages in an IMS Transaction manager system.</p>	
-						   <p>This course does not teach basic COBOL or PL/I. You
-							 should already have experience developing applications with one or both of those languages.</p>
-							 <div class="pure-u-1 pure-u-md-1">
-								 <div style="margin-top:15px;" >
-									<p>
-										<b>Level</b>: Intermediate
-										&ensp;
-										<b>Cost</b>: None
-										&ensp;
-										<b>Badge</b>: Yes
-										&ensp;
-										<b>Time</b>: 14 hours
-									</p>
-								</div>
-								 <div style="margin-top:15px;" >
-								<a  alt="IMS Diagnostics" 
-								title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-								href="https://learn.ibm.com/course/view.php?id=13017" 
-								style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-								</div>
-							</div>
-
-				</div>
-			</div>
-		</div>
-
-		<!-- Card -->
-		<div class="ims-course-card">
-			<div style="position: absolute; margin-top:-60px;" id="ims-db-prog"></div>
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-6-24">
-					<img src="wp-content/db_app_prog.png" alt="Database Application Programming badge" style="width: 100%;height:100%;max-height: 300px;padding-bottom: 1px;">
-				</div>
-				<div class="pure-u-md-18-24" style="padding:35px;margin-right: -10px;">
-					<h3 style="color: black;">IMS Database Application Programming</h3>
-					<p>In this course, you'll learn how to code application programs that perform processing
-						 on IMS database records. You'll learn about the hierarchic structure of IMS databases,
-						  how to construct DL/I calls, how to test your applications, and more.</p>	
-						  <div class="pure-u-1 pure-u-md-1">
-							 <div style="margin-top:15px;" >
-								<p>
-									<b>Level</b>: Intermediate
-									&ensp;
-									<b>Cost</b>: None
-									&ensp;
-									<b>Badge</b>: Yes
-									&ensp;
-									<b>Time</b>: 20 hours
-								</p>
-							</div>
-							 <div style="margin-top:15px;" >
-							<a  alt="IMS Diagnostics" 
-							title="IMS System Programming" target="_blank" rel="noopener noreferrer" 
-							href="https://learn.ibm.com/course/view.php?id=12691" 
-							style="position: relative;bottom:0;margin-bottom:30px;text-align: left;">Learn more →</a>
-							</div>
-						</div>
-
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-		</div>
-	</section>
-</div>	
-
-<!-- =========================== FAQ =========================== -->
-<div class="zs-gray-section">
-	<section id="intro-section"class="zs-section pure-g">
-		<!-- Header -->
-		<div class="pure-u-1 pure-u-md-5-24">
-			<h2 style="color:black" id="faq">Frequently <br>asked <br>questions</h2>
-		</div>
-		<!-- Contents -->
-		<div class="pure-u-sm-1 pure-u-md-18-24">
-
-			<div class="pure-u-1" style="margin-bottom:25px;">
-				<p>Have questions about IMS courses, or the badge program? Here are 
-					some quick answers that can help you.</p>
-			</div>
-
-			<!-- row1 -->
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-5-12">
-					<p>
-						<b>How do I earn a badge?</b>
-					</p>
-					<p>Courses that offer badges include one or more exams. 
-						You must pass those exams and complete required activities. 
-						See the "Grading and badge" topic in the course to see the grading policy and how exams are graded.</p>
-				</div>
-				<div class="pure-u-1 pure-u-md-1-12"></div>
-
-				<div class="pure-u-1 pure-u-md-5-12">
-					<p>
-						<b>If I pass the course, when do I get the badge?</b>
-					</p>
-					<p>Badges are typically issued automatically after you meet the course requirements and grading policy. You should get an email notification of receiving the badge in one to four days.</p>
-				</div>
-			</div>
-			<!-- row2 -->
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-5-12">
-					<p>
-						<b>Whom do I contact if I have problems with course content?</b>
-					</p>
-					<p>You can contact the IMS Education team at <a href="mailto:ibmimsom@us.ibm.com">ibmimsom@us.ibm.com</a>.</p>
-				</div>
-				<div class="pure-u-1 pure-u-md-1-12"></div>
-
-				<div class="pure-u-1 pure-u-md-5-12">
-					<p>
-						<b>Where can I find more information about digital badges?</b>
-					</p>
-					<p>For more information about badges, see <a 
-						target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/training/credentials/faq">Frequently asked questions</a> on IBM Training.</p>
-				</div>
-			</div>
-			<!-- row3 -->
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-5-12">
-					<p>
-						<b>Credly Support</b>
-					</p>
-					<p>For questions related to your Credly badge earner account and 
-						profile, as well as issues related to claiming your badge after receiving a notification,
-						go to <a target="_blank" rel="noopener noreferrer" href="https://support.credly.com/hc/en-us">support.credly.com</a>.</p>
-				</div>
-				<div class="pure-u-1 pure-u-md-1-12"></div>
-
-				<div class="pure-u-1 pure-u-md-5-12">
-					<!-- <p>
-						<b>Where can I find more information about digital badges?</b>
-					</p>
-					<p>For more information about badges, see <a href="https://www.ibm.com/training/P430723G05904L37">Frequently asked questions</a> on IBM Training.</p> -->
-				</div>
-			</div>
-
-
-		</div>
- 
-   </section>
-</div>
-
-<!-- =========================== Support =========================== -->
-<div class="zs-gray-section" style="background-color:#ececec;">
-	<section id="intro-section"class="zs-section pure-g">
-		<!-- Header -->
-		<div class="pure-u-1 pure-u-md-5-24">
-			<h2 style="color:black" id="support">Support</h2>
-		</div>
-		<!-- Contents -->
-		<div class="pure-u-sm-1 pure-u-md-18-24">
-
-			<!-- row1 -->
-			<div class="pure-u-1">
-				<div class="pure-u-1 pure-u-md-5-12">
-					<p>Receiving a badge notification that allows you to accept your badge can take 1 - 2 weeks after you complete the activities required to earn a badge.</p>
-					<p>If you have questions about IBM IMS badges, contact <a href="mailto:ibmimsom@us.ibm.com">ibmimsom@us.ibm.com.</a></p>
-				</div>
-				<div class="pure-u-1 pure-u-md-1-12"></div>
-
-				<div class="pure-u-1 pure-u-md-5-12">
-					<p>For questions related to your badge earner account and profile or issues related to claiming your badge after receiving a notification, go to <a 
-						target="_blank" rel="noopener noreferrer" href="https://support.credly.com/hc/en-us">https://support.credly.com/hc/en-us.</a></p>
-				</div>
-			</div>
-
-			<!-- Notice -->
-			<div class="pure-u-1" style="margin-top:25px;">
-				<p style="color:rgb(51, 51, 51)">IBM leverages the services of Credly, a 3rd party data 
-					processor authorized by IBM and located in the United States, to assist in the 
-					administration of the IBM Digital Badge program. In order to issue you an IBM 
-					Digital Badge, your personal information (name, email address, and badge earned) 
-					will be shared with Credly. You will receive an email notification from Credly 
-					with instructions for claiming the badge. Your personal information is used to 
-					issue your badge and for program reporting and operational purposes. IBM may 
-					share the personal information collected with IBM subsidiaries and third parties 
-					globally. It will be handled in a manner consistent with IBM privacy practices. 
-					The IBM Privacy Statement can be viewed here: 
-					<a  target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/privacy/us/en/"> https://www.ibm.com/privacy/us/en/</a>. 
-					IBM employees can view the IBM Internal Privacy Statement here:  
-					<a  target="_blank" rel="noopener noreferrer" href="https://w3.ibm.com/w3publisher/w3-privacy-notice">https://w3.ibm.com/w3publisher/w3-privacy-notice.</a></p>
-			</div>
-
-
-		</div>
- 
-   </section>
-</div>
-
-<!-- =========================== back to top =========================== -->
-
-<div>
-    <img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
-</div>
-
-</div>
-</main>
-</div><!-- .entry-content -->
-</article><!-- #post-## -->
-</div>
-</div><!-- #content -->
-</div><!-- end of ibm-content-wrapper -->
-
-<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
-	<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
-</p>
-
-<footer role="contentinfo" aria-label="IBM" id="themeFooter">
-	<div id="boomer-footer" class="boomer_footer_menu"></div>
-	<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
-	  <div class="ibm-columns ibm-padding-bottom-0">
-		<div class="ibm-col-1-1">
-		  <div class="ibm-footer-corporate-links">
-			<ul>
-			<li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
-			<li><div></div></li>
-			<li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
-			<li><div></div></li>
-			<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
-			<li><div></div></li>
-			<li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
-				  </ul>
-		  </div>
-		  <p class="copyright">Copyright IBM Corporation 2024</p>
-		  <div id="ibm-footer-locale-selector"></div>
-		</div>
-	  </div>
-	</div>
-  </footer>
-</div><!-- #page -->
 <!-- Search box functions -->
 <script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
 
