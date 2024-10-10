@@ -1,0 +1,10 @@
+.customer-card {
+    flex: 0 100%;
+    height: 100%;
+    position: relative;
+}
+
+.customer-card p {
+    color: #525252;
+    text-align: left;
+}

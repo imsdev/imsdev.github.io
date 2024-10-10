@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
 	<meta charset="UTF-8">
@@ -45,6 +44,7 @@
 <link href="wp-includes/css/www.css" rel="stylesheet" />
 <link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
 <link href="wp-includes/css/tables.css" rel="stylesheet">
+<link href="wp-includes/css/pages/java.css" rel="stylesheet">
 
 <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
 <script>
@@ -82,81 +82,76 @@
 <!-- MASTHEAD_SITENAV_BEGIN -->
 <body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
 	<div class="ibm-landing-page" style="position: relative;background: #282828 !important;">
-		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 		<div id="ibm-content-wrapper" class="sticky-nav">
-			<header role="banner" aria-labelledby="ibm-pagetitle-h1">
-	  
-			<!-- DROP NAV -->
-			<section class="p-menu1 ">
-			  <nav id="navbar" class="navigation" role="navigation">
-			  
-				<!-- Header wrapper -->
-				<span class="sitename-wrap">
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<img src="wp-content/IMS_logo_small.png"
-					style="z-index:900;" 
+			<header id="ibm-pageheader" aria-label="Site navigation bar">
+			<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+	
+			<!-- --------------- NAV BAR --------------- -->
+			<section class="p-menu1">
+			  <nav id="navbar" class="navigation" aria-labelledby="ibm-pageheader">
+			
+			  <!-- Site name wrapper -->
+			  <span class="sitename-wrap">
+				<a href="index.html" class="logo-container">
+				  <img src="wp-content/IMS_logo_small.png"
 					id="left-bar-brand"
 					alt="IMS logo"
-					/>
-				  </a>
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<h4 style="line-height: 2; display: inline-block;">
-					  IBM <b>IMS Central</b>
-					</h4>
-				  </a>
-				</span>
-				<!-- == Header wrapper -->
+				  >
+				</a>
+				<a href="index.html" class="logo-container">
+				  <h4 class="site-header-text">
+					IBM <b>IMS Central</b>
+				  </h4>
+				</a>
+			  </span>
+			
+			  <!-- Search wrapper -->
+			  <form id="searchbar" aria-label="Search">
+				<div class="tipue_search_right">
+				  <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+					<defs>
+					  <style> .cls-1 { fill: none; } </style>
+					</defs>
+					<path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+					<rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+				  </svg>
+				  <input type="text" name="q" id="tipue_search_input"
+					pattern=".{3,}" title="Search bar"
+					placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+				  <svg id="search-clr" aria-label="Clear search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px">
+					<path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+				  </svg>
+				</div>
+			  </form>
+	
+			  <!-- On page-load activation -->
+			  <script>
+				$(document).ready(function() {
+				  $('#tipue_search_input').tipuesearch();
+				});
+			  </script>
+	
+			  <!-- Search drop-down -->
+			  <div id="tipue_search_content" class="search_content search-dropdown"></div>
+	
+			  <!-- Hamburger drop-down menu -->
+			  <input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
 			  
-				<!-- Search wrapper -->
-				<form class id="searchbar">
-				  <div class="tipue_search_right">
-					<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-					  <defs>
-						<style>
-						  .cls-1 {
-						  fill: none;
-						  }
-						</style>
-					  </defs>
-					  <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-					  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-					</svg>
-					<input type="text" name="q" id="tipue_search_input"
-					  pattern=".{3,}" title="Search bar"
-					  placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-					<svg id="search-clr" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-					</svg>
-				  </div>
-				  <div style="clear: both;"></div>
-				</form>
-	  
-				<!-- On page-load activation -->
-				<script>
-				  $(document).ready(function() {
-					$('#tipue_search_input').tipuesearch();
-				  });
-				</script>
-	  
-				<!-- Search drop-down -->
-				<div id="tipue_search_content" class="search_content" style="position: absolute"></div>
-				<!-- == Search wrapper -->
-	  
-				<!-- Hamburger dropdown menu -->
-				<input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
-				
-				<label class="hamburger1">
-				  <!-- Burgie wrapper -->
-				  <label class="burg-wrap" for="toggle1">
-					<span class="burg-bars">
-					  <div class="top"></div>
-					  <div class="meat"></div>
-					  <div class="bottom"></div>
-					</span>
-				  </label>
+			  <label class="hamburger1">
+				<!-- Burgie wrapper -->
+				<label class="burg-wrap" for="toggle1">
+				  <span class="hide-label">Label for input</span>
+				  <span class="burg-bars">
+					<span class="hide-label">Label for input</span>
+					<div class="top"></div>
+					<div class="meat"></div>
+					<div class="bottom"></div>
+				  </span>
 				</label>
-			  
-				<!-- Dropdown menu options -->
-				<nav class="menu1">
+			  </label>
+			
+			  <!-- Hamburger drop-down menu options -->
+			  <nav class="menu1" aria-label="Dropdown menu items">
 				<div class="pages pure-g">
 				  <!-- Innovate -->
 				  <div class="pure-u-1 pure-u-sm-1-4">
@@ -214,7 +209,9 @@
 					<a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
 					  href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
 					  <div class="navcard">
-						<h5>IMS community<img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img></h5>
+						<h5>IMS community
+						  <img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img>
+						</h5>
 						<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
 					  </div>
 					</a>
@@ -274,330 +271,318 @@
 						<p>Get help with IMS or other IBM products.</p>
 					  </div>
 					</a>
-					<hr style="background-color: gray !important;" />
+					<hr class="nav-divider"/>
 					<!-- 3 special -->
-					<div style="padding: 5px 20px 0px 20px; color: white;">
+					<div class="navcard-special">
 					  <h5>IMS Advocacy</h5>
 					  <!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
 						IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
 						style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
-					  <p style="color: rgb(199, 199, 199); margin-top: -5px; font-size: 14px;">If you don't have an advocate, contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com"
-						class="nav-item" tabindex="-1" style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
+					  <p>If you don't have an advocate, contact Deepak Kohli at 
+						<a href="mailto:deepakk@us.ibm.com"
+						  class="nav-item" 
+						  tabindex="-1">
+						  <u>deepakk@us.ibm.com</u>
+						</a>.
+					  </p>
 					</div>
 				  </div>
 				</div>
 			  </nav>
 			</section>
-			<!-- DROP NAV END -->
 		  </header>
 		</div>
 		
-<!-- Additional styling for content after navigation -->
-<head>
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-</head>
-<div id="content" class="site-content">
+		<!-- Additional styling for content after navigation -->
+		<head>
+			<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+			<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+			<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+		</head>
 
-<div class="content-area" id="content-area">
+		<div id="content" class="site-content">
+			<div class="content-area" id="content-area">
+				<div class="entry-content">
+					<main class="zs-main" >
 
-<article id="post-2654" class="post-2654 page type-page status-publish hentry">
-<div class="entry-content">
-
-<div aria-role="presentation">
-<main class="zs-main" >
-<!-- =========================== IMS Java =========================== -->
-	<div class="banner white-bg">
-		<section id="intro-section" class="pure-g zs-section" style="padding: 2em 3em;">
-		  <div id="intro-header" class="pure-u-1">
-		  </div>
-		  <div class="pure-u-3-25">
-			<img class="ims-card-icon" src="wp-content/Icon_Banner_Java and IMSPage.svg" alt="" style="margin-top: 65px;">
-		  </div>
-		  <div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
-			<h6 style="padding:0 !important">Innovate</h6>
-			 <h1>Java and IMS</h1>
-			 <p id="p-style">With 14 million developers using Java™, there's no learning curve for learning the mainframe.
-			Write your code once, and deploy anywhere, including in IMS on IBM Z®.</p>
-		  </div>
-		</section>
-	</div>
-  
-<!-- =========================== Java inside/outside =========================== -->
-<div class="zs-section" style="border-bottom: solid #ececec;background-color: white;padding: 3em 5em 2em 5em;">
-<section id="intro-section"class="pure-g zs-section">
-
-
-	<div class="pure-u-1 pure-g ibm-padding-bottom-1">
-		<div>
-			<div class="pure-u-1" style="margin-bottom: 2em;">
-				<h2 style="color:black"><span style="font-weight:normal;">
-					Run Java where you want to</span></h2>
-			</div>
-			<div class="pure-u-sm-1 pure-u-md-1-24">
-				<img src="wp-content/Icon_Java inside IMS_Java and IMSPage.svg" alt="" style="height: 30px;margin-bottom: 20px;">
-			</div>
-			<div class="pure-u-1 pure-u-md-10-24">
-				<h3 style="color: black;">Java inside IMS</h3>
-					<div style="color:black;">
-						<ul style="list-style: none">
-							<p>Maintaining your IMS applications with Java means easy-to-find skills, lower development cost, abundant tools, and DevOps-pipeline readiness</p>
-							<p>Running Java inside IMS delivers the best performance, with application and data co-located on IBM Z – no network latency!</p>
-							<p>Cost efficiency with Java on Z/OS through offload to specialty engines</p>
-							<p>Over 15 years of Java support in IMS makes it more than production ready for the enterprise</p>
-						</ul>
-						<div class="pure-u-1 pure-u-1 pure-u-md-1-5">
-							<a target="_blank" rel="noopener noreferrer" onfocus="closeNavMenu()"
-							style="color: #0F62FE;"
-							href="https://www.ibm.com/docs/en/ims/latest?topic=ims-solutions-java-development-overview" >
-							Learn more →</a>
+						<!-- =========================== IMS Java =========================== -->
+						<div class="banner white-bg">
+							<section id="intro-section" class="pure-g zs-section" style="padding: 2em 3em;">
+							<div id="intro-header" class="pure-u-1">
+							</div>
+							<div class="pure-u-3-25">
+								<img class="ims-card-icon" src="wp-content/Icon_Banner_Java and IMSPage.svg" alt="" style="margin-top: 65px;">
+							</div>
+							<div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
+								<h6 style="padding:0 !important">Innovate</h6>
+								<h1>Java and IMS</h1>
+								<p id="p-style">With 14 million developers using Java™, there's no learning curve for learning the mainframe.
+								Write your code once, and deploy anywhere, including in IMS on IBM Z®.</p>
+							</div>
+							</section>
 						</div>
-					</div>
-			</div>
-		<!-- Outside -->
-		<div class="pure-u-md-1-24">
-			<img src="wp-content/Icon_Java outside IMS_Java and IMSPage.svg" alt="" style="height: 30px;margin-bottom: 20px;">
-		</div>
-		<div class="pure-u-1 pure-u-md-10-24">
-			<h3 style="color: black;">Java outside IMS</h3>
-				<div style="color:black;line-height: 5px;">
-					<p>Java applications can instantly access IMS transactions and data from anywhere, any platform</p>
-					<p>Use industry standards like JDBC and SQL to directly access IMS data</p>
-					<p>Expand your insights by giving Java analytics applications access to IMS data for data modeling</p>
-					</ul>
-					<div class="pure-u-1 pure-u-1 pure-u-md-1-5">
-						<a target="_blank" rel="noopener noreferrer"
-						style="color: #0F62FE;"
-						href="https://www.ibm.com/docs/en/ims/latest?topic=apis-java-programming-reference" >
-						Learn more →</a>
-					</div>
-					<!-- <div class="pure-u-1 pure-u-1 pure-u-md-1-6">
-						<a href="https://ibm.biz/ibmztrial" 
-						class="zs-button-transparent" 
-						style="bottom:0;background-color:indigo;margin-bottom: 
-						10px;margin-top: 10px;padding-top:8px;padding-bottom:8px;"><u>Try with zTrial</u></a>
-					</div> -->
+  
+						<!-- =========================== Java inside/outside =========================== -->
+						<div class="zs-section" style="border-bottom: solid #ececec;background-color: white;padding: 3em 5em 2em 5em;">
+						<section id="run-java-section"class="pure-g zs-section">
 
+
+							<div class="pure-u-1 pure-g ibm-padding-bottom-1">
+								<div>
+									<div class="pure-u-1" style="margin-bottom: 2em;">
+										<h2 style="color:black"><span style="font-weight:normal;">
+											Run Java where you want to</span></h2>
+									</div>
+									<div class="pure-u-sm-1 pure-u-md-1-24">
+										<img src="wp-content/Icon_Java inside IMS_Java and IMSPage.svg" alt="" style="height: 30px;margin-bottom: 20px;">
+									</div>
+									<div class="pure-u-1 pure-u-md-10-24">
+										<h3 style="color: black;">Java inside IMS</h3>
+											<div style="color:black;">
+												<p>Maintaining your IMS applications with Java means easy-to-find skills, lower development cost, abundant tools, and DevOps-pipeline readiness</p>
+												<p>Running Java inside IMS delivers the best performance, with application and data co-located on IBM Z – no network latency!</p>
+												<p>Cost efficiency with Java on Z/OS through offload to specialty engines</p>
+												<p>Over 15 years of Java support in IMS makes it more than production ready for the enterprise</p>
+												<div class="pure-u-1 pure-u-1 pure-u-md-1-5">
+													<a target="_blank" rel="noopener noreferrer" onfocus="closeNavMenu()"
+													style="color: #0F62FE;"
+													href="https://www.ibm.com/docs/en/ims/latest?topic=ims-solutions-java-development-overview" >
+													Learn more →</a>
+												</div>
+											</div>
+									</div>
+								<!-- Outside -->
+								<div class="pure-u-md-1-24">
+									<img src="wp-content/Icon_Java outside IMS_Java and IMSPage.svg" alt="" style="height: 30px;margin-bottom: 20px;">
+								</div>
+								<div class="pure-u-1 pure-u-md-10-24">
+									<h3 style="color: black;">Java outside IMS</h3>
+										<div style="color:black;line-height: 5px;">
+											<p>Java applications can instantly access IMS transactions and data from anywhere, any platform</p>
+											<p>Use industry standards like JDBC and SQL to directly access IMS data</p>
+											<p>Expand your insights by giving Java analytics applications access to IMS data for data modeling</p>
+											</ul>
+											<div class="pure-u-1 pure-u-1 pure-u-md-1-5">
+												<a target="_blank" rel="noopener noreferrer"
+												style="color: #0F62FE;"
+												href="https://www.ibm.com/docs/en/ims/latest?topic=apis-java-programming-reference" >
+												Learn more →</a>
+											</div>
+											<!-- <div class="pure-u-1 pure-u-1 pure-u-md-1-6">
+												<a href="https://ibm.biz/ibmztrial" 
+												class="zs-button-transparent" 
+												style="bottom:0;background-color:indigo;margin-bottom: 
+												10px;margin-top: 10px;padding-top:8px;padding-bottom:8px;"><u>Try with zTrial</u></a>
+											</div> -->
+
+										</div>
+									</div>
+
+							</div>
+						</section>
+						</div>
+
+						<!-- =========================== Demos/samples & Video =========================== -->
+						<div class="zs-section pure-g" style="background-color: white;padding: 3em 5em 2em 5em;">
+							<!-- Text/links -->
+							<div class="pure-u-1 pure-u-md-2-5">
+								<h2 style="color: black;font-weight: normal;">Get demos and code samples</h2>
+								<p>See how you can use the JDBC Universal drivers to build
+									IMS Java applications.
+								</p>
+								<div class="pure-u-1 pure-u-1 pure-u-md-1-3" style="margin-bottom: 15px;">
+									<a target="_blank" rel="noopener noreferrer"
+									style="color: #0F62FE;"
+									href="https://mediacenter.ibm.com/playlist/details/1_owktz0jm/categoryId/122579632">
+									Watch →</a>
+								</div>
+								
+								<p style="margin-top: 35px;">Check out our GitHub repositories with Java application code examples.
+								</p>
+								<div class="pure-u-1 pure-u-1 pure-u-md-1-3">
+									<a target="_blank" rel="noopener noreferrer"
+									style="color: #0F62FE;"
+									href="https://github.com/imsdev">Learn more →</a>
+								</div>
+							</div>
+							<!-- Video preview -->
+							<div class="pure-u-1 pure-u-md-3-5">
+								<!-- Video window -->
+								<div style="margin-top: 30px;position: relative;float: left;margin-left: 15%;" class="vid-margin">
+									<a href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_owktz0jm/"
+									style="width: 100%;color: #0F62FE;" target="_blank" rel="noopener noreferrer" style="width: 100%;">
+									<img src="wp-content/tracePreview.png" class="image-preview" alt="Java in IMS video preview cover"
+									style="height: 100% !important;max-height: 300px !important;max-width: 590px !important;"></img>
+									<img src="wp-content/traceVidPrev.gif" class="vid-preview" alt="Java in IMS video preview"
+									style="height: 100% !important;max-height: 300px !important;max-width: 590px !important;"></img>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- =========================== Value Icons =========================== -->
+						<div class="zs-white-section" 
+						style="background-color: #171717;color:white; margin-bottom: 20px; padding: 2em 3em;">
+							<section id="benefits-section" class="pure-g zs-section">
+
+							<div class="pure-u-1 pure-u-md-5-24">
+								<h2 ><span style="font-weight:normal;">
+									Java can save you time, money, and headaches</span></h2>
+							</div>
+							<div class="pure-u-md-1-24"></div>
+							<div class="pure-u-1 pure-u-md-6-24">
+								<img src="wp-content/Icon_Cost_Java and IMSPage.svg" alt="" class="center" style="max-height: 60px;">
+								<h3 >Cost</h3>
+								<p>Java processing can be <br> offloaded to specialty engines, <br> which means you just saved <br> some money.</p>
+								</div>
+
+								<div class="pure-u-1 pure-u-md-6-24">
+								<img src="wp-content/Icon_Application agility_Java and IMSPage.svg" alt="" class="center" style="max-height: 60px;">
+								<h3 >Application agility</h3>
+								<p>Choosing Java means you<br> have access to millions of</br> skilled developers who can write IMS applications. </p>
+								</div>
+
+								<div class="pure-u-1 pure-u-md-6-24">
+								<img src="wp-content/Icon_Co-location_Java and IMSPage.svg" alt="" class="center" style="max-height: 60px;">
+								<h3 >Co-location</h3>
+								<p>Running Java on z/OS, where <br> your data resides, just saved<br> you some time.</p>
+								</div>
+
+							</section>
+						</div>
+
+						<!-- =========================== Customer Stories =========================== -->
+						<!-- Section -->
+						<div class="zs-gray-section" style="margin-top: -35px;">
+							<section class="zs-section">
+						
+						<!-- Info cards container -->
+							<div class="pure-g" style="margin-left: auto;margin-right: auto;">
+						
+							<!-- Section header -->
+							<div class="pure-u-1">
+								<h2 style="font-weight: normal;">Don't just take our word for it</h2>
+							</div>
+
+							<!-- Card 1 -->
+							<div class="pure-u-1 pure-u-lg-1-3" style="padding: 15px;min-width: 380px;">
+							<!-- Set a maxwidth on this container to control card width, for now... -->
+								<div class="zs-action-card ims-t-card" style="min-height:330px;">
+									<div class="pure-g customer-card">
+								<!-- Card content -->
+									<div class="ibm-padding-top-1 ibm-padding-bottom-1" style="letter-spacing:normal; padding:1em;height:330px;">
+									<div class="pure-u-1 ims-i-head" style="color: indigo;text-align: left !important;">
+									<!-- <h1 style="font-size: 70pt;margin-top:20px;">21K</h1> -->
+									<h3 style="display: inline-block;color: black;font-weight:normal;font-size: 140%;">
+									Java, COBOL, and IMS on IBM Z </h3>
+									</div>
+									<p>
+										By Java-enabling existing IMS core banking functions, Fiducia & GAD is accelerating the creation of 
+										new services while extending the life and value of its applications.</p>
+									<div class="pure-u-1">
+										<img src="wp-content/uploads/sites/75/2018/05/fiducia.png" alt="Fiducia & GAD logo" class="center2">
+									</div>
+									<!-- <a class="zs-button-secondary" href="https://ibm.biz/ibmztrial" style="position: absolute;bottom: 0;right: 0;">Read more</a>		 -->
+								</div>
+								</div>
+								</div>
+							</div>
+
+
+							<!-- Card 2 -->
+							<div class="pure-u-1 pure-u-lg-1-3" style="padding: 15px;min-width: 380px;">
+								<!-- Set a maxwidth on this container to control card width, for now... -->
+									<div class="zs-action-card ims-t-card" style="min-height:330px;">
+										<div class="pure-g customer-card">
+									<!-- Card content -->
+										<div class="ibm-padding-top-1 ibm-padding-bottom-1" style="letter-spacing:normal; padding:1em;height:330px;">
+										<div class="pure-u-1 ims-i-head" style="color: indigo;text-align: left !important;">
+										<!-- <h1 style="font-size: 70pt;margin-top:20px;">21K</h1> -->
+										<h3 style="display: inline-block;color: black;font-weight:normal;font-size: 140%;">
+										IMS and Java on IBM Z</h3>
+										</div>
+										<p>
+											Implementing IMS ODBM and IMS Catalog allowed Travelers to leverage Java and SQL skills to access 
+											IMS and other data in a single view.</p>
+										<div class="pure-u-1">
+											<img src="wp-content/uploads/sites/75/2018/05/travelers-1.png" alt="Travelers logo" class="center2">
+										</div>
+										<!-- <a class="zs-button-secondary" href="https://ibm.biz/ibmztrial" style="position: absolute;bottom: 0;right: 0;">Read more</a>		 -->
+									</div>
+									</div>
+									</div>
+								</div>
+								
+							<!-- Card 3 -->
+							<div class="pure-u-1 pure-u-lg-1-3" style="padding: 15px;min-width: 380px;">
+								<!-- Set a maxwidth on this container to control card width, for now... -->
+								<div class="zs-action-card ims-t-card" style="min-height:330px;">
+									<div class="pure-g customer-card">
+									<!-- Card content -->
+									<div class="ibm-padding-top-1 ibm-padding-bottom-1" style="letter-spacing:normal; padding:1em;height:330px;">
+									<div class="pure-u-1 ims-i-head" style="color: indigo;text-align: left !important;">
+										<!-- <h1 style="font-size: 70pt;margin-top:20px;">21K</h1> -->
+										<h3 style="display: inline-block;color: black;font-weight:normal;font-size: 140%;">
+											IMS, SQL, and open data access</h3>
+											</div>
+											<p>
+												A large North American bank was able to improve application maintenance and lower costs by converting 
+												applications to Java and running them inside IMS for best performance.</p>
+										<div class="pure-u-1" style="margin-top:35px;">
+											<h3 style="letter-spacing: normal;text-align:center;color: indigo;">North American </br> Bank</h3>
+										</div>
+										<!-- <a class="zs-button-secondary" href="https://ibm.biz/ibmztrial" style="position: absolute;bottom: 0;right: 0;">Read more</a>		 -->
+									</div>
+									</div>
+									</div>
+									</div>
+						</div>
+						</section>
+						</div>
+  
+						<!-- =========================== back to top =========================== -->
+						<div>
+							<img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
+							<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
+							<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
+							</p>
+						</div>
+
+					</main>
+				</div><!-- .entry-content -->
+			</div><!-- #content -->
+		</div><!-- end of ibm-content-wrapper -->
+
+		<footer role="contentinfo" aria-label="IBM" id="themeFooter">
+			<div id="boomer-footer" class="boomer_footer_menu"></div>
+			<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
+			<div class="ibm-columns ibm-padding-bottom-0">
+				<div class="ibm-col-1-1">
+				<div class="ibm-footer-corporate-links">
+					<ul>
+					<li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
+					<li><div></div></li>
+					<li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
+					<li><div></div></li>
+					<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
+					<li><div></div></li>
+					<li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
+						</ul>
+				</div>
+				<p class="copyright">Copyright IBM Corporation 2024</p>
+				<div id="ibm-footer-locale-selector"></div>
 				</div>
 			</div>
-
-	</div>
-</section>
-</div>
-
-<!-- =========================== Demos/samples & Video =========================== -->
-<div class="zs-section pure-g" style="background-color: white;padding: 3em 5em 2em 5em;">
-	<!-- Text/links -->
-	<div class="pure-u-1 pure-u-md-2-5">
-		<h2 style="color: black;font-weight: normal;">Get demos and code samples</h2>
-		<p>See how you can use the JDBC Universal drivers to build
-			IMS Java applications.
-		</p>
-		<div class="pure-u-1 pure-u-1 pure-u-md-1-3" style="margin-bottom: 15px;">
-			<a target="_blank" rel="noopener noreferrer"
-			style="color: #0F62FE;"
-			href="https://mediacenter.ibm.com/playlist/details/1_owktz0jm/categoryId/122579632">
-			Watch →</a>
-		</div>
-		
-		<p style="margin-top: 35px;">Check out our GitHub repositories with Java application code examples.
-		</p>
-		<div class="pure-u-1 pure-u-1 pure-u-md-1-3">
-			<a target="_blank" rel="noopener noreferrer"
-			style="color: #0F62FE;"
-			href="https://github.com/imsdev">Learn more →</a>
-		</div>
-	</div>
-	<!-- Video preview -->
-	<div class="pure-u-1 pure-u-md-3-5">
-		<!-- Video window -->
-		<div style="margin-top: 30px;position: relative;float: left;margin-left: 15%;" class="vid-margin">
-            <a href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_owktz0jm/"
-            style="width: 100%;color: #0F62FE;" target="_blank" rel="noopener noreferrer" style="width: 100%;">
-              <img src="wp-content/tracePreview.png" class="image-preview" alt="Java in IMS video preview cover"
-              style="height: 100% !important;max-height: 300px !important;max-width: 590px !important;"></img>
-              <img src="wp-content/traceVidPrev.gif" class="vid-preview" alt="Java in IMS video preview"
-              style="height: 100% !important;max-height: 300px !important;max-width: 590px !important;"></img>
-            </a>
-          </div>
-	</div>
-</div>
-
-
-<!-- =========================== Value Icons =========================== -->
-
-<div class="zs-white-section" 
-style="background-color: #171717;color:white; margin-bottom: 20px; padding: 2em 3em;">
-      <section id="intro-section" class="pure-g zs-section">
-
-       <div class="pure-u-1 pure-u-md-5-24">
-        <h2 ><span style="font-weight:normal;">
-			Java can save you time, money, and headaches</span></h2>
-       </div>
-	   <div class="pure-u-md-1-24"></div>
-       <div class="pure-u-1 pure-u-md-6-24">
-		<img src="wp-content/Icon_Cost_Java and IMSPage.svg" alt="" class="center" style="max-height: 60px;">
-           <h3 >Cost</h3>
-           <p>Java processing can be <br> offloaded to specialty engines, <br> which means you just saved <br> some money.</p>
-        </div>
-
-        <div class="pure-u-1 pure-u-md-6-24">
-          <img src="wp-content/Icon_Application agility_Java and IMSPage.svg" alt="" class="center" style="max-height: 60px;">
-          <h3 >Application agility</h3>
-          <p>Choosing Java means you<br> have access to millions of</br> skilled developers who can write IMS applications. </p>
-        </div>
-
-        <div class="pure-u-1 pure-u-md-6-24">
-          <img src="wp-content/Icon_Co-location_Java and IMSPage.svg" alt="" class="center" style="max-height: 60px;">
-          <h3 >Co-location</h3>
-          <p>Running Java on z/OS, where <br> your data resides, just saved<br> you some time.</p>
-        </div>
-
-     </section>
-</div>
-
-
-<!-- =========================== Customer Stories =========================== -->
-
-<!-- Section -->
-<div class="zs-gray-section" style="margin-top: -35px;">
-	<section class="zs-section">
-  
-  <!-- Info cards container -->
-	<div class="pure-g" style="margin-left: auto;margin-right: auto;">
-  
-	<!-- Section header -->
-	<div class="pure-u-1">
-		<h2 style="font-weight: normal;">Don't just take our word for it</h2>
-	</div>
-
-	<!-- Card 1 -->
-	<div class="pure-u-1 pure-u-lg-1-3" style="padding: 15px;min-width: 380px;">
-	<!-- Set a maxwidth on this container to control card width, for now... -->
-		<div class="zs-action-card ims-t-card" style="min-height:330px;">
-			<div class="pure-g" style="flex: 0 100%;height: 100%;position:relative;">
-		<!-- Card content -->
-			<div class="ibm-padding-top-1 ibm-padding-bottom-1" style="letter-spacing:normal; padding:1em;height:330px;">
-			<div class="pure-u-1 ims-i-head" style="color: indigo;text-align: left !important;">
-			<!-- <h1 style="font-size: 70pt;margin-top:20px;">21K</h1> -->
-			<h3 style="display: inline-block;color: black;font-weight:normal;font-size: 140%;">
-			  Java, COBOL, and IMS on IBM Z </h3>
-		  	</div>
-		  	<p style="color: gray;text-align: left;">
-				By Java-enabling existing IMS core banking functions, Fiducia & GAD is accelerating the creation of 
-				new services while extending the life and value of its applications.</p>
-			<div class="pure-u-1">
-				<img src="wp-content/uploads/sites/75/2018/05/fiducia.png" alt="Fiducia & GAD logo" class="center2">
 			</div>
-			<!-- <a class="zs-button-secondary" href="https://ibm.biz/ibmztrial" style="position: absolute;bottom: 0;right: 0;">Read more</a>		 -->
-		</div>
-		</div>
-		</div>
-	  </div>
+		</footer>
 
+	</div><!-- #page -->
 
-	<!-- Card 2 -->
-	<div class="pure-u-1 pure-u-lg-1-3" style="padding: 15px;min-width: 380px;">
-		<!-- Set a maxwidth on this container to control card width, for now... -->
-			<div class="zs-action-card ims-t-card" style="min-height:330px;">
-				<div class="pure-g" style="flex: 0 100%;height: 100%;position:relative;">
-			<!-- Card content -->
-				<div class="ibm-padding-top-1 ibm-padding-bottom-1" style="letter-spacing:normal; padding:1em;height:330px;">
-				<div class="pure-u-1 ims-i-head" style="color: indigo;text-align: left !important;">
-				<!-- <h1 style="font-size: 70pt;margin-top:20px;">21K</h1> -->
-				<h3 style="display: inline-block;color: black;font-weight:normal;font-size: 140%;">
-				  IMS and Java on IBM Z</h3>
-				  </div>
-				  <p style="color: gray;text-align: left;">
-					Implementing IMS ODBM and IMS Catalog allowed Travelers to leverage Java and SQL skills to access 
-					IMS and other data in a single view.</p>
-				<div class="pure-u-1">
-					<img src="wp-content/uploads/sites/75/2018/05/travelers-1.png" alt="Travelers logo" class="center2">
-				</div>
-				<!-- <a class="zs-button-secondary" href="https://ibm.biz/ibmztrial" style="position: absolute;bottom: 0;right: 0;">Read more</a>		 -->
-			</div>
-			</div>
-			</div>
-		  </div>
-		  
-	<!-- Card 3 -->
-	<div class="pure-u-1 pure-u-lg-1-3" style="padding: 15px;min-width: 380px;">
-		<!-- Set a maxwidth on this container to control card width, for now... -->
-		<div class="zs-action-card ims-t-card" style="min-height:330px;">
-			  <div class="pure-g" style="flex: 0 100%;height: 100%;position:relative;">
-			<!-- Card content -->
-			<div class="ibm-padding-top-1 ibm-padding-bottom-1" style="letter-spacing:normal; padding:1em;height:330px;">
-			  <div class="pure-u-1 ims-i-head" style="color: indigo;text-align: left !important;">
-				<!-- <h1 style="font-size: 70pt;margin-top:20px;">21K</h1> -->
-				<h3 style="display: inline-block;color: black;font-weight:normal;font-size: 140%;">
-					IMS, SQL, and open data access</h3>
-					</div>
-					<p style="color: gray;text-align: left;">
-						A large North American bank was able to improve application maintenance and lower costs by converting 
-						applications to Java and running them inside IMS for best performance.</p>
-				<div class="pure-u-1" style="margin-top:35px;">
-					<h3 style="letter-spacing: normal;text-align:center;color: indigo;">North American </br> Bank</h3>
-				</div>
-				<!-- <a class="zs-button-secondary" href="https://ibm.biz/ibmztrial" style="position: absolute;bottom: 0;right: 0;">Read more</a>		 -->
-			  </div>
-			  </div>
-			  </div>
-			</div>
-  </div>
-  </section>
-  </div>
-  
-<!-- =========================== back to top =========================== -->
+	<!-- Search box functions -->
+	<script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
 
-<div>
-    <img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
-</div>
-
-
-
-</div>
-</main>
-</div><!-- .entry-content -->
-</article><!-- #post-## -->
-</div>
-</div><!-- #content -->
-</div><!-- end of ibm-content-wrapper -->
-
-<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
-	<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
-</p>
-
-<footer role="contentinfo" aria-label="IBM" id="themeFooter">
-	<div id="boomer-footer" class="boomer_footer_menu"></div>
-	<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
-	  <div class="ibm-columns ibm-padding-bottom-0">
-		<div class="ibm-col-1-1">
-		  <div class="ibm-footer-corporate-links">
-			<ul>
-			<li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
-			<li><div></div></li>
-			<li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
-			<li><div></div></li>
-			<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
-			<li><div></div></li>
-			<li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
-				  </ul>
-		  </div>
-		  <p class="copyright">Copyright IBM Corporation 2024</p>
-		  <div id="ibm-footer-locale-selector"></div>
-		</div>
-	  </div>
-	</div>
-  </footer>
-</div><!-- #page -->
-<!-- Search box functions -->
-<script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
-
-<!-- post-load actions/listeners -->
-<script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
-
-
+	<!-- post-load actions/listeners -->
+	<script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
 
 </body>
 </html>
