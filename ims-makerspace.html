@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
 	<meta charset="UTF-8">
@@ -85,81 +84,76 @@
 <!-- MASTHEAD_SITENAV_BEGIN -->
 <body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
 	<div class="ibm-landing-page" style="position: relative;background: #282828 !important;">
-		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 		<div id="ibm-content-wrapper" class="sticky-nav">
-			<header role="banner" aria-labelledby="ibm-pagetitle-h1">
-	  
-			<!-- DROP NAV -->
-			<section class="p-menu1 ">
-			  <nav id="navbar" class="navigation" role="navigation">
-			  
-				<!-- Header wrapper -->
-				<span class="sitename-wrap">
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<img src="wp-content/IMS_logo_small.png"
-					style="z-index:900;" 
+			<header id="ibm-pageheader" aria-label="Site navigation bar">
+			<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+	
+			<!-- --------------- NAV BAR --------------- -->
+			<section class="p-menu1">
+			  <nav id="navbar" class="navigation" aria-labelledby="ibm-pageheader">
+			
+			  <!-- Site name wrapper -->
+			  <span class="sitename-wrap">
+				<a href="index.html" class="logo-container">
+				  <img src="wp-content/IMS_logo_small.png"
 					id="left-bar-brand"
 					alt="IMS logo"
-					/>
-				  </a>
-				  <a href="index.html" style="display: inline-block; float: left;">
-					<h4 style="line-height: 2; display: inline-block;">
-					  IBM <b>IMS Central</b>
-					</h4>
-				  </a>
-				</span>
-				<!-- == Header wrapper -->
+				  >
+				</a>
+				<a href="index.html" class="logo-container">
+				  <h4 class="site-header-text">
+					IBM <b>IMS Central</b>
+				  </h4>
+				</a>
+			  </span>
+			
+			  <!-- Search wrapper -->
+			  <form id="searchbar" aria-label="Search">
+				<div class="tipue_search_right">
+				  <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+					<defs>
+					  <style> .cls-1 { fill: none; } </style>
+					</defs>
+					<path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+					<rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+				  </svg>
+				  <input type="text" name="q" id="tipue_search_input"
+					pattern=".{3,}" title="Search bar"
+					placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+				  <svg id="search-clr" aria-label="Clear search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px">
+					<path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+				  </svg>
+				</div>
+			  </form>
+	
+			  <!-- On page-load activation -->
+			  <script>
+				$(document).ready(function() {
+				  $('#tipue_search_input').tipuesearch();
+				});
+			  </script>
+	
+			  <!-- Search drop-down -->
+			  <div id="tipue_search_content" class="search_content search-dropdown"></div>
+	
+			  <!-- Hamburger drop-down menu -->
+			  <input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
 			  
-				<!-- Search wrapper -->
-				<form class id="searchbar">
-				  <div class="tipue_search_right">
-					<svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-					  <defs>
-						<style>
-						  .cls-1 {
-						  fill: none;
-						  }
-						</style>
-					  </defs>
-					  <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-					  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-					</svg>
-					<input type="text" name="q" id="tipue_search_input"
-					  pattern=".{3,}" title="Search bar"
-					  placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-					<svg id="search-clr" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-					</svg>
-				  </div>
-				  <div style="clear: both;"></div>
-				</form>
-	  
-				<!-- On page-load activation -->
-				<script>
-				  $(document).ready(function() {
-					$('#tipue_search_input').tipuesearch();
-				  });
-				</script>
-	  
-				<!-- Search drop-down -->
-				<div id="tipue_search_content" class="search_content" style="position: absolute"></div>
-				<!-- == Search wrapper -->
-	  
-				<!-- Hamburger dropdown menu -->
-				<input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
-				
-				<label class="hamburger1">
-				  <!-- Burgie wrapper -->
-				  <label class="burg-wrap" for="toggle1">
-					<span class="burg-bars">
-					  <div class="top"></div>
-					  <div class="meat"></div>
-					  <div class="bottom"></div>
-					</span>
-				  </label>
+			  <label class="hamburger1">
+				<!-- Burgie wrapper -->
+				<label class="burg-wrap" for="toggle1">
+				  <span class="hide-label">Label for input</span>
+				  <span class="burg-bars">
+					<span class="hide-label">Label for input</span>
+					<div class="top"></div>
+					<div class="meat"></div>
+					<div class="bottom"></div>
+				  </span>
 				</label>
-			  
-				<!-- Dropdown menu options -->
-				<nav class="menu1">
+			  </label>
+			
+			  <!-- Hamburger drop-down menu options -->
+			  <nav class="menu1" aria-label="Dropdown menu items">
 				<div class="pages pure-g">
 				  <!-- Innovate -->
 				  <div class="pure-u-1 pure-u-sm-1-4">
@@ -217,7 +211,9 @@
 					<a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
 					  href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
 					  <div class="navcard">
-						<h5>IMS community<img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img></h5>
+						<h5>IMS community
+						  <img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img>
+						</h5>
 						<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
 					  </div>
 					</a>
@@ -277,266 +273,232 @@
 						<p>Get help with IMS or other IBM products.</p>
 					  </div>
 					</a>
-					<hr style="background-color: gray !important;" />
+					<hr class="nav-divider"/>
 					<!-- 3 special -->
-					<div style="padding: 5px 20px 0px 20px; color: white;">
+					<div class="navcard-special">
 					  <h5>IMS Advocacy</h5>
 					  <!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
 						IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
 						style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
-					  <p style="color: rgb(199, 199, 199); margin-top: -5px; font-size: 14px;">If you don't have an advocate, contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com"
-						class="nav-item" tabindex="-1" style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
+					  <p>If you don't have an advocate, contact Deepak Kohli at 
+						<a href="mailto:deepakk@us.ibm.com"
+						  class="nav-item" 
+						  tabindex="-1">
+						  <u>deepakk@us.ibm.com</u>
+						</a>.
+					  </p>
 					</div>
 				  </div>
 				</div>
 			  </nav>
 			</section>
-			<!-- DROP NAV END -->
 		  </header>
 		</div>
 
-<div id="content" class="site-content">
-<div class="content-area" id="content-area">
-<article class="page type-page">
-<div class="entry-content">
+		<!-- Additional styling for content after navigation -->
+		<head>
+		<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+		<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+		<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+		</head>
 
-<!-- Additional styling for content after navigation -->
-<head>
-<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-</head>
+		<div id="content" class="site-content">
+			<div class="content-area" id="content-area">
+				<article id="post-3524" class="post-3524 page type-page status-publish hentry">
+					<div class="entry-content">
+						<main class="zs-main" >
 
-<div id="content" class="site-content">
+							<!-- =========================== IMS Makerspace =========================== -->
+							<div class="banner engage-bg" style="padding: 20px;">
 
-<div class="content-area" id="content-area">
+							<section id="intro-section" class="pure-g zs-section" style="padding: 2em;color: white;">
+								<div id="intro-header" class="pure-u-1">
+								</div>
+								<div class="pure-u-3-25">
+								<img class="ims-card-icon" src="wp-content/Icon_02_IMS MakerspacePage.svg" alt="" style="margin-top: 65px;">
+								</div>
+								<div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
+									<h6 style="padding:0 !important">Engage</h6>
+								<h1>IMS Makerspace</h1>
+								<p id="p-style">A multi-day framework that emphasizes IMS™ modernization and incorporates 
+									education assets, design thinking exercises, a potential proof of concept, and production delivery.</p>
+									<div class="pure-u-1" style="max-width: 180px;margin-top: 20px;">
+										<a class="zs-w-button-transparent" target="_blank" rel="noopener noreferrer" onfocus="closeNavMenu()"
+										href="https://www.surveygizmo.com/s3/4453456/IMS-Makerspace-Enrollment-Form">
+											Enroll now →</a>
+									</div>
+								</div>
 
-<article id="post-3524" class="post-3524 page type-page status-publish hentry">
-<div class="entry-content">
-<div aria-role="presentation">
-<main class="zs-main" >
+							</section>
 
-<!-- =========================== IMS Makerspace =========================== -->
-<div class="banner engage-bg" style="padding: 20px;">
+							</div>
 
-<section id="intro-section" class="pure-g zs-section" style="padding: 2em;color: white;">
-	<div id="intro-header" class="pure-u-1">
-	</div>
-	<div class="pure-u-3-25">
-	  <img class="ims-card-icon" src="wp-content/Icon_02_IMS MakerspacePage.svg" alt="" style="margin-top: 65px;">
-	</div>
-	<div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
-		<h6 style="padding:0 !important">Engage</h6>
-	   <h1>IMS Makerspace</h1>
-	   <p id="p-style">A multi-day framework that emphasizes IMS™ modernization and incorporates 
-		education assets, design thinking exercises, a potential proof of concept, and production delivery.</p>
-		<div class="pure-u-1" style="max-width: 180px;margin-top: 20px;">
-			<a class="zs-w-button-transparent" target="_blank" rel="noopener noreferrer" onfocus="closeNavMenu()"
-			href="https://www.surveygizmo.com/s3/4453456/IMS-Makerspace-Enrollment-Form">
-				Enroll now →</a>
-		</div>
-	</div>
+							<!-- =========================== Makerspace description =========================== -->
+							<div class="zs-gray-section ibm-background-white-core">
+								<section class="zs-section">
+									<!--Header -->
+									<div class="pure-u-1 pure-u-sm-1 ibm-padding-bottom-1">
+										<h2 style="color: black;">Why IMS Makerspace?</h2>
+									</div>
+									<!-- Section contents -->
+									<div class="pure-u-1 pure-u-sm-1 white-link" style="padding-right: 2.5em;">
+										<div>
+											<p id="makerspace-desc" style="color: black;">We want to help you modernize your IMS system so you can achieve your business needs. 
+												We bring a specialized team on-site to facilitate Design Thinking workshops to comprehensively
+												understand your business scenarios and ideate on future solutions. Makerspace consists 
+												of four phases, with the Prototype and Production phase being optional:</p>
+											<img src="wp-content/makerdiag.png" 
+												aria-describedby="makerspace-desc"
+												alt="Diagram of makerspace program" 
+												width="1910" height="646" class="alignnone size-full wp-image-3683" 
+												sizes="(max-width: 1910px) 100vw, 1910px" 
+												style="width: 80%;margin: 40px auto 60px auto;display: flex;"
+											/>
+										</div>
+										<div class="pure-g">
+											<div class="pure-u-md-1-24">
+												<img src="wp-content/Icon_Education_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+											</div>
+											<div class="pure-u-1 pure-u-lg-10-24" style="padding: 15px;">
+												<h4 style="color: black;">Education</h4>
+												<p>Understand the assets available for modernizing the existing IMS system.</p>
+											</div>
+											<div class="pure-u-1-24"></div>
+											<div class="pure-u-md-1-24">
+												<img src="wp-content/Icon_Design thinking_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+											</div>
+											<div class="pure-u-1 pure-u-lg-10-24" style="padding: 15px;">
+												<h4 style="color: black;">Design thinking</h4>
+												<p>Identify relevant business scenarios, current pain points and brainstorm Big Ideas 
+													for future modernization solutions related to the specific Makerspace topic. 
+													This is an essential phase to drive the ensuing Prototype and Production phases.</p>
+											</div>
+										</div>
+										<div class="pure-g">
+											<div class="pure-u-md-1-24">
+												<img src="wp-content/Icon_Prototype (optional)_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+											</div>
+											<div class="pure-u-1 pure-u-lg-10-24" style="padding: 15px;">
+												<h4 style="color: black;">Prototype (optional)</h4>
+												<p>Use customer assets to create and deliver on a prototype that solves a business need.</p>
+											</div>
+											<div class="pure-u-1-24"></div>
+											<div class="pure-u-md-1-24">
+												<img src="wp-content/Icon_Production (optional)_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+											</div>
+											<div class="pure-u-1 pure-u-lg-10-24" style="padding: 15px;">
+												<h4 style="color: black;">Production (optional)</h4>
+												<p>Solve complex use cases and deploy into production.</p>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
 
-  </section>
+							<!-- =========================== Topics =========================== -->
+							<div class="zs-gray-section" style="background-color:#2c2c2c; color: white;">
+								<section class="zs-section">
+									<!--Header -->
+									<div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
+										<h2>IMS Makerspace topics</h2>
+										<p>Each makerspace is focused around one area of IMS modernization
+											. You request the area, and we deliver.
+										</p>
+										<p style="font-size: 12px;">Don't see the area you want? 
+											No problem! Request another area of focus when you enroll.</p>
+									</div>
+									<div class="pure-u-lg-2-24"></div>
+								
+									<!-- Section contents -->
+									<div class="pure-u-sm-1 pure-u-md-16-24">
+										<div class="pure-u-sm-1 pure-u-md-10-24" style="margin: 1em;">
+											<img src="wp-content/Icon_01_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+											<p><b>APIs:</b><br>Open IMS transaction and database access as APIs</p>
+										</div>
+										<div class="pure-u-sm-2-24"></div>
+										<div class="pure-u-sm-1 pure-u-md-10-24" style="margin: 1em;">
+											<img src="wp-content/Icon_02_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+											<p><b>DevOps:</b><br>Integrate IMS assets into enterprise DevOps pipeline</p>
+										</div>
+										<div class="pure-u-sm-1 pure-u-md-10-24" style="margin: 1em;">
+											<img src="wp-content/Icon_03_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+											<p><b>Open database:</b><br>Access via JDBC and SQL, administer IMS database with the catalog and DDL</p>
+										</div>
+										<div class="pure-u-sm-2-24"></div>
+										<div class="pure-u-sm-1 pure-u-md-10-24" style="margin: 1em;">
+											<img src="wp-content/Icon_04_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+											<p><b>Java:</b><br>Extend existing applications or develop new IMS applications with Java™</p>
+										</div>
+									</div>
+								</section>
+							</div>
 
-</div>
+							<!-- =========================== FAQs=========================== -->
+							<div class="zs-gray-section ibm-background-white-core" style="padding: 2em 5em;">
+								<section id="faq-section" class="pure-g zs-section">
+								<div id="faq-header" class="pure-u-1" style="padding-right: 4em;">
+									<img src="wp-content/Icon_05_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
+									<h2 style= "color:black;margin-top: 20px;">How long does this take?</h1>
+								</div>
 
-<!-- =========================== Makerspace description =========================== -->
+								<div id="faq-info" class="pure-u-1" style="padding-left:10px;">
+									<div class="pure-u-1" style="font-size: 18px;">
+											This depends on the area and 
+											number of phases you request. If you are just interested in the default phases 
+											of Education and Design Thinking, this can be done in a day. However, adding on 
+											the Prototyping phase or going all the way to Deployment requires more time for 
+											co-creation and delivery. </p>
+											
+											<p style="margin-top: 15px;font-size: 18px;">Complete the <a href="https://www.surveygizmo.com/s3/4453456/IMS-Makerspace-Enrollment-Form">enrollment form</a>, and we&#8217;ll work with 
+												you to find a duration that works.</p>
+									</div>
+								</div>
+								</section>
+							</div>
 
-<div class="zs-gray-section ibm-background-white-core">
-	<section class="zs-section">
-  
-  <!--Header -->
-	  <div class="pure-u-1 pure-u-sm-1 ibm-padding-bottom-1">
-		  <h2 style="color: black;">Why IMS Makerspace?</h2>
-	  </div>
-  <!-- Section contents -->
-	  <div class="pure-u-1 pure-u-sm-1 white-link" style="padding-right: 2.5em;">
-		<div>
-			<p style="color: black;">We want to help you modernize your IMS system so you can achieve your business needs. 
-				We bring a specialized team on-site to facilitate Design Thinking workshops to comprehensively
-				understand your business scenarios and ideate on future solutions. Makerspace consists 
-				of four phases, with the Prototype and Production phase being optional:</p>
-					<img src="wp-content/makerdiag.png" 
-						alt="Following the Education and Design Thinking workshops, you have the option to work with our team to prototype and deploy solutions to your business needs." 
-						width="1910" height="646" class="alignnone size-full wp-image-3683" 
-						sizes="(max-width: 1910px) 100vw, 1910px" 
-						style="width: 80%;margin: 40px auto 60px auto;display: flex;"
-					/>
+							<!-- =========================== back to top =========================== -->
+							<div>
+								<img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
+								<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
+								<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
+								</p>
+							</div>
+
+						</main>
+					</div><!-- .entry-content -->
+				</article><!-- #post-## -->
 			</div>
-			<div class="pure-g">
-				<div class="pure-u-md-1-24">
-					<img src="wp-content/Icon_Education_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-				</div>
-				<div class="pure-u-1 pure-u-lg-10-24" style="padding: 15px;">
-					<h4 style="color: black;">Education</h4>
-					<p>Understand the assets available for modernizing the existing IMS system.</p>
-				</div>
-				<div class="pure-u-1-24"></div>
-				<div class="pure-u-md-1-24">
-					<img src="wp-content/Icon_Design thinking_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-				</div>
-				<div class="pure-u-1 pure-u-lg-10-24" style="padding: 15px;">
-					<h4 style="color: black;">Design thinking</h4>
-					<p>Identify relevant business scenarios, current pain points and brainstorm Big Ideas 
-						for future modernization solutions related to the specific Makerspace topic. 
-						This is an essential phase to drive the ensuing Prototype and Production phases.</p>
-				</div>
-			</div>
-
-			<div class="pure-g">
-				<div class="pure-u-md-1-24">
-					<img src="wp-content/Icon_Prototype (optional)_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-				</div>
-				<div class="pure-u-1 pure-u-lg-10-24" style="padding: 15px;">
-					<h4 style="color: black;">Prototype (optional)</h4>
-					<p>Use customer assets to create and deliver on a prototype that solves a business need.</p>
-				</div>
-				<div class="pure-u-1-24"></div>
-				<div class="pure-u-md-1-24">
-					<img src="wp-content/Icon_Production (optional)_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-				</div>
-				<div class="pure-u-1 pure-u-lg-10-24" style="padding: 15px;">
-					<h4 style="color: black;">Production (optional)</h4>
-					<p>Solve complex use cases and deploy into production.</p>
-				</div>
-			</div>
-	  </div>
-
-  
-	</section>
-  </div>
-  </section>
-  </div>
-
-  <!-- =========================== Topics =========================== -->
-<div class="zs-gray-section" style="background-color:#2c2c2c; color: white;">
-	<section class="zs-section">
-  
-
-
-		
-		<!--Header -->
-			<div class="pure-u-1 pure-u-sm-1 pure-u-md-5-24 ibm-padding-bottom-1">
-				<h2>IMS Makerspace topics</h2>
-				<p>Each makerspace is focused around one area of IMS modernization
-					. You request the area, and we deliver.
-				</p>
-				<p style="font-size: 12px;">Don't see the area you want? 
-					No problem! Request another area of focus when you enroll.</p>
-			</div>
-			<div class="pure-u-lg-2-24"></div>
-	  
-		<!-- Section contents -->
-	  
-		<div class="pure-u-sm-1 pure-u-md-16-24">
-			<div class="pure-u-sm-1 pure-u-md-10-24" style="margin: 1em;">
-				<img src="wp-content/Icon_01_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-				<p><b>APIs:</b><br>Open IMS transaction and database access as APIs</p>
-			</div>
-			<div class="pure-u-sm-2-24"></div>
-			<div class="pure-u-sm-1 pure-u-md-10-24" style="margin: 1em;">
-				<img src="wp-content/Icon_02_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-				<p><b>DevOps:</b><br>Integrate IMS assets into enterprise DevOps pipeline</p>
-			</div>
-			<div class="pure-u-sm-1 pure-u-md-10-24" style="margin: 1em;">
-				<img src="wp-content/Icon_03_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-				<p><b>Open database:</b><br>Access via JDBC and SQL, administer IMS database with the catalog and DDL</p>
-			</div>
-			<div class="pure-u-sm-2-24"></div>
-			<div class="pure-u-sm-1 pure-u-md-10-24" style="margin: 1em;">
-				<img src="wp-content/Icon_04_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-				<p><b>Java:</b><br>Extend existing applications or develop new IMS applications with Java™</p>
-			</div>
-		</div>
-				  
-			  </div>
-		  </div>
-
- 
-	</section>
-  </div>
-  </section>
-  </div>
-  
-
-<!-- =========================== FAQs=========================== -->
-
-<div class="zs-gray-section ibm-background-white-core" style="padding: 2em 5em;">
-	<section id="intro-section" class="pure-g zs-section">
-	  <div id="intro-header" class="pure-u-1" style="padding-right: 4em;">
-		<img src="wp-content/Icon_05_IMS MakerspacePage.svg" alt="" style="height: 40px; width: 40px;">
-		<h2 style= "color:black;margin-top: 20px;">How long does this take?</h1>
-	  </div>
-
-	  <div id="intro-info" class="pure-u-1" style="padding-left:10px;">
-		  <div class="pure-u-1" style="font-size: 18px;">
-				This depends on the area and 
-				number of phases you request. If you are just interested in the default phases 
-				of Education and Design Thinking, this can be done in a day. However, adding on 
-				the Prototyping phase or going all the way to Deployment requires more time for 
-				co-creation and delivery. </p>
-				
-				<p style="margin-top: 15px;font-size: 18px;">Complete the <a href="https://www.surveygizmo.com/s3/4453456/IMS-Makerspace-Enrollment-Form">enrollment form</a>, and we&#8217;ll work with 
-					you to find a duration that works.</p>
-		  </div>
-	  </div>
-	</section>
-  </div>
-  </section>
-</div>
-
-<!-- =========================== back to top =========================== -->
-
-<div>
-    <img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top">
-</div>
-
-</main>
-<div>
-	</div><!-- .entry-content -->
-</article><!-- #post-## -->
-
-		</div>
-
-
-
 		</div><!-- #content -->
-	</div><!-- end of ibm-content-wrapper -->
 
-	<p class="ibm-ind-link ibm-nospacing ibm-icononly ibm-btt-auto ibm-hidden-small">
-		<a class="ibm-nospacing ibm-top-link" aria-label="Back to top" href="#top" tabindex="0">Back to top</a>
-	</p>
-
-	<footer role="contentinfo" aria-label="IBM" id="themeFooter">
-		<div id="boomer-footer" class="boomer_footer_menu"></div>
-		<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
-		  <div class="ibm-columns ibm-padding-bottom-0">
-			<div class="ibm-col-1-1">
-			  <div class="ibm-footer-corporate-links">
-				<ul>
-				<li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
-				<li><div></div></li>
-				<li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
-				<li><div></div></li>
-				<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
-				<li><div></div></li>
-				<li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
-					  </ul>
-			  </div>
-			  <p class="copyright">Copyright IBM Corporation 2024</p>
-			  <div id="ibm-footer-locale-selector"></div>
+		<footer aria-label="IBM" id="themeFooter">
+			<div id="boomer-footer" class="boomer_footer_menu"></div>
+			<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
+			<div class="ibm-columns ibm-padding-bottom-0">
+				<div class="ibm-col-1-1">
+				<div class="ibm-footer-corporate-links">
+					<ul>
+					<li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
+					<li><div></div></li>
+					<li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
+					<li><div></div></li>
+					<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
+					<li><div></div></li>
+					<li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
+						</ul>
+				</div>
+				<p class="copyright">Copyright IBM Corporation 2024</p>
+				<div id="ibm-footer-locale-selector"></div>
+				</div>
 			</div>
-		  </div>
-		</div>
-	  </footer>
-</div><!-- #page -->
+			</div>
+		</footer>
+	</div><!-- #page -->
+
 <!-- Search box functions -->
 <script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
 
 <!-- post-load actions/listeners -->
 <script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
-
 
 </body>
 </html>
