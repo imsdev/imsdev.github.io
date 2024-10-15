@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
   <head>
     <meta charset="UTF-8">
@@ -86,207 +85,213 @@
   <!-- PAGE CONTENT -->
   <body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
     <div class="ibm-landing-page" style="position: relative; background: #282828 !important;">
-      <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
-      
-      <!-- MASTHEAD AND SITE NAV BAR -->
       <div id="ibm-content-wrapper" class="sticky-nav">
-        <header role="banner" id="ibm-pageheader" aria-label="Site navigation bar">
+        <header id="ibm-pageheader" aria-label="Site navigation bar">
+          <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+  
+          <!-- --------------- NAV BAR --------------- -->
           <section class="p-menu1">
-            <nav id="navbar" class="navigation" role="navigation" aria-labelledby="ibm-pageheader">
+            <nav id="navbar" class="navigation" aria-labelledby="ibm-pageheader">
             
-            <!-- Header wrapper -->
-            <span class="sitename-wrap">
-              <a href="index.html" style="float: left;">
-                <img src="wp-content/IMS_logo_small.png"
-                  style="z-index:900;" 
-                  id="left-bar-brand"
-                  alt="IMS logo"
-                />
-              </a>
-              <a href="index.html" style="float: left;">
-              <h4 style="line-height: 2; display: inline-block;">
-                IBM <b>IMS Central</b>
-              </h4>
-              </a>
-            </span>
-            <!-- == Header wrapper -->
+              <!-- Site name wrapper -->
+              <span class="sitename-wrap">
+                <a href="index.html" class="logo-container">
+                  <img src="wp-content/IMS_logo_small.png"
+                    id="left-bar-brand"
+                    alt="IMS logo"
+                  >
+                </a>
+                <a href="index.html" class="logo-container">
+                  <h4 class="site-header-text">
+                    IBM <b>IMS Central</b>
+                  </h4>
+                </a>
+              </span>
             
-            <!-- Search wrapper -->
-            <form class id="searchbar">
-              <div class="tipue_search_right">
-              <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
-                <defs>
-                <style>
-                  .cls-1 {
-                  fill: none;
-                  }
-                </style>
-                </defs>
-                <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
-                <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
-              </svg>
-              <input type="text" name="q" id="tipue_search_input"
-                pattern=".{3,}" title="Search bar"
-                placeholder="What are you looking for today?" autocomplete="off" required autofocus>
-              <svg id="search-clr" aria-label="Clear search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
-              </svg>
-              </div>
-              <div style="clear: both;"></div>
-            </form>
-        
-            <!-- On page-load activation -->
-            <script>
-              $(document).ready(function() {
-              $('#tipue_search_input').tipuesearch();
-              });
-            </script>
-        
-            <!-- Search drop-down -->
-            <div id="tipue_search_content" class="search_content" style="position: absolute"></div>
-            <!-- == Search wrapper -->
-        
-            <!-- Hamburger dropdown menu -->
-            <input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Dropdown Navigation Menu"/>
-            <label class="hamburger1">
-              <span class="hide-label">Label for input</span>
-              <!-- Burgie wrapper -->
-              <label class="burg-wrap" for="toggle1">
-                <span class="burg-bars">
-                  <div class="top"></div>
-                  <div class="meat"></div>
-                  <div class="bottom"></div>
-                </span>
+              <!-- Search wrapper -->
+              <form id="searchbar" aria-label="Search">
+                <div class="tipue_search_right">
+                  <svg id="search-mag" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+                    <defs>
+                      <style> .cls-1 { fill: none; } </style>
+                    </defs>
+                    <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+                    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+                  </svg>
+                  <input type="text" name="q" id="tipue_search_input"
+                    pattern=".{3,}" title="Search bar"
+                    placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+                  <svg id="search-clr" aria-label="Clear search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px">
+                    <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+                  </svg>
+                </div>
+              </form>
+  
+              <!-- On page-load activation -->
+              <script>
+                $(document).ready(function() {
+                  $('#tipue_search_input').tipuesearch();
+                });
+              </script>
+  
+              <!-- Search drop-down -->
+              <div id="tipue_search_content" class="search_content search-dropdown"></div>
+  
+              <!-- Hamburger drop-down menu -->
+              <input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
+              
+              <label class="hamburger1">
+                <!-- Burgie wrapper -->
+                <label class="burg-wrap" for="toggle1">
+                  <span class="hide-label">Label for input</span>
+                  <span class="burg-bars">
+                    <span class="hide-label">Label for input</span>
+                    <div class="top"></div>
+                    <div class="meat"></div>
+                    <div class="bottom"></div>
+                  </span>
+                </label>
               </label>
-            </label>
             
-            <!-- Dropdown menu options -->
-            <nav class="menu1" aria-label="Dropdown menu items">
-            <div class="pages pure-g">
-              <!-- Innovate -->
-              <div class="pure-u-1 pure-u-sm-1-4">
-              <h3>Innovate</h3>
-              <!-- cards/pages -->
-              <!-- 1 -->
-              <a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
-                <div class="navcard">
-                <h5>APIs</h5>
-                <p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
+              <!-- Hamburger drop-down menu options -->
+              <nav class="menu1" aria-label="Dropdown menu items">
+                <div class="pages pure-g">
+                  <!-- Innovate -->
+                  <div class="pure-u-1 pure-u-sm-1-4">
+                    <h3>Innovate</h3>
+                    <!-- cards/pages -->
+                    <!-- 1 -->
+                    <a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
+                      <div class="navcard">
+                        <h5>APIs</h5>
+                        <p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
+                      </div>
+                    </a>
+                    <!-- 2 -->
+                    <a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>Automation</h5>
+                        <p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
+                      </div>
+                    </a>
+                    <!-- 3 -->
+                    <a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>Java</h5>
+                        <p>Build Java applications to run inside or outside IMS.</p>
+                      </div>
+                    </a>
+                    <!-- 4 -->
+                    <a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>IMS Database</h5>
+                        <p>IMS Database: fast, secure, reliable.</p>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <!-- Engage -->
+                  <div class="pure-u-1 pure-u-sm-1-4">
+                    <h3>Engage</h3>
+                    <!-- cards/pages -->
+                    <!-- 1 -->
+                    <a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>IMS Gold</h5>
+                        <p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
+                      </div>
+                    </a>
+                    <!-- 2 -->
+                    <a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>Makerspace</h5>
+                        <p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
+                      </div>
+                    </a>
+                    <!-- 3 -->
+                    <a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
+                      href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
+                      <div class="navcard">
+                        <h5>IMS community
+                          <img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img>
+                        </h5>
+                        <p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
+                      </div>
+                    </a>
+                    <!-- 4 -->
+                    <a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>Advocacy</h5>
+                        <p>Get or change your IMS advocate.</p>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <!-- Learn -->
+                  <div class="pure-u-1 pure-u-sm-1-4">
+                    <h3>Learn</h3>
+                    <!-- cards/pages -->
+                    <!-- 1 -->
+                    <a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>IMS videos</h5>
+                        <p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
+                      </div>
+                    </a>
+                    <!-- 2 -->
+                    <a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>IMS courses</h5>
+                        <p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
+                      </div>
+                    </a>
+                    <!-- 3 -->
+                    <a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>IMS repos on GitHub</h5>
+                        <p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
+                      </div>
+                    </a>
+                  </div>
+              
+                  <!-- Docs & Support -->
+                  <div class="pure-u-1 pure-u-sm-1-4">
+                    <h3>
+                      Documentation & support
+                    </h3>
+                    <!-- cards/pages -->
+                    <!-- 1 -->
+                    <a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>IMS documentation</h5>
+                        <p>Find information on IMS, tools, and other IBM products.</p>
+                      </div>
+                    </a>
+                    <!-- 2 -->
+                    <a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
+                      <div class="navcard">
+                        <h5>IMS support</h5>
+                        <p>Get help with IMS or other IBM products.</p>
+                      </div>
+                    </a>
+                    <hr class="nav-divider"/>
+                    <!-- 3 special -->
+                    <div class="navcard-special">
+                      <h5>IMS Advocacy</h5>
+                      <!-- <p style="color: rgb(199, 199, 199); margin-top: -5px;">If you don't have an advocate, or would like to change your
+                        IMS advocate, please contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com" 
+                        style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p> -->
+                      <p>If you don't have an advocate, contact Deepak Kohli at 
+                        <a href="mailto:deepakk@us.ibm.com"
+                          class="nav-item" 
+                          tabindex="-1">
+                          <u>deepakk@us.ibm.com</u>
+                        </a>.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </a>
-              <!-- 2 -->
-              <a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>Automation</h5>
-                <p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
-                </div>
-              </a>
-              <!-- 3 -->
-              <a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>Java</h5>
-                <p>Build Java applications to run inside or outside IMS.</p>
-                </div>
-              </a>
-              <!-- 4 -->
-              <a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>IMS Database</h5>
-                <p>IMS Database: fast, secure, reliable.</p>
-                </div>
-              </a>
-              </div>
-            
-              <!-- Engage -->
-              <div class="pure-u-1 pure-u-sm-1-4">
-              <h3>Engage</h3>
-              <!-- cards/pages -->
-              <!-- 1 -->
-              <a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>IMS Gold</h5>
-                <p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
-                </div>
-              </a>
-              <!-- 2 -->
-              <a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>Makerspace</h5>
-                <p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
-                </div>
-              </a>
-              <!-- 3 -->
-              <a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
-                href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
-                <div class="navcard">
-                <h5>IMS community<img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"/></h5>
-                <p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><u>IMS Community</u></b> website.</p>
-                </div>
-              </a>
-              <!-- 4 -->
-              <a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>Advocacy</h5>
-                <p>Get or change your IMS advocate.</p>
-                </div>
-              </a>
-              </div>
-            
-              <!-- Learn -->
-              <div class="pure-u-1 pure-u-sm-1-4">
-              <h3>Learn</h3>
-              <!-- cards/pages -->
-              <!-- 1 -->
-              <a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>IMS videos</h5>
-                <p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
-                </div>
-              </a>
-              <!-- 2 -->
-              <a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>IMS courses</h5>
-                <p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
-                </div>
-              </a>
-              <!-- 3 -->
-              <a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>IMS repos on GitHub</h5>
-                <p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
-                </div>
-              </a>
-              </div>
-            
-              <!-- Docs & Support -->
-              <div class="pure-u-1 pure-u-sm-1-4">
-              <h3>
-                Documentation & support
-              </h3>
-              <!-- cards/pages -->
-              <!-- 1 -->
-              <a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>IMS documentation</h5>
-                <p>Find information on IMS, tools, and other IBM products.</p>
-                </div>
-              </a>
-              <!-- 2 -->
-              <a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
-                <div class="navcard">
-                <h5>IMS support</h5>
-                <p>Get help with IMS or other IBM products.</p>
-                </div>
-              </a>
-              <hr style="background-color: gray !important;" />
-              <!-- 3 special -->
-              <div style="padding: 5px 20px 0px 20px; color: white;">
-                <h5>IMS Advocacy</h5>
-                <p style="color: rgb(199, 199, 199); margin-top: -5px; font-size: 14px;">If you don't have an advocate, contact Deepak Kohli at <a href="mailto:deepakk@us.ibm.com"
-                class="nav-item" tabindex="-1" style="margin:0 !important;color: #78A9FF;"><u>deepakk@us.ibm.com</u></a>.</p>
-              </div>
-              </div>
-            </div>
+              </nav>
             </nav>
           </section>
         </header>
@@ -944,7 +949,7 @@
       </div> <!-- #content -->
 
       <!-- FOOTER -->
-      <footer role="contentinfo" aria-label="IBM" id="themeFooter">
+      <footer aria-label="IBM" id="themeFooter">
         <div id="boomer-footer" class="boomer_footer_menu"></div>
         <div id="dw-footer" class="ibm-alternate ibm-padding-normal">
           <div class="ibm-columns ibm-padding-bottom-0">
