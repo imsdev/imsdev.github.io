@@ -24,7 +24,7 @@ jQuery.fn.loadRepositories = function(username) {
                column.append(panel);
                panel.append(heading);
                   heading.append($('<div class="panel-image">')
-                  .append($('<img src="wp-content/repo-box.svg"/>')));
+                  .append($('<img src="wp-content/repo-box.svg" alt="Repository"/>')));
                   heading.append($('<div class="panel-title">')
                   .append($('<a class="no-style" href="'+this.html_url+'" target="_blank">')
                   .append($('<h3 class="panel-title-name">')
