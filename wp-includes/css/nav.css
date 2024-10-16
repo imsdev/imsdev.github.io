@@ -734,6 +734,11 @@ a:hover {
   text-decoration:none !important;
 }
 
+em {
+	font-style: normal !important;  /* Removes italics */
+	text-decoration: underline; 	/* Makes underline */
+  }
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-= Footer =-=-=-=-=-=-=-=-=-=-=-=-=-= */
 #dw-footer {
 	background-color: #1c1c1c !important;

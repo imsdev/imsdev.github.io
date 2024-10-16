@@ -101,6 +101,10 @@
     color: black;
 }
 
+.innovate-card a {
+    color: #0141B7;
+}
+
 .engage-section {
     margin-bottom: -50px;
 }
@@ -156,6 +160,10 @@
 
 .learn-card h3 {
     color: black;
+}
+
+.learn-card a {
+    color: #0141B7;
 }
 
 .docs-section {
