@@ -478,9 +478,9 @@
       background-color: #161616;
     }
     .text-404 {
-      font-weight: bold;
+      font-weight: bold !important;
       font-size: 375px !important;
-      color: #2D2D2D;
+      color: #8d8d8d;
       line-height: 0.5em !important;
     }
     /* video margin for tablets */
