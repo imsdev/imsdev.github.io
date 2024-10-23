@@ -800,5 +800,5 @@ html {
 }
 #btt:hover {
 	filter: invert(5%);
-	transform: scale(1.2)
+	transform: scale(1.2);
 }
