@@ -55,6 +55,7 @@
 .index-hero-container {
     float: left;
     margin: 50px 0px 30px 30px;
+    padding-bottom: 50px;
 }
 
 .index-hero-container h1 {
@@ -64,6 +65,7 @@
 
 .index-hero-container p {
     color:white;
+    padding-right: 140px;
 }
 
 .vid-preview-container {
@@ -133,6 +135,7 @@
 
 .advocacy-banner-text {
     float: right;
+    padding-right: 100px;
 }
 
 .advocacy-banner-text a {

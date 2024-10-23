@@ -2,6 +2,14 @@
     color: #0043ce;
 }
 
+.faq-title {
+    padding-right: 200px;
+}
+
+.faq-title h2 {
+    color:black;
+}
+
 .faq-q {
     color: black;
 }

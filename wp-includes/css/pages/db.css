@@ -35,6 +35,10 @@
     font-size: 18px;
 }
 
+.macb-p {
+    padding-right: 200px;
+}
+
 .macb-video {
     float: right;
 }

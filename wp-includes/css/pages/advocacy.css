@@ -25,6 +25,10 @@
 	margin-top: 20px;
 }
 
+.advc-subtitle {
+	padding-right: 150px;
+}
+
 .advocacy-list {
 	display: inline-block; 
 	margin-right: 10px;
@@ -76,7 +80,7 @@
 	float: left;
 	font-weight: lighter;
 	line-height: normal;
-	font-size: 36px;
+	font-size: 28px;
     padding-bottom: 15px;
 }
 
