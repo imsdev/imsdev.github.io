@@ -20,7 +20,13 @@ $(function() {
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     });
 
-
+    // keydown enter on button, scroll up
+    $('#btt').on('keydown', function(event) {
+      if (event.which == 13) {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    });
 
     // $('#tipue_search_input').attr('style', 'color: #F4F4F4 !important');
     // $('#search-clr').attr("filter", "invert(100%)");
