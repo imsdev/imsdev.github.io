@@ -86,17 +86,17 @@ var tipuesearch = {"pages": [{
     "tags": "install_ansible control_node automate",
     "url": "ims-videos.html#ims-ansible"
   },{
+    "title": "IMS Insights Series <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
+    "text": "Watch webinars on popular topics for new IMS customers.",
+    "tags": "webinar new_customer managed_acbs macbs outages ims_call ical ims_explorer service_apis catalog ims_15 release",
+    "url": "ims-videos.html#ims-insights"
+  },
+  {
     "title": "IMS Tools <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
     "text": "Watch videos on various IMS tools for reporting, transaction analysis, and more.",
     "tags": "ims_tools performance_analyzer slas administration_foundation transaction_analysis_workbench workbench exception_notification elastic splunk cics db2 ispf_dialog management_console administration_tool library_integrity_utility dbd_viewer workload_router cloning_tool otma_workload setup_utility buffer_pool_analyzer copybooks dba database_administrator ims_connect_extensions ims_connect browser_interface setup_utility",
     "url": "ims-videos.html#ims-tools"
   },
-  // {
-  //   "title": "Migrating to IMS 15 <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-  //   "text": "Watch these videos to help plan for your migration to IMS 15.",
-  //   "tags": "mig migration",
-  //   "url": "ims-videos.html#ims-mig"
-  // },
   {
     "title": "IMS Managed ACBs <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
     "text": "Watch this video to learn about the advantages of allowing IMS to manage ACBs for databases and program views for you.",
@@ -123,6 +123,16 @@ var tipuesearch = {"pages": [{
     "tags": "ims_dbrc dbrc recon ksds vsam listc_ent",
     "url": "ims-videos.html#ims-reorg-dbrc"
   },{
+    "title": "Managing IMS Buffers <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
+    "text": "Watch these videos to learn about VSAM, OSAM, and full-function database buffers.",
+    "tags": "vsam_buffer osam_buffer full-function_buffer buffer_pooling lsr hiperspace buffer_steal background_write_option ca_reclaim_support sequential_buffering fast_path_buffering dynamic_buffer statistics",
+    "url": "ims-videos.html#ims-buffers"
+  },{
+    "title": "IMS z/OS Native DDL Utility <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
+    "text": "Learn how to use the zDDL utility to submit DDL SQL statements without IMS Connect.",
+    "tags": "zddl ddl simulate autocommit verbose rsclst ddltrace_dd_cards",
+    "url": "ims-videos.html#ims-ddl-util"
+  },{
     "title": "IMS Security Audits: Gathering the Right Documentation <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
     "text": "Watch these videos to learn how to conduct an effective IMS security health check.",
     "tags": "ims_security_audit ims_health health_check encryption psb_security vsam_security security racf documentation user_access_points appc_security static_terminal_security eto_terminal_security otma_client_security vsam_password_protection racf verification transaction_authorization command_authorization log_records trn sgn isis rfc dfspbxxx dfsdcxxx hwscfg automation security_exit",
@@ -142,6 +152,16 @@ var tipuesearch = {"pages": [{
     "text": "Watch these videos to learn how to secure distributed environments connected to IMS.",
     "tags": "distributed_environments security racf distributed_identities flood_control credential_propagation tpipe ytip atee accessor_environment_elements least_recently_used lru otma security_credential_propagation open_transaction_manager_access transaction_pipe",
     "url": "ims-videos.html#ims-dis-env"
+  },{
+    "title": "XCF and Support of IMS Facilities for Shared Queues <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
+    "text": "Watch these videos to learn how to use the z/OS XCF for IMS shared queues.",
+    "tags": "cross-system coupling_facility imsplex sysplex message_buffers",
+    "url": "ims-videos.html#xcf-shared-queues"
+  },{
+    "title": "Tuning IMS Scheduling using PWFI <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
+    "text": "Learn how to use IMS scheduling parameters and regions to efficiently run transactions.",
+    "tags": "PARLIM PROCLIM WFI PWFI transaction",
+    "url": "ims-videos.html#ims-scheduling-pwfi"
   },{
     "title": "Java IMS Demos<img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
     "text": "These short videos show you how to add various functions in your Java applications for IMS.",
@@ -163,32 +183,6 @@ var tipuesearch = {"pages": [{
     "tags": "introduction java modernize cobol demo",
     "url": "ims-videos.html#ims-interop"
   },
-  // {
-  //   "title": "IMS DBRC <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-  //   "text": "Watch these videos to learn how to implement IMS DBRC.",
-  //   "tags": "dbrc ims_dbrc",
-  //   "url": "ims-videos.html#ims-dbrc"
-  // },{
-  //   "title": "IMS DRD for MODBLKS <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-  //   "text": "Watch these videos to learn about IMS dynamic resource definition for MODBLKS.",
-  //   "tags": "ims_drd drd mdblk",
-  //   "url": "ims-videos.html#ims-drd-mdblk"
-  // },{
-  //   "title": "IMS DRD for IMSRSC <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-  //   "text": "This video series covers using IMS DRD for the IMSRSC repository.",
-  //   "tags": "ims_drd drd imsrsc",
-  //   "url": "ims-videos.html#ims-drd-imsrsc"
-  // },{
-  //   "title": "IMS Dynamic Commands <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-  //   "text": "This video series offers an introduction to IMS dynamic commands.",
-  //   "tags": "ims cmd cmds ims_commands commands",
-  //   "url": "ims-videos.html#ims-dyn-cmds"
-  // },{
-  //   "title": "IMS High Availability and Resiliency <img class=\"search-icon\" src=\"wp-content/Video.svg\"></img>",
-  //   "text": "This video provides strategies to support IMS operations, change, growth, and address failures in IMS.",
-  //   "tags": "ims_ha high_availability",
-  //   "url": "ims-videos.html#ims-ha"
-  // },
   // _____ COURSES _____
   {
     "title": "IMS Physical Organization of Databases <img class=\"search-icon\" aria-label=\"Course\" src=\"wp-content/search_education.svg\"></img>",
