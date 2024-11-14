@@ -301,9 +301,6 @@ html {
   text-align: center;
   padding: 20px;
 }
-.banner b {
-  font-weight: 900 !important;
-}
 
 @media (max-width: 991px) {
   .float-ims {

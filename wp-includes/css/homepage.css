@@ -249,9 +249,6 @@
       position: absolute;
       bottom: 10%;
     }
-    .hide-label {
-      visibility: hidden;
-    }
     #anchor-link-menu {
       padding: 1em 5em 0em 5em;
       background-color: white;
@@ -290,6 +287,10 @@
     .ims-card-icon {
       max-height: 75px;
       max-width: 75px;
+      margin-bottom:20px;
+    }
+    .ims-card-icon-lg {
+      max-height: 75px;
       margin-bottom:20px;
     }
     .blueg-bg {
@@ -434,16 +435,17 @@
       background-repeat: no-repeat;
     }
 
-    .banner p {
-      font-size: 16pt !important;
-    }
-
     .ibm-footer-corporate-links div {
       height: 15px;
       border-right: solid gray;
       border-width: 2px;
       margin-bottom: -3px;
     }
+
+    .ibm-footer-corporate-links a {
+      color: #78A9FF !important;
+    }
+
     .sitename-wrap h4 {
       margin-left: 10px;
     }
@@ -476,9 +478,9 @@
       background-color: #161616;
     }
     .text-404 {
-      font-weight: bold;
+      font-weight: bold !important;
       font-size: 375px !important;
-      color: #2D2D2D;
+      color: #8d8d8d;
       line-height: 0.5em !important;
     }
     /* video margin for tablets */
