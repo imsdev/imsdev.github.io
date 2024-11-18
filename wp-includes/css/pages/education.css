@@ -110,6 +110,22 @@
     text-align: left;
 }
 
+.support-sec {
+    background-color:#ececec;
+}
+
+.support-sec h2 {
+    color: black;
+}
+
+.supp-notice {
+    margin-top:25px;
+}
+
+.supp-notice p {
+    color:rgb(51, 51, 51);
+}
+
 #support-section a {
     color: #0043ce;
 }
