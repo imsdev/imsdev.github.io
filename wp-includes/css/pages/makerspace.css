@@ -59,3 +59,44 @@
 .desc-sec-g-text h4 {
     color: black !important;
 }
+
+.topics-sec {
+    background-color:#2c2c2c; 
+    color: white;
+}
+
+.topics-sec-note {
+    font-size: 12px !important;
+}
+
+.topics-sec-g {
+    margin: 1em;
+}
+
+.topics-sec-g img {
+    height: 40px; 
+    width: 40px;
+}
+
+.faq-sec {
+    padding: 2em 5em;
+}
+
+.faq-header {
+    padding-right: 4em;
+}
+
+.faq-header img {
+    height: 40px; 
+    width: 40px;
+}
+
+.faq-header h2 {
+    color:black;
+    margin-top: 20px;
+}
+
+#faq-info {
+    padding-left: 10px;
+    font-size: 18px !important;
+}
