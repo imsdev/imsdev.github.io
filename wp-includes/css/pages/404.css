@@ -1,0 +1,44 @@
+.pg-404 {
+    position: relative;
+    background: #282828 !important;
+}
+
+.bg-404 {
+    background-color: #161616;
+  }
+
+.main-sec {
+    padding: 20px;
+}
+
+.main-sec section {
+    padding: 2em 2em 4em 2em; 
+    color: white;
+}
+
+.main-sec img {
+    margin-top: 40px;
+}
+
+.main-sec-g {
+    margin-left: 30px;
+}
+
+.main-sec-g span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main-sec p {
+    font-size: 16pt;
+}
+
+.text-404 {
+    font-weight: bold !important;
+    font-size: 375px !important;
+    color: #8d8d8d;
+    line-height: 0.5em !important;
+}
+
+.w-space {
+    padding: 9.2%; 
+}

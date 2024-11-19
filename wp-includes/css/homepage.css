@@ -458,15 +458,7 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .bg-404 {
-      background-color: #161616;
-    }
-    .text-404 {
-      font-weight: bold !important;
-      font-size: 375px !important;
-      color: #8d8d8d;
-      line-height: 0.5em !important;
-    }
+
     /* video margin for tablets */
     @media screen and (min-width:1024px) and (max-width:1220px) {
       .vid-margin {
