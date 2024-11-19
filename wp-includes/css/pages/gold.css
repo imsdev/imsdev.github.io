@@ -1,0 +1,52 @@
+.gold-pg {
+    position: relative;
+    background: #282828 !important;
+}
+
+.intro-sec {
+    padding: 20px;
+}
+
+.intro-sec section {
+    padding: 2em;
+    color: white;
+}
+
+.intro-sec img {
+    margin-top: 65px;
+}
+
+.intro-sec-g {
+    margin-left: 30px;
+}
+
+.intro-sec-g h6 {
+    padding: 0;
+}
+
+.intro-sec-b {
+    max-width: 180px;
+    margin-top: 20px;
+}
+
+.benefits-sec-g {
+    padding-right: 2.5em;
+}
+
+.benefits-sec-g img {
+    height: 40px;
+    float: left;
+}
+
+.work-sec {
+    background-color: #f4f4f4;
+}
+
+.work-sec-subtitle {
+    margin-bottom: 15px !important;
+}
+
+.work-sec img {
+    height: 25px;
+    float: left;
+}
