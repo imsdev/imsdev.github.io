@@ -1,0 +1,33 @@
+.support-pg {
+    position: relative;
+    background: #282828 !important;
+}
+
+.intro-sec {
+    padding: 2em;
+}
+
+.intro-sec img {
+    margin-top: 36px;
+    height: 43px;
+}
+
+.intro-sec-g {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.supp-sec {
+    padding-top:-90;
+}
+
+.supp-c h3 {
+    color: black;
+}
+
+.supp-c a {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
