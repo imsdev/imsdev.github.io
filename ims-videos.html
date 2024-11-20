@@ -50,6 +50,7 @@
     <link href="wp-includes/css/www.css" rel="stylesheet" />
     <link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
     <link href="wp-includes/css/tables.css" rel="stylesheet">
+    <link href="wp-includes/css/pages/videos.css" rel="stylesheet">
 
   <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
     <script>
@@ -83,8 +84,8 @@
   </head>
 
   <!-- PAGE CONTENT -->
-  <body id="ibm-com" class="ibm-com ibm-type group-blog" style="background-color: #171717;">
-    <div class="ibm-landing-page" style="position: relative; background: #282828 !important;">
+  <body id="ibm-com" class="ibm-com ibm-type group-blog">
+    <div class="ibm-landing-page videos-pg">
       <div id="ibm-content-wrapper" class="sticky-nav">
         <header id="ibm-pageheader" aria-label="Site navigation bar">
           <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
@@ -285,23 +286,22 @@
       <!-- MAIN CONTENT -->
       <div id="content" class="site-content">
         <div class="content-area" id="content-area">
-          <article id="post-3305" class="post-3305 page type-page status-publish has-post-thumbnail hentry tag-agile tag-design-thinking tag-feedback tag-gold tag-ims tag-qpp">
             <div class="entry-content">
                 <main class="zs-main" id="main">
 
                   <!-- =========================== IMS Courses banner =========================== -->
-                  <div style="width: 100%;z-index:300;">
-                    <section id="intro-section" class="pure-g zs-section white-bg2" style="padding: 2em;">
+                  <div class="intro-sec">
+                    <section id="intro-section" class="pure-g zs-section white-bg2">
                       <div id="intro-header" class="pure-u-1"></div>
                       <div class="pure-u-3-25">
-                        <img class="ims-card-icon" src="wp-content/Icon_Managed ACBs_IMS DatabasePage.svg" alt="" style="margin-top: 65px;height: 30px;"/>
+                        <img class="ims-card-icon" src="wp-content/Icon_Managed ACBs_IMS DatabasePage.svg" alt=""/>
                       </div>
-                      <div id="intro-info" class="pure-u-1 pure-u-sm-1-2" style="margin-left: 30px;">
-                        <h6 style="padding:0 !important; color: #555555;">Learn</h6>
+                      <div id="intro-info" class="pure-u-1 pure-u-sm-1-2 intro-sec-g">
+                        <h6>Learn</h6>
                         <h1>IMS videos</h1>
-                        <p id="p-style" style="font-size: 18px;">Build your knowledge of IMS™ by viewing our 
+                        <p id="p-style">Build your knowledge of IMS™ by viewing our 
                           featured educational videos on IBM MediaCenter.</p>
-                        <div class="pure-u-1" style="max-width: 240px;margin-top: 20px;">
+                        <div class="pure-u-1 intro-sec-b">
                           <a class="zs-w-button-transparent" onfocus="closeNavMenu()" href="https://mediacenter.ibm.com/channel/IMS%2BEducational%2BVideos/122579632" target="_blank" rel="noopener noreferrer">
                             Visit IBM MediaCenter &nbsp; →</a>
                         </div>
@@ -311,22 +311,22 @@
 
                   <!-- =========================== Row for filtering =========================== -->
                   <!-- remember, the behaviour is that clicking pulls you to the anchors -->
-                  <div class="zs-section" id="anchor-link-menu">
+                  <div class="zs-section filter-sec" id="anchor-link-menu">
                     <div class="pure-g">
                       <!-- Filter list -->
                       <div class="ibm-sitenav-menu-list" id="anchor-link-menu-items">
-                        <ul class="menu" style="letter-spacing: normal;">
-                          <li style="margin-right: 2em; font-weight: 500;"><a href="#all">All roles</a></li>
-                          <li style="margin-right: 2em; font-weight: 500;"><a href="#imsdb">IMS database</a></li>
-                          <li style="margin-right: 2em; font-weight: 500;"><a href="#sysprog">System programming</a></li>
-                          <li style="margin-right: 2em; font-weight: 500;"><a href="#appdev">Application development</a></li>
+                        <ul class="menu">
+                          <li><a href="#all">All roles</a></li>
+                          <li><a href="#imsdb">IMS database</a></li>
+                          <li><a href="#sysprog">System programming</a></li>
+                          <li><a href="#appdev">Application development</a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
 
                   <!-- =========================== Videos list =========================== -->
-                  <div id="all" class="zs-gray-section" style="background-color: white;">
+                  <div id="all" class="zs-gray-section videos-sec">
                     <section class="zs-section">
                       <!-- Info cards container -->
                       <div class="pure-g video-card-container">
@@ -925,7 +925,6 @@
 
                 </main>
             </div> <!-- .entry-content -->
-          </article> <!-- #post-## -->
         </div> <!-- .content-area -->
       </div> <!-- #content -->
 
@@ -937,13 +936,13 @@
             <div class="ibm-col-1-1">
               <div class="ibm-footer-corporate-links">
                 <ul>
-                  <li><a href="https://www.ibm.com/contact/us" target="_blank" style="color: #78A9FF;">Contact</a></li>
+                  <li><a href="https://www.ibm.com/contact/us" target="_blank">Contact</a></li>
                   <li><div></div></li>
-                  <li><a href="http://www.ibm.com/privacy/us/en/" target="_blank" style="color: #78A9FF;">Privacy</a></li>
+                  <li><a href="http://www.ibm.com/privacy/us/en/" target="_blank">Privacy</a></li>
                   <li><div></div></li>
-                  <li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank" style="color: #78A9FF;">Terms of use</a></li>
+                  <li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank">Terms of use</a></li>
                   <li><div></div></li>
-                  <li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank" style="color: #78A9FF;">Accessibility</a></li>
+                  <li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank">Accessibility</a></li>
                 </ul>
               </div>
               <p class="copyright">Copyright IBM Corporation 2024</p>

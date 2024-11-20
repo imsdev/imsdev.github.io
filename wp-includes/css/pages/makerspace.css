@@ -1,0 +1,102 @@
+.makerspace-pg {
+    position: relative;
+    background: #282828 !important;
+}
+
+.intro-sec {
+    padding: 20px;
+}
+
+.intro-sec section {
+    padding: 2em;
+    color: white !important;
+}
+
+.intro-sec img {
+    margin-top: 65px;
+}
+
+.intro-sec-g {
+    margin-left: 30px;
+}
+
+.intro-sec-g h6 {
+    padding: 0;
+}
+
+.intro-sec-g p {
+    color: white;
+}
+
+.intro-sec-b {
+    max-width: 180px;
+    margin-top: 20px;
+}
+
+.desc-sec h2 p {
+    color: black;
+}
+
+.diag-sec-g {
+    padding-right: 2.5em;
+}
+
+.diag-sec-g img {
+    width: 80%;
+    margin: 40px auto 60px auto;
+    display: flex;
+}
+
+.desc-sec-g img {
+    height: 40px; 
+    width: 40px;
+}
+
+.desc-sec-g-text {
+    padding: 15px;
+}
+
+.desc-sec-g-text h4 {
+    color: black !important;
+}
+
+.topics-sec {
+    background-color:#2c2c2c; 
+    color: white;
+}
+
+.topics-sec-note {
+    font-size: 12px !important;
+}
+
+.topics-sec-g {
+    margin: 1em;
+}
+
+.topics-sec-g img {
+    height: 40px; 
+    width: 40px;
+}
+
+.faq-sec {
+    padding: 2em 5em;
+}
+
+.faq-header {
+    padding-right: 4em;
+}
+
+.faq-header img {
+    height: 40px; 
+    width: 40px;
+}
+
+.faq-header h2 {
+    color:black;
+    margin-top: 20px;
+}
+
+#faq-info {
+    padding-left: 10px;
+    font-size: 18px !important;
+}

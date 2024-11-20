@@ -1,3 +1,131 @@
+.ed-banner {
+    padding: 20px;
+}
+
+.intro-sec {
+    padding: 2em;
+}
+
+.intro-sec img {
+    margin-top: 65px;
+    height: 35px;
+}
+
+.intro-sec>#intro-info {
+    margin-left: 30px;
+}
+
+.intro-sec h6 {
+    padding: 0;
+}
+
+.intro-p-sub {
+    font-weight: lighter;
+}
+
+.intro-button {
+    max-width: 240px;
+    margin-top: 20px;
+}
+
+.ed-filter {
+    padding: 1em !important;
+    background-color: white;
+    position: sticky !important;
+    top:0;
+	padding: 1em 5em 0em 5em !important;
+    border-bottom: solid lightgray;
+}
+
+.ed-filter-list {
+    display: flex; 
+    width: 100% !important;
+    -webkit-box-flex: 1;
+    flex: auto;
+}
+
+.ed-filter-list ul {
+    letter-spacing: normal;
+}
+
+.ed-filter-list li {
+    margin-right: 2em !important; 
+    font-weight: 500 !important;
+}
+
+.courses-sec {
+    padding-top:-90;
+    background-color: white;
+}
+
+.courses-sec h2 {
+    color: black;
+    margin-left: 16px;
+}
+
+.courses-sec-space {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.ims-course-card {
+    min-width:240px;
+    margin: 1em;
+    margin-top: 3.5em;
+    height: 360px;
+    border-bottom: dotted lightgray;
+    border-width: 2px;
+    background-color: white;
+}
+
+.ims-course-card img {
+    width: 100%;
+    height:100%;
+    max-height: 300px;
+    padding-bottom: 1px;
+}
+
+.course-c-id {
+    position: absolute !important; 
+    margin-top:-60px !important;
+}
+
+.course-c-desc {
+    padding:35px;
+    margin-right: -10px;
+}
+
+.course-c-desc h3 {
+    color: black;
+}
+
+.course-c-info {
+    margin-top: 15px;
+}
+
+.course-c-info a {
+    position: relative;
+    bottom:0;
+    margin-bottom:30px;
+    text-align: left;
+}
+
+.support-sec {
+    background-color:#ececec;
+}
+
+.support-sec h2 {
+    color: black;
+}
+
+.supp-notice {
+    margin-top:25px;
+}
+
+.supp-notice p {
+    color:rgb(51, 51, 51);
+}
+
 #support-section a {
     color: #0043ce;
 }

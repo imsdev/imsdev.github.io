@@ -1,0 +1,39 @@
+.intro-sec {
+    width: 100%;
+    z-index:300;
+}
+
+.intro-sec section {
+    padding: 2em;
+    margin-bottom: 30px;
+}
+
+.intro-sec img {
+    margin-top: 42px;
+    height: 35px;
+}
+
+.intro-sec-g {
+    margin-left: 30px !important;
+}
+
+.intro-sec-g h6 {
+    padding: 0;
+}
+
+.intro-sec-b {
+    max-width: 240px;
+    margin-top: 20px;
+}
+
+.repo-sec {
+    margin-top: -30px;
+    background-color: white;
+}
+
+.repo-sec h2 {
+    text-align: left !important;
+    padding-left: 20px;
+    color: black;
+    font-size: 180% !important;
+}
