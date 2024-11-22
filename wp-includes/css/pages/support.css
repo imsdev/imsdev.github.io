@@ -21,6 +21,15 @@
     padding-top:-90;
 }
 
+.supp-sec-g {
+    margin-left: auto; 
+    margin-right:auto;
+}
+
+.supp-sec-c {
+    margin-bottom: 5px !important;
+}
+
 .supp-c h3 {
     color: black;
 }
