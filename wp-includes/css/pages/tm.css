@@ -1,18 +1,19 @@
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-= Database Page Styling =-=-=-=-=-=-=-=-=-=-=-=-=-= */
 
-.db-hero {
-    padding: 3em !important;
+/* HERO SECTION */
+.tm-hero {
+    padding: 3em 0em 3em 3em;
 }
 
-.db-hero img {
+.tm-hero img {
     margin-top: 65px;
 }
 
-.db-hero-text {
+.tm-hero>#intro-info {
     margin-left: 30px;
 }
 
-.db-hero-text h6 {
+.tm-hero h6 {
     padding:0 !important
 }
 
