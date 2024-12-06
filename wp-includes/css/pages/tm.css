@@ -1,0 +1,101 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-= Database Page Styling =-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* HERO SECTION */
+.tm-hero {
+    padding: 3em 0em 3em 3em;
+}
+
+.tm-hero img {
+    margin-top: 65px;
+}
+
+.tm-hero>#intro-info {
+    margin-left: 30px;
+}
+
+.tm-hero h6 {
+    padding:0 !important
+}
+
+/* SPEEDY TRANSACTIONS SECTION */
+
+.st-sec {
+
+}
+
+.st-sec h1 {
+    color: #0F62FE;
+}
+
+.step-c {
+    padding-top: 50px;
+}
+
+/* RESOURCES SECTION */
+
+.resource-card img {
+    height: 25px;
+    float: left;
+}
+
+.resource-card h3 {
+    color: black;
+}
+
+.resource-card a {
+    color: #0F62FE;
+    font-size: 18px;
+}
+
+.ddl-section {
+    padding: 2em 6.5em;
+}
+
+.ddl-section-header {
+    margin-top: 40px;
+}
+
+.ddl-section p {
+    font-size: 18px;
+}
+
+.ddl-resources {
+    margin-top: 30px;
+}
+
+.ddl-resources h4 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.db-black-bg {
+    color:white;
+    background-color:#2c2c2c;
+}
+
+.blog-section {
+    padding: 2em 4.5em;
+}
+
+.blog-section-space {
+    margin-right: -22px;
+}
+
+.blog-section-text {
+    display:inline-block;
+}
+
+.blog-card {
+    padding-right: 2.5em;
+    padding-left: 1em;
+    margin-bottom:3em;
+}
+
+.blog-card h3 {
+    color: white;
+}
+
+.blog-card a {
+    color: #78A9FF;
+    font-size: 18px;
+}
