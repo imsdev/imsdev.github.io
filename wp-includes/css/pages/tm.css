@@ -17,57 +17,21 @@
     padding:0 !important
 }
 
-.macb-section {
-    padding: 2em 4.5em;
-    font-size: 18px;
+/* SPEEDY TRANSACTIONS SECTION */
+
+.st-sec {
+
 }
 
-.macb-section h2 {
-    margin-bottom: 20px;
-}
-
-.macb-section h4 {
-    color: black;
-    margin-top: 20px;
-}
-
-.macb-section a {
+.st-sec h1 {
     color: #0F62FE;
-    font-size: 18px;
 }
 
-.macb-p {
-    padding-right: 200px;
+.step-c {
+    padding-top: 50px;
 }
 
-.macb-video {
-    float: right;
-}
-
-.macb-video div {
-    margin-top: 30px;
-    position: relative;
-}
-
-.macb-video a {
-    width: 100%;
-}
-
-.macb-video img {
-    height: 100% !important;
-    max-height: 300px !important;
-    max-width: 590px !important;
-}
-
-.macb-resources {
-    margin-top: 20px;
-}
-
-.macb-resources h4 {
-    color: black;
-    margin-bottom: 20px;
-    margin-top: 40px;
-}
+/* RESOURCES SECTION */
 
 .resource-card img {
     height: 25px;
