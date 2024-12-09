@@ -19,11 +19,7 @@
 
 /* SPEEDY TRANSACTIONS SECTION */
 
-.st-sec {
-
-}
-
-.st-sec h1 {
+.st-section h1 {
     color: #0F62FE;
 }
 
@@ -31,42 +27,36 @@
     padding-top: 50px;
 }
 
-/* RESOURCES SECTION */
+/* LEARN MORE SECTION */
 
-.resource-card img {
-    height: 25px;
-    float: left;
+.lm-section {
+    padding: 2em 6.5em;
 }
 
-.resource-card h3 {
+.lm-section h2 {
+    margin-top: 40px;
+}
+
+.lm-section h3 {
+    color: black;
+    margin-top: 25px;
+}
+
+.lm-vid-sec {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.lm-vid-sec h4 {
     color: black;
 }
 
-.resource-card a {
+.vid-c a {
     color: #0F62FE;
     font-size: 18px;
 }
 
-.ddl-section {
-    padding: 2em 6.5em;
-}
 
-.ddl-section-header {
-    margin-top: 40px;
-}
-
-.ddl-section p {
-    font-size: 18px;
-}
-
-.ddl-resources {
-    margin-top: 30px;
-}
-
-.ddl-resources h4 {
-    color: black;
-    margin-bottom: 20px;
-}
 
 .db-black-bg {
     color:white;
