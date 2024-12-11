@@ -29,6 +29,10 @@
 
 /* BENEFITS SECTION */
 
+.benefits-section {
+    padding: 3em 0em 3em 3em;
+}
+
 .benefits-section h3 {
     color: black;
 }
@@ -36,6 +40,12 @@
 .benefits-section a {
     color: #0F62FE;
     font-size: 18px;
+}
+
+.benefits-section img {
+    /* height: 200px; */
+    width: 300px;
+    margin: 20px 0px;
 }
 
 /* LEARN MORE SECTION */
