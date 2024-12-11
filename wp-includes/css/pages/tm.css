@@ -17,37 +17,6 @@
     padding:0 !important
 }
 
-/* SPEEDY TRANSACTIONS SECTION */
-
-.st-section h1 {
-    color: #0F62FE;
-}
-
-.step-c {
-    padding-top: 50px;
-}
-
-/* BENEFITS SECTION */
-
-.benefits-section {
-    padding: 3em 0em 3em 3em;
-}
-
-.benefits-section h3 {
-    color: black;
-}
-
-.benefits-section a {
-    color: #0F62FE;
-    font-size: 18px;
-}
-
-.benefits-section img {
-    /* height: 200px; */
-    width: 300px;
-    margin: 20px 0px;
-}
-
 /* LEARN MORE SECTION */
 
 .lm-section {
@@ -96,23 +65,54 @@
     max-width: 590px !important;
 }
 
+/* SPEEDY TRANSACTIONS SECTION */
+
+.st-section h1 {
+    color: #0F62FE;
+}
+
+.step-c {
+    padding-top: 50px;
+}
+
+/* BENEFITS SECTION */
+
+.benefits-section {
+    padding: 3em 0em 3em 3em;
+}
+
+.benefits-section h3 {
+    color: black;
+}
+
+.benefits-section a {
+    color: #0F62FE;
+    font-size: 18px;
+}
+
+.benefits-section img {
+    /* height: 200px; */
+    width: 300px;
+    margin: 20px 0px;
+}
+
 /* HONE SKILLS SECTION */
 .hs-section {
     padding: 2em 6.5em;
 }
 
 .hs-section h2 {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .hs-section h4 {
     color: black;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .course-card {
     min-width:240px;
-    margin-top: 1em;
+    margin: 2em;
     border-bottom: dotted lightgray;
     border-width: 2px;
     background-color: white;
