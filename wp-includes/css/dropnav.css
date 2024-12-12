@@ -382,13 +382,13 @@ div#tipue_search_warning {
     }
   }
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 920px) {
     #toggle1:checked ~ .menu1 {
       height: 640px;
     }
   }
 
-  @media screen and (min-width: 1060px) {
+  @media screen and (min-width: 1200px) {
     #toggle1:checked ~ .menu1 {
       height: 560px;
     }
@@ -396,7 +396,7 @@ div#tipue_search_warning {
 
   @media screen and (min-width: 1460px) {
     #toggle1:checked ~ .menu1 {
-      height: 475px;
+      height: 500px;
     }
   }
 
