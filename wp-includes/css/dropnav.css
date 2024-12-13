@@ -396,7 +396,7 @@ div#tipue_search_warning {
 
   @media screen and (min-width: 1460px) {
     #toggle1:checked ~ .menu1 {
-      height: 500px;
+      height: 510px;
     }
   }
 
