@@ -88,6 +88,8 @@
 .benefits-section a {
     color: #0F62FE;
     font-size: 18px;
+    position: absolute;
+    bottom: 0;
 }
 
 .benefits-section img {
