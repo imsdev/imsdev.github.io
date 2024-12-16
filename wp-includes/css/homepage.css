@@ -230,25 +230,6 @@
       padding: 2em;
       margin-right: -10px;
     }
-    .video-section-header {
-      letter-spacing: normal;
-      margin-top: 30px;
-      color: black;
-      width: 100%;
-      margin-left: 15px;
-    }
-    .video-card-header {
-      color: black;
-      font-weight: normal !important;
-    }
-    .video-card-link {
-      /* position: relative; */
-      /* bottom: 0; */
-      /* margin-bottom: 30px; */
-      /* text-align: left; */
-      position: absolute;
-      bottom: 10%;
-    }
     #anchor-link-menu {
       padding: 1em 5em 0em 5em;
       background-color: white;
@@ -260,10 +241,6 @@
       width: 100%;
       -webkit-box-flex: 1;
       flex: auto;
-    }
-    .video-card-container {
-      margin-left: auto;
-      margin-right: auto;
     }
     .ims-m-card h3 {
       color: black;

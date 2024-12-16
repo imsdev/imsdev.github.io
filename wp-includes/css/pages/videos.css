@@ -46,3 +46,26 @@
 .videos-sec {
     background-color: white;
 }
+
+.video-section-header {
+    letter-spacing: normal;
+    margin-top: 30px;
+    color: black;
+    width: 100%;
+    margin-left: 15px;
+  }
+
+  .video-card-header {
+    color: black;
+    font-weight: normal !important;
+  }
+
+  .video-card-link {
+    position: absolute;
+    bottom: 10%;
+  }
+
+  .video-card-container {
+    margin-left: auto;
+    margin-right: auto;
+  }

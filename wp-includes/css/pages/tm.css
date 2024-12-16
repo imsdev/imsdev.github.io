@@ -1,0 +1,176 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-= Database Page Styling =-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* HERO SECTION */
+.tm-hero {
+    padding: 3em 0em 3em 3em;
+}
+
+.tm-hero img {
+    margin-top: 65px;
+}
+
+.tm-hero>#intro-info {
+    margin-left: 30px;
+}
+
+.tm-hero h6 {
+    padding:0 !important
+}
+
+.tm-hero p {
+    line-height: 1.75;
+}
+
+/* LEARN MORE SECTION */
+
+.lm-section {
+    padding: 2em 6.5em;
+}
+
+.lm-section h2 {
+    margin-top: 40px;
+}
+
+.lm-section h3 {
+    color: black;
+}
+
+.lm-vid-sec {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.lm-vid-sec h4 {
+    color: black;
+}
+
+.vid-c a {
+    color: #0F62FE;
+    font-size: 18px;
+}
+
+.vid-pv {
+    float: right;
+    margin-top: 20px;
+    position: relative;
+}
+
+.vid-pv a {
+    width: 100%;
+}
+
+.vid-pv img {
+    height: 100% !important;
+    max-height: 300px !important;
+    max-width: 590px !important;
+}
+
+/* SPEEDY TRANSACTIONS SECTION */
+
+.st-section h1 {
+    color: #0F62FE;
+}
+
+.step-c {
+    padding-top: 50px;
+}
+
+/* BENEFITS SECTION */
+
+.benefits-section {
+    padding: 3em 0em 3em 3em;
+}
+
+.benefits-section h3 {
+    color: black;
+}
+
+.benefits-section a {
+    color: #0F62FE;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+}
+
+.benefits-section img {
+    width: 300px;
+    margin: 20px 0px;
+}
+
+/* HONE SKILLS SECTION */
+.hs-section {
+    padding: 2em 6.5em;
+}
+
+.hs-section h2 {
+    margin-top: 40px;
+}
+
+.hs-section h4 {
+    color: black;
+    margin-top: 10px;
+}
+
+.course-card {
+    min-width:240px;
+    margin: 2em;
+    border-bottom: dotted lightgray;
+    border-width: 2px;
+    background-color: white;
+}
+
+.course-card img {
+    width: 60%;
+    height:100%;
+    max-height: 250px;
+    margin-bottom: 10px;
+}
+
+.course-desc {
+    margin: 10px 0px 10px -40px;
+}
+
+.course-desc h3 {
+    color: black;
+}
+
+.course-desc a {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* BLOG SECTION */
+
+.blog-black-bg {
+    color:white;
+    background-color:#2c2c2c;
+}
+
+.blog-section {
+    padding: 2em 4.5em;
+}
+
+.blog-card {
+    padding-right: 2.5em;
+    padding-left: 1em;
+    margin-bottom:3em;
+}
+
+.blog-card h3 {
+    color: white;
+}
+
+.blog-card a {
+    color: #78A9FF;
+    font-size: 18px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+    .benefits-section img {
+        width: 200px;
+    }
+}
