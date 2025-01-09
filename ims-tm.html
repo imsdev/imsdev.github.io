@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- v18 basic meta -->
+		<meta name="geo.country" content="ZZ" />
+		<meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
+		<meta name="dcterms.date" content="2020-07-18" />
+		<meta name="keywords" content="IMS Central, IMS Developer, IMS" />
+		<meta name="robots" content="index, follow" />
+	<!-- Favicon -->
+		<link id="favicon"
+		rel="shortcut icon"
+		type="image/x-icon"
+		href="wp-content/IMS_logo_small.png">
+
+	<!-- Pageittle -->
+	<title>IMS Transaction Manager</title>
+
+	<!-- Meta -->
+	<link rel="canonical" href="ims-db.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="IMS Transaction Manager" />
+	<meta property="og:description" content="IMS Transaction Manager" />
+	<meta property="og:url" content="http://www/imsdev.github.io/ims-tm.html" />
+	<meta property="og:site_name" content="IMS Central" />
+	<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="IMS Transaction Manager" />
+	<meta name="twitter:title" content="IMS Transaction Manager" />
+	<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+
+	<!-- Sheets -->
+	<link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="wp-includes/css/nav.css">
+	<link rel="stylesheet" href="wp-includes/css/dropnav.css">
+	<link href="wp-includes/css/www.css" rel="stylesheet" />
+	<link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
+	<link href="wp-includes/css/tables.css" rel="stylesheet">
+	<link href="wp-includes/css/pages/tm.css" rel="stylesheet">
+
+	<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:132193,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+
+
+	<!-- Additional styling for content after navigation -->
+
+	<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+	<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+	<script src="wp-includes/js/jquery.min.js"></script>
+
+	<!-- TipueSearch -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
+	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
+	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
+
+	<!-- delayed search -->
+	<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
+
+	<!-- Hamburger menu -->
+	<script src="wp-includes/js/navbar.js"></script>
+
+	</head>
+
+	<!-- MASTHEAD_SITENAV_BEGIN -->
+	<body id="ibm-com" class="ibm-com ibm-type group-blog">
+		<div class="ibm-landing-page">
+
+			<div id="ibm-content-wrapper" class="sticky-nav">
+				<header id="ibm-pageheader" aria-label="Site navigation bar">
+				<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+		
+				<!-- --------------- NAV BAR --------------- -->
+				<section class="p-menu1">
+				<nav id="navbar" class="navigation" aria-labelledby="ibm-pageheader">
+				
+				<!-- Site name wrapper -->
+				<span class="sitename-wrap">
+					<a href="index.html" class="logo-container">
+					<img src="wp-content/IMS_logo_small.png"
+						id="left-bar-brand"
+						alt="IMS logo"
+					>
+					</a>
+					<a href="index.html" class="logo-container">
+					<h4 class="site-header-text">
+						IBM <b>IMS Central</b>
+					</h4>
+					</a>
+				</span>
+				
+				<!-- Search wrapper -->
+				<form id="searchbar" aria-label="Search">
+					<div class="tipue_search_right">
+					<svg id="search-mag" alt="Search magnifying glass" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+						<defs>
+						<style> .cls-1 { fill: none; } </style>
+						</defs>
+						<path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+						<rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" class="cls-1" width="32" height="32"/>
+					</svg>
+					<input type="text" name="q" id="tipue_search_input"
+						pattern=".{3,}" title="Search bar"
+						placeholder="What are you looking for today?" autocomplete="off" required autofocus>
+					<svg id="search-clr" aria-label="Clear search" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px">
+						<path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+					</svg>
+					</div>
+				</form>
+		
+				<!-- On page-load activation -->
+				<script>
+					$(document).ready(function() {
+					$('#tipue_search_input').tipuesearch();
+					});
+				</script>
+		
+				<!-- Search drop-down -->
+				<div id="tipue_search_content" class="search_content search-dropdown"></div>
+		
+				<!-- Hamburger drop-down menu -->
+				<input type="checkbox" tabindex="0" id="toggle1" class="support-enter" aria-label="Hamburger Menu"/>
+				
+				<label class="hamburger1">
+					<!-- Burgie wrapper -->
+					<label class="burg-wrap" for="toggle1">
+					<span class="hide-label">Label for input</span>
+					<span class="burg-bars">
+						<span class="hide-label">Label for input</span>
+						<div class="top"></div>
+						<div class="meat"></div>
+						<div class="bottom"></div>
+					</span>
+					</label>
+				</label>
+				
+				<!-- Hamburger drop-down menu options -->
+				<nav class="menu1" aria-label="Dropdown menu items">
+					<div class="pages pure-g">
+					<!-- Innovate -->
+					<div class="pure-u-1 pure-u-sm-1-4">
+						<h3>Innovate</h3>
+						<!-- cards/pages -->
+						<!-- 1 -->
+						<a title="APIs" href="ims-apis.html" class="nav-item" tabindex="-1"> 
+						<div class="navcard">
+							<h5>APIs</h5>
+							<p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
+						</div>
+						</a>
+						<!-- 2 -->
+						<a title="DevOps" href="ims-devops.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>Automation</h5>
+							<p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
+						</div>
+						</a>
+						<!-- 3 -->
+						<a title="Java" href="ims-java.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>Java</h5>
+							<p>Build Java applications to run inside or outside IMS.</p>
+						</div>
+						</a>
+						<!-- 4 -->
+						<a title="Database" href="ims-db.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS Database</h5>
+							<p>IMS Database: fast, secure, reliable.</p>
+						</div>
+						</a>
+						<!-- 5 -->
+						<a title="Transaction Manager" href="ims-tm.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS Transaction Manager</h5>
+							<p>IMS Transaction Manager: fast, secure, connected.</p>
+						</div>
+						</a>
+					</div>
+				
+					<!-- Engage -->
+					<div class="pure-u-1 pure-u-sm-1-4">
+						<h3>Engage</h3>
+						<!-- cards/pages -->
+						<!-- 1 -->
+						<a title="Gold" href="ims-gold.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS Gold</h5>
+							<p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
+						</div>
+						</a>
+						<!-- 2 -->
+						<a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>Makerspace</h5>
+							<p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
+						</div>
+						</a>
+						<!-- 3 -->
+						<a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
+						href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
+						<div class="navcard">
+							<h5>IMS community
+							<img src="wp-content/Icon07.png" alt="External link" style="height: 15px; width: 15px;margin-left:10px"></img>
+							</h5>
+							<p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b><em>IMS Community</em></b> website.</p>
+						</div>
+						</a>
+						<!-- 4 -->
+						<a title="Advocacy" href="ims-advocacy.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>Advocacy</h5>
+							<p>Request an IMS advocate so that you have a voice in IMS.</p>
+						</div>
+						</a>
+					</div>
+				
+					<!-- Learn -->
+					<div class="pure-u-1 pure-u-sm-1-4">
+						<h3>Learn</h3>
+						<!-- cards/pages -->
+						<!-- 1 -->
+						<a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS videos</h5>
+							<p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
+						</div>
+						</a>
+						<!-- 2 -->
+						<a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS courses</h5>
+							<p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
+						</div>
+						</a>
+						<!-- 3 -->
+						<a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS repos on GitHub</h5>
+							<p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
+						</div>
+						</a>
+					</div>
+				
+					<!-- Docs & Support -->
+					<div class="pure-u-1 pure-u-sm-1-4">
+						<h3>
+						Documentation & support
+						</h3>
+						<!-- cards/pages -->
+						<!-- 1 -->
+						<a title="IMS Docs" href="ims-docs.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS documentation</h5>
+							<p>Find information on IMS, tools, and other IBM products.</p>
+						</div>
+						</a>
+						<!-- 2 -->
+						<a title="IMS Support" href="ims-support.html" class="nav-item" tabindex="-1">
+						<div class="navcard">
+							<h5>IMS support</h5>
+							<p>Get help with IMS or other IBM products.</p>
+						</div>
+						</a>
+					</div>
+					</div>
+				</nav>
+				</section>
+				</header>
+			</div>
+
+			<!-- Additional styling for content after navigation -->
+			<head>
+				<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
+				<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
+				<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
+			</head>
+
+			<div id="content" class="site-content">
+				<div class="entry-content">
+					<main class="zs-main" id="main">
+
+						<!-- =========================== IMS TM =========================== -->
+						<section id="intro-section" class="pure-g zs-section tm-hero banner white-bg">
+							<div>
+								<img class="ims-card-icon" src="wp-content/Icon_Banner_IMS DatabasePage.svg" alt="">
+							</div>
+							<div id="intro-info" class="pure-u-1 pure-u-sm-15-24">
+								<h6>Innovate</h6>
+								<h1 >IMS Transaction Manager: Fast, secure, connected</h1>
+								<p>
+									By using APIs and distributed connectivity, IMS can integrate with modern tools and emerging 
+									technologies, enabling it to host mission-critical applications to support billions of 
+									transactions per day.<a href="https://www.ibm.com/case-studies/atruvia-ag" target="_blank" rel="noopener noreferrer" aria-label="Atruvia case study"><sup>1</sup></a>
+								</p>
+							</div>
+						</section>
+
+						<!-- =========================== Learn more =========================== -->
+						<section class="zs-gray-section ibm-background-white-core lm-section">
+							<div class="pure-u-1"><h2>Introducing IMS Transaction Manager</h2></div>
+							<div class="pure-g">
+								<div class="pure-u-1 lm-vid-sec">
+									<div class="pure-g">
+										<div class="pure-u-1-2 vid-c">
+												<div class="pure-u-3-4">
+													<h4>Fundamentals of IMS TM Part 1</h4>
+													<a href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202" 
+													target="_blank" rel="noopener noreferrer" aria-label="Watch now: Fundamentals of IMS TM Part 1">Watch now →</a>
+													<div class="vid-pv">
+														<div>
+															<a href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202"
+																target="_blank" rel="noopener noreferrer" aria-label="Watch Fundamentals of IMS TM Part 1">
+																<img src="wp-content/tm/video-cover-intro-tm-pt1.png" class="image-preview" alt="Fundamentals of IMS TM Part 1 video preview">
+																<img src="wp-content/tm/vid_pv_introtm_pt1.gif" class="vid-preview" alt="Fundamentals of IMS TM Part 1 video preview"></img>
+															</a>
+														</div>
+													</div>
+												</div>
+										</div>
+										<div class="pure-u-1-2 vid-c">
+											<div class="pure-u-3-4">
+												<h4>Fundamentals of IMS TM Part 2</h4>
+												<a href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+2/0_it2vxrks/139456202" 
+												target="_blank" rel="noopener noreferrer" aria-label="Watch now: Fundamnetals of IMS TM Part 2">Watch now →</a>
+												<div class="vid-pv">
+													<div>
+														<a href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202"
+															target="_blank" rel="noopener noreferrer" aria-label="Watch Fundamentals of IMS TM Part 2">
+															<img src="wp-content/tm/video-cover-intro-tm-pt2.png" class="image-preview" alt="Fundamentals of IMS TM Part 2 video preview">
+															<img src="wp-content/tm/vid_pv_introtm_pt2.gif" class="vid-preview" alt="Fundamentals of IMS TM Part 2 video preview"></img>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- =========================== Speedy transactions =========================== -->
+						<!-- <section class="zs-gray-section st-section">
+							<div class="zs-section">
+								<div class="pure-u-1 pure-u-sm-1">
+									<h2>Speedy transactions</h2>
+								</div>
+								<div class="pure-u-1 pure-u-sm-1">
+									<p>Let's say you want to withdraw money from your bank account. How does IMS TM help to do that?</p>
+									<div class="pure-g">
+										<div class="pure-u-md-1-24">
+											<h1>1</h1>
+										</div>
+										<div class="pure-u-1 pure-u-lg-10-24 step-c">
+											<p>TM receives a request for work to be done, such as withdraw money from a bank account.</p>
+										</div>
+
+										<div class="pure-u-md-1-24">
+											<h1>2</h1>
+										</div>
+										<div class="pure-u-1 pure-u-lg-10-24 step-c">
+											<p>TM initiates a specific programming running in a dependent region (as shown in green) that uses the information in the request to complete the work that was requested.</p>
+										</div>
+									</div>
+
+									<div class="pure-g">
+										<div class="pure-u-md-1-24">
+											<h1>3</h1>
+										</div>
+										<div class="pure-u-1 pure-u-lg-10-24 step-c">
+											<p>TM prepares a response to the request (for example, "I'm done processing this request").</p>
+										</div>
+
+										<div class="pure-u-md-1-24">
+											<h1>4</h1>
+										</div>
+										<div class="pure-u-1 pure-u-lg-10-24 step-c">
+											<p>TM transmits the data prepared by the program back to the user that originally requested the work. In other words, the user sees their bank balance.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section> -->
+
+						<!-- =========================== Benefits =========================== -->
+						<section class="zs-gray-section benefits-section">
+							<div class="zs-section">
+								<div class="pure-u-1">
+									<div class="pure-g">
+										<!-- Speedy transaction -->
+										<div class="pure-u-1-3">
+												<div class="pure-u-3-4">
+													<h3>Speedy transactions</h3>
+													<p>
+														The IMS Transaction Manager receives messages from any platform, usually via TCP/IP through IMS Connect, 
+														puts them on the message queue where an application program can retrieve it.
+													</p>
+													<p>
+														Think about getting money from an ATM or bank. The bank uses IMS DB to store customer data and IMS TM to 
+														quickly process deposits, withdrawals, and queries.
+													</p>
+													<img src="wp-content/tm/speedy-transactions-c.png" alt="Diagram of IMS TM transaction processing">
+													<br>
+													<a href="https://www.ibm.com/docs/en/ims/15.5.0?topic=network-ims-tm-overview" 
+													target="_blank" rel="noopener noreferrer" aria-label="Learn more about IMS TM speedy transactions">Learn more →</a>
+												</div>
+										</div>
+										<!-- Ways to work -->
+										<div class="pure-u-1-3">
+											<div class="pure-u-3-4">
+												<h3>Ways to work</h3>
+												<p>
+													Use Red Hat® Ansible® and Red Hat® OpenShift® through digitally transformed ways of working, developing, 
+													and updating critical data-driven applications. 
+												</p>
+												<p>
+													The Ansible® for IBM Z® product offers lots of use cases, capabilities, and tools to automate functions of IMS, 
+													such as DBRC administration or IMS catalog management, all by using scripted Ansible playbooks.
+												</p>
+												<img src="wp-content/tm/ways-to-work.png" alt="Customers in line">
+												<br>
+												<a href="https://imsdev.github.io/ims-devops.html" 
+												target="_blank" rel="noopener noreferrer" aria-label="Learn more about ways to work with IMS TM">Learn more →</a>
+											</div>
+										</div>
+										<!-- Ways to connect -->
+										<div class="pure-u-1-3">
+											<div class="pure-u-3-4">
+												<h3>Ways to connect</h3>
+												<p>Take advantage of not just TCP/IP but RESTful APIs that access IMS™ applications and data in minutes. 
+													Transactions might be issued from z/OS environments or distributed applications that use TCP/IP to communicate 
+													with IMS. Use IMS Connect to provide high performance TCP/IP communications between multiple IMS Connect 
+													clients and IMS systems.
+												</p>
+												<img src="wp-content/tm/ways-to-connect.png" alt="Diagram of IMS application ecosystem">
+												<br>
+												<a href="https://imsdev.github.io/ims-apis.html" 
+												target="_blank" rel="noopener noreferrer" aria-label="Learn more about how to connect to IMS TM">Learn more →</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- =========================== Hone your skills =========================== -->
+						<section class="zs-gray-section ibm-background-white-core hs-section">
+							<div class="pure-u-1"><h2>Upskill with IMS Transaction Manager</h2></div>
+							<div class="pure-g">
+								<div class="pure-u-22-24">
+									<h4>The basics</h4>
+									<!-- Introducing IBM Information Management System (IMS) -->
+									<div class="course-card">
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/tm/tm-intro-ims-video-cover.png" alt="IMS Fundamentals badge">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24 course-desc">
+												<h3>Introducing IBM Information Management System (IMS)</h3>
+												<p>
+													This video gives a quick overview of IBM Information Management System (IMS), including IMS TM, IMS DB, and IMS application processing.
+												</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<a aria-label="Watch the video introducing IBM IMS" target="_blank" rel="noopener noreferrer" 
+														href="https://mediacenter.ibm.com/media/Introducing+IBM+Information+Management+System+%28IMS%29/1_jy8lv5f5">
+														Watch the video →
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- IMS Fundamentals -->
+									<div class="course-card">
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/course-badges/badge_ims_fundamentals.png" alt="IMS Fundamentals badge">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24 course-desc">
+												<h3>IMS Fundamentals</h3>
+												<p>
+													Take a deeper dive into the main components of IMS, including IMS TM, IMS DB, and common system services, in this comprehensive course.
+												</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<a aria-label="Learn more about IMS Fundamentals" target="_blank" rel="noopener noreferrer" 
+														href="https://imsdev.github.io/ims-education.html#ims-fundamentals">
+														Learn more →
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pure-u-22-24">
+									<h4>Intermediate and advanced training</h4>
+									<!-- IMS System Programming in a DBCTL Environment -->
+									<div class="course-card">
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/course-badges/badge_ims_dbctl.png" alt="IMS DBCTL badge">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24 course-desc">
+												<h3>IMS System Programming in a DBCTL Environment</h3>
+												<p>Learn about the IMS database control (DBCTL) environment, which provides access between CICS and
+													IMS-managed databases.
+												</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<a aria-label="Learn more about IMS System Programming in a DBCTL Environment"
+														target="_blank" rel="noopener noreferrer" 
+														href="https://imsdev.github.io/ims-education.html#ims-dbctl">
+														Learn more →
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- TM Performance Analysis -->
+									<div class="course-card">
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/course-badges/badge_ims_tm_tuning.png" alt="IMS TM Performance Analysis badge">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24 course-desc">
+												<h3>IMS TM Performance Analysis</h3>
+												<p>
+													Learn how to use and adjust IMS TM and z/OS 
+													components, commands, processes, parameters, and more to ensure that the 
+													IMS TM system is running as efficiently as possible.
+												</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<a aria-label="Learn more about IMS TM Performance Analysis"
+														target="_blank" rel="noopener noreferrer" 
+														href="https://imsdev.github.io/ims-education.html#ims-tm-performance">
+														Learn more →
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- TM Application Programming -->
+									<div class="course-card">
+										<div class="pure-u-1">
+											<div class="pure-u-1 pure-u-md-6-24">
+												<img src="wp-content/course-badges/badge_tm_app_prog.png" alt="IMS TM Application Programming badge">
+											</div>
+											<div class="pure-u-1 pure-u-md-18-24 course-desc">
+												<h3>IMS TM Application Programming</h3>
+												<p>
+													Learn how to write application programs (mainly in COBOL and PL/I) that use Data Language One (DL/I) to process
+													terminal input and output messages in an IMS TM system.
+												</p>	
+												<div class="pure-u-1 pure-u-md-1">
+													<a aria-label="Learn more about IMS TM Application Programming"
+														target="_blank" rel="noopener noreferrer" 
+														href="https://imsdev.github.io/ims-education.html#ims-tm-prog">
+														Learn more →
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						<!-- =========================== IMS blogs =========================== -->
+						<section class="zs-gray-section ibm-background-white-core blog-black-bg">
+							<div class="zs-section blog-section">
+								<!--Header -->
+								<div class="pure-u-1 pure-u-sm-1 pure-u-lg-6-24 ibm-padding-bottom-1">
+									<h2>IMS blogs</h2>
+								</div>
+						
+								<!-- Content -->
+								<div class="pure-u-lg-16-24 pure-u-1">
+									<div class="pure-g">
+										<!-- Card -->
+										<div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 blog-card">
+											<h3>Amplify your enterprise with IMS TM</h3>
+											<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/mario-perotti/2022/05/09/ims-tm?communityKey=eba3ada3-db89-4dca-9154-328195f5e560" target="_blank" rel="noopener noreferrer" aria-label="Read the blog on using IMS TM for your enterprise">
+												Read the blog →
+											</a>
+										</div>
+										<!-- Card -->
+										<div class="pure-u-1 pure-u-sm-1 pure-u-md-1-2 blog-card">
+											<h3>Making IMS transactions more secure by Client ID</h3>
+											<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/hiroyuki-fuchiue/2024/05/21/making-ims-transactions-more-secure-by-client-id?communityKey=eba3ada3-db89-4dca-9154-328195f5e560" target="_blank" rel="noopener noreferrer" aria-label="Read the blog on making IMS transactions secure">
+												Read the blog →
+											</a>
+										</div>
+										<!-- Card -->
+										<div class="pure-u-1 pure-u-sm-1 blog-card">
+											<h3>A large bank’s success story implementing RESTful APIs to streamline their digital transformation</h3>
+											<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/hiroyuki-fuchiue/2024/05/21/making-ims-transactions-more-secure-by-client-id?communityKey=eba3ada3-db89-4dca-9154-328195f5e560" target="_blank" rel="noopener noreferrer" aria-label="Read the blog on the bank success story">
+												Read the blog →
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- =========================== back to top =========================== -->
+						<div>
+							<img id="btt" src="wp-content/Icon_Back_to_top.svg" alt="Back to top" tabindex="0" role="button">
+						  </div>
+
+					</main>
+				</div><!-- .entry-content -->
+			</div><!-- #content -->
+		</div><!-- end of ibm-content-wrapper -->
+
+		<footer aria-label="IBM" id="themeFooter">
+			<div id="boomer-footer" class="boomer_footer_menu"></div>
+			<div id="dw-footer" class="ibm-alternate ibm-padding-normal">
+			<div class="ibm-columns ibm-padding-bottom-0">
+				<div class="ibm-col-1-1">
+				<div class="ibm-footer-corporate-links">
+					<ul>
+					<li><a href="https://www.ibm.com/contact/us" target="_blank">Contact</a></li>
+					<li><div></div></li>
+					<li><a href="http://www.ibm.com/privacy/us/en/" target="_blank">Privacy</a></li>
+					<li><div></div></li>
+					<li><a href="https://www.ibm.com/legal?lnk=flg-tous-usen" target="_blank">Terms of use</a></li>
+					<li><div></div></li>
+					<li><a href="http://www.ibm.com/accessibility/us/en/" target="_blank">Accessibility</a></li>
+						</ul>
+				</div>
+				<p class="copyright">Copyright IBM Corporation 2024</p>
+				<div id="ibm-footer-locale-selector"></div>
+				</div>
+			</div>
+			</div>
+		</footer>
+		
+		<!-- Search box functions -->
+		<script src="jekyll-tipue-search/assets/tipuesearch/searchBox.js"></script>
+
+		<!-- post-load actions/listeners -->
+		<script src="jekyll-tipue-search/assets/tipuesearch/postLoad.js"></script>
+
+	</body>
+</html>
