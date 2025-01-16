@@ -84,9 +84,30 @@
     max-width: 590px !important;
 }
 
-.innovate-section {
+.learn-section {
     margin-bottom: -40px; 
-    width:100%
+}
+
+.learn-spacer {
+    margin-right: -9px;
+}
+
+.learn-card {
+    padding-right: 2.5em;
+    margin-bottom:3em;
+}
+
+.learn-card img {
+    margin-bottom:15px;
+    height: 30px;
+}
+
+.learn-card h3 {
+    color: black;
+}
+
+.learn-card a {
+    color: #0141B7;
 }
 
 .innovate-spacer {
@@ -99,25 +120,16 @@
     position: relative;
 }
 
+.innovate-card img {
+    filter: brightness(0) invert(1);
+}
+
 .innovate-card h3 {
     text-align:left;
-    color: black;
+    color: white;
 }
 
 .innovate-card a {
-    color: #0141B7;
-}
-
-.engage-section {
-    margin-bottom: -50px;
-}
-
-.engage-card {
-    padding-right: 2.5em;
-    padding-bottom:3em;
-}
-
-.engage-card a {
     color: #78A9FF !important;
 }
 
@@ -143,30 +155,25 @@
     color: #78A9FF;
 }
 
-.learn-section {
-    margin-bottom: -50px;
+.engage-section {
+    margin-bottom: -20px;
     width: 100%;
 }
 
-.learn-spacer {
-    margin-right: -9px;
-}
-
-.learn-card {
+.engage-card {
     padding-right: 2.5em;
-    margin-bottom:3em;
+    padding-bottom:3em;
 }
 
-.learn-card img {
-    margin-bottom:15px;
-    height: 30px;
-}
-
-.learn-card h3 {
+.engage-card h3 {
     color: black;
 }
 
-.learn-card a {
+.engage-card img {
+    filter: brightness(100) invert(1);
+}
+
+.engage-card a {
     color: #0141B7;
 }
 
