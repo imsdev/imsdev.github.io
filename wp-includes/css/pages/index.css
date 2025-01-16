@@ -165,6 +165,14 @@
     padding-bottom:3em;
 }
 
+.engage-card h3 {
+    color: black;
+}
+
+.engage-card img {
+    filter: brightness(100) invert(1);
+}
+
 .engage-card a {
     color: #0141B7;
 }
