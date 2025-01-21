@@ -1,0 +1,38 @@
+/* TM page: IMS Transaction Manager section */
+.flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.4em;
+    margin: 2em 4.4em;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2.4em;
+}
+
+.flex-block {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: self-start;
+    gap: 4%;
+    width: 46%;
+}
+
+.flex-block p, a {
+    font-size: 14pt;
+}
+
+.flex-img {
+    width: 100%;
+    max-width: 550px;
+    padding: 1em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    .flex-block {
+        width: 100%;
+    }
+}

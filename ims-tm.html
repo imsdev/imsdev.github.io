@@ -45,6 +45,7 @@
 	<link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
 	<link href="wp-includes/css/tables.css" rel="stylesheet">
 	<link href="wp-includes/css/pages/tm.css" rel="stylesheet">
+	<link href="wp-includes/css/flex.css" rel="stylesheet">
 
 	<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
 	<script>
@@ -357,104 +358,62 @@
 							</div>
 						</section>
 
-						<!-- =========================== Speedy transactions =========================== -->
-						<!-- <section class="zs-gray-section st-section">
-							<div class="zs-section">
-								<div class="pure-u-1 pure-u-sm-1">
-									<h2>Speedy transactions</h2>
-								</div>
-								<div class="pure-u-1 pure-u-sm-1">
-									<p>Let's say you want to withdraw money from your bank account. How does IMS TM help to do that?</p>
-									<div class="pure-g">
-										<div class="pure-u-md-1-24">
-											<h1>1</h1>
-										</div>
-										<div class="pure-u-1 pure-u-lg-10-24 step-c">
-											<p>TM receives a request for work to be done, such as withdraw money from a bank account.</p>
-										</div>
-
-										<div class="pure-u-md-1-24">
-											<h1>2</h1>
-										</div>
-										<div class="pure-u-1 pure-u-lg-10-24 step-c">
-											<p>TM initiates a specific programming running in a dependent region (as shown in green) that uses the information in the request to complete the work that was requested.</p>
+						<!-- =========================== IMS Transaction Manager =========================== -->
+						<section class="zs-gray-section">
+							<div class="flex-container tm-section">
+								<h3>IMS Transaction Manager</h3>
+								<div class="flex-row">
+									<div class="flex-block">
+										<img class="ims-card-icon" src="wp-content/tcp-ip-service.svg" alt="">
+										<div>
+											<h3>Speedy transactions</h3>
+											<p>
+												The IMS Transaction Manager receives messages from any platform, usually via TCP/IP through IMS Connect, 
+												puts them on the message queue where an application program can retrieve it.
+											</p>
+											<p>
+												Think about getting money from an ATM or bank. The bank uses IMS DB to store customer data and IMS TM to 
+												quickly process deposits, withdrawals, and queries.
+											</p>
+											<a href="https://www.ibm.com/docs/en/ims/15.5.0?topic=network-ims-tm-overview" 
+											target="_blank" rel="noopener noreferrer" aria-label="Learn more about IMS TM speedy transactions">Learn more →</a>
 										</div>
 									</div>
-
-									<div class="pure-g">
-										<div class="pure-u-md-1-24">
-											<h1>3</h1>
-										</div>
-										<div class="pure-u-1 pure-u-lg-10-24 step-c">
-											<p>TM prepares a response to the request (for example, "I'm done processing this request").</p>
-										</div>
-
-										<div class="pure-u-md-1-24">
-											<h1>4</h1>
-										</div>
-										<div class="pure-u-1 pure-u-lg-10-24 step-c">
-											<p>TM transmits the data prepared by the program back to the user that originally requested the work. In other words, the user sees their bank balance.</p>
-										</div>
+									<div class="flex-block">
+										<img src="wp-content/tm/speedy-transactions-c.png" alt="Diagram of IMS TM transaction processing" class="tm-img">
 									</div>
 								</div>
-							</div>
-						</section> -->
-
-						<!-- =========================== Benefits =========================== -->
-						<section class="zs-gray-section benefits-section">
-							<div class="zs-section">
-								<div class="pure-u-1">
-									<div class="pure-g">
-										<!-- Speedy transaction -->
-										<div class="pure-u-1-3">
-												<div class="pure-u-3-4">
-													<h3>Speedy transactions</h3>
-													<p>
-														The IMS Transaction Manager receives messages from any platform, usually via TCP/IP through IMS Connect, 
-														puts them on the message queue where an application program can retrieve it.
-													</p>
-													<p>
-														Think about getting money from an ATM or bank. The bank uses IMS DB to store customer data and IMS TM to 
-														quickly process deposits, withdrawals, and queries.
-													</p>
-													<img src="wp-content/tm/speedy-transactions-c.png" alt="Diagram of IMS TM transaction processing">
-													<br>
-													<a href="https://www.ibm.com/docs/en/ims/15.5.0?topic=network-ims-tm-overview" 
-													target="_blank" rel="noopener noreferrer" aria-label="Learn more about IMS TM speedy transactions">Learn more →</a>
-												</div>
-										</div>
-										<!-- Ways to work -->
-										<div class="pure-u-1-3">
-											<div class="pure-u-3-4">
-												<h3>Ways to work</h3>
-												<p>
-													Use Red Hat® Ansible® and Red Hat® OpenShift® through digitally transformed ways of working, developing, 
-													and updating critical data-driven applications. 
-												</p>
-												<p>
-													The Ansible® for IBM Z® product offers lots of use cases, capabilities, and tools to automate functions of IMS, 
-													such as DBRC administration or IMS catalog management, all by using scripted Ansible playbooks.
-												</p>
-												<img src="wp-content/tm/ways-to-work.png" alt="Customers in line">
-												<br>
-												<a href="https://imsdev.github.io/ims-devops.html" 
+								<div class="flex-row">
+									<div class="flex-block">
+										<img class="ims-card-icon" src="wp-content/ansible-logo.svg" alt="">
+										<div>
+											<h3>Ways to work</h3>
+											<p>
+												Use Red Hat® Ansible® and Red Hat® OpenShift® through digitally transformed ways of working, developing, 
+												and updating critical data-driven applications. 
+											</p>
+											<p>
+												The Ansible® for IBM Z® product offers lots of use cases, capabilities, and tools to automate functions of IMS, 
+												such as DBRC administration or IMS catalog management, all by using scripted Ansible playbooks.
+											</p>
+											<a href="https://imsdev.github.io/ims-devops.html" 
 												target="_blank" rel="noopener noreferrer" aria-label="Learn more about ways to work with IMS TM">Learn more →</a>
-											</div>
 										</div>
-										<!-- Ways to connect -->
-										<div class="pure-u-1-3">
-											<div class="pure-u-3-4">
-												<h3>Ways to connect</h3>
-												<p>Take advantage of not just TCP/IP but RESTful APIs that access IMS™ applications and data in minutes. 
-													Transactions might be issued from z/OS environments or distributed applications that use TCP/IP to communicate 
-													with IMS. Use IMS Connect to provide high performance TCP/IP communications between multiple IMS Connect 
-													clients and IMS systems.
-												</p>
-												<img src="wp-content/tm/ways-to-connect.png" alt="Diagram of IMS application ecosystem">
-												<br>
-												<a href="https://imsdev.github.io/ims-apis.html" 
+									</div>
+									<div class="flex-block">
+										<img class="ims-card-icon" src="wp-content/Icon_Homepage_APIs.svg" alt="">
+										<div>
+											<h3>Ways to connect</h3>
+											<p>Take advantage of not just TCP/IP but RESTful APIs that access IMS™ applications and data in minutes. 
+												Transactions might be issued from z/OS environments or distributed applications that use TCP/IP to communicate 
+												with IMS. 
+											</p>
+											<p>
+												Use IMS Connect to provide high performance TCP/IP communications between multiple IMS Connect 
+												clients and IMS systems.
+											</p>
+											<a href="https://imsdev.github.io/ims-apis.html" 
 												target="_blank" rel="noopener noreferrer" aria-label="Learn more about how to connect to IMS TM">Learn more →</a>
-											</div>
 										</div>
 									</div>
 								</div>
