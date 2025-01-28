@@ -29,11 +29,6 @@ var tipuesearch = {"pages": [{
     "tags": "gold ims_gold customer sponsor enroll collaborate client_feedback_program zcf solution infrastructure enhance",
     "url": "ims-gold.html"
   },{
-    "title": "IMS Makerspace: Collaborate with IMS <img class=\"search-icon\" aria-label=\"Internal page\" src=\"wp-content/search_internalpage.svg\"></img>",
-    "text": "Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.",
-    "tags": "makerspace ims_makerspace modernize modernization design_thinking prototype apis open_database devops java enroll",
-    "url": "ims-makerspace.html"
-  },{
     "title": "IMS Community <img class=\"search-icon\" aria-label=\"External page\" src=\"wp-content/search_externalpage.svg\"></img>",
     "text": "See the latest IMS blogs, engage in IMS forums, and more by visiting the IMS Community.",
     "tags": "community engage blogs blog forums new webinars community_call feedback linkedin trials",
