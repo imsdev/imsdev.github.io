@@ -156,6 +156,34 @@
           <!-- Hamburger drop-down menu options -->
           <nav class="menu1" aria-label="Dropdown menu items">
             <div class="pages pure-g">
+
+              <!-- Learn -->
+              <div class="pure-u-1 pure-u-sm-1-4">
+                <h3>Learn</h3>
+                <!-- cards/pages -->
+                <!-- 1 -->
+                <a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS videos</h5>
+                    <p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS courses</h5>
+                    <p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
+                  </div>
+                </a>
+                <!-- 3 -->
+                <a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
+                  <div class="navcard">
+                    <h5>IMS repos on GitHub</h5>
+                    <p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
+                  </div>
+                </a>
+              </div>
+
               <!-- Innovate -->
               <div class="pure-u-1 pure-u-sm-1-4">
                 <h3>Innovate</h3>
@@ -209,13 +237,6 @@
                   </div>
                 </a>
                 <!-- 2 -->
-                <a title="Makerspace" href="ims-makerspace.html" class="nav-item" tabindex="-1">
-                  <div class="navcard">
-                    <h5>Makerspace</h5>
-                    <p>Sign up to interact with a specialized IMS team who can help you solve real-world business challenges.</p>
-                  </div>
-                </a>
-                <!-- 3 -->
                 <a title="IMS Community" class="nav-item" tabindex="-1" target="_blank" rel="noopener noreferrer"
                   href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/topic-home?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560">
                   <div class="navcard">
@@ -230,33 +251,6 @@
                   <div class="navcard">
                     <h5>Advocacy</h5>
                     <p>Request an IMS advocate so that you have a voice in IMS.</p>
-                  </div>
-                </a>
-              </div>
-          
-              <!-- Learn -->
-              <div class="pure-u-1 pure-u-sm-1-4">
-                <h3>Learn</h3>
-                <!-- cards/pages -->
-                <!-- 1 -->
-                <a title="IMS Videos" href="ims-videos.html" class="nav-item" tabindex="-1">
-                  <div class="navcard">
-                    <h5>IMS videos</h5>
-                    <p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
-                  </div>
-                </a>
-                <!-- 2 -->
-                <a title="IMS Courses" href="ims-education.html" class="nav-item" tabindex="-1">
-                  <div class="navcard">
-                    <h5>IMS courses</h5>
-                    <p>Get in-depth IMS education with these self-paced courses and earn digital badges.</p>
-                  </div>
-                </a>
-                <!-- 3 -->
-                <a title="IMS Repos on GitHub" href="ims-repos.html" class="nav-item" tabindex="-1">
-                  <div class="navcard">
-                    <h5>IMS repos on GitHub</h5>
-                    <p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
                   </div>
                 </a>
               </div>
@@ -354,8 +348,56 @@
             </section>
           </div>
 
+          <!-- =========================== Learn / Education =========================== -->
+          <div class="zs-gray-section learn-bg-home learn-section">
+            <section class="zs-section">
+              <!--Header -->
+              <div class="pure-u-1 pure-u-sm-1 pure-u-lg-6-24 ibm-padding-bottom-1">
+                  <h2>Learn</h2>
+                  <p class="index-subheader">Build your IMS skills through courses, videos, and code repos.</p>
+              </div>
+              <div class="pure-u-lg-2-24 learn-spacer"></div>
+
+              <!-- Selection container -->
+              <div class="pure-u-lg-16-24 pure-u-1">
+                <div class="pure-g index-cards">
+                  <!-- IBM Videos -->
+                  <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24 learn-card">
+                    <img src="wp-content/Icon_Banner_IMS VideosPage.svg" alt="">
+                    <h3>Videos</h3>
+                    <p>Check out educational videos on Java, managed ACBs, 
+                      IMS catalog, shared queues, DBRC, and more.
+                    </p>
+                    <a href="ims-videos.html" aria-label="Learn more about videos">Learn more</a>
+                  </div>
+      
+                  <!-- Skills Launchpad -->
+                  <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24 learn-card">
+                    <img src="wp-content/Icon_Banner_IMS CoursesPage.svg" alt="">
+                    <h3>Courses</h3>
+                    <p>Your education portal for role-based, self-paced learning. See the latest 
+                      and online courses.
+                    </p>
+                    <a href="ims-education.html" aria-label="Learn more about courses">Learn more</a>
+                  </div>
+
+                  <!-- IBM GitHub -->
+                  <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24 learn-card">
+                    <img src="wp-content/Icon_Homepage_IMS GitHub.svg" alt="">
+                    <h3>GitHub</h3>
+                    <p>See the IMS GitHub repositories to grab sample code, learn 
+                      how to perform tasks on IMS, and more.
+                    </p>
+                    <a href="ims-repos.html" aria-label="Learn more about IMS GutHub repositories">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
           <!-- =========================== Innovate =========================== -->
-          <div class="zs-gray-section white-bg innovate-section">
+          <!-- Parallax BG needs specification here to override styles -->
+          <div class="zs-gray-section ibm-background-white-core imsc-learn-section pure-g" style="background-image: url(wp-content/BG02.png);">
             <section class="pure-g zs-section">
               <!--Section Header-->
               <div class="pure-u-lg-6-24 pure-u-1 pure-u-sm-1 pure-u-md-1 ibm-padding-bottom-1">
@@ -429,9 +471,8 @@
           </div>
 
           <!-- =========================== Engage / Programs =========================== -->
-          <!-- Parallax BG needs specification here to override styles -->
-          <div class="zs-gray-section ibm-background-white-core imsc-learn-section pure-g" style="background-image: url(wp-content/BG02.png);">
-            <section class="zs-section engage-section">
+          <div class="zs-gray-section engage-bg-home engage-section">
+            <section class="zs-section">
               <!--Header -->
               <div class="pure-u-1 pure-u-sm-1 pure-u-lg-6-24 ibm-padding-bottom-1">
                   <h2>Engage</h2>
@@ -454,16 +495,15 @@
                     </div>
                   </div>
 
-                  <!-- Makerspace -->
+                  <!-- Advocacy -->
                   <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24 engage-card">
-                    <img class="ims-card-icon" src="wp-content/Icon_Homepage_ms_bulb.svg" alt="">
+                    <img class="ims-card-icon" src="wp-content/Icon_02_IMS GoldPage.svg" alt="">
                     <div>
-                      <h3>Makerspace</h3>
-                      <p>We want to understand your business scenarios and goals,
-                        and brainstorm on future solutions. We'll use design thinking to help
-                        you prototype solutions to solve business challenges.
+                      <h3>Advocacy</h3>
+                      <p>If you don't have an advocate, or want to change your IMS advocate, please contact 
+                        Deepak Kohli at <a href="mailto:deepakk@us.ibm.com">deepakk@us.ibm.com</a>.
                       </p>
-                      <a href="ims-makerspace.html" aria-label="Learn more about IMS Makerspace">Learn more</a>
+                      <a href="ims-makerspace.html" aria-label="Learn more about IMS advocacy">Learn more</a>
                       </div>
                     </div>
 
@@ -486,7 +526,7 @@
           </div>
 
           <!-- =========================== Advocacy Program =========================== -->
-          <div class="pure-u-1 pure-u-sm-1 pure-g advocacy-banner">
+          <!-- <div class="pure-u-1 pure-u-sm-1 pure-g advocacy-banner">
             <div class="pure-u-lg-8-24 pure-u-sm-1">
               <h2>IMS Advocacy Program</h2>
             </div>
@@ -498,54 +538,7 @@
                 </h4>
               </div>
             </div>
-          </div>
-
-          <!-- =========================== Learn / Education =========================== -->
-          <div class="zs-gray-section white-bg2 learn-section">
-            <section class="zs-section">
-              <!--Header -->
-              <div class="pure-u-1 pure-u-sm-1 pure-u-lg-6-24 ibm-padding-bottom-1">
-                  <h2>Learn</h2>
-                  <p class="index-subheader">Build your IMS skills through courses, videos, and code repos.</p>
-              </div>
-              <div class="pure-u-lg-2-24 learn-spacer"></div>
-
-              <!-- Selection container -->
-              <div class="pure-u-lg-16-24 pure-u-1">
-                <div class="pure-g index-cards">
-                  <!-- IBM Videos -->
-                  <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24 learn-card">
-                    <img src="wp-content/Icon_Banner_IMS VideosPage.svg" alt="">
-                    <h3>Videos</h3>
-                    <p>Check out educational videos on Java, managed ACBs, 
-                      IMS catalog, shared queues, DBRC, and more.
-                    </p>
-                    <a href="ims-videos.html" aria-label="Learn more about videos">Learn more</a>
-                  </div>
-      
-                  <!-- Skills Launchpad -->
-                  <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24 learn-card">
-                    <img src="wp-content/Icon_Banner_IMS CoursesPage.svg" alt="">
-                    <h3>Courses</h3>
-                    <p>Your education portal for role-based, self-paced learning. See the latest 
-                      and online courses.
-                    </p>
-                    <a href="ims-education.html" aria-label="Learn more about courses">Learn more</a>
-                  </div>
-
-                  <!-- IBM GitHub -->
-                  <div class="pure-u-1 pure-u-sm-1 pure-u-lg-8-24 learn-card">
-                    <img src="wp-content/Icon_Homepage_IMS GitHub.svg" alt="">
-                    <h3>GitHub</h3>
-                    <p>See the IMS GitHub repositories to grab sample code, learn 
-                      how to perform tasks on IMS, and more.
-                    </p>
-                    <a href="ims-repos.html" aria-label="Learn more about IMS GutHub repositories">Learn more</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
+          </div> -->
 
           <!-- =========================== Doc / Support =========================== -->
           <div class="zs-gray-section ibm-background-white-core docs-section">
