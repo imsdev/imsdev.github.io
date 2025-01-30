@@ -65,6 +65,18 @@
     max-width: 590px !important;
 }
 
+/* TRANSACTION MANAGER SECTION */
+
+.tm-section h3 {
+    color: black;
+}
+
+.tm-img {
+    width: 100%;
+    max-width: 550px;
+    padding: 1em;
+} 
+
 /* SPEEDY TRANSACTIONS SECTION */
 
 .st-section h1 {
@@ -73,28 +85,6 @@
 
 .step-c {
     padding-top: 50px;
-}
-
-/* BENEFITS SECTION */
-
-.benefits-section {
-    padding: 3em 0em 3em 3em;
-}
-
-.benefits-section h3 {
-    color: black;
-}
-
-.benefits-section a {
-    color: #0F62FE;
-    font-size: 18px;
-    position: absolute;
-    bottom: 0;
-}
-
-.benefits-section img {
-    width: 300px;
-    margin: 20px 0px;
 }
 
 /* HONE SKILLS SECTION */
@@ -167,10 +157,9 @@
     font-size: 18px;
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 1024px) {
-    .benefits-section img {
-        width: 200px;
-    }
+.blog-card img {
+    filter: brightness(0) invert(1);
+    width: 35px;
+    height: 35px;
 }
+
