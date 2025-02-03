@@ -20,7 +20,7 @@
     width: 46%;
 }
 
-.flex-block p, a {
+.flex-block p, .flex-block a {
     font-size: 14pt;
 }
 
