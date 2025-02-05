@@ -46,10 +46,10 @@
     margin-bottom: 15px !important;
 }
 
-.work-sec img {
+/* .work-sec img {
     height: 25px;
     float: left;
-}
+} */
 
 .enroll-sec {
     margin-top: -20px;
@@ -102,4 +102,44 @@
 
 .gold-cta a {
     color: white !important;
+}
+
+.pure-card {
+    padding: 0em 2em 1em 0em;
+}
+
+.light-bg h3, .light-bg h4 {
+    color: black;
+}
+
+.faq-header {
+    width: 0;
+    overflow: visible;
+}
+
+.advocacy-banner {
+    background-color: #003A6D;
+    width: 100%;
+    letter-spacing: normal; 
+    padding: 2em 4em;
+    padding-bottom: 1em;
+}
+
+.advocacy-banner h2 {
+    color: white;
+}
+
+.advocacy-banner p {
+    color: white;
+}
+
+.advocacy-banner-text {
+    float: right;
+    padding-right: 100px;
+}
+
+.advocacy-banner-text a {
+    margin:0 !important;
+    color: #78A9FF;
+    font-size: 18px;
 }
