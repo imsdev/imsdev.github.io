@@ -71,9 +71,7 @@
 
   .dark-gray-bg a {
     color: var(--light-blue-02);
-    font-size: var(--plex-18);
   }
-
 /* -------------------------------------------------------- */
 
 /* Icons */
@@ -96,7 +94,7 @@
 .button-primary {
   color: var(--white) !important;
   background-color: var(--blue);
-  padding: var(--plex-16) var(--plex-24);
+  padding: 1em 1.5em;
   box-sizing: border-box;
   line-height: var(--plex-24);
   width: 100%;
@@ -105,13 +103,10 @@
 .button-primary:hover {
   background-color: var(--light-blue-01);
 }
-
 /* -------------------------------------------------------- */
-
 
 /* Main */
 /* -------------------------------------------------------- */
-
 .main-content p {
   font-size: var(--plex-18);
   line-height: var(--plex-24);
@@ -120,7 +115,6 @@
 .main-content h2 {
   font-size: var(--plex-36);
 }
-
 /* -------------------------------------------------------- */
 
 /* Hero section */
@@ -148,27 +142,26 @@
   }
 
   .hero a {
-    max-width: var(--plex-180);
-    margin-top: var(--plex-20);
+    max-width: 11.25em;
+    margin-top: 1.25em;
   }
 
 .hero-container {
   padding: 3em;
-  position: relative;
 }
 /* -------------------------------------------------------- */
 
-/* Content container */
+/* Content containers */
 /* -------------------------------------------------------- */
-.content-container {
+/* Targets all sections after hero */
+.main-content section:not(:first-child) {
   padding: 4em;
-  position: relative;
-}
+} 
 
+/* For pure grid units requiring paddings */
 .content-grid > div {
   padding: 1.2em;
 }
-
 /* -------------------------------------------------------- */
 
 /* Media queries */
@@ -177,7 +170,10 @@
   .main-content h2 {
     font-size: var(--plex-28);
   }
-  
+
+  .content-grid > div {
+    padding: 0.4em;
+  }
 }
 /* -------------------------------------------------------- */
 
