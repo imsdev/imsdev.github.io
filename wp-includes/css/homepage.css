@@ -450,12 +450,6 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .internship-bg {
-      background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../wp-content/images/internship_collaboration.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
 
     /* video margin for tablets */
     @media screen and (min-width:1024px) and (max-width:1220px) {

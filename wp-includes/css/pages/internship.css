@@ -1,34 +1,7 @@
-.gold-pg {
-    position: relative;
-    background: #282828 !important;
-}
 
-.internship-bg-inside{
-    backdrop-filter: blur(6px);
-    
-  }
 
-.intro-sec section {
-    padding: 3em;
-    color: white;
-}
 
-.intro-sec img {
-    margin-top: 65px;
-}
 
-.intro-sec-g {
-    margin-left: 30px;
-}
-
-.intro-sec-g h6 {
-    padding: 0;
-}
-
-.intro-sec-b {
-    max-width: 180px;
-    margin-top: 20px;
-}
 
 .benefits-sec-g {
     padding-right: 2.5em;
@@ -109,10 +82,6 @@
     padding: 0em 2em 1em 0em;
 }
 
-.light-bg h3, .light-bg h4 {
-    color: black;
-}
-
 .faq-header {
     width: 0;
     overflow: visible;
@@ -131,15 +100,4 @@
 
 .advocacy-banner p {
     color: white;
-}
-
-.advocacy-banner-text {
-    float: right;
-    padding-right: 100px;
-}
-
-.advocacy-banner-text a {
-    margin:0 !important;
-    color: #78A9FF;
-    font-size: 18px;
 }
