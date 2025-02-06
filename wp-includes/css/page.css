@@ -167,9 +167,15 @@
 /* Media queries */
 /* -------------------------------------------------------- */
 @media  screen and (max-width: 48em) {
+  /* Decrease header size for smaller screens */
   .main-content h2 {
     font-size: var(--plex-28);
   }
+
+  /* Decrease section padding for smaller screens */
+  .main-content section:not(:first-child) {
+    padding: 2em;
+  } 
 
   .content-grid > div {
     padding: 0.4em;
