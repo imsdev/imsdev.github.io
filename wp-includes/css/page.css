@@ -71,6 +71,7 @@
 
   .dark-gray-bg a {
     color: var(--light-blue-02);
+    font-size: var(--plex-18);
   }
 
   .dark-gray-bg h4 {
@@ -123,36 +124,37 @@
 
 /* Hero section */
 /* -------------------------------------------------------- */
-.hero {
+.hero-container {
+  padding: 3em;
+}
+
+.main-content section:first-child {
   width: 100%;
   background-color:var(--dark-gray-01);
   color: white;
 }
 
-  .hero p {
-    font-size: var(--plex-20);
-  }
-
-  .hero b {
-    font-weight: var(--bold);
-  }
-
-  .hero img {
-    margin-top: 4em;
-  }
-
-  .hero h6 {
-    padding: 0;
-  }
-
-  .hero a {
-    max-width: 11.25em;
-    margin-top: 1.25em;
-  }
-
-.hero-container {
-  padding: 3em;
+.main-content section:first-child p {
+  font-size: var(--plex-20);
 }
+
+.main-content section:first-child b {
+  font-weight: var(--bold);
+}
+
+.main-content section:first-child img {
+  margin-top: 4em;
+}
+
+.main-content section:first-child h6 {
+  padding: 0;
+}
+
+.main-content section:first-child a {
+  max-width: 11.25em;
+  margin-top: 1.25em;
+}
+
 /* -------------------------------------------------------- */
 
 /* Content containers */
@@ -195,6 +197,10 @@
 
   .highlight-link {
     padding-bottom: 1rem;
+  }
+
+  .dark-gray-bg h4 {
+    font-size: var(--plex-20) !important;
   }
 }
 /* -------------------------------------------------------- */
