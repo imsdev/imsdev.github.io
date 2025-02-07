@@ -1,0 +1,216 @@
+/* Variables */
+/* -------------------------------------------------------- */
+:root {
+  /* Color */
+  --white: #fff;
+  --light-gray: #f4f4f4;
+  --dark-gray-01: #1c1c1c;
+  --dark-gray-02: #2c2c2c;
+  --black: #000;
+  --light-blue-01: #3181f1;
+  --light-blue-02: #78A9FF;
+  --blue: #0f62fe;
+  --dark-blue: #003A6D;
+  /* Weight */
+  --bold: 900;
+  /* Sizing */
+  --plex-16: 1em;
+  --plex-18: 1.125em;
+  --plex-20: 1.25em;
+  --plex-24: 1.5em;
+  --plex-28: 1.75em;
+  --plex-36: 2.25em;
+  --plex-72: 4.5em;
+  --plex-180: 11.25em;
+}
+/* -------------------------------------------------------- */
+
+/* Backgrounds */
+/* -------------------------------------------------------- */
+.internship-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../wp-content/images/internship_collaboration.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blur-bg {
+  backdrop-filter: blur(6px);
+}
+
+.white-bg {
+  background-color: var(--white);
+}
+
+  .white-bg h3, .white-bg h4 {
+    color: var(--black);
+  }
+
+.gray-bg {
+  background-color: var(--light-gray);
+}
+
+  .gray-bg h3, .gray-bg h4 {
+    color: var(--black);
+  }
+
+.blue-bg {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+  .blue-bg a {
+    color: var(--light-blue-02);
+    font-size: var(--plex-18);
+  }
+
+.dark-gray-bg {
+  background-color: var(--dark-gray-02);
+  color: var(--white);
+}
+
+  .dark-gray-bg a {
+    color: var(--light-blue-02);
+    font-size: var(--plex-18);
+  }
+
+  .dark-gray-bg h4 {
+    font-size: var(--plex-24) !important;
+  }
+/* -------------------------------------------------------- */
+
+/* Icons */
+/* -------------------------------------------------------- */
+.icon-sm {
+  max-height: var(--plex-36);
+  max-width: var(--plex-36);
+  margin-bottom: var(--plex-20);
+}
+
+.icon-md {
+  max-height: var(--plex-72);
+  max-width: var(--plex-72);
+  margin-bottom: var(--plex-20);
+}
+/* -------------------------------------------------------- */
+
+/* Buttons */
+/* -------------------------------------------------------- */
+.button-primary {
+  color: var(--white) !important;
+  background-color: var(--blue);
+  padding: 1em 1.5em;
+  box-sizing: border-box;
+  line-height: var(--plex-24);
+  width: 100%;
+}
+
+.button-primary:hover {
+  background-color: var(--light-blue-01);
+}
+/* -------------------------------------------------------- */
+
+/* Main */
+/* -------------------------------------------------------- */
+.main-content p {
+  font-size: var(--plex-18);
+  line-height: var(--plex-24);
+}
+
+.main-content h2 {
+  font-size: var(--plex-36);
+}
+/* -------------------------------------------------------- */
+
+/* Hero section */
+/* -------------------------------------------------------- */
+.hero-container {
+  padding: 3em;
+}
+
+.main-content section:first-child {
+  width: 100%;
+  background-color:var(--dark-gray-01);
+  color: white;
+}
+
+.main-content section:first-child p {
+  font-size: var(--plex-20);
+}
+
+.main-content section:first-child b {
+  font-weight: var(--bold);
+}
+
+.main-content section:first-child img {
+  margin-top: 4em;
+}
+
+.main-content section:first-child h6 {
+  padding: 0;
+}
+
+.main-content section:first-child a {
+  max-width: 11.25em;
+  margin-top: 1.25em;
+}
+
+/* -------------------------------------------------------- */
+
+/* Content containers */
+/* -------------------------------------------------------- */
+/* Targets all sections after hero */
+.main-content section:not(:first-child) {
+  padding: 4em;
+} 
+
+/* For pure grid units requiring paddings */
+.content-grid > div {
+  padding: 1.2em;
+}
+/* -------------------------------------------------------- */
+
+/* Custom styling */
+/* -------------------------------------------------------- */
+/* For links under headers */
+.highlight-link {
+  font-size: var(--plex-20);
+}
+
+/* For CTA header requiring spacing */
+.cta-header {
+  max-width: 34.375em;
+  padding-right: 2em;
+}
+/* -------------------------------------------------------- */
+
+/* Media queries */
+/* -------------------------------------------------------- */
+@media  screen and (max-width: 48em) {
+  /* Decrease header size for smaller screens */
+  .main-content h2 {
+    font-size: var(--plex-28);
+  }
+
+  /* Decrease section padding for smaller screens */
+  .main-content section:not(:first-child) {
+    padding: 2em;
+  } 
+
+  .content-grid > div {
+    padding: 0.4em;
+  }
+
+  .highlight-link {
+    padding-bottom: 1rem;
+  }
+
+  .dark-gray-bg h4 {
+    font-size: var(--plex-20) !important;
+  }
+}
+/* -------------------------------------------------------- */
+
+
+
+

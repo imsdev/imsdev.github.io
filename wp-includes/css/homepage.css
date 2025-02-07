@@ -99,6 +99,7 @@
     .ims-card-icon-small {
       max-height: 35px;
       max-width: 35px;
+      margin-bottom:20px;
     }
     .ims-e-card .zs-action-card .zs-action-card-inactive {
       padding: 2em !important;
