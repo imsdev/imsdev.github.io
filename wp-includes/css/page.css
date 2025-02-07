@@ -176,6 +176,12 @@
 .highlight-link {
   font-size: var(--plex-20);
 }
+
+/* For CTA header requiring spacing */
+.cta-header {
+  max-width: 34.375em;
+  padding-right: 2em;
+}
 /* -------------------------------------------------------- */
 
 /* Media queries */
