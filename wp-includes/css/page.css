@@ -12,6 +12,7 @@
   --light-blue-03: #5C97FF;
   --blue: #0f62fe;
   --dark-blue: #003A6D;
+
   /* Weight */
   --bold: 900;
   /* Sizing */
@@ -68,7 +69,6 @@
 
   .blue-bg a {
     color: var(--light-blue-02);
-    font-size: var(--plex-18);
   }
 
 .dark-gray-bg {
@@ -103,6 +103,10 @@
 .icon-black {
   filter: brightness(0%);
 }
+
+.icon-white {
+  filter: invert(1);
+}
 /* -------------------------------------------------------- */
 
 /* Buttons */
@@ -112,19 +116,37 @@
   padding: 1em 1.5em;
   line-height: var(--plex-24);
   width: 100%;
-  margin-top: 1.25em;
 }
 
 .button-primary {
   background-color: var(--blue);
+  margin-top: 1.25em;
 }
 
 .button-secondary {
   background-color: var(--light-blue-03);
+  margin-top: 1.25em;
 }
 
-.button:hover {
+.button-tertiary {
+  border: solid var(--white) 1px;
+  font-size: var(--plex-16);
+}
+
+.button-primary:hover, .button-secondary:hover {
   background-color: var(--light-blue-01);
+}
+
+.button-tertiary:hover {
+  background-color: var(--white);
+}
+
+.button-tertiary:hover h4 {
+  color: var(--black);
+}
+
+.button-tertiary:hover p {
+  color: var(--blue);
 }
 
 .button-g {
