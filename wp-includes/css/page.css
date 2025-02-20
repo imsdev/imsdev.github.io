@@ -99,6 +99,10 @@
   max-width: var(--plex-72);
   margin-bottom: var(--plex-20);
 }
+
+.icon-black {
+  filter: brightness(0%);
+}
 /* -------------------------------------------------------- */
 
 /* Buttons */
@@ -195,9 +199,30 @@
   padding: 4em;
 } 
 
+.section-header {
+  padding-right: 2em;
+}
+
 /* For pure grid units requiring paddings */
 .content-grid > div {
   padding: 1.2em;
+}
+
+.inline-g {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+  align-items: center;
+}
+
+.inline-g h2 {
+  color:var(--blue);
+  padding-bottom: 1em;
+}
+
+.inline-g p {
+  padding: 0px;
+  margin-right: 2em;
 }
 /* -------------------------------------------------------- */
 
