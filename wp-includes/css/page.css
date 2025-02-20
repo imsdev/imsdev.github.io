@@ -9,6 +9,7 @@
   --black: #000;
   --light-blue-01: #3181f1;
   --light-blue-02: #78A9FF;
+  --light-blue-03: #5C97FF;
   --blue: #0f62fe;
   --dark-blue: #003A6D;
   /* Weight */
@@ -36,6 +37,12 @@
 
 .blur-bg {
   backdrop-filter: blur(6px);
+}
+
+.engage-black-bg {
+  background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .white-bg {
@@ -96,18 +103,43 @@
 
 /* Buttons */
 /* -------------------------------------------------------- */
-.button-primary {
+.button {
   color: var(--white) !important;
-  background-color: var(--blue);
   padding: 1em 1.5em;
-  box-sizing: border-box;
   line-height: var(--plex-24);
   width: 100%;
+  margin-top: 1.25em;
 }
 
-.button-primary:hover {
+.button-primary {
+  background-color: var(--blue);
+}
+
+.button-secondary {
+  background-color: var(--light-blue-03);
+}
+
+.button:hover {
   background-color: var(--light-blue-01);
 }
+
+.button-g {
+  display: flex;
+  flex-flow: wrap row;
+  gap: 1em;
+}
+
+.button-sm {
+  max-width: 11.25em;
+}
+
+.button-md {
+  max-width: 15.75em;
+}
+
+.button-lg {
+  max-width: 17.75em;
+} 
 /* -------------------------------------------------------- */
 
 /* Main */
@@ -151,8 +183,7 @@
 }
 
 .main-content section:first-child a {
-  max-width: 11.25em;
-  margin-top: 1.25em;
+
 }
 
 /* -------------------------------------------------------- */
