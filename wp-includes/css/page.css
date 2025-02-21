@@ -3,15 +3,18 @@
 :root {
   /* Color */
   --white: #fff;
-  --light-gray: #f4f4f4;
-  --dark-gray-01: #1c1c1c;
-  --dark-gray-02: #2c2c2c;
   --black: #000;
-  --light-blue-01: #3181f1;
-  --light-blue-02: #78A9FF;
-  --light-blue-03: #5C97FF;
   --blue: #0f62fe;
-  --dark-blue: #003A6D;
+    /* Background Color */
+    --bg-light-gray: #f4f4f4;
+    --bg-dark-gray-01: #1c1c1c;
+    --bg-dark-gray-02: #2c2c2c;
+    --bg-dark-blue: #003A6D;
+    /* Button Color */
+    --btn-blue-secnd: #5C97FF;
+    --btn-blue-hover: #3181f1;
+    /* Font Color */
+    --font-light-blue: #78A9FF;
 
   /* Weight */
   --bold: 900;
@@ -55,7 +58,7 @@
   }
 
 .gray-bg {
-  background-color: var(--light-gray);
+  background-color: var(--bg-light-gray);
 }
 
   .gray-bg h3, .gray-bg h4 {
@@ -63,21 +66,21 @@
   }
 
 .blue-bg {
-  background-color: var(--dark-blue);
+  background-color: var(--bg-dark-blue);
   color: var(--white);
 }
 
   .blue-bg a {
-    color: var(--light-blue-02);
+    color: var(--font-light-blue);
   }
 
 .dark-gray-bg {
-  background-color: var(--dark-gray-02);
+  background-color: var(--bg-dark-gray-02);
   color: var(--white);
 }
 
   .dark-gray-bg a {
-    color: var(--light-blue-02);
+    color: var(--font-light-blue);
     font-size: var(--plex-18);
   }
 
@@ -100,11 +103,7 @@
   margin-bottom: var(--plex-20);
 }
 
-.icon-black {
-  filter: brightness(0%);
-}
-
-.icon-white {
+.icon-invert {
   filter: invert(1);
 }
 /* -------------------------------------------------------- */
@@ -115,7 +114,6 @@
   color: var(--white) !important;
   padding: 1em 1.5em;
   line-height: var(--plex-24);
-  width: 100%;
 }
 
 .button-primary {
@@ -124,8 +122,12 @@
 }
 
 .button-secondary {
-  background-color: var(--light-blue-03);
+  background-color: var(--btn-blue-secnd);
   margin-top: 1.25em;
+}
+
+.button-primary:hover, .button-secondary:hover {
+  background-color: var(--btn-blue-hover);
 }
 
 .button-tertiary {
@@ -141,19 +143,7 @@
 }
 
 .button-tertiary div:nth-child(1) {
-  flex-grow: 3;
-}
-
-.button-tertiary h4 {
-  flex-grow: 1;
-}
-
-.button-tertiary p {
-  flex-grow: 3;
-}
-
-.button-primary:hover, .button-secondary:hover {
-  background-color: var(--light-blue-01);
+  flex-grow: 4;
 }
 
 .button-tertiary:hover {
@@ -173,18 +163,6 @@
   flex-flow: wrap row;
   gap: 1em;
 }
-
-.button-sm {
-  max-width: 11.25em;
-}
-
-.button-md {
-  max-width: 15.75em;
-}
-
-.button-lg {
-  max-width: 17.75em;
-} 
 /* -------------------------------------------------------- */
 
 /* Main */
@@ -201,13 +179,13 @@
 
 /* Hero section */
 /* -------------------------------------------------------- */
-.hero-container {
+.hero {
   padding: 3em;
 }
 
 .main-content section:first-child {
   width: 100%;
-  background-color:var(--dark-gray-01);
+  background-color:var(--bg-dark-gray-01);
   color: white;
 }
 
@@ -226,11 +204,6 @@
 .main-content section:first-child h6 {
   padding: 0;
 }
-
-.main-content section:first-child a {
-
-}
-
 /* -------------------------------------------------------- */
 
 /* Content containers */
@@ -245,19 +218,22 @@
 }
 
 /* For pure grid units requiring paddings */
-.content-grid > div {
+.pure-g-pad > div {
   padding: 1.2em;
 }
 
+/* Center content within pure-g */
 .center-content {
   display: flex;
   justify-content: center;
 }
 
+/* Format column group */
 .column-g > div {
   padding: 0.2em;
 }
 
+/* Format inline group */
 .inline-g {
   display: flex;
   flex-flow: row nowrap;
@@ -274,6 +250,7 @@
   margin-right: 2em;
 }
 
+/* Format horizontal divider */
 .hr-container {
   padding: 2em 0em 3em 0em;
 }
@@ -306,7 +283,7 @@
     padding: 2em;
   } 
 
-  .content-grid > div {
+  .pure-g-pad > div {
     padding: 0.4em;
   }
 
