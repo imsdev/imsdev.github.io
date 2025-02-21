@@ -131,6 +131,25 @@
 .button-tertiary {
   border: solid var(--white) 1px;
   font-size: var(--plex-16);
+  height: 150px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.button-tertiary div:nth-child(0) {
+  flex-grow: 1;
+}
+
+.button-tertiary div:nth-child(1) {
+  flex-grow: 3;
+}
+
+.button-tertiary h4 {
+  flex-grow: 1;
+}
+
+.button-tertiary p {
+  flex-grow: 3;
 }
 
 .button-primary:hover, .button-secondary:hover {
