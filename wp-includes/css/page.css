@@ -228,12 +228,6 @@
   padding: 1.2em;
 }
 
-/* Center content within pure-g */
-.center-content {
-  display: flex;
-  justify-content: center;
-}
-
 /* Format column group */
 .column-g > div {
   padding: 0.2em;
@@ -254,6 +248,13 @@
 .inline-g p {
   padding: 0px;
   margin-right: 2em;
+}
+
+.inline-g-ol {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.2em;
+  align-items: center;
 }
 
 /* Format horizontal divider */
