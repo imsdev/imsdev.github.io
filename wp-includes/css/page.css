@@ -11,8 +11,10 @@
     --bg-dark-gray-02: #2c2c2c;
     --bg-dark-blue: #003A6D;
     /* Button Color */
-    --btn-blue-secnd: #5C97FF;
-    --btn-blue-hover: #3181f1;
+    --btn-prim: #0f62fe;
+    --btn-prim-hover: #0050e6;
+    --btn-secnd: #6f6f6f;
+    --btn-scnd-hover: #5e5e5e;
     /* Font Color */
     --font-light-blue: #78A9FF;
 
@@ -117,17 +119,21 @@
 }
 
 .button-primary {
-  background-color: var(--blue);
+  background-color: var(--btn-prim);
   margin-top: 1.25em;
 }
 
 .button-secondary {
-  background-color: var(--btn-blue-secnd);
+  background-color: var(--btn-secnd);
   margin-top: 1.25em;
 }
 
-.button-primary:hover, .button-secondary:hover {
-  background-color: var(--btn-blue-hover);
+.button-primary:hover {
+  background-color: var(--btn-prim-hover);
+}
+
+.button-secondary:hover {
+  background-color: var(--btn-scnd-hover);
 }
 
 .button-tertiary {
