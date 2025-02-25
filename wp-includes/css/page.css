@@ -45,7 +45,7 @@
   backdrop-filter: blur(6px);
 }
 
-.engage-black-bg {
+.engage-bg {
   background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,12 +96,16 @@
 .icon-sm {
   max-height: var(--plex-36);
   max-width: var(--plex-36);
-  margin-bottom: var(--plex-20);
+  margin-bottom: 1.25em;
 }
 
 .icon-md {
   max-height: var(--plex-72);
   max-width: var(--plex-72);
+  
+}
+
+.icon {
   margin-bottom: 0.5em;
 }
 
