@@ -102,7 +102,7 @@
 .icon-md {
   max-height: var(--plex-72);
   max-width: var(--plex-72);
-  margin-bottom: var(--plex-20);
+  margin-bottom: 0.5em;
 }
 
 .icon-invert {
@@ -238,7 +238,7 @@
   display: flex;
   flex-flow: row nowrap;
   gap: 1em;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .inline-g h2 {
