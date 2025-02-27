@@ -3,14 +3,21 @@
 :root {
   /* Color */
   --white: #fff;
-  --light-gray: #f4f4f4;
-  --dark-gray-01: #1c1c1c;
-  --dark-gray-02: #2c2c2c;
   --black: #000;
-  --light-blue-01: #3181f1;
-  --light-blue-02: #78A9FF;
   --blue: #0f62fe;
-  --dark-blue: #003A6D;
+    /* Background Color */
+    --bg-light-gray: #f4f4f4;
+    --bg-dark-gray-01: #1c1c1c;
+    --bg-dark-gray-02: #2c2c2c;
+    --bg-dark-blue: #003A6D;
+    /* Button Color */
+    --btn-prim: #0f62fe;
+    --btn-prim-hover: #0050e6;
+    --btn-secnd: #6f6f6f;
+    --btn-scnd-hover: #5e5e5e;
+    /* Font Color */
+    --font-light-blue: #78A9FF;
+
   /* Weight */
   --bold: 900;
   /* Sizing */
@@ -38,6 +45,12 @@
   backdrop-filter: blur(6px);
 }
 
+.engage-bg {
+  background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .white-bg {
   background-color: var(--white);
 }
@@ -47,7 +60,7 @@
   }
 
 .gray-bg {
-  background-color: var(--light-gray);
+  background-color: var(--bg-light-gray);
 }
 
   .gray-bg h3, .gray-bg h4 {
@@ -55,22 +68,21 @@
   }
 
 .blue-bg {
-  background-color: var(--dark-blue);
+  background-color: var(--bg-dark-blue);
   color: var(--white);
 }
 
   .blue-bg a {
-    color: var(--light-blue-02);
-    font-size: var(--plex-18);
+    color: var(--font-light-blue);
   }
 
 .dark-gray-bg {
-  background-color: var(--dark-gray-02);
+  background-color: var(--bg-dark-gray-02);
   color: var(--white);
 }
 
   .dark-gray-bg a {
-    color: var(--light-blue-02);
+    color: var(--font-light-blue);
     font-size: var(--plex-18);
   }
 
@@ -84,29 +96,82 @@
 .icon-sm {
   max-height: var(--plex-36);
   max-width: var(--plex-36);
-  margin-bottom: var(--plex-20);
+  margin-bottom: 1.25em;
 }
 
 .icon-md {
   max-height: var(--plex-72);
   max-width: var(--plex-72);
-  margin-bottom: var(--plex-20);
+  
+}
+
+.icon {
+  margin-bottom: 0.5em;
+}
+
+.icon-invert {
+  filter: invert(1);
 }
 /* -------------------------------------------------------- */
 
 /* Buttons */
 /* -------------------------------------------------------- */
-.button-primary {
+.button {
   color: var(--white) !important;
-  background-color: var(--blue);
   padding: 1em 1.5em;
-  box-sizing: border-box;
   line-height: var(--plex-24);
-  width: 100%;
+}
+
+.button-primary {
+  background-color: var(--btn-prim);
+  margin-top: 1.25em;
+}
+
+.button-secondary {
+  background-color: var(--btn-secnd);
+  margin-top: 1.25em;
 }
 
 .button-primary:hover {
-  background-color: var(--light-blue-01);
+  background-color: var(--btn-prim-hover);
+}
+
+.button-secondary:hover {
+  background-color: var(--btn-scnd-hover);
+}
+
+.button-tertiary {
+  border: solid var(--white) 1px;
+  font-size: var(--plex-16);
+  height: 9.375em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.button-tertiary div:nth-child(0) {
+  flex-grow: 1;
+}
+
+.button-tertiary div:nth-child(1) {
+  flex-grow: 4;
+}
+
+.button-tertiary:hover {
+  background-color: var(--white);
+}
+
+.button-tertiary:hover h4 {
+  color: var(--black);
+}
+
+.button-tertiary:hover p {
+  color: var(--blue);
+}
+
+.button-g {
+  display: flex;
+  flex-flow: wrap row;
+  gap: 1em;
 }
 /* -------------------------------------------------------- */
 
@@ -124,13 +189,13 @@
 
 /* Hero section */
 /* -------------------------------------------------------- */
-.hero-container {
+.hero {
   padding: 3em;
 }
 
 .main-content section:first-child {
   width: 100%;
-  background-color:var(--dark-gray-01);
+  background-color:var(--bg-dark-gray-01);
   color: white;
 }
 
@@ -149,12 +214,6 @@
 .main-content section:first-child h6 {
   padding: 0;
 }
-
-.main-content section:first-child a {
-  max-width: 11.25em;
-  margin-top: 1.25em;
-}
-
 /* -------------------------------------------------------- */
 
 /* Content containers */
@@ -164,9 +223,47 @@
   padding: 4em;
 } 
 
+.section-header {
+  padding-right: 2em;
+}
+
 /* For pure grid units requiring paddings */
-.content-grid > div {
+.pure-g-pad > div {
   padding: 1.2em;
+}
+
+/* Format column group */
+.column-g > div {
+  padding: 0.2em;
+}
+
+/* Format inline group */
+.inline-g {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+.inline-g h2 {
+  color:var(--blue);
+}
+
+.inline-g p {
+  padding: 0px;
+  margin-right: 2em;
+}
+
+.inline-g-ol {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.2em;
+  align-items: center;
+}
+
+/* Format horizontal divider */
+.hr-container {
+  padding: 2em 0em 3em 0em;
 }
 /* -------------------------------------------------------- */
 
@@ -175,12 +272,6 @@
 /* For links under headers */
 .highlight-link {
   font-size: var(--plex-20);
-}
-
-/* For CTA header requiring spacing */
-.cta-header {
-  max-width: 34.375em;
-  padding-right: 2em;
 }
 /* -------------------------------------------------------- */
 
@@ -197,7 +288,7 @@
     padding: 2em;
   } 
 
-  .content-grid > div {
+  .pure-g-pad > div {
     padding: 0.4em;
   }
 
