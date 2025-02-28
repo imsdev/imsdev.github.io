@@ -21,6 +21,7 @@
   /* Weight */
   --bold: 900;
   /* Sizing */
+  --plex-14: 0.875em;
   --plex-16: 1em;
   --plex-18: 1.125em;
   --plex-20: 1.25em;
@@ -267,6 +268,40 @@
 }
 /* -------------------------------------------------------- */
 
+/* Quotations */
+/* -------------------------------------------------------- */
+.quote {
+  margin-bottom: 1em;
+}
+
+.quote q {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+	float: left;
+	line-height: 1.4em;
+	font-size: var(--plex-28);
+  padding: 0.5em 0em;
+}
+
+.quote span {
+  color: var(--font-light-blue);
+}
+
+.quote p {
+  font-size: var(--plex-14);
+}
+
+.quote-blk {
+  background-color: var(--bg-dark-blue);
+  margin: 0.2em;
+  padding: 2em;
+}
+
+.quote-blk p {
+  margin: 1em 0em;
+  font-size: var(--plex-14);
+}
+/* -------------------------------------------------------- */
+
 /* Custom styling */
 /* -------------------------------------------------------- */
 /* For links under headers */
@@ -277,6 +312,7 @@
 
 /* Media queries */
 /* -------------------------------------------------------- */
+/* 768px and below screen sizes */
 @media  screen and (max-width: 48em) {
   /* Decrease header size for smaller screens */
   .main-content h2 {
@@ -298,6 +334,13 @@
 
   .dark-gray-bg h4 {
     font-size: var(--plex-20) !important;
+  }
+}
+
+/* 1024px and above screen sizes */
+@media  screen and (min-width: 64em) {
+  .quote-blk {
+    height: 100%;
   }
 }
 /* -------------------------------------------------------- */
