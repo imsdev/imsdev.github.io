@@ -291,14 +291,16 @@
 }
 
 .quote-blk {
-  background-color: var(--bg-dark-blue);
+  background-color: var(--bg-light-gray);
   margin: 0.2em;
   padding: 2em;
+  color: var(--black);
+  font-size: var(--plex-18);
 }
 
 .quote-blk p {
-  margin: 1em 0em;
-  font-size: var(--plex-14);
+  margin-top: 1em;
+  font-size: var(--plex-16);
 }
 /* -------------------------------------------------------- */
 
@@ -307,6 +309,11 @@
 /* For links under headers */
 .highlight-link {
   font-size: var(--plex-20);
+}
+
+/* Spacer between sections */
+.spacer {
+  height: 0.3125em;
 }
 /* -------------------------------------------------------- */
 

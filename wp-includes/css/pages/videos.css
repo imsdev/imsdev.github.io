@@ -47,6 +47,13 @@
     background-color: white;
 }
 
+.video-section-header-first {
+    letter-spacing: normal;
+    color: black;
+    width: 100%;
+    margin-left: 15px;
+  }
+
 .video-section-header {
     letter-spacing: normal;
     margin-top: 30px;
