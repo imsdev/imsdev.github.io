@@ -51,6 +51,7 @@
     <link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
     <link href="wp-includes/css/tables.css" rel="stylesheet">
     <link href="wp-includes/css/pages/videos.css" rel="stylesheet">
+    <link href="wp-includes/css/page.css" rel="stylesheet">
 
   <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
     <script>
@@ -81,6 +82,8 @@
 
   <!-- Dropdown nav menu -->
     <script src="wp-includes/js/navbar.js"></script>
+
+    <script src="wp-includes/js/web-components.js"></script>
   </head>
 
   <!-- PAGE CONTENT -->
@@ -291,6 +294,24 @@
         </header>
       </div>
 
+      <template id="video-card">
+        <link href="wp-includes/css/web-components/video-card.css" rel="stylesheet">
+        <link href="wp-includes/css/page.css" rel="stylesheet">
+        <div class="video-card">
+          <div>
+            <h2 class="video-name"></h2>
+            <p class="video-desc"></p>
+            <div class="inline-g">
+              <p><b>Level: </b><span class="video-level"></span></p>
+              <p><b>Time: </b><span class="video-time"></span></p>
+            </div>
+          </div>
+          <div>
+            <a class="video-link">Watch now →</a>
+          </div>
+        </div>
+      </template>
+
       <!-- MAIN CONTENT -->
       <div id="content" class="site-content">
         <div class="content-area" id="content-area">
@@ -339,6 +360,18 @@
                       <div class="pure-g video-card-container">
 
                         <h3 id="all" class="video-section-header-first">All roles</h3>
+
+                        <div class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3">
+                          <video-card 
+                          name="Introduction to IMS" 
+                          desc="If you're new to IMS, watch these short, high-level videos on IMS, 
+                            database, transaction management, and application development."
+                          level="Beginner"
+                          time="1 hour"
+                          link="https://mediacenter.ibm.com/channel/Intro+to+IMS+Series/139456202"
+                        >
+                        </video-card>
+                        </div>
                         
                         <!-- IMS Community Calls -->
                         <div class="pure-u-1 pure-u-lg-1-3">
