@@ -1,6 +1,12 @@
 // Web component
 class VideoCard extends HTMLElement {
 
+    constructor() {
+        super();
+        this.level = 'Varies';
+        this.time = 'Varies';
+    }
+
     static get observedAttributes() {
         return ['name', 'desc', 'level', 'time', 'link'];
     }

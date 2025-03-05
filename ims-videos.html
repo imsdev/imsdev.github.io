@@ -296,7 +296,6 @@
 
       <template id="video-card">
         <link href="wp-includes/css/web-components/video-card.css" rel="stylesheet">
-        <link href="wp-includes/css/page.css" rel="stylesheet">
         <div class="video-card">
           <div>
             <h2 class="video-name"></h2>
@@ -306,8 +305,8 @@
               <p><b>Time: </b><span class="video-time"></span></p>
             </div>
           </div>
-          <div>
-            <a class="video-link">Watch now →</a>
+          <div class="link-g">
+            <a class="video-link" target="_blank" rel="noopener noreferrer">Watch now →</a>
           </div>
         </div>
       </template>
@@ -361,121 +360,62 @@
 
                         <h3 id="all" class="video-section-header-first">All roles</h3>
 
-                        <div class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3">
-                          <video-card 
-                          name="Introduction to IMS" 
-                          desc="If you're new to IMS, watch these short, high-level videos on IMS, 
-                            database, transaction management, and application development."
-                          level="Beginner"
-                          time="1 hour"
-                          link="https://mediacenter.ibm.com/channel/Intro+to+IMS+Series/139456202"
+                        <!-- IMS Community Calls -->
+                        <video-card 
+                        name="IMS Community Calls" 
+                        desc="These calls cover the latest in what's going on in the world of IMS."
+                        link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_lgy10u5e/"
+                        id="ims-comm"
+                        class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
                         >
                         </video-card>
-                        </div>
-                        
-                        <!-- IMS Community Calls -->
-                        <div class="pure-u-1 pure-u-lg-1-3">
-                          <div style="position: absolute; margin-top:-60px;" id="ims-comm"></div>
-                          <div class="ims-c-card">
-                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                              <h3 class="video-card-header">IMS Community Calls</h3>
-                              <p>These calls cover the latest in what's going on in the world of IMS.</p>
-                              <div class="pure-u-1 pure-u-md-1">
-                                <div>
-                                  <a  alt="IMS Community Calls" 
-                                    title="IMS Community Calls" target="_blank" rel="noopener noreferrer" 
-                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_lgy10u5e/" 
-                                    class="video-card-link">Watch now →
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
 
                         <!-- IMS Intro -->
-                        <div class="pure-u-1 pure-u-lg-1-3">
-                          <div style="position: absolute; margin-top:-60px;" id="ims-intro"></div>
-                          <div class="ims-c-card">
-                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                              <h3 class="video-card-header">Introduction to IMS</h3>
-                              <p></p>
-                              <p>If you're new to IMS, watch these short, high-level videos on IMS, database, transaction management, and application development.</p>		
-                              <div class="pure-u-1 pure-u-md-1">
-                                <div>
-                                  <p>
-                                    <b>Level</b>: Beginner
-                                    &ensp;
-                                    <b>Time</b>: 1 hour
-                                  </p>
-                                </div>
-                                <div>
-                                  <a alt="Intro to IMS" 
-                                    title="Intro to IMS" target="_blank" rel="noopener noreferrer" 
-                                    href="https://mediacenter.ibm.com/channel/Intro+to+IMS+Series/139456202" 
-                                    class="video-card-link">Watch now →
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <video-card 
+                        name="Introduction to IMS" 
+                        desc="If you're new to IMS, watch these short, high-level videos on IMS, 
+                          database, transaction management, and application development."
+                        level="Beginner"
+                        time="1 hour"
+                        link="https://mediacenter.ibm.com/channel/Intro+to+IMS+Series/139456202"
+                        id="ims-intro"
+                        class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+                        >
+                        </video-card>
 
                         <!-- IMS Ansible -->
-                        <div class="pure-u-1 pure-u-lg-1-3">
-                          <div style="position: absolute; margin-top:-60px;" id="ims-ansible"></div>
-                          <div class="ims-c-card">
-                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                              <h3 class="video-card-header">Getting Started with Ansible for IBM Z</h3>
-                              <p>Get an overview of how to set up your Red Hat® Ansible® control node to get started automating processes for IBM Z® with Ansible.</p>		
-                              <div class="pure-u-1 pure-u-md-1">
-                                <div>
-                                  <p>
-                                    <b>Level</b>: Beginner
-                                    &ensp;
-                                    <b>Time</b>: 6 minutes
-                                  </p>
-                                </div>
-                                <div>
-                                  <a  alt="Ansible for IBM Z" 
-                                    title="Ansible for IBM Z" target="_blank" rel="noopener noreferrer" 
-                                    href="https://mediacenter.ibm.com/media/Set%20up%20your%20Ansible%20control%20node%20for%20getting%20started%20with%20Ansible%20for%20IBM%20Z/1_r9g0duq3" 
-                                    class="video-card-link">Watch now →
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <video-card 
+                        name="Getting Started with Ansible for IBM Z" 
+                        desc="Get an overview of how to set up your Red Hat® Ansible® control node to 
+                          get started automating processes for IBM Z® with Ansible."
+                        level="Beginner"
+                        time="6 minutes"
+                        link="https://mediacenter.ibm.com/media/Set%20up%20your%20Ansible%20control%20node%20for%20getting%20started%20with%20Ansible%20for%20IBM%20Z/1_r9g0duq3"
+                        id="ims-ansible"
+                        class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+                        >
+                        </video-card>
 
                         <!-- IMS Insights Series -->
-                        <div class="pure-u-1 pure-u-lg-1-3">
-                          <div style="position: absolute; margin-top:-60px;" id="ims-insights"></div>
-                          <div class="ims-c-card">
-                            <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                              <h3 class="video-card-header">IMS Insights Series</h3>
-                              <p>These webinars cover timely topics such as new customer perspectives on IMS and managed ACBs.</p>		
-                              <div class="pure-u-1 pure-u-md-1">
-                                <div>
-                                  <p>
-                                    <b>Level</b>: Varies
-                                    &ensp;
-                                    <b>Time</b>: Varies
-                                  </p>
-                                </div>
-                                <div>
-                                  <a  alt="IMS Insights Series" 
-                                    title="IMS Insights Series" target="_blank" rel="noopener noreferrer" 
-                                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_05jsq9yl/" 
-                                    class="video-card-link">Watch now →
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <video-card 
+                        name="IMS Insights Series" 
+                        desc="These webinars cover timely topics such as new customer perspectives on IMS and managed ACBs."
+                        link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_05jsq9yl/1_ci4q5j5d"
+                        id="ims-insights"
+                        class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+                        >
+                        </video-card>
 
                         <!-- IMS Tools -->
+                        <video-card 
+                          name="IMS Tools" 
+                          desc="Review the various videos on IMS Tools."
+                          link="https://mediacenter.ibm.com/playlist/dedicated/189147413/1_cvhwa8r2/1_5xtr9qnf"
+                          id="ims-tools"
+                          class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+                          >
+                        </video-card>
+
                         <div class="pure-u-1 pure-u-lg-1-3">
                           <div style="position: absolute; margin-top:-60px;" id="ims-tools"></div>
                           <div class="ims-c-card">
