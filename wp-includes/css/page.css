@@ -40,6 +40,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: var(--white);
 }
 
 .blur-bg {
@@ -50,6 +51,15 @@
   background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--white);
+}
+
+.learn-bg {
+  background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  color: var(--black);
 }
 
 .white-bg {
@@ -103,7 +113,12 @@
 .icon-md {
   max-height: var(--plex-72);
   max-width: var(--plex-72);
-  
+}
+
+.icon-lg {
+  height: var(--plex-28);
+  max-height: var(--plex-72);
+  max-width: var(--plex-72);
 }
 
 .icon {
@@ -197,7 +212,6 @@
 .main-content section:first-child {
   width: 100%;
   background-color:var(--bg-dark-gray-01);
-  color: white;
 }
 
 .main-content section:first-child p {
@@ -225,6 +239,11 @@
 } 
 
 .section-header {
+  padding-right: 2em;
+}
+
+.card-section-header {
+  margin-left: 1em;
   padding-right: 2em;
 }
 

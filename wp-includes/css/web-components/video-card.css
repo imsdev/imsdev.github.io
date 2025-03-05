@@ -5,16 +5,6 @@
     --blue: #0f62fe;
         /* Background Color */
         --bg-light-gray: #f4f4f4;
-        --bg-dark-gray-01: #1c1c1c;
-        --bg-dark-gray-02: #2c2c2c;
-        --bg-dark-blue: #003A6D;
-        /* Button Color */
-        --btn-prim: #0f62fe;
-        --btn-prim-hover: #0050e6;
-        --btn-secnd: #6f6f6f;
-        --btn-scnd-hover: #5e5e5e;
-        /* Font Color */
-        --font-light-blue: #78A9FF;
 
     /* Sizing */
     --plex-14: 0.875em;
@@ -75,9 +65,17 @@ a {
     margin: 0em;
 }
 
+/* 768px and below screen sizes */
+@media  screen and (max-width: 48em) {
+    .video-card {
+        margin: 1em 0em;
+        padding: 1.5em;
+    }
+}
+
 /* 1024px and above screen sizes */
 @media  screen and (min-width: 64em) {
     .video-card {
-      height: 18.75em;
+        height: 18.75em;
     }
-  }
+}
