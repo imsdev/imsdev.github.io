@@ -34,10 +34,18 @@ a {
     color: var(--blue);
 }
 
+/* Styling for a group of links */
 .link-g {
     margin-top: 1em;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
+.link-g a {
+    margin: 0.2em 0em;
+}
+
+/* Styling for video card */
 .video-card {
     background-color: var(--bg-light-gray);
     margin: 1em;
@@ -50,10 +58,12 @@ a {
     flex-grow: 1;
 }
   
+/* Places 'watch now' at the bottom of the video card */
 .video-card div:nth-child(1) {
     flex-grow: 4;
 }
 
+/* Styling for inline group (level, time) */
 .inline-g {
     display: flex;
     flex-flow: row wrap;
@@ -65,16 +75,9 @@ a {
     margin: 0em;
 }
 
-/* 768px and below screen sizes */
-@media  screen and (max-width: 48em) {
-    .video-card {
-        margin: 1em 0em;
-        padding: 1.5em;
-    }
-}
-
 /* 1024px and above screen sizes */
 @media  screen and (min-width: 64em) {
+    /* Set consistent height for video card */
     .video-card {
         height: 18.75em;
     }

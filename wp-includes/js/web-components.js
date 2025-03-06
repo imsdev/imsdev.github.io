@@ -1,22 +1,28 @@
 // Web component
 class VideoCard extends HTMLElement {
 
+    // Creates element with default values
     constructor() {
         super();
         this.level = 'Varies';
         this.time = 'Varies';
+        this.linktext = 'now';
     }
 
+    // Return array of properties to observe
     static get observedAttributes() {
-        return ['name', 'desc', 'level', 'time', 'link'];
+        return ['name', 'desc', 'level', 'time', 'link', 'linktext', 'link2', 'linktext2', 'link3', 'linktext3'];
     }
 
+    // Called when an attribute is defined or changed
     attributeChangedCallback(property, oldValue, newValue) {
         if (oldValue === newValue) return;
         this[property] = newValue;
     }
  
+    // Invoked when element is added to document
     connectedCallback() {
+        // Create shadow root for element
         const shadow = this.attachShadow({mode: 'closed'});
         shadow.append(
             document.getElementById('video-card').content.cloneNode(true)
@@ -38,10 +44,29 @@ class VideoCard extends HTMLElement {
         const videoTime = shadow.querySelector('.video-time');
         videoTime.textContent = `${this.time}`;
 
-        // Set video link
+        // Set video links
         const videoLink = shadow.querySelector('.video-link');
-        videoLink.href = this.link;  
-        videoLink.setAttribute('alt', `Watch ${this.name} now`);      
+        const videoLink2 = shadow.querySelector('.video-link-2');
+        const videoLink3 = shadow.querySelector('.video-link-3');
+        const links = [
+            [this.link, this.linktext, videoLink],
+            [this.link2, this.linktext2, videoLink2],
+            [this.link3, this.linktext3, videoLink3]
+        ]
+
+        links.forEach(link => {
+            const url = link[0];
+            const linkText = link[1];
+            const linkObj = link[2];
+
+            // Check if urls have been defined
+            if (url != undefined) {
+                linkObj.href = url;
+                const altText = (linkText != 'now') ? `Watch ${this.name}, ${linkText}` : `Watch ${this.name}`; // Change link text if defined
+                linkObj.setAttribute('alt', altText);
+                linkObj.textContent = `Watch ${linkText} →`;
+            }
+        })
     }
 }
 

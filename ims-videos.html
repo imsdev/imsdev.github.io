@@ -287,6 +287,7 @@
         </header>
       </div>
 
+      <!-- Video card template -->
       <template id="video-card">
         <link href="wp-includes/css/web-components/video-card.css" rel="stylesheet">
         <div class="video-card">
@@ -299,7 +300,9 @@
             </div>
           </div>
           <div class="link-g">
-            <a class="video-link" target="_blank" rel="noopener noreferrer">Watch now →</a>
+            <a class="video-link" target="_blank" rel="noopener noreferrer"></a>
+            <a class="video-link-2" target="_blank" rel="noopener noreferrer"></a>
+            <a class="video-link-3" target="_blank" rel="noopener noreferrer"></a>
           </div>
         </div>
       </template>
@@ -331,7 +334,7 @@
             </div>
           </section>
 
-          <!-- =========================== Row for filtering =========================== -->
+          <!-- =========================== Filter =========================== -->
           <!-- remember, the behaviour is that clicking pulls you to the anchors -->
           <div class="zs-section filter-sec" id="anchor-link-menu">
             <div class="pure-g">
@@ -347,7 +350,8 @@
             </div>
           </div>
 
-          <section id="all" class="white-bg pure-g">
+          <!-- =========================== Videos - all roles =========================== -->
+          <section id="all" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>All roles</h3></div>
             <!-- IMS Community Calls -->
             <video-card 
@@ -406,468 +410,221 @@
             </video-card>
           </section>
 
-          <!-- =========================== Videos list =========================== -->
-          <div id="all" class="zs-gray-section videos-sec">
-            <section class="zs-section">
-              <!-- Info cards container -->
-              <div class="pure-g video-card-container">
+          <!-- =========================== Videos - database =========================== -->
+          <section id="imsdb" class="white-bg pure-g card-section">
+            <div class="pure-u-1 card-section-header"><h3>IMS database</h3></div>
+            <!-- IMS MACB -->
+            <video-card 
+              name="IMS Managed ACBs and IMS Catalog" 
+              desc="Check out this video series that describes the IMS catalog, how to implement it, 
+                and how to implement managed ACBs."
+              level="Beginner"
+              time="11 hours"
+              link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_6yvvheln/"
+              id="ims-macb"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- === IMS DATABASE SECTION === -->
-                <h3 id="imsdb" class="video-section-header">IMS database</h3>
+            <!-- IMS Catalog Database -->
+            <video-card 
+              name="IMS Catalog Database Repair and Recovery" 
+              desc="Learn how to repair and recover the IMS catalog database, which is an IMS 
+                high availability large database (HALDB)."
+              level="Intermediate"
+              time="45 minutes"
+              link="https://mediacenter.ibm.com/playlist/details/1_0qff2gc8/categoryId/122579632"
+              id="ims-cat-db"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- IMS MACB -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-macb"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">IMS Managed ACBs and IMS Catalog</h3>
-                      <p>Check out this video series that describes the IMS catalog, how to implement it, and how to implement managed ACBs.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Beginner
-                            &ensp;
-                            <b>Time</b>: 11 hours
-                          </p>
-                        </div>
-                        <div>
-                          <a  alt="IMS catalog and MACBs" 
-                            title="IMS catalog and MACBs" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_6yvvheln/" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- IMS Full Function Log -->
+            <video-card 
+              name="IMS Full-Function Log Record Analysis" 
+              desc="These videos describe log records associated with input and output message flows, 
+                application scheduling, and full-function database updates."
+              level="Intermediate"
+              time="1 hour"
+              link="https://mediacenter.ibm.com/playlist/details/1_khzutnim/categoryId/122579632"
+              id="ims-ff-log"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- IMS Catalog Database -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-cat-db"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">IMS Catalog Database Repair and Recovery</h3>
-                      <p>Learn how to repair and recover the IMS catalog database, which is an IMS high availability large database (HALDB).</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 45 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a  alt="IMS Catalog Database Repair and Recovery" 
-                            title="IMS Catalog Database Repair and Recovery" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_0qff2gc8/categoryId/122579632" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- IMS Reorg DBRC -->
+            <video-card 
+              name="How to Reorganize the IMS DBRC RECON Data Sets" 
+              desc="These videos show you the general steps for reorganizing IMS DBRC RECON data sets."
+              level="intermediate"
+              time="25 minutes"
+              link="https://mediacenter.ibm.com/playlist/details/1_8b576zt9/categoryId/122579632"
+              id="ims-reorg-dbrc"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- IMS Full Function Log -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-ff-log"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">IMS Full-Function Log Record Analysis</h3>
-                      <p>These videos describe log records associated with input and output message flows, application scheduling, and full-function database updates.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 1 hour
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="Full-Function Log Record Analysis" 
-                            title="Full-Function Log Record Analysis" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_khzutnim/categoryId/122579632" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- IMS Buffers -->
+            <video-card 
+              name="Managing IMS Buffers" 
+              desc="Check out these three playlists on VSAM, OSAM, and dynamic full-function databases buffers."
+              level="Intermediate"
+              link="https://mediacenter.ibm.com/playlist/details/1_ap436b3k/categoryId/122579632"
+              linktext="VSAM"
+              link2="https://mediacenter.ibm.com/playlist/details/1_ywfjxcwn/categoryId/122579632"
+              linktext2="OSAM"
+              link3="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_tzpfuwh2/1_zowuthrl"
+              linktext3="dynamic"
+              id="ims-buffers"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- IMS Reorg DBRC -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-reorg-dbrc"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">How to Reorganize the IMS DBRC RECON Data Sets</h3>
-                      <p>These videos show you the general steps for reorganizing IMS DBRC RECON data sets.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 25 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="Reorganize the IMS DBRC RECON data sets" 
-                            title="Reorganize the IMS DBRC RECON data sets" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_8b576zt9/categoryId/122579632" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- IMS DDL Utility -->
+            <video-card 
+              name="IMS z/OS Native DDL Utility" 
+              desc="Get an overview of a new IMS utility that submits SQL data definition language (DDL) statements against an IMS database."
+              level="Beginner"
+              time="12 minutes"
+              link="https://mediacenter.ibm.com/playlist/details/1_4u3gq2f0/categoryId/122579632"
+              id="ims-ddl-util"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
+          </section>
 
-                <!-- IMS Buffers -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-buffers"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">Managing IMS Buffers</h3>
-                      <p>Check out these three playlists on VSAM, OSAM, and dynamic full-function databases buffers.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: Varies
-                          </p>
-                        </div>
-                        <div class="video-card-link"> 
-                          <a alt="Managing VSAM Buffers" 
-                            title="Managing VSAM Buffers" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_ap436b3k/categoryId/122579632" 
-                            >Watch VSAM →
-                          </a>
-                          <br/>
-                          <a alt="Managing OSAM Buffers" 
-                            title="Managing OSAM Buffers" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_ywfjxcwn/categoryId/122579632" 
-                            >Watch OSAM →
-                          </a>
-                          <br/>
-                          <a alt="Managing Dynamic Buffers" 
-                            title="Managing Dynamic Buffers" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_tzpfuwh2/1_zowuthrl" 
-                            >Watch dynamic →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <!-- =========================== Videos - system programming =========================== -->
+          <section id="sysprog" class="white-bg pure-g card-section">
+            <div class="pure-u-1 card-section-header"><h3>System programming</h3></div>
+            <!-- IMS Security Audit -->
+            <video-card 
+              name="IMS Security Audits: Gathering the Right Documentation" 
+              desc="Learn what information to obtain and what some important settings and parameters mean 
+                when you need to do an IMS security health check."
+              level="Intermediate"
+              time="1 hour"
+              link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_zdruhxrk/"
+              id="ims-sec-aud"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- IMS DDL Utility -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-ddl-util"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">IMS z/OS Native DDL Utility</h3>
-                      <p>Get an overview of a new IMS utility that submits SQL data definition language (DDL) statements against an IMS database.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Beginner
-                            &ensp;
-                            <b>Time</b>: 12 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="IMS z/OS Native DDL Utility" 
-                            title="IMS z/OS Native DDL Utility" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_4u3gq2f0/categoryId/122579632" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- IMS Monitor Reports -->
+            <video-card 
+              name="IMS Monitor Reports" 
+              desc="The IMS Monitor is a no-cost tool provided with IMS. The IMS Monitor can create many types 
+                of reports, including buffer pool statistics program, program I/O, and message queuing."
+              level="Intermediate"
+              time="45 minutes"
+              link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_3g7mquxe/"
+              id="ims-mon-rep"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- === SYSTEM PROGRAMMING SECTION === -->
-                <h3 id="sysprog" class="video-section-header">System programming</h3>
+            <!-- z/OS Logger Reports IMS Shared Queues -->
+            <video-card 
+              name="z/OS Logger Reports IMS Shared Queues" 
+              desc="Learn to use the z/OS Logger so that you can monitor the performance of an IMS shared queues environment."
+              level="Intermediate"
+              time="50 minutes"
+              link="https://mediacenter.ibm.com/playlist/details/1_b9i8fwj8/categoryId/122579632"
+              id="shared-queue-log-reports"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- IMS Security Audit -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-sec-aud"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">IMS Security Audits: Gathering the Right Documentation</h3>
-                      <p>Learn what information to obtain and what some important settings and parameters mean when you need to do an IMS security health check.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 1 hour
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="IMS Security Audits" 
-                            title="IMS Security Audits" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_zdruhxrk/" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- IMS Distributed Environments -->
+            <video-card 
+              name="IMS and Distributed Environment Security" 
+              desc="Learn how to secure frontend or distributed environments as they relate to IMS."
+              level="Advanced"
+              time="1 hour, 25 minutes"
+              link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_9uja2ely/"
+              id="ims-dis-env"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- IMS Monitor Reports -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-mon-rep"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">IMS Monitor Reports</h3>
-                      <p>The IMS Monitor is a no-cost tool provided with IMS. The IMS Monitor can create many types of reports, including buffer pool statistics program, program I/O, and message queuing.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 45 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="IMS Monitor Reports" 
-                            title="IMS Monitor Reports" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_3g7mquxe/" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- XCF and Support of IMS Facilities for Shared Queues -->
+            <video-card 
+              name="XCF and Support of IMS Facilities for Shared Queues" 
+              desc="Learn about the z/OS cross-system coupling facility (XCF) that offers a set of communication 
+                services that you use for IMS shared queues."
+              level="Intermediate"
+              time="50 minutes"
+              link="https://mediacenter.ibm.com/playlist/details/1_cxmb4bin/categoryId/122579632"
+              id="xcf-shared-queues"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- z/OS Logger Reports IMS Shared Queues -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="shared-queue-log-reports"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">z/OS Logger Reports IMS Shared Queues</h3>
-                      <p>Learn to use the z/OS Logger so that you can monitor the performance of an IMS shared queues environment.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 50 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="z/OS Logger Reports IMS Shared Queues" 
-                            title="z/OS Logger Reports IMS Shared Queues" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_b9i8fwj8/categoryId/122579632" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- Tuning IMS Scheduling by Using PWFI -->
+            <video-card 
+              name="Review of IMS Scheduling" 
+              desc="Learn about IMS scheduling parameters such as PARLIM, PROCLIM, and regions WFI and PWFI to help 
+                you run transactions more efficiently."
+              level="Intermediate"
+              time="1 hour, 20 minutes"
+              link="https://mediacenter.ibm.com/playlist/details/1_qhdnpjv3/categoryId/122579632"
+              id="ims-scheduling-pwfi"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
+          </section>
 
-                <!-- IMS Distributed Environments -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-dis-env"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">IMS and Distributed Environment Security</h3>
-                      <p>Learn how to secure frontend or distributed environments as they relate to IMS.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Advanced
-                            &ensp;
-                            <b>Time</b>: 1 hour, 25 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="IMS and Distributed Environment Security" 
-                            title="IMS and Distributed Environment Security" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_9uja2ely/" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <!-- =========================== Videos - system programming =========================== -->
+          <section id="appdev" class="white-bg pure-g card-section">
+            <div class="pure-u-1 card-section-header"><h3>Application development</h3></div>
+            <!-- IMS Java Demos -->
+            <video-card 
+              name="Java in IMS demos" 
+              desc="Watch these short demos showing how to build Java™ applications for IMS."
+              level="Intermediate"
+              time="27 minutes"
+              link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_owktz0jm/1_ye4uoner"
+              id="ims-java"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- XCF and Support of IMS Facilities for Shared Queues -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="xcf-shared-queues"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">XCF and Support of IMS Facilities for Shared Queues</h3>
-                      <p>Learn about the z/OS cross-system coupling facility (XCF) that offers a set of communication services that you use for IMS shared queues.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 50 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="XCF and Support of IMS Facilities for Shared Queues" 
-                            title="XCF and Support of IMS Facilities for Shared Queues" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_cxmb4bin/categoryId/122579632" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- IMS Explorer -->
+            <video-card 
+              name="IMS Explorer" 
+              desc="Learn about the Eclipse-based graphical tool that simplifies common IMS tasks that are related
+               to IMS application development."
+              level="Intermediate"
+              time="1.15 hours"
+              link="https://mediacenter.ibm.com/playlist/dedicated/122579632/0_3n5xj4z6/0_ky5ochli"
+              id="ims-exp"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- Tuning IMS Scheduling by Using PWFI -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-scheduling-pwfi"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">Review of IMS Scheduling</h3>
-                      <p>Learn about IMS scheduling parameters such as PARLIM, PROCLIM, and regions WFI and PWFI to help you run transactions more efficiently.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 1 hour, 20 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="Tuning IMS Scheduling using PWFI" 
-                            title="Tuning IMS Scheduling using PWFI" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/details/1_qhdnpjv3/categoryId/122579632" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- IMS Java Applications -->
+            <video-card 
+              name="Java and IMS" 
+              desc="This introductory video series helps you learn how to create Java applications for IMS."
+              level="Intermediate"
+              time="20 minutes"
+              link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_bf4e6c7p/1_coy64ih0"
+              id="ims-javaims"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
 
-                <!-- === APPLICATION DEVELOPMENT SECTION === -->
-                <h3 id="appdev" class="video-section-header">Application development</h3>
-
-                <!-- IMS Java Demos -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-java"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">Java in IMS demos</h3>
-                      <p>Watch these short demos showing how to build Java™ applications for IMS.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate    
-                            &ensp;
-                            <b>Time</b>: 27 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="Java IMS demos" 
-                            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_owktz0jm/1_ye4uoner" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- IMS Explorer -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-exp"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">IMS Explorer</h3>
-                      <p>Learn about the Eclipse-based graphical tool that simplifies common IMS tasks that are related to IMS application development.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 1.15 hours
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="IMS Explorer" 
-                            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/0_3n5xj4z6/0_ky5ochli" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- IMS Java Applications -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-javaims"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">Java and IMS</h3>
-                      <p>This introductory video series helps you learn how to create Java applications for IMS.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate
-                            &ensp;
-                            <b>Time</b>: 20 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="Java and IMS" 
-                            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_bf4e6c7p/1_coy64ih0" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- IMS Interoperability -->
-                <div class="pure-u-1 pure-u-lg-1-3">
-                  <div style="position: absolute; margin-top:-60px;" id="ims-interop"></div>
-                  <div class="ims-c-card">
-                    <div class="pure-u-1 pure-u-md-1 ims-c-card-content">
-                      <h3 class="video-card-header">Modernize Legacy Applications with 31-bit COBOL and 64-bit Java interoperability</h3>
-                      <p>This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications.</p>		
-                      <div class="pure-u-1 pure-u-md-1">
-                        <div>
-                          <p>
-                            <b>Level</b>: Intermediate    
-                            &ensp;
-                            <b>Time</b>: 13 minutes
-                          </p>
-                        </div>
-                        <div>
-                          <a alt="31-bit COBOL and 64-bit Java Interoperability" 
-                            title="IMS Diagnostics" target="_blank" rel="noopener noreferrer" 
-                            href="https://mediacenter.ibm.com/media/Modernize+legacy+applications+with+31-bit+COBOL+and+64-bit+Java+interoperability/1_jj3fq6io" 
-                            class="video-card-link">Watch now →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </section>
-          </div>
+            <!-- IMS Interoperability -->
+            <video-card 
+              name="Modernize Legacy Applications with 31-bit COBOL and 64-bit Java interoperability" 
+              desc="This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications."
+              level="Intermediate"
+              time="13 minutes"
+              link="https://mediacenter.ibm.com/media/Modernize+legacy+applications+with+31-bit+COBOL+and+64-bit+Java+interoperability/1_jj3fq6io"
+              id="ims-interop"
+              class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
+            >
+            </video-card>
+          </section>
 
           <!-- =========================== back to top =========================== -->
           <div>
@@ -875,7 +632,7 @@
           </div>
 
         </main>
-      </div> <!-- #content -->
+      </div>
 
       <!-- FOOTER -->
       <footer aria-label="IBM" id="themeFooter">
