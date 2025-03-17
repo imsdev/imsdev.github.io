@@ -1,21 +1,12 @@
 :root {
     /* Color */
-    --white: #fff;
-    --black: #000;
     --blue: #0f62fe;
         /* Background Color */
         --bg-light-gray: #f4f4f4;
 
     /* Sizing */
-    --plex-14: 0.875em;
-    --plex-16: 1em;
     --plex-18: 1.125em;
-    --plex-20: 1.25em;
-    --plex-24: 1.5em;
-    --plex-28: 1.75em;
-    --plex-36: 2.25em;
-    --plex-72: 4.5em;
-    --plex-180: 11.25em;
+    --plex-24: 1.5em; 
 }
 
 h2 {

@@ -2,6 +2,83 @@
 const template = document.createElement('template');
 template.innerHTML = 
 `
+    <style>
+        :root {
+            /* Color */
+            --blue: #0f62fe;
+                /* Background Color */
+                --bg-light-gray: #f4f4f4;
+
+            /* Sizing */
+            --plex-18: 1.125em;
+            --plex-24: 1.5em; 
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: var(--plex-24);
+            padding: 0em;
+            margin: 0em;
+        }
+
+        p {
+            font-size: var(--plex-18);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--blue);
+        }
+
+        /* Styling for a group of links */
+        .link-g {
+            margin-top: 1em;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .link-g a {
+            margin: 0.2em 0em;
+        }
+
+        /* Styling for video card */
+        .video-card {
+            background-color: var(--bg-light-gray);
+            margin: 1em;
+            padding: 2em;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .video-card div:nth-child(0) {
+            flex-grow: 1;
+        }
+        
+        /* Places 'watch now' at the bottom of the video card */
+        .video-card div:nth-child(1) {
+            flex-grow: 4;
+        }
+
+        /* Styling for inline group (level, time) */
+        .inline-g {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 1em;
+        }
+
+        .inline-g p {
+            padding: 0em;
+            margin: 0em;
+        }
+
+        /* 1024px and above screen sizes */
+        @media screen and (min-width: 64em) {
+            /* Set consistent height for video card */
+            .video-card {
+                height: 18.75em;
+            }
+        }
+    </style>
     <div class="video-card">
         <div>
         <h2 class="video-name"></h2>
