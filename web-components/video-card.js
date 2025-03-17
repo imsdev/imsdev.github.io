@@ -1,3 +1,24 @@
+// HTML template
+const template = document.createElement('template');
+template.innerHTML = 
+`
+    <div class="video-card">
+        <div>
+        <h2 class="video-name"></h2>
+        <p class="video-desc"></p>
+        <div class="inline-g">
+            <p><b>Level: </b><span class="video-level"></span></p>
+            <p><b>Time: </b><span class="video-time"></span></p>
+        </div>
+        </div>
+        <div class="link-g">
+        <a class="video-link" target="_blank" rel="noopener noreferrer"></a>
+        <a class="video-link-2" target="_blank" rel="noopener noreferrer"></a>
+        <a class="video-link-3" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+    </div>
+`;
+
 // Web component
 class VideoCard extends HTMLElement {
 
@@ -25,7 +46,8 @@ class VideoCard extends HTMLElement {
         // Create shadow root for element
         const shadow = this.attachShadow({mode: 'closed'});
         shadow.append(
-            document.getElementById('video-card').content.cloneNode(true)
+            // document.getElementById('video-card').content.cloneNode(true) // Use this line to test template in ims-videos.html
+            template.content.cloneNode(true)
         );
 
         // Set video name
