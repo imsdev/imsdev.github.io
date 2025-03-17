@@ -1,12 +1,11 @@
 // Fetch HTML template
-var html_template;
 fetch("web-components/video-card/video-card.html")
     .then(stream => stream.text())
     .then(text => createComponent(text))
 
 // Create web component
 function createComponent(html) {
-    // Web component
+    // Web component class
     class VideoCard extends HTMLElement {
 
         // Creates element with default values
