@@ -40,6 +40,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: var(--white);
 }
 
 .blur-bg {
@@ -50,6 +51,15 @@
   background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
   background-repeat: no-repeat;
   background-size: cover;
+  color: var(--white);
+}
+
+.learn-bg {
+  background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  color: var(--black);
 }
 
 .white-bg {
@@ -103,7 +113,12 @@
 .icon-md {
   max-height: var(--plex-72);
   max-width: var(--plex-72);
-  
+}
+
+.icon-lg {
+  height: var(--plex-28);
+  max-height: var(--plex-72);
+  max-width: var(--plex-72);
 }
 
 .icon {
@@ -194,10 +209,13 @@
   padding: 3em;
 }
 
+.hero div:nth-child(2) {
+  padding-left: 1em;
+}
+
 .main-content section:first-child {
   width: 100%;
   background-color:var(--bg-dark-gray-01);
-  color: white;
 }
 
 .main-content section:first-child p {
@@ -225,6 +243,16 @@
 } 
 
 .section-header {
+  padding-right: 2em;
+}
+
+/* Targets all section containing card grid (ex. videos, course, etc.) */
+.card-section {
+  padding: 2em 4em !important;
+}
+
+.card-section-header {
+  margin-left: 1em;
   padding-right: 2em;
 }
 
@@ -331,21 +359,35 @@
     padding: 2em;
   } 
 
+  /* Decrease card section padding for smaller screens */
+  .card-section {
+    padding: 1em !important;
+  }
+
+  /* Decrease padding for smaller screens */
   .pure-g-pad > div {
     padding: 0.4em;
   }
 
+  /* Decrease highlight link padding for smaller screens */
   .highlight-link {
     padding-bottom: 1rem;
   }
 
+  /* Decrease font size for smaller screens */
   .dark-gray-bg h4 {
     font-size: var(--plex-20) !important;
+  }
+
+  /* Remove padding from hero content for smaller screens */
+  .hero div:nth-child(2) {
+    padding-left: 0em;
   }
 }
 
 /* 1024px and above screen sizes */
 @media  screen and (min-width: 64em) {
+  /* Resize quote block to full height for larger screens */
   .quote-blk {
     height: 100%;
   }

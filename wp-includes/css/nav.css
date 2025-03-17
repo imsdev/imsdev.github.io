@@ -716,7 +716,7 @@ body .pn-listing .pn-list__item .entry-content p {
 }
 
 /* link */
-a, a:visited {
+a {
 	display: inline-block;
 	color: #0F62FE;
 	text-decoration: none;
