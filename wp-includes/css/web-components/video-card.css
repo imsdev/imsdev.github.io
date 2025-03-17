@@ -76,7 +76,7 @@ a {
 }
 
 /* 1024px and above screen sizes */
-@media  screen and (min-width: 64em) {
+@media screen and (min-width: 64em) {
     /* Set consistent height for video card */
     .video-card {
         height: 18.75em;
