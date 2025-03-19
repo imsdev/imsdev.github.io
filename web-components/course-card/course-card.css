@@ -94,6 +94,6 @@ img {
     .inline-g div {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        width: 75%;
+        width: 90%;
     }
 }
