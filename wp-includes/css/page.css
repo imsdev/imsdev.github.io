@@ -6,7 +6,8 @@
   --black: #000;
   --blue: #0f62fe;
     /* Background Color */
-    --bg-light-gray: #f4f4f4;
+    --bg-light-gray-01: #f4f4f4;
+    --bg-light-gray-02: #ececec;
     --bg-dark-gray-01: #1c1c1c;
     --bg-dark-gray-02: #2c2c2c;
     --bg-dark-blue: #003A6D;
@@ -71,11 +72,19 @@
   }
 
 .gray-bg {
-  background-color: var(--bg-light-gray);
+  background-color: var(--bg-light-gray-01);
 }
 
-  .gray-bg h3, .gray-bg h4 {
+.gray-bg-02 {
+  background-color: var(--bg-light-gray-02);
+}
+
+  .gray-bg h3, .gray-bg h4, .gray-bg-02 h3, .gray-bg-02 h4 {
     color: var(--black);
+  }
+
+  .gray-bg a, .gray-bg-02 a {
+    color: var(--blue);
   }
 
 .blue-bg {
@@ -316,7 +325,7 @@
 }
 
 .quote-blk {
-  background-color: var(--bg-light-gray);
+  background-color: var(--bg-light-gray-01);
   margin: 0.2em;
   padding: 2em;
   color: var(--black);
