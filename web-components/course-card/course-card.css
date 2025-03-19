@@ -26,11 +26,23 @@ img {
     gap: 2em;
 }
 
+.column-g {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
 /* Styling for inline group (level, time) */
 .inline-g {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.inline-g div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
 }
 
 .inline-g p {
@@ -54,9 +66,34 @@ img {
     border-bottom: 2px dotted lightgray;
 }
 
+/* 768px and below screen sizes */
+@media screen and (max-width: 48em) {
+    .inline-g {
+        width: 90%;
+    }
+}
+
 /* 1024px and above screen sizes */
 @media screen and (min-width: 64em) {
     .course-card {
         flex-flow: row nowrap;
+    }
+}
+
+/* 1440px and above screen sizes */
+@media screen and (min-width: 90em) {
+    .course-card {
+        align-items: center;
+    }
+
+    .inline-g {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+    }
+
+    .inline-g div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 75%;
     }
 }
