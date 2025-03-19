@@ -5,6 +5,18 @@ fetch("web-components/course-card/course-card.html")
 
 // Create web component
 function createComponent(html) {
+
+    function setContent(cssSelector, content, shadow) {
+        const selector = shadow.querySelector(cssSelector);
+        selector.textContent = content;
+    }
+
+    function setLink(cssSelector, url, name, shadow) {
+        const link = shadow.querySelector(cssSelector);
+        link.href = url;
+        link.setAttribute('aria-label', `Learn more about ${name}`);
+    }
+
     // Web component class
     class CourseCard extends HTMLElement {
 
@@ -15,7 +27,7 @@ function createComponent(html) {
 
         // Return array of properties to observe
         static get observedAttributes() {
-            return ['name', 'desc', 'level', 'cost', 'badge', 'time', 'link', 'imgsrc'];
+            return ['name', 'desc', 'imgsrc', 'level', 'cost', 'badge', 'time', 'link', 'livelevel', 'livecost', 'livebadge', 'livetime', 'livelink'];
         }
 
         // Called when an attribute is defined or changed
@@ -29,40 +41,44 @@ function createComponent(html) {
             // Create shadow root for element
             const shadow = this.attachShadow({mode: 'closed'});
             shadow.innerHTML = html;
-
-            // Set course name
-            const courseName = shadow.querySelector('.course-name');
-            courseName.textContent = this.name;
-
-            // Set course desc
-            const courseDesc = shadow.querySelector('.course-desc');
-            courseDesc.textContent = this.desc;
-
-            // Set course level
-            const courseLevel = shadow.querySelector('.course-level');
-            courseLevel.textContent = this.level;
-
-            // Set course cost
-            const courseCost = shadow.querySelector('.course-cost');
-            courseCost.textContent = this.cost;
-
-            // Set course badge
-            const courseBadge = shadow.querySelector('.course-badge');
-            courseBadge.textContent = this.badge;
-
-            // Set course time
-            const courseTime = shadow.querySelector('.course-time');
-            courseTime.textContent = this.time;
-
-            // Set course link
-            const courseLink = shadow.querySelector('.course-link');
-            courseLink.href = this.link;
-            courseLink.setAttribute('aria-label', `Learn more about ${this.name}`);
-
+            
             // Set course img
             const courseImg = shadow.querySelector('.course-img');
             courseImg.src = this.imgsrc;
             courseImg.setAttribute('alt', `${this.name} badge`);
+
+            // Set course name
+            setContent('.course-name', this.name, shadow);
+            // Set course desc
+            setContent('.course-desc', this.desc, shadow);
+            // Set course level
+            setContent('.course-level', this.level, shadow);
+            // Set course cost
+            setContent('.course-cost', this.cost, shadow);
+            // Set course badge
+            setContent('.course-badge', this.badge, shadow);
+            // Set course time
+            setContent('.course-time', this.time, shadow);
+            // Set course link
+            setLink('.course-link', this.link, this.name, shadow);
+
+            // Hide live course if not available
+            if (this.livelevel == undefined) {
+                const liveCourse = shadow.querySelector('.live-course');
+                const liveCourseLink = shadow.querySelector('.live-link');
+                liveCourse.style.display = liveCourseLink.style.display = "none";
+            } else {
+                // Set course level
+                setContent('.live-level', this.livelevel, shadow);
+                // Set course cost
+                setContent('.live-cost', this.livecost, shadow);
+                // Set course badge
+                setContent('.live-badge', this.livebadge, shadow);
+                // Set course time
+                setContent('.live-time', this.livetime, shadow);
+                // Set course link
+                setLink('.live-link', this.livelink, this.name, shadow);
+            }
         }
     }
 

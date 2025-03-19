@@ -21,18 +21,26 @@ img {
 /* Styling for a link group */
 .link-g {
     margin-top: 1.4em;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
 }
 
 /* Styling for inline group (level, time) */
 .inline-g {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 75%;
 }
 
 .inline-g p {
     padding: 0em;
     margin: 0em;
+    font-weight: bold;
+}
+
+.inline-g span {
+    font-weight: normal;
 }
 
 /* Styling for course card */
