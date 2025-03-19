@@ -110,15 +110,12 @@
   margin-bottom: 1.25em;
 }
 
-.icon-md {
-  max-height: var(--plex-72);
-  max-width: var(--plex-72);
-}
-
 .icon-lg {
   height: var(--plex-28);
-  max-height: var(--plex-72);
-  max-width: var(--plex-72);
+}
+
+.icon-xl {
+  height: var(--plex-36);
 }
 
 .icon {
@@ -342,6 +339,11 @@
 /* Spacer between sections */
 .spacer {
   height: 0.3125em;
+}
+
+/* Hero section subtext */
+.subtext {
+  font-weight: 300;
 }
 /* -------------------------------------------------------- */
 

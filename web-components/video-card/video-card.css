@@ -1,14 +1,3 @@
-:root {
-    /* Color */
-    --blue: #0f62fe;
-        /* Background Color */
-        --bg-light-gray: #f4f4f4;
-
-    /* Sizing */
-    --plex-18: 1.125em;
-    --plex-24: 1.5em; 
-}
-
 h2 {
     font-weight: 400;
     font-size: var(--plex-24);
