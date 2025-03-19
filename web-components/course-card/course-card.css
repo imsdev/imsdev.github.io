@@ -86,10 +86,10 @@ img {
         align-items: center;
     }
 
-    .inline-g {
+    /* .inline-g {
         display: grid;
         grid-template-columns: 1fr 6fr;
-    }
+    } */
 
     .inline-g div {
         display: grid;
