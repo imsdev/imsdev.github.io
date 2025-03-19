@@ -78,6 +78,10 @@
     color: var(--black);
   }
 
+  .gray-bg a {
+    color: var(--blue)
+  }
+
 .blue-bg {
   background-color: var(--bg-dark-blue);
   color: var(--white);
