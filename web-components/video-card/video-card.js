@@ -39,19 +39,19 @@ function createComponent(html) {
 
             // Set video name
             const videoName = shadow.querySelector('.video-name');
-            videoName.textContent = `${this.name}`;
+            videoName.textContent = this.name;
 
             // Set video desc
             const videoDesc = shadow.querySelector('.video-desc');
-            videoDesc.textContent = `${this.desc}`;
+            videoDesc.textContent = this.desc;
 
             // Set video level
             const videoLevel = shadow.querySelector('.video-level');
-            videoLevel.textContent = `${this.level}`;
+            videoLevel.textContent = this.level;
 
             // Set video time
             const videoTime = shadow.querySelector('.video-time');
-            videoTime.textContent = `${this.time}`;
+            videoTime.textContent = this.time;
 
             // Set video links
             const videoLink = shadow.querySelector('.video-link');
@@ -71,8 +71,8 @@ function createComponent(html) {
                 // Check if urls have been defined
                 if (url != undefined) {
                     linkObj.href = url;
-                    const altText = (linkText != 'now') ? `Watch ${this.name}, ${linkText}` : `Watch ${this.name}`; // Change link text if defined
-                    linkObj.setAttribute('alt', altText);
+                    const ariaText = (linkText != 'now') ? `Watch ${this.name}, ${linkText}` : `Watch ${this.name}`; // Change link text if defined
+                    linkObj.setAttribute('aria-label', ariaText);
                     linkObj.textContent = `Watch ${linkText} →`;
                 }
             })
