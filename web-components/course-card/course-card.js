@@ -36,6 +36,20 @@ function createComponent(html) {
         link.setAttribute('aria-label', `Learn more about ${name}`);
     }
 
+    /**
+     * Sets the content of an element based on a CSS selector.
+     * @param {string} cssSelector - The CSS selector of the element to set the content for.
+     * @param {string} src - The image source to set for the element.
+     * @param {string} name - The name of the element containing the image.
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
+     * @returns {void}
+     */
+    function setImage(cssSelector, src, name, shadow) {
+        const courseImg = shadow.querySelector(cssSelector);
+        courseImg.src = src;
+        courseImg.setAttribute('alt', `${name} badge`);
+    }
+
     // Web component class representing a course card.
     class CourseCard extends HTMLElement {
 
@@ -70,10 +84,7 @@ function createComponent(html) {
             shadow.innerHTML = html;
             
             // Set course img
-            const courseImg = shadow.querySelector('.course-img');
-            courseImg.src = this.imgsrc;
-            courseImg.setAttribute('alt', `${this.name} badge`);
-
+            setImage('.course-img', this.imgsrc, this.name, shadow);
             // Set course name
             setContent('.course-name', this.name, shadow);
             // Set course desc
