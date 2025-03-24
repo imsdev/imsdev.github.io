@@ -3,34 +3,61 @@ fetch("web-components/course-card/course-card.html")
     .then(stream => stream.text())
     .then(text => createComponent(text))
 
-// Create web component
+/**
+ * Creates a web component using a given HTML template.
+ * @param {string} html - The HTML template.
+ * @returns {void}
+ */
 function createComponent(html) {
 
+    /**
+     * Sets the content of an element based on a CSS selector.
+     * @param {string} cssSelector - The CSS selector of the element to set the content for.
+     * @param {string} content - The content to set for the element.
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
+     * @returns {void}
+     */
     function setContent(cssSelector, content, shadow) {
         const selector = shadow.querySelector(cssSelector);
         selector.textContent = content;
     }
 
+    /**
+     * Sets the link of an element based on a CSS selector.
+     * @param {string} cssSelector - The CSS selector of the element to set the link for.
+     * @param {string} url - The link url.
+     * @param {string} name - The name of the element containing the link.
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
+     * @returns {void}
+     */
     function setLink(cssSelector, url, name, shadow) {
         const link = shadow.querySelector(cssSelector);
         link.href = url;
         link.setAttribute('aria-label', `Learn more about ${name}`);
     }
 
-    // Web component class
+    // Web component class representing a course card.
     class CourseCard extends HTMLElement {
 
-        // Creates element with default values
+        // Creates an instance of CourseCard
         constructor() {
             super();
         }
 
-        // Return array of properties to observe
+        /**
+         * Returns an array of properties to observe.
+         * @returns {Array} An array of property names.
+        */
         static get observedAttributes() {
             return ['name', 'desc', 'imgsrc', 'level', 'cost', 'badge', 'time', 'link', 'livelevel', 'livecost', 'livebadge', 'livetime', 'livelink'];
         }
 
-        // Called when an attribute is defined or changed
+        /**
+         * Called when an attribute is defined or changed.
+         * @param {string} property - The name of the attribute.
+         * @param {string} oldValue - The old value of the attribute.
+         * @param {string} newValue - The new value of the attribute.
+        */
         attributeChangedCallback(property, oldValue, newValue) {
             if (oldValue === newValue) return;
             this[property] = newValue;
@@ -82,5 +109,6 @@ function createComponent(html) {
         }
     }
 
+    // Define new CourseCard element
     customElements.define('course-card', CourseCard);
 }
