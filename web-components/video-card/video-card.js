@@ -41,10 +41,10 @@ function createComponent(html) {
         }
     }
 
-    // Web component class
+    // Web component class representing a video card.
     class VideoCard extends HTMLElement {
 
-        // Creates element with default values
+        // Creates an instance of VideoCard
         constructor() {
             super();
             this.level = 'Varies';
@@ -52,18 +52,28 @@ function createComponent(html) {
             this.linktext = 'now';
         }
 
-        // Return array of properties to observe
+        /**
+         * Returns an array of properties to observe.
+         * @returns {Array} An array of property names.
+        */
         static get observedAttributes() {
             return ['name', 'desc', 'level', 'time', 'link', 'linktext', 'link2', 'linktext2', 'link3', 'linktext3'];
         }
 
-        // Called when an attribute is defined or changed
+        /**
+         * Called when an attribute is defined or changed.
+         * @param {string} property - The name of the attribute.
+         * @param {string} oldValue - The old value of the attribute.
+         * @param {string} newValue - The new value of the attribute.
+        */
         attributeChangedCallback(property, oldValue, newValue) {
             if (oldValue === newValue) return;
             this[property] = newValue;
         }
     
-        // Invoked when element is added to document
+        /**
+         * Invoked when the element is added to the document.
+        */
         connectedCallback() {
             // Create shadow root for element
             const shadow = this.attachShadow({mode: 'closed'});
@@ -88,6 +98,7 @@ function createComponent(html) {
         }
     }
 
+    // Define new VideoCard element
     customElements.define('video-card', VideoCard);
 }
 
