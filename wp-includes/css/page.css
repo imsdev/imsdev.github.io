@@ -6,7 +6,8 @@
   --black: #000;
   --blue: #0f62fe;
     /* Background Color */
-    --bg-light-gray: #f4f4f4;
+    --bg-light-gray: #F9F9F9;
+    --bg-gray: #f4f4f4;
     --bg-dark-gray-01: #1c1c1c;
     --bg-dark-gray-02: #2c2c2c;
     --bg-dark-blue: #003A6D;
@@ -71,11 +72,23 @@
   }
 
 .gray-bg {
+  background-color: var(--bg-gray);
+}
+
+.light-gray-bg {
   background-color: var(--bg-light-gray);
 }
 
-  .gray-bg h3, .gray-bg h4 {
+  .gray-bg a, .light-gray-bg a {
+    color: var(--blue);
+  }
+
+  .gray-bg h3, .gray-bg h4, .light-gray-bg h3, .light-gray-bg h4 {
     color: var(--black);
+  }
+
+  .gray-bg a {
+    color: var(--blue)
   }
 
 .blue-bg {
@@ -110,15 +123,12 @@
   margin-bottom: 1.25em;
 }
 
-.icon-md {
-  max-height: var(--plex-72);
-  max-width: var(--plex-72);
-}
-
 .icon-lg {
   height: var(--plex-28);
-  max-height: var(--plex-72);
-  max-width: var(--plex-72);
+}
+
+.icon-xl {
+  height: var(--plex-36);
 }
 
 .icon {
@@ -319,7 +329,7 @@
 }
 
 .quote-blk {
-  background-color: var(--bg-light-gray);
+  background-color: var(--bg-gray);
   margin: 0.2em;
   padding: 2em;
   color: var(--black);
@@ -342,6 +352,11 @@
 /* Spacer between sections */
 .spacer {
   height: 0.3125em;
+}
+
+/* Hero section subtext */
+.subtext {
+  font-weight: 300;
 }
 /* -------------------------------------------------------- */
 
