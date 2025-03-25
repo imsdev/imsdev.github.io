@@ -146,6 +146,7 @@
   color: var(--white) !important;
   padding: 1em 1.5em;
   line-height: var(--plex-24);
+  justify-content: center;
 }
 
 .button-primary {
@@ -348,6 +349,25 @@
 .highlight-link {
   font-size: var(--plex-20);
   color: var(--blue);
+}
+
+.external-link {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.external-link p {
+  margin: 0em;
+  padding: 0em;
+  font-size: var(--plex-16);
+}
+
+.external-link img {
+  margin: 0em;
+  padding: 0em;
+  max-width: 1.2em;
 }
 
 /* Spacer between sections */
