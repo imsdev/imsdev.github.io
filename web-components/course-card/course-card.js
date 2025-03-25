@@ -23,11 +23,12 @@ function createComponent(html) {
         // Creates element with default values
         constructor() {
             super();
+            this.selfpaced = 'true';
         }
 
         // Return array of properties to observe
         static get observedAttributes() {
-            return ['name', 'desc', 'imgsrc', 'level', 'cost', 'badge', 'time', 'link', 'livelevel', 'livecost', 'livebadge', 'livetime', 'livelink'];
+            return ['name', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'link'];
         }
 
         // Called when an attribute is defined or changed
@@ -53,6 +54,9 @@ function createComponent(html) {
             setContent('.course-desc', this.desc, shadow);
             // Set course level
             setContent('.course-level', this.level, shadow);
+            // Set course type
+            const courseType = this.selfpaced == 'true' ? 'Self-paced: ' : 'Instructor-led: ';
+            setContent('.course-type', courseType, shadow);
             // Set course cost
             setContent('.course-cost', this.cost, shadow);
             // Set course badge
@@ -63,22 +67,22 @@ function createComponent(html) {
             setLink('.course-link', this.link, this.name, shadow);
 
             // Hide live course if not available
-            if (this.livelevel == undefined) {
-                const liveCourse = shadow.querySelector('.live-course');
-                const liveCourseLink = shadow.querySelector('.live-link');
-                liveCourse.style.display = liveCourseLink.style.display = "none";
-            } else {
-                // Set course level
-                setContent('.live-level', this.livelevel, shadow);
-                // Set course cost
-                setContent('.live-cost', this.livecost, shadow);
-                // Set course badge
-                setContent('.live-badge', this.livebadge, shadow);
-                // Set course time
-                setContent('.live-time', this.livetime, shadow);
-                // Set course link
-                setLink('.live-link', this.livelink, this.name, shadow);
-            }
+            // if (this.livelevel == undefined) {
+            //     const liveCourse = shadow.querySelector('.live-course');
+            //     const liveCourseLink = shadow.querySelector('.live-link');
+            //     liveCourse.style.display = liveCourseLink.style.display = "none";
+            // } else {
+            //     // Set course level
+            //     setContent('.live-level', this.livelevel, shadow);
+            //     // Set course cost
+            //     setContent('.live-cost', this.livecost, shadow);
+            //     // Set course badge
+            //     setContent('.live-badge', this.livebadge, shadow);
+            //     // Set course time
+            //     setContent('.live-time', this.livetime, shadow);
+            //     // Set course link
+            //     setLink('.live-link', this.livelink, this.name, shadow);
+            // }
         }
     }
 

@@ -48,12 +48,12 @@ img {
 .inline-g p {
     padding: 0em;
     margin: 0em;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
-.inline-g span {
+/* .inline-g span {
     font-weight: normal;
-}
+} */
 
 /* Styling for course card */
 .course-card {
