@@ -47,6 +47,10 @@ function createComponent(html) {
             const courseImg = shadow.querySelector('.course-img');
             courseImg.src = this.imgsrc;
             courseImg.setAttribute('alt', `${this.name} badge`);
+            if (this.selfpaced != 'true') {
+                const courseCard = shadow.querySelector('.course-card');
+                courseCard.style.alignItems = 'flex-start';
+            }
 
             // Set course name
             setContent('.course-name', this.name, shadow);
@@ -65,24 +69,6 @@ function createComponent(html) {
             setContent('.course-time', this.time, shadow);
             // Set course link
             setLink('.course-link', this.link, this.name, shadow);
-
-            // Hide live course if not available
-            // if (this.livelevel == undefined) {
-            //     const liveCourse = shadow.querySelector('.live-course');
-            //     const liveCourseLink = shadow.querySelector('.live-link');
-            //     liveCourse.style.display = liveCourseLink.style.display = "none";
-            // } else {
-            //     // Set course level
-            //     setContent('.live-level', this.livelevel, shadow);
-            //     // Set course cost
-            //     setContent('.live-cost', this.livecost, shadow);
-            //     // Set course badge
-            //     setContent('.live-badge', this.livebadge, shadow);
-            //     // Set course time
-            //     setContent('.live-time', this.livetime, shadow);
-            //     // Set course link
-            //     setLink('.live-link', this.livelink, this.name, shadow);
-            // }
         }
     }
 

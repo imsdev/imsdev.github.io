@@ -48,12 +48,7 @@ img {
 .inline-g p {
     padding: 0em;
     margin: 0em;
-    /* font-weight: bold; */
 }
-
-/* .inline-g span {
-    font-weight: normal;
-} */
 
 /* Styling for course card */
 .course-card {
@@ -85,11 +80,6 @@ img {
     .course-card {
         align-items: center;
     }
-
-    /* .inline-g {
-        display: grid;
-        grid-template-columns: 1fr 6fr;
-    } */
 
     .inline-g div {
         display: grid;
