@@ -347,6 +347,7 @@
 /* For links under headers */
 .highlight-link {
   font-size: var(--plex-20);
+  color: var(--blue);
 }
 
 /* Spacer between sections */
