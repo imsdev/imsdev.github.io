@@ -1,0 +1,87 @@
+/* section {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+    padding: 4em;
+} */
+
+section {
+    display: grid;
+    grid-template-columns: 4em 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 4em;
+    align-items: center;
+
+    /* Button Color */
+    --btn-prim: #0f62fe;
+    --btn-prim-hover: #0050e6;
+    --btn-secnd: #6f6f6f;
+    --btn-scnd-hover: #5e5e5e;
+}
+
+img {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.section {
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: bold;
+}
+
+.name {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.desc {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 1.25em;
+}
+
+.links {
+    grid-column: 2;
+    grid-row: 4;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 1em;
+}
+
+.button {
+    color: white;
+    padding: 1em 1.5em;
+    line-height: var(--plex-24);
+    text-decoration: none;
+  }
+  
+  .button-primary {
+    background-color: var(--btn-prim);
+    margin-top: 1.25em;
+  }
+  
+  .button-secondary {
+    background-color: var(--btn-secnd);
+    margin-top: 1.25em;
+  }
+  
+  .button-primary:hover {
+    background-color: var(--btn-prim-hover);
+  }
+  
+  .button-secondary:hover {
+    background-color: var(--btn-scnd-hover);
+  }
+
+  @media  screen and (max-width: 27em) {
+    section {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 3em;
+    }
+  }

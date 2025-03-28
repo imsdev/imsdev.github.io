@@ -1,7 +1,7 @@
 // Fetch HTML template
-// fetch("web-components/video-card/video-card.html")
-//     .then(stream => stream.text())
-//     .then(text => createComponent(text))
+fetch("web-components/hero-section/hero-section.html")
+    .then(stream => stream.text())
+    .then(text => createComponent(text))
 
 // Create web component
 function createComponent(html) {
@@ -33,7 +33,7 @@ function createComponent(html) {
 
         // Return array of properties to observe
         static get observedAttributes() {
-            return ['name', 'img', 'section', 'desc', 'desc2', 'link'];
+            return ['name', 'section', 'desc', 'desc2', 'linktext', 'link', 'linktext2', 'link2'];
         }
 
         // Called when an attribute is defined or changed
@@ -47,6 +47,25 @@ function createComponent(html) {
             // Create shadow root for element
             const shadow = this.attachShadow({mode: 'closed'});
             shadow.innerHTML = html;
+
+            setContent('.section', this.section, shadow);
+            setContent('.name', this.name, shadow);
+            setContent('.desc', this.desc, shadow);
+            setLink('.link-primary', this.link, this.name, shadow);
+            setContent('.link-primary-text', this.linktext, shadow);
+            setLink('.link-secondary', this.link2, this.name, shadow);
+            setContent('.link-secondary-text', this.linktext2, shadow);
+
+            // Check if links are external
+
+            switch(this.section) {
+                case 'Engage':
+                    const selector = shadow.querySelector('.hero');
+                    selector.style.backgroundColor = 'black';
+                    selector.style.color = 'white';
+                    setImage('.image', 'wp-content/icons/icon_engage.svg', shadow);
+                    break;
+            }
         }
     }
 
