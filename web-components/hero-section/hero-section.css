@@ -20,10 +20,22 @@
     background-position: 35%;
 }
 
-section {
+.internship-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../wp-content/images/internship_collaboration.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+  }
+  
+  .blur-bg {
+    backdrop-filter: blur(6px);
+  }
+
+.hero {
     display: grid;
     grid-template-columns: 4em 2fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 4em repeat(3, 1fr);
     padding: 3em;
     padding-top: 2em;
     align-items: center;
@@ -66,6 +78,10 @@ h2, h6, p {
     font-size: 1.25em;
 }
 
+.desc p {
+    margin: 0.5em 0em;
+}
+
 .links {
     grid-column: 2;
     grid-row: 4;
@@ -99,11 +115,12 @@ h2, h6, p {
     background-color: var(--btn-scnd-hover);
   }
 
-  @media  screen and (max-width: 27em) {
-    section {
+@media  screen and (max-width: 27em) {
+    .hero {
         display: flex;
         flex-flow: column wrap;
         align-items: flex-start;
         gap: 1em;
+        padding: 3em;
     }
-  }
+}

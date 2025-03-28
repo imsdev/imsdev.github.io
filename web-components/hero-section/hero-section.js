@@ -10,7 +10,7 @@ function createComponent(html) {
     function setContent(cssSelector, content, shadow) {
         const selector = shadow.querySelector(cssSelector);
         // Check if span tag is used in desc
-        if ((content != undefined) && (content.includes('<span>'))) {
+        if ((content != undefined) && (content.includes('<p>'))) {
             // Update HTML
             selector.innerHTML = content;
         } else {
@@ -46,7 +46,7 @@ function createComponent(html) {
 
         // Return array of properties to observe
         static get observedAttributes() {
-            return ['name', 'image', 'section', 'desc', 'desc2', 'linktext', 'link', 'linktext2', 'link2'];
+            return ['name', 'image', 'section', 'desc', 'linktext', 'link', 'linktext2', 'link2'];
         }
 
         // Called when an attribute is defined or changed
@@ -87,10 +87,16 @@ function createComponent(html) {
             }
 
             // Change background and icon based on provided section
-            const heroSection = shadow.querySelector('.hero');
+            const heroSection = shadow.querySelector('.hero-section');
+            const hero = shadow.querySelector('.hero');
             switch(this.section) {
                 case 'Engage':
-                    heroSection.classList.add('engage-bg');
+                    if ((this.name).includes('Internship')) {
+                        heroSection.classList.add('internship-bg');
+                        hero.classList.add('blur-bg');
+                    } else {
+                        heroSection.classList.add('engage-bg');
+                    }
                     break;
                 case 'Learn':
                     heroSection.classList.add('learn-bg');
