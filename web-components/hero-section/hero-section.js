@@ -9,12 +9,10 @@ function createComponent(html) {
     // Set text content
     function setContent(cssSelector, content, shadow) {
         const selector = shadow.querySelector(cssSelector);
-        // Check if p tag is used in desc
-        if (content.includes('<p>')) {
-            // Create paragraph element and add it to the document
-            let paragraph = document.createElement('p');
-            paragraph.innerHTML = content;
-            selector.appendChild(paragraph);
+        // Check if span tag is used in desc
+        if (content.includes('<span>')) {
+            // Update HTML
+            selector.innerHTML = content;
         } else {
             // Update the text
             selector.textContent = content;
@@ -49,7 +47,7 @@ function createComponent(html) {
 
         // Return array of properties to observe
         static get observedAttributes() {
-            return ['name', 'section', 'desc', 'desc2', 'linktext', 'link', 'linktext2', 'link2'];
+            return ['name', 'image', 'section', 'desc', 'desc2', 'linktext', 'link', 'linktext2', 'link2'];
         }
 
         // Called when an attribute is defined or changed
@@ -65,6 +63,7 @@ function createComponent(html) {
             shadow.innerHTML = html;
 
             // Set content
+            setImage('.image', this.image, shadow);
             setContent('.section', this.section, shadow);
             setContent('.name', this.name, shadow);
             setContent('.desc', this.desc, shadow);
@@ -86,11 +85,9 @@ function createComponent(html) {
             switch(this.section) {
                 case 'Engage':
                     heroSection.classList.add('engage-bg');
-                    setImage('.image', 'wp-content/icons/icon_engage.svg', shadow);
                     break;
                 case 'Learn':
                     heroSection.classList.add('learn-bg');
-                    setImage('.image', 'wp-content/Icon_Managed ACBs_IMS DatabasePage.svg', shadow);
                     break;
             }
         }
