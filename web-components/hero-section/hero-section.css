@@ -1,15 +1,16 @@
-/* section {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2em;
-    padding: 4em;
-} */
+.engage-bg {
+    background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
 
 section {
     display: grid;
     grid-template-columns: 4em 2fr;
     grid-template-rows: repeat(4, 1fr);
-    padding: 4em;
+    padding: 3em;
+    padding-top: 2em;
     align-items: center;
 
     /* Button Color */

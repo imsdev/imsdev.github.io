@@ -61,8 +61,7 @@ function createComponent(html) {
             switch(this.section) {
                 case 'Engage':
                     const selector = shadow.querySelector('.hero');
-                    selector.style.backgroundColor = 'black';
-                    selector.style.color = 'white';
+                    selector.classList.add('engage-bg');
                     setImage('.image', 'wp-content/icons/icon_engage.svg', shadow);
                     break;
             }
