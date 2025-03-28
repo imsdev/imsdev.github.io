@@ -8,13 +8,21 @@ function createComponent(html) {
 
     function setContent(cssSelector, content, shadow) {
         const selector = shadow.querySelector(cssSelector);
-        selector.textContent = content;
+        if (content.includes('<p>')) {
+            let paragraph = document.createElement('p');
+            paragraph.innerHTML = content;
+            selector.appendChild(paragraph);
+        } else {
+            selector.textContent = content;
+        }
     }
 
-    function setLink(cssSelector, url, name, shadow) {
+    function setLink(cssSelector, url, shadow) {
         const link = shadow.querySelector(cssSelector);
         link.href = url;
-        link.setAttribute('aria-label', `Learn more about ${name}`);
+        if (url.includes('https://')) {
+            link.setAttribute('target', '_blank');
+        }
     }
 
     function setImage(cssSelector, src, shadow) {
@@ -29,6 +37,7 @@ function createComponent(html) {
         // Creates element with default values
         constructor() {
             super();
+            this.link2 = "";
         }
 
         // Return array of properties to observe
@@ -51,18 +60,27 @@ function createComponent(html) {
             setContent('.section', this.section, shadow);
             setContent('.name', this.name, shadow);
             setContent('.desc', this.desc, shadow);
-            setLink('.link-primary', this.link, this.name, shadow);
-            setContent('.link-primary-text', this.linktext, shadow);
-            setLink('.link-secondary', this.link2, this.name, shadow);
-            setContent('.link-secondary-text', this.linktext2, shadow);
+            setLink('.button-primary', this.link, shadow);
+            setContent('.button-primary-text', this.linktext, shadow);
+
+            if (this.link2 != "") {
+                setLink('.button-secondary', this.link2, shadow);
+                setContent('.button-secondary-text', this.linktext2, shadow);
+            } else {
+                const buttonSecondary = shadow.querySelector('.button-secondary');
+                buttonSecondary.style.display = 'none';
+            }
 
             // Check if links are external
-
+            const heroSection = shadow.querySelector('.hero');
             switch(this.section) {
                 case 'Engage':
-                    const selector = shadow.querySelector('.hero');
-                    selector.classList.add('engage-bg');
+                    heroSection.classList.add('engage-bg');
                     setImage('.image', 'wp-content/icons/icon_engage.svg', shadow);
+                    break;
+                case 'Learn':
+                    heroSection.classList.add('learn-bg');
+                    setImage('.image', 'wp-content/Icon_Managed ACBs_IMS DatabasePage.svg', shadow);
                     break;
             }
         }

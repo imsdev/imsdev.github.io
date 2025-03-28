@@ -78,6 +78,7 @@
 
   <!-- Web components -->
   <script src="web-components/video-card/video-card.js" type="module"></script>
+  <script src="web-components/hero-section/hero-section.js" type="module"></script>
 </head>
 
   <!-- PAGE CONTENT -->
@@ -311,7 +312,7 @@
       <div id="content" class="main-content">
         <main id="main">
           <!-- =========================== Hero =========================== -->
-          <section class="learn-bg">
+          <!-- <section class="learn-bg">
             <div id="intro-section" class="pure-g hero">
               <div class="pure-u-1 pure-u-md-1-24">
                 <img src="wp-content/Icon_Managed ACBs_IMS DatabasePage.svg" alt="" class="icon icon-lg">
@@ -332,7 +333,15 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
+
+          <hero-section
+            name="IMS videos"
+            section="Learn"
+            desc="<p>See the latest IMS educational videos here or click <b>Visit IBM MediaCenter</b> to search for more IMS video content.</p>"
+            linktext="Visit IBM MediaCenter →"
+            link="https://mediacenter.ibm.com/channel/IMS%2BEducational%2BVideos/122579632"
+          ></hero-section>
 
           <!-- =========================== Filter =========================== -->
           <!-- remember, the behaviour is that clicking pulls you to the anchors -->

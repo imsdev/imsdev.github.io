@@ -5,6 +5,14 @@
     color: white;
 }
 
+.learn-bg {
+    background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: black;
+  }
+
 section {
     display: grid;
     grid-template-columns: 4em 2fr;
@@ -23,6 +31,7 @@ section {
 img {
     grid-column: 1;
     grid-row: 2;
+    width: 2em;
 }
 
 .section {
