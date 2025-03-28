@@ -11,7 +11,14 @@
     background-size: cover;
     background-position: right;
     color: black;
-  }
+}
+
+.innovate-bg {
+    background-image: url(../../wp-content/backgrounds/Innovate_HomepageBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35%;
+}
 
 section {
     display: grid;

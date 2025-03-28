@@ -10,7 +10,7 @@ function createComponent(html) {
     function setContent(cssSelector, content, shadow) {
         const selector = shadow.querySelector(cssSelector);
         // Check if span tag is used in desc
-        if (content.includes('<span>')) {
+        if ((content != undefined) && (content.includes('<span>'))) {
             // Update HTML
             selector.innerHTML = content;
         } else {
@@ -42,7 +42,6 @@ function createComponent(html) {
         // Creates element with default values
         constructor() {
             super();
-            this.link2 = "";
         }
 
         // Return array of properties to observe
@@ -67,11 +66,18 @@ function createComponent(html) {
             setContent('.section', this.section, shadow);
             setContent('.name', this.name, shadow);
             setContent('.desc', this.desc, shadow);
-            setLink('.button-primary', this.link, shadow);
-            setContent('.button-primary-text', this.linktext, shadow);
+
+            if (this.link != undefined) {
+                setLink('.button-primary', this.link, shadow);
+                setContent('.button-primary-text', this.linktext, shadow);
+            } else {
+                // Hide the secondary button if no link is provided
+                const buttonPrimary = shadow.querySelector('.button-primary');
+                buttonPrimary.style.display = 'none';
+            }
 
             // Check if secondary button is used
-            if (this.link2 != "") {
+            if (this.link2 != undefined) {
                 setLink('.button-secondary', this.link2, shadow);
                 setContent('.button-secondary-text', this.linktext2, shadow);
             } else {
@@ -88,6 +94,9 @@ function createComponent(html) {
                     break;
                 case 'Learn':
                     heroSection.classList.add('learn-bg');
+                    break;
+                case 'Innovate':
+                    heroSection.classList.add('innovate-bg');
                     break;
             }
         }
