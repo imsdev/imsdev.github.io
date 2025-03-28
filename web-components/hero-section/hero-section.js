@@ -6,25 +6,32 @@ fetch("web-components/hero-section/hero-section.html")
 // Create web component
 function createComponent(html) {
 
+    // Set text content
     function setContent(cssSelector, content, shadow) {
         const selector = shadow.querySelector(cssSelector);
+        // Check if p tag is used in desc
         if (content.includes('<p>')) {
+            // Create paragraph element and add it to the document
             let paragraph = document.createElement('p');
             paragraph.innerHTML = content;
             selector.appendChild(paragraph);
         } else {
+            // Update the text
             selector.textContent = content;
         }
     }
 
+    // Set link
     function setLink(cssSelector, url, shadow) {
         const link = shadow.querySelector(cssSelector);
         link.href = url;
+        // Open new tab for external links
         if (url.includes('https://')) {
             link.setAttribute('target', '_blank');
         }
     }
 
+    // Set image
     function setImage(cssSelector, src, shadow) {
         const image = shadow.querySelector(cssSelector);
         image.src = src;
@@ -57,21 +64,24 @@ function createComponent(html) {
             const shadow = this.attachShadow({mode: 'closed'});
             shadow.innerHTML = html;
 
+            // Set content
             setContent('.section', this.section, shadow);
             setContent('.name', this.name, shadow);
             setContent('.desc', this.desc, shadow);
             setLink('.button-primary', this.link, shadow);
             setContent('.button-primary-text', this.linktext, shadow);
 
+            // Check if secondary button is used
             if (this.link2 != "") {
                 setLink('.button-secondary', this.link2, shadow);
                 setContent('.button-secondary-text', this.linktext2, shadow);
             } else {
+                // Hide the secondary button if no link is provided
                 const buttonSecondary = shadow.querySelector('.button-secondary');
                 buttonSecondary.style.display = 'none';
             }
 
-            // Check if links are external
+            // Change background and icon based on provided section
             const heroSection = shadow.querySelector('.hero');
             switch(this.section) {
                 case 'Engage':
