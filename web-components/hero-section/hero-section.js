@@ -67,6 +67,9 @@ function createComponent(html) {
             setContent('.name', this.name, shadow);
             setContent('.desc', this.desc, shadow);
 
+            const heroSection = shadow.querySelector('.hero-section');
+            const hero = shadow.querySelector('.hero');
+
             if (this.link != undefined) {
                 setLink('.button-primary', this.link, shadow);
                 setContent('.button-primary-text', this.linktext, shadow);
@@ -74,6 +77,7 @@ function createComponent(html) {
                 // Hide the secondary button if no link is provided
                 const buttonPrimary = shadow.querySelector('.button-primary');
                 buttonPrimary.style.display = 'none';
+                hero.classList.add('hero-no-buttons');
             }
 
             // Check if secondary button is used
@@ -87,8 +91,6 @@ function createComponent(html) {
             }
 
             // Change background and icon based on provided section
-            const heroSection = shadow.querySelector('.hero-section');
-            const hero = shadow.querySelector('.hero');
             switch(this.section) {
                 case 'Engage':
                     if ((this.name).includes('Internship')) {
@@ -103,6 +105,9 @@ function createComponent(html) {
                     break;
                 case 'Innovate':
                     heroSection.classList.add('innovate-bg');
+                    break;
+                case 'Support':
+                    heroSection.classList.add('learn-bg');
                     break;
             }
         }

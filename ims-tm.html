@@ -79,6 +79,8 @@
 	<!-- Hamburger menu -->
 	<script src="wp-includes/js/navbar.js"></script>
 
+	<!-- Web components -->
+	<script src="web-components/hero-section/hero-section.js" type="module"></script>
 	</head>
 
 	<!-- MASTHEAD_SITENAV_BEGIN -->
@@ -301,7 +303,7 @@
 					<main class="zs-main" id="main">
 
 						<!-- =========================== IMS TM =========================== -->
-						<section id="intro-section" class="pure-g zs-section tm-hero banner innovate-bg">
+						<!-- <section id="intro-section" class="pure-g zs-section tm-hero banner innovate-bg">
 							<div>
 								<img class="ims-card-icon" src="wp-content/Icon_Banner_IMS DatabasePage.svg" alt="">
 							</div>
@@ -314,7 +316,19 @@
 									transactions per day.<a href="https://www.ibm.com/case-studies/atruvia-ag" target="_blank" rel="noopener noreferrer" aria-label="Atruvia case study"><sup>1</sup></a>
 								</p>
 							</div>
-						</section>
+						</section> -->
+
+						<hero-section
+							name="IMS Transaction Manager: Fast, secure, connected"
+							image="wp-content/Icon_Banner_IMS DatabasePage.svg" 
+							section="Innovate"
+							desc='<p>
+									By using APIs and distributed connectivity, IMS can integrate with modern tools and emerging 
+									technologies, enabling it to host mission-critical applications to support billions of 
+									transactions per day.<a href="https://www.ibm.com/case-studies/atruvia-ag" target="_blank" rel="noopener noreferrer" 
+									aria-label="Atruvia case study"><sup>1</sup></a>
+								</p>'
+						></hero-section>
 
 						<!-- =========================== Learn more =========================== -->
 						<section class="zs-gray-section ibm-background-white-core lm-section">

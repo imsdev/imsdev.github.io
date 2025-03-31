@@ -80,6 +80,7 @@
 
 	<!-- Web components -->
 	<script src="web-components/course-card/course-card.js" type="module"></script>
+	<script src="web-components/hero-section/hero-section.js" type="module"></script>
 </head>
 
 <!-- MASTHEAD_SITENAV_BEGIN -->
@@ -292,29 +293,14 @@
 		<!-- MAIN CONTENT -->
 		<main id="main">
 			<!-- =========================== Hero =========================== -->
-			<section class="learn-bg">
-				<div id="intro-section" class="pure-g hero">
-					<div class="pure-u-1 pure-u-md-1-24">
-						<img src="wp-content/course.svg" alt="" class="icon icon-xl">
-					</div>
-					<div class="pure-u-1 pure-u-md-23-24">
-						<h6>Learn</h6>
-						<h1>IMS courses</h1>
-						<p>Get comprehensive IMS™ education by taking these self-paced, digital courses.</p>
-						<p class="subtext">You can also earn a digital badge!</p>
-						<div class="button-g">
-							<a class="button button-primary" 
-							onfocus="closeNavMenu()" 
-							target="_blank"
-							aria-label="Sign up for an IBM ID to enroll in IMS courses" 
-							href="https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D9fe3fe66-c22f-4c7b-8e5d-01dfc0e8defa%26client_id%3DMyIBMDallasProdCI" 
-							rel="noopener noreferrer">
-							Sign up for an IBM ID →
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+			<hero-section
+				name="IMS courses"
+				image="wp-content/course.svg" 
+				section="Learn"
+				desc="<p>Get comprehensive IMS™ education by taking these self-paced, digital courses.</p><p style='font-weight: 300;'>You can also earn a digital badge!</p>"
+				linktext="Sign up for an IBM ID →"
+				link="https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D9fe3fe66-c22f-4c7b-8e5d-01dfc0e8defa%26client_id%3DMyIBMDallasProdCI"
+			></hero-section>
 
 			<!-- =========================== Row for filtering =========================== -->
 			<div class="zs-section ed-filter">
