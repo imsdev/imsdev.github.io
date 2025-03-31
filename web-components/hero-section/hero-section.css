@@ -35,7 +35,7 @@
 .hero {
     display: grid;
     grid-template-columns: 4em 2fr;
-    grid-template-rows: 4em repeat(3, 1fr);
+    grid-template-rows: 4em 4em 6em 1fr;
     padding: 3em;
     padding-top: 2em;
     align-items: center;
@@ -50,7 +50,7 @@
 img {
     grid-column: 1;
     grid-row: 2;
-    width: 2em;
+    max-width: 2em;
 }
 
 h2, h6, p {
@@ -114,6 +114,12 @@ h2, h6, p {
   .button-secondary:hover {
     background-color: var(--btn-scnd-hover);
   }
+
+@media screen and (min-width: 90em) {
+    .hero {
+        grid-template-columns: 4em 4fr 1fr;
+    }
+}
 
 @media  screen and (max-width: 27em) {
     .hero {

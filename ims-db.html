@@ -78,6 +78,8 @@
 	<!-- Hamburger menu -->
 	<script src="wp-includes/js/navbar.js"></script>
 
+	<!-- Web components -->
+	<script src="web-components/hero-section/hero-section.js" type="module"></script>
 	</head>
 
 	<!-- MASTHEAD_SITENAV_BEGIN -->
@@ -300,20 +302,13 @@
 					<main class="zs-main" id="main">
 
 						<!-- =========================== IMS Database =========================== -->
-						<div class="banner innovate-bg">
-							<section id="intro-section" class="pure-g zs-section db-hero">
-								<div id="intro-header" class="pure-u-1"></div>
-								<div class="pure-u-3-25">
-									<img class="ims-card-icon" src="wp-content/Icon_Banner_IMS DatabasePage.svg" alt="">
-								</div>
-								<div id="intro-info" class="pure-u-1 pure-u-sm-15-24 db-hero-text">
-									<h6>Innovate</h6>
-									<h1 >IMS Database: fast, secure, reliable.</h1>
-									<p id="p-style" >Data integrity, performance, simplified use of SQL, and powerful recovery tools make IMS Database Manager
-										the best choice to protect your enterprise assets.</p>
-								</div>
-							</section>
-						</div>
+						<hero-section
+							name="IMS Database: fast, secure, reliable"
+							image="wp-content/Icon_Banner_IMS DatabasePage.svg" 
+							section="Innovate"
+							desc="Data integrity, performance, simplified use of SQL, and powerful recovery tools make IMS Database Manager
+								the best choice to protect your enterprise assets."
+						></hero-section>
 
 						<!-- =========================== Managed ACBs =========================== -->
 						<div class="zs-gray-section ibm-background-white-core macb-section">
