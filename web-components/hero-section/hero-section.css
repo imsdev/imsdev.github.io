@@ -148,6 +148,6 @@ h6, p {
         flex-flow: column wrap;
         align-items: flex-start;
         gap: 1em;
-        padding: 3em;
+        padding: 3em 2em;
     }
 }
