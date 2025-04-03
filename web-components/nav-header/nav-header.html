@@ -1,1 +1,32 @@
-<p>Hello world</p>
+<link href="web-components/nav-header/nav-header.css" rel="stylesheet">
+<header>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="wp-content/IMS_logo_small.png" alt="IMS logo">
+            <h4>IBM <b>IMS Central</b></h4>
+        </a>
+        <form>
+            <svg alt="search" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 32 32">
+                <defs>
+                    <style> .rect { fill: none; } </style>
+                </defs>
+                <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z" transform="translate(0 0)"/>
+                <rect class="rect" width="32" height="32"/>
+            </svg>
+            <input 
+                type="text" 
+                name="search" 
+                id="tipue_search_input"
+                pattern=".{3,}" 
+                title="Search bar"
+                placeholder="What are you looking for today?" 
+                autocomplete="off" 
+                required 
+                autofocus
+            >
+            <svg aria-label="clear" role="button" tabindex="0" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 329.26933 329" width="15px">
+                <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+            </svg>
+        </form>
+    </nav>
+</header>

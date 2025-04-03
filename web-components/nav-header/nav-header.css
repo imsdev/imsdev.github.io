@@ -1,0 +1,60 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 300;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    padding: 0.6em 1em;
+    height: 2em;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+img {
+    width: 2em;
+    height: 2em;
+}
+
+form {
+    margin-left: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+    width: 30%;
+    height: 100%;
+}
+
+input {
+    background-color: white;
+    border: lightgray solid 2px;
+    outline: none;
+    width: 110%;
+}
+
+input:focus {
+    border-color: #42a7ec;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
