@@ -41,6 +41,15 @@ function createComponent(html) {
             // Create shadow root for element
             const shadow = this.attachShadow({mode: 'closed'});
             shadow.innerHTML = html;
+
+            // Menu toggle
+            const menuButton = shadow.getElementById('menu');
+            const menuToggle = shadow.getElementById('menu-toggle');
+            menuButton.addEventListener('click', () => {
+                var checkedState = menuToggle.checked ? false : true;
+                menuToggle.checked = checkedState;
+                console.log(menuToggle.checked);
+            })
         }
     }
 

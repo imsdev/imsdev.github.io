@@ -9,8 +9,8 @@ header {
 nav {
     position: relative;
     display: flex;
-    padding: 0.6em 1em;
-    height: 2em;
+    justify-content: space-between;
+    height: 3em;
 }
 
 h4 {
@@ -21,40 +21,112 @@ h4 {
 a {
     color: white;
     text-decoration: none;
-    
-}
-
-img {
-    width: 2em;
-    height: 2em;
 }
 
 form {
-    margin-left: auto;
+    width: 30em;
+    height: 3em;
+    background-color: white;
+    display: flex;
+}
+
+form div {
+    width: 30em;
+    background-color: white;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: 1em;
-    width: 30%;
-    height: 100%;
+    gap: 0em;
+    border: lightgray solid 2px;
 }
 
 input {
-    background-color: white;
-    border: lightgray solid 2px;
     outline: none;
-    width: 110%;
+    width: 100%;
+    border: 0;
+    font-size: 1em;
+    font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+    padding: 0.4em 0em;
 }
 
 input:focus {
     border-color: #42a7ec;
 }
 
+form div > img {
+    padding: 0.1em 0.5em;
+}
+
+#search-icon {
+    width: 1.4em;
+}
+
+#close-icon {
+    cursor: pointer;
+}
+
 .logo {
-    margin-right: auto;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     gap: 1em;
+    padding: 0.6em 1em;
 }
 
+.logo img {
+    width: 2em;
+    height: 2em;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.menu {
+    z-index: 400;
+    background-color: #1c1c1c;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.menu div {
+    background-color: white;
+    width: 2em;
+    height: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu-toggle {
+    z-index: 0;
+    height: 3em;
+    width: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-toggle:checked + .menu>div:nth-child(1) {
+    transform: translate(-0.3em, -0.2em) rotate(-45deg) ;
+    transform-origin: top right;
+}
+
+#menu-toggle:checked + .menu>div:nth-child(2) {
+    transform: translate(-0.3em, 0.6em) rotate(45deg);
+    transform-origin: bottom right;
+}
+
+#menu-toggle:checked + .menu>div:nth-child(3) {
+    transform: scale(0);
+}
