@@ -22,6 +22,15 @@ function createComponent(html) {
         selector.textContent = content;
     }
 
+    /**
+     * Sets the link of an element based on a CSS selector.
+     * @param {string} cssSelector - The CSS selector of the element to set the link for.
+     * @param {string} url - The link url.
+     * @param {string} name - The name of the element containing the link.
+     * @param {string} linkText - The link text.
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
+     * @returns {void}
+     */
     function setLink(cssSelector, url, name, linkText, shadow) {
         const link = shadow.querySelector(cssSelector);
         link.href = url;
@@ -29,6 +38,12 @@ function createComponent(html) {
         link.textContent = linkText;
     }
 
+    /**
+     * Hides the content of an element based on a CSS selector.
+     * @param {string} cssSelector - The CSS selector of the element to hide.
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
+     * @returns {void}
+     */
     function hideContent(cssSelector, shadow) {
         const selector = shadow.querySelector(cssSelector);
         selector.style.display = 'none';
@@ -112,10 +127,8 @@ function createComponent(html) {
                 // Update link text
                 linkText = 'Register →'
             }
-
             // Set course link
             setLink('.course-link', this.link, this.name, linkText, shadow);
-
         }
     }
 
