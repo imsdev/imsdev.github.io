@@ -6,11 +6,10 @@ header {
     color: white;
 }
 
-nav {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    height: 3em;
+h3 {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #71a3e9;
 }
 
 h4 {
@@ -21,6 +20,20 @@ h4 {
 a {
     color: white;
     text-decoration: none;
+}
+
+a h5 {
+    font-weight: 500;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+a p {
+    font-size: 0.75em;
+    color: rgb(199, 199, 199);
+    margin: 0;
+    padding: 0;
 }
 
 form {
@@ -49,12 +62,19 @@ input {
     padding: 0.4em 0em;
 }
 
-input:focus {
+.search-bar-focused {
     border-color: #42a7ec;
 }
 
 form div > img {
     padding: 0.1em 0.5em;
+}
+
+.masthead {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
 }
 
 #search-icon {
@@ -83,7 +103,7 @@ form div > img {
     flex-flow: row nowrap;
 }
 
-.menu {
+.hamburger-menu {
     z-index: 400;
     background-color: #1c1c1c;
     height: 3em;
@@ -98,11 +118,11 @@ form div > img {
     gap: 0.4em;
 }
 
-.menu:hover {
+.hamburger-menu:hover {
     cursor: pointer;
 }
 
-.menu div {
+.hamburger-menu div {
     background-color: white;
     width: 2em;
     height: 3px;
@@ -117,16 +137,43 @@ form div > img {
     padding: 0;
 }
 
-#menu-toggle:checked + .menu>div:nth-child(1) {
+#menu-toggle:checked + .hamburger-menu>div:nth-child(1) {
     transform: translate(-0.3em, -0.2em) rotate(-45deg) ;
     transform-origin: top right;
 }
 
-#menu-toggle:checked + .menu>div:nth-child(2) {
+#menu-toggle:checked + .hamburger-menu>div:nth-child(2) {
     transform: translate(-0.3em, 0.6em) rotate(45deg);
     transform-origin: bottom right;
 }
 
-#menu-toggle:checked + .menu>div:nth-child(3) {
+#menu-toggle:checked + .hamburger-menu>div:nth-child(3) {
     transform: scale(0);
+}
+
+.dropdown-menu {
+    background-color: #282828;
+    /* height: 0em; */
+    height: 30em;
+    z-index: 120;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.dropdown-menu div {
+    display: grid;
+    height: 30em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4em repeat(5, 1fr);
+    margin: 0.4em 1em;
+}
+
+.dropdown-menu div h3 {
+}
+
+.dropdown-menu div a {
+    margin: 0.4em 0em;
 }

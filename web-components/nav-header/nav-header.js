@@ -43,12 +43,27 @@ function createComponent(html) {
             shadow.innerHTML = html;
 
             // Menu toggle
-            const menuButton = shadow.getElementById('menu');
+            const menuButton = shadow.querySelector('.hamburger-menu');
             const menuToggle = shadow.getElementById('menu-toggle');
+            const dropdownMenu = shadow.querySelector('.dropdown-menu');
             menuButton.addEventListener('click', () => {
                 var checkedState = menuToggle.checked ? false : true;
                 menuToggle.checked = checkedState;
-                console.log(menuToggle.checked);
+                
+                // if (checkedState) {
+                //     dropdownMenu.style.height = '30em';
+                // } else {
+                //     dropdownMenu.style.height = '0em';
+                // }
+            })
+
+            const searchInput = shadow.getElementById('search');
+            const searchBar = shadow.querySelector('.search-bar');
+            searchInput.addEventListener('focus', () => {
+                searchBar.classList.add('search-bar-focused');
+            })
+            searchInput.addEventListener('blur', () => {
+                searchBar.classList.remove('search-bar-focused');
             })
         }
     }
