@@ -67,9 +67,16 @@ function createComponent(html) {
             setContent('.name', this.name, shadow);
             setContent('.desc', this.desc, shadow);
 
+            // Enlarge icon for specified pages
+            if (this.name == 'IMS videos' || this.name == 'IMS on GitHub') {
+                const img = shadow.querySelector('.image');
+                img.classList.add('large-icon');
+            }
+
             const heroSection = shadow.querySelector('.hero-section');
             const hero = shadow.querySelector('.hero');
 
+            // Check if primary button is used
             if (this.link != undefined) {
                 setLink('.button-primary', this.link, shadow);
                 setContent('.button-primary-text', this.linktext, shadow);
