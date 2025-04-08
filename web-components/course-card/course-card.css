@@ -5,6 +5,13 @@ h2 {
     margin: 0em;
 }
 
+h3 {
+    font-weight: 400;
+    font-size: 1.375em;
+    padding: 0em;
+    margin: 0em;
+}
+
 p {
     font-size: 1.125em;
 }
@@ -48,11 +55,6 @@ img {
 .inline-g p {
     padding: 0em;
     margin: 0em;
-    font-weight: bold;
-}
-
-.inline-g span {
-    font-weight: normal;
 }
 
 /* Styling for course card */
@@ -85,11 +87,6 @@ img {
     .course-card {
         align-items: center;
     }
-
-    /* .inline-g {
-        display: grid;
-        grid-template-columns: 1fr 6fr;
-    } */
 
     .inline-g div {
         display: grid;
