@@ -80,6 +80,8 @@
 <!-- Hamburger menu -->
 <script src="wp-includes/js/navbar.js"></script>
 
+<!-- Web components -->
+<script src="web-components/hero-section/hero-section.js" type="module"></script>
 </head>
 
 <!-- MASTHEAD_SITENAV_BEGIN -->
@@ -290,22 +292,14 @@
 
 		<!-- Container -->
 		<main id="main">
-			<div class="intro-sec">
-				<section id="intro-section" class="pure-g zs-section learn-bg">
-					<div id="intro-header" class="pure-u-1"></div>
-					<div class="pure-u-3-25">
-						<img class="ims-card-icon" src="wp-content/Icon_Homepage_IMS GitHub.svg" alt="">
-					</div>
-					<div id="intro-info" class="pure-u-1 pure-u-sm-1-2 intro-sec-g">
-						<h6>Engage</h6>
-						<h1>IMS on GitHub</h1>
-						<p id="p-style">Accelerate your application development and deployment needs by using the samples provided in these repositories.</p>
-						<div class="pure-u-1 intro-sec-b">
-							<a class="zs-w-button-transparent" onfocus="closeNavMenu()" href="https://github.com/imsdev" target="_blank" rel="noopener noreferrer">IMS on GitHub →</a>
-						</div>
-					</div>
-				</section>
-			</div>
+			<hero-section
+				name="IMS on GitHub"
+				image="wp-content/icons/icon_github.svg" 
+				section="Learn"
+				desc="Accelerate your application development and deployment needs by using the samples provided in these repositories."
+				linktext="IMS on GitHub →"
+				link="https://github.com/imsdev"
+			></hero-section>
 
 			<div class="zs-section repo-sec">
 				<h2 id="section-title">Available repositories</h2>

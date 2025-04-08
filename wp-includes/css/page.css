@@ -36,33 +36,6 @@
 
 /* Backgrounds */
 /* -------------------------------------------------------- */
-.internship-bg {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../wp-content/images/internship_collaboration.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: var(--white);
-}
-
-.blur-bg {
-  backdrop-filter: blur(6px);
-}
-
-.engage-bg {
-  background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: var(--white);
-}
-
-.learn-bg {
-  background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  color: var(--black);
-}
-
 .white-bg {
   background-color: var(--white);
   color: var(black);
@@ -78,10 +51,12 @@
 
 .gray-bg {
   background-color: var(--bg-gray);
+  color: var(--black);
 }
 
 .light-gray-bg {
   background-color: var(--bg-light-gray);
+  color: var(--black);
 }
 
   .gray-bg a, .light-gray-bg a {
@@ -90,19 +65,6 @@
 
   .gray-bg h3, .gray-bg h4, .light-gray-bg h3, .light-gray-bg h4 {
     color: var(--black);
-  }
-
-  .gray-bg a {
-    color: var(--blue)
-  }
-
-.blue-bg {
-  background-color: var(--bg-dark-blue);
-  color: var(--white);
-}
-
-  .blue-bg a {
-    color: var(--font-light-blue);
   }
 
 .dark-gray-bg {
@@ -118,6 +80,15 @@
   .dark-gray-bg h4 {
     font-size: var(--plex-24) !important;
   }
+
+.blue-bg {
+  background-color: var(--bg-dark-blue);
+  color: var(--white);
+}
+
+  .blue-bg a {
+    color: var(--font-light-blue);
+  }
 /* -------------------------------------------------------- */
 
 /* Icons */
@@ -130,10 +101,6 @@
 
 .icon-lg {
   height: var(--plex-28);
-}
-
-.icon-xl {
-  height: var(--plex-36);
 }
 
 .icon {
@@ -215,38 +182,6 @@
 
 .main-content h2 {
   font-size: var(--plex-36);
-}
-/* -------------------------------------------------------- */
-
-/* Hero section */
-/* -------------------------------------------------------- */
-.hero {
-  padding: 3em;
-}
-
-.hero div:nth-child(2) {
-  padding-left: 1em;
-}
-
-.main-content section:first-child {
-  width: 100%;
-  background-color:var(--bg-dark-gray-01);
-}
-
-.main-content section:first-child p {
-  font-size: var(--plex-20);
-}
-
-.main-content section:first-child b {
-  font-weight: var(--bold);
-}
-
-.main-content section:first-child img {
-  margin-top: 4em;
-}
-
-.main-content section:first-child h6 {
-  padding: 0;
 }
 /* -------------------------------------------------------- */
 
@@ -358,11 +293,6 @@
 .spacer {
   height: 0.3125em;
 }
-
-/* Hero section subtext */
-.subtext {
-  font-weight: 300;
-}
 /* -------------------------------------------------------- */
 
 /* Media queries */
@@ -397,11 +327,6 @@
   /* Decrease font size for smaller screens */
   .dark-gray-bg h4 {
     font-size: var(--plex-20) !important;
-  }
-
-  /* Remove padding from hero content for smaller screens */
-  .hero div:nth-child(2) {
-    padding-left: 0em;
   }
 }
 
