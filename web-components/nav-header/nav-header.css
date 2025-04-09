@@ -7,9 +7,11 @@ header {
 }
 
 h3 {
-    font-weight: 400;
+    font-weight: lighter;
     font-size: 1.5em;
     color: #71a3e9;
+    margin: 0em;
+    padding: 0em;
 }
 
 h4 {
@@ -30,8 +32,9 @@ a h5 {
 }
 
 a p {
-    font-size: 0.75em;
+    font-size: 0.8125em;
     color: rgb(199, 199, 199);
+    line-height: 1.8;
     margin: 0;
     padding: 0;
 }
@@ -153,27 +156,46 @@ form div > img {
 
 .dropdown-menu {
     background-color: #282828;
-    /* height: 0em; */
-    height: 30em;
+    height: 0em;
     z-index: 120;
     transition: all 0.3s ease;
     overflow: hidden;
+}
+
+.menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+    padding: 1.4em 2.6em;
 }
 
-.dropdown-menu div {
+.menu div {
     display: grid;
     height: 30em;
     grid-template-columns: 1fr;
     grid-template-rows: 4em repeat(5, 1fr);
-    margin: 0.4em 1em;
+    /* align-items: center; */
+    margin: 0em 1em;
 }
 
-.dropdown-menu div h3 {
+.menu div h3 {
+    align-self: center;
+    padding-left: 0.2em;
 }
 
-.dropdown-menu div a {
-    margin: 0.4em 0em;
+.menu div a {
+    align-self: start;
+    padding: 0.8em;
+    transition: 0.3s;
+}
+
+.menu div a:hover {
+    background-color: #424242;
+    border-radius: 5px;
+}
+
+.external-link {
+    height: 1em; 
+    width: 1em;
+    margin-left: 0.625em;
 }

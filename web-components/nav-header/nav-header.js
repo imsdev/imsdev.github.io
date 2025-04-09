@@ -50,11 +50,12 @@ function createComponent(html) {
                 var checkedState = menuToggle.checked ? false : true;
                 menuToggle.checked = checkedState;
                 
-                // if (checkedState) {
-                //     dropdownMenu.style.height = '30em';
-                // } else {
-                //     dropdownMenu.style.height = '0em';
-                // }
+                if (checkedState) {
+                    dropdownMenu.style.height = '33em';
+                } else {
+                    dropdownMenu.style.height = '0em';
+                    
+                }
             })
 
             const searchInput = shadow.getElementById('search');
