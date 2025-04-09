@@ -10,10 +10,25 @@
                 <form>
                     <div class="search-bar">
                         <img src="wp-content/icons/icon_search.svg" id="search-icon">
-                        <input id="search" type="search" placeholder="What are you looking for today?">
+                        <input 
+                            id="search-input" 
+                            type="text" 
+                            pattern=".{3,}"
+                            placeholder="What are you looking for today?"
+                            autofocus
+                        >
                         <img src="wp-content/icons/icon_close.svg" id="close-icon">
                     </div>
                 </form>
+
+                <!-- <script>
+                    $(document).ready(function() {
+                        $('#tipue_search_input').tipuesearch();
+                    });
+                </script>
+
+                <div id="tipue_search_content" class="search_content"></div> -->
+
                 <input type="checkbox" id="menu-toggle">
                 <a class="hamburger-menu">
                     <div></div><div></div><div></div>

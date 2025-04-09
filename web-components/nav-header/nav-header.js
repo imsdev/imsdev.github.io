@@ -58,7 +58,7 @@ function createComponent(html) {
                 }
             })
 
-            const searchInput = shadow.getElementById('search');
+            const searchInput = shadow.getElementById('search-input');
             const searchBar = shadow.querySelector('.search-bar');
             searchInput.addEventListener('focus', () => {
                 searchBar.classList.add('search-bar-focused');
