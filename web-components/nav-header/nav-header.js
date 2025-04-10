@@ -59,7 +59,6 @@ function createComponent(html) {
             })
 
             // Focus on search
-            const searchForm = shadow.getElementById('search-form');
             const searchInput = shadow.getElementById('tipue_search_input');
             const searchBar = shadow.querySelector('.search-bar');
             searchInput.addEventListener('focus', () => {
@@ -69,18 +68,14 @@ function createComponent(html) {
                 searchBar.classList.remove('search-bar-focused');
             })
 
-            // searchInput.addEventListener('keydown', () => {
-            //     const result = search(5);
-            //     console.log('Result: ', result);
-            // })
-
-            searchForm.addEventListener('submit', handleForm);
-
-            function handleForm(event) {
+            // Search
+            const searchForm = shadow.getElementById('search-form');
+            searchForm.addEventListener('submit', (event) => {
                 event.preventDefault();
-                const result = search(5);
+                const input = searchInput.value;
+                const result = search(input);
                 console.log('Result: ', result);
-            }
+            });
         }
     }
 
