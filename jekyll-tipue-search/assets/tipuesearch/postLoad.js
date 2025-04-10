@@ -1,3 +1,4 @@
+// Back to top button functionality
 $(function() {
     // Back to top scroll
     let btn = document.getElementById("btt");

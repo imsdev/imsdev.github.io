@@ -1,4 +1,4 @@
-function search(input) {
-    console.log('Search input: ', input);
-    return input;
+function search(name, id) {
+    $(id).tipuesearch(name, id);
+    return name;
 }

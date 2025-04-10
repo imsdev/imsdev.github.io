@@ -59,7 +59,7 @@ function createComponent(html) {
             })
 
             // Focus on search
-            const searchInput = shadow.getElementById('tipue_search_input');
+            const searchInput = shadow.getElementById('search-input');
             const searchBar = shadow.querySelector('.search-bar');
             searchInput.addEventListener('focus', () => {
                 searchBar.classList.add('search-bar-focused');
@@ -73,7 +73,8 @@ function createComponent(html) {
             searchForm.addEventListener('submit', (event) => {
                 event.preventDefault();
                 const input = searchInput.value;
-                const result = search(input);
+                const searchName = searchInput.name;
+                const result = search(searchName, searchInput);
                 console.log('Result: ', result);
             });
         }

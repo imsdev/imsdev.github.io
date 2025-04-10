@@ -1,3 +1,4 @@
+// Controls dropdown menu and search displays
 $(function() {
   // Hide menu and show search content when search is focused
   $('#tipue_search_input').focusin(function() {
