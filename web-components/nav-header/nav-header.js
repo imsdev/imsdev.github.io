@@ -39,7 +39,7 @@ function createComponent(html) {
         // Invoked when element is added to document
         connectedCallback() {
             // Create shadow root for element
-            const shadow = this.attachShadow({mode: 'closed'});
+            const shadow = this.attachShadow({mode: 'open'});
             shadow.innerHTML = html;
 
             // Menu toggle
@@ -58,7 +58,9 @@ function createComponent(html) {
                 }
             })
 
-            const searchInput = shadow.getElementById('search-input');
+            // Focus on search
+            const searchForm = shadow.getElementById('search-form');
+            const searchInput = shadow.getElementById('tipue_search_input');
             const searchBar = shadow.querySelector('.search-bar');
             searchInput.addEventListener('focus', () => {
                 searchBar.classList.add('search-bar-focused');
@@ -66,6 +68,19 @@ function createComponent(html) {
             searchInput.addEventListener('blur', () => {
                 searchBar.classList.remove('search-bar-focused');
             })
+
+            // searchInput.addEventListener('keydown', () => {
+            //     const result = search(5);
+            //     console.log('Result: ', result);
+            // })
+
+            searchForm.addEventListener('submit', handleForm);
+
+            function handleForm(event) {
+                event.preventDefault();
+                const result = search(5);
+                console.log('Result: ', result);
+            }
         }
     }
 

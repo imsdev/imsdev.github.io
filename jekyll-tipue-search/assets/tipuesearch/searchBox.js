@@ -1,5 +1,5 @@
 $(function() {
-    $(tipue_search_input).focusin(function() {
+    $('#tipue_search_input').focusin(function() {
         $(toggle1).prop("checked", false);
         $(".search_content").show(0);
         // $('#tipue_search_input').attr('style', 'color: #F4F4F4 !important');

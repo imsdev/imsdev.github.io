@@ -7,11 +7,12 @@
                 <h4>IBM <b>IMS Central</b></h4>
             </a>
             <div class="navigation">
-                <form>
+                <form id="search-form">
                     <div class="search-bar">
                         <img src="wp-content/icons/icon_search.svg" id="search-icon">
                         <input 
-                            id="search-input" 
+                            id="tipue_search_input" 
+                            name="q"
                             type="text" 
                             pattern=".{3,}"
                             placeholder="What are you looking for today?"
@@ -22,6 +23,7 @@
                 </form>
 
                 <!-- <script>
+                    console.log('test');
                     $(document).ready(function() {
                         $('#tipue_search_input').tipuesearch();
                     });
