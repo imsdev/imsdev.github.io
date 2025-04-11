@@ -70,11 +70,12 @@ function createComponent(html) {
 
             // Search
             const searchForm = shadow.getElementById('search-form');
+            const searchResults = shadow.getElementById('search-results');
             searchForm.addEventListener('submit', (event) => {
                 event.preventDefault();
                 const input = searchInput.value;
                 const searchName = searchInput.name;
-                const result = search(searchName, searchInput);
+                const result = search(input, searchInput, searchResults);
                 console.log('Result: ', result);
             });
         }

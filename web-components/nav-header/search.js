@@ -1,4 +1,4 @@
-function search(name, id) {
-    $(id).tipuesearch(name, id);
-    return name;
+function search(input, id, results) {
+    $(id).tipuesearch(input, id, results, 'web-component');
+    return input;
 }
