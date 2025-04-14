@@ -40,6 +40,7 @@
 /* TITLE */
 .tipue_search_content_title a {
 	color: black;
+    padding-left: 2em;
 }
 
 /* COUNT */
@@ -140,7 +141,7 @@
 	border: none;
 	outline: none;
 	transition: 0.4s;
-	background-color: rgba(0, 0, 0, 0);;
+	background-color: rgba(0, 0, 0, 0);
 }
 
 .gap {

@@ -74,10 +74,22 @@ function createComponent(html) {
             searchForm.addEventListener('submit', (event) => {
                 event.preventDefault();
                 const input = searchInput.value;
-                const searchName = searchInput.name;
                 const result = search(input, searchInput, searchResults);
-                console.log('Result: ', result);
+                // console.log('Search Input: ', result);
+
+                const accordions = shadow.querySelectorAll('.cordion');
+                accordions.forEach(accordion => {
+                    accordion.addEventListener('click', this.handleDropdown.bind(this));
+                })
             });
+        }
+
+        handleDropdown(event) {
+            const component = document.querySelector('nav-header');
+            const shadow = component.shadowRoot;
+            const resultDesc = shadow.querySelector('.tipue_search_content_text');
+            console.log(resultDesc);
+            resultDesc.classList.add('search_content_drop');
         }
     }
 
