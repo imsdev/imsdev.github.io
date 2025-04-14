@@ -74,23 +74,58 @@ function createComponent(html) {
             searchForm.addEventListener('submit', (event) => {
                 event.preventDefault();
                 const input = searchInput.value;
-                const result = search(input, searchInput, searchResults);
+                $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
+                // const result = search(input, searchInput, searchResults);
                 // console.log('Search Input: ', result);
 
                 const accordions = shadow.querySelectorAll('.cordion');
                 accordions.forEach(accordion => {
                     accordion.addEventListener('click', this.handleDropdown.bind(this));
                 })
+
+                // const pagination = shadow.querySelectorAll('.tipue_search_foot_box');
+                // pagination.forEach(page => {
+                //     page.addEventListener('click', this.handlePagination.bind(this));
+                // })
             });
         }
 
         handleDropdown(event) {
-            const component = document.querySelector('nav-header');
-            const shadow = component.shadowRoot;
-            const resultDesc = shadow.querySelector('.tipue_search_content_text');
-            console.log(resultDesc);
-            resultDesc.classList.add('search_content_drop');
+            // const component = document.querySelector('nav-header');
+            // const shadow = component.shadowRoot;
+            // const resultDesc = shadow.querySelector('.tipue_search_content_text');
+            // const arrow = shadow.querySelector('.fa-angle-right');
+            // resultDesc.classList.toggle('search_content_drop');
+            // arrow.classList.toggle('rotArrow');
+
+            const button = event.target;
+            const parent = button.parentElement;
+            const grandparent = parent.parentElement;
+            var arrow;
+            var description;
+            if (button.classList.contains('cordion')) {
+                arrow = button.firstChild;
+                description = parent.nextElementSibling;
+            } else {
+                arrow = button;
+                description = grandparent.nextElementSibling;
+            }
+            arrow.classList.toggle('rotArrow');
+            description.classList.toggle('search_content_drop');
         }
+
+        // handlePagination(event) {
+        //     const component = document.querySelector('nav-header');
+        //     const shadow = component.shadowRoot;
+        //     const searchResults = shadow.getElementById('search-results');
+        //     const searchInput = shadow.getElementById('search-input');
+
+        //     const page = event.target;
+        //     const pageId = page.id;
+        //     const pageIdArr = pageId.split('_');
+        //     // getTipueSearch(parseInt(pageIdArr[0]), pageIdArr[1], set, searchResults, searchInput);
+        //     // console.log(pageId);
+        // }
     }
 
     // Define new CourseCard element
