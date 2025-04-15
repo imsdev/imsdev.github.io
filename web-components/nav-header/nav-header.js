@@ -84,8 +84,6 @@ function createComponent(html) {
             searchInput.addEventListener('blur', () => {
                 // Update search bar styling
                 searchBar.classList.remove('search-bar-focused');
-                // Hide search results
-                searchResults.classList.add('hide-results');
             })
             
             // Clear search
@@ -113,6 +111,20 @@ function createComponent(html) {
                 accordions.forEach(accordion => {
                     accordion.addEventListener('click', this.handleDropdown.bind(this));
                 })
+
+                // // Pagination
+                // const pagination = shadow.querySelectorAll('.tipue_search_foot_box');
+                // // Add event listener for each box
+                // pagination.forEach(page => {
+                //     page.addEventListener('click', () => {
+                //         console.log('clicked');
+                //         // Get dropdown search results
+                //         // const accordions = shadow.querySelectorAll('.cordion');
+                //         // accordions.forEach(accordion => {
+                //         //     accordion.addEventListener('click', this.handleDropdown.bind(this));
+                //         // })
+                //     });
+                // })
             });
         }
 

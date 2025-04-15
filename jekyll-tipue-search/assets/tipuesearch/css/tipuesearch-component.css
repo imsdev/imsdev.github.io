@@ -5,13 +5,13 @@
     width: 1.25em;
 }
 
-/* RESULTS */
+/* SEARCH RESULTS */
 #search-results {
-    position: absolute;
-    max-width: 30em;
-	background-color: whitesmoke;
-	color: black;
-	margin-top: 3.125em;
+     position: absolute;
+     max-width: 30em;
+     background-color: whitesmoke;
+     color: black;
+     margin-top: 3em;
 }
 
 .hide-results {
@@ -23,8 +23,8 @@
 	border-top: solid lightgray;
 	background-color: whitesmoke;
 	border-width: 1px;
-	transition: .2s;
-	height: 1em;
+	/* transition: .2s; */
+	/* height: 1em; */
 }
 
 .result:hover {
@@ -32,34 +32,31 @@
     background-color: #dddddd;
 } 
 
-/* .result:hover + .tipue_search_content_text {
+.result:hover + .tipue_search_content_text {
     box-shadow: black;
     background-color: #dddddd;
-} */
+}
 
 /* TITLE */
 .tipue_search_content_title a {
-	color: black;
-    padding-left: 2em;
+     color: black;
+     padding-left: 2em;
 }
 
 /* COUNT */
 #tipue_search_results_count {
 	text-align: center;
 	margin: 1em;
-    display: none;
+     display: none;
 }
 
 /* WARNINGS */
-div#tipue_search_warning {
-	text-align: left;
-	padding-left: 7%;
-	margin: 1em;
-}
-
 #tipue_search_warning {
+     text-align: left;
+	padding-left: 1em;
+	margin: 0.5em 0em;
      color: #333;    
-	margin: 7px 0;
+     width: 30em;
 }
 
 #tipue_search_warning a {
@@ -90,20 +87,18 @@ div#tipue_search_warning {
 
 /* DESCRIPTIONS */
 .tipue_search_content_text {
-	color: #333;
-    word-wrap: break-word;
-    hyphens: auto;
-    margin-top: 5px;
-    padding-right: 10%;
-	padding-left: 10%;
+     color: #333;
+     word-wrap: break-word;
+     hyphens: auto;
+     padding: 0em 2em;
 	overflow: hidden;
-	width: 100%;
+	max-width: 30em;
 	max-height: 0;
-	transition: .2s;
 }
 
 .tipue_search_content_bold {
      color: #333;
+     font-weight: 600;
 }
 
 .tipue_search_content_debug {
@@ -113,7 +108,7 @@ div#tipue_search_warning {
 
 /* DROPDOWN */
 .fa-angle-down {
-	position: absolute;
+	/* position: absolute; */
 	float: left;
 }
 
@@ -129,7 +124,6 @@ div#tipue_search_warning {
 .search_content_drop {
 	max-height: 60px;
 	padding-bottom: 15px;
-	transition: .2s;
 	overflow: hidden;
 	background-color: whitesmoke;
 }
