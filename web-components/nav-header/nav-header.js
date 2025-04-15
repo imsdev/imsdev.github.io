@@ -47,23 +47,26 @@ function createComponent(html) {
             const menuToggle = shadow.getElementById('menu-toggle');
             const dropdownMenu = shadow.querySelector('.dropdown-menu');
             menuButton.addEventListener('click', () => {
+                // Update checked state of menuToggle
                 var checkedState = menuToggle.checked ? false : true;
                 menuToggle.checked = checkedState;
                 
+                // Update display of dropdown menu based on checked state
                 if (checkedState) {
                     dropdownMenu.style.height = '33em';
                 } else {
                     dropdownMenu.style.height = '0em';
-                    
                 }
             })
 
             // Focus on search
             const searchInput = shadow.getElementById('search-input');
             const searchBar = shadow.querySelector('.search-bar');
+            // If focus is on search, add styling class
             searchInput.addEventListener('focus', () => {
                 searchBar.classList.add('search-bar-focused');
             })
+            // If focus is off of search, remove styling class
             searchInput.addEventListener('blur', () => {
                 searchBar.classList.remove('search-bar-focused');
             })
@@ -71,61 +74,46 @@ function createComponent(html) {
             // Search
             const searchForm = shadow.getElementById('search-form');
             const searchResults = shadow.getElementById('search-results');
+            // Await submission of search input
             searchForm.addEventListener('submit', (event) => {
+                // Prevent page from reloading
                 event.preventDefault();
+                // Get user search input
                 const input = searchInput.value;
+                // Make search call
                 $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
+                
                 // const result = search(input, searchInput, searchResults);
                 // console.log('Search Input: ', result);
-
+                
+                // Get dropdown search results
                 const accordions = shadow.querySelectorAll('.cordion');
                 accordions.forEach(accordion => {
                     accordion.addEventListener('click', this.handleDropdown.bind(this));
                 })
-
-                // const pagination = shadow.querySelectorAll('.tipue_search_foot_box');
-                // pagination.forEach(page => {
-                //     page.addEventListener('click', this.handlePagination.bind(this));
-                // })
             });
         }
 
+        // Handle search result dropdown interaction
         handleDropdown(event) {
-            // const component = document.querySelector('nav-header');
-            // const shadow = component.shadowRoot;
-            // const resultDesc = shadow.querySelector('.tipue_search_content_text');
-            // const arrow = shadow.querySelector('.fa-angle-right');
-            // resultDesc.classList.toggle('search_content_drop');
-            // arrow.classList.toggle('rotArrow');
-
             const button = event.target;
             const parent = button.parentElement;
             const grandparent = parent.parentElement;
             var arrow;
             var description;
+            // Check if user clicked on button - assign variables
             if (button.classList.contains('cordion')) {
                 arrow = button.firstChild;
                 description = parent.nextElementSibling;
+            // If user clicked on icon, change variable assignment
             } else {
                 arrow = button;
                 description = grandparent.nextElementSibling;
             }
+            // Rotate arrow and display/hide result description
             arrow.classList.toggle('rotArrow');
             description.classList.toggle('search_content_drop');
         }
-
-        // handlePagination(event) {
-        //     const component = document.querySelector('nav-header');
-        //     const shadow = component.shadowRoot;
-        //     const searchResults = shadow.getElementById('search-results');
-        //     const searchInput = shadow.getElementById('search-input');
-
-        //     const page = event.target;
-        //     const pageId = page.id;
-        //     const pageIdArr = pageId.split('_');
-        //     // getTipueSearch(parseInt(pageIdArr[0]), pageIdArr[1], set, searchResults, searchInput);
-        //     // console.log(pageId);
-        // }
     }
 
     // Define new CourseCard element
