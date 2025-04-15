@@ -14,8 +14,8 @@
 	margin-top: 3.125em;
 }
 
-.search-dropdown {
-    position: absolute;
+.hide-results {
+     visibility: hidden;
 }
 
 .result {

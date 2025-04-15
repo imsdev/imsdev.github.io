@@ -47,28 +47,45 @@ function createComponent(html) {
             const menuToggle = shadow.getElementById('menu-toggle');
             const dropdownMenu = shadow.querySelector('.dropdown-menu');
             menuButton.addEventListener('click', () => {
-                // Update checked state of menuToggle
-                var checkedState = menuToggle.checked ? false : true;
-                menuToggle.checked = checkedState;
-                
-                // Update display of dropdown menu based on checked state
-                if (checkedState) {
-                    dropdownMenu.style.height = '33em';
-                } else {
-                    dropdownMenu.style.height = '0em';
+                this.toggleMenu(menuToggle, dropdownMenu);
+                // Hide search results
+                if (menuToggle.checked) {
+                    searchResults.classList.add('hide-results');
                 }
+            })
+
+            // Hide nav dropdowns when user clicks outside of menu
+            const contentBody = document.querySelector('#content');
+            const searchResults = shadow.getElementById('search-results');
+            contentBody.addEventListener('click', () => {
+                // Hide menu
+                if (menuToggle.checked) {
+                    this.toggleMenu(menuToggle, dropdownMenu);
+                }
+                // Hide search results
+                searchResults.classList.add('hide-results');
             })
 
             // Focus on search
             const searchInput = shadow.getElementById('search-input');
             const searchBar = shadow.querySelector('.search-bar');
-            // If focus is on search, add styling class
+            // If focus is on search
             searchInput.addEventListener('focus', () => {
+                // Update search bar styling
                 searchBar.classList.add('search-bar-focused');
+                // Toggle menu if open
+                if (menuToggle.checked) {
+                    this.toggleMenu(menuToggle, dropdownMenu);
+                }
+                // Display search results
+                searchResults.classList.remove('hide-results');
             })
-            // If focus is off of search, remove styling class
+            // If focus is off of search
             searchInput.addEventListener('blur', () => {
+                // Update search bar styling
                 searchBar.classList.remove('search-bar-focused');
+                // Hide search results
+                searchResults.classList.add('hide-results');
             })
             
             // Clear search
@@ -79,7 +96,6 @@ function createComponent(html) {
             
             // Search
             const searchForm = shadow.getElementById('search-form');
-            const searchResults = shadow.getElementById('search-results');
             // Await submission of search input
             searchForm.addEventListener('submit', (event) => {
                 // Prevent page from reloading
@@ -98,6 +114,19 @@ function createComponent(html) {
                     accordion.addEventListener('click', this.handleDropdown.bind(this));
                 })
             });
+        }
+
+        toggleMenu(menuToggle, dropdownMenu) {
+            // Update checked state of menuToggle
+            var checkedState = menuToggle.checked ? false : true;
+            menuToggle.checked = checkedState;
+            
+            // Update display of dropdown menu based on checked state
+            if (checkedState) {
+                dropdownMenu.style.height = '33em';
+            } else {
+                dropdownMenu.style.height = '0em';
+            }
         }
 
         // Handle search result dropdown interaction
