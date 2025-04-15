@@ -70,7 +70,13 @@ function createComponent(html) {
             searchInput.addEventListener('blur', () => {
                 searchBar.classList.remove('search-bar-focused');
             })
-
+            
+            // Clear search
+            const searchClear = shadow.getElementById('clear-icon');
+            searchClear.addEventListener('click', () => {
+                searchInput.value = "";
+            })
+            
             // Search
             const searchForm = shadow.getElementById('search-form');
             const searchResults = shadow.getElementById('search-results');

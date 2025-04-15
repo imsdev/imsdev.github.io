@@ -84,8 +84,12 @@ form div > img {
     width: 1.4em;
 }
 
-#close-icon {
+#clear-icon {
     cursor: pointer;
+}
+
+.hide-icon {
+    visibility: hidden;
 }
 
 .logo {
