@@ -89,7 +89,13 @@ function createComponent(html) {
             // Clear search
             const searchClear = shadow.getElementById('clear-icon');
             searchClear.addEventListener('click', () => {
+                // Remove input value
                 searchInput.value = "";
+                const input = searchInput.value;
+                // Make search call
+                $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
+                // Hide search results
+                searchResults.classList.add('hide-results');
             })
             
             // Search
@@ -126,6 +132,7 @@ function createComponent(html) {
                 //     });
                 // })
             });
+
         }
 
         toggleMenu(menuToggle, dropdownMenu) {
