@@ -42,13 +42,16 @@ function createComponent(html) {
             const shadow = this.attachShadow({mode: 'open'});
             shadow.innerHTML = html;
 
-            // Menu toggle
-            const menuButton = shadow.querySelector('.hamburger-menu');
+            const menuButton = shadow.querySelector('.hamburger-menu'); 
             const menuToggle = shadow.getElementById('menu-toggle');
             const dropdownMenu = shadow.querySelector('.dropdown-menu');
+            const searchResults = shadow.getElementById('search-results');
+
+            // Toggle dropdown menu on hamburger menu click
             menuButton.addEventListener('click', () => {
+                // Toggle dropdown menu
                 this.toggleMenu(menuToggle, dropdownMenu);
-                // Hide search results
+                // Hide search results if menu is open
                 if (menuToggle.checked) {
                     searchResults.classList.add('hide-results');
                 }
@@ -56,9 +59,8 @@ function createComponent(html) {
 
             // Hide nav dropdowns when user clicks outside of menu
             const contentBody = document.querySelector('#content');
-            const searchResults = shadow.getElementById('search-results');
             contentBody.addEventListener('click', () => {
-                // Hide menu
+                // Hide menu if open
                 if (menuToggle.checked) {
                     this.toggleMenu(menuToggle, dropdownMenu);
                 }
@@ -73,7 +75,7 @@ function createComponent(html) {
             searchInput.addEventListener('focus', () => {
                 // Update search bar styling
                 searchBar.classList.add('search-bar-focused');
-                // Toggle menu if open
+                // Hide menu if open
                 if (menuToggle.checked) {
                     this.toggleMenu(menuToggle, dropdownMenu);
                 }
@@ -108,38 +110,21 @@ function createComponent(html) {
                 const input = searchInput.value;
                 // Make search call
                 $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
-                
-                // const result = search(input, searchInput, searchResults);
-                // console.log('Search Input: ', result);
-                
+                    // const result = search(input, searchInput, searchResults);
                 // Get dropdown search results
                 const accordions = shadow.querySelectorAll('.cordion');
                 accordions.forEach(accordion => {
-                    accordion.addEventListener('click', this.handleDropdown.bind(this));
+                    accordion.addEventListener('click', this.handleResultsDropdown.bind(this));
                 })
-
-                // // Pagination
-                // const pagination = shadow.querySelectorAll('.tipue_search_foot_box');
-                // // Add event listener for each box
-                // pagination.forEach(page => {
-                //     page.addEventListener('click', () => {
-                //         console.log('clicked');
-                //         // Get dropdown search results
-                //         // const accordions = shadow.querySelectorAll('.cordion');
-                //         // accordions.forEach(accordion => {
-                //         //     accordion.addEventListener('click', this.handleDropdown.bind(this));
-                //         // })
-                //     });
-                // })
             });
 
         }
 
+        // Toggle dropdown menu
         toggleMenu(menuToggle, dropdownMenu) {
             // Update checked state of menuToggle
             var checkedState = menuToggle.checked ? false : true;
             menuToggle.checked = checkedState;
-            
             // Update display of dropdown menu based on checked state
             if (checkedState) {
                 dropdownMenu.style.height = '33em';
@@ -149,7 +134,7 @@ function createComponent(html) {
         }
 
         // Handle search result dropdown interaction
-        handleDropdown(event) {
+        handleResultsDropdown(event) {
             const button = event.target;
             const parent = button.parentElement;
             const grandparent = parent.parentElement;

@@ -56,6 +56,10 @@ form div {
     border: lightgray solid 2px;
 }
 
+form input {
+    font-size: 1.125em;
+}
+
 input {
     outline: none;
     width: 100%;
@@ -86,10 +90,6 @@ form div > img {
 
 #clear-icon {
     cursor: pointer;
-}
-
-.hide-icon {
-    visibility: hidden;
 }
 
 .logo {
