@@ -46,19 +46,21 @@ function createComponent(html) {
             const menuToggle = shadow.getElementById('menu-toggle');
             const dropdownMenu = shadow.querySelector('.dropdown-menu');
             const searchResults = shadow.getElementById('search-results');
+            const menuItems = dropdownMenu.querySelectorAll('a');
 
             // Toggle dropdown menu on hamburger menu click
-            menuButton.addEventListener('click', () => {this.toggleMenu(menuToggle, dropdownMenu, searchResults)});
-            // menuButton.addEventListener('keydown', (event) => {
-            //     if (event.key === 'Enter') {this.toggleMenu(menuToggle, dropdownMenu, searchResults)};
-            // })
+            menuButton.addEventListener('click', () => {this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems)});
+            menuButton.addEventListener('focus', () => {searchResults.classList.add('hide-results');})
+            menuButton.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems)};
+            })
 
             // Hide nav dropdowns when user clicks outside of menu
             const contentBody = document.querySelector('#content');
             contentBody.addEventListener('click', () => {
                 // Hide menu if open
                 if (menuToggle.checked) {
-                    this.toggleMenu(menuToggle, dropdownMenu);
+                    this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems);
                 }
                 // Hide search results
                 searchResults.classList.add('hide-results');
@@ -73,7 +75,7 @@ function createComponent(html) {
                 searchBar.classList.add('search-bar-focused');
                 // Hide menu if open
                 if (menuToggle.checked) {
-                    this.toggleMenu(menuToggle, dropdownMenu, searchResults);
+                    this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems);
                 }
                 // Display search results
                 searchResults.classList.remove('hide-results');
@@ -112,15 +114,21 @@ function createComponent(html) {
         }
 
         // Toggle dropdown menu
-        toggleMenu(menuToggle, dropdownMenu, searchResults) {
+        toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems) {
             // Update checked state of menuToggle
             var checkedState = menuToggle.checked ? false : true;
             menuToggle.checked = checkedState;
             // Update display of dropdown menu based on checked state
             if (checkedState) {
                 dropdownMenu.style.height = '33em';
+                for (let i = 0; i < menuItems.length; i++) {
+                    menuItems[i].tabIndex = '0';
+                }
             } else {
                 dropdownMenu.style.height = '0em';
+                for (let i = 0; i < menuItems.length; i++) {
+                    menuItems[i].tabIndex = '-1';
+                }
             }
             // Hide search results if menu is open
             if (menuToggle.checked) {
