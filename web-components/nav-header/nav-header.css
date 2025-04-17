@@ -40,14 +40,14 @@ a p {
 }
 
 form {
-    width: 30em;
+    width: 100%;
     height: 3em;
     background-color: white;
     display: flex;
 }
 
 form div {
-    width: 30em;
+    width: 100%;
     background-color: white;
     display: flex;
     flex-flow: row nowrap;
@@ -108,6 +108,7 @@ form div > img {
 .navigation {
     display: flex;
     flex-flow: row nowrap;
+    width: 40%;
 }
 
 .hamburger-menu {
@@ -202,4 +203,8 @@ form div > img {
     height: 1em; 
     width: 1em;
     margin-left: 0.625em;
+}
+
+@media screen and (max-width: 768px) {
+
 }
