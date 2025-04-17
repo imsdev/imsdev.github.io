@@ -48,14 +48,10 @@ function createComponent(html) {
             const searchResults = shadow.getElementById('search-results');
 
             // Toggle dropdown menu on hamburger menu click
-            menuButton.addEventListener('click', () => {
-                // Toggle dropdown menu
-                this.toggleMenu(menuToggle, dropdownMenu);
-                // Hide search results if menu is open
-                if (menuToggle.checked) {
-                    searchResults.classList.add('hide-results');
-                }
-            })
+            menuButton.addEventListener('click', () => {this.toggleMenu(menuToggle, dropdownMenu, searchResults)});
+            // menuButton.addEventListener('keydown', (event) => {
+            //     if (event.key === 'Enter') {this.toggleMenu(menuToggle, dropdownMenu, searchResults)};
+            // })
 
             // Hide nav dropdowns when user clicks outside of menu
             const contentBody = document.querySelector('#content');
@@ -77,7 +73,7 @@ function createComponent(html) {
                 searchBar.classList.add('search-bar-focused');
                 // Hide menu if open
                 if (menuToggle.checked) {
-                    this.toggleMenu(menuToggle, dropdownMenu);
+                    this.toggleMenu(menuToggle, dropdownMenu, searchResults);
                 }
                 // Display search results
                 searchResults.classList.remove('hide-results');
@@ -89,15 +85,10 @@ function createComponent(html) {
             })
             
             // Clear search
-            const searchClear = shadow.getElementById('clear-icon');
-            searchClear.addEventListener('click', () => {
-                // Remove input value
-                searchInput.value = "";
-                const input = searchInput.value;
-                // Make search call
-                $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
-                // Hide search results
-                searchResults.classList.add('hide-results');
+            const clearIcon = shadow.getElementById('clear-icon');
+            clearIcon.addEventListener('click', () => {this.clearSearch(searchInput, searchResults)});
+            clearIcon.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {this.clearSearch(searchInput, searchResults)};
             })
             
             // Search
@@ -121,7 +112,7 @@ function createComponent(html) {
         }
 
         // Toggle dropdown menu
-        toggleMenu(menuToggle, dropdownMenu) {
+        toggleMenu(menuToggle, dropdownMenu, searchResults) {
             // Update checked state of menuToggle
             var checkedState = menuToggle.checked ? false : true;
             menuToggle.checked = checkedState;
@@ -130,6 +121,10 @@ function createComponent(html) {
                 dropdownMenu.style.height = '33em';
             } else {
                 dropdownMenu.style.height = '0em';
+            }
+            // Hide search results if menu is open
+            if (menuToggle.checked) {
+                searchResults.classList.add('hide-results');
             }
         }
 
@@ -152,6 +147,17 @@ function createComponent(html) {
             // Rotate arrow and display/hide result description
             arrow.classList.toggle('rotArrow');
             description.classList.toggle('search_content_drop');
+        }
+
+        // Clear search
+        clearSearch(searchInput, searchResults) {
+            // Remove input value
+            searchInput.value = "";
+            const input = searchInput.value;
+            // Make search call
+            $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
+            // Hide search results
+            searchResults.classList.add('hide-results');
         }
     }
 
