@@ -8,9 +8,9 @@
 /* SEARCH RESULTS */
 #search-results {
      position: absolute;
-     max-width: 30em;
-     /* width: 40%; */
-     background-color: whitesmoke;
+     /* max-width: 30em; */
+     width: 40%;
+     /* background-color: whitesmoke; */
      color: black;
      margin-top: 3em;
      /* margin-right: 3em; */
@@ -25,7 +25,7 @@
 	border-top: solid lightgray;
 	background-color: whitesmoke;
 	border-width: 1px;
-     /* margin-right: 3em; */
+     margin-right: 3em;
 	/* transition: .2s; */
 	/* height: 1em; */
 }
@@ -56,10 +56,14 @@
 /* WARNINGS */
 #tipue_search_warning {
      text-align: left;
-	padding-left: 1em;
-	margin: 0.5em 0em;
-     color: #333;    
-     width: 30em;
+     padding: 1em;
+	/* padding-left: 1em; */
+	/* margin: 0.5em 0em; */
+     margin-right: 3em;
+     color: #333;  
+     /* width: 40%;   */
+     /* width: 30em; */
+     background-color: whitesmoke;
 }
 
 #tipue_search_warning a {
@@ -95,7 +99,7 @@
      hyphens: auto;
      padding: 0em 3em;
 	overflow: hidden;
-     /* margin-right: 3em; */
+     margin-right: 3em;
 	max-height: 0;
      /* transition: .2s; */
 }
@@ -160,8 +164,8 @@
      /* margin: 1em 0em; */
      background-color: whitesmoke;
      margin-top: 0em;
-     /* margin-right: 3em; */
-     /* padding-top: 1em; */
+     margin-right: 3em;
+     padding-top: 1em;
 }
 
 #tipue_search_foot_boxes {
