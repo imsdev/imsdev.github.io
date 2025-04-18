@@ -165,6 +165,7 @@ form div > img {
     z-index: 120;
     transition: all 0.3s ease;
     overflow: hidden;
+    position: absolute;
 }
 
 .menu {

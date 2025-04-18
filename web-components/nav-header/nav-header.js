@@ -50,10 +50,10 @@ function createComponent(html) {
 
             // Toggle dropdown menu on hamburger menu click
             menuButton.addEventListener('click', () => {this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems)});
-            menuButton.addEventListener('focus', () => {searchResults.classList.add('hide-results');})
             menuButton.addEventListener('keydown', (event) => {
                 if (event.key === 'Enter') {this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems)};
             })
+            menuButton.addEventListener('focus', () => {searchResults.style.display = 'none';})
 
             // Hide nav dropdowns when user clicks outside of menu
             const contentBody = document.querySelector('#content');
@@ -63,7 +63,7 @@ function createComponent(html) {
                     this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems);
                 }
                 // Hide search results
-                searchResults.classList.add('hide-results');
+                searchResults.style.display = 'none';
             })
 
             // Focus on search
@@ -78,7 +78,7 @@ function createComponent(html) {
                     this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems);
                 }
                 // Display search results
-                searchResults.classList.remove('hide-results');
+                searchResults.style.display = 'block';
             })
             // If focus is off of search
             searchInput.addEventListener('blur', () => {
@@ -131,9 +131,9 @@ function createComponent(html) {
                 }
             }
             // Hide search results if menu is open
-            if (menuToggle.checked) {
-                searchResults.classList.add('hide-results');
-            }
+            // if (menuToggle.checked) {
+            //     searchResults.classList.add('hide-results');
+            // }
         }
 
         // Handle search result dropdown interaction
@@ -165,7 +165,8 @@ function createComponent(html) {
             // Make search call
             $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
             // Hide search results
-            searchResults.classList.add('hide-results');
+            // searchResults.classList.add('hide-results');
+            searchResults.style.display = 'none';
         }
     }
 
