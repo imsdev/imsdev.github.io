@@ -49,18 +49,19 @@ function createComponent(html) {
             const menuItems = dropdownMenu.querySelectorAll('a');
 
             // Toggle dropdown menu on hamburger menu click
-            menuButton.addEventListener('click', () => {this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems)});
+            menuButton.addEventListener('click', () => {this.toggleMenu(menuToggle, dropdownMenu, menuItems)});
             menuButton.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter') {this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems)};
+                if (event.key === 'Enter') {this.toggleMenu(menuToggle, dropdownMenu, menuItems)};
             })
-            menuButton.addEventListener('focus', () => {searchResults.style.display = 'none';})
+                // Hide search results
+                menuButton.addEventListener('focus', () => {searchResults.style.display = 'none';})
 
             // Hide nav dropdowns when user clicks outside of menu
             const contentBody = document.querySelector('#content');
             contentBody.addEventListener('click', () => {
                 // Hide menu if open
                 if (menuToggle.checked) {
-                    this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems);
+                    this.toggleMenu(menuToggle, dropdownMenu, menuItems);
                 }
                 // Hide search results
                 searchResults.style.display = 'none';
@@ -75,7 +76,7 @@ function createComponent(html) {
                 searchBar.classList.add('search-bar-focused');
                 // Hide menu if open
                 if (menuToggle.checked) {
-                    this.toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems);
+                    this.toggleMenu(menuToggle, dropdownMenu, menuItems);
                 }
                 // Display search results
                 searchResults.style.display = 'block';
@@ -103,7 +104,6 @@ function createComponent(html) {
                 const input = searchInput.value;
                 // Make search call
                 $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
-                    // const result = search(input, searchInput, searchResults);
                 // Get dropdown search results
                 const accordions = shadow.querySelectorAll('.cordion');
                 accordions.forEach(accordion => {
@@ -111,10 +111,18 @@ function createComponent(html) {
                 })
             });
 
+            // Hide dropdown menu for keyboard navigation
+            const firstLink = document.querySelector('a');
+            firstLink.addEventListener('focus', () => {
+                // Hide menu if open
+                if (menuToggle.checked) {
+                    this.toggleMenu(menuToggle, dropdownMenu, menuItems);
+                }
+            })
         }
 
         // Toggle dropdown menu
-        toggleMenu(menuToggle, dropdownMenu, searchResults, menuItems) {
+        toggleMenu(menuToggle, dropdownMenu, menuItems) {
             // Update checked state of menuToggle
             var checkedState = menuToggle.checked ? false : true;
             menuToggle.checked = checkedState;
@@ -130,10 +138,6 @@ function createComponent(html) {
                     menuItems[i].tabIndex = '-1';
                 }
             }
-            // Hide search results if menu is open
-            // if (menuToggle.checked) {
-            //     searchResults.classList.add('hide-results');
-            // }
         }
 
         // Handle search result dropdown interaction
