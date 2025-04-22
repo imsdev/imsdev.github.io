@@ -128,7 +128,7 @@ function createComponent(html) {
             menuToggle.checked = checkedState;
             // Update display of dropdown menu based on checked state
             if (checkedState) {
-                dropdownMenu.style.height = '33em';
+                dropdownMenu.style.height = '35em';
                 for (let i = 0; i < menuItems.length; i++) {
                     menuItems[i].tabIndex = '0';
                 }
