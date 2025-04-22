@@ -74,6 +74,9 @@
 
 	<!-- Web components -->
 	<script src="web-components/nav-header/nav-header.js" type="module"></script>
+
+	<!-- Web components -->
+	<script src="web-components/hero-section/hero-section.js" type="module"></script>
 </head>
 
 <body id="ibm-com" class="ibm-com ibm-type">
@@ -82,27 +85,14 @@
 	<main id="content" class="main-content">
 		<div id="main">
 			<!-- =========================== Hero =========================== -->
-			<section class="internship-bg">
-				<div id="intro-section" class="pure-g blur-bg hero">
-					<div class="pure-u-1 pure-u-md-1-24">
-						<img src="wp-content/icons/icon_engage.svg" alt="" class="icon">
-					</div>
-					<div class="pure-u-1 pure-u-md-23-24">
-						<h6>Engage</h6>
-						<h1>IMS Customer Internship 2025</h1>
-						<p>Take your skills to the next level with our annual, in-person, one-week training event.</p>
-						<p><b>May 19 - 23, 2025</b></p>
-						<a class="button button-primary" 
-							onfocus="closeNavMenu()" 
-							target="_blank"
-							aria-label="Register now for the IMS Internship" 
-							href="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/z/ims/eventsignup.html" 
-							rel="noopener noreferrer">
-							Register now →
-						</a>
-					</div>
-				</div>
-			</section>
+			<hero-section
+				name="IMS Customer Internship 2025"
+				image="wp-content/icons/icon_engage.svg" 
+				section="Engage"
+				desc="<p>Take your skills to the next level with our annual, in-person, one-week training event.</p><p><b>May 19 - 23, 2025</b></p>"
+				linktext="Register now →"
+				link="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/z/ims/eventsignup.html"
+			></hero-section>
 
 			<!-- =========================== Why attend? =========================== -->
 			<section class="white-bg pure-g">

@@ -77,6 +77,8 @@
 <!-- Web components -->
 <script src="web-components/nav-header/nav-header.js" type="module"></script>
 
+<!-- Web components -->
+<script src="web-components/hero-section/hero-section.js" type="module"></script>
 </head>
 
 <!-- MASTHEAD_SITENAV_BEGIN -->
@@ -97,19 +99,12 @@
 					<!-- MAIN CONTENT -->
 					<main class="zs-main" id="main">
 						<!-- =========================== IMS Docs banner =========================== -->
-						<div class="banner">
-							<section id="intro-section" class="pure-g zs-section learn-bg docs-intro">
-								<div id="intro-header" class="pure-u-1"></div>
-								<div class="pure-u-3-25">
-									<img class="ims-card-icon" src="wp-content/Icon_Using DDL_IMS DatabasePage.svg" alt="">
-								</div>
-								<div id="intro-info" class="pure-u-1 pure-u-sm-1-2 docs-intro-text">
-									<h1>IMS Documentation</h1>
-									<p id="p-style">Find IMS™ and other IBM product documentation.</p>
-									<div class="pure-u-1"></div>
-								</div>
-							</section>
-						</div>
+						<hero-section
+							name="IMS Documentation"
+							image="wp-content/icons/icon_documentation.svg" 
+							section="Support"
+							desc="Find IMS™ and other IBM product documentation."
+						></hero-section>
 
 						<!-- =========================== Badges & Docs  =========================== -->
 						<div class="zs-gray-section zs-white-section docs-main">

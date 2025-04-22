@@ -75,6 +75,9 @@
 
 	<!-- Web components -->
 	<script src="web-components/nav-header/nav-header.js" type="module"></script>
+
+	  <!-- Web components -->
+	  <script src="web-components/hero-section/hero-section.js" type="module"></script>
 </head>
 
 <!-- MASTHEAD_SITENAV_BEGIN -->
@@ -90,34 +93,16 @@
 	<div id="content" class="main-content">
 		<main id="main">
 			<!-- =========================== Hero =========================== -->
-			<section class="engage-bg">
-				<div id="intro-section" class="pure-g hero">
-					<div class="pure-u-1 pure-u-md-1-24">
-						<img src="wp-content/icons/icon_engage.svg" alt="" class="icon">
-					</div>
-					<div class="pure-u-1 pure-u-md-23-24">
-						<h6>Engage</h6>
-						<h1>Advocates and ideas</h1>
-						<p>Get an IMS advocate to represent you. Also, submit your ideas to enhance the IMS product.</p>
-						<div class="button-g">
-							<a class="button button-primary" 
-								onfocus="closeNavMenu()" 
-								target="_blank"
-								aria-label="Request an IMS Advocate" 
-								href="mailto:deepakk@us.ibm.com" 
-								rel="noopener noreferrer">
-								Request an IMS advocate
-							</a>
-							<a class="button button-secondary" 
-								aria-label="Submit ideas for enhancements" 
-								href="#ideas" 
-								rel="noopener noreferrer">
-								Submit ideas for enhancements
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+			<hero-section
+				name="Advocates and ideas"
+				image="wp-content/icons/icon_engage.svg"
+				section="Engage"
+				desc="Get an IMS advocate to represent you. Also, submit your ideas to enhance the IMS product."
+				linktext="Request an IMS advocate"
+				link="mailto:deepakk@us.ibm.com"
+				linktext2="Submit ideas for enhancement"
+				link2="#ideas"
+			></hero-section>
 
 			<!-- =========================== Who are they? =========================== -->
 			<section class="white-bg pure-g">

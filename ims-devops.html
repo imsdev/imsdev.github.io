@@ -78,6 +78,8 @@
 <!-- Web components -->
 <script src="web-components/nav-header/nav-header.js" type="module"></script>
 
+<!-- Web components -->
+<script src="web-components/hero-section/hero-section.js" type="module"></script>
 </head>
 
 <!-- MASTHEAD_SITENAV_BEGIN -->
@@ -98,26 +100,15 @@
 					<main class="zs-main" id="main">
 
 						<!-- =========================== IMS DevOps =========================== -->
-						<div class="banner innovate-bg" >
-							<section id="intro-section" class="pure-g zs-section intro-sec">
-								<div id="intro-header" class="pure-u-1"></div>
-								<div class="pure-u-3-25">
-									<img class="ims-card-icon" src="wp-content/Icon_Banner_AutomationPage.svg" alt="">
-								</div>
-								<div id="intro-info" class="pure-u-1 pure-u-sm-1-2">
-									<h6>Innovate</h6>
-									<h1>Automation</h1>
-									<p id="p-style">Ansible® for IBM Z® helps you automate your z/OS® applications and IT infrastructure 
-										as part of your enterprise automation strategy using a proven and consistent approach.
-									</p>
-									<div class="pure-u-1 intro-button">
-										<a class="zs-w-button-transparent" onfocus="closeNavMenu()" aria-label="Start your free trial of Ansible for IBM Z"
-										href="https://early-access.ibm.com/software/support/trial/cst/welcomepage.wss?siteId=940&tabId=2224&w=1" target="_blank" rel="noopener noreferrer">
-											Start your free trial →</a>
-									</div>
-								</div>
-							</section>
-						</div>
+						<hero-section
+							name="Automation"
+							image="wp-content/icons/icon_automation.svg" 
+							section="Innovate"
+							desc="Ansible® for IBM Z® helps you automate your z/OS® applications and IT infrastructure 
+								as part of your enterprise automation strategy using a proven and consistent approach."
+							linktext="Start your free trial →"
+							link="https://early-access.ibm.com/software/support/trial/cst/welcomepage.wss?siteId=940&tabId=2224&w=1"
+						></hero-section>
 
 						<!-- =========================== Expanded description =========================== -->
 						<div class="zs-gray-section ibm-background-white-core desc-sec">

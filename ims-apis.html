@@ -77,6 +77,8 @@
 	<!-- Web components -->
 	<script src="web-components/nav-header/nav-header.js" type="module"></script>
 
+	<!-- Web components -->
+	<script src="web-components/hero-section/hero-section.js" type="module"></script>
 	</head>
 
 	<!-- --------------- SITE CONTENT --------------- -->
@@ -88,21 +90,12 @@
 				<main id="main" class="zs-main" >
 
 					<!-- =========================== IMS APIs Hero Banner =========================== -->
-					<div class="banner innovate-bg">
-						<section id="intro-section" class="pure-g zs-section apis-hero">
-							<div id="intro-header" class="pure-u-1"></div>
-							<div class="pure-u-3-25">
-								<img class="ims-card-icon" src="wp-content/Icon_Banner_z OS ConnectPage.svg" alt="">
-							</div>
-							<div id="intro-info" class="pure-u-1 pure-u-sm-15-24 apis-hero-text">
-								<h6>Innovate</h6>
-								<h1 >IBM z/OS Connect</h1>
-								<p id="p-style" >Create and deploy RESTful APIs that access IMS™ applications and data 
-								in minutes with point and click Eclipse tooling.
-								</p>
-							</div>
-						</section>
-					</div>
+					<hero-section
+						name="IBM z/OS Connect"
+						image="wp-content/icons/icon_zos_connect.svg" 
+						section="Innovate"
+						desc="Create and deploy RESTful APIs that access IMS™ applications and data in minutes with point and click Eclipse tooling."
+					></hero-section>
 
 					<!-- =========================== Call APIs from Z =========================== -->
 					<div class="zs-gray-section apis-section-white">

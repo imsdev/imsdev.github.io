@@ -1,0 +1,157 @@
+.engage-bg {
+    background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.learn-bg {
+    background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    color: black;
+}
+
+.innovate-bg {
+    background-image: url(../../wp-content/backgrounds/Innovate_HomepageBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35%;
+}
+
+.internship-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../wp-content/images/internship_collaboration.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+  }
+  
+  .blur-bg {
+    backdrop-filter: blur(6px);
+  }
+
+section {
+    /* Button Color */
+    --btn-prim: #0f62fe;
+    --btn-prim-hover: #0050e6;
+    --btn-secnd: #6f6f6f;
+    --btn-scnd-hover: #5e5e5e;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 4em 2fr;
+    /* grid-template-rows: 4em 4em 6em 1fr; */
+    grid-template-rows: 4em repeat(3, 1fr);
+    padding: 3em;
+    padding-top: 2em;
+    align-items: center;
+}
+
+.hero-no-buttons {
+    grid-template-rows: 4em repeat(2, 1fr);
+}
+
+img {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+sup {
+    color: var(--btn-prim);
+}
+
+h2 {
+    line-height: 1.2;
+    margin: 0.2em 0em;
+    padding: 0em;
+}
+
+h6, p {
+    margin: 0em;
+    padding: 0em;
+}
+
+.large-icon {
+    width: 4em;
+}
+
+.section {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.name {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.desc {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 1.25em;
+}
+
+.desc p {
+    margin: 0.5em 0em;
+}
+
+.links {
+    grid-column: 2;
+    grid-row: 4;
+    display: flex;
+    flex-flow: wrap row;
+    gap: 1em;
+}
+
+.button {
+    color: white;
+    padding: 1em 1.5em;
+    line-height: var(--plex-24);
+    text-decoration: none;
+  }
+  
+  .button-primary {
+    background-color: var(--btn-prim);
+    margin-top: 1.25em;
+  }
+  
+  .button-secondary {
+    background-color: var(--btn-secnd);
+    margin-top: 1.25em;
+  }
+  
+  .button-primary:hover {
+    background-color: var(--btn-prim-hover);
+  }
+  
+  .button-secondary:hover {
+    background-color: var(--btn-scnd-hover);
+  }
+
+@media screen and (min-width: 90em) {
+    .hero {
+        grid-template-columns: 4em 4fr 1fr;
+    }
+}
+
+@media  screen and (max-width: 27em) {
+    .hero {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: 1em;
+        padding: 3em 2em;
+    }
+}

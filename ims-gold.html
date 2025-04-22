@@ -88,6 +88,8 @@
 <!-- Web components -->
 <script src="web-components/nav-header/nav-header.js" type="module"></script>
 
+<!-- Web components -->
+<script src="web-components/hero-section/hero-section.js" type="module"></script>
 </head>
 
 <!-- MASTHEAD_SITENAV_BEGIN -->
@@ -109,23 +111,14 @@
 						<main class="zs-main" id="main">
 
 							<!-- =========================== IMS Gold =========================== -->
-							<div class="banner engage-bg intro-sec">
-								<section id="intro-section" class="pure-g zs-section">
-									<div id="intro-header" class="pure-u-1"></div>
-									<div class="pure-u-3-25">
-										<img class="ims-card-icon" src="wp-content/icons/icon_engage.svg" alt="">
-									</div>
-									<div id="intro-info" class="pure-u-1 pure-u-sm-1-2 intro-sec-g">
-										<h6>Engage</h6>
-										<h1>IMS Gold</h1>
-										<p id="p-style">A client feedback program shaping the future of IMS™.</p>
-										<div class="pure-u-1 intro-sec-b">
-											<a class="zs-w-button-transparent" onfocus="closeNavMenu()" aria-label="Enroll now in the IMS Gold program" href="#enroll" rel="noopener noreferrer">
-												Enroll now</a>
-										</div>
-									</div>
-								</section>
-							</div>
+							<hero-section
+								name="IMS Gold"
+								image="wp-content/icons/icon_engage.svg" 
+								section="Engage"
+								desc="A client feedback program shaping the future of IMS™."
+								linktext="Enroll now"
+								link="#enroll"
+							></hero-section>
 
 							<!-- =========================== How do Clients Benefit from IMS Gold? =========================== -->
 							<div class="zs-gray-section ibm-background-white-core">
