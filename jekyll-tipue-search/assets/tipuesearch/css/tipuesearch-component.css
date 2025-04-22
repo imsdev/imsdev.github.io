@@ -41,8 +41,13 @@
 }
 
 /* TITLE */
+.tipue_search_content_title {
+     width: 100%;
+}
+
 .tipue_search_content_title a {
      color: black;
+     display: block;
      padding-left: 2em;
 }
 

@@ -104,10 +104,15 @@ function createComponent(html) {
                 const input = searchInput.value;
                 // Make search call
                 $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
-                // Get dropdown search results
+                // Get search results
+                const results = shadow.querySelectorAll('.tipue_search_content_title');
+                results.forEach(result => {
+                    result.addEventListener('click', this.handleResultClick.bind(this));
+                })
+                // Get dropdowns from search results
                 const accordions = shadow.querySelectorAll('.cordion');
                 accordions.forEach(accordion => {
-                    accordion.addEventListener('click', this.handleResultsDropdown.bind(this));
+                    accordion.addEventListener('click', this.handleResultDropdown.bind(this));
                 })
             });
 
@@ -141,7 +146,7 @@ function createComponent(html) {
         }
 
         // Handle search result dropdown interaction
-        handleResultsDropdown(event) {
+        handleResultDropdown(event) {
             const button = event.target;
             const parent = button.parentElement;
             const grandparent = parent.parentElement;
@@ -159,6 +164,15 @@ function createComponent(html) {
             // Rotate arrow and display/hide result description
             arrow.classList.toggle('rotArrow');
             description.classList.toggle('search_content_drop');
+        }
+
+        // Clear search after result is clicked
+        handleResultClick() {
+            const component = document.querySelector('nav-header');
+            const shadow = component.shadowRoot;
+            const searchResults = shadow.getElementById('search-results');
+            const searchInput = shadow.getElementById('search-input');
+            this.clearSearch(searchInput, searchResults);
         }
 
         // Clear search
