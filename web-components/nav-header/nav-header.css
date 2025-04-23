@@ -168,6 +168,10 @@ form div > img {
     position: absolute;
 }
 
+.show-menu {
+    height: 35em;
+}
+
 .menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -230,4 +234,11 @@ form div > img {
     top: 0.3125em;
     width: auto;
     z-index: 3000;
+}
+
+@media  screen and (max-width: 89em) {
+    .show-menu {
+        height: 42em;
+    }
+    
 }

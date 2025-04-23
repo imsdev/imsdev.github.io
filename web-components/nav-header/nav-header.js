@@ -116,13 +116,15 @@ function createComponent(html) {
             menuToggle.checked = checkedState;
             // Update display of dropdown menu based on checked state
             if (checkedState) {
-                dropdownMenu.style.height = '35em';
+                dropdownMenu.classList.add('show-menu');
+                // dropdownMenu.style.height = '35em';
                 // Make menu items focusable
                 for (let i = 0; i < menuItems.length; i++) {
                     menuItems[i].tabIndex = '0';
                 }
             } else {
-                dropdownMenu.style.height = '0em';
+                dropdownMenu.classList.remove('show-menu');
+                // dropdownMenu.style.height = '0em';
                 // Make menu items non-focusable
                 for (let i = 0; i < menuItems.length; i++) {
                     menuItems[i].tabIndex = '-1';
