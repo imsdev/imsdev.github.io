@@ -31,14 +31,6 @@ a h5 {
     padding: 0;
 }
 
-a p {
-    font-size: 0.8125em;
-    color: rgb(199, 199, 199);
-    line-height: 1.8;
-    margin: 0;
-    padding: 0;
-}
-
 form {
     width: 100%;
     height: 3em;
@@ -168,6 +160,14 @@ form div > img {
     position: absolute;
 }
 
+.dropdown-menu a p {
+    font-size: 0.8125em;
+    color: rgb(199, 199, 199);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
 .show-menu {
     height: 35em;
 }
@@ -240,5 +240,4 @@ form div > img {
     .show-menu {
         height: 42em;
     }
-    
 }
