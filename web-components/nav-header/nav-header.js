@@ -75,7 +75,18 @@ function createComponent(html) {
                     searchResults.style.display = 'block';
                 })
                 // On blur of search
-                searchInput.addEventListener('blur', () => {searchBar.classList.remove('search-bar-focused')});
+                searchInput.addEventListener('blur', () => {
+                    searchBar.classList.remove('search-bar-focused');
+                })
+                // On input of search
+                searchInput.addEventListener('input', () => {
+                    // Display clear search button if input is added
+                    if (searchInput.value.length > 0) {
+                        clearIcon.style.display = 'block';
+                    } else {
+                        clearIcon.style.display = 'none';
+                    }
+                })
             
                 // Clear search
                 clearIcon.addEventListener('click', () => {this.clearSearch()});
@@ -112,19 +123,17 @@ function createComponent(html) {
             const menuItems = dropdownMenu.querySelectorAll('a'); 
 
             // Update checked state of menuToggle
-            var checkedState = menuToggle.checked ? false : true;
+            let checkedState = menuToggle.checked ? false : true;
             menuToggle.checked = checkedState;
             // Update display of dropdown menu based on checked state
             if (checkedState) {
                 dropdownMenu.classList.add('show-menu');
-                // dropdownMenu.style.maxHeight = '60em';
                 // Make menu items focusable
                 for (let i = 0; i < menuItems.length; i++) {
                     menuItems[i].tabIndex = '0';
                 }
             } else {
                 dropdownMenu.classList.remove('show-menu');
-                // dropdownMenu.style.maxHeight = '0em';
                 // Make menu items non-focusable
                 for (let i = 0; i < menuItems.length; i++) {
                     menuItems[i].tabIndex = '-1';
@@ -140,8 +149,8 @@ function createComponent(html) {
             const button = event.target;
             const parent = button.parentElement;
             const grandparent = parent.parentElement;
-            var arrow;
-            var description;
+            let arrow;
+            let description;
 
             // Check if user clicked on button - assign variables
             if (button.classList.contains('cordion')) {
@@ -163,6 +172,7 @@ function createComponent(html) {
             const shadow = component.shadowRoot;
             const searchResults = shadow.getElementById('search-results');
             const searchInput = shadow.getElementById('search-input');
+            const clearIcon = shadow.getElementById('clear-icon'); 
 
             // Remove input value
             searchInput.value = "";
@@ -171,6 +181,8 @@ function createComponent(html) {
             $(searchInput).tipuesearch(input, searchInput, searchResults, 'web-component');
             // Hide search results
             searchResults.style.display = 'none';
+            // Hide clear search button
+            clearIcon.style.display = 'none';
         }
     }
 

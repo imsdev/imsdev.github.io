@@ -82,6 +82,7 @@ form div > img {
 
 #clear-icon {
     cursor: pointer;
+    display: none;
 }
 
 .logo {
