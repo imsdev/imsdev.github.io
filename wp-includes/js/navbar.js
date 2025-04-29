@@ -14,12 +14,3 @@ $(document).ready(function() {
         })
     });
 });
-
-// Closes navigation menu when item after menu is in focus
-function closeNavMenu() {
-    document.getElementById("toggle1").checked = false;
-    $(document).ready(function() {
-        // Menu items set to not focusable unless hamburger menu checkbox is checked
-        $('.nav-item').attr('tabindex', -1);
-    })
-}

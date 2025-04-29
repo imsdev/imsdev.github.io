@@ -31,12 +31,14 @@ function createComponent(html) {
             // Variables
             // --------------------------------------------------------------------------------------------------
                 const contentBody = document.querySelector('#content');
-                const firstLink = document.querySelector('a');
                 // Dropdown navigation menu
                 const menuButton = shadow.querySelector('.hamburger-menu'); 
                 const menuToggle = shadow.getElementById('menu-toggle'); 
                 const dropdownMenu = shadow.querySelector('.dropdown-menu'); 
                 const menuItems = dropdownMenu.querySelectorAll('a'); 
+                const documentationMenuItem = menuItems[menuItems.length - 2];
+                const supportMenuItem = menuItems[menuItems.length - 1];
+                
                 // Search
                 const searchForm = shadow.getElementById('search-form'); 
                 const searchInput = shadow.getElementById('search-input'); 
@@ -52,7 +54,9 @@ function createComponent(html) {
                 // Hide search results if hamburger menu is focused
                 menuButton.addEventListener('focus', () => {searchResults.style.display = 'none';})
                 // Hide dropdown menu for keyboard navigation when first link in document is focused
-                firstLink.addEventListener('focus', () => {if (menuToggle.checked) {toggleMenu()}});
+                supportMenuItem.addEventListener('focusout', (event) => {
+                    if (event.relatedTarget != documentationMenuItem) {toggleMenu()};
+                })
 
             // Event listeners for all menus
             // --------------------------------------------------------------------------------------------------

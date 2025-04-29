@@ -58,7 +58,7 @@ function createComponent(html) {
         // Invoked when element is added to document
         connectedCallback() {
             // Create shadow root for element
-            const shadow = this.attachShadow({mode: 'closed'});
+            const shadow = this.attachShadow({mode: 'open'});
             shadow.innerHTML = html;
 
             // Set content
