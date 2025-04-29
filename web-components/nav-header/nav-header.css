@@ -49,6 +49,10 @@ form div {
     border: lightgray solid 2px;
 }
 
+form div > img {
+    padding: 0.1em 0.5em;
+}
+
 form input {
     font-size: 1.125em;
 }
@@ -62,28 +66,11 @@ input {
     padding: 0.4em 0em;
 }
 
-.search-bar-focused {
-    border-color: #42a7ec;
-}
-
-form div > img {
-    padding: 0.1em 0.5em;
-}
-
 .masthead {
     position: relative;
     display: flex;
     justify-content: space-between;
     height: 3em;
-}
-
-#search-icon {
-    width: 1.4em;
-}
-
-#clear-icon {
-    cursor: pointer;
-    display: none;
 }
 
 .logo {
@@ -103,6 +90,19 @@ form div > img {
     display: flex;
     flex-flow: row nowrap;
     width: 40%;
+}
+
+#search-icon {
+    width: 1.4em;
+}
+
+#clear-icon {
+    cursor: pointer;
+    display: none;
+}
+
+.search-bar-focused {
+    border-color: #42a7ec;
 }
 
 .hamburger-menu {

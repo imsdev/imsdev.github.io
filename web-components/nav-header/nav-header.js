@@ -38,7 +38,6 @@ function createComponent(html) {
                 const menuItems = dropdownMenu.querySelectorAll('a'); 
                 const documentationMenuItem = menuItems[menuItems.length - 2];
                 const supportMenuItem = menuItems[menuItems.length - 1];
-                
                 // Search
                 const searchForm = shadow.getElementById('search-form'); 
                 const searchInput = shadow.getElementById('search-input'); 
@@ -111,7 +110,6 @@ function createComponent(html) {
 
             // Helper functions
             // --------------------------------------------------------------------------------------------------
-
                 // Toggle dropdown navigation menu
                 function toggleMenu() {
                     dropdownMenu.classList.toggle('show-menu');
