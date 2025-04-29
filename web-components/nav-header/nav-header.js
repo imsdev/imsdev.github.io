@@ -139,24 +139,12 @@ function createComponent(html) {
                  * @param {event} event - User event
                 */
                 function handleResultDropdown(event) {
-                    const button = event.target;
-                    const parent = button.parentElement;
-                    const grandparent = parent.parentElement;
-                    let arrow;
-                    let description;
-
-                    // Check if user clicked on button - assign variables
-                    if (button.classList.contains('cordion')) {
-                        arrow = button.firstChild;
-                        description = parent.nextElementSibling;
-                    // If user clicked on icon, change variable assignment
-                    } else {
-                        arrow = button;
-                        description = grandparent.nextElementSibling;
-                    }
+                    const button = event.currentTarget;
+                    const arrow = button.firstChild;
+                    const desc = button.parentElement.nextElementSibling;
                     // Rotate arrow and display/hide result description
                     arrow.classList.toggle('rotArrow');
-                    description.classList.toggle('search_content_drop');
+                    desc.classList.toggle('search_content_drop');
                 }
         }
     }
