@@ -30,6 +30,7 @@ function createComponent(html) {
             shadow.innerHTML = html;
 
             const backToTopBtn = shadow.getElementById('back-to-top');
+            // Display button on scroll
             window.onscroll = () => {
                 if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
                     backToTopBtn.style.opacity = '1';
@@ -40,12 +41,14 @@ function createComponent(html) {
                 }
             }
 
+            // Go back to top on click
             backToTopBtn.addEventListener('click', () => {this.scrollToTop()});
             backToTopBtn.addEventListener('keydown', (event) => {
                 if (event.key === 'Enter') {this.scrollToTop()};
             });
         }
 
+        // Auto-scrolls to top of page
         scrollToTop() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
