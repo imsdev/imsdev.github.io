@@ -33,24 +33,22 @@ function createComponent(html) {
             window.onscroll = () => {
                 if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
                     backToTopBtn.style.opacity = '1';
-                    // backToTopBtn.style.display = 'block';
-                    // backToTopBtn.style.animation = 'fadeIn 1s';
+                    backToTopBtn.style.animation = 'fadeInAnimation 1s';
                 } else {
                     backToTopBtn.style.opacity = '0';
-                    // backToTopBtn.style.display = 'none';
+                    backToTopBtn.style.animation = '';
                 }
             }
 
-            backToTopBtn.addEventListener('click', () => {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            })
+            backToTopBtn.addEventListener('click', () => {this.scrollToTop()});
             backToTopBtn.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter') {
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                }
-            })
+                if (event.key === 'Enter') {this.scrollToTop()};
+            });
+        }
+
+        scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     }
 

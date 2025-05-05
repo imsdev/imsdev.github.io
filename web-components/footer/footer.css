@@ -32,15 +32,12 @@ p {
 }
 
 #back-to-top {
-    /* display:none; */
     opacity: 0;
     z-index: 99;
     transition: transform .2s;
     position: fixed;
     bottom: 5%;
     right: 5%;
-    animation: fadeInAnimation 2s;
-    animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
