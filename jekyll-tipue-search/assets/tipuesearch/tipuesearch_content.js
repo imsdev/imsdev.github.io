@@ -128,10 +128,10 @@ var tipuesearch = {"pages": [{
     "tags": "zddl ddl simulate autocommit verbose rsclst ddltrace_dd_cards",
     "url": "ims-videos.html#ims-ddl-util"
   },{
-    "title": "<p>IMS Security Audits: Gathering the Right Documentation</p> <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
-    "text": "Watch these videos to learn how to conduct an effective IMS security health check.",
-    "tags": "ims_security_audit ims_health health_check encryption psb_security vsam_security security racf documentation user_access_points appc_security static_terminal_security eto_terminal_security otma_client_security vsam_password_protection racf verification transaction_authorization command_authorization log_records trn sgn isis rfc dfspbxxx dfsdcxxx hwscfg automation security_exit",
-    "url": "ims-videos.html#ims-sec-aud"
+    "title": "<p>IMS DBDGEN and PSBGEN for Beginners</p> <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
+    "text": "Watch these videos to learn how to code DBDGEN and PSBGEN input.",
+    "tags": "dbdgen psbgen segm field senseg segment_storage hierarchical_database",
+    "url": "ims-videos.html#ims-dbdgen-psbgen"
   },{
     "title": "<p>IMS Monitor Reports</p> <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
     "text": "Watch these videos to learn how to create reports using the IMS Monitor.",
