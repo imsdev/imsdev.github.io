@@ -35,6 +35,25 @@
 }
 /* -------------------------------------------------------- */
 
+/* HTML tags */
+/* -------------------------------------------------------- */
+li {
+  font-size: var(--plex-18);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+ font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h2, h6 {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--plex-24);
+}
+/* -------------------------------------------------------- */
+
 /* Backgrounds */
 /* -------------------------------------------------------- */
 .white-bg {
@@ -299,6 +318,11 @@
 /* Spacer between sections */
 .spacer {
   height: 0.3125em;
+}
+
+.h2-normal {
+  font-weight: normal;
+  margin-bottom: 0.2em;
 }
 /* -------------------------------------------------------- */
 
