@@ -76,6 +76,8 @@ function createComponent(html) {
         constructor() {
             super();
             this.selfpaced = 'true';
+            this.cost = 'None';
+            this.badge = 'Yes';
         }
 
         /**
@@ -83,7 +85,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 'end', 'hours', 'link'];
+            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 'end', 'hours', 'link', 'registerlink'];
         }
 
         /**
@@ -112,6 +114,10 @@ function createComponent(html) {
                 courseCard.style.alignItems = 'flex-start';
             }
 
+            if (this.name == 'IMS Database Recovery Control (DBRC)') {
+                console.log(this.badge);
+            }
+
             // Set course name
             setContent('.course-name', this.name, shadow);
             // Set session for live course
@@ -126,7 +132,11 @@ function createComponent(html) {
             // Set course cost
             setContent('.course-cost', this.cost, shadow);
             // Set course badge
-            setContent('.course-badge', this.badge, shadow);
+            if (this.badge != 'n/a') {
+                setContent('.course-badge', this.badge, shadow);
+            } else {
+                hideContent('.course-badge-g', shadow);
+            };
             // Set course time
             setContent('.course-time', this.time, shadow);
             // Set course link
