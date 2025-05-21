@@ -63,7 +63,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 'end', 'link'];
+            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 'end', 'hours', 'link'];
         }
 
         /**
@@ -107,28 +107,30 @@ function createComponent(html) {
             setContent('.course-cost', this.cost, shadow);
             // Set course badge
             setContent('.course-badge', this.badge, shadow);
+            // Set course time
+            setContent('.course-time', this.time, shadow);
+            // Set course link
+            setLink('.course-link', this.link, this.name, 'Learn more →', shadow);
 
             var linkText;
             // Change card content based on self-paced vs live course
             if (this.selfpaced == 'true') {
-                // Set course time
-                setContent('.course-time', this.time, shadow);
                 // Hide course duration
                 hideContent('.course-start-g', shadow);
                 hideContent('.course-end-g', shadow);
-                // Update link text
-                linkText = 'Learn more →'
+                // Hide course hours
+                hideContent('.course-hours-g', shadow);
             } else {
                 // Set course duration
                 setContent('.course-start', this.start, shadow);
                 setContent('.course-end', this.end, shadow);
-                // Hide course time
-                hideContent('.course-time-g', shadow);
-                // Update link text
+                // Set course hours
+                setContent('.course-hours', this.hours, shadow);
+                // Set register link
                 linkText = 'Register →'
+                setLink('.register-link', this.registerlink, this.name, 'Register →', shadow);
+
             }
-            // Set course link
-            setLink('.course-link', this.link, this.name, linkText, shadow);
         }
     }
 
