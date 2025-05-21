@@ -23,6 +23,26 @@ function createComponent(html) {
     }
 
     /**
+     * Sets the content of an element based on a CSS selector.
+     * @param {string} cssSelector - The CSS selector of the element to set the content for.
+     * @param {string} content - The content to set for the element.
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
+     * @returns {void}
+     */
+    function setDesc(cssSelector, content, shadow) {
+        const selector = shadow.querySelector(cssSelector);
+        // Check if span tag is used in desc
+        if ((content != undefined) && (content.includes('<p>'))) {
+            // Update HTML
+            selector.innerHTML = content;
+        } else {
+            const paragraph = '<p>' + content + '</p>';
+            // Update the text
+            selector.innerHTML = paragraph;
+        }
+    }
+
+    /**
      * Sets the link of an element based on a CSS selector.
      * @param {string} cssSelector - The CSS selector of the element to set the link for.
      * @param {string} url - The link url.
@@ -56,6 +76,8 @@ function createComponent(html) {
         constructor() {
             super();
             this.selfpaced = 'true';
+            this.cost = 'None';
+            this.badge = 'Yes';
         }
 
         /**
@@ -63,7 +85,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 'end', 'link'];
+            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 'end', 'hours', 'link', 'registerlink'];
         }
 
         /**
@@ -92,12 +114,16 @@ function createComponent(html) {
                 courseCard.style.alignItems = 'flex-start';
             }
 
+            if (this.name == 'IMS Database Recovery Control (DBRC)') {
+                console.log(this.badge);
+            }
+
             // Set course name
             setContent('.course-name', this.name, shadow);
             // Set session for live course
             setContent('.live-session', this.session, shadow);
             // Set course desc
-            setContent('.course-desc', this.desc, shadow);
+            setDesc('.course-desc', this.desc, shadow);
             // Set course level
             setContent('.course-level', this.level, shadow);
             // Set course type
@@ -106,29 +132,34 @@ function createComponent(html) {
             // Set course cost
             setContent('.course-cost', this.cost, shadow);
             // Set course badge
-            setContent('.course-badge', this.badge, shadow);
+            if (this.badge != 'n/a') {
+                setContent('.course-badge', this.badge, shadow);
+            } else {
+                hideContent('.course-badge-g', shadow);
+            };
+            // Set course time
+            setContent('.course-time', this.time, shadow);
+            // Set course link
+            setLink('.course-link', this.link, this.name, 'Learn more →', shadow);
 
             var linkText;
             // Change card content based on self-paced vs live course
             if (this.selfpaced == 'true') {
-                // Set course time
-                setContent('.course-time', this.time, shadow);
                 // Hide course duration
                 hideContent('.course-start-g', shadow);
                 hideContent('.course-end-g', shadow);
-                // Update link text
-                linkText = 'Learn more →'
+                // Hide course hours
+                hideContent('.course-hours-g', shadow);
             } else {
                 // Set course duration
                 setContent('.course-start', this.start, shadow);
                 setContent('.course-end', this.end, shadow);
-                // Hide course time
-                hideContent('.course-time-g', shadow);
-                // Update link text
+                // Set course hours
+                setContent('.course-hours', this.hours, shadow);
+                // Set register link
                 linkText = 'Register →'
+                setLink('.register-link', this.registerlink, this.name, 'Register →', shadow);
             }
-            // Set course link
-            setLink('.course-link', this.link, this.name, linkText, shadow);
         }
     }
 
