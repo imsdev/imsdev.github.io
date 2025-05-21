@@ -29,6 +29,7 @@
   --plex-24: 1.5em;
   --plex-28: 1.75em;
   --plex-36: 2.25em;
+  --plex-48: 3em;
   --plex-72: 4.5em;
   --plex-180: 11.25em;
 }
@@ -101,6 +102,12 @@
 
 .icon-lg {
   height: var(--plex-28);
+}
+
+.icon-xl {
+  height: var(--plex-36);
+  max-width: var(--plex-48);
+  margin-bottom: 1.4em;
 }
 
 .icon {
