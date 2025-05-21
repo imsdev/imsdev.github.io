@@ -23,6 +23,26 @@ function createComponent(html) {
     }
 
     /**
+     * Sets the content of an element based on a CSS selector.
+     * @param {string} cssSelector - The CSS selector of the element to set the content for.
+     * @param {string} content - The content to set for the element.
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
+     * @returns {void}
+     */
+    function setDesc(cssSelector, content, shadow) {
+        const selector = shadow.querySelector(cssSelector);
+        // Check if span tag is used in desc
+        if ((content != undefined) && (content.includes('<p>'))) {
+            // Update HTML
+            selector.innerHTML = content;
+        } else {
+            const paragraph = '<p>' + content + '</p>';
+            // Update the text
+            selector.innerHTML = paragraph;
+        }
+    }
+
+    /**
      * Sets the link of an element based on a CSS selector.
      * @param {string} cssSelector - The CSS selector of the element to set the link for.
      * @param {string} url - The link url.
@@ -97,7 +117,7 @@ function createComponent(html) {
             // Set session for live course
             setContent('.live-session', this.session, shadow);
             // Set course desc
-            setContent('.course-desc', this.desc, shadow);
+            setDesc('.course-desc', this.desc, shadow);
             // Set course level
             setContent('.course-level', this.level, shadow);
             // Set course type
@@ -129,7 +149,6 @@ function createComponent(html) {
                 // Set register link
                 linkText = 'Register →'
                 setLink('.register-link', this.registerlink, this.name, 'Register →', shadow);
-
             }
         }
     }
