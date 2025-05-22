@@ -29,8 +29,33 @@
   --plex-24: 1.5em;
   --plex-28: 1.75em;
   --plex-36: 2.25em;
+  --plex-48: 3em;
   --plex-72: 4.5em;
   --plex-180: 11.25em;
+}
+/* -------------------------------------------------------- */
+
+/* HTML tags */
+/* -------------------------------------------------------- */
+li {
+  font-size: var(--plex-18);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+ font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h2 {
+  line-height: 2.1875rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--plex-24);
+}
+
+h6 {
+  font-weight: 500;
 }
 /* -------------------------------------------------------- */
 
@@ -101,6 +126,12 @@
 
 .icon-lg {
   height: var(--plex-28);
+}
+
+.icon-xl {
+  height: var(--plex-36);
+  max-width: var(--plex-48);
+  margin-bottom: 1.4em;
 }
 
 .icon {
@@ -292,6 +323,11 @@
 /* Spacer between sections */
 .spacer {
   height: 0.3125em;
+}
+
+.h2-normal {
+  font-weight: normal;
+  margin-bottom: 0.2em;
 }
 /* -------------------------------------------------------- */
 
