@@ -37,6 +37,10 @@
 
 /* HTML tags */
 /* -------------------------------------------------------- */
+body, body .pure-g, body .pure-g [class*="pure-u"] {
+    font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
 li {
   font-size: var(--plex-18);
 }
@@ -52,6 +56,7 @@ h2 {
 
 h3 {
   font-size: var(--plex-24);
+  font-weight: 500;
 }
 
 h6 {
@@ -96,6 +101,10 @@ h6 {
   background-color: var(--bg-dark-gray-02);
   color: var(--white);
 }
+
+  .dark-gray-bg p {
+    color: var(--white);
+  }
 
   .dark-gray-bg a {
     color: var(--font-light-blue);
@@ -242,6 +251,11 @@ h6 {
   padding: 1.2em;
 }
 
+/* For individual pure grid units requiring paddings */
+.pure-pad > div {
+  padding: 1.2em;
+}
+
 /* Format column group */
 .column-g > div {
   padding: 0.2em;
@@ -313,6 +327,75 @@ h6 {
 }
 /* -------------------------------------------------------- */
 
+/* Card */
+/* -------------------------------------------------------- */
+.card {
+  background-color: white;
+  margin: 1em 0em 1em 0em;
+  padding: 1.5em;
+}
+
+.card > div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo sizing */
+.card img {
+  max-width: 16em;
+  width: 100%;
+}
+
+.logo {
+  color: indigo !important;
+  font-weight: bold;
+}
+/* -------------------------------------------------------- */
+
+/* GIF */
+/* -------------------------------------------------------- */
+.gif {
+    position: relative;
+}
+
+.gif a {
+    width: 100%;
+}
+
+.gif img {
+    width: 100%;
+    max-width: 40em;
+}
+
+.gif-cover {
+  position: relative;
+  opacity: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: .4s ease all;
+}
+
+.gif-cover:hover {
+  opacity: 0;
+}
+
+.gif-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: .4s ease all;
+}
+
+.gif-video:hover {
+  opacity: 1;
+}
+/* -------------------------------------------------------- */
+
 /* Custom styling */
 /* -------------------------------------------------------- */
 /* For links under headers */
@@ -366,11 +449,27 @@ h6 {
   }
 }
 
+/* 1024px and below screen sizes */
+@media screen and (max-width: 64em) {
+  .gif {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /* 1024px and above screen sizes */
 @media  screen and (min-width: 64em) {
   /* Resize quote block to full height for larger screens */
   .quote-blk {
     height: 100%;
+  }
+
+  /* Resize card to full height for larger screens */
+  .card {
+    height: 100%;
+    margin: 1em 1em 0em 1em;
   }
 }
 /* -------------------------------------------------------- */
