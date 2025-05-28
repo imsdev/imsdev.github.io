@@ -450,8 +450,8 @@ h6 {
 }
 
 /* 1024px and below screen sizes */
-@media screen and (max-width: 64em) {
-  .gif {
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .pure-u-xl-11-24 > .gif {
     display: block;
     width: 80%;
     margin-left: auto;
