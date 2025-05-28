@@ -34,6 +34,35 @@
 }
 /* -------------------------------------------------------- */
 
+/* HTML tags */
+/* -------------------------------------------------------- */
+body, body .pure-g, body .pure-g [class*="pure-u"] {
+    font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+li {
+  font-size: var(--plex-18);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+ font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+h2 {
+  line-height: 2.1875rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--plex-24);
+  font-weight: 500;
+}
+
+h6 {
+  font-weight: 500;
+}
+/* -------------------------------------------------------- */
+
 /* Backgrounds */
 /* -------------------------------------------------------- */
 .white-bg {
