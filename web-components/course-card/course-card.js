@@ -44,7 +44,7 @@ function createComponent(html) {
         // Set alt text
         selector.setAttribute('alt', `${name} badge`);
         // Change styling for self-paced course card
-        if (selfpaced != 'true') {
+        if (selfpaced == 'false') {
             const courseCard = shadow.querySelector('.course-card');
             courseCard.style.alignItems = 'flex-start';
         }
@@ -83,7 +83,7 @@ function createComponent(html) {
         const link = shadow.querySelector(cssSelector);
         if (url != "") {
             link.href = url;
-            link.setAttribute('aria-label', `Learn more about ${name}`);
+            link.setAttribute('aria-label', `${linkText} about ${name}`);
             link.textContent = linkText;
         } else {
             const hideSelector = cssSelector + "-g";
@@ -117,6 +117,7 @@ function createComponent(html) {
             this.end = "";
             this.hours = "";
             this.link = "";
+            this.linktext = 'Learn more →'
             this.registerlink = "";
         }
 
@@ -125,7 +126,8 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 'end', 'hours', 'link', 'registerlink'];
+            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 
+                'end', 'hours', 'link', 'linktext', 'registerlink'];
         }
         // Course Card Options
             // - id
@@ -196,7 +198,7 @@ function createComponent(html) {
             // Set course hours
             setContent('.course-hours', this.hours, shadow);
             // Set course link
-            setLink('.course-link', this.link, this.name, 'Learn more →', shadow);
+            setLink('.course-link', this.link, this.name, this.linktext, shadow);
             // Set register link
             setLink('.register-link', this.registerlink, this.name, 'Register →', shadow);
         }
