@@ -19,7 +19,35 @@ function createComponent(html) {
      */
     function setContent(cssSelector, content, shadow) {
         const selector = shadow.querySelector(cssSelector);
-        selector.textContent = content;
+        // Check if content has been specified
+        if (content != "") {
+            selector.textContent = content;
+        } else {
+            const hideSelector = cssSelector + "-g";
+            hideContent(hideSelector, shadow);
+        }
+    }
+
+    /**
+     * Sets the image of an element based on a CSS selector.
+     * @param {string} cssSelector - The CSS selector of the element to set the content for.
+     * @param {string} image - The image to set for the element.
+     * @param {string} name - The name of the element.
+     * @param {string} selfpaced - A boolean indicating whether the element is a self-paced course.
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
+     * @returns {void}
+     */
+    function setImage(cssSelector, image, name, selfpaced, shadow) {
+        const selector = shadow.querySelector(cssSelector);
+        // Set image
+        selector.src = image;
+        // Set alt text
+        selector.setAttribute('alt', `${name} badge`);
+        // Change styling for self-paced course card
+        if (selfpaced != 'true') {
+            const courseCard = shadow.querySelector('.course-card');
+            courseCard.style.alignItems = 'flex-start';
+        }
     }
 
     /**
@@ -53,9 +81,14 @@ function createComponent(html) {
      */
     function setLink(cssSelector, url, name, linkText, shadow) {
         const link = shadow.querySelector(cssSelector);
-        link.href = url;
-        link.setAttribute('aria-label', `Learn more about ${name}`);
-        link.textContent = linkText;
+        if (url != "") {
+            link.href = url;
+            link.setAttribute('aria-label', `Learn more about ${name}`);
+            link.textContent = linkText;
+        } else {
+            const hideSelector = cssSelector + "-g";
+            hideContent(hideSelector, shadow);
+        }
     }
 
     /**
@@ -75,9 +108,16 @@ function createComponent(html) {
         // Creates an instance of CourseCard
         constructor() {
             super();
-            this.selfpaced = 'true';
-            this.cost = 'None';
-            this.badge = 'Yes';
+            this.selfpaced = "";
+            this.level = "";
+            this.cost = "";
+            this.badge = "";
+            this.time = "";
+            this.start = "";
+            this.end = "";
+            this.hours = "";
+            this.link = "";
+            this.registerlink = "";
         }
 
         /**
@@ -87,6 +127,21 @@ function createComponent(html) {
         static get observedAttributes() {
             return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 'end', 'hours', 'link', 'registerlink'];
         }
+        // Course Card Options
+            // - id
+            // - name
+            // - session (for live courses only)
+            // - desc: can be written with <p> tags or as plaintext
+            // - imgsrc
+            // - selfpaced: true or false
+            // - level: Beginner, Intermediate, or Advanced
+            // - badge: Yes or No
+            // - time: x hours
+            // - start (for live courses only)
+            // - end (for live courses only)
+            // - hours (for live courses only)
+            // - registerlink (for live courses only)
+            // - link
 
         /**
          * Called when an attribute is defined or changed.
@@ -106,60 +161,44 @@ function createComponent(html) {
             shadow.innerHTML = html;
             
             // Set course img
-            const courseImg = shadow.querySelector('.course-img');
-            courseImg.src = this.imgsrc;
-            courseImg.setAttribute('alt', `${this.name} badge`);
-            if (this.selfpaced != 'true') {
-                const courseCard = shadow.querySelector('.course-card');
-                courseCard.style.alignItems = 'flex-start';
-            }
-
-            if (this.name == 'IMS Database Recovery Control (DBRC)') {
-                console.log(this.badge);
-            }
-
+            setImage('.course-img', this.imgsrc, this.name, this.selfpaced, shadow);
             // Set course name
             setContent('.course-name', this.name, shadow);
-            // Set session for live course
-            setContent('.live-session', this.session, shadow);
             // Set course desc
             setDesc('.course-desc', this.desc, shadow);
+            // Set session for live course
+            setContent('.live-session', this.session, shadow);
             // Set course level
             setContent('.course-level', this.level, shadow);
             // Set course type
-            const courseType = this.selfpaced == 'true' ? 'Self-paced: ' : 'Instructor-led: ';
+            let courseType;
+            switch (this.selfpaced) {
+                case 'true':
+                    courseType = 'Self-paced: ';
+                    break;
+                case 'false':
+                    courseType = 'Instructor-led: ';
+                    break;
+                default:
+                    courseType = '';
+            }
+            // const courseType = this.selfpaced == 'true' ? 'Self-paced: ' : 'Instructor-led: ';
             setContent('.course-type', courseType, shadow);
             // Set course cost
             setContent('.course-cost', this.cost, shadow);
             // Set course badge
-            if (this.badge != 'n/a') {
-                setContent('.course-badge', this.badge, shadow);
-            } else {
-                hideContent('.course-badge-g', shadow);
-            };
+            setContent('.course-badge', this.badge, shadow);
             // Set course time
             setContent('.course-time', this.time, shadow);
+            // Set course duration
+            setContent('.course-start', this.start, shadow);
+            setContent('.course-end', this.end, shadow);
+            // Set course hours
+            setContent('.course-hours', this.hours, shadow);
             // Set course link
             setLink('.course-link', this.link, this.name, 'Learn more →', shadow);
-
-            var linkText;
-            // Change card content based on self-paced vs live course
-            if (this.selfpaced == 'true') {
-                // Hide course duration
-                hideContent('.course-start-g', shadow);
-                hideContent('.course-end-g', shadow);
-                // Hide course hours
-                hideContent('.course-hours-g', shadow);
-            } else {
-                // Set course duration
-                setContent('.course-start', this.start, shadow);
-                setContent('.course-end', this.end, shadow);
-                // Set course hours
-                setContent('.course-hours', this.hours, shadow);
-                // Set register link
-                linkText = 'Register →'
-                setLink('.register-link', this.registerlink, this.name, 'Register →', shadow);
-            }
+            // Set register link
+            setLink('.register-link', this.registerlink, this.name, 'Register →', shadow);
         }
     }
 
