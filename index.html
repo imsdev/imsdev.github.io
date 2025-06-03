@@ -49,6 +49,7 @@
       <link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
       <link rel="stylesheet" href="wp-includes/css/nav.css">
       <link rel="stylesheet" href="wp-includes/css/dropnav.css">
+      <link rel="stylesheet" href="wp-includes/css/page.css">
 
       <link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
       <link href="wp-includes/css/pages/index.css" rel="stylesheet">
@@ -80,37 +81,10 @@
   </head>
 
   <!-- --------------- SITE CONTENT --------------- -->
-  <body id="ibm-com" class="ibm-com ibm-type nav-bar">
+  <body>
     <nav-header></nav-header>
 
-    <!-- RULES:
-    Main header                 ~48 (should be already)
-    sub header/banner text       22px
-
-    section header                36px
-      text underneath sections      22px
-    sub-section header            ~should be 25px  
-
-    p text                        18px 
-    -->
-
-    <div id="content" class="site-content">
-      <div class="entry-content">
-        <main id="main" class="zs-main pure-g">
-          <!-- Banner notification - One Item -->
-          <!-- <div class="banner-notification pure-g" style="width: 100%;z-index: 30;">
-            <a class="pure-u-1" 
-            href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/amanda-stephens/2024/06/13/whats-new-in-ims-155?communityKey=eba3ada3-db89-4dca-9154-328195f5e560" target="_blank" rel="noopener noreferrer" >      
-            <span>  
-              <div style="background-color: #71a3e9;padding-top: 12px;">
-              <img src="wp-content/blog.svg" alt="Blog graphic" style="width: 35px;margin: 0 15px 5px 15px;filter: invert(100%);">
-              <p style="display:inline-block;position: absolute; color: white; margin-top:3px;font-size:20px;"> Announcing IMS 15.5!</p> 
-              </div>
-            </span>
-            </a>
-          </div> -->
-
-          <!-- Verify that the element after the navigation menu has the following in its <a> tag: onfocus="closeNavMenu()" -->
+    <main id="content" class="main-content">
 
           <!-- Banner notification - Two Items -->
           <div class="banner-notification pure-g">
@@ -391,9 +365,7 @@
               </div>
             </section>
           </div>
-        </main>
-      </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <imscentral-footer></imscentral-footer>

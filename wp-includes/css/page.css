@@ -37,6 +37,12 @@
 
 /* HTML tags */
 /* -------------------------------------------------------- */
+/* H1 - 48px */
+/* H2 - 36px */
+/* H3 - 25px */
+/* H4 - 22px */
+/* p - 18px */
+
 body, body .pure-g, body .pure-g [class*="pure-u"] {
     font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
 }
