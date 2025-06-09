@@ -325,6 +325,10 @@ h6 {
   margin-top: 1em;
   font-size: var(--plex-16);
 }
+
+.quote-blk i {
+  color: black;
+}
 /* -------------------------------------------------------- */
 
 /* Card */
