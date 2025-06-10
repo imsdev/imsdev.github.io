@@ -82,6 +82,9 @@
     <script src="web-components/nav-header/nav-header.js" type="module"></script>
     <script src="web-components/footer/footer.js" type="module"></script>
 
+    <!-- H5P -->
+    <script type="text/javascript" src="h5p-player/main.bundle.js" charset="UTF-8"></script>
+
   </head>
 
   <!-- --------------- SITE CONTENT --------------- -->
@@ -154,6 +157,19 @@
               </div>
             </section>
           </div>
+
+          <div id="h5p-container"></div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const el = document.getElementById('h5p-container');
+            const options = {
+              h5pJsonPath: 'h5p-player/h5p-content', // Path to the extracted H5P content
+              frameJs: 'h5p-player/frame.bundle.js', // Path to player's frame.bundle.js
+              frameCss: 'h5p-player/styles/h5p.css', // Path to player's h5p.css
+            };
+            new H5PStandalone.H5P(el, options);
+          });
+          </script>
 
           <!-- =========================== Learn / Education =========================== -->
           <div class="zs-gray-section learn-bg-home learn-section">
