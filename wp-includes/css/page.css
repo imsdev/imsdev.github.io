@@ -404,13 +404,37 @@ h6 {
 
 /* Banner */
 /* -------------------------------------------------------- */
-.banner {
-  display: flex;
-  flex-flow: row wrap;
+.home-banner-g {
+  padding: 1em;
 }
 
-.banner:last-child {
-  flex-grow: 1;
+.home-banner {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 2em 2em;
+  background-color: #0072c3;
+}
+
+.home-banner div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.home-banner > div:first-of-type {
+  margin-right: auto;
+}
+
+
+.home-banner img {
+  filter: invert(100%);
+}
+
+.home-banner a {
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--plex-18);
 }
 
 /* Custom styling */
