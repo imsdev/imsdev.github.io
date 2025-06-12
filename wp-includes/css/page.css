@@ -251,6 +251,10 @@ h6 {
   padding: 1.2em;
 }
 
+.pure-g-pad-v > div {
+  padding: 2em 4em 2em 0em;
+}
+
 /* For individual pure grid units requiring paddings */
 .pure-pad > div {
   padding: 1.2em;
@@ -413,9 +417,9 @@ h6 {
   margin-bottom: 0.2em;
 }
 
-.img-md {
+.img-lg {
   width: 100%;
-  max-width: 550px;
+  max-width: 43.75em;
   padding: 1em;
 }
 /* -------------------------------------------------------- */
@@ -441,6 +445,10 @@ h6 {
 
   /* Decrease padding for smaller screens */
   .pure-g-pad > div {
+    padding: 0.4em;
+  }
+
+  .pure-g-pad-v > div {
     padding: 0.4em;
   }
 
