@@ -3,7 +3,7 @@
 :root {
   /* Color */
   --white: #fff;
-  --black: #000;
+  --black: #1c1c1c;
   --blue: #0f62fe;
     /* Background Color */
     --bg-light-gray: #F9F9F9;
@@ -120,6 +120,11 @@ h6 {
   .dark-gray-bg h4 {
     font-size: var(--plex-24) !important;
   }
+
+.black-bg {
+  background-color: var(--black);
+  color: var(--white);
+}
 
 .blue-bg {
   background-color: var(--bg-dark-blue);
@@ -404,15 +409,11 @@ h6 {
 
 /* Banner */
 /* -------------------------------------------------------- */
-.home-banner-g {
-  padding: 1em;
-}
-
 .home-banner {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  padding: 2em 2em;
+  padding: 1em 2em;
   background-color: #0072c3;
 }
 
@@ -425,7 +426,6 @@ h6 {
 .home-banner > div:first-of-type {
   margin-right: auto;
 }
-
 
 .home-banner img {
   filter: invert(100%);
@@ -449,6 +449,7 @@ h6 {
   height: 0.3125em;
 }
 
+/* non-bold h2 header */
 .h2-normal {
   font-weight: normal;
   margin-bottom: 0.2em;
