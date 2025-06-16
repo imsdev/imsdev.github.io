@@ -262,6 +262,10 @@ h6 {
   padding: 1.2em;
 }
 
+.pure-g-pad-v > div {
+  padding: 2em 4em 2em 0em;
+}
+
 /* For individual pure grid units requiring paddings */
 .pure-pad > div {
   padding: 1.2em;
@@ -335,6 +339,10 @@ h6 {
 .quote-blk p {
   margin-top: 1em;
   font-size: var(--plex-16);
+}
+
+.quote-blk i {
+  color: black;
 }
 /* -------------------------------------------------------- */
 
@@ -454,6 +462,12 @@ h6 {
   font-weight: normal;
   margin-bottom: 0.2em;
 }
+
+.img-lg {
+  width: 100%;
+  max-width: 43.75em;
+  padding: 1em;
+}
 /* -------------------------------------------------------- */
 
 /* Media queries */
@@ -480,6 +494,10 @@ h6 {
     padding: 0.4em;
   }
 
+  .pure-g-pad-v > div {
+    padding: 0.4em;
+  }
+
   /* Decrease highlight link padding for smaller screens */
   .highlight-link {
     padding-bottom: 1rem;
@@ -492,8 +510,8 @@ h6 {
 }
 
 /* 1024px and below screen sizes */
-@media screen and (max-width: 64em) {
-  .gif {
+@media screen and (min-width: 48em) and (max-width: 64em) {
+  .pure-u-xl-11-24 > .gif {
     display: block;
     width: 80%;
     margin-left: auto;
