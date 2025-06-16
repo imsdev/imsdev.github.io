@@ -416,12 +416,6 @@
       color: #0F62FE !important;
     }
 
-    .learn-bg-home {
-      background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 80%;
-    }
     .learn-bg {
       background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
       background-repeat: no-repeat;
