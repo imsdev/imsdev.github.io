@@ -465,10 +465,6 @@ h6 {
   margin-right: auto;
 }
 
-.home-banner img {
-  filter: invert(100%);
-}
-
 .home-banner a {
   color: var(--white);
   font-weight: bold;
