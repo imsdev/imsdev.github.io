@@ -416,12 +416,6 @@
       color: #0F62FE !important;
     }
 
-    .learn-bg-home {
-      background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 80%;
-    }
     .learn-bg {
       background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
       background-repeat: no-repeat;
@@ -433,12 +427,6 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 35%;
-    }
-    .engage-bg-home {
-      background-image: url(../../wp-content/backgrounds/Innovate_HomepageBG.png);
-      background-repeat: no-repeat;
-      background-size: 200%;
-      background-position: 35% 100%;
     }
     .engage-bg {
       background-image: url(../../wp-content/backgrounds/Engage_HomepageBG.png);
