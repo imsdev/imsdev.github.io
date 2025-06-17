@@ -110,15 +110,23 @@
               <p>Welcome! IMS™ Central is your hub for all things IMS.</p>
               <p>Build your skills, find documentation, get help, and engage with the team.</p>
           </div>
-          <div class="gif">
-              <a href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+What+is+IMSF/0_beoagp8k/139456202"
-                target="_blank" rel="noopener noreferrer" aria-label="Watch Intro to IMS">
-                <img src="wp-content/introIMS.png" class="gif-cover" alt="Intro to IMS video preview">
-                <img src="wp-content/introIMSclip.gif" class="gif-video" alt="Intro to IMS video preview">
-              </a>
-          </div>
+					<div id="h5p-container" style="width: 80%"></div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const el = document.getElementById('h5p-container');
+              const options = {
+                h5pJsonPath: 'h5p-player/h5p-content', // Path to the extracted H5P content
+                frameJs: 'h5p-player/frame.bundle.js', // Path to player's frame.bundle.js
+                frameCss: 'h5p-player/styles/h5p.css', // Path to player's h5p.css
+              };
+              new H5PStandalone.H5P(el, options);
+            });
+          </script>
         </div>
       </section>
+
+      <!-- =========================== HP5 =========================== -->
+
 
       <!-- =========================== Learn =========================== -->
        <section class="learn-home-bg white-bg pure-g">
