@@ -568,6 +568,11 @@ h6 {
   .homepage-hero h1 {
     font-size: var(--plex-36);
   }
+
+  /* Homepage backgrounds */
+  .engage-home-bg {
+    background-size: cover;
+  }
 }
 
 /* 1024px and below screen sizes */
