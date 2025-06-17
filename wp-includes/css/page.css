@@ -333,14 +333,6 @@ h6 {
 .hr-container {
   padding: 2em 0em 3em 0em;
 }
-
-/* Format vertical group */
-.vertical-g {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  height: 100%;
-}
 /* -------------------------------------------------------- */
 
 /* Quotations */
@@ -508,8 +500,17 @@ h6 {
 }
 
 /* Index hero */
+.homepage-hero {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
 .homepage-hero h1 {
   font-size: var(--plex-48);
+  line-height: var(--plex-20);
 }
 
 .homepage-hero p {
@@ -553,6 +554,23 @@ h6 {
   /* Decrease font size for smaller screens */
   .dark-gray-bg h4 {
     font-size: var(--plex-20) !important;
+  }
+
+  /* Index hero */
+  .homepage-hero {
+    flex-flow: row wrap;
+  }
+
+  .homepage-hero .section-header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .homepage-hero h1 {
+    font-size: var(--plex-36);
   }
 }
 
