@@ -132,10 +132,11 @@ h6 {
   color: var(--white);
 }
 
-  .blue-bg a {
+  .blue-bg a, .black-bg a {
     color: var(--font-light-blue);
   }
 
+/* Homepage backgrounds */
 .learn-home-bg {
   background-image: url(../../wp-content/backgrounds/Learn_HomepageBG.png);
   background-repeat: no-repeat;
@@ -143,14 +144,21 @@ h6 {
   background-position: 80%;
 }
 
-  .learn-home-bg a {
-    color: var(--font-dark-blue);
-  }
-
 .innovate-home-bg {
   background-image: url(../../wp-content/BG02.png);
   background-size: cover;
 }
+
+.engage-home-bg {
+  background-image: url(../../wp-content/backgrounds/Innovate_HomepageBG.png);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 35% 100%;
+}
+
+  .learn-home-bg a, .engage-home-bg a {
+    color: var(--font-dark-blue);
+  }
 /* -------------------------------------------------------- */
 
 /* Icons */
