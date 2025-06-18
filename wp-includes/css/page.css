@@ -115,7 +115,6 @@ h6 {
 
   .dark-gray-bg a {
     color: var(--font-light-blue);
-    font-size: var(--plex-18);
   }
 
   .dark-gray-bg h4 {
@@ -159,6 +158,12 @@ h6 {
   .learn-home-bg a, .engage-home-bg a {
     color: var(--font-dark-blue);
   }
+
+/* Blur background */
+.blur-bg {
+  backdrop-filter: blur(6px);
+  padding: 4em;
+}
 /* -------------------------------------------------------- */
 
 /* Icons */
@@ -298,6 +303,10 @@ h6 {
 /* For individual pure grid units requiring paddings */
 .pure-pad {
   padding: 1.2em;
+}
+
+.pure-pad-r {
+  padding: 1.2em 1.2em 1.2em 0em;
 }
 
 /* Format column group */
@@ -572,6 +581,16 @@ h6 {
   /* Homepage backgrounds */
   .engage-home-bg {
     background-size: cover;
+  }
+
+  /* Blur background */
+  .blur-bg {
+    padding: 2em;
+  }
+
+  /* For individual pure grid units requiring paddings */
+  .pure-pad-r {
+    padding: 1.2em;
   }
 }
 
