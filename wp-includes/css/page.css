@@ -72,6 +72,11 @@ h6 {
 
 p > a {
   line-height: 0;
+  font-size: var(--plex-16);
+}
+
+a {
+  font-size: var(--plex-18);
 }
 /* -------------------------------------------------------- */
 
@@ -186,6 +191,11 @@ p > a {
   height: var(--plex-36);
   max-width: var(--plex-48);
   margin-bottom: 1.4em;
+}
+
+.icon-full {
+  height: 100%;
+  padding-bottom: 1.4em;
 }
 
 .icon {
@@ -595,6 +605,11 @@ p > a {
   /* For individual pure grid units requiring paddings */
   .pure-pad-r {
     padding: 1.2em;
+  }
+
+  /* For icons taking up full container */
+  .icon-full {
+    max-width: 6.25em;
   }
 }
 
