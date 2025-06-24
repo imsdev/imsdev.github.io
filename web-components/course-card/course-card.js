@@ -43,8 +43,8 @@ function createComponent(html) {
         selector.src = image;
         // Set alt text
         selector.setAttribute('alt', `${name} badge`);
-        // Change styling for self-paced course card
-        if (selfpaced == 'false') {
+        // Change styling for icons
+        if (image.includes('icons')) {
             const courseCard = shadow.querySelector('.course-card');
             courseCard.style.alignItems = 'flex-start';
         }
