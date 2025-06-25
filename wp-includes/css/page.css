@@ -193,11 +193,6 @@ a {
   margin-bottom: 1.4em;
 }
 
-.icon-full {
-  height: 100%;
-  max-height: 10em;
-}
-
 .icon {
   margin-bottom: 0.5em;
 }
@@ -355,6 +350,20 @@ a {
 /* Format horizontal divider */
 .hr-container {
   padding: 2em 0em 3em 0em;
+}
+
+/* Call to action for new courses */
+.cta {
+  display: flex; 
+  flex-flow: row nowrap; 
+  gap: 2em;
+}
+
+/* For icon in cta */
+.cta img {
+  max-width: 5em;
+  height: 100%;
+  max-height: 10em;
 }
 /* -------------------------------------------------------- */
 
@@ -539,6 +548,13 @@ a {
 
 /* Media queries */
 /* -------------------------------------------------------- */
+@media  screen and (max-width: 27em) {
+  /* Call to action for new courses */
+  .cta {
+    flex-flow: row wrap;
+  }
+}
+
 /* 768px and below screen sizes */
 @media  screen and (max-width: 48em) {
   /* Decrease header size for smaller screens */
@@ -605,12 +621,6 @@ a {
   /* For individual pure grid units requiring paddings */
   .pure-pad-r {
     padding: 1.2em;
-  }
-
-  /* For icons taking up full container */
-  .icon-full {
-    max-width: 5em;
-    padding-bottom: 1.4em;
   }
 }
 
