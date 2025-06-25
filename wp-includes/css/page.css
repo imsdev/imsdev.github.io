@@ -490,6 +490,7 @@ a {
 .home-banner div {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 1em;
 }
 
@@ -501,6 +502,10 @@ a {
   color: var(--white);
   font-weight: bold;
   font-size: var(--plex-20);
+}
+
+.home-banner .icon-sm {
+  margin-bottom: 0;
 }
 
 /* Custom styling */

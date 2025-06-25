@@ -37,7 +37,7 @@ function createComponent(html) {
      * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
      * @returns {void}
      */
-    function setImage(cssSelector, image, name, selfpaced, shadow) {
+    function setImage(cssSelector, image, name, imageInvert, shadow) {
         const selector = shadow.querySelector(cssSelector);
         // Set image
         selector.src = image;
@@ -47,6 +47,10 @@ function createComponent(html) {
         if (image.includes('icons')) {
             const courseCard = shadow.querySelector('.course-card');
             courseCard.style.alignItems = 'flex-start';
+        }
+        // Invert icon 
+        if (imageInvert == 'true') {
+            selector.style.filter = 'invert(1)';
         }
     }
 
@@ -108,6 +112,7 @@ function createComponent(html) {
         // Creates an instance of CourseCard
         constructor() {
             super();
+            this.imginvert = "false";
             this.selfpaced = "";
             this.level = "";
             this.cost = "";
@@ -126,7 +131,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'session', 'desc', 'imgsrc', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 
+            return ['name', 'session', 'desc', 'imgsrc', 'imginvert', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 
                 'end', 'hours', 'link', 'linktext', 'registerlink'];
         }
         // Course Card Options
@@ -163,7 +168,7 @@ function createComponent(html) {
             shadow.innerHTML = html;
             
             // Set course img
-            setImage('.course-img', this.imgsrc, this.name, this.selfpaced, shadow);
+            setImage('.course-img', this.imgsrc, this.name, this.imginvert, shadow);
             // Set course name
             setContent('.course-name', this.name, shadow);
             // Set course desc
