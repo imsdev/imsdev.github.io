@@ -84,16 +84,20 @@ a {
 /* -------------------------------------------------------- */
 .white-bg {
   background-color: var(--white);
-  color: var(black);
+  color: black;
 }
 
 .white-bg a {
   color: var(--blue);
 }
 
-  .white-bg h3, .white-bg h4 {
-    color: var(--black);
-  }
+.white-bg li a {
+  color: black;
+}
+
+.white-bg h3, .white-bg h4 {
+  color: var(--black);
+}
 
 .gray-bg {
   background-color: var(--bg-gray);

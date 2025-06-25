@@ -1,0 +1,23 @@
+.anchor-links {
+    padding: 1em 5em 0.5em 5em;
+    position: sticky;
+    top: 0;
+    border-bottom: solid lightgray;
+}
+
+.anchor-links ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2em;
+    padding: 0;
+}
+
+.anchor-links li {
+    font-weight: 500;
+    font-size: 1em;
+    padding: 0;
+}
+
+.anchor-links li a:hover {
+    border-bottom: #0f62fe solid 4px;
+}
