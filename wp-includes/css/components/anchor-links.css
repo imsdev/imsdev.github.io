@@ -9,8 +9,9 @@
     display: flex;
     flex-flow: row wrap;
     column-gap: 3em;
-    row-gap: 1em;
+    row-gap: 0;
     padding: 0;
+    line-height: 3em;
 }
 
 .anchor-links li {
@@ -33,6 +34,10 @@
 
 .anchor-links li:hover {
     border-color: #0f62fe;
+}
+
+.anchor-links li a {
+    text-decoration: none;
 }
 
 @media  screen and (max-width: 48em) {

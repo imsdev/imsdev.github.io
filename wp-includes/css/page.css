@@ -44,6 +44,10 @@
 /* H4 - 22px */
 /* p - 18px */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body, body .pure-g, body .pure-g [class*="pure-u"] {
     font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
 }
@@ -64,6 +68,11 @@ h2 {
 h3 {
   font-size: var(--plex-24);
   font-weight: 500;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: var(--plex-20);
 }
 
 h6 {
