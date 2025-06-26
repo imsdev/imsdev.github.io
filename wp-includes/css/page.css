@@ -556,6 +556,7 @@ a {
 
 /* Media queries */
 /* -------------------------------------------------------- */
+/* 425px and below screen sizes */
 @media  screen and (max-width: 27em) {
   /* Call to action for new courses */
   .cta {
@@ -632,7 +633,7 @@ a {
   }
 }
 
-/* 1024px and below screen sizes */
+/* 1024px and 768px screen sizes */
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .pure-u-xl-11-24 > .gif {
     display: block;
