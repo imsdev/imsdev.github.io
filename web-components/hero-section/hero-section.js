@@ -46,7 +46,7 @@ function createComponent(html) {
 
         // Return array of properties to observe
         static get observedAttributes() {
-            return ['name', 'image', 'section', 'desc', 'linktext', 'link', 'linktext2', 'link2'];
+            return ['name', 'image', 'section', 'desc', 'linktext', 'link', 'linktext2', 'link2', 'highlight', 'highlightlink'];
         }
 
         // Called when an attribute is defined or changed
@@ -71,6 +71,14 @@ function createComponent(html) {
             if (this.name == 'IMS videos' || this.name == 'IMS on GitHub') {
                 const img = shadow.querySelector('.image');
                 img.classList.add('large-icon');
+            }
+
+            if (this.highlight != undefined) {
+                setContent('.highlight', this.highlight, shadow);
+                setLink('.highlight-link', this.highlightlink, shadow);
+            } else {
+                const highlightCard = shadow.querySelector('.highlight-card');
+                highlightCard.style.display = 'none';
             }
 
             const heroSection = shadow.querySelector('.hero-section');
