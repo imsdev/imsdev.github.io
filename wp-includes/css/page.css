@@ -44,6 +44,10 @@
 /* H4 - 22px */
 /* p - 18px */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body, body .pure-g, body .pure-g [class*="pure-u"] {
     font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
 }
@@ -66,12 +70,22 @@ h3 {
   font-weight: 500;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: var(--plex-20);
+}
+
 h6 {
   font-weight: 500;
 }
 
 p > a {
   line-height: 0;
+  font-size: var(--plex-16);
+}
+
+a {
+  font-size: var(--plex-18);
 }
 /* -------------------------------------------------------- */
 
@@ -79,16 +93,20 @@ p > a {
 /* -------------------------------------------------------- */
 .white-bg {
   background-color: var(--white);
-  color: var(black);
+  color: black;
 }
 
 .white-bg a {
   color: var(--blue);
 }
 
-  .white-bg h3, .white-bg h4 {
-    color: var(--black);
-  }
+.white-bg li a {
+  color: black;
+}
+
+.white-bg h3, .white-bg h4 {
+  color: var(--black);
+}
 
 .gray-bg {
   background-color: var(--bg-gray);
@@ -346,6 +364,20 @@ p > a {
 .hr-container {
   padding: 2em 0em 3em 0em;
 }
+
+/* Call to action for new courses */
+.cta {
+  display: flex; 
+  flex-flow: row nowrap; 
+  gap: 2em;
+}
+
+/* For icon in cta */
+.cta img {
+  max-width: 5em;
+  height: 100%;
+  max-height: 10em;
+}
 /* -------------------------------------------------------- */
 
 /* Quotations */
@@ -484,6 +516,10 @@ p > a {
   font-size: var(--plex-20);
 }
 
+.home-banner .icon-sm {
+  margin-bottom: 0;
+}
+
 /* Custom styling */
 /* -------------------------------------------------------- */
 /* For links under headers */
@@ -529,6 +565,14 @@ p > a {
 
 /* Media queries */
 /* -------------------------------------------------------- */
+/* 425px and below screen sizes */
+@media  screen and (max-width: 27em) {
+  /* Call to action for new courses */
+  .cta {
+    flex-flow: row wrap;
+  }
+}
+
 /* 768px and below screen sizes */
 @media  screen and (max-width: 48em) {
   /* Decrease header size for smaller screens */
@@ -598,7 +642,7 @@ p > a {
   }
 }
 
-/* 1024px and below screen sizes */
+/* 1024px and 768px screen sizes */
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .pure-u-xl-11-24 > .gif {
     display: block;
