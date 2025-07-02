@@ -42,12 +42,15 @@ section {
 
 .hero {
     display: grid;
-    grid-template-columns: 4em 1fr 1fr;
-    /* grid-template-rows: 4em 4em 6em 1fr; */
+    grid-template-columns: 4em 1fr;
     grid-template-rows: 4em repeat(3, 1fr);
     padding: 3em;
     padding-top: 2em;
     align-items: center;
+}
+
+.hero-highlight {
+    grid-template-columns: 4em 1fr 1fr;
 }
 
 .hero-no-buttons {
@@ -146,7 +149,7 @@ h6, p {
     background-color: white;
     padding: 2em 3em 2em 3em;
     margin: 1em;
-    opacity: 0.9;
+    opacity: 0.75;
     display: flex;
     flex-flow: column wrap;
     gap: 1em;
@@ -174,6 +177,10 @@ h6, p {
 
 @media screen and (min-width: 90em) {
     .hero {
+        grid-template-columns: 4em 4fr 1fr;
+    }
+
+    .hero-highlight {
         grid-template-columns: 4em 1fr 1fr;
     }
 }
@@ -185,5 +192,10 @@ h6, p {
         align-items: flex-start;
         gap: 1em;
         padding: 3em 2em;
+    }
+
+    .highlight-card {
+        padding: 2em;
+        margin: 0;
     }
 }

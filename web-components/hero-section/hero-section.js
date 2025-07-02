@@ -61,6 +61,9 @@ function createComponent(html) {
             const shadow = this.attachShadow({mode: 'open'});
             shadow.innerHTML = html;
 
+            const heroSection = shadow.querySelector('.hero-section');
+            const hero = shadow.querySelector('.hero');
+
             // Set content
             setImage('.image', this.image, shadow);
             setContent('.section', this.section, shadow);
@@ -73,16 +76,15 @@ function createComponent(html) {
                 img.classList.add('large-icon');
             }
 
+            // Display highlight card if content is provided
             if (this.highlight != undefined) {
                 setContent('.highlight', this.highlight, shadow);
                 setLink('.highlight-link', this.highlightlink, shadow);
+                hero.classList.add('hero-highlight');
             } else {
                 const highlightCard = shadow.querySelector('.highlight-card');
                 highlightCard.style.display = 'none';
             }
-
-            const heroSection = shadow.querySelector('.hero-section');
-            const hero = shadow.querySelector('.hero');
 
             // Check if primary button is used
             if (this.link != undefined) {
