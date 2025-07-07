@@ -79,6 +79,7 @@
   <!-- Web components -->
 	<script src="web-components/nav-header/nav-header.js" type="module"></script>
   <script src="web-components/hero-section/hero-section.js" type="module"></script>
+  <script src="web-components/jump-links/jump-links.js" type="module"></script>
   <script src="web-components/video-card/video-card.js" type="module"></script>
   <script src="web-components/footer/footer.js" type="module"></script>
 </head>
@@ -100,11 +101,12 @@
             link="https://mediacenter.ibm.com/channel/IMS%2BEducational%2BVideos/122579632"
           ></hero-section>
 
+          <jump-links></jump-links>
+
           <!-- =========================== Filter =========================== -->
           <!-- remember, the behaviour is that clicking pulls you to the anchors -->
-          <div class="zs-section filter-sec" id="anchor-link-menu">
+          <!-- <div class="zs-section filter-sec" id="anchor-link-menu">
             <div class="pure-g">
-              <!-- Filter list -->
               <div class="ibm-sitenav-menu-list" id="anchor-link-menu-items">
                 <ul class="menu">
                   <li><a href="#all">All roles</a></li>
@@ -114,7 +116,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- =========================== Videos - all roles =========================== -->
           <section id="all" class="white-bg pure-g card-section">
