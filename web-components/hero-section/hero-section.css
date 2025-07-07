@@ -147,6 +147,7 @@ h6, p {
     grid-column: 3;
     grid-row: 1 / 6;
     background-color: white;
+    color: black;
     padding: 2em 3em 2em 3em;
     margin: 1em;
     opacity: 0.75;
