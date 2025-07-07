@@ -10,18 +10,30 @@ fetch("web-components/jump-links/jump-links.html")
  */
 function createComponent(html) {
 
+     /**
+     * Create list item with jump link and add to list
+     * @param {string} link - The jump link
+     * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element
+     * @returns {void}
+    */
     function createLink(link, shadow) {
-        let newListItem = document.createElement('li');
-        let newImage = document.createElement('img');
+        const newListItem = document.createElement('li');
+
+        // Add jump link icon
+        const newImage = document.createElement('img');
         newImage.src = "wp-content/icons/icon_jump-link.svg";
         newImage.alt = "jump link";
         newListItem.appendChild(newImage);
-        let newLink = document.createElement('a');
+
+        // Add jump link
+        const newLink = document.createElement('a');
         newLink.textContent = link;
-        let linkSrc = "#" + (link.toLowerCase().replaceAll(' ', '-'));
+        const linkSrc = "#" + (link.toLowerCase().replaceAll(' ', '-'));
         newLink.href = linkSrc;
         newListItem.appendChild(newLink);
-        let list = shadow.querySelector('.list');
+
+        // Add new list item to list
+        const list = shadow.querySelector('.list');
         list.appendChild(newListItem);
     }
 
@@ -53,13 +65,15 @@ function createComponent(html) {
             const shadow = this.attachShadow({mode: 'open'});
             shadow.innerHTML = html;
 
+            // Create array from link list
             const linksArr = (this.links).split(', ');
+            // Add link to jump link list
             linksArr.forEach(link => {
                 createLink(link, shadow);
             });
         }
     }
 
-    // Define new CourseCard element
+    // Define new JumpLink element
     customElements.define('jump-links', JumpLinks);
 }
