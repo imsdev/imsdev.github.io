@@ -1,11 +1,24 @@
-.anchor-links {
+a, ul, li {
+    font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+    color: black;
+    font-size: var(--plex-18);
+}
+
+a, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.jump-links {
     padding: 1em 5em 0em 5em;
     position: sticky;
     top: 3em;
     border-bottom: solid lightgray;
+    background-color: white;
+    color: black;
 }
 
-.anchor-links ul {
+.jump-links ul {
     display: flex;
     flex-flow: row wrap;
     column-gap: 3em;
@@ -14,7 +27,7 @@
     line-height: 3em;
 }
 
-.anchor-links li {
+.jump-links li {
     font-weight: 500;
     font-size: 0.9em;
     padding: 0;
@@ -25,45 +38,45 @@
     gap: 0.5em;
 }
 
-.anchor-links li img {
+.jump-links li img {
     padding: 0;
     margin: 0;
     max-height: 2em;
     display: none;
 }
 
-.anchor-links li:hover {
+.jump-links li:hover {
     border-color: #0f62fe;
 }
 
-.anchor-links li a {
+.jump-links li a {
     text-decoration: none;
 }
 
 @media  screen and (max-width: 48em) {
-    .anchor-links {
+    .jump-links {
         padding: 2em;
         position: relative;
         top: 0;
     }
     
-    .anchor-links ul {
+    .jump-links ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
     }
 
-    .anchor-links li img {
+    .jump-links li img {
         display: block;
     }
 
-    .anchor-links li:hover {
+    .jump-links li:hover {
         border-color: white;
     }
 }
 
 @media  screen and (max-width: 27em) {    
-    .anchor-links ul {
+    .jump-links ul {
         display: flex;
         flex-flow: column wrap;
         gap: 0.2em;

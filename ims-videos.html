@@ -79,6 +79,7 @@
   <!-- Web components -->
 	<script src="web-components/nav-header/nav-header.js" type="module"></script>
   <script src="web-components/hero-section/hero-section.js" type="module"></script>
+  <script src="web-components/jump-links/jump-links.js" type="module"></script>
   <script src="web-components/video-card/video-card.js" type="module"></script>
   <script src="web-components/footer/footer.js" type="module"></script>
 </head>
@@ -95,29 +96,18 @@
             name="IMS videos"
             image="wp-content/icons/icon_video.svg" 
             section="Learn"
-            desc="<p>See the latest IMS educational videos here or click <b>Visit IBM MediaCenter</b> to search for more IMS video content.</p>"
+            desc="<p>See the latest IMS educational videos here or visit <b>IBM MediaCenter</b> to search for more IMS video content.</p>"
             linktext="Visit IBM MediaCenter →"
             link="https://mediacenter.ibm.com/channel/IMS%2BEducational%2BVideos/122579632"
           ></hero-section>
 
-          <!-- =========================== Filter =========================== -->
-          <!-- remember, the behaviour is that clicking pulls you to the anchors -->
-          <div class="zs-section filter-sec" id="anchor-link-menu">
-            <div class="pure-g">
-              <!-- Filter list -->
-              <div class="ibm-sitenav-menu-list" id="anchor-link-menu-items">
-                <ul class="menu">
-                  <li><a href="#all">All roles</a></li>
-                  <li><a href="#imsdb">IMS database</a></li>
-                  <li><a href="#sysprog">System programming</a></li>
-                  <li><a href="#appdev">Application development</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <!-- =========================== Jump links =========================== -->
+          <jump-links
+            links="All roles, IMS database, System programming, Application development"
+          ></jump-links>
 
           <!-- =========================== Videos - all roles =========================== -->
-          <section id="all" class="white-bg pure-g card-section">
+          <section id="all-roles" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>All roles</h3></div>
             <!-- IMS Community Calls -->
             <video-card 
@@ -177,7 +167,7 @@
           </section>
 
           <!-- =========================== Videos - database =========================== -->
-          <section id="imsdb" class="white-bg pure-g card-section">
+          <section id="ims-database" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>IMS database</h3></div>
             <!-- IMS MACB -->
             <video-card 
@@ -260,7 +250,7 @@
           </section>
 
           <!-- =========================== Videos - system programming =========================== -->
-          <section id="sysprog" class="white-bg pure-g card-section">
+          <section id="system-programming" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>System programming</h3></div>
             <!-- IMS DBDGEN and PSBGEN for Beginners -->
             <video-card 
@@ -340,7 +330,7 @@
           </section>
 
           <!-- =========================== Videos - system programming =========================== -->
-          <section id="appdev" class="white-bg pure-g card-section">
+          <section id="application-development" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>Application development</h3></div>
             <!-- IMS Java Demos -->
             <video-card 

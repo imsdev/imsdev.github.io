@@ -46,7 +46,6 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="wp-includes/css/dropnav.css">
 	<link rel="stylesheet" href="wp-includes/css/page.css">
-	<link rel="stylesheet" href="wp-includes/css/components/anchor-links.css">
 
 	<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
 	<script>
@@ -72,6 +71,7 @@
 	<!-- Web components -->
 	<script src="web-components/nav-header/nav-header.js" type="module"></script>
 	<script src="web-components/hero-section/hero-section.js" type="module"></script>
+	<script src="web-components/jump-links/jump-links.js" type="module"></script>
 	<script src="web-components/course-card/course-card.js" type="module"></script>
     <script src="web-components/footer/footer.js" type="module"></script>
 </head>
@@ -93,42 +93,13 @@
 			highlightlink="#ims-security"
 		></hero-section>
 
-		<!-- =========================== Anchor links =========================== -->
-		 <div class="anchor-links pure-g white-bg">
-			<ul class="pure-u-1">
-				<li>
-					<img src="wp-content/icons/icon_jump-link.svg" alt="">
-					<a href="#all">All roles</a>
-				</li>
-				<li>
-					<img src="wp-content/icons/icon_jump-link.svg" alt="">
-					<a href="#imsdb">IMS database</a>
-				</li>
-				<li>
-					<img src="wp-content/icons/icon_jump-link.svg" alt="">
-					<a href="#sysprog">System programming</a>
-				</li>
-				<li>
-					<img src="wp-content/icons/icon_jump-link.svg" alt="">
-					<a href="#appdev">Application development</a>
-				</li>
-				<li>
-					<img src="wp-content/icons/icon_jump-link.svg" alt="">
-					<a href="#live">Instructor-led</a>
-				</li>
-				<li>
-					<img src="wp-content/icons/icon_jump-link.svg" alt="">
-					<a href="#faq">FAQs</a>
-				</li>
-				<li>
-					<img src="wp-content/icons/icon_jump-link.svg" alt="">
-					<a href="#support">Support</a>
-				</li>
-			</ul>
-		</div>
+		<!-- =========================== Jump links =========================== -->
+		<jump-links
+			links="All roles, IMS database, System programming, Application development, Instructor-led, FAQs, Support"
+		></jump-links>
 
 		<!-- =========================== Courses - all roles =========================== -->
-		<section id="all" class="white-bg card-section">
+		<section id="all-roles" class="white-bg card-section">
 			<div class="card-section-header"><h2>All roles</h2></div>
 				<!-- IMS Fundamentals -->
 				<course-card
@@ -168,7 +139,7 @@
 		</section>
 
 		<!-- =========================== Courses - IMS database =========================== -->
-		<section id="imsdb" class="white-bg card-section">
+		<section id="ims-database" class="white-bg card-section">
 			<div class="card-section-header"><h2>IMS database</h2></div>
 				<!-- Logical Relationships -->
 				<course-card
@@ -344,7 +315,7 @@
 		</section>
 
 		<!-- =========================== Courses - System programming =========================== -->
-		<section id="sysprog" class="white-bg card-section">
+		<section id="system-programming" class="white-bg card-section">
 			<div class="card-section-header"><h2>System programming</h2></div>
 				<!-- IMS security -->
 				<course-card
@@ -460,7 +431,7 @@
 		</section>
 
 		<!-- =========================== Courses - Application development =========================== -->
-		<section id="appdev" class="white-bg card-section">
+		<section id="application-development" class="white-bg card-section">
 			<div><h2>Application development</h2></div>
 				<!-- TM Application Programming -->
 				<course-card
@@ -502,14 +473,14 @@
 		</section>
 
 		<!-- =========================== Courses - Instructor-led =========================== -->
-		<section id="live" class="white-bg card-section">
+		<section id="instructor-led" class="white-bg card-section">
 			<div><h2>Instructor-led</h2></div>
 			<!-- <p>No instructor-led classes are scheduled at this time. Please check back in the coming weeks for class offerings.</p> -->
 				<p>For more information about the live class format, see the upcoming events on the <a href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/public?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560" target="_blank" rel="noopener noreferrer">IMS community page.</a></p>
 			
 			<!-- IMS Fundamentals, April Session -->
 			<course-card
-				id="ims-fundamentals-april-2025"
+				id="ims-dbrc-jun-2025"
 				name="IMS Database Recovery Control (DBRC)"
 				session="June 2025 session"
 				desc="<p>This live course runs for 9 sessions, 4 hours each day. It describes the benefits of DBRC and the 
@@ -532,7 +503,7 @@
 		</section>
 
 		<!-- =========================== FAQs =========================== -->
-		<section id="faq" class="light-gray-bg pure-g">
+		<section id="faqs" class="light-gray-bg pure-g">
 				<div class="pure-u-1 pure-u-md-1-4 section-header">
 					<h2>Frequently asked questions</h2>
 				</div>
