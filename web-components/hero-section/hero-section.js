@@ -70,6 +70,7 @@ function createComponent(html) {
         // Creates element with default values
         constructor() {
             super();
+            this.highlightsub = 'Coming soon';
         }
 
         /**
@@ -77,7 +78,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'image', 'section', 'desc', 'linktext', 'link', 'linktext2', 'link2', 'highlight', 'highlightlink'];
+            return ['name', 'image', 'section', 'desc', 'linktext', 'link', 'linktext2', 'link2', 'highlight', 'highlightsub', 'highlightlink'];
         }
 
         /**
@@ -114,6 +115,7 @@ function createComponent(html) {
 
             // Display highlight card if content is provided
             if (this.highlight != undefined) {
+                setContent('.highlight-sub', this.highlightsub, shadow);
                 setContent('.highlight', this.highlight, shadow);
                 setLink('.highlight-link', this.highlightlink, shadow, this.highlight);
                 hero.classList.add('hero-highlight');
