@@ -26,7 +26,7 @@ a {
 }
 
 /* Styling for video card */
-.video-card {
+.card {
     background-color: var(--bg-light-gray);
     margin: 1em;
     padding: 2em;
@@ -34,12 +34,12 @@ a {
     flex-flow: column nowrap;
 }
 
-.video-card div:nth-child(0) {
+.card div:nth-child(0) {
     flex-grow: 1;
 }
   
 /* Places 'watch now' at the bottom of the video card */
-.video-card div:nth-child(1) {
+.card div:nth-child(1) {
     flex-grow: 4;
 }
 
@@ -58,7 +58,7 @@ a {
 /* 1024px and above screen sizes */
 @media screen and (min-width: 64em) {
     /* Set consistent height for video card */
-    .video-card {
+    .card {
         height: 18.75em;
     }
 }

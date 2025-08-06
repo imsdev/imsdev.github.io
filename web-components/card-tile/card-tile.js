@@ -41,10 +41,10 @@ function createComponent(html) {
         }
     }
 
-    // Web component class representing a video card.
+    // Web component class representing a card card.
     class CardTile extends HTMLElement {
 
-        // Creates an instance of VideoCard
+        // Creates an instance of cardCard
         constructor() {
             super();
             this.level = 'Varies';
@@ -78,26 +78,22 @@ function createComponent(html) {
             // Create shadow root for element
             const shadow = this.attachShadow({mode: 'closed'});
             shadow.innerHTML = html;
-            // shadow.append(
-            //     // document.getElementById('video-card').content.cloneNode(true) // Use this line to test template in ims-videos.html
-            //     template.content.cloneNode(true)
-            // );
 
-            // Set video name
-            setContent('.video-name', this.name, shadow);
-            // Set video desc
-            setContent('.video-desc', this.desc, shadow);
-            // Set video level
-            setContent('.video-level', this.level, shadow);
-            // Set video time
-            setContent('.video-time', this.time, shadow);
-            // Set video links
-            setLink(this.link, this.linktext, '.video-link', this.name, shadow);
-            setLink(this.link2, this.linktext2, '.video-link-2', this.name, shadow);
-            setLink(this.link3, this.linktext3, '.video-link-3', this.name, shadow);
+            // Set card name
+            setContent('.card-name', this.name, shadow);
+            // Set card desc
+            setContent('.card-desc', this.desc, shadow);
+            // Set card level
+            setContent('.card-level', this.level, shadow);
+            // Set card time
+            setContent('.card-time', this.time, shadow);
+            // Set card links
+            setLink(this.link, this.linktext, '.card-link', this.name, shadow);
+            setLink(this.link2, this.linktext2, '.card-link-2', this.name, shadow);
+            setLink(this.link3, this.linktext3, '.card-link-3', this.name, shadow);
         }
     }
 
-    // Define new VideoCard element
+    // Define new card tile element
     customElements.define('card-tile', CardTile);
 }
