@@ -31,13 +31,23 @@ function createComponent(html) {
      * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
      * @returns {void}
      */
-    function setLink(url, linkText, cssSelector, name, shadow) {
+    function setLink(url, linkText, cssSelector, name, cardType, shadow) {
         if (url != undefined) {
             const linkObj = shadow.querySelector(cssSelector);
             linkObj.href = url;
-            const ariaText = (linkText != 'now') ? `Watch ${name}, ${linkText}` : `Watch ${name}`; // Change link text if defined
+
+            // Set link text and aria-label for link based on card type
+            let ariaText;
+            let newLinkText;
+            if (cardType == 'video') {
+                ariaText = (linkText != 'now') ? `Watch ${name}, ${linkText}` : `Watch ${name}`; // Change link text if defined
+                newLinkText = `Watch ${linkText} →`;
+            } else {
+                ariaText = `Explore ${name}`;
+                newLinkText = 'Explore →';
+            }
             linkObj.setAttribute('aria-label', ariaText);
-            linkObj.textContent = `Watch ${linkText} →`;
+            linkObj.textContent = newLinkText;
         }
     }
 
@@ -47,8 +57,7 @@ function createComponent(html) {
         // Creates an instance of cardCard
         constructor() {
             super();
-            this.level = 'Varies';
-            this.time = 'Varies';
+            this.cardtype= 'video';
             this.linktext = 'now';
         }
 
@@ -57,7 +66,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'desc', 'level', 'time', 'link', 'linktext', 'link2', 'linktext2', 'link3', 'linktext3'];
+            return ['cardtype', 'name', 'desc', 'level', 'time', 'link', 'linktext', 'link2', 'linktext2', 'link3', 'linktext3'];
         }
 
         /**
@@ -79,6 +88,20 @@ function createComponent(html) {
             const shadow = this.attachShadow({mode: 'closed'});
             shadow.innerHTML = html;
 
+            // Set card type
+            const cardSelector = shadow.querySelector('.card');
+            switch (this.cardtype) {
+                case 'video':
+                    cardSelector.classList.add('video-card');
+                    break;
+                case 'support':
+                    cardSelector.classList.add('support-card');
+                    // Hide level and time
+                    const hideSelector = shadow.querySelector('.inline-g');
+                    hideSelector.style.display = 'none';
+                    break;
+            } 
+
             // Set card name
             setContent('.card-name', this.name, shadow);
             // Set card desc
@@ -87,10 +110,11 @@ function createComponent(html) {
             setContent('.card-level', this.level, shadow);
             // Set card time
             setContent('.card-time', this.time, shadow);
+
             // Set card links
-            setLink(this.link, this.linktext, '.card-link', this.name, shadow);
-            setLink(this.link2, this.linktext2, '.card-link-2', this.name, shadow);
-            setLink(this.link3, this.linktext3, '.card-link-3', this.name, shadow);
+            setLink(this.link, this.linktext, '.card-link', this.name, this.cardtype, shadow);
+            setLink(this.link2, this.linktext2, '.card-link-2', this.name, this.cardtype, shadow);
+            setLink(this.link3, this.linktext3, '.card-link-3', this.name, this.cardtype, shadow);
         }
     }
 
