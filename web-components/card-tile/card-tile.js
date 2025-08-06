@@ -1,5 +1,5 @@
 // Fetch HTML template
-fetch("web-components/video-card/video-card.html")
+fetch("web-components/card-tile/card-tile.html")
     .then(stream => stream.text())
     .then(text => createComponent(text))
 
@@ -42,7 +42,7 @@ function createComponent(html) {
     }
 
     // Web component class representing a video card.
-    class VideoCard extends HTMLElement {
+    class CardTile extends HTMLElement {
 
         // Creates an instance of VideoCard
         constructor() {
@@ -99,8 +99,5 @@ function createComponent(html) {
     }
 
     // Define new VideoCard element
-    customElements.define('video-card', VideoCard);
+    customElements.define('card-tile', CardTile);
 }
-
-// Register component
-// customElements.define('video-card', VideoCard);
