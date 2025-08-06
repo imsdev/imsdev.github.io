@@ -27,6 +27,7 @@ a {
 
 .link-g a {
     margin: 0.2em 0em;
+    width: fit-content;
 }
 
 /* Styling for video card */
