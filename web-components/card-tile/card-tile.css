@@ -5,6 +5,10 @@ h2 {
     margin: 0em;
 }
 
+.support-card h2 {
+    font-weight: 500;
+}
+
 p {
     font-size: var(--plex-18);
 }
@@ -34,6 +38,10 @@ a {
     flex-flow: column nowrap;
 }
 
+.support-card {
+    margin: 0.5em;
+}
+
 .card div:nth-child(0) {
     flex-grow: 1;
 }
@@ -60,5 +68,9 @@ a {
     /* Set consistent height for video card */
     .card {
         height: 18.75em;
+    }
+
+    .support-card {
+        height: 12em;
     }
 }
