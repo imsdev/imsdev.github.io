@@ -1,117 +1,182 @@
-<link href="web-components/nav-header/nav-header.css" rel="stylesheet">
-<link href="jekyll-tipue-search/assets/tipuesearch/css/tipuesearch-component.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="web-components/nav-header/nav-header.css" rel="stylesheet" />
+<link
+  href="jekyll-tipue-search/assets/tipuesearch/css/tipuesearch-component.css"
+  rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <header>
-    <a class="skip-link" href="#content">Skip to content</a>
-    <nav aria-label="masthead">
-        <section class="masthead">
-            <a href="index.html" class="logo">
-                <img src="wp-content/IMS_logo_small.png" alt="IMS logo">
-                <h4>IBM <b>IMS Central</b></h4>
-            </a>
-            <div class="navigation">
-                <form id="search-form">
-                    <div class="search-bar">
-                        <img src="wp-content/icons/icon_search.svg" id="search-icon" alt="search">
-                        <input 
-                            id="search-input" 
-                            name="search"
-                            type="text" 
-                            pattern=".{3,}"
-                            placeholder="What are you looking for today?"
-                            autofocus
-                            autocomplete="off"
-                        >
-                        <img src="wp-content/icons/icon_close.svg" id="clear-icon" role="button" alt="clear" tabindex="0">
-                    </div>
-                </form>
-                <div id="search-results"></div>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <nav aria-label="masthead">
+    <section class="masthead">
+      <a href="index.html" class="logo">
+        <img src="wp-content/IMS_logo_small.png" alt="IMS logo" />
+        <h4>IBM <b>IMS Central</b></h4>
+      </a>
+      <div class="navigation">
+        <form id="search-form">
+          <div class="search-bar">
+            <img
+              src="wp-content/icons/icon_search.svg"
+              id="search-icon"
+              alt="search" />
+            <input
+              id="search-input"
+              name="search"
+              type="text"
+              pattern=".{3,}"
+              placeholder="What are you looking for today?"
+              autofocus
+              autocomplete="off" />
+            <img
+              src="wp-content/icons/icon_close.svg"
+              id="clear-icon"
+              role="button"
+              alt="clear"
+              tabindex="0" />
+          </div>
+        </form>
+        <div id="search-results"></div>
 
-                <input type="checkbox" id="menu-toggle" tabindex="-1" aria-label="menu toggle">
-                <a class="hamburger-menu" role="button" tabindex="0" aria-label="menu button">
-                    <div></div><div></div><div></div>
-                </a>
-            </div>
-        </section>
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          tabindex="-1"
+          aria-label="menu toggle" />
+        <a
+          class="hamburger-menu"
+          role="button"
+          tabindex="0"
+          aria-label="menu button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+      </div>
+    </section>
 
-        <section class="dropdown-menu">
-            <div class="menu">
-                <div>
-                    <h3>Learn</h3>
-                    <a href="ims-videos.html" tabindex="-1">
-                        <h5>Videos</h5>
-                        <p>Choose from hundreds of educational videos on IMS components, functions, and tools.</p>
-                    </a>
-                    <a href="ims-education.html" tabindex="-1">
-                        <h5>Courses</h5>
-                        <p>Get in-depth IMS education with these self-paced courses and instructor-led classes and earn digital badges.</p>
-                    </a>
-                    <a href="ims-repos.html" tabindex="-1">
-                        <h5>IMS repos on GitHub</h5>
-                        <p>Get code samples and tutorials on IMS components, workflows, Java, and more.</p>
-                    </a>
-                </div>
-                <div>
-                    <h3>Innovate</h3>
-                    <a href="ims-apis.html" tabindex="-1">
-                        <h5>APIs</h5>
-                        <p>Unlock the value of your IMS applications by making easily consumable APIs in minutes.</p>
-                    </a>
-                    <a href="ims-devops.html" tabindex="-1">
-                        <h5>Automation</h5>
-                        <p>Learn how to automate your IT infrastructure and applications on IBM Z.</p>
-                    </a>
-                    <a href="ims-java.html" tabindex="-1">
-                        <h5>Java</h5>
-                        <p>Build Java applications to run inside or outside IMS.</p>
-                    </a>
-                    <a href="ims-db.html" tabindex="-1">
-                        <h5>IMS Database</h5>
-                        <p>IMS Database: fast, secure, reliable.</p>
-                    </a>
-                    <a href="ims-tm.html" tabindex="-1">
-                        <h5>IMS Transaction Manager</h5>
-                        <p>IMS Transaction Manager: fast, secure, connected.</p>
-                    </a>
-                </div>
-                <div>
-                    <h3>Engage</h3>
-                    <a href="ims-gold.html" tabindex="-1">
-                        <h5>IMS Gold</h5>
-                        <p>Join the IMS client feedback program for the latest IMS news and engage with other customers.</p>
-                    </a>
-                    <a href="https://community.ibm.com/community/user/groupz?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560" 
-                        tabindex="-1" 
-                        rel="noopener noreferrer"
-                        target="_blank"
-                    >
-                        <h5>
-                            IMS community
-                            <img src="wp-content/Icon07.png" alt="External link" class="external-link"></img>
-                        </h5>
-                        <p>See the latest IMS blogs, engage in IMS forums, and more by visiting the <b>IMS Community</b> website.</p>
-                    </a>
-                    <a href="ims-advocacy.html" tabindex="-1">
-                        <h5>Advocates and ideas</h5>
-                        <p>Get an IMS advocate to represent you and learn how to submit ideas to the IMS team.</p>
-                    </a>
-                    <a href="ims-internship.html" tabindex="-1">
-                        <h5>IMS Customer Internship</h5>
-                        <p>Take your skills to the next level with our annual, in-person training event.</p>
-                    </a>
-                </div>
-                <div>
-                    <h3>Documentation & support</h3>
-                    <a href="ims-docs.html" tabindex="-1">
-                        <h5>Documentation</h5>
-                        <p>Find information on IMS, tools, and other IBM products.</p>
-                    </a>
-                    <a href="ims-support.html" tabindex="-1">
-                        <h5>Support</h5>
-                        <p>Get help with IMS or other IBM products.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </nav>
+    <section class="dropdown-menu">
+      <div class="menu">
+        <div>
+          <h3>Learn</h3>
+          <a href="ims-videos.html" tabindex="-1">
+            <h5>Videos</h5>
+            <p>
+              Choose from hundreds of educational videos on IMS components,
+              functions, and tools.
+            </p>
+          </a>
+          <a href="ims-education.html" tabindex="-1">
+            <h5>Courses</h5>
+            <p>
+              Get in-depth IMS education with these self-paced courses and
+              instructor-led classes and earn digital badges.
+            </p>
+          </a>
+          <a href="ims-repos.html" tabindex="-1">
+            <h5>IMS repos on GitHub</h5>
+            <p>
+              Get code samples and tutorials on IMS components, workflows, Java,
+              and more.
+            </p>
+          </a>
+          <a
+            href="https://www.ibm.com/products/ims"
+            tabindex="-1"
+            rel="noopener noreferrer"
+            target="_blank">
+            <h5>
+              IMS product page
+              <img
+                src="wp-content/Icon07.png"
+                alt="External link"
+                class="external-link" />
+            </h5>
+            <p>Learn about the latest IMS features and offerings.</p>
+          </a>
+        </div>
+        <div>
+          <h3>Innovate</h3>
+          <a href="ims-apis.html" tabindex="-1">
+            <h5>APIs</h5>
+            <p>
+              Unlock the value of your IMS applications by making easily
+              consumable APIs in minutes.
+            </p>
+          </a>
+          <a href="ims-devops.html" tabindex="-1">
+            <h5>Automation</h5>
+            <p>
+              Learn how to automate your IT infrastructure and applications on
+              IBM Z.
+            </p>
+          </a>
+          <a href="ims-java.html" tabindex="-1">
+            <h5>Java</h5>
+            <p>Build Java applications to run inside or outside IMS.</p>
+          </a>
+          <a href="ims-db.html" tabindex="-1">
+            <h5>IMS Database</h5>
+            <p>IMS Database: fast, secure, reliable.</p>
+          </a>
+          <a href="ims-tm.html" tabindex="-1">
+            <h5>IMS Transaction Manager</h5>
+            <p>IMS Transaction Manager: fast, secure, connected.</p>
+          </a>
+        </div>
+        <div>
+          <h3>Engage</h3>
+          <a href="ims-gold.html" tabindex="-1">
+            <h5>IMS Gold</h5>
+            <p>
+              Join the IMS client feedback program for the latest IMS news and
+              engage with other customers.
+            </p>
+          </a>
+          <a
+            href="https://community.ibm.com/community/user/groupz?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560"
+            tabindex="-1"
+            rel="noopener noreferrer"
+            target="_blank">
+            <h5>
+              IMS community
+              <img
+                src="wp-content/Icon07.png"
+                alt="External link"
+                class="external-link" />
+            </h5>
+            <p>
+              See the latest IMS blogs, engage in IMS forums, and more by
+              visiting the <b>IMS Community</b> website.
+            </p>
+          </a>
+          <a href="ims-advocacy.html" tabindex="-1">
+            <h5>Advocates and ideas</h5>
+            <p>
+              Get an IMS advocate to represent you and learn how to submit ideas
+              to the IMS team.
+            </p>
+          </a>
+          <a href="ims-internship.html" tabindex="-1">
+            <h5>IMS Customer Internship</h5>
+            <p>
+              Take your skills to the next level with our annual, in-person
+              training event.
+            </p>
+          </a>
+        </div>
+        <div>
+          <h3>Documentation & support</h3>
+          <a href="ims-docs.html" tabindex="-1">
+            <h5>Documentation</h5>
+            <p>Find information on IMS, tools, and other IBM products.</p>
+          </a>
+          <a href="ims-support.html" tabindex="-1">
+            <h5>Support</h5>
+            <p>Get help with IMS or other IBM products.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </nav>
 </header>
