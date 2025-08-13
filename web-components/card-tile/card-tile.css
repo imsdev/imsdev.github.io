@@ -39,8 +39,13 @@ a {
     flex-flow: column nowrap;
 }
 
+/* Styling for support card */
 .support-card {
     margin: 0.2em;
+}
+
+.support-card .inline-g {
+    display: none;
 }
 
 .support-card:hover {
@@ -76,6 +81,7 @@ a {
         height: 18.75em;
     }
 
+    /* Set consistent height for support card */
     .support-card {
         height: 12em;
     }

@@ -96,9 +96,6 @@ function createComponent(html) {
                     break;
                 case 'support':
                     cardSelector.classList.add('support-card');
-                    // Hide level and time
-                    const hideSelector = shadow.querySelector('.inline-g');
-                    hideSelector.style.display = 'none';
                     break;
             } 
 
