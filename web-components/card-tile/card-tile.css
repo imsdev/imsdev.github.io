@@ -40,7 +40,12 @@ a {
 }
 
 .support-card {
-    margin: 0.5em;
+    margin: 0.2em;
+}
+
+.support-card:hover {
+    background-color: #e3e3e3;
+    transition: 0.2s ease-in-out;
 }
 
 .card div:nth-child(0) {
