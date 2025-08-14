@@ -1,5 +1,5 @@
 // Fetch HTML template
-fetch("web-components/video-card/video-card.html")
+fetch("web-components/card-tile/card-tile.html")
     .then(stream => stream.text())
     .then(text => createComponent(text))
 
@@ -31,24 +31,33 @@ function createComponent(html) {
      * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
      * @returns {void}
      */
-    function setLink(url, linkText, cssSelector, name, shadow) {
+    function setLink(url, linkText, cssSelector, name, cardType, shadow) {
         if (url != undefined) {
             const linkObj = shadow.querySelector(cssSelector);
             linkObj.href = url;
-            const ariaText = (linkText != 'now') ? `Watch ${name}, ${linkText}` : `Watch ${name}`; // Change link text if defined
+
+            // Set link text and aria-label for link based on card type
+            let ariaText;
+            let newLinkText;
+            if (cardType == 'video') {
+                ariaText = (linkText != 'now') ? `Watch ${name}, ${linkText}` : `Watch ${name}`; // Change link text if defined
+                newLinkText = `Watch ${linkText} →`;
+            } else {
+                ariaText = `Explore ${name}`;
+                newLinkText = 'Explore →';
+            }
             linkObj.setAttribute('aria-label', ariaText);
-            linkObj.textContent = `Watch ${linkText} →`;
+            linkObj.textContent = newLinkText;
         }
     }
 
-    // Web component class representing a video card.
-    class VideoCard extends HTMLElement {
+    // Web component class representing a card card.
+    class CardTile extends HTMLElement {
 
-        // Creates an instance of VideoCard
+        // Creates an instance of cardCard
         constructor() {
             super();
-            this.level = 'Varies';
-            this.time = 'Varies';
+            this.cardtype= 'video';
             this.linktext = 'now';
         }
 
@@ -57,7 +66,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'desc', 'level', 'time', 'link', 'linktext', 'link2', 'linktext2', 'link3', 'linktext3'];
+            return ['cardtype', 'name', 'desc', 'level', 'time', 'link', 'linktext', 'link2', 'linktext2', 'link3', 'linktext3'];
         }
 
         /**
@@ -78,29 +87,34 @@ function createComponent(html) {
             // Create shadow root for element
             const shadow = this.attachShadow({mode: 'closed'});
             shadow.innerHTML = html;
-            // shadow.append(
-            //     // document.getElementById('video-card').content.cloneNode(true) // Use this line to test template in ims-videos.html
-            //     template.content.cloneNode(true)
-            // );
 
-            // Set video name
-            setContent('.video-name', this.name, shadow);
-            // Set video desc
-            setContent('.video-desc', this.desc, shadow);
-            // Set video level
-            setContent('.video-level', this.level, shadow);
-            // Set video time
-            setContent('.video-time', this.time, shadow);
-            // Set video links
-            setLink(this.link, this.linktext, '.video-link', this.name, shadow);
-            setLink(this.link2, this.linktext2, '.video-link-2', this.name, shadow);
-            setLink(this.link3, this.linktext3, '.video-link-3', this.name, shadow);
+            // Set card type
+            const cardSelector = shadow.querySelector('.card');
+            switch (this.cardtype) {
+                case 'video':
+                    cardSelector.classList.add('video-card');
+                    break;
+                case 'support':
+                    cardSelector.classList.add('support-card');
+                    break;
+            } 
+
+            // Set card name
+            setContent('.card-name', this.name, shadow);
+            // Set card desc
+            setContent('.card-desc', this.desc, shadow);
+            // Set card level
+            setContent('.card-level', this.level, shadow);
+            // Set card time
+            setContent('.card-time', this.time, shadow);
+
+            // Set card links
+            setLink(this.link, this.linktext, '.card-link', this.name, this.cardtype, shadow);
+            setLink(this.link2, this.linktext2, '.card-link-2', this.name, this.cardtype, shadow);
+            setLink(this.link3, this.linktext3, '.card-link-3', this.name, this.cardtype, shadow);
         }
     }
 
-    // Define new VideoCard element
-    customElements.define('video-card', VideoCard);
+    // Define new card tile element
+    customElements.define('card-tile', CardTile);
 }
-
-// Register component
-// customElements.define('video-card', VideoCard);

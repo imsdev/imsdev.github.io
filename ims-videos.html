@@ -80,7 +80,7 @@
 	<script src="web-components/nav-header/nav-header.js" type="module"></script>
   <script src="web-components/hero-section/hero-section.js" type="module"></script>
   <script src="web-components/jump-links/jump-links.js" type="module"></script>
-  <script src="web-components/video-card/video-card.js" type="module"></script>
+  <script src="web-components/card-tile/card-tile.js" type="module"></script>
   <script src="web-components/footer/footer.js" type="module"></script>
 </head>
 
@@ -110,17 +110,19 @@
           <section id="all-roles" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>All roles</h3></div>
             <!-- IMS Community Calls -->
-            <video-card 
+            <card-tile 
               name="IMS Community Calls" 
               desc="These calls cover the latest in what's going on in the world of IMS."
+              level="Varies"
+              time="Varies"
               link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_lgy10u5e/"
               id="ims-comm"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Intro -->
-            <video-card 
+            <card-tile 
               name="Introduction to IMS" 
               desc="If you're new to IMS, watch these short, high-level videos on IMS, 
                 database, transaction management, and application development."
@@ -130,10 +132,10 @@
               id="ims-intro"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Ansible -->
-            <video-card 
+            <card-tile 
               name="Getting Started with Ansible for IBM Z" 
               desc="Get an overview of how to set up your Red Hat® Ansible® control node to 
                 get started automating processes for IBM Z® with Ansible."
@@ -143,34 +145,38 @@
               id="ims-ansible"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Insights Series -->
-            <video-card 
+            <card-tile 
               name="IMS Insights Series" 
               desc="These webinars cover timely topics such as new customer perspectives on IMS and managed ACBs."
+              level="Varies"
+              time="Varies"
               link="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_05jsq9yl/1_ci4q5j5d"
               id="ims-insights"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Tools -->
-            <video-card 
+            <card-tile 
               name="IMS Tools" 
               desc="Review the various videos on IMS Tools."
+              level="Varies"
+              time="Varies"
               link="https://mediacenter.ibm.com/playlist/dedicated/189147413/1_cvhwa8r2/1_5xtr9qnf"
               id="ims-tools"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
           </section>
 
           <!-- =========================== Videos - database =========================== -->
           <section id="ims-database" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>IMS database</h3></div>
             <!-- IMS MACB -->
-            <video-card 
+            <card-tile 
               name="IMS Managed ACBs and IMS Catalog" 
               desc="Check out this video series that describes the IMS catalog, how to implement it, 
                 and how to implement managed ACBs."
@@ -180,10 +186,10 @@
               id="ims-macb"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Catalog Database -->
-            <video-card 
+            <card-tile 
               name="IMS Catalog Database Repair and Recovery" 
               desc="Learn how to repair and recover the IMS catalog database, which is an IMS 
                 high availability large database (HALDB)."
@@ -193,10 +199,10 @@
               id="ims-cat-db"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Full Function Log -->
-            <video-card 
+            <card-tile 
               name="IMS Full-Function Log Record Analysis" 
               desc="These videos describe log records associated with input and output message flows, 
                 application scheduling, and full-function database updates."
@@ -206,10 +212,10 @@
               id="ims-ff-log"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Reorg DBRC -->
-            <video-card 
+            <card-tile 
               name="How to Reorganize the IMS DBRC RECON Data Sets" 
               desc="These videos show you the general steps for reorganizing IMS DBRC RECON data sets."
               level="intermediate"
@@ -218,13 +224,14 @@
               id="ims-reorg-dbrc"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Buffers -->
-            <video-card 
+            <card-tile 
               name="Managing IMS Buffers" 
               desc="Check out these three playlists on VSAM, OSAM, and dynamic full-function databases buffers."
               level="Intermediate"
+              time="Varies"
               link="https://mediacenter.ibm.com/playlist/details/1_ap436b3k/categoryId/122579632"
               linktext="VSAM"
               link2="https://mediacenter.ibm.com/playlist/details/1_ywfjxcwn/categoryId/122579632"
@@ -234,10 +241,10 @@
               id="ims-buffers"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS DDL Utility -->
-            <video-card 
+            <card-tile 
               name="IMS z/OS Native DDL Utility" 
               desc="Get an overview of a new IMS utility that submits SQL data definition language (DDL) statements against an IMS database."
               level="Beginner"
@@ -246,14 +253,14 @@
               id="ims-ddl-util"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
           </section>
 
           <!-- =========================== Videos - system programming =========================== -->
           <section id="system-programming" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>System programming</h3></div>
             <!-- IMS DBDGEN and PSBGEN for Beginners -->
-            <video-card 
+            <card-tile 
               name="IMS DBDGEN and PSBGEN for Beginners" 
               desc="This series explain the DBDGEN and PSBGEN processes and how to code 
                 DBDGEN and PSBGEN input with examples that show the SEGM, FIELD, and SENSEG statements."
@@ -263,10 +270,10 @@
               id="ims-dbdgen-psbgen"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Monitor Reports -->
-            <video-card 
+            <card-tile 
               name="IMS Monitor Reports" 
               desc="The IMS Monitor is a no-cost tool provided with IMS. The IMS Monitor can create many types 
                 of reports, including buffer pool statistics program, program I/O, and message queuing."
@@ -276,10 +283,10 @@
               id="ims-mon-rep"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- z/OS Logger Reports IMS Shared Queues -->
-            <video-card 
+            <card-tile 
               name="z/OS Logger Reports IMS Shared Queues" 
               desc="Learn to use the z/OS Logger so that you can monitor the performance of an IMS shared queues environment."
               level="Intermediate"
@@ -288,10 +295,10 @@
               id="shared-queue-log-reports"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Distributed Environments -->
-            <video-card 
+            <card-tile 
               name="IMS and Distributed Environment Security" 
               desc="Learn how to secure frontend or distributed environments as they relate to IMS."
               level="Advanced"
@@ -300,10 +307,10 @@
               id="ims-dis-env"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- XCF and Support of IMS Facilities for Shared Queues -->
-            <video-card 
+            <card-tile 
               name="XCF and Support of IMS Facilities for Shared Queues" 
               desc="Learn about the z/OS cross-system coupling facility (XCF) that offers a set of communication 
                 services that you use for IMS shared queues."
@@ -313,10 +320,10 @@
               id="xcf-shared-queues"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- Tuning IMS Scheduling by Using PWFI -->
-            <video-card 
+            <card-tile 
               name="Review of IMS Scheduling" 
               desc="Learn about IMS scheduling parameters such as PARLIM, PROCLIM, and regions WFI and PWFI to help 
                 you run transactions more efficiently."
@@ -326,14 +333,14 @@
               id="ims-scheduling-pwfi"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
           </section>
 
           <!-- =========================== Videos - system programming =========================== -->
           <section id="application-development" class="white-bg pure-g card-section">
             <div class="pure-u-1 card-section-header"><h3>Application development</h3></div>
             <!-- IMS Java Demos -->
-            <video-card 
+            <card-tile 
               name="Java in IMS demos" 
               desc="Watch these short demos showing how to build Java™ applications for IMS."
               level="Intermediate"
@@ -342,10 +349,10 @@
               id="ims-java"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Explorer -->
-            <video-card 
+            <card-tile 
               name="IMS Explorer" 
               desc="Learn about the Eclipse-based graphical tool that simplifies common IMS tasks that are related
                to IMS application development."
@@ -355,10 +362,10 @@
               id="ims-exp"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Java Applications -->
-            <video-card 
+            <card-tile 
               name="Java and IMS" 
               desc="This introductory video series helps you learn how to create Java applications for IMS."
               level="Intermediate"
@@ -367,10 +374,10 @@
               id="ims-javaims"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
 
             <!-- IMS Interoperability -->
-            <video-card 
+            <card-tile 
               name="Modernize Legacy Applications with 31-bit COBOL and 64-bit Java interoperability" 
               desc="This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications."
               level="Intermediate"
@@ -379,7 +386,7 @@
               id="ims-interop"
               class="pure-u-1 pure-u-lg-1-2 pure-u-xl-1-3"
             >
-            </video-card>
+            </card-tile>
           </section>
         </main>
       </div>
