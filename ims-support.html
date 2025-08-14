@@ -1,209 +1,174 @@
 <!DOCTYPE html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<html lang="en-US">
+  <head>
+    <!-- Basic meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="geo.country" content="ZZ" />
+    <meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
+    <meta name="dcterms.date" content="2020-07-18" />
+    <meta name="keywords" content="IMS Central, IMS Developer, IMS" />
+    <meta name="robots" content="index, follow" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- v18 basic meta -->
-	<meta name="geo.country" content="ZZ" />
-	<meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
-	<meta name="dcterms.date" content="2020-07-18" />
-	<meta name="keywords" content="IMS Central, IMS Developer, IMS" />
-	<meta name="robots" content="index, follow" />
-<!-- Favicon -->
-	<link id="favicon"
-	rel="shortcut icon"
-	type="image/x-icon"
-	href="wp-content/IMS_logo_small.png">
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="wp-content/IMS_logo_small.png" />
 
-<!-- Pageittle -->
-<title>IMS Support</title>
+    <!-- Page title -->
+    <title>IMS Support</title>
 
-<!-- Meta -->
-<link rel="canonical" href="ims-docs.html" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content="IMS Support" />
-<meta property="og:description" content="IMS Support" />
-<meta property="og:url" content="http://www/imsdev.github.io/ims-support.html" />
-<meta property="og:site_name" content="IMS Central" />
-<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:description" content="IMS Support" />
-<meta name="twitter:title" content="IMS Support" />
-<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+    <!-- Meta for social media -->
+    <link rel="canonical" href="ims-docs.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="IMS Support" />
+    <meta property="og:description" content="IMS Support" />
+    <meta
+      property="og:url"
+      content="http://www/imsdev.github.io/ims-support.html" />
+    <meta property="og:site_name" content="IMS Central" />
+    <meta
+      property="og:image"
+      content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="IMS Support" />
+    <meta name="twitter:title" content="IMS Support" />
+    <meta
+      property="og:image"
+      content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
 
-<!-- Sheets -->
-<link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='wp-includes/css/dashicons.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='pagepost_css-css'  href='wp-content/themes/boomer-v18/css/pagepost.css' type='text/css' media='all' />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="wp-includes/css/nav.css">
-<link rel="stylesheet" href="wp-includes/css/dropnav.css">
-<link href="wp-includes/css/www.css" rel="stylesheet" />
-<link href="wp-includes/css/grid-fluid.css" rel="stylesheet">
-<link href="wp-includes/css/tables.css" rel="stylesheet">
-<link href="wp-includes/css/pages/support.css" rel="stylesheet">
+    <!-- Sheets -->
+    <!-- Imported styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Migrated styling -->
+    <link
+      rel="stylesheet"
+      id="dwboomer-style-css"
+      href="wp-content/themes/boomer-v18/style.css"
+      type="text/css"
+      media="all" />
+    <link href="wp-includes/css/www.css" rel="stylesheet" />
+    <!-- Pure CSS -->
+    <link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css" />
+    <link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css" />
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="wp-includes/css/homepage.css" />
+    <link rel="stylesheet" href="wp-includes/css/nav.css" />
+    <link rel="stylesheet" href="wp-includes/css/dropnav.css" />
+    <link href="wp-includes/css/pages/support.css" rel="stylesheet" />
+    <link rel="stylesheet" href="wp-includes/css/page.css" />
 
-<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
-<script>
-	(function(h,o,t,j,a,r){
-		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-		h._hjSettings={hjid:132193,hjsv:6};
-		a=o.getElementsByTagName('head')[0];
-		r=o.createElement('script');r.async=1;
-		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-		a.appendChild(r);
-	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-  
-<!-- Additional styling for content after navigation -->
+    <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 132193, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
 
-<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-<script src="wp-includes/js/jquery.min.js"></script>
+    <!-- TipueSearch -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
 
-<!-- TipueSearch -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
+    <!-- delayed search -->
+    <script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
 
-<!-- delayed search -->
-<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
+    <!-- Web components -->
+    <script
+      src="web-components/nav-header/nav-header.js"
+      type="module"></script>
+    <script
+      src="web-components/hero-section/hero-section.js"
+      type="module"></script>
+    <script src="web-components/footer/footer.js" type="module"></script>
+    <script src="web-components/card-tile/card-tile.js" type="module"></script>
+  </head>
 
-<!-- Web components -->
-<script src="web-components/nav-header/nav-header.js" type="module"></script>
-<script src="web-components/hero-section/hero-section.js" type="module"></script>
-<script src="web-components/footer/footer.js" type="module"></script>
-</head>
+  <!-- MASTHEAD_SITENAV_BEGIN -->
+  <body id="ibm-com" class="ibm-com">
+    <nav-header></nav-header>
 
-<!-- MASTHEAD_SITENAV_BEGIN -->
-<body id="ibm-com" class="ibm-com ibm-type group-blog">
-	<div class="ibm-landing-page">
-		<nav-header></nav-header>
+    <main id="content" class="main-content">
+      <!-- =========================== IMS Support banner =========================== -->
+      <hero-section
+        name="Get help"
+        image="wp-content/icons/icon_support.svg"
+        section="Support"
+        desc="Find answers or get support for IMS™ or other IBM® products."></hero-section>
 
-		<div id="content" class="site-content">
-			<div class="content-area" id="content-area">
-				<div class="entry-content">
-					<main class="zs-main" >
+      <!-- =========================== Cards =========================== -->
+      <section class="white-bg pure-g card-section">
+        <!-- IMS software support -->
+        <card-tile
+          cardtype="support"
+          name="IMS Software Support"
+          desc="View, open cases, or find other valuable support resources."
+          link="https://www.ibm.com/mysupport/"
+          class="pure-u-1 pure-u-lg-1-2">
+        </card-tile>
+        <!-- IBM Fix Central -->
+        <card-tile
+          cardtype="support"
+          name="IBM Fix Central"
+          desc="Get fixes and updates for your system's software, hardware, and operating system."
+          link="https://www.ibm.com/support/fixcentral"
+          class="pure-u-1 pure-u-lg-1-2">
+        </card-tile>
+        <!-- IBM support forums -->
+        <card-tile
+          cardtype="support"
+          name="IBM support forums"
+          desc="Search forums, ask questions, or contribute."
+          link="https://www.ibm.com/mysupport/s/forumshome?language=en_US"
+          class="pure-u-1 pure-u-lg-1-2">
+        </card-tile>
+        <!-- Open an RFE -->
+        <card-tile
+          cardtype="support"
+          name="Open an RFE"
+          desc="Open a request for enhancement or see what others have suggested."
+          link="https://www.ibm.com/developerworks/rfe/"
+          class="pure-u-1 pure-u-lg-1-2">
+        </card-tile>
+        <!-- IMS listserv -->
+        <card-tile
+          cardtype="support"
+          name="IMS listserv"
+          desc="Subscribe to the IMS listserv and chat with the IMS team or other IMS customers."
+          link="http://imslistserv.bmc.com/scripts/wa-BMC.exe?SUBED1=IMS-L&A=1"
+          class="pure-u-1 pure-u-lg-1-2">
+        </card-tile>
+        <!-- Stack Overflow -->
+        <card-tile
+          cardtype="support"
+          name="Stack Overflow"
+          desc="Search for answers or ask questions about IMS or other product issues."
+          link="https://stackoverflow.com/search?q=IBM+IMS&s=1067115a-462b-496f-8d3d-ef4ac0f9b980"
+          class="pure-u-1 pure-u-lg-1-2">
+        </card-tile>
+      </section>
+    </main>
 
-						<!-- =========================== IMS Support banner =========================== -->
-						<hero-section
-							name="Get help"
-							image="wp-content/icons/icon_support.svg" 
-							section="Support"
-							desc="Find answers or get support for IMS™ or other IBM® products."
-						></hero-section>
-
-						<!-- =========================== Cards =========================== -->
-						<div class="zs-gray-section zs-white-section supp-sec">
-							<section id="support-section" class="zs-section pure-g">
-								<div class="pure-u-22-24 supp-sec-g">
-
-									<!-- card 1 -->
-									<div class="ims-m-card supp-sec-c">
-										<div class="pure-u-1 supp-c">
-											<div class="pure-u-1">
-												<h3>
-													IBM Software Support
-												</h3>
-												<p>View, open cases, or find other valuable support resources.</p>		
-												<a  aria-label="Explore IBM software support"
-													title="IBM software support" target="_blank" rel="noopener noreferrer" 
-													href="https://www.ibm.com/mysupport/">Explore →
-												</a>
-											</div>
-										</div>
-									</div>
-
-									<!-- card 2 -->
-									<div class="ims-m-card supp-sec-c">
-										<div class="pure-u-1 supp-c">
-											<div class="pure-u-1">
-												<h3>
-													IBM Fix Central
-												</h3>
-												<p>Get fixes and updates for your system's software, hardware, and operating system.</p>		
-												<a aria-label="Explore IBM Fix Central"
-												title="IBM Fix Central" target="_blank" rel="noopener noreferrer" 
-												href="https://www.ibm.com/support/fixcentral">Explore →</a>
-											</div>
-										</div>
-									</div>
-
-									<!-- card 3 -->
-									<div class="ims-m-card supp-sec-c">
-										<div class="pure-u-1 supp-c">
-											<div class="pure-u-1">
-												<h3>
-													IBM support forums
-												</h3>
-												<p>Search forums, ask questions, or contribute.</p>		
-											<a aria-label="Explore IBM support forums"
-											title="IBM support forums" target="_blank" rel="noopener noreferrer" 
-											href="https://www.ibm.com/mysupport/s/forumshome?language=en_US">Explore →</a>
-											</div>
-										</div>
-									</div>
-
-									<!-- card 4 -->
-									<div class="ims-m-card supp-sec-c">
-										<div class="pure-u-1 supp-c">
-											<div class="pure-u-1">
-												<h3>
-													Open an RFE
-												</h3>
-												<p>Open a request for enhancement or see what others have suggested.</p>		
-											<a aria-label="Explore RFEs"
-											title="RFE" target="_blank" rel="noopener noreferrer" 
-											href="https://www.ibm.com/developerworks/rfe/">Explore →</a>
-											</div>
-										</div>
-									</div>
-
-									<!-- card 5 -->
-									<div class="ims-m-card supp-sec-c">
-										<div class="pure-u-1 supp-c">
-											<div class="pure-u-1">
-												<h3>
-													IMS listserv
-												</h3>
-												<p>Subscribe to the IMS listserv and chat with the IMS team or other IMS customers.</p>		
-												<a  alt="Explore the IMS listserv" 
-												title="IMS listserv" target="_blank" rel="noopener noreferrer" 
-												href="http://imslistserv.bmc.com/scripts/wa-BMC.exe?SUBED1=IMS-L&A=1">Explore →</a>
-											</div>
-										</div>
-									</div>
-
-									<!-- card 6 -->
-									<div class="ims-m-card supp-sec-c">
-										<div class="pure-u-1 supp-c">
-											<div class="pure-u-1">
-												<h3>
-													Stack Overflow
-												</h3>
-												<p>Search for answers or ask questions about IMS or other product issues.</p>		
-												<a aria-label="Explore Stack Overflow"
-												title="Stack Overflow" target="_blank" rel="noopener noreferrer" 
-												href="https://stackoverflow.com/search?q=IBM+IMS&s=1067115a-462b-496f-8d3d-ef4ac0f9b980">Explore →</a>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</section>
-						</div>	
-					</main>
-				</div><!-- .entry-content -->
-			</div><!-- #content -->
-		</div><!-- end of ibm-content-wrapper -->
-
-		<!-- Footer -->
-		<imscentral-footer></imscentral-footer>
-	</div><!-- #page -->
-</body>
+    <imscentral-footer></imscentral-footer>
+  </body>
 </html>
