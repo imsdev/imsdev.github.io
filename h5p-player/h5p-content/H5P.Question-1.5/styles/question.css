@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('../../../fonts/static/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .h5p-question {
   background: rgba(255, 255, 255, 0.9);
   position: relative;
+  font-family: 'ibm-plex-sans';
+  padding: 0.5em;
 }
 .h5p-question-audio {
   margin: 1em 1em 0 1em;
@@ -194,6 +203,7 @@
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {
   margin: 0 0.5em 0 0;
   white-space: nowrap;
+  font-family: 'ibm-plex-sans';
 }
 .h5p-question-buttons.has-scorebar {
   width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */

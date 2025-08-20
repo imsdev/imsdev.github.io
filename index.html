@@ -110,25 +110,10 @@
               <p>Welcome! IMS™ Central is your hub for all things IMS.</p>
               <p>Build your skills, find documentation, get help, and engage with the team.</p>
           </div>
-					<div id="h5p-container" style="width: 80%"></div>
-          <script src="https://cdn.jsdelivr.net/npm/h5p-standalone@latest/dist/main.bundle.js"></script>
+
+          <!-- =========================== HP5 =========================== -->
+					<div id="h5p-container" style="width: 90%"></div>
           <script>
-            document.addEventListener('DOMContentLoaded', function () {
-          
-              const options = {
-                h5pJsonPath: 'h5p-player/h5p-content', // Path to your self-hosted H5P content directory
-                frameJs: 'https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/frame.bundle.js',
-                frameCss: 'https://cdn.jsdelivr.net/npm/h5p-standalone@3.8.0/dist/styles/h5p.css',
-              };
-          
-              const el = document.getElementById('h5p-container');
-          
-              // H5PStandalone is globally available when main.bundle.js is included via a script tag
-              new H5PStandalone.H5P(el, options);
-          
-            });
-          </script>
-          <!-- <script>
             document.addEventListener('DOMContentLoaded', function () {
               const el = document.getElementById('h5p-container');
               const options = {
@@ -138,12 +123,9 @@
               };
               new H5PStandalone.H5P(el, options);
             });
-          </script> -->
+          </script>
         </div>
       </section>
-
-      <!-- =========================== HP5 =========================== -->
-
 
       <!-- =========================== Learn =========================== -->
        <section class="learn-home-bg white-bg pure-g">

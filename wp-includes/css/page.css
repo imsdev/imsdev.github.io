@@ -45,7 +45,7 @@
 /* p - 18px */
 
 body, body .pure-g, body .pure-g [class*="pure-u"] {
-    font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif !important;
 }
 
 li {
@@ -53,7 +53,7 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6, p {
- font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+ font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif !important; 
 }
 
 h2 {

@@ -45,9 +45,9 @@
   border: 0.1em solid transparent;
   font-weight: normal;
   background: #ddd;
-  -webkit-box-shadow: 0 0.1em 0 rgba(0, 0, 0, 0.3);
+  /* -webkit-box-shadow: 0 0.1em 0 rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0.1em 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0.1em 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.1em 0 rgba(0, 0, 0, 0.3); */
   line-height: 1.5em;
   text-indent: -2em;
 }

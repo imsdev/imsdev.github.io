@@ -1,16 +1,25 @@
+@font-face {
+  font-family: 'ibm-plex-sans';
+  src: url('../fonts/static/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html.h5p-iframe, html.h5p-iframe > body {
-  font-family: Sans-Serif; /* Use the browser's default sans-serif font. (Since Heletica doesn't look nice on Windows, and Arial on OS X.) */
+  font-family: 'ibm-plex-sans'; /* Use the browser's default sans-serif font. (Since Heletica doesn't look nice on Windows, and Arial on OS X.) */
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 .h5p-semi-fullscreen, .h5p-fullscreen, html.h5p-iframe .h5p-container {
   overflow: hidden;
 }
 .h5p-content {
   position: relative;
-  background: #fefefe;
+  background-color: white;
   border: 1px solid #EEE;
+  border-radius: 0.2em;
   border-bottom: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -30,7 +39,7 @@ html.h5p-iframe .h5p-content {
   height: auto;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-  padding: 2em
+  padding: 2em;
 }
 html.h5p-iframe .h5p-fullscreen .h5p-content,
 html.h5p-iframe .h5p-semi-fullscreen .h5p-content {
@@ -153,7 +162,7 @@ div.h5p-fullscreen {
   /* Hack for IOS landscape / portrait */
   width: 10px;
   min-width: 100%;
-  width: 100%;
+  *width: 100%;
   /* End of hack */
   height: 100%;
   z-index: 10;
