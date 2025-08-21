@@ -544,6 +544,11 @@ a {
   padding: 1em;
 }
 
+.img-md {
+  width: 100%;
+  max-width: 20em;
+}
+
 /* Index hero */
 .homepage-hero {
   display: flex;
