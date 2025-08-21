@@ -1,0 +1,22 @@
+{
+  "name": "h5p-editor-vertical-tabs",
+  "version": "1.0.0",
+  "description": "H5P Editor Vertical Tabs",
+  "main": "vertical-tabs.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack && rm styles/css/index.js",
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "H5P",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.1",
+    "sass": "^1.78.0",
+    "sass-loader": "^16.0.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

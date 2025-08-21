@@ -166,11 +166,16 @@
 
 .h5p-question-feedback {
   font-weight: bold;
-  color: #1a73d9;
+  color: black;
   margin: 0 1em;
   max-height: 0;
   opacity: 0;
   transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);
+}
+
+.h5p-question-feedback a {
+  color: #1a73d9;
+  text-decoration: none;
 }
 
 .h5p-question-feedback.h5p-question-visible {

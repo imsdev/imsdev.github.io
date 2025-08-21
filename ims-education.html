@@ -80,6 +80,9 @@
 	<script src="web-components/hero-section/hero-section.js" type="module"></script>
 	<script src="web-components/course-card/course-card.js" type="module"></script>
     <script src="web-components/footer/footer.js" type="module"></script>
+
+	<!-- H5P -->
+    <script type="text/javascript" src="h5p-player/main.bundle.js" charset="UTF-8"></script>
 </head>
 
 <!-- MASTHEAD_SITENAV_BEGIN -->
@@ -98,6 +101,20 @@
 				linktext="Sign up for an IBM ID →"
 				link="https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D9fe3fe66-c22f-4c7b-8e5d-01dfc0e8defa%26client_id%3DMyIBMDallasProdCI"
 			></hero-section>
+
+			<!-- =========================== HP5 =========================== -->
+			<div id="h5p-container" style="width: 100%"></div>
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+				const el = document.getElementById('h5p-container');
+				const options = {
+					h5pJsonPath: 'h5p-player/h5p-content', // Path to the extracted H5P content
+					frameJs: 'h5p-player/frame.bundle.js', // Path to player's frame.bundle.js
+					frameCss: 'h5p-player/styles/h5p.css', // Path to player's h5p.css
+				};
+				new H5PStandalone.H5P(el, options);
+				});
+			</script>
 
 			<!-- =========================== Row for filtering =========================== -->
 			<div class="zs-section ed-filter">

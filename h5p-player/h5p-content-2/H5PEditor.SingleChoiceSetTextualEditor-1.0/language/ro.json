@@ -1,0 +1,6 @@
+{
+  "libraryStrings": {
+    "helpText": "Creați blocuri de întrebări și răspunsuri, unde fiecare bloc este separat printr-o linie goală. În fiecare bloc, prima linie este întrebarea, celelalte linii conțin răspunsurile. Primul răspuns este cel corect.",
+    "warning": "Atenție! Dacă modificați sarcinile în editorul de text, toată formatarea rich text (inclusiv sfârșiturile de rând) va fi eliminată."
+  }
+}
