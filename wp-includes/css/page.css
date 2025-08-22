@@ -321,10 +321,21 @@ a {
 .pure-g-pad-v > div {
   padding: 2em 4em 2em 0em;
 }
+/* For pure grid units requiring wider padding */
+.pure-g-pad-wd > div {
+  padding: 3em 3em 0em 0em;
+}
+.pure-g-pad-btm > div {
+  padding: 1.2em 1.2em 2em 1.2em;
+}
 
 /* For individual pure grid units requiring paddings */
 .pure-pad {
   padding: 1.2em;
+}
+
+.pure-pad-v {
+  padding: 1.2em 0;
 }
 
 .pure-pad-r {
@@ -546,7 +557,7 @@ a {
 
 .img-md {
   width: 100%;
-  max-width: 20em;
+  padding: 1em 0;
 }
 
 /* Index hero */
@@ -599,8 +610,13 @@ a {
   .pure-g-pad > div {
     padding: 0.4em;
   }
-
   .pure-g-pad-v > div {
+    padding: 0.4em;
+  }
+  .pure-g-pad-wd > div {
+    padding: 2em 0.4em 0em 0em;
+  }
+  .pure-g-pad-btm > div {
     padding: 0.4em;
   }
 
@@ -647,7 +663,7 @@ a {
   }
 }
 
-/* 1024px and 768px screen sizes */
+/* 768px to 1024px screen sizes */
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .pure-u-xl-11-24 > .gif {
     display: block;
@@ -668,6 +684,14 @@ a {
   .card {
     height: 100%;
     margin: 1em 1em 0em 1em;
+  }
+
+  .img-md {
+    width: 100%;
+    max-height: 17em;
+    padding: 0;
+    object-fit: cover;
+    object-position: bottom;
   }
 }
 /* -------------------------------------------------------- */
