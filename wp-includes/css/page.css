@@ -587,6 +587,10 @@ a {
   .cta {
     flex-flow: row wrap;
   }
+  /* Decrease padding for smaller screens */
+  .pure-g-pad-btm > div {
+    padding: 0.4em;
+  }
 }
 
 /* 768px and below screen sizes */
@@ -615,9 +619,6 @@ a {
   }
   .pure-g-pad-wd > div {
     padding: 2em 0.4em 0em 0em;
-  }
-  .pure-g-pad-btm > div {
-    padding: 0.4em;
   }
 
   /* Decrease highlight link padding for smaller screens */
