@@ -681,7 +681,11 @@ a {
     padding: 1.2em;
   }
 
-  .cta-banner div {
+.cta-banner {
+  gap: 1.5em;
+}
+
+  .cta-gold-banner div {
     flex-flow: column nowrap;
     align-items: flex-start;
   }
