@@ -300,7 +300,7 @@ a {
 /* Content containers */
 /* -------------------------------------------------------- */
 /* Targets all sections after hero */
-.main-content section:not(:first-child) {
+.main-content section:not(:first-child):not(.cta-banner) {
   padding: 4em;
 } 
 
@@ -512,7 +512,7 @@ a {
 
 /* Banner */
 /* -------------------------------------------------------- */
-.home-banner {
+.cta-banner {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -520,24 +520,33 @@ a {
   background-color: #0072c3;
 }
 
-.home-banner div {
+.cta-banner div {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
-.home-banner > div:first-of-type {
+.cta-banner > div:first-of-type {
   margin-right: auto;
 }
 
-.home-banner a {
+.cta-banner h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.cta-banner a {
   color: var(--white);
   font-weight: bold;
   font-size: var(--plex-20);
 }
 
-.home-banner .icon-sm {
+.cta-banner .icon-sm {
   margin-bottom: 0;
+}
+
+.cta-gold-banner {
+  padding: 1em 4em;
 }
 
 /* Custom styling */
@@ -610,7 +619,7 @@ a {
   }
 
   /* Decrease section padding for smaller screens */
-  .main-content section:not(:first-child) {
+  .main-content section:not(:first-child):not(.cta-banner) {
     padding: 2em;
   } 
 
