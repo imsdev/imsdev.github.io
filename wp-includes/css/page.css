@@ -54,6 +54,15 @@ body, body .pure-g, body .pure-g [class*="pure-u"] {
 
 li {
   font-size: var(--plex-18);
+  font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+li span, li a {
+  font-size: var(--plex-16);
+}
+
+ol>li::before {
+  font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
