@@ -329,6 +329,13 @@ h6 {
   align-items: center;
 }
 
+.vertical-g {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5em;
+  align-items: flex-start;
+}
+
 /* Format horizontal divider */
 .hr-container {
   padding: 2em 0em 3em 0em;
@@ -442,6 +449,10 @@ h6 {
 .gif-video:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+
+.gif-pad {
+  padding: 1em 0;
 }
 /* -------------------------------------------------------- */
 
