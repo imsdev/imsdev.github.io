@@ -720,8 +720,7 @@ a {
 	display: inline-block;
 	color: #0F62FE;
 	text-decoration: none;
-	line-height: 2em;
-/*border-bottom: 2px solid transparent;*/
+	/* line-height: 2em; */
 	transition: .3s ease all;
 }
 

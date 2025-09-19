@@ -44,12 +44,25 @@
 /* H4 - 22px */
 /* p - 18px */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body, body .pure-g, body .pure-g [class*="pure-u"] {
     font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 li {
   font-size: var(--plex-18);
+  font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+li span, li a {
+  font-size: var(--plex-16);
+}
+
+ol>li::before {
+  font-family: "ibm-plex-sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -66,8 +79,22 @@ h3 {
   font-weight: 500;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: var(--plex-20);
+}
+
 h6 {
   font-weight: 500;
+}
+
+p > a {
+  line-height: 0;
+  font-size: var(--plex-16);
+}
+
+a {
+  font-size: var(--plex-18);
 }
 /* -------------------------------------------------------- */
 
@@ -75,7 +102,7 @@ h6 {
 /* -------------------------------------------------------- */
 .white-bg {
   background-color: var(--white);
-  color: var(black);
+  color: black;
 }
 
 .white-bg a {
@@ -83,9 +110,13 @@ h6 {
   font-size: var(--plex-18);
 }
 
-  .white-bg h3, .white-bg h4 {
-    color: var(--black);
-  }
+.white-bg li a {
+  color: black;
+}
+
+.white-bg h3, .white-bg h4 {
+  color: var(--black);
+}
 
 .gray-bg {
   background-color: var(--bg-gray);
@@ -117,7 +148,6 @@ h6 {
 
   .dark-gray-bg a {
     color: var(--font-light-blue);
-    font-size: var(--plex-18);
   }
 
   .dark-gray-bg h4 {
@@ -161,6 +191,12 @@ h6 {
   .learn-home-bg a, .engage-home-bg a {
     color: var(--font-dark-blue);
   }
+
+/* Blur background */
+.blur-bg {
+  backdrop-filter: blur(6px);
+  padding: 4em;
+}
 /* -------------------------------------------------------- */
 
 /* Icons */
@@ -266,7 +302,7 @@ h6 {
 /* Content containers */
 /* -------------------------------------------------------- */
 /* Targets all sections after hero */
-.main-content section:not(:first-child) {
+.main-content section:not(:first-child):not(.cta-banner) {
   padding: 4em;
 } 
 
@@ -296,10 +332,25 @@ h6 {
 .pure-g-pad-v > div {
   padding: 2em 4em 2em 0em;
 }
+/* For pure grid units requiring wider padding */
+.pure-g-pad-wd > div {
+  padding: 3em 3em 0em 0em;
+}
+.pure-g-pad-btm > div {
+  padding: 1.2em 1.2em 2em 1.2em;
+}
 
 /* For individual pure grid units requiring paddings */
 .pure-pad {
   padding: 1.2em;
+}
+
+.pure-pad-v {
+  padding: 1.2em 0;
+}
+
+.pure-pad-r {
+  padding: 1.2em 1.2em 1.2em 0em;
 }
 
 /* Format column group */
@@ -341,6 +392,20 @@ h6 {
 /* Format horizontal divider */
 .hr-container {
   padding: 2em 0em 3em 0em;
+}
+
+/* Call to action for new courses */
+.cta {
+  display: flex; 
+  flex-flow: row nowrap; 
+  gap: 2em;
+}
+
+/* For icon in cta */
+.cta img {
+  max-width: 5em;
+  height: 100%;
+  max-height: 10em;
 }
 /* -------------------------------------------------------- */
 
@@ -450,7 +515,7 @@ h6 {
 
 .gif-video:hover {
   opacity: 1;
-  transform: scale(1.03);
+  /* transform: scale(1.03); */
 }
 
 .gif-pad {
@@ -460,7 +525,7 @@ h6 {
 
 /* Banner */
 /* -------------------------------------------------------- */
-.home-banner {
+.cta-banner {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -468,20 +533,33 @@ h6 {
   background-color: #0072c3;
 }
 
-.home-banner div {
+.cta-banner div {
   display: flex;
   align-items: center;
   gap: 1em;
 }
 
-.home-banner > div:first-of-type {
+.cta-banner > div:first-of-type {
   margin-right: auto;
 }
 
-.home-banner a {
+.cta-banner h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.cta-banner a {
   color: var(--white);
   font-weight: bold;
   font-size: var(--plex-20);
+}
+
+.cta-banner .icon-sm {
+  margin-bottom: 0;
+}
+
+.cta-gold-banner {
+  padding: 1em 4em;
 }
 
 /* Custom styling */
@@ -508,6 +586,11 @@ h6 {
   padding: 1em;
 }
 
+.img-md {
+  width: 100%;
+  padding: 1em 0;
+}
+
 /* Index hero */
 .homepage-hero {
   display: flex;
@@ -529,6 +612,18 @@ h6 {
 
 /* Media queries */
 /* -------------------------------------------------------- */
+/* 425px and below screen sizes */
+@media  screen and (max-width: 27em) {
+  /* Call to action for new courses */
+  .cta {
+    flex-flow: row wrap;
+  }
+  /* Decrease padding for smaller screens */
+  .pure-g-pad-btm > div {
+    padding: 0.4em;
+  }
+}
+
 /* 768px and below screen sizes */
 @media  screen and (max-width: 48em) {
   /* Decrease header size for smaller screens */
@@ -537,7 +632,7 @@ h6 {
   }
 
   /* Decrease section padding for smaller screens */
-  .main-content section:not(:first-child) {
+  .main-content section:not(:first-child):not(.cta-banner) {
     padding: 2em;
   } 
 
@@ -550,9 +645,11 @@ h6 {
   .pure-g-pad > div {
     padding: 0.4em;
   }
-
   .pure-g-pad-v > div {
     padding: 0.4em;
+  }
+  .pure-g-pad-wd > div {
+    padding: 2em 0.4em 0em 0em;
   }
 
   /* Decrease highlight link padding for smaller screens */
@@ -586,9 +683,32 @@ h6 {
   .engage-home-bg {
     background-size: cover;
   }
+
+  /* Blur background */
+  .blur-bg {
+    padding: 2em;
+  }
+
+  /* For individual pure grid units requiring paddings */
+  .pure-pad-r {
+    padding: 1.2em;
+  }
+
+.cta-banner {
+  gap: 1.5em;
 }
 
-/* 1024px and below screen sizes */
+  .cta-gold-banner div {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  .cta-gold-banner {
+    padding: 2em;
+  }
+}
+
+/* 768px to 1024px screen sizes */
 @media screen and (min-width: 48em) and (max-width: 64em) {
   .pure-u-xl-11-24 > .gif {
     display: block;
@@ -609,6 +729,14 @@ h6 {
   .card {
     height: 100%;
     margin: 1em 1em 0em 1em;
+  }
+
+  .img-md {
+    width: 100%;
+    max-height: 17em;
+    padding: 0;
+    object-fit: cover;
+    object-position: bottom;
   }
 }
 /* -------------------------------------------------------- */

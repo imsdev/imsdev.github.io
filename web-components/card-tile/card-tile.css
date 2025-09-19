@@ -5,6 +5,10 @@ h2 {
     margin: 0em;
 }
 
+.support-card h2 {
+    font-weight: 500;
+}
+
 p {
     font-size: var(--plex-18);
 }
@@ -23,10 +27,11 @@ a {
 
 .link-g a {
     margin: 0.2em 0em;
+    width: fit-content;
 }
 
 /* Styling for video card */
-.video-card {
+.card {
     background-color: var(--bg-light-gray);
     margin: 1em;
     padding: 2em;
@@ -34,12 +39,26 @@ a {
     flex-flow: column nowrap;
 }
 
-.video-card div:nth-child(0) {
+/* Styling for support card */
+.support-card {
+    margin: 0.2em;
+}
+
+.support-card .inline-g {
+    display: none;
+}
+
+.support-card:hover {
+    background-color: #e3e3e3;
+    transition: 0.2s ease-in-out;
+}
+
+.card div:nth-child(0) {
     flex-grow: 1;
 }
   
 /* Places 'watch now' at the bottom of the video card */
-.video-card div:nth-child(1) {
+.card div:nth-child(1) {
     flex-grow: 4;
 }
 
@@ -58,7 +77,12 @@ a {
 /* 1024px and above screen sizes */
 @media screen and (min-width: 64em) {
     /* Set consistent height for video card */
-    .video-card {
+    .card {
         height: 18.75em;
+    }
+
+    /* Set consistent height for support card */
+    .support-card {
+        height: 12em;
     }
 }
