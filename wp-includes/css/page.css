@@ -80,6 +80,7 @@ h6 {
 
 .white-bg a {
   color: var(--blue);
+  font-size: var(--plex-18);
 }
 
   .white-bg h3, .white-bg h4 {
@@ -98,6 +99,7 @@ h6 {
 
   .gray-bg a, .light-gray-bg a {
     color: var(--blue);
+    font-size: var(--plex-18);
   }
 
   .gray-bg h3, .gray-bg h4, .light-gray-bg h3, .light-gray-bg h4 {
