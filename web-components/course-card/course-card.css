@@ -61,7 +61,7 @@ img {
 /* Styling for course card */
 .course-card {
     margin: 1em 0em;
-    padding: 2em;
+    padding: 2em 0;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;

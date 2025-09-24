@@ -116,7 +116,6 @@ a {
 
 .white-bg a {
   color: var(--blue);
-  font-size: var(--plex-18);
 }
 
 .white-bg li a {
@@ -141,7 +140,6 @@ a {
 .gray-bg a,
 .light-gray-bg a {
   color: var(--blue);
-  font-size: var(--plex-18);
 }
 
 .gray-bg h3,
@@ -160,9 +158,6 @@ a {
   color: var(--white);
 }
 
-.dark-gray-bg a {
-  color: var(--font-light-blue);
-}
 
 .dark-gray-bg h4 {
   font-size: var(--plex-24) !important;
