@@ -107,6 +107,7 @@ a {
 
 .white-bg a {
   color: var(--blue);
+  font-size: var(--plex-18);
 }
 
 .white-bg li a {
@@ -129,6 +130,7 @@ a {
 
   .gray-bg a, .light-gray-bg a {
     color: var(--blue);
+    font-size: var(--plex-18);
   }
 
   .gray-bg h3, .gray-bg h4, .light-gray-bg h3, .light-gray-bg h4 {
@@ -380,6 +382,13 @@ a {
   align-items: center;
 }
 
+.vertical-g {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5em;
+  align-items: flex-start;
+}
+
 /* Format horizontal divider */
 .hr-container {
   padding: 2em 0em 3em 0em;
@@ -507,6 +516,10 @@ a {
 .gif-video:hover {
   opacity: 1;
   /* transform: scale(1.03); */
+}
+
+.gif-pad {
+  padding: 1em 0;
 }
 /* -------------------------------------------------------- */
 
