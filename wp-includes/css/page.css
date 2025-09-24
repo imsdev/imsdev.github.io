@@ -643,10 +643,10 @@ a {
 
   /* Decrease padding for smaller screens */
   .pure-g-pad > div {
-    padding: 0.4em;
+    padding: 1em 0;
   }
   .pure-g-pad-v > div {
-    padding: 0.4em;
+    padding: 1em 0;
   }
   .pure-g-pad-wd > div {
     padding: 2em 0.4em 0em 0em;
