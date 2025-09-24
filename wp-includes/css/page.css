@@ -347,9 +347,6 @@ a {
 .pure-g-pad-wd > div {
   padding: 3em 3em 0em 0em;
 }
-.pure-g-pad-btm > div {
-  padding: 1.2em 1.2em 2em 1.2em;
-}
 
 /* For individual pure grid units requiring paddings */
 .pure-pad {
@@ -628,10 +625,6 @@ a {
   /* Call to action for new courses */
   .cta {
     flex-flow: row wrap;
-  }
-  /* Decrease padding for smaller screens */
-  .pure-g-pad-btm > div {
-    padding: 0.4em;
   }
 
   /* For individual pure grid units requiring paddings */
