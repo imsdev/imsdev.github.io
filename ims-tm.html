@@ -1,344 +1,564 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://ogp.me/ns#">
+  <head>
+    <!-- Basic meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="geo.country" content="ZZ" />
+    <meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
+    <meta name="dcterms.date" content="2020-07-18" />
+    <meta name="keywords" content="IMS Central, IMS Developer, IMS" />
+    <meta name="robots" content="index, follow" />
 
-<head>
-	<!-- Basic meta -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="geo.country" content="ZZ" />
-	<meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
-	<meta name="dcterms.date" content="2020-07-18" />
-	<meta name="keywords" content="IMS Central, IMS Developer, IMS" />
-	<meta name="robots" content="index, follow" />
-	
-	<!-- Favicon -->
-	<link id="favicon"
-		rel="shortcut icon"
-		type="image/x-icon"
-		href="wp-content/IMS_logo_small.png"
-	>
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="wp-content/IMS_logo_small.png" />
 
-	<!-- Page title -->
-	<title>IMS Transaction Manager</title>
+    <!-- Page title -->
+    <title>IMS Transaction Manager</title>
 
-	<!-- Meta for social media -->
-	<link rel="canonical" href="ims-db.html" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="IMS Transaction Manager" />
-	<meta property="og:description" content="IMS Transaction Manager" />
-	<meta property="og:url" content="http://www/imsdev.github.io/ims-tm.html" />
-	<meta property="og:site_name" content="IMS Central" />
-	<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:description" content="IMS Transaction Manager" />
-	<meta name="twitter:title" content="IMS Transaction Manager" />
-	<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+    <!-- Meta for social media -->
+    <link rel="canonical" href="ims-db.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="IMS Transaction Manager" />
+    <meta property="og:description" content="IMS Transaction Manager" />
+    <meta property="og:url" content="http://www/imsdev.github.io/ims-tm.html" />
+    <meta property="og:site_name" content="IMS Central" />
+    <meta
+      property="og:image"
+      content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="IMS Transaction Manager" />
+    <meta name="twitter:title" content="IMS Transaction Manager" />
+    <meta
+      property="og:image"
+      content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
 
-<!-- Sheets -->
-	<!-- Imported styling -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<!-- Migrated stylesheets -->
-	<link rel='stylesheet' id='dwboomer-style-css'  href='wp-content/themes/boomer-v18/style.css' type='text/css' media='all' />
-	<link href="wp-includes/css/www.css" rel="stylesheet" />
-	<!-- Pure CSS -->
-	<link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css">
-	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-	<!-- Custom CSS -->
-		<link rel="stylesheet" type="text/css" href="wp-includes/css/homepage.css">
-	<link rel="stylesheet" href="wp-includes/css/nav.css">
-	<link rel="stylesheet" href="wp-includes/css/dropnav.css">
-	<link rel="stylesheet" href="wp-includes/css/page.css">
+    <!-- Sheets -->
+    <!-- Imported styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Migrated stylesheets -->
+    <link
+      rel="stylesheet"
+      id="dwboomer-style-css"
+      href="wp-content/themes/boomer-v18/style.css"
+      type="text/css"
+      media="all" />
+    <link href="wp-includes/css/www.css" rel="stylesheet" />
+    <!-- Pure CSS -->
+    <link rel="stylesheet" type="text/css" href="wp-includes/css/pure.css" />
+    <link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css" />
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="wp-includes/css/homepage.css" />
+    <link rel="stylesheet" href="wp-includes/css/nav.css" />
+    <link rel="stylesheet" href="wp-includes/css/dropnav.css" />
+    <link rel="stylesheet" href="wp-includes/css/page.css" />
 
-	<link href="wp-includes/css/pages/tm.css" rel="stylesheet">
-	<link href="wp-includes/css/flex.css" rel="stylesheet">
+    <link href="wp-includes/css/pages/tm.css" rel="stylesheet" />
+    <link href="wp-includes/css/flex.css" rel="stylesheet" />
 
-<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
-<script>
-	(function(h,o,t,j,a,r){
-		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-		h._hjSettings={hjid:132193,hjsv:6};
-		a=o.getElementsByTagName('head')[0];
-		r=o.createElement('script');r.async=1;
-		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-		a.appendChild(r);
-	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 132193, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
 
-<!-- TipueSearch -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
-<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
+    <!-- TipueSearch -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
 
-<!-- delayed search -->
-<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
+    <!-- delayed search -->
+    <script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
 
-<!-- Web components -->
-<script src="web-components/nav-header/nav-header.js" type="module"></script>
-<script src="web-components/hero-section/hero-section.js" type="module"></script>
-<script src="web-components/course-card/course-card.js" type="module"></script>
-<script src="web-components/footer/footer.js" type="module"></script>
-</head>
+    <!-- Web components -->
+    <script
+      src="web-components/nav-header/nav-header.js"
+      type="module"></script>
+    <script
+      src="web-components/hero-section/hero-section.js"
+      type="module"></script>
+    <script
+      src="web-components/course-card/course-card.js"
+      type="module"></script>
+    <script src="web-components/footer/footer.js" type="module"></script>
+  </head>
 
-<body id="ibm-com" class="ibm-com ibm-type group-blog">
-	<nav-header></nav-header>
+  <body id="ibm-com" class="ibm-com ibm-type group-blog">
+    <nav-header></nav-header>
 
-	<main id="content" class="main-content">
-		<!-- =========================== Hero =========================== -->
-		<hero-section
-			name="IMS Transaction Manager: Fast, secure, connected"
-			image="wp-content/icons/icon_3d.svg" 
-			section="Innovate"
-			desc='<p>
+    <main id="content" class="main-content">
+      <!-- =========================== Hero =========================== -->
+      <hero-section
+        name="IMS Transaction Manager: Fast, secure, connected"
+        image="wp-content/icons/icon_3d.svg"
+        section="Innovate"
+        desc='<p>
 					By using APIs and distributed connectivity, IMS can integrate with modern tools and emerging 
 					technologies, enabling it to host mission-critical applications to support billions of 
 					transactions per day.<a href="https://www.ibm.com/case-studies/atruvia-ag" target="_blank" rel="noopener noreferrer" 
 					aria-label="Atruvia case study"><sup>1</sup></a>
-				</p>'
-		></hero-section>
+				</p>'></hero-section>
 
-		<!-- =========================== Introducing IMS TM =========================== -->
-		<section class="white-bg pure-g">
-			<div class="pure-u-1 section-header">
-				<h2>Introducing IMS Transaction Manager</h2>
-			</div>
-			<div class="pure-u-1 pure-g pure-g-pad-v">
-				<div class="pure-u-md-11-24">
-					<h4>Fundamentals of IMS TM Part 1</h4>
-					<p>
-						<a	target="_blank" 
-							rel="noopener noreferrer"
-							aria-label="Watch now: Fundamentals of IMS TM Part 1"
-							href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202"
-						>
-							Watch now →
-						</a>
-					</p>
-					<div class="gif">
-						<a href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202"
-							target="_blank" rel="noopener noreferrer" aria-label="Watch Fundamentals of IMS TM Part 1">
-							<img src="wp-content/tm/video-cover-intro-tm-pt1.png" class="gif-cover" alt="Fundamentals of IMS TM Part 1 video preview">
-							<img src="wp-content/tm/vid_pv_introtm_pt1.gif" class="gif-video" alt="Fundamentals of IMS TM Part 1 video preview"></img>
-						</a>
-					</div>
-				</div>
-				<div class="pure-u-md-11-24">
-					<h4>Fundamentals of IMS TM Part 2</h4>
-					<p>
-						<a 	target="_blank" 
-							rel="noopener noreferrer"
-							aria-label="Watch now: Fundamentals of IMS TM Part 2"
-							href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+2/0_it2vxrks/139456202" 
-						>
-							Watch now →
-						</a>
-					</p>
-					<div class="gif">
-						<a href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202"
-							target="_blank" rel="noopener noreferrer" aria-label="Watch Fundamentals of IMS TM Part 2">
-							<img src="wp-content/tm/video-cover-intro-tm-pt2.png" class="gif-cover" alt="Fundamentals of IMS TM Part 2 video preview">
-							<img src="wp-content/tm/vid_pv_introtm_pt2.gif" class="gif-video" alt="Fundamentals of IMS TM Part 2 video preview"></img>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
+      <!-- =========================== Introducing IMS TM =========================== -->
+      <section class="white-bg pure-g">
+        <div class="pure-u-1 section-header">
+          <h2>Introducing IMS Transaction Manager</h2>
+        </div>
+        <div class="pure-u-1 pure-g pure-g-pad-v">
+          <div class="pure-u-md-11-24">
+            <h4>Fundamentals of IMS TM Part 1</h4>
+            <p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch now: Fundamentals of IMS TM Part 1"
+                href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202">
+                Watch now →
+              </a>
+            </p>
+            <div class="gif">
+              <a
+                href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch Fundamentals of IMS TM Part 1">
+                <img
+                  src="wp-content/tm/video-cover-intro-tm-pt1.png"
+                  class="gif-cover"
+                  alt="Fundamentals of IMS TM Part 1 video preview" />
+                <img
+                  src="wp-content/tm/vid_pv_introtm_pt1.gif"
+                  class="gif-video"
+                  alt="Fundamentals of IMS TM Part 1 video preview" />
+              </a>
+            </div>
+          </div>
+          <div class="pure-u-md-11-24">
+            <h4>Fundamentals of IMS TM Part 2</h4>
+            <p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch now: Fundamentals of IMS TM Part 2"
+                href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+2/0_it2vxrks/139456202">
+                Watch now →
+              </a>
+            </p>
+            <div class="gif">
+              <a
+                href="https://mediacenter.ibm.com/media/Intro+to+IMS+-+Fundamentals+of+IMS+TM+Part+1/0_h8f13l3q/139456202"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Watch Fundamentals of IMS TM Part 2">
+                <img
+                  src="wp-content/tm/video-cover-intro-tm-pt2.png"
+                  class="gif-cover"
+                  alt="Fundamentals of IMS TM Part 2 video preview" />
+                <img
+                  src="wp-content/tm/vid_pv_introtm_pt2.gif"
+                  class="gif-video"
+                  alt="Fundamentals of IMS TM Part 2 video preview" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- =========================== IMS Transaction Manager =========================== -->
-		<section class="light-gray-bg pure-g">
-			<div class="pure-u-1 section-header">
-				<h2>IMS Transaction Manager</h2>
-			</div>
-			<div class="pure-u-1 pure-g pure-g-pad">
-				<div class="pure-u-md-10-24">
-					<div class="pure-u-xl-2-24">
-						<img class="ims-card-icon" src="wp-content/icons/icon_timer.svg" alt="">
-					</div>
-					<div class="pure-u-xl-20-24">
-						<h3>Speedy transactions</h3>
-						<p>
-							The IMS Transaction Manager receives messages from any platform, usually via TCP/IP through IMS Connect, 
-							puts them on the message queue where an application program can retrieve it.
-						</p>
-						<p>
-							Think about getting money from an ATM or bank. The bank uses IMS DB to store customer data and IMS TM to 
-							quickly process deposits, withdrawals, and queries.
-						</p>
-						<p>
-							<a href="https://www.ibm.com/docs/en/ims/15.5.0?topic=network-ims-tm-overview" 
-								target="_blank" rel="noopener noreferrer" aria-label="Learn more about IMS TM speedy transactions">
-								Learn more →
-							</a>
-						</p>
-					</div>
-				</div>
-				
-				<div class="pure-u-md-13-24">
-					<img src="wp-content/tm/speedy-transactions-c.png" alt="Diagram of IMS TM transaction processing" class="img-lg">
-				</div>
-				
-				<div class="pure-u-md-11-24">
-					<div class="pure-u-xl-2-24">
-						<img class="ims-card-icon" src="wp-content/icons/ansible-logo.svg" alt="">
-					</div>
-					<div class="pure-u-xl-20-24">
-						<h3>Ways to work</h3>
-						<p>
-							Use Red Hat® Ansible® and Red Hat® OpenShift® through digitally transformed ways of working, developing, 
-							and updating critical data-driven applications. 
-						</p>
-						<p>
-							The Ansible® for IBM Z® product offers lots of use cases, capabilities, and tools to automate functions of IMS, 
-							such as DBRC administration or IMS catalog management, all by using scripted Ansible playbooks.
-						</p>
-						<p>
-							<a href="https://imsdev.github.io/ims-devops.html" 
-								rel="noopener noreferrer" aria-label="Learn more about ways to work with IMS TM">
-								Learn more
-							</a>
-						</p>
-					</div>
-				</div>
-				
-				<div class="pure-u-md-11-24">
-					<div class="pure-u-xl-2-24">
-						<img class="ims-card-icon" src="wp-content/icons/Icon_Homepage_APIs.svg" alt="">
-					</div>
-					<div class="pure-u-xl-20-24">
-						<h3>Ways to connect</h3>
-						<p>Take advantage of not just TCP/IP but RESTful APIs that access IMS™ applications and data in minutes. 
-							Transactions might be issued from z/OS environments or distributed applications that use TCP/IP to communicate 
-							with IMS. 
-						</p>
-						<p>
-							Use IMS Connect to provide high performance TCP/IP communications between multiple IMS Connect 
-							clients and IMS systems.
-						</p>
-						<p>
-							<a href="https://imsdev.github.io/ims-apis.html" 
-								rel="noopener noreferrer" aria-label="Learn more about how to connect to IMS TM">
-								Learn more
-							</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+      <!-- =========================== IMS Transaction Manager =========================== -->
+      <section class="light-gray-bg pure-g">
+        <div class="pure-u-1 section-header">
+          <h2>IMS Transaction Manager</h2>
+        </div>
+        <div class="pure-u-1 pure-g pure-g-pad">
+          <div class="pure-u-md-10-24">
+            <div class="pure-u-xl-2-24">
+              <img
+                class="ims-card-icon"
+                src="wp-content/icons/icon_timer.svg"
+                alt="" />
+            </div>
+            <div class="pure-u-xl-20-24">
+              <h3>Speedy transactions</h3>
+              <p>
+                The IMS Transaction Manager receives messages from any platform,
+                usually via TCP/IP through IMS Connect, puts them on the message
+                queue where an application program can retrieve it.
+              </p>
+              <p>
+                Think about getting money from an ATM or bank. The bank uses IMS
+                DB to store customer data and IMS TM to quickly process
+                deposits, withdrawals, and queries.
+              </p>
+              <p>
+                <a
+                  href="https://www.ibm.com/docs/en/ims/15.5.0?topic=network-ims-tm-overview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Learn more about IMS TM speedy transactions">
+                  Learn more →
+                </a>
+              </p>
+            </div>
+          </div>
 
-		<!-- =========================== Upskill with IMS TM =========================== -->
-		<section class="white-bg pure-g pure-g-pad-v">
-			<h2 class="pure-u-1">Upskill with IMS Transaction Manager</h2>
-			<div class="pure-u-1">
-				<h3>The basics of IMS</h3>	
-				<!-- Introducing IBM IMS -->
-				<course-card
-					name="Introducing IBM Information Management System (IMS)"
-					desc="This video gives a quick overview of IBM Information Management System (IMS), including IMS TM, 
+          <div class="pure-u-md-13-24">
+            <img
+              src="wp-content/tm/speedy-transactions-c.png"
+              alt="Diagram of IMS TM transaction processing"
+              class="img-lg" />
+          </div>
+
+          <div class="pure-u-md-11-24">
+            <div class="pure-u-xl-2-24">
+              <img
+                class="ims-card-icon"
+                src="wp-content/icons/ansible-logo.svg"
+                alt="" />
+            </div>
+            <div class="pure-u-xl-20-24">
+              <h3>Ways to work</h3>
+              <p>
+                Use Red Hat® Ansible® and Red Hat® OpenShift® through digitally
+                transformed ways of working, developing, and updating critical
+                data-driven applications.
+              </p>
+              <p>
+                The Ansible® for IBM Z® product offers lots of use cases,
+                capabilities, and tools to automate functions of IMS, such as
+                DBRC administration or IMS catalog management, all by using
+                scripted Ansible playbooks.
+              </p>
+              <p>
+                <a
+                  href="https://imsdev.github.io/ims-devops.html"
+                  rel="noopener noreferrer"
+                  aria-label="Learn more about ways to work with IMS TM">
+                  Learn more
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="pure-u-md-11-24">
+            <div class="pure-u-xl-2-24">
+              <img
+                class="ims-card-icon"
+                src="wp-content/icons/Icon_Homepage_APIs.svg"
+                alt="" />
+            </div>
+            <div class="pure-u-xl-20-24">
+              <h3>Ways to connect</h3>
+              <p>
+                Take advantage of not just TCP/IP but RESTful APIs that access
+                IMS™ applications and data in minutes. Transactions might be
+                issued from z/OS environments or distributed applications that
+                use TCP/IP to communicate with IMS.
+              </p>
+              <p>
+                Use IMS Connect to provide high performance TCP/IP
+                communications between multiple IMS Connect clients and IMS
+                systems.
+              </p>
+              <p>
+                <a
+                  href="https://imsdev.github.io/ims-apis.html"
+                  rel="noopener noreferrer"
+                  aria-label="Learn more about how to connect to IMS TM">
+                  Learn more
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== OTMA =========================== -->
+      <section class="gray-bg pure-g">
+        <!-- Managed ACBs -->
+        <div class="pure-u-1 section-header">
+          <h2>Open Transaction Manager Access (OTMA)</h2>
+        </div>
+        <div class="pure-u-1">
+          <div class="pure-g pure-g-pad-v">
+            <div class="pure-u-1 pure-u-lg-1-2 pure-g-pad-v">
+              <div>
+                <h4>OTMA overview</h4>
+                <p>
+                  IMS Open Transaction Manager Access (OTMA) is a transaction-based, connectionless client/server protocol.
+                </p>
+                <div class="vertical-g">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.ibm.com/docs/en/ims/15.6.0?topic=connections-open-transaction-manager-access-otma">
+                    OTMA overview docs →</a
+                  >
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.ibm.com/docs/en/ims/15.6.0?topic=connections-open-transaction-manager-access-otma">
+                    OTMA client docs →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-2">
+              <div class="gif">
+                <a
+                  href="https://mediacenter.ibm.com/media/1_u4hy5e26"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    src="wp-content/images/ims-otma.png"
+                    class="gif-cover gif-pad"
+                    alt="OTMA preview cover" />
+                  <img
+                    src="wp-content/gifs/OTMA.gif"
+                    class="gif-video gif-pad"
+                    alt="OTMA preview video" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More resources -->
+        <div class="pure-u-1 section-header">
+          <h4>OTMA flood control</h4>
+        </div>
+        <div class="pure-u-1">
+          <div class="pure-g pure-g-pad-v">
+            <div class="pure-u-md-1-2 pure-u-lg-1-4 pure-g">
+              <div class="pure-u-1">
+                <img
+                  src="wp-content/icons/icon_video.svg"
+                  alt=""
+                  class="icon" />
+              </div>
+              <div class="pure-u-1">
+                <h3>IMS OTMA Lightweight Tpipe Support</h3>
+                <div class="vertical-g">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Watch the video on IMS OTMA Lightweight Tpipe Support"
+                    href="https://mediacenter.ibm.com/media/1_bt1kljpx">
+                    Watch the video →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-md-1-2 pure-u-lg-1-4 pure-g">
+              <div class="pure-u-1">
+                <img
+                  src="wp-content/icons/icon_video.svg"
+                  alt=""
+                  class="icon" />
+              </div>
+              <div class="pure-u-1">
+                <h3>IMS OTMA Tpipe Flood Controls</h3>
+                <div class="vertical-g">
+                  <a
+                    href="https://mediacenter.ibm.com/media/1_085rsbu8"
+                    aria-label="Watch the video on IMS OTMA Tpipe Flood Controls"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Watch the video →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-md-1-2 pure-u-lg-1-4 pure-g">
+              <div class="pure-u-1">
+                <img
+                  src="wp-content/icons/icon_video.svg"
+                  alt=""
+                  class="icon" />
+              </div>
+              <div class="pure-u-1">
+                <h3>IMS RACF ACEE Flood Control Enhancement for OTMA</h3>
+                <div class="vertical-g">
+                  <a
+                    href="https://mediacenter.ibm.com/media/1_j4s8qxht"
+                    aria-label="Watch the video on IMS RACF ACEE Flood Control Enhancement for OTMA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Watch the video →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-md-1-2 pure-u-lg-1-4 pure-g">
+              <div class="pure-u-1">
+                <img
+                  src="wp-content/icons/icon_video.svg"
+                  alt=""
+                  class="icon" />
+              </div>
+              <div class="pure-u-1">
+                <h3>
+                  IMS OTMA YTIB Flood Controls
+                </h3>
+                <a
+                  href="https://mediacenter.ibm.com/media/1_gc2ntkqg"
+                  aria-label="Watch the video on IMS OTMA YTIB Flood Controls"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Watch the video →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== Upskill with IMS TM =========================== -->
+      <section class="white-bg pure-g pure-g-pad-v">
+        <h2 class="pure-u-1">Upskill with IMS Transaction Manager</h2>
+        <div class="pure-u-1">
+          <h3>The basics of IMS</h3>
+          <!-- Introducing IBM IMS -->
+          <course-card
+            name="Introducing IBM Information Management System (IMS)"
+            desc="This video gives a quick overview of IBM Information Management System (IMS), including IMS TM, 
 						IMS DB, and IMS application processing."
-					imgsrc="wp-content/tm/tm-intro-ims-video-cover.png"
-					link="https://mediacenter.ibm.com/media/Introducing+IBM+Information+Management+System+%28IMS%29/1_jy8lv5f5"
-					linktext="Watch the video →"
-				>
-				</course-card>
+            imgsrc="wp-content/tm/tm-intro-ims-video-cover.png"
+            link="https://mediacenter.ibm.com/media/Introducing+IBM+Information+Management+System+%28IMS%29/1_jy8lv5f5"
+            linktext="Watch the video →">
+          </course-card>
 
-				<!-- IMS Fundamentals -->
-				<course-card
-					name="IMS Fundamentals"
-					desc="Take a deeper dive into the main components of IMS, including IMS TM, IMS DB, and common system services, 
+          <!-- IMS Fundamentals -->
+          <course-card
+            name="IMS Fundamentals"
+            desc="Take a deeper dive into the main components of IMS, including IMS TM, IMS DB, and common system services, 
 						in this comprehensive course."
-					imgsrc="wp-content/course-badges/badge_ims_fundamentals.png"
-					link="https://imsdev.github.io/ims-education.html#ims-fundamentals"
-					linktext="Learn more"
-				>
-				</course-card>
-			</div>
-			<div class="pure-u-1">
-				<h3>Intermediate and advanced training</h3>	
-				<!-- IMS System Programming -->
-				<course-card
-					name="IMS System Programming in a DBCTL Environment"
-					desc="Learn about the IMS database control (DBCTL) environment, which provides access between CICS and 
+            imgsrc="wp-content/course-badges/badge_ims_fundamentals.png"
+            link="https://imsdev.github.io/ims-education.html#ims-fundamentals"
+            linktext="Learn more">
+          </course-card>
+        </div>
+        <div class="pure-u-1">
+          <h3>Intermediate and advanced training</h3>
+          <!-- IMS System Programming -->
+          <course-card
+            name="IMS System Programming in a DBCTL Environment"
+            desc="Learn about the IMS database control (DBCTL) environment, which provides access between CICS and 
 						IMS-managed databases."
-					imgsrc="wp-content/course-badges/badge_ims_dbctl.png"
-					link="https://imsdev.github.io/ims-education.html#ims-dbctl"
-					linktext="Learn more"
-				>
-				</course-card>
+            imgsrc="wp-content/course-badges/badge_ims_dbctl.png"
+            link="https://imsdev.github.io/ims-education.html#ims-dbctl"
+            linktext="Learn more">
+          </course-card>
 
-				<!-- IMS TM Performance Analysis -->
-				<course-card
-					name="IMS TM Performance Analysis"
-					desc="Learn how to use and adjust IMS TM and z/OS components, commands, processes, parameters, and more 
+          <!-- IMS TM Performance Analysis -->
+          <course-card
+            name="IMS TM Performance Analysis"
+            desc="Learn how to use and adjust IMS TM and z/OS components, commands, processes, parameters, and more 
 						to ensure that the IMS TM system is running as efficiently as possible."
-					imgsrc="wp-content/course-badges/badge_ims_tm_tuning.png"
-					link="https://imsdev.github.io/ims-education.html#ims-tm-performance"
-					linktext="Learn more"
-				>
-				</course-card>
+            imgsrc="wp-content/course-badges/badge_ims_tm_tuning.png"
+            link="https://imsdev.github.io/ims-education.html#ims-tm-performance"
+            linktext="Learn more">
+          </course-card>
 
-				<!-- IMS TM Application Programming -->
-				<course-card
-					name="IMS TM Application Programming"
-					desc="Learn how to write application programs  in COBOL and PL/I that use Data Language One (DL/I) 
+          <!-- IMS TM Application Programming -->
+          <course-card
+            name="IMS TM Application Programming"
+            desc="Learn how to write application programs  in COBOL and PL/I that use Data Language One (DL/I) 
 						to process terminal input and output messages in an IMS TM system."
-					imgsrc="wp-content/course-badges/badge_tm_app_prog.png"
-					link="https://imsdev.github.io/ims-education.html#ims-tm-prog"
-					linktext="Learn more"
-				>
-				</course-card>
-			</div>
-		</section>
+            imgsrc="wp-content/course-badges/badge_tm_app_prog.png"
+            link="https://imsdev.github.io/ims-education.html#ims-tm-prog"
+            linktext="Learn more">
+          </course-card>
+        </div>
+      </section>
 
-		<!-- =========================== IMS blogs =========================== -->
-		<section class="dark-gray-bg pure-g">
-			<div class="pure-u-1 pure-u-md-1-5">
-				<h2>Blogs</h2>
-			</div>
-			<div class="pure-u-1 pure-u-md-4-5">
-				<div class="pure-g pure-g-pad">
-					<div class="pure-u-1 pure-u-sm-1-2">
-						<div class="pure-g">
-							<div class="pure-u-1-5 pure-u-md-1">
-								<img src="wp-content/icons/data--check.svg" alt="" class="icon-sm icon-invert">
-							</div>
-							<div class="pure-u-4-5 pure-u-md-1">
-								<h3>Amplify your enterprise with IMS TM</h3>
-								<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/mario-perotti/2022/05/09/ims-tm?communityKey=eba3ada3-db89-4dca-9154-328195f5e560" 
-									target="_blank" rel="noopener noreferrer" aria-label="Read the blog on using IMS TM for your enterprise">
-									Read the blog →
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="pure-u-1 pure-u-sm-1-2">
-						<div class="pure-g">
-							<div class="pure-u-1-5 pure-u-md-1">
-								<img src="wp-content/icons/security.svg" alt="" class="icon-sm icon-invert">
-							</div>
-							<div class="pure-u-4-5 pure-u-md-1">
-								<h3>Making IMS transactions more secure by Client ID</h3>
-								<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/hiroyuki-fuchiue/2024/05/21/making-ims-transactions-more-secure-by-client-id?communityKey=eba3ada3-db89-4dca-9154-328195f5e560" 
-									target="_blank" rel="noopener noreferrer" aria-label="Read the blog on making IMS transactions secure">
-									Read the blog →
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="pure-u-1">
-						<h3>A large bank’s success story implementing RESTful APIs to streamline their digital transformation</h3>
-						<a href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/hiroyuki-fuchiue/2024/05/21/making-ims-transactions-more-secure-by-client-id?communityKey=eba3ada3-db89-4dca-9154-328195f5e560" 
-							target="_blank" rel="noopener noreferrer" aria-label="Read the blog on the bank success story">
-							Read the blog →
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
+      <!-- =========================== IMS blogs =========================== -->
+      <section class="dark-gray-bg pure-g">
+        <div class="pure-u-1 pure-u-md-1-5">
+          <h2>Blogs</h2>
+        </div>
+        <div class="pure-u-1 pure-u-md-4-5">
+          <div class="pure-g pure-g-pad">
+            <div class="pure-u-1 pure-u-sm-1-2">
+              <div class="pure-g">
+                <div class="pure-u-1-5 pure-u-md-1">
+                  <img
+                    src="wp-content/icons/data--check.svg"
+                    alt=""
+                    class="icon-sm icon-invert" />
+                </div>
+                <div class="pure-u-4-5 pure-u-md-1">
+                  <h3>Amplify your enterprise with IMS TM</h3>
+                  <a
+                    href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/mario-perotti/2022/05/09/ims-tm?communityKey=eba3ada3-db89-4dca-9154-328195f5e560"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Read the blog on using IMS TM for your enterprise">
+                    Read the blog →
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-sm-1-2">
+              <div class="pure-g">
+                <div class="pure-u-1-5 pure-u-md-1">
+                  <img
+                    src="wp-content/icons/security.svg"
+                    alt=""
+                    class="icon-sm icon-invert" />
+                </div>
+                <div class="pure-u-4-5 pure-u-md-1">
+                  <h3>Making IMS transactions more secure by Client ID</h3>
+                  <a
+                    href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/hiroyuki-fuchiue/2024/05/21/making-ims-transactions-more-secure-by-client-id?communityKey=eba3ada3-db89-4dca-9154-328195f5e560"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Read the blog on making IMS transactions secure">
+                    Read the blog →
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-1">
+              <h3>
+                A large bank’s success story implementing RESTful APIs to
+                streamline their digital transformation
+              </h3>
+              <a
+                href="https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/hiroyuki-fuchiue/2024/05/21/making-ims-transactions-more-secure-by-client-id?communityKey=eba3ada3-db89-4dca-9154-328195f5e560"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Read the blog on the bank success story">
+                Read the blog →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-	<!-- Footer -->
-	<imscentral-footer></imscentral-footer>
-</body>
+    <!-- Footer -->
+    <imscentral-footer></imscentral-footer>
+  </body>
 </html>
