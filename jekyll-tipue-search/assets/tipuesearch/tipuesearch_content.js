@@ -123,10 +123,15 @@ var tipuesearch = {"pages": [{
     "tags": "vsam_buffer osam_buffer full-function_buffer buffer_pooling lsr hiperspace buffer_steal background_write_option ca_reclaim_support sequential_buffering fast_path_buffering dynamic_buffer statistics",
     "url": "ims-videos.html#ims-buffers"
   },{
+    "title": "<p>A beginner’s guide to making an IMS database ready for use</p> <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
+    "text": "Watch these videos to learn how to prepare an IMS database and its primary index.",
+    "tags": "dfsddlt0 dbdgen psbgen dli_test_program dbrc vsam osam database_recovery_control",
+    "url": "ims-videos.html#ims-prep-db"
+  },{
     "title": "<p>IMS z/OS Native DDL Utility</p> <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
     "text": "Learn how to use the zDDL utility to submit DDL SQL statements without IMS Connect.",
     "tags": "zddl ddl simulate autocommit verbose rsclst ddltrace_dd_cards",
-    "url": "ims-videos.html#ims-ddl-util"
+    "url": "https://mediacenter.ibm.com/playlist/details/1_4u3gq2f0/categoryId/122579632"
   },{
     "title": "<p>IMS DBDGEN and PSBGEN for Beginners</p> <img class=\"search-icon\" aria-label=\"Video\" src=\"wp-content/search_video.svg\"></img>",
     "text": "Watch these videos to learn how to code DBDGEN and PSBGEN input.",
