@@ -646,7 +646,7 @@ a {
     padding: 0.4em;
   }
   .pure-g-pad-v > div {
-    padding: 0.4em;
+    padding: 0.4em 0;
   }
   .pure-g-pad-wd > div {
     padding: 2em 0.4em 0em 0em;
