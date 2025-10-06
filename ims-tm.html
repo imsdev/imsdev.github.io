@@ -299,33 +299,40 @@
       <section class="gray-bg pure-g">
         <!-- Managed ACBs -->
         <div class="pure-u-1 section-header">
-          <h2>Open Transaction Manager Access (OTMA)</h2>
+          <h2>What’s new in transaction management?</h2>
         </div>
         <div class="pure-u-1">
           <div class="pure-g pure-g-pad-v">
-            <div class="pure-u-1 pure-u-lg-1-2 pure-g-pad-v">
+            <div class="pure-u-1 pure-u-lg-3-5 pure-g-pad-v">
               <div>
-                <h4>OTMA overview</h4>
+                <h4>Transaction orchestration</h4>
                 <p>
-                  IMS Open Transaction Manager Access (OTMA) is a transaction-based, connectionless client/server protocol.
+                  OTMA transaction orchestration enhancement allows OTMA to
+                  identify and correctly route an external service response from
+                  IMS to a waiting IMS Connect client.
+                </p>
+                <p>
+                  If you're getting timeouts with CM0 send and receive messages
+                  from IMS Connect or z/OS Connect clients, take advantage of
+                  transaction orchestration.
+                </p>
+                <p>
+                  Start by enabling the OTMA TMANORCH flag in IMS Connect and
+                  then setting the TRANORCH=YES parameter in the OTMA client
+                  descriptor, and you're on your way.
                 </p>
                 <div class="vertical-g">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.ibm.com/docs/en/ims/15.6.0?topic=connections-open-transaction-manager-access-otma">
-                    OTMA overview docs →</a
-                  >
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.ibm.com/docs/en/ims/15.6.0?topic=connections-open-transaction-manager-access-otma">
-                    OTMA client docs →</a
+                    aria-label="Learn more about transaction orchestration"
+                    href="https://www.ibm.com/docs/en/ims/15.5.0?topic=enhancements-otma-transaction-orchestration-enhancement">
+                    Learn more →</a
                   >
                 </div>
               </div>
             </div>
-            <div class="pure-u-1 pure-u-lg-1-2">
+            <div class="pure-u-1 pure-u-lg-2-5">
               <div class="gif">
                 <a
                   href="https://mediacenter.ibm.com/media/1_u4hy5e26"
@@ -346,26 +353,46 @@
         </div>
         <!-- More resources -->
         <div class="pure-u-1 section-header">
-          <h4>OTMA flood control</h4>
+          <h4>More resources</h4>
         </div>
         <div class="pure-u-1">
           <div class="pure-g pure-g-pad-v">
             <div class="pure-u-md-1-2 pure-u-lg-1-4 pure-g">
               <div class="pure-u-1">
                 <img
-                  src="wp-content/icons/icon_video.svg"
+                  src="wp-content/icons/icon_documentation.svg"
                   alt=""
-                  class="icon" />
+                  class="icon-sm" />
               </div>
               <div class="pure-u-1">
-                <h3>IMS OTMA Lightweight Tpipe Support</h3>
+                <h3>OTMA overview</h3>
                 <div class="vertical-g">
                   <a
+                    href="https://www.ibm.com/docs/en/ims/15.6.0?topic=connections-open-transaction-manager-access-otma"
+                    aria-label="Read the docs on an overview of OTMA"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Watch the video on IMS OTMA Lightweight Tpipe Support"
-                    href="https://mediacenter.ibm.com/media/1_bt1kljpx">
-                    Watch the video →</a
+                    >Read the docs →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pure-u-md-1-2 pure-u-lg-1-4 pure-g">
+              <div class="pure-u-1">
+                <img
+                  src="wp-content/icons/icon_documentation.svg"
+                  alt=""
+                  class="icon-sm" />
+              </div>
+              <div class="pure-u-1">
+                <h3>The OTMA client</h3>
+                <div class="vertical-g">
+                  <a
+                    href="https://www.ibm.com/docs/en/ims/latest?topic=otma-client"
+                    aria-label="Read the docs on the OTMA client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Read the docs →</a
                   >
                 </div>
               </div>
@@ -375,59 +402,19 @@
                 <img
                   src="wp-content/icons/icon_video.svg"
                   alt=""
-                  class="icon" />
+                  class="icon-sm" />
               </div>
               <div class="pure-u-1">
-                <h3>IMS OTMA Tpipe Flood Controls</h3>
+                <h3>OTMA Tpipe Flood Control</h3>
                 <div class="vertical-g">
                   <a
-                    href="https://mediacenter.ibm.com/media/1_085rsbu8"
-                    aria-label="Watch the video on IMS OTMA Tpipe Flood Controls"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Watch the video →</a
+                    aria-label="Watch the playlist on OTMA Tpipe Flood Control"
+                    href="https://mediacenter.ibm.com/playlist/dedicated/122579632/1_jjanf1nr/">
+                    Watch the playlist →</a
                   >
                 </div>
-              </div>
-            </div>
-            <div class="pure-u-md-1-2 pure-u-lg-1-4 pure-g">
-              <div class="pure-u-1">
-                <img
-                  src="wp-content/icons/icon_video.svg"
-                  alt=""
-                  class="icon" />
-              </div>
-              <div class="pure-u-1">
-                <h3>IMS RACF ACEE Flood Control Enhancement for OTMA</h3>
-                <div class="vertical-g">
-                  <a
-                    href="https://mediacenter.ibm.com/media/1_j4s8qxht"
-                    aria-label="Watch the video on IMS RACF ACEE Flood Control Enhancement for OTMA"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Watch the video →</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="pure-u-md-1-2 pure-u-lg-1-4 pure-g">
-              <div class="pure-u-1">
-                <img
-                  src="wp-content/icons/icon_video.svg"
-                  alt=""
-                  class="icon" />
-              </div>
-              <div class="pure-u-1">
-                <h3>
-                  IMS OTMA YTIB Flood Controls
-                </h3>
-                <a
-                  href="https://mediacenter.ibm.com/media/1_gc2ntkqg"
-                  aria-label="Watch the video on IMS OTMA YTIB Flood Controls"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Watch the video →</a
-                >
               </div>
             </div>
           </div>
