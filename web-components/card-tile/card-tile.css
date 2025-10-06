@@ -83,7 +83,7 @@ a {
 @media screen and (min-width: 64em) {
     /* Set consistent height for video card */
     .card {
-        height: 18.75em;
+        height: 20em;
     }
 
     /* Set consistent height for support card */
