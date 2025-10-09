@@ -74,11 +74,16 @@ a {
     margin: 0em;
 }
 
+/* New tag styling */
+.card-new {
+    font-weight: bold;
+}
+
 /* 1024px and above screen sizes */
 @media screen and (min-width: 64em) {
     /* Set consistent height for video card */
     .card {
-        height: 18.75em;
+        height: 20em;
     }
 
     /* Set consistent height for support card */

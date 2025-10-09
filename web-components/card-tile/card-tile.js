@@ -66,7 +66,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['cardtype', 'name', 'desc', 'level', 'time', 'link', 'linktext', 'link2', 'linktext2', 'link3', 'linktext3'];
+            return ['cardtype', 'name', 'desc', 'level', 'time', 'link', 'linktext', 'link2', 'linktext2', 'link3', 'linktext3', 'new'];
         }
 
         /**
@@ -99,6 +99,8 @@ function createComponent(html) {
                     break;
             } 
 
+            // Display new tag
+            if (this.new === "true") {setContent('.card-new', "New!", shadow)}; 
             // Set card name
             setContent('.card-name', this.name, shadow);
             // Set card desc

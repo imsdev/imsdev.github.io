@@ -158,7 +158,6 @@ a {
   color: var(--white);
 }
 
-
 .dark-gray-bg h4 {
   font-size: var(--plex-24) !important;
 }
@@ -174,7 +173,8 @@ a {
 }
 
 .blue-bg a,
-.black-bg a {
+.black-bg a, 
+.dark-gray-bg a {
   color: var(--font-light-blue);
 }
 
@@ -341,7 +341,7 @@ a {
 }
 /* For pure grid units requiring vertical padding only */
 .pure-g-pad-v > div {
-  padding: 2em 4em 2em 0em;
+  padding: 2em 2em 2em 0em;
 }
 /* For pure grid units requiring wider padding */
 .pure-g-pad-wd > div {
