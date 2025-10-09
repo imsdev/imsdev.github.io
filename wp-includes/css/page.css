@@ -616,6 +616,17 @@ a {
 .homepage-hero p {
   font-size: 16pt;
 }
+
+/* Do not display for screens smaller than 2000px */
+.xxl-only {
+  display: none;
+}
+
+/* Only display for screens smaller than 2000px */
+.under-xxl-only {
+  display: block;
+}
+
 /* -------------------------------------------------------- */
 
 /* Media queries */
@@ -745,6 +756,18 @@ a {
     padding: 0;
     object-fit: cover;
     object-position: bottom;
+  }
+}
+
+/* 2000px and above screen sizes */
+@media screen and (min-width: 125em) {
+  /* Display content for xxl screen sizes */
+  .xxl-only {
+    display: block;
+  }
+
+  .under-xxl-only {
+    display: none;
   }
 }
 /* -------------------------------------------------------- */
