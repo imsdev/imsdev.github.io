@@ -95,72 +95,52 @@
     <script
       src="web-components/nav-header/nav-header.js"
       type="module"></script>
+    <script
+      src="web-components/hero-section/hero-section.js"
+      type="module"></script>
     <script src="web-components/footer/footer.js" type="module"></script>
   </head>
 
   <!-- MASTHEAD_SITENAV_BEGIN -->
-  <body id="ibm-com" class="ibm-com ibm-type group-blog">
-    <div class="ibm-landing-page pg-404">
-      <nav-header></nav-header>
+  <body id="ibm-com" class="ibm-com ibm-type">
+    <nav-header></nav-header>
 
-      <!-- Additional styling for content after navigation -->
-      <head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="wp-includes/css/pure.css" />
-        <link
-          rel="stylesheet"
-          href="wp-includes/css/grids-responsive-min.css" />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="wp-includes/css/homepage.css" />
-      </head>
+    <main id="content" class="main-content">
+      <!-- =========================== IMS Central 404 =========================== -->
+      <hero-section
+        name="We're sorry!"
+        image="wp-content/404_Error.svg"
+        section="Engage"
+        desc="The page you're looking for might have been moved or deleted.">
+      </hero-section>
 
-      <div id="content" class="site-content">
-        <div class="content-area" id="content-area">
-          <div class="entry-content">
-            <main class="zs-main">
-              <!-- =========================== IMS Central 404 =========================== -->
-              <div class="bg-404 main-sec">
-                <section id="intro-section" class="pure-g zs-section">
-                  <div class="pure-u-3-25">
-                    <img
-                      class="ims-card-icon"
-                      src="wp-content/404_Error.svg"
-                      alt="404: Page not found" />
-                  </div>
-                  <div
-                    id="intro-info"
-                    class="pure-u-1 pure-u-sm-1-2 main-sec-g">
-                    <h1>We<span>&#8217;</span>re sorry!</h1>
-                    <p id="p-style">
-                      The page you're looking for might have been moved or
-                      deleted.
-                    </p>
-                  </div>
-                  <div class="pure-u-8-24">
-                    <h2 class="text-404">404</h2>
-                  </div>
-                </section>
-              </div>
-
-              <!-- =========================== White Space =========================== -->
-              <div class="bg-404">
-                <section class="zs-section">
-                  <div class="pure-u-lg-2-24 w-space"></div>
-                </section>
-              </div>
-            </main>
+      <div class="bg-404 main-sec">
+        <section id="intro-section" class="pure-g zs-section">
+          <div class="pure-u-3-25">
+            <img
+              class="ims-card-icon"
+              src="wp-content/404_Error.svg"
+              alt="404: Page not found" />
           </div>
-          <!-- .entry-content -->
-        </div>
-        <!-- #content -->
+          <div id="intro-info" class="pure-u-1 pure-u-sm-1-2 main-sec-g">
+            <h1>We<span>&#8217;</span>re sorry!</h1>
+            <p id="p-style">
+              The page you're looking for might have been moved or deleted.
+            </p>
+          </div>
+          <div class="pure-u-8-24">
+            <h2 class="text-404">404</h2>
+          </div>
+        </section>
       </div>
-      <!-- end of ibm-content-wrapper -->
-    </div>
-    <!-- #page -->
+
+      <!-- =========================== White Space =========================== -->
+      <!-- <div class="bg-404">
+        <section class="zs-section">
+          <div class="pure-u-lg-2-24 w-space"></div>
+        </section>
+      </div> -->
+    </main>
 
     <!-- Footer -->
     <imscentral-footer></imscentral-footer>
