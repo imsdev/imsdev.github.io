@@ -32,6 +32,11 @@
     backdrop-filter: blur(6px);
   }
 
+.black-bg {
+    background-color: #161616;
+    color: white;
+}
+
 section {
     /* Button Color */
     --btn-prim: #0f62fe;
@@ -91,6 +96,10 @@ h6, p {
     grid-row: 1;
     font-size: 1em;
     font-weight: bold;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .name {

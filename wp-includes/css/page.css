@@ -313,7 +313,7 @@ a {
 /* Content containers */
 /* -------------------------------------------------------- */
 /* Targets all sections after hero */
-.main-content section:not(:first-child):not(.cta-banner) {
+.main-content section:not(:first-child):not(.cta-banner):not(.section-404) {
   padding: 4em;
 }
 
@@ -627,6 +627,27 @@ a {
   display: block;
 }
 
+.page-404 {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.section-404 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.section-404 h1 {
+    font-weight: bold !important;
+    font-size: 15em !important;
+    color: #8d8d8d;
+    line-height: 0em !important;
+}
+
 /* -------------------------------------------------------- */
 
 /* Media queries */
@@ -645,6 +666,10 @@ a {
 
   .pure-pad-r {
     padding: 1.2em 0em;
+  }
+
+  .section-404 h1 {
+    font-size: 10em !important;
   }
 }
 

@@ -100,6 +100,7 @@ function createComponent(html) {
 
             const heroSection = shadow.querySelector('.hero-section');
             const hero = shadow.querySelector('.hero');
+            const subheader = shadow.querySelector('.section');
 
             // Set content
             setImage('.image', this.image, shadow);
@@ -164,6 +165,9 @@ function createComponent(html) {
                 case 'Support':
                     heroSection.classList.add('learn-bg');
                     break;
+                case '404':
+                    heroSection.classList.add('black-bg');
+                    subheader.classList.add('hidden');
             }
         }
     }
