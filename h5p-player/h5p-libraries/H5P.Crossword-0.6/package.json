@@ -1,0 +1,38 @@
+{
+  "name": "h5p-crossword",
+  "version": "0.6.7",
+  "description": "Example H5P Content Type for getting started",
+  "private": true,
+  "scripts": {
+    "lint": "eslint './src/**/*.js'",
+    "build": "webpack --mode=production",
+    "watch": "webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otacke/h5p-crossword.git"
+  },
+  "keywords": [
+    "h5p",
+    "library",
+    "crossword"
+  ],
+  "author": "Language Training Center GmbH, Oliver Tacke",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/plugin-transform-destructuring": "^7.28.0",
+    "@babel/preset-env": "^7.28.3",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "eslint-config-snordian-h5p": "github:otacke/eslint-config-snordian-h5p",
+    "mini-css-extract-plugin": "^2.9.4",
+    "regenerator-runtime": "^0.14.1",
+    "sass": "^1.92.1",
+    "sass-loader": "^16.0.5",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1"
+  },
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead"
+}

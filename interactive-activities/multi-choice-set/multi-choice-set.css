@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: IBM Plex Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+.activity {
+    background-color: #fff;
+    width: 100%;
+    padding: 2em;
+}
+
+.quiz h2 {
+    font-size: 1.125em;
+    font-weight: 600;
+    padding: 0;
+}
+
+#question-index {
+    font-size: 1em;
+}
+
+.btn {
+    padding: 0.2em 2em 0.2em 0.5em;
+    margin: 0.5em 0;
+    border: 2px #fff solid;
+}
+
+.disable {
+    cursor: no-drop;
+}
+
+#next-btn {
+    margin: 1em 0;
+}
+
+.correct {
+    border: 2px #24a148 solid;
+    border-radius: 2px;
+}
+
+.incorrect {
+    border: 2px #da1e28 solid;
+    border-radius: 2px;
+}
