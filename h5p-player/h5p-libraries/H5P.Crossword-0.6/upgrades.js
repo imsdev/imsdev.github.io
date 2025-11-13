@@ -1,6 +1,6 @@
 var H5PUpgrades = H5PUpgrades || {};
 
-H5PUpgrades['H5P.Crossword'] = (function () {
+H5PUpgrades["H5P.Crossword"] = (function () {
   return {
     0: {
       /**
@@ -13,7 +13,7 @@ H5PUpgrades['H5P.Crossword'] = (function () {
        * @param {function} finished
        */
       2: function (parameters, finished, extras) {
-        parameters.behaviour.backgroundColor = '#000000';
+        parameters.behaviour.backgroundColor = "#000000";
         parameters.behaviour.scoreWords = false;
 
         finished(null, parameters, extras);
@@ -42,29 +42,31 @@ H5PUpgrades['H5P.Crossword'] = (function () {
       4: function (parameters, finished, extras) {
         if (parameters && parameters.behaviour) {
           parameters.theme = {
-            backgroundColor: '#173354',
-            gridColor: '#000000',
-            cellBackgroundColor: '#ffffff',
-            cellColor: '#000000',
-            clueIdColor: '#606060',
-            cellBackgroundColorHighlight: '#3e8de8',
-            cellColorHighlight: '#ffffff',
-            clueIdColorHighlight: '#e0e0e0'
+            backgroundColor: "#001d6c",
+            gridColor: "#000000",
+            cellBackgroundColor: "#ffffff",
+            cellColor: "#000000",
+            clueIdColor: "#606060",
+            cellBackgroundColorHighlight: "#3e8de8",
+            cellColorHighlight: "#ffffff",
+            clueIdColorHighlight: "#e0e0e0",
           };
 
           if (parameters.behaviour.backgroundImage) {
-            parameters.theme.backgroundImage = parameters.behaviour.backgroundImage;
+            parameters.theme.backgroundImage =
+              parameters.behaviour.backgroundImage;
           }
           delete parameters.behaviour.backgroundImage;
 
           if (parameters.behaviour.backgroundColor) {
-            parameters.theme.backgroundColor = parameters.behaviour.backgroundColor;
+            parameters.theme.backgroundColor =
+              parameters.behaviour.backgroundColor;
           }
           delete parameters.behaviour.backgroundColor;
         }
 
         finished(null, parameters, extras);
-      }
-    }
+      },
+    },
   };
 })();

@@ -227,7 +227,7 @@
         "description": "Choose a background color. It will either be used instead of a background image or as background for transparent areas.",
         "importance": "low",
         "optional": true,
-        "default": "#173354",
+        "default": "#001d6c",
         "widget": "colorSelector",
         "spectrum": {
           "showInput": true,

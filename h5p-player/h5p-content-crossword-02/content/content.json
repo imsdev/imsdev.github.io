@@ -24,14 +24,14 @@
   ],
   "overallFeedback": [{ "from": 0, "to": 100 }],
   "theme": {
-    "backgroundColor": "#173354",
+    "backgroundColor": "#0043ce",
     "gridColor": "#000000",
     "cellBackgroundColor": "#ffffff",
     "cellColor": "#000000",
     "clueIdColor": "#606060",
-    "cellBackgroundColorHighlight": "#3e8de8",
-    "cellColorHighlight": "#ffffff",
-    "clueIdColorHighlight": "#e0e0e0"
+    "cellBackgroundColorHighlight": "#a6c8ff",
+    "cellColorHighlight": "#000000",
+    "clueIdColorHighlight": "#000000"
   },
   "behaviour": {
     "enableInstantFeedback": false,

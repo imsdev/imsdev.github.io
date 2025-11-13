@@ -1,15 +1,15 @@
 // Import required classes
-import CrosswordContent from '@scripts/components/h5p-crossword-content.js';
-import Util from '@services/util.js';
-import QuestionTypeContract from '@mixins/question-type-contract.js';
-import XAPI from '@mixins/xapi.js';
-import '@styles/h5p-crossword.scss';
+import CrosswordContent from "@scripts/components/h5p-crossword-content.js";
+import Util from "@services/util.js";
+import QuestionTypeContract from "@mixins/question-type-contract.js";
+import XAPI from "@mixins/xapi.js";
+import "@styles/h5p-crossword.scss";
 
 /** @constant {number} DOM_REGISTER_DELAY_MS Delay before resizing after DOM registered. */
 const DOM_REGISTER_DELAY_MS = 100;
 
 /** @constant {string} DEFAULT_DESCRIPTION Default description. */
-export const DEFAULT_DESCRIPTION = 'Crossword';
+export const DEFAULT_DESCRIPTION = "Crossword";
 
 /** @constant {object} view states */
 export const VIEW_STATES = { task: 0, results: 1, solutions: 2 };
@@ -25,7 +25,7 @@ export default class Crossword extends H5P.Question {
    * @param {object} [extras] Saved state, metadata, etc.
    */
   constructor(params, contentId, extras = {}) {
-    super('crossword'); // CSS class selector for content's iframe: h5p-crossword
+    super("crossword"); // CSS class selector for content's iframe: h5p-crossword
 
     Util.addMixins(Crossword, [QuestionTypeContract, XAPI]);
 
@@ -41,57 +41,68 @@ export default class Crossword extends H5P.Question {
      */
 
     // Make sure all variables are set
-    this.params = Util.extend({
-      solutionWord: '',
-      theme: {
-        backgroundColor: '#173354',
+    this.params = Util.extend(
+      {
+        solutionWord: "",
+        theme: {
+          backgroundColor: "#001d6c",
+        },
+        behaviour: {
+          enableSolutionsButton: true,
+          enableRetry: true,
+          enableInstantFeedback: false,
+          scoreWords: true,
+          applyPenalties: false,
+          keepCorrectAnswers: false,
+        },
+        l10n: {
+          across: "across",
+          down: "down",
+          checkAnswer: "Check answer",
+          // eslint-disable-next-line @stylistic/js/max-len
+          couldNotGenerateCrossword:
+            "Could not generate a crossword with the given words. Please try again with fewer words or words that have more characters in common.",
+          couldNotGenerateCrosswordTooFewWords:
+            "Could not generate a crossword. You need at least two words.",
+          couldNotGenerateCrosswordTooManyWords:
+            "Could not generate a crossword. You have too many words.",
+          // eslint-disable-next-line @stylistic/js/max-len
+          problematicWords:
+            "Some words could not be placed. If you are using fixed words, please make sure that their position doesn't prevent other words from being placed. Words with the same alignment may not be placed touching each other. Problematic word(s): @words",
+          showSolution: "Show solution",
+          tryAgain: "Retry",
+          extraClue: "Extra clue",
+          closeWindow: "Close window",
+          submitAnswer: "Submit",
+        },
+        a11y: {
+          // eslint-disable-next-line @stylistic/js/max-len
+          crosswordGrid:
+            "Crossword grid. Use arrow keys to navigate and the keyboard to enter characters. Alternatively, use Tab to navigate to type the answers in Fill in the Blanks style fields instead of the grid.",
+          column: "column",
+          row: "row",
+          across: "across",
+          down: "down",
+          empty: "Empty",
+          resultFor: "Result for: @clue",
+          correct: "Correct",
+          wrong: "Wrong",
+          point: "Point",
+          solutionFor: "The solution for @clue is: @solution",
+          extraClueFor: "Open extra clue for @clue",
+          letterSevenOfNine: "Letter @position of @length",
+          lettersWord: "@length letter word",
+          check:
+            "Check the characters. The responses will be marked as correct, incorrect, or unanswered.",
+          showSolution:
+            "Show the solution. The crossword will be filled with its correct solution.",
+          retry:
+            "Retry the task. Reset all responses and start the task over again.",
+          yourResult: "You got @score out of @total points",
+        },
       },
-      behaviour: {
-        enableSolutionsButton: true,
-        enableRetry: true,
-        enableInstantFeedback: false,
-        scoreWords: true,
-        applyPenalties: false,
-        keepCorrectAnswers: false,
-      },
-      l10n: {
-        across: 'across',
-        down: 'down',
-        checkAnswer: 'Check answer',
-        // eslint-disable-next-line @stylistic/js/max-len
-        couldNotGenerateCrossword: 'Could not generate a crossword with the given words. Please try again with fewer words or words that have more characters in common.',
-        couldNotGenerateCrosswordTooFewWords: 'Could not generate a crossword. You need at least two words.',
-        couldNotGenerateCrosswordTooManyWords: 'Could not generate a crossword. You have too many words.',
-        // eslint-disable-next-line @stylistic/js/max-len
-        problematicWords: 'Some words could not be placed. If you are using fixed words, please make sure that their position doesn\'t prevent other words from being placed. Words with the same alignment may not be placed touching each other. Problematic word(s): @words',
-        showSolution: 'Show solution',
-        tryAgain: 'Retry',
-        extraClue: 'Extra clue',
-        closeWindow: 'Close window',
-        submitAnswer: 'Submit',
-      },
-      a11y: {
-        // eslint-disable-next-line @stylistic/js/max-len
-        crosswordGrid: 'Crossword grid. Use arrow keys to navigate and the keyboard to enter characters. Alternatively, use Tab to navigate to type the answers in Fill in the Blanks style fields instead of the grid.',
-        column: 'column',
-        row: 'row',
-        across: 'across',
-        down: 'down',
-        empty: 'Empty',
-        resultFor: 'Result for: @clue',
-        correct: 'Correct',
-        wrong: 'Wrong',
-        point: 'Point',
-        solutionFor: 'The solution for @clue is: @solution',
-        extraClueFor: 'Open extra clue for @clue',
-        letterSevenOfNine: 'Letter @position of @length',
-        lettersWord: '@length letter word',
-        check: 'Check the characters. The responses will be marked as correct, incorrect, or unanswered.',
-        showSolution: 'Show the solution. The crossword will be filled with its correct solution.',
-        retry: 'Retry the task. Reset all responses and start the task over again.',
-        yourResult: 'You got @score out of @total points',
-      },
-    }, this.params);
+      this.params
+    );
 
     // Ensure to consider enableRetry for keepCorrectAnswers
     this.params.keepCorrectAnswers =
@@ -102,18 +113,15 @@ export default class Crossword extends H5P.Question {
      * Remove values that match the default, so the regular stylesheet values
      * will be used to still allow CSS overrides via H5P's hook.
      */
-    this.params.theme = this.getDifference(
-      this.params.theme,
-      {
-        gridColor: '#000000',
-        cellBackgroundColor: '#ffffff',
-        cellColor: '#000000',
-        clueIdColor: '#606060',
-        cellBackgroundColorHighlight: '#3e8de8',
-        cellColorHighlight: '#ffffff',
-        clueIdColorHighlight: '#e0e0e0',
-      },
-    );
+    this.params.theme = this.getDifference(this.params.theme, {
+      gridColor: "#000000",
+      cellBackgroundColor: "#ffffff",
+      cellColor: "#000000",
+      clueIdColor: "#606060",
+      cellBackgroundColorHighlight: "#3e8de8",
+      cellColorHighlight: "#ffffff",
+      clueIdColorHighlight: "#e0e0e0",
+    });
 
     // Set buttons
     this.initialButtons = {
@@ -122,16 +130,23 @@ export default class Crossword extends H5P.Question {
       retry: this.params.behaviour.enableRetry,
     };
 
-    const defaultLanguage = (extras.metadata) ? extras.metadata.defaultLanguage || 'en' : 'en';
+    const defaultLanguage = extras.metadata
+      ? extras.metadata.defaultLanguage || "en"
+      : "en";
     this.languageTag = Util.formatLanguageCode(defaultLanguage);
 
     // Sanitize for use as text
     for (let word in this.params.l10n) {
-      this.params.l10n[word] = Util.stripHTML(Util.htmlDecode(this.params.l10n[word]));
+      this.params.l10n[word] = Util.stripHTML(
+        Util.htmlDecode(this.params.l10n[word])
+      );
     }
 
     // H5P.Question will add a . after yourResult for readspeaker
-    this.params.a11y.yourResult = this.params.a11y.yourResult.replace(/\.$/, '');
+    this.params.a11y.yourResult = this.params.a11y.yourResult.replace(
+      /\.$/,
+      ""
+    );
 
     // this.previousState now holds the saved content state of the previous session
     this.previousState = this.extras.previousState || {};
@@ -148,7 +163,8 @@ export default class Crossword extends H5P.Question {
         instantFeedback: this.params.behaviour.enableInstantFeedback,
         l10n: {
           couldNotGenerateCrossword: this.params.l10n.couldNotGenerateCrossword,
-          couldNotGenerateCrosswordTooFewWords: this.params.l10n.couldNotGenerateCrosswordTooFewWords,
+          couldNotGenerateCrosswordTooFewWords:
+            this.params.l10n.couldNotGenerateCrosswordTooFewWords,
           problematicWords: this.params.l10n.problematicWords,
           across: this.params.l10n.across,
           down: this.params.l10n.down,
@@ -157,7 +173,10 @@ export default class Crossword extends H5P.Question {
         },
         a11y: this.params.a11y,
         poolSize: this.params.behaviour.poolSize,
-        solutionWord: Util.toUpperCase(this.params.solutionWord, Util.UPPERCASE_EXCEPTIONS),
+        solutionWord: Util.toUpperCase(
+          this.params.solutionWord,
+          Util.UPPERCASE_EXCEPTIONS
+        ),
         words: this.params.words,
         previousState: this.previousState,
       },
@@ -171,7 +190,7 @@ export default class Crossword extends H5P.Question {
         onRead: (text) => {
           this.handleRead(text);
         },
-      },
+      }
     );
   }
 
@@ -179,11 +198,11 @@ export default class Crossword extends H5P.Question {
    * Register the DOM elements with H5P.Question
    */
   registerDomElements() {
-    this.setViewState('task');
+    this.setViewState("task");
 
     // Register task introduction text
-    if (this.params.taskDescription && this.params.taskDescription !== '') {
-      this.introduction = document.createElement('div');
+    if (this.params.taskDescription && this.params.taskDescription !== "") {
+      this.introduction = document.createElement("div");
       this.introduction.innerHTML = this.params.taskDescription;
       this.setIntroduction(this.introduction);
     }
@@ -192,14 +211,17 @@ export default class Crossword extends H5P.Question {
     this.setContent(this.content.getDOM());
 
     // Previous state might have been a filled table
-    if (this.params.behaviour.enableInstantFeedback && this.content.isTableFilled()) {
+    if (
+      this.params.behaviour.enableInstantFeedback &&
+      this.content.isTableFilled()
+    ) {
       this.checkAnswer();
     }
 
     // Content may need a resize once it's displayed (media queries or pseudo elements)
-    Util.waitForDOM('.h5p-crossword-input-container', () => {
+    Util.waitForDOM(".h5p-crossword-input-container", () => {
       setTimeout(() => {
-        this.trigger('resize');
+        this.trigger("resize");
       }, DOM_REGISTER_DELAY_MS);
     });
   }
@@ -214,7 +236,7 @@ export default class Crossword extends H5P.Question {
       this.addButtons();
     }
 
-    this.on('resize', () => {
+    this.on("resize", () => {
       this.content.resize();
     });
   }
@@ -224,31 +246,52 @@ export default class Crossword extends H5P.Question {
    */
   addButtons() {
     // Check answer button
-    this.addButton('check-answer', this.params.l10n.checkAnswer, () => {
-      this.checkAnswer();
-      this.trigger(this.getXAPIAnswerEvent());
-    }, this.initialButtons.check, {
-      'aria-label': this.params.a11y.check,
-    }, {
-      contentData: this.extras,
-      textIfSubmitting: this.params.l10n.submitAnswer,
-    });
+    this.addButton(
+      "check-answer",
+      this.params.l10n.checkAnswer,
+      () => {
+        this.checkAnswer();
+        this.trigger(this.getXAPIAnswerEvent());
+      },
+      this.initialButtons.check,
+      {
+        "aria-label": this.params.a11y.check,
+      },
+      {
+        contentData: this.extras,
+        textIfSubmitting: this.params.l10n.submitAnswer,
+      }
+    );
 
     // Show solution button
-    this.addButton('show-solution', this.params.l10n.showSolution, () => {
-      this.showSolutions();
-    }, this.initialButtons.showSolution, {
-      'aria-label': this.params.a11y.showSolution,
-    }, {});
+    this.addButton(
+      "show-solution",
+      this.params.l10n.showSolution,
+      () => {
+        this.showSolutions();
+      },
+      this.initialButtons.showSolution,
+      {
+        "aria-label": this.params.a11y.showSolution,
+      },
+      {}
+    );
 
     // Retry button
-    this.addButton('try-again', this.params.l10n.tryAgain, () => {
-      this.resetTask(
-        { keepCorrectAnswers: this.params.behaviour.keepCorrectAnswers },
-      );
-    }, this.initialButtons.retry, {
-      'aria-label': this.params.a11y.retry,
-    }, {});
+    this.addButton(
+      "try-again",
+      this.params.l10n.tryAgain,
+      () => {
+        this.resetTask({
+          keepCorrectAnswers: this.params.behaviour.keepCorrectAnswers,
+        });
+      },
+      this.initialButtons.retry,
+      {
+        "aria-label": this.params.a11y.retry,
+      },
+      {}
+    );
   }
 
   /**
@@ -263,36 +306,33 @@ export default class Crossword extends H5P.Question {
       return; // Call by previous state, not ready yet
     }
 
-    this.setViewState('results');
+    this.setViewState("results");
 
     this.content.checkAnswer();
 
-    this.hideButton('check-answer');
+    this.hideButton("check-answer");
 
     const score = this.getScore();
     const maxScore = this.getMaxScore();
 
     const textScore = H5P.Question.determineOverallFeedback(
-      this.params.overallFeedback, score / maxScore);
+      this.params.overallFeedback,
+      score / maxScore
+    );
 
     // H5P.Question expects ':num' and ':total'
     const ariaMessage = this.params.a11y.yourResult
-      .replace('@score', ':num')
-      .replace('@total', ':total');
+      .replace("@score", ":num")
+      .replace("@total", ":total");
 
-    this.setFeedback(
-      textScore,
-      score,
-      maxScore,
-      ariaMessage,
-    );
+    this.setFeedback(textScore, score, maxScore, ariaMessage);
 
     if (this.params.behaviour.enableSolutionsButton) {
-      this.showButton('show-solution');
+      this.showButton("show-solution");
     }
 
     if (this.params.behaviour.enableRetry) {
-      this.showButton('try-again');
+      this.showButton("try-again");
     }
   }
 
@@ -311,9 +351,8 @@ export default class Crossword extends H5P.Question {
     if (this.getMaxScore() > 0 && this.getScore() === this.getMaxScore()) {
       this.checkAnswer();
       this.trigger(this.getXAPIAnswerEvent());
-    }
-    else {
-      this.showButton('check-answer');
+    } else {
+      this.showButton("check-answer");
     }
   }
 
@@ -322,7 +361,11 @@ export default class Crossword extends H5P.Question {
    * @returns {boolean} True if user passed or task is not scored.
    */
   isPassed() {
-    return this.getScore() >= this.getMaxScore() || !this.getMaxScore() || this.getMaxScore() === 0;
+    return (
+      this.getScore() >= this.getMaxScore() ||
+      !this.getMaxScore() ||
+      this.getMaxScore() === 0
+    );
   }
 
   /**
@@ -361,7 +404,7 @@ export default class Crossword extends H5P.Question {
    * @returns {object} Current view state, stateName and id.
    */
   getViewState() {
-    let state = 'undefined';
+    let state = "undefined";
 
     for (const key in VIEW_STATES) {
       if (VIEW_STATES[key] === this.viewState) {
@@ -381,14 +424,10 @@ export default class Crossword extends H5P.Question {
    * @param {string|number} state State to be set.
    */
   setViewState(state) {
-    if (
-      typeof state === 'string' &&
-      VIEW_STATES[state] !== undefined
-    ) {
+    if (typeof state === "string" && VIEW_STATES[state] !== undefined) {
       this.viewState = VIEW_STATES[state];
-    }
-    else if (
-      typeof state === 'number' &&
+    } else if (
+      typeof state === "number" &&
       Object.values(VIEW_STATES).includes(state)
     ) {
       this.viewState = state;
