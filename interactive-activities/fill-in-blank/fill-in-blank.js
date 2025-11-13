@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sentence = document.querySelector(".sentence");
   const wordBank = document.getElementById("word-bank");
   const checkBtn = document.getElementById("check-btn");
   const showAnsBtn = document.getElementById("show-ans-btn");
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Define the words to be dragged and shuffled
   const words = ["IMS catalog", "PDS", "PDSE", "IMS directory", "ACBLIB"];
   const correctWords = ["IMS catalog", "IMS directory", "PDSE"];
-  const sentenceText = "The quick brown _*_ jumps over the lazy _*_.";
 
   let draggedItem = null;
   let attemptComplete = false;
@@ -21,17 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
     attemptComplete = false;
     // Clear word bank
     wordBank.innerHTML = "";
-
-    // Set sentence text
-    sentenceWithBlanks = sentenceText.replaceAll(
-      "_*_",
-      '<span class="drop-zone"></span>'
-    );
-    // sentence.innerHTML = sentenceWithBlanks;
-    // zoneArr = sentence.querySelectorAll("span");
-    // let dropZones = zoneArr;
-    // console.log(zoneArr);
-    // console.log(dropZones);
 
     // Set button text
     checkBtn.textContent = "Check";
