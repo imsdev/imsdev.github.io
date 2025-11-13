@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'ibm-plex-sans';
-  src: url('../../../fonts/static/IBMPlexSans-Regular.ttf') format('truetype');
+  font-family: "ibm-plex-sans";
+  src: url("../../../fonts/static/IBMPlexSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -8,7 +8,7 @@
 .h5p-question {
   background: rgba(255, 255, 255, 0.9);
   position: relative;
-  font-family: 'ibm-plex-sans';
+  font-family: "ibm-plex-sans";
   padding: 0.5em;
 }
 .h5p-question-audio {
@@ -49,12 +49,15 @@
   max-width: calc(100% - 2em);
 }
 
-.h5p-question-image.animatable .h5p-question-image-wrap.h5p-question-image-scalable {
-  -webkit-transition: -webkit-transform 0.3s 0.3s, margin 0.3s 0.3s, width 0.3s 0s;
+.h5p-question-image.animatable
+  .h5p-question-image-wrap.h5p-question-image-scalable {
+  -webkit-transition: -webkit-transform 0.3s 0.3s, margin 0.3s 0.3s,
+    width 0.3s 0s;
   transition: transform 0.3s 0.3s, margin 0.3s 0.3s, width 0.3s 0s;
 }
 
-.h5p-question-image.animatable.h5p-question-image-fill-width .h5p-question-image-wrap {
+.h5p-question-image.animatable.h5p-question-image-fill-width
+  .h5p-question-image-wrap {
   -webkit-transition: -webkit-transform 0.3s 0s, margin 0.3s 0s, width 0.3s 0.3s;
   transition: transform 0.3s 0s, margin 0.3s 0s, width 0.3s 0.3s;
 }
@@ -86,13 +89,13 @@
   width: 35%;
 }
 
-.h5p-question-image.h5p-question-image-fill-width .h5p-question-image-scalable{
+.h5p-question-image.h5p-question-image-fill-width .h5p-question-image-scalable {
   width: 100%;
 }
 
 .h5p-question-image-scalable:before {
   position: absolute;
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   content: "\f067";
   right: 0.7em;
   top: 0.7em;
@@ -137,14 +140,16 @@
   vertical-align: top;
   opacity: 0;
   max-height: 0;
-  transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);
+  transition: max-height 0.15s ease, margin-top 0.15s ease,
+    margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0, 1, 0, 1);
 }
 
 .h5p-question-scorebar.h5p-question-visible,
 .h5p-question-feedback.h5p-question-visible,
 .h5p-question-buttons.h5p-question-visible {
   opacity: 1;
-  transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s ease-in;
+  transition: max-height 0.15s ease, margin-top 0.15s ease,
+    margin-bottom 0.15s ease, opacity 0.15s ease-in;
 }
 
 .h5p-question-scorebar.h5p-question-visible {
@@ -170,7 +175,8 @@
   margin: 0 1em;
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.15s ease, margin-top 0.15s ease, margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0,1,0,1);
+  transition: max-height 0.15s ease, margin-top 0.15s ease,
+    margin-bottom 0.15s ease, opacity 0.15s cubic-bezier(0, 1, 0, 1);
 }
 
 .h5p-question-feedback a {
@@ -180,7 +186,6 @@
 
 .h5p-question-feedback.h5p-question-visible {
   margin: 1em;
-
 }
 .h5p-question-feedback-content {
   font-size: 1em;
@@ -198,7 +203,8 @@
   display: inline-block;
 }
 .h5p-question-buttons.h5p-question-visible {
-  display: inline-block;
+  display: flex;
+  flex-flow: row nowrap;
   width: calc(100% - 1.5em);
   margin-left: 1em;
   margin-right: 0.5em;
@@ -208,7 +214,7 @@
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {
   margin: 0 0.5em 0 0;
   white-space: nowrap;
-  font-family: 'ibm-plex-sans';
+  font-family: "ibm-plex-sans";
 }
 .h5p-question-buttons.has-scorebar {
   width: calc(100% - 15em - 1px); /* Need the 1px because of rounding */
@@ -305,7 +311,8 @@
   top: 0;
 }
 
-.h5p-question-feedback.h5p-question-popup.h5p-question-feedback-correct .h5p-question-feedback-content {
+.h5p-question-feedback.h5p-question-popup.h5p-question-feedback-correct
+  .h5p-question-feedback-content {
   margin-right: 1.5em;
 }
 
@@ -326,10 +333,10 @@
 }
 
 .h5p-question-feedback.h5p-question-popup .h5p-question-feedback-close:before {
-  font-family: 'h5pFontIcons';
+  font-family: "h5pFontIcons";
   font-size: 2.5em;
   line-height: 0.9em;
-  content: '\e600';
+  content: "\e600";
   color: #707070;
 }
 

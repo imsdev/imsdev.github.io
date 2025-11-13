@@ -1,16 +1,15 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 /* Styling of button */
 .h5peditor .ui-dialog .h5p-joubelui-button,
 .h5peditor .h5p-joubelui-button,
 .h5p-joubelui-button {
-  font-size: 1em;
+  font-size: 0.875rem;
+  font-weight: 400;
   line-height: 1.2;
   margin: 0 0.5em 1em;
-  padding: 0.5em 1.25em;
-  border-radius: 2em;
-
-  background: #1a73d9;
+  padding: 1em 1.5em;
+  background: #0f62fe;
   color: #ffffff;
 
   cursor: pointer;
@@ -19,12 +18,19 @@
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
   text-shadow: none;
   text-decoration: none;
   vertical-align: baseline;
 }
+
+.h5p-joubelui-button {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .h5p-joubelui-button:first-child {
   margin: 0 0.5em 1em 0;
 }
@@ -39,20 +45,17 @@
 
 /* Truncated buttons */
 .h5p-joubelui-button.truncated {
-  width: 2.235em;
-  height: 2.235em;
-  border-radius: 50%;
-  padding: 0;
+  padding: 1em 1.25em;
   text-align: center;
 }
 
-.h5p-joubelui-button.truncated:before {
+.h5p-joubelui-button.truncated:after {
   padding: 0;
 }
 
 .h5p-joubelui-button:hover,
 .h5p-joubelui-button:focus {
-  background: #1356a3;
+  background: #0050e7;
   color: #fff;
   text-decoration: none;
   -webkit-transition: initial;
@@ -73,20 +76,20 @@
   top: 2px;
 }
 
-.h5p-joubelui-button:before {
-  font-family: 'H5PFontAwesome4';
-  padding-right: 0.5em;
+.h5p-joubelui-button:after {
+  font-family: "H5PFontAwesome4";
+  padding-left: 1em;
 }
 
-.h5p-question-try-again:before {
+.h5p-question-try-again:after {
   content: "\F01E";
 }
 
-.h5p-question-show-solution:before {
+.h5p-question-show-solution:after {
   content: "\F06E";
 }
 
-.h5p-question-check-answer:before {
+.h5p-question-check-answer:after {
   content: "\F058";
 }
 
