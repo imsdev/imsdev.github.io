@@ -84,19 +84,13 @@ function createComponent(html) {
       // --------------------------------------------------------------------------------------------------
 
       searchIcon.addEventListener("click", () => {
-        if (window.innerWidth <= 768) {
-          console.log(siteHeader.style.display);
+        if (window.innerWidth <= 1023) {
           if (siteHeader.style.display === "block") {
-            console.log("open");
             siteHeader.style.display = "none";
             searchInput.style.display = "block";
             navigation.classList.add("search-bar-open");
             searchForm.classList.add("search-bar-open");
             searchBar.classList.add("search-bar-open");
-            // navigation.style.width = "100%";
-            // searchForm.style.width = "100%";
-            // searchForm.style.paddingRight = "0.2em";
-            // searchBar.style.width = "100%";
           } else {
             console.log("close");
             siteHeader.style.display = "block";
@@ -105,6 +99,12 @@ function createComponent(html) {
             searchForm.classList.remove("search-bar-open");
             searchBar.classList.remove("search-bar-open");
           }
+        }
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024) {
+          searchInput.style.display = "block";
         }
       });
 

@@ -47,7 +47,7 @@ form div {
 }
 
 form div > img {
-  padding: 0.1em 0.5em;
+  padding: 0.1em 0.8em;
 }
 
 form input {
@@ -244,8 +244,8 @@ input {
   }
 }
 
-/* 768px and below screen sizes */
-@media screen and (max-width: 48em) {
+/* 1023px and below screen sizes */
+@media screen and (max-width: 63.9375em) {
   #search-input {
     display: none;
   }
@@ -253,6 +253,10 @@ input {
 
 /* 1024px and above screen sizes */
 @media screen and (min-width: 64em) {
+  #search-input {
+    display: block;
+  }
+
   .navigation {
     width: 40%;
   }
