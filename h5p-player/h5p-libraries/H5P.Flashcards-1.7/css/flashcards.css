@@ -1,15 +1,22 @@
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("../../../fonts/static/IBMPlexSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .h5p-flashcards {
   position: relative;
   overflow: hidden;
   padding: 0.5em 0 0em;
   line-height: 1.25em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "ibm-plex-sans";
   font-size: 1em;
   background: rgba(255, 255, 255, 0.9);
 }
 
 .h5p-flashcards.h5p-standalone {
-  background-color: #27344e;
+  background-color: #f4f4f4;
 }
 
 .h5p-flashcards .h5p-loading {
@@ -33,7 +40,7 @@
 }
 
 .h5p-flashcards.h5p-standalone .h5p-description {
-  color: #f9f9f9;
+  color: #000;
 }
 
 .h5p-flashcards .h5p-inner {
@@ -101,10 +108,9 @@
 
 .h5p-flashcards .h5p-card > .h5p-flashcard-overlay {
   z-index: 1;
-  background-color: #27344e;
+  background-color: #f4f4f4;
   cursor: pointer;
   opacity: 0.75;
-  border-radius: 2em;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
@@ -118,7 +124,10 @@
   opacity: 0.68;
 }
 
-.h5p-flashcards .h5p-card.h5p-correct .h5p-imageholder > .h5p-flashcard-overlay {
+.h5p-flashcards
+  .h5p-card.h5p-correct
+  .h5p-imageholder
+  > .h5p-flashcard-overlay {
   background-color: #6cda4a;
   opacity: 0.75;
 }
@@ -138,7 +147,6 @@
   margin: auto;
   background-color: transparent;
   border: 0.1em solid transparent;
-  border-radius: 2em;
   transform: scale(0.95);
   -webkit-transition: transform 0.5s;
   transition: transform 0.5s;
@@ -154,14 +162,18 @@
 
 .h5p-flashcards .h5p-current .h5p-cardholder {
   transform: scale(1);
-  box-shadow: 0px 0px 23px 4px rgba(0,0,0,0.31);
+  box-shadow: 0px 0px 23px 4px rgba(0, 0, 0, 0.31);
 }
 
 .h5p-flashcards .h5p-imageholder {
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -webkit-box;
+  /* TWEENER - IE 10 */
+  display: -ms-flexbox;
+  /* NEW - Chrome */
+  display: -webkit-flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: flex;
 
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -217,7 +229,7 @@
 
 .h5p-flashcards .h5p-card div.h5p-clue:after {
   content: "\f03e";
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   font-size: 7em;
   line-height: 100px;
   color: #a3b7be;
@@ -227,7 +239,6 @@
   margin: 0 1em 1em 1em;
   padding: 0 1em 1em 1em;
   background-color: white;
-  border-radius: 0 0 2em 2em;
 }
 
 .h5p-flashcards .h5p-answer {
@@ -237,11 +248,11 @@
 }
 
 .h5p-flashcards .h5p-answer .h5p-button {
+  font-family: "ibm-plex-sans";
   position: absolute;
   display: inline-block;
   border: none;
-  border-radius: 0 2em 2em 0;
-  background: #2A64E8;
+  background: #0f62fe;
   padding: 0.5em 1em;
   box-shadow: none;
   top: 0;
@@ -257,7 +268,10 @@
   visibility: hidden;
 }
 
-.h5p-flashcards .h5p-answer .h5p-input:not(.h5p-exceeds-width) .h5p-icon-button {
+.h5p-flashcards
+  .h5p-answer
+  .h5p-input:not(.h5p-exceeds-width)
+  .h5p-icon-button {
   visibility: hidden;
 }
 
@@ -265,19 +279,22 @@
   right: 3.2em;
 }
 
-.h5p-flashcards .h5p-answer .h5p-input.has-tip.h5p-exceeds-width .h5p-textinput {
+.h5p-flashcards
+  .h5p-answer
+  .h5p-input.has-tip.h5p-exceeds-width
+  .h5p-textinput {
   padding-right: 5.5em;
 }
 
 .h5p-flashcards .h5p-answer .h5p-button.h5p-icon-button:after {
   content: "\f058";
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   font-size: 1.5em;
 }
 
 .h5p-flashcards .h5p-answer .h5p-button:hover:not(:active) {
-  background: #72c1e6;
-  color: #104a65;
+  background: #0050e6;
+  color: #fff;
 }
 
 .h5p-flashcards .h5p-answer .h5p-button:focus {
@@ -293,11 +310,10 @@
   width: 100%;
   height: 3em;
   padding: 0 4em 0 1em;
-  border-radius: 2em;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  color: #27344e;
-  border: 2px solid #e7e9ec;
+  font-family: "ibm-plex-sans";
+  border: none;
+  border-bottom: 2px solid #8d8d8d;
 }
 
 .h5p-flashcards .h5p-answer .h5p-textinput::-ms-clear {
@@ -342,7 +358,7 @@
 
 .h5p-flashcards .h5p-answer .h5p-wrong .h5p-feedback-label:before {
   content: "\f00d";
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   padding-right: 2px;
 }
 
@@ -351,7 +367,7 @@
   right: 1em;
   top: 1em;
   line-height: 1em;
-  color: #437C31;
+  color: #437c31;
   transition: opacity 2s;
   opacity: 1;
   outline: none;
@@ -359,7 +375,7 @@
 
 .h5p-flashcards .h5p-answer .h5p-correct .h5p-feedback-label:before {
   content: "\f00c";
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   padding-right: 2px;
 }
 
@@ -374,22 +390,18 @@
   padding: 0.25em 0.5em;
   margin: 0 auto;
   display: inline-block;
+  background-color: #f4f4f4;
 
   font-size: 1em;
   font-weight: normal;
   line-height: 1.25em;
   word-wrap: break-word;
-
-  border-radius: 1em 0 0 1em;
-  border: 0.0625em solid #c7c7c7;
-  color: rgb(51, 51, 51);
   box-sizing: content-box;
 }
 
 .h5p-flashcards .h5p-textinput:focus {
   outline: none;
-  box-shadow: 0 0 0.5em 0 #7fb8ff;
-  border-color: #7fb8ff;
+  border-color: #0f62fe;
 }
 
 .h5p-flashcards .h5p-input.h5p-correct .h5p-textinput[disabled],
@@ -403,15 +415,10 @@
   margin: auto;
   padding: 0.3125em 0.6875em;
   border: 0.1875em solid #fff;
-  border-radius: 1em;
   margin-bottom: 1em;
   cursor: pointer;
   color: #fff;
   outline: none;
-}
-
-.h5p-flashcards .h5p-button:focus {
-  box-shadow: 0 0 0.5em 0 #7fb8ff;
 }
 
 .h5p-flashcards .h5p-button[disabled],
@@ -422,7 +429,7 @@
 
 .h5p-flashcards .h5p-progress {
   margin: 2em 0;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 .h5p-flashcards .h5p-navigation {
@@ -440,26 +447,29 @@
 }
 
 .h5p-flashcards .h5p-navigation .h5p-button {
-  font-family: 'H5PFontIcons';
-  color: #a3adc4;
-  background: none;
-  border: 1px solid #414d66;
+  font-family: "H5PFontIcons";
+  color: #fff;
+  background: #0f62fe;
+  border: none;
   font-size: 1.75em;
   top: 0.75em;
 }
 
 .h5p-flashcards .h5p-navigation .h5p-button:hover {
-  background-color: #3c465d;
+  background-color: #0050e6;
 }
 
 .h5p-flashcards .h5p-button.h5p-next {
   position: absolute;
   right: 0.75em;
+  padding-bottom: 0.5em;
 }
 
 .h5p-flashcards .h5p-button.h5p-previous {
   position: absolute;
   left: 0.75em;
+  margin-top: 0.2em;
+  padding-top: 0.5em;
 }
 
 .h5p-flashcards .h5p-button.h5p-next:before {
@@ -536,7 +546,7 @@
   min-width: 70%;
   max-width: calc(100% - 1em);
   color: white;
-  background: #E50B0B;
+  background: #e50b0b;
 }
 
 .h5p-flashcards .h5p-solution.h5p-hidden {
@@ -544,17 +554,17 @@
 }
 
 .h5p-flashcards .h5p-solution.h5p-hidden > span {
-  -webkit-transform: scale(0,1);
-  -moz-transform: scale(0,1);
-  -ms-transform: scale(0,1);
-  transform: scale(0,1);
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
 }
 
 .h5p-flashcards .h5p-collapse {
-  -webkit-transform: scale(0,1);
-  -moz-transform: scale(0,1);
-  -ms-transform: scale(0,1);
-  transform: scale(0,1);
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
 }
 
 button::-moz-focus-inner {
@@ -576,7 +586,7 @@ button::-moz-focus-inner {
 .h5p-flashcards .h5p-flashcards-results {
   display: none;
   -webkit-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 4em;
   position: absolute;
   left: 0;
@@ -594,7 +604,7 @@ button::-moz-focus-inner {
   position: absolute;
   float: left;
   font-size: 2em;
-  color: white;
+  color: #000;
 }
 
 .h5p-flashcards .h5p-results-retry-button {
@@ -602,30 +612,30 @@ button::-moz-focus-inner {
   margin: 0 auto;
   width: 9em;
   padding: 0.87em;
-  color: #adb6c7;
-  background: none;
-  border: 1px solid #414d66;
+  color: #fff;
+  background-color: #0050e6;
+  font-family: "ibm-plex-sans";
 }
 
 .h5p-flashcards .h5p-results-retry-button:hover {
   background-color: #3c465d;
 }
 
-.h5p-flashcards .h5p-results-retry-button:before {
+.h5p-flashcards .h5p-results-retry-button:after {
   font-family: "H5PFontAwesome4";
   content: "\f01e";
-  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 .h5p-flashcards .h5p-results-score {
   position: absolute;
-  color: #adb6c7;
+  color: #000;
   font-size: 1.4em;
   right: 1em;
 }
 
-.h5p-flashcards .h5p-results-score span{
-  color: white;
+.h5p-flashcards .h5p-results-score span {
+  color: #000;
   padding: 0 0.2em;
 }
 
@@ -643,9 +653,9 @@ button::-moz-focus-inner {
   position: relative;
   overflow: hidden;
   color: white;
-  padding: 0.8em;
-  border: 1px solid #414d66;
-  border-radius: 1.5em;
+  padding: 0.8em 0.8em 0.8em 2em;
+  background-color: #393939;
+  margin: 1em 0;
 }
 
 .h5p-flashcards .h5p-results-image-holder {
@@ -668,7 +678,7 @@ button::-moz-focus-inner {
   text-align: center;
 }
 .h5p-flashcards .h5p-results-image-holder.no-image:after {
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   content: "\f03e";
   font-size: 2em;
   line-height: 1.8em;
@@ -695,9 +705,8 @@ button::-moz-focus-inner {
   color: #adb6c7;
 }
 
-
 .h5p-flashcards .h5p-results-answer span.h5p-correct {
-  color: #7cf0c1;
+  color: #6fdc8c;
 }
 
 .h5p-flashcards .h5p-results-answer span.h5p-correct span {
@@ -710,17 +719,16 @@ button::-moz-focus-inner {
   top: 0.5em;
   bottom: 0.5em;
   width: 3.5em;
-  border-radius: 0 1em 1em 0;
-  background-color: #2db6ac;
+  background-color: #42be65;
   text-align: center;
 }
 
 .h5p-flashcards .h5p-results-box:after {
-  font-family: 'H5PFontIcons';
+  font-family: "H5PFontIcons";
   content: "\e601";
   font-size: 3em;
   vertical-align: middle;
-  line-height: 1.5em;
+  line-height: 1.2em;
 }
 
 .h5p-flashcards .h5p-results-list-item.h5p-incorrect .h5p-results-answer {
@@ -736,8 +744,8 @@ button::-moz-focus-inner {
 }
 
 .h5p-flashcards .h5p-visual-progress {
-  background-color: #1d273c;
-  border: 1px solid #5f6c87;
+  background-color: #343a3f;
+  border: 1px solid #343a3f;
   border-radius: 8px;
   padding: 3px;
   width: 18em;
@@ -752,7 +760,7 @@ button::-moz-focus-inner {
 }
 
 .h5p-flashcards .h5p-visual-progress div {
-  background-color: #7cf0bd;
+  background-color: #6fdc8c;
   height: 7px;
   width: 0%;
   border-radius: 5px;
@@ -762,17 +770,17 @@ button::-moz-focus-inner {
 @-webkit-keyframes rotateIn {
   from {
     -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
-            transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
     opacity: 0;
   }
 
   to {
     -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
     opacity: 1;
   }
 }
@@ -780,24 +788,24 @@ button::-moz-focus-inner {
 @keyframes rotateIn {
   from {
     -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
-            transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
     opacity: 0;
   }
 
   to {
     -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
     opacity: 1;
   }
 }
 
 .h5p-rotate-in {
   -webkit-animation-name: rotateIn;
-          animation-name: rotateIn;
+  animation-name: rotateIn;
   right: 1.75em;
   top: 0.9em;
   font-size: 1.3em;
@@ -834,8 +842,9 @@ button::-moz-focus-inner {
 }
 
 .h5p-show-results button {
+  font-family: "ibm-plex-sans";
   position: relative;
-  color: #7cf0bd;
+  color: #000;
   background: none;
   top: 2.5em;
   font-size: 0.9em;
@@ -849,7 +858,7 @@ button::-moz-focus-inner {
 }
 
 .h5p-show-results button:after {
-  font-family: 'h5pFontAwesome4';
+  font-family: "h5pFontAwesome4";
   content: "\f0a9";
   font-size: 1.1em;
   vertical-align: bottom;
@@ -929,7 +938,7 @@ button::-moz-focus-inner {
 }
 
 .using-mouse .h5p-flashcards .h5p-button.h5p-check-button:active {
-  background-color: #20a5ca;
+  background-color: #0050e6;
 }
 
 .h5p-flashcards .hidden-but-read {
