@@ -83,37 +83,23 @@ function createComponent(html) {
       // Event listeners for search
       // --------------------------------------------------------------------------------------------------
 
+      // Toggle open search bar (small screens)
       searchIcon.addEventListener("click", () => {
         if (window.innerWidth <= 1023) {
           if (siteHeader.style.display === "block") {
-            siteHeader.style.display = "none";
-            searchInput.style.display = "block";
-            navigation.classList.add("search-bar-open");
-            searchForm.classList.add("search-bar-open");
-            searchBar.classList.add("search-bar-open");
+            openSearchBar();
           } else {
-            siteHeader.style.display = "block";
-            searchInput.style.display = "none";
-            navigation.classList.remove("search-bar-open");
-            searchForm.classList.remove("search-bar-open");
-            searchBar.classList.remove("search-bar-open");
+            closeSearchBar("block", "none");
           }
         }
       });
 
+      // Toggle open search bar (on screen resize)
       window.addEventListener("resize", () => {
         if (window.innerWidth >= 1024) {
-          siteHeader.style.display = "block";
-          searchInput.style.display = "block";
-          navigation.classList.remove("search-bar-open");
-          searchForm.classList.remove("search-bar-open");
-          searchBar.classList.remove("search-bar-open");
+          closeSearchBar("block", "block");
         } else {
-          siteHeader.style.display = "block";
-          searchInput.style.display = "none";
-          navigation.classList.remove("search-bar-open");
-          searchForm.classList.remove("search-bar-open");
-          searchBar.classList.remove("search-bar-open");
+          closeSearchBar("block", "none");
         }
       });
 
@@ -217,6 +203,23 @@ function createComponent(html) {
         // Rotate arrow and display/hide result description
         arrow.classList.toggle("rotArrow");
         desc.classList.toggle("search_content_drop");
+      }
+
+      // Open search bar
+      function openSearchBar() {
+        siteHeader.style.display = "none";
+        searchInput.style.display = "block";
+        navigation.classList.add("search-bar-open");
+        searchForm.classList.add("search-bar-open");
+        searchBar.classList.add("search-bar-open");
+      }
+
+      function closeSearchBar(headerState, inputState) {
+        siteHeader.style.display = headerState;
+        searchInput.style.display = inputState;
+        navigation.classList.remove("search-bar-open");
+        searchForm.classList.remove("search-bar-open");
+        searchBar.classList.remove("search-bar-open");
       }
     }
   }

@@ -242,6 +242,10 @@ input {
   .logo h4 {
     font-size: 1em;
   }
+
+  form input {
+    font-size: 1em;
+  }
 }
 
 /* 1023px and below screen sizes */
@@ -249,10 +253,6 @@ input {
   #search-input {
     display: none;
   }
-
-  /* form input {
-    font-size: 1em;
-  } */
 }
 
 /* 1024px and above screen sizes */
