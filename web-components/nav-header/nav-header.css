@@ -249,10 +249,18 @@ input {
   #search-input {
     display: none;
   }
+
+  /* form input {
+    font-size: 1em;
+  } */
 }
 
 /* 1024px and above screen sizes */
 @media screen and (min-width: 64em) {
+  .site-header {
+    display: block;
+  }
+
   #search-input {
     display: block;
   }

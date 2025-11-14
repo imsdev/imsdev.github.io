@@ -92,7 +92,6 @@ function createComponent(html) {
             searchForm.classList.add("search-bar-open");
             searchBar.classList.add("search-bar-open");
           } else {
-            console.log("close");
             siteHeader.style.display = "block";
             searchInput.style.display = "none";
             navigation.classList.remove("search-bar-open");
@@ -104,7 +103,17 @@ function createComponent(html) {
 
       window.addEventListener("resize", () => {
         if (window.innerWidth >= 1024) {
+          siteHeader.style.display = "block";
           searchInput.style.display = "block";
+          navigation.classList.remove("search-bar-open");
+          searchForm.classList.remove("search-bar-open");
+          searchBar.classList.remove("search-bar-open");
+        } else {
+          siteHeader.style.display = "block";
+          searchInput.style.display = "none";
+          navigation.classList.remove("search-bar-open");
+          searchForm.classList.remove("search-bar-open");
+          searchBar.classList.remove("search-bar-open");
         }
       });
 
