@@ -1,585 +1,674 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <!-- Basic meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="geo.country" content="ZZ" />
+    <meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
+    <meta name="dcterms.date" content="2020-07-18" />
+    <meta name="keywords" content="IMS Central, IMS Developer, IMS" />
+    <meta name="robots" content="index, follow" />
 
-<head>
-	<!-- Basic meta -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="geo.country" content="ZZ" />
-	<meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
-	<meta name="dcterms.date" content="2020-07-18" />
-	<meta name="keywords" content="IMS Central, IMS Developer, IMS" />
-	<meta name="robots" content="index, follow" />
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="wp-content/IMS_logo_small.png"
+    />
 
-	<!-- Favicon -->
-	<link id="favicon"
-	rel="shortcut icon"
-	type="image/x-icon"
-	href="wp-content/IMS_logo_small.png">
+    <!-- Page title -->
+    <title>IMS Courses</title>
 
-	<!-- Page title -->
-	<title>IMS Courses</title>
+    <!-- Meta -->
+    <link rel="canonical" href="ims-education.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="IMS Courses" />
+    <meta property="og:description" content="IMS Courses" />
+    <meta
+      property="og:url"
+      content="http://www/imsdev.github.io/ims-education.html"
+    />
+    <meta property="og:site_name" content="IMS Central" />
+    <meta
+      property="og:image"
+      content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="IMS Courses" />
+    <meta name="twitter:title" content="IMS Courses" />
+    <meta
+      property="og:image"
+      content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png"
+    />
 
-	<!-- Meta -->
-	<link rel="canonical" href="ims-education.html" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="IMS Courses" />
-	<meta property="og:description" content="IMS Courses" />
-	<meta property="og:url" content="http://www/imsdev.github.io/ims-education.html" />
-	<meta property="og:site_name" content="IMS Central" />
-	<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:description" content="IMS Courses" />
-	<meta name="twitter:title" content="IMS Courses" />
-	<meta property="og:image" content="http://www/imsdev.github.io/wp-content/IMS_logo_large.png" />
+    <!-- Sheets -->
+    <!-- Imported styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Migrated stylesheets -->
+    <link rel="stylesheet" href="wp-includes/css/www.css" />
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="wp-includes/css/pure.css" />
+    <link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="wp-includes/css/dropnav.css" />
+    <link rel="stylesheet" href="wp-includes/css/page.css" />
 
-	<!-- Sheets -->
-	<!-- Imported styling -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<!-- Migrated stylesheets -->
-	<link rel="stylesheet" href="wp-includes/css/www.css" />
-	<!-- Pure CSS -->
-	<link rel="stylesheet" href="wp-includes/css/pure.css">
-	<link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="wp-includes/css/dropnav.css">
-	<link rel="stylesheet" href="wp-includes/css/page.css">
+    <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 132193, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
 
-	<!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
-	<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:132193,hjsv:6};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-	</script>
+    <!-- TipueSearch -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
 
-	<!-- TipueSearch -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
-	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
-	<script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
+    <!-- delayed search -->
+    <script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
 
-	<!-- delayed search -->
-	<script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
-
-	<!-- Web components -->
-	<script src="web-components/nav-header/nav-header.js" type="module"></script>
-	<script src="web-components/hero-section/hero-section.js" type="module"></script>
-	<script src="web-components/jump-links/jump-links.js" type="module"></script>
-	<script src="web-components/course-card/course-card.js" type="module"></script>
+    <!-- Web components -->
+    <script
+      src="web-components/nav-header/nav-header.js"
+      type="module"
+    ></script>
+    <script
+      src="web-components/hero-section/hero-section.js"
+      type="module"
+    ></script>
+    <script
+      src="web-components/jump-links/jump-links.js"
+      type="module"
+    ></script>
+    <script
+      src="web-components/course-card/course-card.js"
+      type="module"
+    ></script>
     <script src="web-components/footer/footer.js" type="module"></script>
-</head>
+  </head>
 
-<!-- MASTHEAD_SITENAV_BEGIN -->
-<body>
-	<nav-header></nav-header>
+  <!-- MASTHEAD_SITENAV_BEGIN -->
+  <body>
+    <nav-header></nav-header>
 
-	<main id="content" class="main-content">
-		<!-- =========================== Hero =========================== -->
-		<hero-section
-			name="IMS courses"
-			image="wp-content/icons/icon_bookmark.svg" 
-			section="Learn"
-			desc="<p>Get comprehensive IMS™ education by taking these self-paced and instructor-led courses.</p><p style='font-weight: 300;'>You can also earn a digital badge!</p>"
-			linktext="Sign up for an IBM ID →"
-			link="https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D9fe3fe66-c22f-4c7b-8e5d-01dfc0e8defa%26client_id%3DMyIBMDallasProdCI"
-			highlight="IMS High Availability Large Database (HALDB) live course"
-			highlightsub="Register today!"
-			highlightlink="#ims-haldb-nov-2025"
-		></hero-section>
+    <main id="content" class="main-content">
+      <!-- =========================== Hero =========================== -->
+      <hero-section
+        name="IMS courses"
+        image="wp-content/icons/icon_bookmark.svg"
+        section="Learn"
+        desc="<p>Get comprehensive IMS™ education by taking these self-paced and instructor-led courses.</p><p style='font-weight: 300;'>You can also earn a digital badge!</p>"
+        linktext="Sign up for an IBM ID →"
+        link="https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D9fe3fe66-c22f-4c7b-8e5d-01dfc0e8defa%26client_id%3DMyIBMDallasProdCI"
+        highlight="IMS High Availability Large Database (HALDB) live course"
+        highlightsub="Register today!"
+        highlightlink="#ims-haldb-nov-2025"
+      ></hero-section>
 
-		<!-- =========================== Jump links =========================== -->
-		<jump-links
-			links="All roles, IMS database, System programming, Application development, Instructor-led, FAQs, Support"
-		></jump-links>
+      <!-- =========================== Jump links =========================== -->
+      <jump-links
+        links="All roles, IMS database, System programming, Application development, Instructor-led, FAQs, Support"
+      ></jump-links>
 
-		<!-- =========================== Courses - all roles =========================== -->
-		<section id="all-roles" class="white-bg">
-			<div><h2>All roles</h2></div>
-				<!-- IMS Fundamentals -->
-				<course-card
-					id="ims-fundamentals"
-					name="IMS Fundamentals"
-					desc="Learn about the main components of IBM IMS: IMS Database Manager (IMS DB), 
+      <!-- =========================== Courses - all roles =========================== -->
+      <section id="all-roles" class="white-bg">
+        <div><h2>All roles</h2></div>
+        <!-- IMS Fundamentals -->
+        <course-card
+          id="ims-fundamentals"
+          name="IMS Fundamentals"
+          desc="Learn about the main components of IBM IMS: IMS Database Manager (IMS DB), 
 						IMS Transaction Manager (IMS TM), and common system services for IMS DB and 
 						IMS TM. Learn how these components work and interact with applications, how 
 						IMS databases differ from each other and differ from relational databases 
 						message types, security, maintenance, troubleshooting, and more."
-					imgsrc="wp-content/course-badges/badge_ims_fundamentals.png"
-					selfpaced="true"
-					level="Beginner"
-					cost="None"
-					badge="Yes"
-					time="32 hours"
-					link="https://www.ibm.com/training/course/ims-fundamentals-DL00951G"
-				>
-				</course-card>
+          imgsrc="wp-content/course-badges/badge_ims_fundamentals.png"
+          selfpaced="true"
+          level="Beginner"
+          cost="None"
+          badge="Yes"
+          time="32 hours"
+          link="https://www.ibm.com/training/course/ims-fundamentals-DL00951G"
+        >
+        </course-card>
 
-				<!-- PL/I Programming -->
-				<course-card
-					id="ims-intro-pli"
-					name="Introduction to the PL/I Programming Language"
-					desc="In this 8-hour, introductory course, you’ll learn about the parallels and differences 
+        <!-- PL/I Programming -->
+        <course-card
+          id="ims-intro-pli"
+          name="Introduction to the PL/I Programming Language"
+          desc="In this 8-hour, introductory course, you’ll learn about the parallels and differences 
 						between C and PL/I, particularly in language syntax, program structure, declarations, 
 						loops, data types, arrays, structures, and more."
-					imgsrc="wp-content/course-badges/badge_intro_pli.png"
-					selfpaced="true"
-					level="Beginner"
-					cost="None"
-					badge="Yes"
-					time="8 hours"
-					link="https://www.ibm.com/training/course/introduction-to-the-pli-programming-language-DL00964G"
-				>
-				</course-card>	
-		</section>
+          imgsrc="wp-content/course-badges/badge_intro_pli.png"
+          selfpaced="true"
+          level="Beginner"
+          cost="None"
+          badge="Yes"
+          time="8 hours"
+          link="https://www.ibm.com/training/course/introduction-to-the-pli-programming-language-DL00964G"
+        >
+        </course-card>
+      </section>
 
-		<!-- =========================== Courses - IMS database =========================== -->
-		<section id="ims-database" class="white-bg">
-			<div"><h2>IMS database</h2></div>
-				<!-- Logical Relationships -->
-				<course-card
-					name="IMS Logical Relationships"
-					desc="Logical relationships establish a logical access paths between segments that 
+      <!-- =========================== Courses - IMS database =========================== -->
+      <section id="ims-database" class="white-bg">
+        <div><h2>IMS database</h2></div>
+        <!-- Logical Relationships -->
+        <course-card
+          name="IMS Logical Relationships"
+          desc="Logical relationships establish a logical access paths between segments that 
 						are usually in different databases. In this course, you’ll learn how to code 
 						the DBDs and PSBs for IMS databases involved in logical relationships, adjust 
 						the performance of these databases, and review IMS Monitor reports to see whether 
 						the logical relationships are effective."
-					imgsrc="wp-content/course-badges/badge_log_rel.png"
-					selfpaced="true"
-					level="Advanced"
-					cost="None"
-					badge="Yes"
-					time="30 hours"
-					link="https://www.ibm.com/training/course/ims-logical-relationships-DL00966G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_log_rel.png"
+          selfpaced="true"
+          level="Advanced"
+          cost="None"
+          badge="Yes"
+          time="30 hours"
+          link="https://www.ibm.com/training/course/ims-logical-relationships-DL00966G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- Database Fundamentals -->
-				<course-card
-					id="ims-dbfund"
-					name="IMS Database Fundamentals"
-					desc="Learn about IMS databases, including the structure of database records, 
+        <!-- Database Fundamentals -->
+        <course-card
+          id="ims-dbfund"
+          name="IMS Database Fundamentals"
+          desc="Learn about IMS databases, including the structure of database records, 
 						how those records are accessed, DBDs, PSBs, DL/I calls, 
 						secondary indexes, logical relationships, database types, 
 						access methods, database recovery, and more."
-					imgsrc="wp-content/course-badges/badge_ims_db_fundamentals.png"
-					selfpaced="true"
-					level="Beginner"
-					cost="None"
-					badge="Yes"
-					time="24 hours"
-					link="https://www.ibm.com/training/course/ims-database-fundamentals-DL00954G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_ims_db_fundamentals.png"
+          selfpaced="true"
+          level="Beginner"
+          cost="None"
+          badge="Yes"
+          time="24 hours"
+          link="https://www.ibm.com/training/course/ims-database-fundamentals-DL00954G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- DBRC -->
-				<course-card
-					id="ims-dbrc"
-					name="IMS Database Recovery Control (DBRC)"
-					desc="IMS DBRC, which is a feature of the IMS Database Manager, helps with the recovery of IMS databases.
+        <!-- DBRC -->
+        <course-card
+          id="ims-dbrc"
+          name="IMS Database Recovery Control (DBRC)"
+          desc="IMS DBRC, which is a feature of the IMS Database Manager, helps with the recovery of IMS databases.
 						In this comprehensive course, you'll learn how to install, customize, administer, and maintain DBRC. 
 						This course is for experienced IMS system programmers and database administrators who need to work with 
 						DBRC."
-					imgsrc="wp-content/course-badges/badge_dbrc.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="32 hours"
-					link="https://www.ibm.com/training/course/ims-database-recovery-control-dbrc-DL00958G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_dbrc.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="32 hours"
+          link="https://www.ibm.com/training/course/ims-database-recovery-control-dbrc-DL00958G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- Data Sharing -->
-				<course-card
-					id="ims-datashare"
-					name="IMS Data Sharing"
-					desc="When more than one IMS system has concurrent access to an IMS database, those systems are sharing data. 
+        <!-- Data Sharing -->
+        <course-card
+          id="ims-datashare"
+          name="IMS Data Sharing"
+          desc="When more than one IMS system has concurrent access to an IMS database, those systems are sharing data. 
 						In this advanced course, you'll learn about IMS data sharing capabilities, how multiple 
 						IMS systems on different LPARs and processors can access and update the same databases 
 						with complete integrity, and how to implement and maintain a data sharing environment."
-					imgsrc="wp-content/course-badges/badge_ims_data_sharing.png"
-					selfpaced="true"
-					level="Advanced"
-					cost="None"
-					badge="Yes"
-					time="12 hours"
-					link="https://www.ibm.com/training/course/ims-data-sharing-DL00956G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_ims_data_sharing.png"
+          selfpaced="true"
+          level="Advanced"
+          cost="None"
+          badge="Yes"
+          time="12 hours"
+          link="https://www.ibm.com/training/course/ims-data-sharing-DL00956G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- HALDB -->
-				<course-card
-					id="ims-haldb"
-					name="IMS HALDB"
-					desc="In this intermediate course, you’ll learn how to design, implement, 
+        <!-- HALDB -->
+        <course-card
+          id="ims-haldb"
+          name="IMS HALDB"
+          desc="In this intermediate course, you’ll learn how to design, implement, 
 						maintain, troubleshoot, and recover IMS High Availability Large Databases (HALDBs). 
 						You’ll learn how other IMS databases can be migrated to HALDB and the advantages of using HALDBs.
 						This is an intermediate course for experienced IMS database administrators who implement and manage HALDBs."
-					imgsrc="wp-content/course-badges/badge_haldb.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="10 hours"
-					link="https://www.ibm.com/training/course/ims-high-availability-large-database-haldb-DL00957G"
-					class="pure-u-1"
-				>
-				</course-card>
+          imgsrc="wp-content/course-badges/badge_haldb.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="10 hours"
+          link="https://www.ibm.com/training/course/ims-high-availability-large-database-haldb-DL00957G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- Fast Path -->
-				<course-card
-					id="ims-fpimpl"
-					name="IMS Fast Path Implementation"
-					desc="This is an advanced course for IBM IMS system administrators, database administrators, 
+        <!-- Fast Path -->
+        <course-card
+          id="ims-fpimpl"
+          name="IMS Fast Path Implementation"
+          desc="This is an advanced course for IBM IMS system administrators, database administrators, 
 						and application programmers who design or implement IMS Fast Path applications in an 
 						IMS Transaction Management (TM) or IBM CICS Database Control (DBCTL) environment."
-					imgsrc="wp-content/course-badges/bacge_fp_implementation.png"
-					selfpaced="true"
-					level="Advanced"
-					cost="None"
-					badge="Yes"
-					time="18 hours"
-					link="https://www.ibm.com/training/course/ims-fast-path-implementation-DL00953G"
-					class="pure-u-1"
-				>
-				</course-card>
+          imgsrc="wp-content/course-badges/bacge_fp_implementation.png"
+          selfpaced="true"
+          level="Advanced"
+          cost="None"
+          badge="Yes"
+          time="18 hours"
+          link="https://www.ibm.com/training/course/ims-fast-path-implementation-DL00953G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- Database Repair -->
-				<course-card
-					id="ims-db-repair"
-					name="IMS Database Repair"
-					desc="This advanced course shows you techniques and tools for diagnosing 
+        <!-- Database Repair -->
+        <course-card
+          id="ims-db-repair"
+          name="IMS Database Repair"
+          desc="This advanced course shows you techniques and tools for diagnosing 
 						and repairing corrupted IMS databases, including full-function, 
 						DEDB, and HALDB. To do that, you’ll need to understand 
 						database access methods, secondary indexes, database layouts, 
 						control interval (CI) layouts, sequential dependents (SDEPs), 
 						and other database components, features, and structures."
-					imgsrc="wp-content/course-badges/badge_db_repair.png"
-					selfpaced="true"
-					level="Advanced"
-					cost="None"
-					badge="Yes"
-					time="11 hours"
-					link="https://www.ibm.com/training/course/ims-database-repair-DL00963G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_db_repair.png"
+          selfpaced="true"
+          level="Advanced"
+          cost="None"
+          badge="Yes"
+          time="11 hours"
+          link="https://www.ibm.com/training/course/ims-database-repair-DL00963G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- Database Performance and Tuning -->
-				<course-card
-					id="ims-db-tune"
-					name="IMS Database Performance and Tuning"
-					desc="This course shows you how to tune IBM® IMS™ databases. 
+        <!-- Database Performance and Tuning -->
+        <course-card
+          id="ims-db-tune"
+          name="IMS Database Performance and Tuning"
+          desc="This course shows you how to tune IBM® IMS™ databases. 
 						It also discusses IMS database options that affect performance such as data set considerations 
 						and buffering for Virtual Storage Access Method (VSAM) and Overflow Sequential Access Method 
 						(OSAM) databases"
-					imgsrc="wp-content/course-badges/badge_perf_tuning.png"
-					selfpaced="true"
-					level="Advanced"
-					cost="None"
-					badge="Yes"
-					time="36 hours"
-					link="https://www.ibm.com/training/course/ims-database-performance-and-tuning-DL00959G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_perf_tuning.png"
+          selfpaced="true"
+          level="Advanced"
+          cost="None"
+          badge="Yes"
+          time="36 hours"
+          link="https://www.ibm.com/training/course/ims-database-performance-and-tuning-DL00959G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- Physical Organization of Databases -->
-				<course-card
-					id="ims-phys-db"
-					name="IMS Physical Organization of Databases"
-					desc="In this comprehensive course, you’ll learn about IMS DB access methods, 
+        <!-- Physical Organization of Databases -->
+        <course-card
+          id="ims-phys-db"
+          name="IMS Physical Organization of Databases"
+          desc="In this comprehensive course, you’ll learn about IMS DB access methods, 
 						how to code DBDs and PSBs, use IMS utilities to reorganize and recover 
 						databases,  use the DL/I test program, and how to prepare a job stream 
 						to load a database."
-					imgsrc="wp-content/course-badges/badge_physical_org_db.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="33 hours"
-					link="https://www.ibm.com/training/course/ims-physical-organization-of-databases-DL00965G"
-					class="pure-u-1"
-				>
-				</course-card>	
-		</section>
+          imgsrc="wp-content/course-badges/badge_physical_org_db.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="33 hours"
+          link="https://www.ibm.com/training/course/ims-physical-organization-of-databases-DL00965G"
+          class="pure-u-1"
+        >
+        </course-card>
+      </section>
 
-		<!-- =========================== Courses - System programming =========================== -->
-		<section id="system-programming" class="white-bg">
-			<div><h2>System programming</h2></div>
-				<!-- IMS security -->
-				<course-card
-					id="ims-security"
-					name="Implementing IMS Security"
-					desc="In this comprehensive course, learn what IMS resources can be protected, such as data 
+      <!-- =========================== Courses - System programming =========================== -->
+      <section id="system-programming" class="white-bg">
+        <div><h2>System programming</h2></div>
+        <!-- IMS security -->
+        <course-card
+          id="ims-security"
+          name="Implementing IMS Security"
+          desc="In this comprehensive course, learn what IMS resources can be protected, such as data 
 						sets, transactions, commands, and databases, and what facilities you can use to protect those 
 						resources, such as default IMS options, PSBs, and exits, and non-IMS facilities such as RACF or 
 						other tools."
-					imgsrc="wp-content/course-badges/badge_security.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="27 hours"
-					link="https://www.ibm.com/training/course/implementing-ims-security-DL00968G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_security.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="27 hours"
+          link="https://www.ibm.com/training/course/implementing-ims-security-DL00968G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- System Programming -->
-				<course-card
-					id="ims-dmtm"
-					name="IMS System Programming"
-					desc="Learn about IMS architecture, installation, transaction management, locking, 
+        <!-- System Programming -->
+        <course-card
+          id="ims-dmtm"
+          name="IMS System Programming"
+          desc="Learn about IMS architecture, installation, transaction management, locking, 
 						logging, connecting IMS to IBM CICS® and IBM Db2®, data sharing, shared queues, 
 						preparing and starting the system, and more."
-					imgsrc="wp-content/course-badges/badge_db_tm_sysprog.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="13 hours"
-					link="https://www.ibm.com/training/course/ims-system-programming-database-and-transaction-management-DL00955G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_db_tm_sysprog.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="13 hours"
+          link="https://www.ibm.com/training/course/ims-system-programming-database-and-transaction-management-DL00955G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- Diagnostics -->
-				<course-card
-					id="ims-diagnostics"
-					name="IMS Diagnostics"
-					desc="Learn about the relationships between IMS components so that you can explain IBM's recommendations for IMS
+        <!-- Diagnostics -->
+        <course-card
+          id="ims-diagnostics"
+          name="IMS Diagnostics"
+          desc="Learn about the relationships between IMS components so that you can explain IBM's recommendations for IMS
 						diagnostic setup. Learn how to use the IMS Interactive Dump Formatter, identify the key z/OS® IPCS commands
 						that are useful for IMS problem diagnostics, perform the methodology for debugging IMS abends, and understand the
 						methodology for debugging IMS waits and loops."
-					imgsrc="wp-content/course-badges/badge_ims_diagnostics.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="10 hours"
-					link="https://www.ibm.com/training/course/ims-diagnostics-DL12000G"
-					class="pure-u-1"
-				>
-				</course-card>		
-				
-				<!-- Shared Queues -->
-				<course-card
-					id="ims-squeues"
-					name="IMS Shared Queues"
-					desc="Learn how shared message queues work in IBM IMS, and how full-function queues and Fast Path expedited message handler (EMH) queues 
+          imgsrc="wp-content/course-badges/badge_ims_diagnostics.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="10 hours"
+          link="https://www.ibm.com/training/course/ims-diagnostics-DL12000G"
+          class="pure-u-1"
+        >
+        </course-card>
+
+        <!-- Shared Queues -->
+        <course-card
+          id="ims-squeues"
+          name="IMS Shared Queues"
+          desc="Learn how shared message queues work in IBM IMS, and how full-function queues and Fast Path expedited message handler (EMH) queues 
 						are shared within a parallel sysplex environment. Learn how to prepare and implement IMS shared queues 
 						and manage and troubleshoot an IMS shared queues environment."
-					imgsrc="wp-content/course-badges/badge_ims_shared_queues.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="17 hours"
-					link="https://www.ibm.com/training/course/ims-shared-queues-DL00952G"
-					class="pure-u-1"
-				>
-				</course-card>		
-				
-				<!-- TM Performance Analysis -->
-				<course-card
-					id="ims-tm-performance"
-					name="IMS TM Performance Analysis"
-					desc="In this advanced course, you'll learn how to use and adjust IMS 
+          imgsrc="wp-content/course-badges/badge_ims_shared_queues.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="17 hours"
+          link="https://www.ibm.com/training/course/ims-shared-queues-DL00952G"
+          class="pure-u-1"
+        >
+        </course-card>
+
+        <!-- TM Performance Analysis -->
+        <course-card
+          id="ims-tm-performance"
+          name="IMS TM Performance Analysis"
+          desc="In this advanced course, you'll learn how to use and adjust IMS 
 						Transaction Manager (IMS TM), other components in the IMS system, and z/OS 
 						components, commands, processes, parameters, and more to ensure that the 
 						IMS TM system is running as efficiently as possible."
-					imgsrc="wp-content/course-badges/badge_ims_tm_tuning.png"
-					selfpaced="true"
-					level="Advanced"
-					cost="None"
-					badge="Yes"
-					time="11 hours"
-					link="https://www.ibm.com/training/course/ims-transaction-manager-performance-analysis-DL00962G"
-					class="pure-u-1"
-				>
-				</course-card>	
+          imgsrc="wp-content/course-badges/badge_ims_tm_tuning.png"
+          selfpaced="true"
+          level="Advanced"
+          cost="None"
+          badge="Yes"
+          time="11 hours"
+          link="https://www.ibm.com/training/course/ims-transaction-manager-performance-analysis-DL00962G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- System Programming in a DBCTL Environment -->
-				<course-card
-					id="ims-dbctl"
-					name="IMS System Programming in a DBCTL Environment"
-					desc="Learn about the IMS database control (DBCTL) environment, which provides access between CICS and
+        <!-- System Programming in a DBCTL Environment -->
+        <course-card
+          id="ims-dbctl"
+          name="IMS System Programming in a DBCTL Environment"
+          desc="Learn about the IMS database control (DBCTL) environment, which provides access between CICS and
 						IMS-managed databases. Learn  how to install, configure, maintain, troubleshoot, and support
 						an IMS DBCTL system, and understand the IMS architecture that applies to database management and attaching 
 						to CICS systems and transactions."
-					imgsrc="wp-content/course-badges/badge_ims_dbctl.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="12 hours"
-					link="https://www.ibm.com/training/course/ims-system-programming-in-a-dbctl-environment-DL00950G"
-					class="pure-u-1"
-				>
-				</course-card>
-		</section>
+          imgsrc="wp-content/course-badges/badge_ims_dbctl.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="12 hours"
+          link="https://www.ibm.com/training/course/ims-system-programming-in-a-dbctl-environment-DL00950G"
+          class="pure-u-1"
+        >
+        </course-card>
+      </section>
 
-		<!-- =========================== Courses - Application development =========================== -->
-		<section id="application-development" class="white-bg">
-			<div><h2>Application development</h2></div>
-				<!-- TM Application Programming -->
-				<course-card
-					id="ims-tm-prog"
-					name="IMS TM Application Programming"
-					desc="This course shows you through lectures and lab demos how to write
+      <!-- =========================== Courses - Application development =========================== -->
+      <section id="application-development" class="white-bg">
+        <div><h2>Application development</h2></div>
+        <!-- TM Application Programming -->
+        <course-card
+          id="ims-tm-prog"
+          name="IMS TM Application Programming"
+          desc="This course shows you through lectures and lab demos how to write
 						application programs that use Data Language One (DL/I) to process
 						terminal input and output messages in an IMS Transaction manager system.
 						This course does not teach basic COBOL or PL/I. You should already have 
 						experience developing applications with one or both of those languages."
-					imgsrc="wp-content/course-badges/badge_tm_app_prog.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="14 hours"
-					link="https://www.ibm.com/training/course/ims-transaction-manager-application-programming-DL00961G"
-					class="pure-u-1"
-				>
-				</course-card>
+          imgsrc="wp-content/course-badges/badge_tm_app_prog.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="14 hours"
+          link="https://www.ibm.com/training/course/ims-transaction-manager-application-programming-DL00961G"
+          class="pure-u-1"
+        >
+        </course-card>
 
-				<!-- DB Application Programming -->
-				<course-card
-					id="ims-db-prog"
-					name="IMS Database Application Programming"
-					desc="In this course, you'll learn how to code application programs that perform processing
+        <!-- DB Application Programming -->
+        <course-card
+          id="ims-db-prog"
+          name="IMS Database Application Programming"
+          desc="In this course, you'll learn how to code application programs that perform processing
 						on IMS database records. You'll learn about the hierarchic structure of IMS databases,
 						how to construct DL/I calls, how to test your applications, and more."
-					imgsrc="wp-content/course-badges/badge_db_app_prog.png"
-					selfpaced="true"
-					level="Intermediate"
-					cost="None"
-					badge="Yes"
-					time="20 hours"
-					link="https://www.ibm.com/training/course/ims-database-application-programming-DL00960G"
-					class="pure-u-1"
-				>
-				</course-card>
-		</section>
+          imgsrc="wp-content/course-badges/badge_db_app_prog.png"
+          selfpaced="true"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="20 hours"
+          link="https://www.ibm.com/training/course/ims-database-application-programming-DL00960G"
+          class="pure-u-1"
+        >
+        </course-card>
+      </section>
 
-		<!-- =========================== Courses - Instructor-led =========================== -->
-		<section id="instructor-led" class="white-bg pure-g">
-			<div class="pure-u-1">
-			<div><h2>Instructor-led</h2></div>
-			<!-- <p>No instructor-led classes are scheduled at this time. Please check back in the coming weeks for class offerings.</p> -->
-			<p>For more information about the live class format, see the upcoming events on the <a href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/public?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560" target="_blank" rel="noopener noreferrer">IMS Community page.</a></p>
-			</div>
-			
-			<!-- IMS Fundamentals, April Session -->
-			<course-card
-				id="ims-haldb-nov-2025"
-				name="IMS High Availability Large Database (HALDB)"
-				session="November 2025 session"
-				desc="Learn how to design, implement, maintain, troubleshoot, and recover IMS HALDBs."
-				imgsrc="wp-content/icons/icon_education.svg"
-				selfpaced="false"
-				level="Intermediate"
-				cost="None"
-				badge="Yes"
-				time="4 days"
-				start="Nov 10"
-				end="Nov 13"
-				registerlink="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/z/ims/eventsignup.html"
-				link="http://public.dhe.ibm.com/software/data/sw-library/ims/usergroups/IMS_Events_List.pdf"
-				class="pure-u-1"
-			>
-			</course-card>
-		</section>
+      <!-- =========================== Courses - Instructor-led =========================== -->
+      <section id="instructor-led" class="white-bg pure-g">
+        <div class="pure-u-1">
+          <div><h2>Instructor-led</h2></div>
+          <!-- <p>No instructor-led classes are scheduled at this time. Please check back in the coming weeks for class offerings.</p> -->
+          <p>
+            For more information about the live class format, see the upcoming
+            events on the
+            <a
+              href="https://community.ibm.com/community/user/ibmz-and-linuxone/groups/public?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560"
+              target="_blank"
+              rel="noopener noreferrer"
+              >IMS Community page.</a
+            >
+          </p>
+        </div>
 
-		<!-- =========================== FAQs =========================== -->
-		<section id="faqs" class="light-gray-bg pure-g">
-				<div class="pure-u-1 pure-u-lg-1-4 section-header">
-					<h2>Frequently asked questions</h2>
-				</div>
-				<div class="pure-u-1 pure-u-lg-3-4">
-					<div class="pure-g pure-g-pad">
-						<div class="pure-u-1">
-							<h4>Have questions about IMS courses or the badge program? Here are some quick answers that can help you.</h4>
-						</div>
-						<div class="pure-u-1 pure-u-lg-1-2">
-							<h4>How do I earn a badge?</h4>
-							<p>
-								Courses that offer badges include one or more exams. You must pass those exams and complete all required activities. 
-								See the "Grading and badge" topic in your course to review the course requirements and grading policy.
-							</p>
-						</div>
-						<div class="pure-u-1 pure-u-lg-1-2">
-							<h4>If I pass a course, when do I get the badge?</h4>
-							<p>Badges are typically issued automatically after you meet the course requirements and grading policy. You should typically get an 
-								email notification to claim your badge in 1 to 4 days after course completion.</p>
-						</div>
-						<div class="pure-u-1 pure-u-lg-1-2">
-							<h4>Who do I contact if I have problems with course content?</h4>
-							<p>You can contact the IMS Education team at <a href="mailto:ibmimsom@us.ibm.com">ibmimsom@us.ibm.com</a>.</p>
-						</div>
-						<div class="pure-u-1 pure-u-lg-1-2">
-							<h4>Where can I find more information about digital badges?</h4>
-							<p>For more information about badges, see <a target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/training/credentials/faq">
-								IBM credentials FAQs</a> on IBM Training.</p>
-						</div>
-					</div>
-				</div>
-		</section>
+        <!-- IMS Fundamentals, April Session -->
+        <course-card
+          id="ims-haldb-nov-2025"
+          name="IMS High Availability Large Database (HALDB)"
+          session="November 2025 session"
+          desc="Learn how to design, implement, maintain, troubleshoot, and recover IMS HALDBs."
+          imgsrc="wp-content/icons/icon_education.svg"
+          selfpaced="false"
+          level="Intermediate"
+          cost="None"
+          badge="Yes"
+          time="4 days"
+          start="Nov 10"
+          end="Nov 13"
+          registerlink="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/z/ims/eventsignup.html"
+          link="http://public.dhe.ibm.com/software/data/sw-library/ims/usergroups/IMS_Events_List.pdf"
+          class="pure-u-1"
+        >
+        </course-card>
+      </section>
 
-		<!-- =========================== Support =========================== -->
-		<section id="support" class="gray-bg pure-g">
-			<div class="pure-u-1 pure-u-lg-1-4 section-header">
-				<h2>Support</h2>
-			</div>
-			<div class="pure-u-1 pure-u-lg-3-4">
-				<div class="pure-g pure-g-pad">
-					<div class="pure-u-1 pure-u-lg-1-2">
-						<h4>Course badges</h4>
-						<p>After completing the activies required to earn a badge, receiving a badge notifaction to claim your badge can take up to 1 to 2 weeks.</p>
-						<p>If you have questions about IBM IMS badges, contact <a href="mailto:ibmimsom@us.ibm.com">ibmimsom@us.ibm.com</a>.</p>
-					</div>
-					<div class="pure-u-1 pure-u-lg-1-2">
-						<h4>Credly support</h4>
-						<p>For questions related to your Credly badge earner account and profile or issues related to claiming your badge 
-							after receiving a notification, go to <a target="_blank" rel="noopener noreferrer" href="https://support.credly.com/hc/en-us">
-							support.credly.com</a>.</p>
-					</div>
-					<div class="pure-u-1">
-						<h4>Privacy policy</h4>
-						<p>IBM leverages the services of Credly, a 3rd party data 
-							processor authorized by IBM and located in the United States, to assist in the 
-							administration of the IBM Digital Badge program. In order to issue you an IBM 
-							Digital Badge, your personal information (name, email address, and badge earned) 
-							will be shared with Credly. You will receive an email notification from Credly 
-							with instructions for claiming the badge. Your personal information is used to 
-							issue your badge and for program reporting and operational purposes. IBM may 
-							share the personal information collected with IBM subsidiaries and third parties 
-							globally. It will be handled in a manner consistent with IBM privacy practices. 
-						</p>
-						<p>
-							<a target="_blank" rel="noopener noreferrer" href="https://www.ibm.com/privacy/us/en/">IBM Privacy Statement</a>
-						</p>
-					<p>
-						<a target="_blank" rel="noopener noreferrer" href="https://w3.ibm.com/w3publisher/w3-privacy-notice">IBM Internal Privacy Statement for IBM employees</a>
-					</p>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
+      <!-- =========================== FAQs =========================== -->
+      <section id="faqs" class="light-gray-bg pure-g">
+        <div class="pure-u-1 pure-u-lg-1-4 section-header">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="pure-u-1 pure-u-lg-3-4">
+          <div class="pure-g pure-g-pad">
+            <div class="pure-u-1">
+              <h4>
+                Have questions about IMS courses or the badge program? Here are
+                some quick answers that can help you.
+              </h4>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-2">
+              <h4>How do I earn a badge?</h4>
+              <p>
+                Courses that offer badges include one or more exams. You must
+                pass those exams and complete all required activities. See the
+                "Grading and badge" topic in your course to review the course
+                requirements and grading policy.
+              </p>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-2">
+              <h4>If I pass a course, when do I get the badge?</h4>
+              <p>
+                Badges are typically issued automatically after you meet the
+                course requirements and grading policy. You should typically get
+                an email notification to claim your badge in 1 to 4 days after
+                course completion.
+              </p>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-2">
+              <h4>Who do I contact if I have problems with course content?</h4>
+              <p>
+                You can contact the IMS Education team at
+                <a href="mailto:ibmimsom@us.ibm.com">ibmimsom@us.ibm.com</a>.
+              </p>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-2">
+              <h4>Where can I find more information about digital badges?</h4>
+              <p>
+                For more information about badges, see
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.ibm.com/training/credentials/faq"
+                >
+                  IBM credentials FAQs</a
+                >
+                on IBM Training.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<!-- Footer -->
-	<imscentral-footer></imscentral-footer>
-</body>
+      <!-- =========================== Support =========================== -->
+      <section id="support" class="gray-bg pure-g">
+        <div class="pure-u-1 pure-u-lg-1-4 section-header">
+          <h2>Support</h2>
+        </div>
+        <div class="pure-u-1 pure-u-lg-3-4">
+          <div class="pure-g pure-g-pad">
+            <div class="pure-u-1 pure-u-lg-1-2">
+              <h4>Course badges</h4>
+              <p>
+                After completing the activies required to earn a badge,
+                receiving a badge notifaction to claim your badge can take up to
+                1 to 2 weeks.
+              </p>
+              <p>
+                If you have questions about IBM IMS badges, contact
+                <a href="mailto:ibmimsom@us.ibm.com">ibmimsom@us.ibm.com</a>.
+              </p>
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-2">
+              <h4>Credly support</h4>
+              <p>
+                For questions related to your Credly badge earner account and
+                profile or issues related to claiming your badge after receiving
+                a notification, go to
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://support.credly.com/hc/en-us"
+                >
+                  support.credly.com</a
+                >.
+              </p>
+            </div>
+            <div class="pure-u-1">
+              <h4>Privacy policy</h4>
+              <p>
+                IBM leverages the services of Credly, a 3rd party data processor
+                authorized by IBM and located in the United States, to assist in
+                the administration of the IBM Digital Badge program. In order to
+                issue you an IBM Digital Badge, your personal information (name,
+                email address, and badge earned) will be shared with Credly. You
+                will receive an email notification from Credly with instructions
+                for claiming the badge. Your personal information is used to
+                issue your badge and for program reporting and operational
+                purposes. IBM may share the personal information collected with
+                IBM subsidiaries and third parties globally. It will be handled
+                in a manner consistent with IBM privacy practices.
+              </p>
+              <p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.ibm.com/privacy/us/en/"
+                  >IBM Privacy Statement</a
+                >
+              </p>
+              <p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://w3.ibm.com/w3publisher/w3-privacy-notice"
+                  >IBM Internal Privacy Statement for IBM employees</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <imscentral-footer></imscentral-footer>
+  </body>
 </html>
