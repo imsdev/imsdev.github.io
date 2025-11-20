@@ -223,6 +223,10 @@ input {
 
 /* 768px and below screen sizes */
 @media screen and (max-width: 48em) {
+  .dropdown-menu {
+    width: 100%;
+  }
+
   .menu {
     grid-template-columns: 1fr;
   }
