@@ -237,6 +237,16 @@ input {
   width: 100%;
 }
 
+@media screen and (max-width: 24em) {
+  .logo img {
+    width: 1em;
+    height: 1em;
+  }
+  #search-icon {
+    width: 1em;
+  }
+}
+
 /* 425px and below screen sizes */
 @media screen and (max-width: 27em) {
   .logo h4 {
