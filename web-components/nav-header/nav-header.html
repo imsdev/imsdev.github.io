@@ -1,10 +1,12 @@
 <link href="web-components/nav-header/nav-header.css" rel="stylesheet" />
 <link
   href="jekyll-tipue-search/assets/tipuesearch/css/tipuesearch-component.css"
-  rel="stylesheet" />
+  rel="stylesheet"
+/>
 <link
   rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 <header>
   <a class="skip-link" href="#content">Skip to content</a>
   <nav aria-label="masthead">
@@ -19,7 +21,8 @@
             <img
               src="wp-content/icons/icon_search.svg"
               id="search-icon"
-              alt="search" />
+              alt="search"
+            />
             <input
               id="search-input"
               name="search"
@@ -27,13 +30,15 @@
               pattern=".{3,}"
               placeholder="What are you looking for today?"
               autofocus
-              autocomplete="off" />
+              autocomplete="off"
+            />
             <img
               src="wp-content/icons/icon_close.svg"
               id="clear-icon"
               role="button"
               alt="clear"
-              tabindex="0" />
+              tabindex="0"
+            />
           </div>
         </form>
         <div id="search-results"></div>
@@ -42,12 +47,14 @@
           type="checkbox"
           id="menu-toggle"
           tabindex="-1"
-          aria-label="menu toggle" />
+          aria-label="menu toggle"
+        />
         <a
           class="hamburger-menu"
           role="button"
           tabindex="0"
-          aria-label="menu button">
+          aria-label="menu button"
+        >
           <div></div>
           <div></div>
           <div></div>
@@ -57,8 +64,20 @@
 
     <section class="dropdown-menu">
       <div class="menu">
-        <div>
-          <h3>Learn</h3>
+        <div class="learn">
+          <span class="subheader">
+            <i
+              class="fa fa-angle-down icon-down"
+              tabindex="0"
+              style="font-size: 24px"
+            ></i>
+            <i
+              class="fa fa-angle-right icon-right"
+              tabindex="0"
+              style="font-size: 24px"
+            ></i>
+            <h3>Learn</h3>
+          </span>
           <a href="ims-videos.html" tabindex="-1">
             <h5>Videos</h5>
             <p>
@@ -84,18 +103,20 @@
             href="https://www.ibm.com/products/ims"
             tabindex="-1"
             rel="noopener noreferrer"
-            target="_blank">
+            target="_blank"
+          >
             <h5>
               IMS product page
               <img
                 src="wp-content/Icon07.png"
                 alt="External link"
-                class="external-link" />
+                class="external-link"
+              />
             </h5>
             <p>Learn about the latest IMS features and offerings.</p>
           </a>
         </div>
-        <div>
+        <div class="innovate">
           <h3>Innovate</h3>
           <a href="ims-apis.html" tabindex="-1">
             <h5>APIs</h5>
@@ -124,7 +145,7 @@
             <p>IMS Transaction Manager: fast, secure, connected.</p>
           </a>
         </div>
-        <div>
+        <div class="engage">
           <h3>Engage</h3>
           <a href="ims-gold.html" tabindex="-1">
             <h5>IMS Gold</h5>
@@ -137,13 +158,15 @@
             href="https://community.ibm.com/community/user/groupz?CommunityKey=eba3ada3-db89-4dca-9154-328195f5e560"
             tabindex="-1"
             rel="noopener noreferrer"
-            target="_blank">
+            target="_blank"
+          >
             <h5>
               IMS Community
               <img
                 src="wp-content/Icon07.png"
                 alt="External link"
-                class="external-link" />
+                class="external-link"
+              />
             </h5>
             <p>
               See the latest IMS blogs, engage in IMS forums, and more by
@@ -168,20 +191,20 @@
             href="https://community.ibm.com/community/user/blogs/daleah-sampler/2025/09/09/ims-developer-community"
             tabindex="-1"
             rel="noopener noreferrer"
-            target="_blank">
+            target="_blank"
+          >
             <h5>
               IMS Developer Community
               <img
                 src="wp-content/Icon07.png"
                 alt="External link"
-                class="external-link" />
+                class="external-link"
+              />
             </h5>
-            <p>
-              A place to connect with other IMS developers.
-            </p>
+            <p>A place to connect with other IMS developers.</p>
           </a>
         </div>
-        <div>
+        <div class="support">
           <h3>Documentation & support</h3>
           <a href="ims-docs.html" tabindex="-1">
             <h5>Documentation</h5>
