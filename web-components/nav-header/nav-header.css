@@ -36,7 +36,6 @@ form {
   height: 3em;
   background-color: white;
   display: flex;
-  padding-right: 0.2em;
 }
 
 form div {
@@ -50,7 +49,7 @@ form div {
 }
 
 form div > img {
-  padding: 0.1em 0.5em;
+  padding: 0.1em 0.8em;
 }
 
 form input {
@@ -89,7 +88,6 @@ input {
 .navigation {
   display: flex;
   flex-flow: row nowrap;
-  width: 40%;
 }
 
 #search-icon {
@@ -270,4 +268,68 @@ input {
   top: 0.3125em;
   width: auto;
   z-index: 3000;
+}
+
+.search-bar-open {
+  width: 100%;
+}
+
+@media screen and (max-width: 24em) {
+  .logo img {
+    width: 1em;
+    height: 1em;
+  }
+  #search-icon {
+    width: 1em;
+  }
+
+  form input {
+    font-size: 0.5em;
+  }
+
+  #clear-icon {
+    width: 1.5em;
+  }
+}
+
+/* 425px and below screen sizes */
+@media screen and (max-width: 27em) {
+  .logo h4 {
+    font-size: 1em;
+  }
+
+  form input {
+    font-size: 1em;
+  }
+}
+
+/* 1023px and below screen sizes */
+@media screen and (max-width: 63.9375em) {
+  #search-input {
+    display: none;
+  }
+}
+
+/* 1024px and above screen sizes */
+@media screen and (min-width: 64em) {
+  .site-header {
+    display: block;
+  }
+
+  #search-input {
+    display: block;
+  }
+
+  .navigation {
+    width: 40%;
+  }
+
+  form {
+    width: 100%;
+    padding-right: 0.2em;
+  }
+
+  form div {
+    width: 100%;
+  }
 }
