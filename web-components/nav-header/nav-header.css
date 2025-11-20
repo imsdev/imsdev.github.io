@@ -245,6 +245,14 @@ input {
   #search-icon {
     width: 1em;
   }
+
+  form input {
+    font-size: 0.5em;
+  }
+
+  #clear-icon {
+    width: 1.5em;
+  }
 }
 
 /* 425px and below screen sizes */
