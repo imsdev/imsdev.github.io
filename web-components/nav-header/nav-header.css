@@ -214,10 +214,11 @@ input {
 
 .icon-right {
   display: none !important;
+  transform: rotate(0deg);
 }
 
-.icon-down {
-  display: none !important;
+.icon-right:hover {
+  color: #71a3e9;
 }
 
 /* 768px and below screen sizes */

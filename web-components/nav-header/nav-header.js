@@ -38,7 +38,7 @@ function createComponent(html) {
       const menuItems = dropdownMenu.querySelectorAll("a");
       const documentationMenuItem = menuItems[menuItems.length - 2];
       const supportMenuItem = menuItems[menuItems.length - 1];
-      const subheaders = shadow.querySelectorAll(".subheader");
+
       // Search
       const searchForm = shadow.getElementById("search-form");
       const searchInput = shadow.getElementById("search-input");
@@ -68,19 +68,48 @@ function createComponent(html) {
         }
       });
 
-      const learnSubheader = subheaders[0];
-      learnSubheader.addEventListener("click", () => {
-        const icon = learnSubheader.querySelector("i");
-        icon.style.display = "none";
-      });
+      // Dropdown sections for small screens
+      const dropdownSections = [
+        "learn-section",
+        "innovate-section",
+        "engage-section",
+        "support-section",
+      ];
+      for (let section of dropdownSections) {
+        const sectionDiv = shadow.querySelector("." + section);
+        const subheader = sectionDiv.querySelector(".subheader");
+        const dropdownArrow = subheader.querySelector(".icon-right");
+        const sectionContent = sectionDiv.querySelectorAll("a");
 
-      // Toggle show section for small screens
-      //   for (let subheader in subheaders) {
-      //     subheader.addEventListener("click", () => {
-      //       arrow.classList.remove("fa-angle-right");
-      //       arrow.classList.add("fa-angle-down");
-      //     });
-      //   }
+        subheader.addEventListener("click", () => {
+          console.log(dropdownArrow.style.transform);
+          if (
+            dropdownArrow.style.transform == "rotate(0deg)" ||
+            dropdownArrow.style.transform == ""
+          ) {
+            dropdownArrow.style.transform = "rotate(90deg)";
+            for (let contentItem of sectionContent) {
+              contentItem.style.display = "block";
+            }
+          } else {
+            dropdownArrow.style.transform = "rotate(0deg)";
+            for (let contentItem of sectionContent) {
+              contentItem.style.display = "none";
+            }
+          }
+        });
+      }
+
+      //   const learnSection = shadow.querySelector(".learn-section");
+      //   const learnSubheader = learnSection.querySelector(".subheader");
+      //   const dropdownArrow = learnSubheader.querySelector(".icon-right");
+      //   const learnContent = learnSection.querySelectorAll("a");
+      //   learnSubheader.addEventListener("click", () => {
+      //     dropdownArrow.style.transform = "rotate(90deg)";
+      //     for (let contentItem of learnContent) {
+      //       contentItem.style.display = "block";
+      //     }
+      //   });
 
       // Event listeners for all menus
       // --------------------------------------------------------------------------------------------------
