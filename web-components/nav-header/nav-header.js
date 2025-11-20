@@ -82,34 +82,44 @@ function createComponent(html) {
         const sectionContent = sectionDiv.querySelectorAll("a");
 
         subheader.addEventListener("click", () => {
-          console.log(dropdownArrow.style.transform);
           if (
             dropdownArrow.style.transform == "rotate(0deg)" ||
             dropdownArrow.style.transform == ""
           ) {
-            dropdownArrow.style.transform = "rotate(90deg)";
-            for (let contentItem of sectionContent) {
-              contentItem.style.display = "block";
-            }
+            toggleSectionDropdown(
+              dropdownArrow,
+              "rotate(90deg)",
+              sectionContent,
+              "block"
+            );
           } else {
-            dropdownArrow.style.transform = "rotate(0deg)";
-            for (let contentItem of sectionContent) {
-              contentItem.style.display = "none";
-            }
+            toggleSectionDropdown(
+              dropdownArrow,
+              "rotate(0deg)",
+              sectionContent,
+              "none"
+            );
+          }
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 768) {
+            toggleSectionDropdown(
+              dropdownArrow,
+              "rotate(0deg)",
+              sectionContent,
+              "block"
+            );
+          } else {
+            toggleSectionDropdown(
+              dropdownArrow,
+              "rotate(0deg)",
+              sectionContent,
+              "none"
+            );
           }
         });
       }
-
-      //   const learnSection = shadow.querySelector(".learn-section");
-      //   const learnSubheader = learnSection.querySelector(".subheader");
-      //   const dropdownArrow = learnSubheader.querySelector(".icon-right");
-      //   const learnContent = learnSection.querySelectorAll("a");
-      //   learnSubheader.addEventListener("click", () => {
-      //     dropdownArrow.style.transform = "rotate(90deg)";
-      //     for (let contentItem of learnContent) {
-      //       contentItem.style.display = "block";
-      //     }
-      //   });
 
       // Event listeners for all menus
       // --------------------------------------------------------------------------------------------------
@@ -181,6 +191,14 @@ function createComponent(html) {
 
       // Helper functions
       // --------------------------------------------------------------------------------------------------
+      //   Toggle dropdown sections for small screens in dropdown nav menu
+      function toggleSectionDropdown(arrow, deg, section, displayState) {
+        arrow.style.transform = deg;
+        for (let contentItem of section) {
+          contentItem.style.display = displayState;
+        }
+      }
+
       // Toggle dropdown navigation menu
       function toggleMenu() {
         dropdownMenu.classList.toggle("show-menu");
