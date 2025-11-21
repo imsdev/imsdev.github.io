@@ -40,6 +40,7 @@ function createComponent(html) {
       const menuItems = dropdownMenu.querySelectorAll("a");
       const documentationMenuItem = menuItems[menuItems.length - 2];
       const supportMenuItem = menuItems[menuItems.length - 1];
+
       // Search
       const searchForm = shadow.getElementById("search-form");
       const searchInput = shadow.getElementById("search-input");
@@ -70,6 +71,59 @@ function createComponent(html) {
         }
       });
 
+      // Dropdown sections for small screens
+      const dropdownSections = [
+        "learn-section",
+        "innovate-section",
+        "engage-section",
+        "support-section",
+      ];
+      for (let section of dropdownSections) {
+        const sectionDiv = shadow.querySelector("." + section);
+        const subheader = sectionDiv.querySelector(".subheader");
+        const dropdownArrow = subheader.querySelector(".icon-right");
+        const sectionContent = sectionDiv.querySelectorAll("a");
+
+        subheader.addEventListener("click", () => {
+          if (
+            dropdownArrow.style.transform == "rotate(0deg)" ||
+            dropdownArrow.style.transform == ""
+          ) {
+            toggleSectionDropdown(
+              dropdownArrow,
+              "rotate(90deg)",
+              sectionContent,
+              "block"
+            );
+          } else {
+            toggleSectionDropdown(
+              dropdownArrow,
+              "rotate(0deg)",
+              sectionContent,
+              "none"
+            );
+          }
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 768) {
+            toggleSectionDropdown(
+              dropdownArrow,
+              "rotate(0deg)",
+              sectionContent,
+              "block"
+            );
+          } else {
+            toggleSectionDropdown(
+              dropdownArrow,
+              "rotate(0deg)",
+              sectionContent,
+              "none"
+            );
+          }
+        });
+      }
+
       // Event listeners for all menus
       // --------------------------------------------------------------------------------------------------
       // Hide dropdowns when user clicks outside of search results or nav menu
@@ -82,7 +136,6 @@ function createComponent(html) {
 
       // Event listeners for search
       // --------------------------------------------------------------------------------------------------
-
       // Toggle open search bar (small screens)
       searchIcon.addEventListener("click", () => {
         if (window.innerWidth <= 1023) {
@@ -161,6 +214,14 @@ function createComponent(html) {
 
       // Helper functions
       // --------------------------------------------------------------------------------------------------
+      //   Toggle dropdown sections for small screens in dropdown nav menu
+      function toggleSectionDropdown(arrow, deg, section, displayState) {
+        arrow.style.transform = deg;
+        for (let contentItem of section) {
+          contentItem.style.display = displayState;
+        }
+      }
+
       // Toggle dropdown navigation menu
       function toggleMenu() {
         dropdownMenu.classList.toggle("show-menu");
@@ -205,7 +266,7 @@ function createComponent(html) {
         desc.classList.toggle("search_content_drop");
       }
 
-      // Open search bar
+      // Open search bar (small screens)
       function openSearchBar() {
         siteHeader.style.display = "none";
         searchInput.style.display = "block";
@@ -214,6 +275,7 @@ function createComponent(html) {
         searchBar.classList.add("search-bar-open");
       }
 
+      // Close search bar (small screens)
       function closeSearchBar(headerState, inputState) {
         siteHeader.style.display = headerState;
         searchInput.style.display = inputState;
