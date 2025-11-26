@@ -696,8 +696,8 @@ a {
   }
 
   /* Decrease section padding for smaller screens */
-  .main-content section:not(:first-child):not(.cta-banner) {
-    padding: 2em;
+  .main-content section:not(:first-child):not(.cta-banner):not(.card-section) {
+    padding: 2em !important;
   }
 
   /* Decrease card section padding for smaller screens */
