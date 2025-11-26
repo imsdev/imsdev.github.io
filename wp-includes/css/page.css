@@ -670,6 +670,10 @@ a {
     display: block;
   }
 
+  .cta-banner a {
+    font-size: 1.2em;
+  }
+
   /* For individual pure grid units requiring paddings */
   .pure-pad {
     padding: 1.2em 0em;
@@ -764,6 +768,7 @@ a {
 }
 
 @media screen and (min-width: 48em) {
+  /* Hide divider for cta for larger screens */
   .cta-banner hr {
     display: none;
   }
