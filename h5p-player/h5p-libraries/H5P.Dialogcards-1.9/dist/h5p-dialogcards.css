@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "ibm-plex-sans";
+  src: url("../../../fonts/static/IBMPlexSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .h5p-dialogcards .h5p-dialogcards-title p:first-child,
 .h5p-dialogcards .h5p-dialogcards-card-text-area p:first-child {
   margin-top: 0;
 }
-.h5p-dialogcards .h5p-dialogcards-title  p:last-child,
+.h5p-dialogcards .h5p-dialogcards-title p:last-child,
 .h5p-dialogcards .h5p-dialogcards-card-text-area p:last-child {
   margin-bottom: 0;
 }
@@ -16,6 +23,7 @@
 
 .h5p-dialogcards-card-text-area {
   outline: 0;
+  font-size: 1.125em;
 }
 
 .h5p-dialogcards {
@@ -43,6 +51,7 @@
 
 .h5p-dialogcards .h5p-dialogcards-description {
   margin: 0 1em 1em;
+  font-size: 1.125em;
 }
 
 .h5p-dialogcards .h5p-dialogcards-description > p {
@@ -90,19 +99,21 @@
 }
 
 .h5p-dialogcards .h5p-dialogcards-card-content {
-  background: #FFF;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.30);
+  background: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   padding: 1em;
 }
 
 .h5p-dialogcards .h5p-dialogcards-card-footer {
-  height: 2.25em;
+  /* height: 2.25em; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.h5p-dialogcards .h5p-dialogcards-cardwrap.h5p-dialogcards-mode-normal .h5p-dialogcards-card-footer {
+.h5p-dialogcards
+  .h5p-dialogcards-cardwrap.h5p-dialogcards-mode-normal
+  .h5p-dialogcards-card-footer {
   justify-content: center;
 }
 
@@ -155,7 +166,9 @@
   text-align: center;
 }
 
-.h5p-dialogcards .h5p-dialogcards-audio-wrapper.h5p-audio-not-supported .h5p-audio-not-supported-icon {
+.h5p-dialogcards
+  .h5p-dialogcards-audio-wrapper.h5p-audio-not-supported
+  .h5p-audio-not-supported-icon {
   width: 1.5em;
   height: 1.5em;
   padding: 0.25em;
@@ -164,7 +177,10 @@
   border-radius: 50%;
 }
 
-.h5p-dialogcards .h5p-dialogcards-audio-wrapper.h5p-audio-not-supported .h5p-audio-not-supported-icon span {
+.h5p-dialogcards
+  .h5p-dialogcards-audio-wrapper.h5p-audio-not-supported
+  .h5p-audio-not-supported-icon
+  span {
   width: 100%;
   height: 100%;
   display: block;
@@ -210,9 +226,9 @@
 }
 
 .h5p-dialogcards .h5p-dialogcards-collapse {
-  -webkit-transform: scale(0,1);
-  -ms-transform: scale(0,1);
-  transform: scale(0,1);
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
 }
 
 .h5p-dialogcards .h5p-dialogcards-endcomment {
@@ -253,12 +269,14 @@
 .h5p-dialogcards .h5p-joubelui-button.h5p-dialogcards-turn {
   margin: 0;
   font-weight: normal;
-  line-height: 1;
+  line-height: 0;
+  padding: 2em;
   order: 1;
+  font-family: "ibm-plex-sans";
 }
 
-.h5p-dialogcards .h5p-dialogcards-turn:before {
-  font-family: 'H5PFontAwesome4';
+.h5p-dialogcards .h5p-dialogcards-turn:after {
+  font-family: "H5PFontAwesome4";
   content: "\f021";
 }
 
@@ -270,7 +288,7 @@
 }
 
 .h5p-dialogcards .h5p-dialogcards-show-summary:before {
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   content: "\f0ca";
 }
 
@@ -302,7 +320,8 @@
   box-shadow: none;
 }
 
-.h5p-dialogcards .h5p-joubelui-button.h5p-dialogcards-answer-button.h5p-dialogcards-quick-progression {
+.h5p-dialogcards
+  .h5p-joubelui-button.h5p-dialogcards-answer-button.h5p-dialogcards-quick-progression {
   cursor: pointer;
 }
 
@@ -310,19 +329,22 @@
   order: 2;
 }
 
-.h5p-dialogcards .h5p-joubelui-button.h5p-dialogcards-answer-button.correct:before {
-  font-family: 'H5PFontAwesome4';
+.h5p-dialogcards
+  .h5p-joubelui-button.h5p-dialogcards-answer-button.correct:before {
+  font-family: "H5PFontAwesome4";
   content: "\f00c";
   font-weight: normal;
 }
 
-.h5p-dialogcards .h5p-joubelui-button.h5p-dialogcards-answer-button.correct.h5p-dialogcards-quick-progression {
+.h5p-dialogcards
+  .h5p-joubelui-button.h5p-dialogcards-answer-button.correct.h5p-dialogcards-quick-progression {
   border: 2px solid #1f824c;
   color: #1f824c;
   text-decoration: none solid rgb(31, 130, 76);
 }
 
-.h5p-dialogcards .h5p-joubelui-button.h5p-dialogcards-answer-button.correct.h5p-dialogcards-quick-progression:hover {
+.h5p-dialogcards
+  .h5p-joubelui-button.h5p-dialogcards-answer-button.correct.h5p-dialogcards-quick-progression:hover {
   color: #fff;
   background-color: #1f824c;
 }
@@ -331,19 +353,22 @@
   order: 0;
 }
 
-.h5p-dialogcards .h5p-joubelui-button.h5p-dialogcards-answer-button.incorrect:before {
-  font-family: 'H5PFontAwesome4';
+.h5p-dialogcards
+  .h5p-joubelui-button.h5p-dialogcards-answer-button.incorrect:before {
+  font-family: "H5PFontAwesome4";
   content: "\f00d";
   font-weight: normal;
 }
 
-.h5p-dialogcards .h5p-joubelui-button.h5p-dialogcards-answer-button.incorrect.h5p-dialogcards-quick-progression {
+.h5p-dialogcards
+  .h5p-joubelui-button.h5p-dialogcards-answer-button.incorrect.h5p-dialogcards-quick-progression {
   border: 2px solid #d95354;
   color: #d95354;
   text-decoration: none solid rgb(217, 83, 84);
 }
 
-.h5p-dialogcards .h5p-joubelui-button.h5p-dialogcards-answer-button.incorrect.h5p-dialogcards-quick-progression:hover {
+.h5p-dialogcards
+  .h5p-joubelui-button.h5p-dialogcards-answer-button.incorrect.h5p-dialogcards-quick-progression:hover {
   color: #fff;
   background-color: #d95354;
 }
@@ -356,16 +381,18 @@
 
 .h5p-dialogcards .h5p-dialogcards-prev {
   left: 1em;
+  font-family: "ibm-plex-sans";
 }
 
 .h5p-dialogcards .h5p-dialogcards-prev:before {
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   content: "\f053";
   margin-right: 0.2em;
 }
 
 .h5p-dialogcards .h5p-dialogcards-next {
   right: 1em;
+  font-family: "ibm-plex-sans";
 }
 
 .h5p-dialogcards .h5p-dialogcards-retry {
@@ -373,12 +400,12 @@
 }
 
 .h5p-dialogcards .h5p-dialogcards-retry:before {
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   content: "\f01e";
 }
 
 .h5p-dialogcards .h5p-dialogcards-next:after {
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   content: "\f054";
   margin-left: 0.2em;
 }
@@ -426,7 +453,10 @@
   background: #1356a3;
 }
 
-.h5p-course-presentation .h5p-element .h5p-dialogcards-outer-element .h5p-element-inner.h5p-dialogcards.h5p-text-scaling {
+.h5p-course-presentation
+  .h5p-element
+  .h5p-dialogcards-outer-element
+  .h5p-element-inner.h5p-dialogcards.h5p-text-scaling {
   overflow-y: hidden;
 }
 
@@ -489,12 +519,12 @@
 }
 
 .h5p-dialogcards-summary-screen .h5p-dialogcards-button-next-round:before {
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   content: "\f061";
 }
 
 .h5p-dialogcards-summary-screen .h5p-dialogcards-button-restart:before {
-  font-family: 'H5PFontAwesome4';
+  font-family: "H5PFontAwesome4";
   content: "\f01e";
 }
 
@@ -510,33 +540,45 @@
   text-align: left;
 }
 
-.h5p-dialogcards-summary-screen .h5p-dialogcards-summary-table td.h5p-dialogcards-summary-table-row-category {
+.h5p-dialogcards-summary-screen
+  .h5p-dialogcards-summary-table
+  td.h5p-dialogcards-summary-table-row-category {
   width: 100%;
 }
 
-.h5p-dialogcards-summary-screen .h5p-dialogcards-summary-table td.h5p-dialogcards-summary-table-row-symbol {
+.h5p-dialogcards-summary-screen
+  .h5p-dialogcards-summary-table
+  td.h5p-dialogcards-summary-table-row-symbol {
   padding-left: 0.5em;
 }
 
-.h5p-dialogcards-summary-screen .h5p-dialogcards-summary-table td.h5p-dialogcards-summary-table-row-symbol.h5p-dialogcards-check:before {
-  font-family: 'H5PFontAwesome4';
+.h5p-dialogcards-summary-screen
+  .h5p-dialogcards-summary-table
+  td.h5p-dialogcards-summary-table-row-symbol.h5p-dialogcards-check:before {
+  font-family: "H5PFontAwesome4";
   content: "\f00c";
   color: #1f824c;
 }
 
-.h5p-dialogcards-summary-screen .h5p-dialogcards-summary-table td.h5p-dialogcards-summary-table-row-symbol.h5p-dialogcards-times:before {
-  font-family: 'H5PFontAwesome4';
+.h5p-dialogcards-summary-screen
+  .h5p-dialogcards-summary-table
+  td.h5p-dialogcards-summary-table-row-symbol.h5p-dialogcards-times:before {
+  font-family: "H5PFontAwesome4";
   content: "\f00d";
   color: #d95354;
 }
 
-.h5p-dialogcards-summary-screen .h5p-dialogcards-summary-table td.h5p-dialogcards-summary-table-row-score {
+.h5p-dialogcards-summary-screen
+  .h5p-dialogcards-summary-table
+  td.h5p-dialogcards-summary-table-row-score {
   padding-left: 0.5em;
   text-align: right;
   font-weight: bold;
 }
 
-.h5p-dialogcards-summary-screen .h5p-dialogcards-summary-table td.h5p-dialogcards-summary-table-row-score-divider {
+.h5p-dialogcards-summary-screen
+  .h5p-dialogcards-summary-table
+  td.h5p-dialogcards-summary-table-row-score-divider {
   color: #757575;
   font-size: 0.75em;
 }
