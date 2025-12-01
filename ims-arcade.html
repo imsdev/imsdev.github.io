@@ -155,7 +155,7 @@
 
         <!-- =========================== Jump links =========================== -->
         <jump-links
-          links="Quiz, Crossword, Drag and Drop, Flashcards"
+          links="Quiz, Flip Cards, Crossword, Drag and Drop, Flashcards"
         ></jump-links>
 
         <!-- =========================== Quiz=========================== -->
@@ -167,6 +167,24 @@
             <div id="mc-quiz" class="quiz"></div>
             <cds-button id="next-btn">Next</cds-button>
           </div>
+        </section>
+
+        <!-- =========================== Flip Cards =========================== -->
+        <section id="flip-cards" class="light-gray-bg card-section">
+          <h2>Flip cards</h2>
+          <h3>IMS Regions</h3>
+          <div id="h5p-container-flipc" style="width: 100%"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const el = document.getElementById("h5p-container-flipc");
+              const options = {
+                h5pJsonPath: "h5p-player/h5p-content-flipcards", // Path to the extracted H5P content
+                frameJs: "h5p-player/frame.bundle.js", // Path to player's frame.bundle.js
+                frameCss: "h5p-player/styles/h5p.css", // Path to player's h5p.css
+              };
+              new H5PStandalone.H5P(el, options);
+            });
+          </script>
         </section>
 
         <!-- =========================== Crossword =========================== -->

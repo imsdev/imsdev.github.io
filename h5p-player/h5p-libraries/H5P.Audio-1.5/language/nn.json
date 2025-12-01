@@ -1,0 +1,49 @@
+{
+  "semantics": [
+    {
+      "label": "Lydfiler"
+    },
+    {
+      "label": "Avspelar",
+      "description": "Vel utsjånad på avspelar.",
+      "options": [
+        {
+          "label": "Minimalistisk"
+        },
+        {
+          "label": "Komplett"
+        },
+        {
+          "label": "Gjennomsiktig"
+        }
+      ]
+    },
+    {
+      "label": "Tilpass storleik"
+    },
+    {
+      "label": "Slå på kontrollerar",
+      "description": "Lar brukaren mellom anna setje lydavspelinga på pause"
+    },
+    {
+      "label": "Slå på automatisk avspeling",
+      "description": "Lyden blir spelt av med éin gong. Obs: Ikkje alle nettlesarane støttar denne funksjonen."
+    },
+    {
+      "label": "Spel av (for skjermlesar)",
+      "default": "Spel av"
+    },
+    {
+      "label": "Pause (for skjermlesar)",
+      "default": "Set på pause"
+    },
+    {
+      "label": "Namn på lydinnhald",
+      "default": "Lyd"
+    },
+    {
+      "label": "Melding om at lyd ikkje kan spelast av",
+      "default": "Nettlesaren din støttar ikkje avspeling av denne lydfila."
+    }
+  ]
+}

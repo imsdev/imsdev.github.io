@@ -1,0 +1,219 @@
+{
+  "semantics": [
+    {
+      "label": "Overskrift"
+    },
+    {
+      "label": "Modus",
+      "description": "Måten dialogkorta blir viste på",
+      "options": [
+        {
+          "label": "Normal (i rekkefølge)"
+        },
+        {
+          "label": "Repetisjon"
+        }
+      ]
+    },
+    {
+      "label": "Oppgåvebeskriving"
+    },
+    {
+      "widgets": [
+        {
+          "label": "Standardinnstilling"
+        }
+      ],
+      "label": "Dialogkort",
+      "entity": "Dialog",
+      "field": {
+        "label": "Spørsmål",
+        "fields": [
+          {
+            "label": "Framside",
+            "description": "Tipstekst på framsida"
+          },
+          {
+            "label": "Bakside",
+            "description": "Tipstekst på baksida"
+          },
+          {
+            "label": "Bilete",
+            "description": "Valfritt bilete på kortet. Kortet kan ha berre bilete, berre tekst eller både bilete og tekst."
+          },
+          {
+            "label": "Alternativ tekst for biletet"
+          },
+          {
+            "label": "Lydfiler"
+          },
+          {
+            "label": "Tips",
+            "fields": [
+              {
+                "label": "Tips til framsida",
+                "description": "Til dømes nøkkelord, gloser, setningsstartarar osv."
+              },
+              {
+                "label": "Tips til baksida",
+                "description": "Til dømes forklaringar, kommentarar, tilleggsinformasjon"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Oppgåveinnstillingar",
+      "description": "Desse vala lar deg styre ulike funksjonar i oppgåva.",
+      "fields": [
+        {
+          "label": "Aktiver \"Prøv igjen\"-knappen"
+        },
+        {
+          "label": "Slå av tilbakenavigering",
+          "description": "Dette valet gjer at brukar berre kan navigere framover."
+        },
+        {
+          "label": "Tilpass fontstorleiken så teksten får plass på kortet",
+          "description": "Dersom du ikkje vel dette, kan kortet bli større fordi det tilpassar seg storleiken på teksten."
+        },
+        {
+          "label": "Stokk korta",
+          "description": "Dette valet gjer at korta blir viste i tilfeldig rekkefølge."
+        },
+        {
+          "label": "Høgaste ferdigheitsnivå"
+        },
+        {
+          "label": "Tillat å hoppe over kort",
+          "description": "Aktiver for å gi brukar lov til å hoppe over eit kort når hen allereie veit svaret."
+        }
+      ]
+    },
+    {
+      "label": "Tekst på \"Snu\"-knapp",
+      "default": "Snu"
+    },
+    {
+      "label": "Tekst på \"Neste\"-knapp",
+      "default": "Neste"
+    },
+    {
+      "label": "Tekst på \"Førre\"-knapp",
+      "default": "Førre"
+    },
+    {
+      "label": "Tekst på \"Prøv igjen\"-knapp",
+      "default": "Prøv igjen"
+    },
+    {
+      "label": "Tekst på \"Rett svar\"-knapp",
+      "default": "Eg svarte rett"
+    },
+    {
+      "label": "Tekst på \"Feil svar\"-knapp",
+      "default": "Eg svarte feil"
+    },
+    {
+      "label": "Tekst for rundenummer under korta og i oppsummeringa",
+      "description": "Variabelen @round blir erstatta av aktuelt rundenummer.",
+      "default": "Runde @round"
+    },
+    {
+      "label": "Tekst for antal kort som er igjen",
+      "description": "Variabelen @number blir erstatta av talet på kort som er igjen i denne runden.",
+      "default": "Kort som er igjen: @number"
+    },
+    {
+      "label": "Namn på \"Neste runde\"-knapp",
+      "description": "Variabelen @round blir erstatta av rundenummeret.",
+      "default": "Gå vidare til runde @round"
+    },
+    {
+      "label": "Tekst på \"Start på nytt\"-knapp",
+      "default": "Start på nytt"
+    },
+    {
+      "label": "Tekst på \"Vis oppsummering\"-knapp",
+      "default": "Neste"
+    },
+    {
+      "label": "Overskrift for oppsummeringssida",
+      "default": "Oppsummering"
+    },
+    {
+      "label": "Tekst for kort brukar svarte rett på",
+      "default": "Kort du svarte rett på:"
+    },
+    {
+      "label": "Tekst for kort brukar svarte feil på",
+      "default": "Kort du svarte feil på:"
+    },
+    {
+      "label": "Tekst for kort som ikkje har blitt viste:",
+      "default": "Kort som ikkje har blitt viste:"
+    },
+    {
+      "label": "Tekst for samla poengsum",
+      "default": "Samla poengsum"
+    },
+    {
+      "label": "Tekst for fullførte kort",
+      "default": "Kort du er ferdig med:"
+    },
+    {
+      "label": "Tekst for fullførte rundar",
+      "default": "Fullførte rundar:"
+    },
+    {
+      "label": "Melding når brukar har greidd alle korta",
+      "description": "Variabelen @cards blir erstatta av talet på kort i bunken. Variabelen @max blir erstatta av maksimalt meistringsnivå.",
+      "default": "Bra jobba! Du fekk alle @cards korta rett @max gonger på rad!"
+    },
+    {
+      "label": "Framdriftstekst",
+      "description": "Tilgjengelege variablar er @card og @total. @card er nummeret på det aktuelle kortet, @ er totalt antal kort.",
+      "default": "Kort @card av @total"
+    },
+    {
+      "label": "Merkelapp for framsida på kortet",
+      "description": "Brukt av assisterande teknologi",
+      "default": "Framside"
+    },
+    {
+      "label": "Merkelapp for baksida på kortet",
+      "description": "Brukt av assisterande teknologi",
+      "default": "Bakside"
+    },
+    {
+      "label": "Namn på \"Vis tips\"-knapp",
+      "default": "Vis tips"
+    },
+    {
+      "label": "Melding om at lyd ikkje kan spelast av",
+      "default": "Nettlesaren din støttar ikkje avspeling av denne lydfila."
+    },
+    {
+      "label": "Brukarstadfesting for \"Start på nytt\"",
+      "fields": [
+        {
+          "label": "Tittel",
+          "default": "Starte på nytt?"
+        },
+        {
+          "label": "Hovudtekst",
+          "default": "Alt du har gjort til no, vil bli sletta. Er du sikker på at du vil starte på nytt?"
+        },
+        {
+          "label": "Tekst på \"Avbryt\"-knapp",
+          "default": "Avbryt"
+        },
+        {
+          "label": "Tekst på stadfestingsknapp",
+          "default": "Start på nytt"
+        }
+      ]
+    }
+  ]
+}
