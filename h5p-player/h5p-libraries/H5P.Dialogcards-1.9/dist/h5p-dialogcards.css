@@ -397,9 +397,10 @@
 
 .h5p-dialogcards .h5p-dialogcards-retry {
   right: 1em;
+  font-family: "ibm-plex-sans";
 }
 
-.h5p-dialogcards .h5p-dialogcards-retry:before {
+.h5p-dialogcards .h5p-dialogcards-retry:after {
   font-family: "H5PFontAwesome4";
   content: "\f01e";
 }
