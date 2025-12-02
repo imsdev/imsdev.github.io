@@ -114,7 +114,6 @@ class Card {
       class: "h5p-dialogcards-image-wrapper",
     });
 
-    console.log(card.image);
     if (card.image !== undefined) {
       this.$image = $(
         '<img class="h5p-dialogcards-image" src="/' +

@@ -74,7 +74,8 @@
           var e = r("<div>", { class: "h5p-dialogcards-image-wrapper" });
           return (
             void 0 !== t.image
-              ? ((this.image = t.image),
+              ? ((e = r("<div>", { class: "h5p-dialogcards-image-wrapper" })),
+                (this.image = t.image),
                 (this.$image = r(
                   '<img class="h5p-dialogcards-image" src="' +
                     H5P.getPath(t.image.path, this.contentId) +
@@ -85,7 +86,10 @@
                     "alt",
                     this.massageAttributeOutput(t.imageAltText)
                   ))
-              : (this.$image = r('<div class="h5p-dialogcards-image"></div>')),
+              : ((e = r("<div>", {
+                  class: "h5p-dialogcards-image-wrapper-no-image",
+                })),
+                (this.$image = r('<div class="h5p-dialogcards-image"></div>'))),
             this.$image.appendTo(e),
             e
           );

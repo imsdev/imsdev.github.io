@@ -24,6 +24,10 @@
 .h5p-dialogcards-card-text-area {
   outline: 0;
   font-size: 1.125em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .h5p-dialogcards {
@@ -96,6 +100,9 @@
   height: 100%;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 .h5p-dialogcards .h5p-dialogcards-card-content {
@@ -119,6 +126,10 @@
 
 .h5p-dialogcards .h5p-dialogcards-image-wrapper {
   position: relative;
+}
+
+.h5p-dialogcards-image-wrapper-no-image {
+  height: 0em !important;
 }
 
 .h5p-dialogcards .h5p-dialogcards-image-wrapper > .h5p-dialogcards-image {
