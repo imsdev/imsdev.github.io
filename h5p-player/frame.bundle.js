@@ -1474,11 +1474,9 @@
                           1 < c && we(f),
                           1 < c &&
                             be(
-                              e
-                                .slice(0, c - 1)
-                                .concat({
-                                  value: " " === e[c - 2].type ? "*" : "",
-                                })
+                              e.slice(0, c - 1).concat({
+                                value: " " === e[c - 2].type ? "*" : "",
+                              })
                             ).replace(z, "$1"),
                           n,
                           c < i && Pe(e.slice(c, i)),
@@ -7416,6 +7414,7 @@
                         window.location.protocol +
                         "//" +
                         window.location.host +
+                        "/" +
                         r),
                     r + "/" + e
                   );

@@ -593,7 +593,7 @@
                           (s = a.h5pJsonPath),
                           (c = a.contentJsonPath),
                           // (d = a.librariesPath),
-                          (d = "h5p-player/h5p-libraries", console.log(d)),
+                          ((d = "h5p-player/h5p-libraries"), console.log(d)),
                           [
                             4,
                             i(
