@@ -4,14 +4,13 @@
 }
 
 .sentence {
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
   line-height: 2;
-  font-size: 1.5em;
 }
 
 .drop-zone {
   display: inline-block;
-  width: 140px; /* Adjust based on expected word length */
+  width: 300px; /* Adjust based on expected word length */
   height: 30px;
   border-bottom: 2px dashed #ccc;
   margin: 0 5px;
@@ -28,10 +27,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 2rem;
   border-top: 2px solid #eee;
   padding-top: 1rem;
+  width: 90%;
 }
 
 .word-item {

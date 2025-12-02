@@ -161,7 +161,6 @@
         <!-- =========================== Quiz=========================== -->
         <section id="quiz" class="white-bg card-section">
           <h2>Quiz</h2>
-          <h3>IMS topic</h3>
           <div class="activity-container">
             <div class="activity">
               <h3 id="feedback"></h3>
@@ -174,7 +173,6 @@
         <!-- =========================== Flip Cards =========================== -->
         <section id="flip-cards" class="light-gray-bg card-section">
           <h2>Flip cards</h2>
-          <h3>IMS Regions</h3>
           <div id="h5p-container-flipc" style="width: 100%"></div>
           <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -190,9 +188,8 @@
         </section>
 
         <!-- =========================== Crossword =========================== -->
-        <section id="crossword" class="light-gray-bg card-section">
+        <section id="crossword" class="white-bg card-section">
           <h2>Crossword</h2>
-          <h3>IMS topics</h3>
           <div id="h5p-container-cw" style="width: 100%"></div>
           <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -208,22 +205,42 @@
         </section>
 
         <!-- =========================== Drag-and-drop =========================== -->
-        <section id="drag-and-drop" class="white-bg card-section">
+        <section id="drag-and-drop" class="light-gray-bg card-section">
           <h2>Drag and Drop</h2>
-          <h3>IMS topic</h3>
           <div class="game-container">
-            <p class="sentence">
-              The <span class="drop-zone"></span> stores application and
-              database metadata when IMS managed ACBs are implemented.
-            </p>
-            <p class="sentence">
-              The <span class="drop-zone"></span> stores ACB blocks when IMS
-              managed ACBs are implemented.
-            </p>
-            <p class="sentence">
-              The IMS directory is a <span class="drop-zone"></span> that
-              automatically reclaims space with dynamic space allocation.
-            </p>
+            <ol>
+              <li class="sentence">
+                Allows IMS to provide present database data in different ways
+                and to have any data redundancy be managed by IMS software:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                Provides an alternate route into the database:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                The only types of segments in the secondary index database where
+                the content of specified fields in the source segment is
+                duplicated:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                Suppresses certain index entries based on the content of the
+                designated field of a source segments:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                Segments that are used to store data that are intended to vary
+                in length over time such as text fields:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                Allows applications to see only specific fields within a segment
+                but cannot be allowed to see other information within the same
+                segment:
+                <span class="drop-zone"></span>
+              </li>
+            </ol>
             <div id="word-bank" class="word-bank">
               <!-- Draggable words will be added here by JavaScript -->
             </div>
@@ -236,9 +253,8 @@
         </section>
 
         <!-- =========================== Flashcards =========================== -->
-        <section id="flashcards" class="light-gray-bg card-section">
+        <section id="flashcards" class="white-bg card-section">
           <h2>Flashcards</h2>
-          <h3>IMS topics</h3>
           <div id="h5p-container-fc" style="width: 100%"></div>
           <script>
             document.addEventListener("DOMContentLoaded", function () {

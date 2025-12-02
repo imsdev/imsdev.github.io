@@ -7,8 +7,24 @@ document.addEventListener("DOMContentLoaded", () => {
   let zoneArr;
 
   // Define the words to be dragged and shuffled
-  const words = ["IMS catalog", "PDS", "PDSE", "IMS directory", "ACBLIB"];
-  const correctWords = ["IMS catalog", "IMS directory", "PDSE"];
+  const words = [
+    "Field-level sensitivity",
+    "Segment-level sensitivity",
+    "Variable length segments",
+    "Fixed length segments",
+    "Logical relationships",
+    "Secondary index",
+    "Sparse secondary index",
+    "Pointer segment",
+  ];
+  const correctWords = [
+    "Logical relationships",
+    "Secondary index",
+    "Pointer segment",
+    "Sparse secondary index",
+    "Variable length segments",
+    "Field-level sensitivity",
+  ];
 
   let draggedItem = null;
   let attemptComplete = false;

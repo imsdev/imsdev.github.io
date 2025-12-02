@@ -7,14 +7,14 @@
 .activity-container {
   background-color: #fff;
   width: 100%;
-  padding: 2em;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
 }
 
 .activity {
-  background-color: #fff;
+  background-color: #f9f9f9;
+  padding: 2em 3em;
 }
 
 .quiz h2 {
@@ -30,7 +30,7 @@
 .btn {
   padding: 0.2em 2em 0.2em 0.5em;
   margin: 0.5em 0;
-  border: 2px #fff solid;
+  border: 2px #f9f9f9 solid;
 }
 
 .disable {

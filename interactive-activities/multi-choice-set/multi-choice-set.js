@@ -17,7 +17,7 @@ const questions = [
       { text: "PCB", correct: false },
       { text: "AIB", correct: false },
       { text: "Segment search argument (SSA)", correct: true },
-      { text: "COUNT parameter", correct: true },
+      { text: "COUNT parameter", correct: false },
     ],
   },
   {
