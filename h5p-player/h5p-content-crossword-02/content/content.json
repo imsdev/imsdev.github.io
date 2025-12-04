@@ -74,5 +74,5 @@
     "retry": "Retry the task. Reset all responses and start the task over again.",
     "yourResult": "You got @score out of @total points"
   },
-  "taskDescription": "<p>Fill in the correct IMS database.</p>"
+  "taskDescription": ""
 }

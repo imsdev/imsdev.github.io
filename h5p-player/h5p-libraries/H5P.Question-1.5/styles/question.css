@@ -206,9 +206,9 @@
   display: flex;
   flex-flow: row nowrap;
   width: calc(100% - 1.5em);
-  margin-left: 1em;
-  margin-right: 0.5em;
-  margin-bottom: 1em;
+  margin: 1.5em 0.5em 1em 1em;
+  align-items: center;
+  justify-content: center;
 }
 .h5p-question-buttons .h5p-joubelui-button,
 .h5p-question-buttons .h5p-joubelui-button:first-child:last-child {
