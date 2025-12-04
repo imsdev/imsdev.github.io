@@ -530,8 +530,8 @@
   background-color: #ddc0a4;
 }
 .h5p-crossword-cell.h5p-crossword-highlight-focus {
-  border-color: #ee5396;
-  border-width: 2.5px;
+  border-color: #fff;
+  border-width: 3px;
   z-index: 1;
 }
 .h5p-crossword-cell.h5p-crossword-highlight-focus
