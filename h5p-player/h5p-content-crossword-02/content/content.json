@@ -4,22 +4,36 @@
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "This database is a HALDB variation of a HIDAM with greater storage capacity",
-      "answer": "PHIDAM"
+      "clue": "This IMS feature uses DEDBs and MSDBs to achieve superior performance compared to full-function databases",
+      "answer": "Fastpath"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "This database is ideal for applications with sequential and direct access requirements",
-      "answer": "HIDAM"
+      "clue": "This IMS database type can be partitioned into multiple data set groups for improved availability and performance",
+      "answer": "HALDB"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "This database accesses segments using two VSAM data sets, KSDS and ESDS",
-      "answer": "HISAM"
+      "clue": "This IMS hierarchic database physical organization type relates segments by physical adjacency",
+      "answer": "Sequential"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "This IMS hierarchic database physical organization type relates segments by pointers",
+      "answer": "Direct"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "The position of a segment in relation to the root",
+      "answer": "Level"
     }
   ],
   "overallFeedback": [{ "from": 0, "to": 100 }],
