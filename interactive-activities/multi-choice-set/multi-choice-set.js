@@ -29,6 +29,29 @@ const questions = [
       { text: "None of these", correct: false },
     ],
   },
+  {
+    question:
+      "Data Language/One (DL/I) is a data management facility that serves as an interface between what two items?",
+    answers: [
+      { text: "An application program and Java applications", correct: false },
+      { text: "An application program and an IMS database", correct: true },
+      { text: "An IMS database and the z/OS operating system", correct: false },
+      {
+        text: "An application program and IMS Transaction Manager",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question:
+      "Which type of pointer allows a Fast Path DEDB to get direct access to the middle of long twin chain? ",
+    answers: [
+      { text: "Hierarchical pointer", correct: false },
+      { text: "Physical child pointer", correct: false },
+      { text: "Logical parent pointer", correct: false },
+      { text: "Subset pointer", correct: true },
+    ],
+  },
 ];
 
 const quiz = document.getElementById("mc-quiz");
