@@ -173,7 +173,7 @@ a {
 }
 
 .blue-bg a,
-.black-bg a, 
+.black-bg a,
 .dark-gray-bg a {
   color: var(--font-light-blue);
 }
@@ -556,6 +556,13 @@ a {
   margin: 0;
 }
 
+.cta-banner hr {
+  border: 1px black solid;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 .cta-banner a {
   color: var(--white);
   font-weight: bold;
@@ -642,10 +649,10 @@ a {
 }
 
 .section-404 h1 {
-    font-weight: bold !important;
-    font-size: 15em !important;
-    color: #8d8d8d;
-    line-height: 0em !important;
+  font-weight: bold !important;
+  font-size: 15em !important;
+  color: #8d8d8d;
+  line-height: 0em !important;
 }
 
 /* -------------------------------------------------------- */
@@ -657,6 +664,14 @@ a {
   /* Call to action for new courses */
   .cta {
     flex-flow: row wrap;
+  }
+
+  .cta-banner hr {
+    display: block;
+  }
+
+  .cta-banner a {
+    font-size: 1.2em;
   }
 
   /* For individual pure grid units requiring paddings */
@@ -681,8 +696,8 @@ a {
   }
 
   /* Decrease section padding for smaller screens */
-  .main-content section:not(:first-child):not(.cta-banner) {
-    padding: 2em;
+  .main-content section:not(:first-child):not(.cta-banner):not(.card-section) {
+    padding: 2em !important;
   }
 
   /* Decrease card section padding for smaller screens */
@@ -749,6 +764,13 @@ a {
 
   .cta-gold-banner {
     padding: 2em;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  /* Hide divider for cta for larger screens */
+  .cta-banner hr {
+    display: none;
   }
 }
 
