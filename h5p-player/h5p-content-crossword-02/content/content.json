@@ -34,6 +34,27 @@
       "orientation": "across",
       "clue": "The position of a segment in relation to the root",
       "answer": "Level"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "The first part of a segment",
+      "answer": "Prefix"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "It maintains information required for database recoveries",
+      "answer": "DBRC"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "A time at which the database manager records internal status information about the log",
+      "answer": "Checkpoint"
     }
   ],
   "overallFeedback": [{ "from": 0, "to": 100 }],

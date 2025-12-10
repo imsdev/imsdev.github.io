@@ -12,7 +12,7 @@ const questions = [
   },
   {
     question:
-      "Which of these items can you add to a DL/I call to filter which specific instance of a segment you want to find to perform functions against?",
+      "What can you add to a DL/I call to find a specific instance of a segment?",
     answers: [
       { text: "PCB", correct: false },
       { text: "AIB", correct: false },

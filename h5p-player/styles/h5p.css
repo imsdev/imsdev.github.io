@@ -1,31 +1,33 @@
 @font-face {
-  font-family: 'ibm-plex-sans';
-  src: url('../fonts/static/IBMPlexSans-Regular.ttf') format('truetype');
+  font-family: "ibm-plex-sans";
+  src: url("../fonts/static/IBMPlexSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-html.h5p-iframe, html.h5p-iframe > body {
-  font-family: 'ibm-plex-sans'; /* Use the browser's default sans-serif font. (Since Heletica doesn't look nice on Windows, and Arial on OS X.) */
+html.h5p-iframe,
+html.h5p-iframe > body {
+  font-family: "ibm-plex-sans"; /* Use the browser's default sans-serif font. (Since Heletica doesn't look nice on Windows, and Arial on OS X.) */
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
-.h5p-semi-fullscreen, .h5p-fullscreen, html.h5p-iframe .h5p-container {
+.h5p-semi-fullscreen,
+.h5p-fullscreen,
+html.h5p-iframe .h5p-container {
   overflow: hidden;
 }
 .h5p-content {
   position: relative;
   background-color: white;
-  border: 1px solid #EEE;
+  border: 1px solid #eee;
   border-radius: 0.2em;
   border-bottom: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-.h5p-noselect
-{
+.h5p-noselect {
   -khtml-user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
@@ -69,7 +71,7 @@ body.h5p-semi-fullscreen {
   z-index: 101;
   width: 100%;
   height: 100%;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .h5p-content-controls {
@@ -83,23 +85,27 @@ body.h5p-semi-fullscreen {
   display: none;
 }
 
-.h5p-content-controls > a:link, .h5p-content-controls > a:visited, a.h5p-disable-fullscreen:link, a.h5p-disable-fullscreen:visited {
+.h5p-content-controls > a:link,
+.h5p-content-controls > a:visited,
+a.h5p-disable-fullscreen:link,
+a.h5p-disable-fullscreen:visited {
   color: #e5eef6;
 }
 
 .h5p-enable-fullscreen:before {
-  font-family: 'H5P';
+  font-family: "H5P";
   content: "\e88c";
 }
 .h5p-disable-fullscreen:before {
-  font-family: 'H5P';
+  font-family: "H5P";
   content: "\e891";
 }
-.h5p-enable-fullscreen, .h5p-disable-fullscreen {
+.h5p-enable-fullscreen,
+.h5p-disable-fullscreen {
   cursor: pointer;
-  color: #EEE;
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.3);
+  color: #eee;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3);
   line-height: 0.975em;
   font-size: 2em;
   width: 1.125em;
@@ -119,8 +125,9 @@ body.h5p-semi-fullscreen {
   outline-offset: 0.25em;
 }
 
-.h5p-enable-fullscreen:hover, .h5p-disable-fullscreen:hover {
-  background: rgba(0,0,0,0.5);
+.h5p-enable-fullscreen:hover,
+.h5p-disable-fullscreen:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 .h5p-semi-fullscreen .h5p-enable-fullscreen {
   display: none;
@@ -179,13 +186,14 @@ div.h5p-fullscreen {
   margin: 0;
   height: 25px;
   font-size: 12px;
-  background: #FAFAFA;
-  border-top: 1px solid #EEE;
-  border-bottom: 1px solid #EEE;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   clear: both;
   font-family: Sans-Serif;
 }
-.h5p-fullscreen .h5p-actions, .h5p-semi-fullscreen .h5p-actions {
+.h5p-fullscreen .h5p-actions,
+.h5p-semi-fullscreen .h5p-actions {
   display: none;
 }
 .h5p-actions > .h5p-button {
@@ -213,7 +221,7 @@ div.h5p-fullscreen {
   display: inline-flex;
   padding: 0;
   margin: 0;
-  color: #6A6A6A;
+  color: #6a6a6a;
   position: relative;
 
   /* Disable default button style */
@@ -229,10 +237,10 @@ div.h5p-fullscreen {
   outline-style: solid;
   outline-width: thin;
   outline-offset: -2px;
-  outline-color: #5981A1;
+  outline-color: #5981a1;
 }
 .h5p-actions button:before {
-  font-family: 'H5P';
+  font-family: "H5P";
   font-size: 20px;
   line-height: 23px;
   vertical-align: bottom;
@@ -250,7 +258,7 @@ div.h5p-fullscreen {
 .h5p-actions .h5p-link {
   float: right;
   margin-right: 0;
-  font-size: 2.0em;
+  font-size: 2em;
   line-height: 23px;
   position: relative;
   color: #6a6a6a;
@@ -258,7 +266,7 @@ div.h5p-fullscreen {
   outline: none;
 }
 .h5p-actions .h5p-link:before {
-  font-family: 'H5P';
+  font-family: "H5P";
   content: "\e88e";
   vertical-align: bottom;
 }
@@ -281,8 +289,8 @@ div.h5p-fullscreen {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  background:#000;
-  background:rgba(0,0,0,0.75);
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
 }
 .h5p-popup-dialog.h5p-open {
   opacity: 1;
@@ -388,10 +396,10 @@ div.h5p-fullscreen {
   color: #656565;
   cursor: pointer;
   text-indent: -0.065em;
-  z-index: 3
+  z-index: 3;
 }
 .h5p-popup-dialog .h5p-close:after {
-  font-family: 'H5P';
+  font-family: "H5P";
   content: "\e894";
 }
 .h5p-popup-dialog .h5p-close:hover:after,
@@ -415,7 +423,7 @@ div.h5p-fullscreen {
   margin: 0 0.75em 0 0;
 }
 .h5p-popup-dialog dt:after {
-  content: ':';
+  content: ":";
 }
 .h5p-popup-dialog dd {
   margin: 0;
@@ -455,7 +463,7 @@ div.h5p-fullscreen {
   padding-left: 0.25em;
 }
 .h5p-throbber {
-  background: url('../images/throbber.gif?ver=1.2.1') 10px center no-repeat;
+  background: url("../images/throbber.gif?ver=1.2.1") 10px center no-repeat;
   padding-left: 38px;
   min-height: 30px;
   line-height: 30px;
@@ -488,7 +496,7 @@ div.h5p-fullscreen {
   border-radius: 0.25em;
 }
 .h5p-big-button:before {
-  font-family: 'h5p';
+  font-family: "h5p";
   content: "\e893";
   line-height: 1;
   font-size: 3em;
@@ -572,7 +580,6 @@ div.h5p-fullscreen {
   white-space: pre;
   overflow: auto;
 }
-
 
 /* This is loaded as part of Core and not Editor since this needs to be outside the editor iframe */
 .h5peditor-semi-fullscreen {
@@ -669,7 +676,7 @@ iframe.h5peditor-semi-fullscreen {
   transform: translate(-50%, 0%);
 
   color: #555;
-  box-shadow: 0 0 6px 6px rgba(10,10,10,0.3);
+  box-shadow: 0 0 6px 6px rgba(10, 10, 10, 0.3);
 
   -webkit-transition: transform 0.1s ease-in;
   transition: transform 0.1s ease-in;
@@ -721,7 +728,7 @@ button.h5p-confirmation-dialog-exit {
 
 button.h5p-confirmation-dialog-exit:focus,
 button.h5p-confirmation-dialog-exit:hover {
-  color: #E4ECF5;
+  color: #e4ecf5;
 }
 
 .h5p-confirmation-dialog-exit:before {
@@ -759,7 +766,8 @@ button.h5p-confirmation-dialog-exit:hover {
   color: #000;
 }
 
-.h5p-confirmation-dialog-popup.offline .h5p-confirmation-dialog-confirm-button:before {
+.h5p-confirmation-dialog-popup.offline
+  .h5p-confirmation-dialog-confirm-button:before {
   content: "\e90b";
   font-weight: normal;
   vertical-align: text-bottom;
@@ -787,7 +795,7 @@ button.h5p-confirmation-dialog-exit:hover {
   transform: translate(-50%, -50%);
 }
 
-.throbber-wrapper .sending-requests-throbber{
+.throbber-wrapper .sending-requests-throbber {
   position: absolute;
   top: 7em;
   left: 50%;
@@ -796,7 +804,7 @@ button.h5p-confirmation-dialog-exit:hover {
 
 .throbber-wrapper .sending-requests-throbber:before {
   display: block;
-  font-family: 'H5P';
+  font-family: "H5P";
   content: "\e90b";
   color: white;
   font-size: 10em;
@@ -868,7 +876,7 @@ button.h5p-core-button:active {
   background: #104888;
 }
 button.h5p-core-button:before {
-  font-family: 'H5P';
+  font-family: "H5P";
   padding-right: 0.15em;
   font-size: 1.5em;
   vertical-align: middle;
@@ -908,7 +916,7 @@ button.h5p-core-cancel-button:focus {
   max-width: min(300px, 90%);
 
   background: #000;
-  color: #FFF;
+  color: #fff;
 
   cursor: default;
 }
@@ -936,11 +944,12 @@ button.h5p-core-cancel-button:focus {
       width: 100%;
       border-spacing: 0;
       border-width: 1px;
-      border-color:  #494949;
+      border-color: #494949;
 
-      td, th {
+      td,
+      th {
         padding: 1px;
-        border-color:  #494949;
+        border-color: #494949;
         border-bottom-style: solid;
       }
 
@@ -950,7 +959,7 @@ button.h5p-core-cancel-button:focus {
 
       th {
         text-align: left;
-        border-width: .167em;
+        border-width: 0.167em;
       }
 
       tr:last-child > td {
@@ -963,9 +972,9 @@ button.h5p-core-cancel-button:focus {
       caption-side: top;
       color: #333;
       display: table-caption;
-      font-size: .75em;
+      font-size: 0.75em;
       outline-offset: -1px;
-      padding: .6em;
+      padding: 0.6em;
       text-align: center;
       word-break: break-word;
     }
