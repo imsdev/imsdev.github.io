@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Basic meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="geo.country" content="ZZ" />
+    <meta name="dcterms.rights" content="� Copyright IBM Corp. 2020" />
+    <meta name="dcterms.date" content="2020-07-18" />
+    <meta name="keywords" content="IMS Central, IMS Developer, IMS" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="wp-content/IMS_logo_small.png"
+    />
+
+    <!-- Page title -->
+    <title>IMS Arcade</title>
+
+    <!-- Meta -->
+    <link rel="canonical" href="ims-arcade.html" />
+
+    <!-- Sheets -->
+    <!-- Imported styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Migrated stylesheets -->
+    <link
+      rel="stylesheet"
+      id="dwboomer-style-css"
+      href="wp-content/themes/boomer-v18/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="wp-includes/css/www.css" />
+    <!-- Pure CSS -->
+    <link rel="stylesheet" href="wp-includes/css/pure.css" />
+    <link rel="stylesheet" href="wp-includes/css/grids-responsive-min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="wp-includes/css/homepage.css" />
+    <link rel="stylesheet" href="wp-includes/css/nav.css" />
+    <link rel="stylesheet" href="wp-includes/css/dropnav.css" />
+    <link rel="stylesheet" href="wp-includes/css/page.css" />
+
+    <!-- Hotjar Tracking Code for ibm.com/demos &  githhub -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 132193, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <!-- Additional styling for content after navigation -->
+    <script src="wp-includes/js/jquery.min.js"></script>
+
+    <!-- TipueSearch -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_content.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch_set.js"></script>
+    <script src="jekyll-tipue-search/assets/tipuesearch/tipuesearch.min.js"></script>
+
+    <!-- delayed search -->
+    <script src="jekyll-tipue-search/assets/tipuesearch/delayedsearch.js"></script>
+
+    <!-- Web components -->
+    <script
+      src="web-components/nav-header/nav-header.js"
+      type="module"
+    ></script>
+    <script
+      src="web-components/hero-section/hero-section.js"
+      type="module"
+    ></script>
+    <script
+      src="web-components/jump-links/jump-links.js"
+      type="module"
+    ></script>
+    <script
+      src="web-components/course-card/course-card.js"
+      type="module"
+    ></script>
+    <script src="web-components/footer/footer.js" type="module"></script>
+
+    <!-- H5P -->
+    <script
+      type="text/javascript"
+      src="h5p-player/main.bundle.js"
+      charset="UTF-8"
+    ></script>
+
+    <!-- Multiple choice set -->
+    <link
+      href="interactive-activities/multi-choice-set/multi-choice-set.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://1.www.s81c.com/common/carbon/plex/sans.css"
+    />
+    <script
+      type="module"
+      src="https://1.www.s81c.com/common/carbon/web-components/version/v2.37.0/button.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://1.www.s81c.com/common/carbon/web-components/version/v2.37.0/checkbox.min.js"
+    ></script>
+    <script
+      defer
+      src="interactive-activities/multi-choice-set/multi-choice-set.js"
+    ></script>
+
+    <!-- Fill in the blanks activity -->
+    <link
+      href="interactive-activities/fill-in-blank/fill-in-blank.css"
+      rel="stylesheet"
+    />
+    <link />
+    <script
+      defer
+      src="interactive-activities/fill-in-blank/fill-in-blank.js"
+    ></script>
+  </head>
+
+  <body id="ibm-com" class="ibm-com ibm-type">
+    <nav-header></nav-header>
+
+    <div id="content" class="main-content">
+      <!-- MAIN CONTENT -->
+      <main id="main">
+        <!-- =========================== Hero =========================== -->
+        <hero-section
+          name="IMS arcade"
+          image="wp-content/icons/icon_game_console.svg"
+          section="Learn"
+          desc="<p>Have some fun with IMS: test your knowledge or learn something new!</p>
+            <p>Look for new quizzes and games each month.</p>"
+        ></hero-section>
+
+        <!-- =========================== Jump links =========================== -->
+        <jump-links
+          links="Quiz, Flip Cards, Crossword, Drag and Drop, Flashcards"
+        ></jump-links>
+
+        <!-- =========================== Quiz=========================== -->
+        <section id="quiz" class="white-bg card-section">
+          <h2>Quiz</h2>
+          <div class="activity-container">
+            <div class="activity">
+              <h3 id="feedback"></h3>
+              <div id="mc-quiz" class="quiz"></div>
+              <cds-button id="next-btn">Next</cds-button>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========================== Flip Cards =========================== -->
+        <section id="flip-cards" class="light-gray-bg card-section">
+          <h2>Flip cards</h2>
+          <div id="h5p-container-flipc" style="width: 100%"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const el = document.getElementById("h5p-container-flipc");
+              const options = {
+                h5pJsonPath: "h5p-player/h5p-content-flipcards", // Path to the extracted H5P content
+                frameJs: "h5p-player/frame.bundle.js", // Path to player's frame.bundle.js
+                frameCss: "h5p-player/styles/h5p.css", // Path to player's h5p.css
+              };
+              new H5PStandalone.H5P(el, options);
+            });
+          </script>
+        </section>
+
+        <!-- =========================== Crossword =========================== -->
+        <section id="crossword" class="white-bg card-section">
+          <h2>Crossword</h2>
+          <div id="h5p-container-cw" style="width: 100%"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const el = document.getElementById("h5p-container-cw");
+              const options = {
+                h5pJsonPath: "h5p-player/h5p-content-crossword-02", // Path to the extracted H5P content
+                frameJs: "h5p-player/frame.bundle.js", // Path to player's frame.bundle.js
+                frameCss: "h5p-player/styles/h5p.css", // Path to player's h5p.css
+              };
+              new H5PStandalone.H5P(el, options);
+            });
+          </script>
+        </section>
+
+        <!-- =========================== Drag-and-drop =========================== -->
+        <section id="drag-and-drop" class="light-gray-bg card-section">
+          <h2>Drag and Drop</h2>
+          <div class="game-container">
+            <p><strong>Drag the terms to match their definitions.</strong></p>
+            <ol>
+              <li class="sentence">
+                Allows IMS to provide present database data in different ways
+                and to have any data redundancy be managed by IMS software:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                Provides an alternate route into the database:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                The only types of segments in the secondary index database where
+                the content of specified fields in the source segment is
+                duplicated:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                Suppresses certain index entries based on the content of the
+                designated field of a source segments:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                Segments that are used to store data that are intended to vary
+                in length over time such as text fields:
+                <span class="drop-zone"></span>
+              </li>
+              <li class="sentence">
+                Allows applications to see only specific fields within a segment
+                but cannot be allowed to see other information within the same
+                segment:
+                <span class="drop-zone"></span>
+              </li>
+            </ol>
+            <div id="word-bank" class="word-bank">
+              <!-- Draggable words will be added here by JavaScript -->
+            </div>
+            <div class="buttons">
+              <cds-button id="check-btn"></cds-button>
+              <cds-button id="show-ans-btn">Show solution</cds-button>
+            </div>
+            <div id="feedback" class="feedback"></div>
+          </div>
+        </section>
+
+        <!-- =========================== Flashcards =========================== -->
+        <section id="flashcards" class="white-bg card-section">
+          <h2>Flashcards</h2>
+          <div id="h5p-container-fc" style="width: 100%"></div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const el = document.getElementById("h5p-container-fc");
+              const options = {
+                h5pJsonPath: "h5p-player/h5p-content-flashcards-02", // Path to the extracted H5P content
+                frameJs: "h5p-player/frame.bundle.js", // Path to player's frame.bundle.js
+                frameCss: "h5p-player/styles/h5p.css", // Path to player's h5p.css
+              };
+              new H5PStandalone.H5P(el, options);
+            });
+          </script>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <imscentral-footer></imscentral-footer>
+  </body>
+</html>

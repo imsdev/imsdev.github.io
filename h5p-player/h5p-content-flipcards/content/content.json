@@ -1,0 +1,79 @@
+{
+  "mode": "normal",
+  "dialogs": [
+    {
+      "text": "<p>What is another term for an IMS region on z/OS?</p>",
+      "answer": "<p>z/OS address space</p>",
+      "tips": {}
+    },
+    {
+      "text": "<p>In a DBCTL environment, what is the only main IMS component?&nbsp;</p>",
+      "answer": "<p>IMS Database Manager (or IMS DB)</p>",
+      "tips": {}
+    },
+    {
+      "text": "<p>What two region types are missing in this diagram?</p>",
+      "answer": "<p>IFP and JBP</p>",
+      "tips": {},
+      "image": {
+        "path": "images/395a5c14ed134ca0a0542fd8e04a5807.png",
+        "mime": "image/png",
+        "copyright": { "license": "U" },
+        "width": 981,
+        "height": 491
+      }
+    },
+    {
+      "text": "<p>What is the correct sequence of the numbers and letters that these segments will be accessed by a sequential \"get-next\" function?</p>",
+      "answer": "<p>1-11-X-Y-12-U-V-W-13-X1-X2-X3-2</p>",
+      "tips": {},
+      "image": {
+        "path": "images/e7363a0e89e50fa9b6ac62534ae8423c.png",
+        "mime": "image/png",
+        "copyright": { "license": "U" },
+        "width": 559,
+        "height": 367
+      }
+    }
+  ],
+  "behaviour": {
+    "enableRetry": true,
+    "disableBackwardsNavigation": false,
+    "scaleTextNotCard": false,
+    "randomCards": true,
+    "maxProficiency": 5,
+    "quickProgression": false
+  },
+  "answer": "Turn",
+  "next": "Next",
+  "prev": "Previous",
+  "retry": "Retry",
+  "correctAnswer": "I got it right!",
+  "incorrectAnswer": "I got it wrong",
+  "round": "Round @round",
+  "cardsLeft": "Cards left: @number",
+  "nextRound": "Proceed to round @round",
+  "startOver": "Start over",
+  "showSummary": "Next",
+  "summary": "Summary",
+  "summaryCardsRight": "Cards you got right:",
+  "summaryCardsWrong": "Cards you got wrong:",
+  "summaryCardsNotShown": "Cards in pool not shown:",
+  "summaryOverallScore": "Overall Score",
+  "summaryCardsCompleted": "Cards you have completed learning:",
+  "summaryCompletedRounds": "Completed rounds:",
+  "summaryAllDone": "Well done! You have mastered all @cards cards by getting them correct @max times!",
+  "progressText": "Card @card of @total",
+  "cardFrontLabel": "Card front",
+  "cardBackLabel": "Card back",
+  "tipButtonLabel": "Show tip",
+  "audioNotSupported": "Your browser does not support this audio",
+  "confirmStartingOver": {
+    "header": "Start over?",
+    "body": "All progress will be lost. Are you sure you want to start over?",
+    "cancelLabel": "Cancel",
+    "confirmLabel": "Start over"
+  },
+  "title": "",
+  "description": "<p>Flip the card to reveal the answer.</p>"
+}

@@ -1,0 +1,219 @@
+{
+  "semantics": [
+    {
+      "label": "Overskrift"
+    },
+    {
+      "label": "Modus",
+      "description": "Måten dialogkortene vises på",
+      "options": [
+        {
+          "label": "Normal (i rekkefølge)"
+        },
+        {
+          "label": "Repetisjon"
+        }
+      ]
+    },
+    {
+      "label": "Oppgavebeskrivelse"
+    },
+    {
+      "widgets": [
+        {
+          "label": "Standardinnstilling"
+        }
+      ],
+      "label": "Dialogkort",
+      "entity": "Dialog",
+      "field": {
+        "label": "Spørsmål",
+        "fields": [
+          {
+            "label": "Framside",
+            "description": "Tekst på framsida"
+          },
+          {
+            "label": "Bakside",
+            "description": "Tekst på baksida"
+          },
+          {
+            "label": "Bilde",
+            "description": "Valgfritt bilde på kortet. Kortet kan ha bare bilde, bare tekst eller både bilde og tekst."
+          },
+          {
+            "label": "Alternativ tekst for bildet"
+          },
+          {
+            "label": "Lydfiler"
+          },
+          {
+            "label": "Tips",
+            "fields": [
+              {
+                "label": "Tips til framsida",
+                "description": "Nøkkelord, gloser, setningsstartere osv."
+              },
+              {
+                "label": "Tips til baksida",
+                "description": "For eksempel forklaringer, kommentarer eller annen tilleggsinformasjon"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Oppgaveinnstillinger",
+      "description": "Disse valga lar deg styre ulike funksjoner i oppgaven.",
+      "fields": [
+        {
+          "label": "Aktiver \"Prøv igjen\"-knapp"
+        },
+        {
+          "label": "Slå av tilbakenavigering",
+          "description": "Dette valget gjør at bruker bare kan navigere framover."
+        },
+        {
+          "label": "Tilpass fontstørrelsen så teksten får plass på kortet",
+          "description": "Dersom du ikke velger dette, kan kortet bli større fordi det tilpasser seg størrelsen på teksten."
+        },
+        {
+          "label": "Stokk korta",
+          "description": "Dette valget gjør at korta vises i tilfeldig rekkefølge."
+        },
+        {
+          "label": "Høyeste ferdighetsnivå"
+        },
+        {
+          "label": "Tillat å hoppe over kort",
+          "description": "Aktiver for å gi bruker lov til å hoppe over et kort når hen allerede vet svaret."
+        }
+      ]
+    },
+    {
+      "label": "Tekst på \"Snu\"-knapp",
+      "default": "Snu"
+    },
+    {
+      "label": "Tekst på \"Neste\"-knapp",
+      "default": "Neste"
+    },
+    {
+      "label": "Tekst på \"Forrige\"-knapp",
+      "default": "Forrige"
+    },
+    {
+      "label": "Tekst på \"Prøv igjen\"-knapp",
+      "default": "Prøv igjen"
+    },
+    {
+      "label": "Tekst på \"Riktig svar\"-knapp",
+      "default": "Jeg svarte rett"
+    },
+    {
+      "label": "Tekst på \"Feil svar\"-knapp",
+      "default": "Jeg svarte feil"
+    },
+    {
+      "label": "Tekst for rundenummer under korta og i oppsummeringa",
+      "description": "Variabelen @round erstattes av aktuelt rundenummer.",
+      "default": "Runde @round"
+    },
+    {
+      "label": "Tekst for antall kort som er igjen",
+      "description": "Variabelen @number erstattes av antall kort som gjenstår i denne runden.",
+      "default": "Gjenstående kort: @number"
+    },
+    {
+      "label": "Navn på \"Neste runde\"-knapp",
+      "description": "Variabelen @round erstattes av rundenummeret.",
+      "default": "Fortsett til runde @round"
+    },
+    {
+      "label": "Tekst på \"Start forfra\"-knapp",
+      "default": "Start forfra"
+    },
+    {
+      "label": "Tekst på \"Vis oppsummering\"-knapp",
+      "default": "Neste"
+    },
+    {
+      "label": "Overskrift for oppsummeringssida",
+      "default": "Oppsummering"
+    },
+    {
+      "label": "Tekst for kort bruker svarte rett på",
+      "default": "Kort du svarte rett på:"
+    },
+    {
+      "label": "Tekst for kort bruker svarte feil på",
+      "default": "Kort du svarte feil på:"
+    },
+    {
+      "label": "Tekst for kort som ikke ble vist",
+      "default": "Kort som ikke har blitt vist:"
+    },
+    {
+      "label": "Tekst for samla poengsum",
+      "default": "Samla poengsum"
+    },
+    {
+      "label": "Tekst for fullførte kort",
+      "default": "Kort du er ferdig med:"
+    },
+    {
+      "label": "Tekst for fullførte runder",
+      "default": "Fullførte runder:"
+    },
+    {
+      "label": "Melding når bruker har greid alle korta",
+      "description": "Variabelen @cards erstattes av antall kort i bunken. Variabelen @max erstattes av maksimalt mestringsnivå.",
+      "default": "Godt jobba! Du fikk alle @cards korta riktig @max ganger på rad!"
+    },
+    {
+      "label": "Framdriftstekst",
+      "description": "Tilgjengelige variabler er @card og @total. @card er nummeret på det aktuelle kortet, @total er totalt antall kort.",
+      "default": "Kort @card av @total"
+    },
+    {
+      "label": "Merkelapp for framsida på kortet",
+      "description": "Brukt av assisterende teknologi",
+      "default": "Framside"
+    },
+    {
+      "label": "Merkelapp for baksida på kortet",
+      "description": "Brukt av assisterende teknologi",
+      "default": "Bakside"
+    },
+    {
+      "label": "Navn på \"Vis tips\"-knapp",
+      "default": "Vis tips"
+    },
+    {
+      "label": "Melding om at lyd ikke kan spilles av",
+      "default": "Nettleseren din støtter ikke avspilling av denne lydfila."
+    },
+    {
+      "label": "Brukerbekreftelse for \"Start forfra\"",
+      "fields": [
+        {
+          "label": "Tittel",
+          "default": "Starte forfra?"
+        },
+        {
+          "label": "Hovedtekst",
+          "default": "Alt du har gjort til nå, vil bli sletta. Er du sikker på at du vil starte på nytt?"
+        },
+        {
+          "label": "Tekst på \"Avbryt\"-knapp",
+          "default": "Avbryt"
+        },
+        {
+          "label": "Tekst på bekreftelsesknapp",
+          "default": "Start forfra"
+        }
+      ]
+    }
+  ]
+}

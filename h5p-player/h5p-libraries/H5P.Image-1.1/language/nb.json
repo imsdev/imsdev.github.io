@@ -1,0 +1,31 @@
+{
+  "semantics": [
+    {
+      "label": "Bilde"
+    },
+    {
+      "label": "Dekorativt",
+      "description": "Velg dette hvis bildet bare er dekorativt og ikke bidrar med selvstendig informasjon til innholdet på denne siden. Bildet får ikke alternativ tekst, og skjermleser hopper over det."
+    },
+    {
+      "label": "Alternativ tekst",
+      "description": "Obligatorisk. Hvis bildet ikke kan lastes, vises denne teksten i stedet. Teksten blir også brukt av skjermleser."
+    },
+    {
+      "label": "Svevetekst",
+      "description": "Valgfritt. Denne teksten vises når brukeren holder pekeenheten over bildet."
+    },
+    {
+      "label": "Innholdsnavn for bilde",
+      "default": "Bilde"
+    },
+    {
+      "label": "Forstørr bilde",
+      "default": "Forstørr bilde"
+    },
+    {
+      "label": "Forminsk bilde",
+      "default": "Forminsk bilde"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "semantics": [
+    {
+      "label": "Fișiere sursă"
+    },
+    {
+      "label": "Mod player",
+      "description": "Selectați aspectul playerului.",
+      "options": [
+        {
+          "label": "Minimalist"
+        },
+        {
+          "label": "Complet"
+        },
+        {
+          "label": "Transparent"
+        }
+      ]
+    },
+    {
+      "label": "Ajustare la container"
+    },
+    {
+      "label": "Activează controalele",
+      "description": "Controalele permit utilizatorului, de exemplu, să pună pauză fișierului audio."
+    },
+    {
+      "label": "Activează redarea automată",
+      "description": "Cu redarea automată, fișierul audio pornește imediat. Rețineți că această funcționalitate nu este acceptată de toate browserele."
+    },
+    {
+      "label": "Redă audio (Cititor de ecran)",
+      "default": "Redă audio"
+    },
+    {
+      "label": "Pauză audio (Cititor de ecran)",
+      "default": "Pauză audio"
+    },
+    {
+      "label": "Nume conținut audio",
+      "default": "Audio"
+    },
+    {
+      "label": "Mesaj pentru audio neacceptat",
+      "default": "Browserul dumneavoastră nu suportă acest fișier audio."
+    }
+  ]
+}

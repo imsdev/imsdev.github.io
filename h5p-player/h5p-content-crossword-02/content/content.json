@@ -1,0 +1,113 @@
+{
+  "words": [
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "This IMS feature uses DEDBs and MSDBs to achieve superior performance compared to full-function databases",
+      "answer": "Fastpath"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "This IMS database type can be partitioned into multiple data set groups for improved availability and performance",
+      "answer": "HALDB"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "This IMS hierarchic database physical organization type relates segments by physical adjacency",
+      "answer": "Sequential"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "This IMS hierarchic database physical organization type relates segments by pointers",
+      "answer": "Direct"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "The position of a segment in relation to the root",
+      "answer": "Level"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "The first part of a segment",
+      "answer": "Prefix"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "It maintains information required for database recoveries",
+      "answer": "DBRC"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "A time at which the database manager records internal status information about the log",
+      "answer": "Checkpoint"
+    }
+  ],
+  "overallFeedback": [{ "from": 0, "to": 100 }],
+  "theme": {
+    "backgroundColor": "#0043ce",
+    "gridColor": "#000000",
+    "cellBackgroundColor": "#ffffff",
+    "cellColor": "#000000",
+    "clueIdColor": "#606060",
+    "cellBackgroundColorHighlight": "#a6c8ff",
+    "cellColorHighlight": "#000000",
+    "clueIdColorHighlight": "#000000"
+  },
+  "behaviour": {
+    "enableInstantFeedback": false,
+    "scoreWords": true,
+    "applyPenalties": false,
+    "enableRetry": true,
+    "enableSolutionsButton": true,
+    "keepCorrectAnswers": false
+  },
+  "l10n": {
+    "across": "Across",
+    "down": "Down",
+    "checkAnswer": "Check",
+    "submitAnswer": "Submit",
+    "tryAgain": "Retry",
+    "showSolution": "Show solution",
+    "couldNotGenerateCrossword": "Could not generate a crossword with the given words. Please try again with fewer words or words that have more characters in common.",
+    "couldNotGenerateCrosswordTooFewWords": "Could not generate a crossword. You need at least two words.",
+    "probematicWords": "Some words could not be placed. If you are using fixed words, please make sure that their position doesn't prevent other words from being placed. Words with the same alignment may not be placed touching each other. Problematic word(s): @words",
+    "extraClue": "Extra clue",
+    "closeWindow": "Close window"
+  },
+  "a11y": {
+    "crosswordGrid": "Crossword grid. Use arrow keys to navigate and the keyboard to enter characters. Alternatively, use Tab to navigate to type the answers in Fill in the Blanks style fields instead of the grid.",
+    "column": "Column",
+    "row": "Row",
+    "across": "Across",
+    "down": "Down",
+    "empty": "Empty",
+    "resultFor": "Result for: @clue",
+    "correct": "Correct",
+    "wrong": "Wrong",
+    "point": "point",
+    "solutionFor": "For @clue the solution is: @solution",
+    "extraClueFor": "Open extra clue for @clue",
+    "letterSevenOfNine": "Letter @position of @length",
+    "lettersWord": "@length letter word",
+    "check": "Check the characters. The responses will be marked as correct, incorrect, or unanswered.",
+    "showSolution": "Show the solution. The crossword will be filled with its correct solution.",
+    "retry": "Retry the task. Reset all responses and start the task over again.",
+    "yourResult": "You got @score out of @total points"
+  },
+  "taskDescription": ""
+}

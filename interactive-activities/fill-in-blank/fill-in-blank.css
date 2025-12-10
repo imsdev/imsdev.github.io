@@ -1,0 +1,77 @@
+.game-container {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.sentence {
+  margin-bottom: 1em;
+  line-height: 2;
+}
+
+.drop-zone {
+  display: inline-block;
+  width: 300px; /* Adjust based on expected word length */
+  height: 30px;
+  border-bottom: 2px dashed #ccc;
+  margin: 0 5px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+
+.show-soln {
+  color: black !important;
+}
+
+.word-bank {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  border-top: 2px solid #eee;
+  padding-top: 1rem;
+  width: 90%;
+}
+
+.word-item {
+  font-weight: bold;
+  font-size: 1.125em;
+  color: black;
+  border-radius: 5px;
+  cursor: grab;
+  user-select: none; /* Prevents accidental text selection */
+}
+
+.word-item.dragging {
+  opacity: 0.5;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 2em;
+}
+
+.buttons > * {
+  font-size: 1.125em;
+  padding: 0.75rem 1.5rem 0.75em 0;
+}
+
+#show-ans-btn {
+  display: none;
+}
+
+.feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.correct-ans {
+  color: #1f933a;
+}
+
+.incorrect-ans {
+  color: #dc3545;
+}
