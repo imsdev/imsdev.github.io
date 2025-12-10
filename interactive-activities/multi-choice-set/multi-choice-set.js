@@ -7,7 +7,7 @@ const questions = [
       { text: "BMP", correct: false },
       { text: "IFP", correct: false },
       { text: "MPR", correct: false },
-      { text: "JBP", correct: true },
+      { text: "JMP", correct: true },
     ],
   },
   {
