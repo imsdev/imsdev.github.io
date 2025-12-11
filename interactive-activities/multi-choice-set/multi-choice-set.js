@@ -31,14 +31,14 @@ const questions = [
   },
   {
     question:
-      "Data Language/One (DL/I) is a data management facility that serves as an interface between what two items?",
+      "Each segment that is defined to an IMS database must contain which of these items?",
     answers: [
-      { text: "An application program and Java applications", correct: false },
-      { text: "An application program and an IMS database", correct: true },
-      { text: "An IMS database and the z/OS operating system", correct: false },
+      { text: "Segment name", correct: false },
+      { text: "Segment size", correct: false },
+      { text: "Fields", correct: false },
       {
-        text: "An application program and IMS Transaction Manager",
-        correct: false,
+        text: "All of these",
+        correct: true,
       },
     ],
   },
