@@ -58,9 +58,9 @@ var tipuesearch = {
     },
     {
       title:
-        '<p>IMS Advocates</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
-      text: "Request an IMS advocate to help you with all your IMS needs.",
-      tags: "advocate ims_developers help business_need issues",
+        '<p>IMS Advocates and Ideas</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
+      text: "Request an IMS advocate to help you with all your IMS needs and submit ideas to enhance IMS.",
+      tags: "ims_developers help business_need issues advocacy improve",
       url: "ims-advocacy.html",
     },
     {
