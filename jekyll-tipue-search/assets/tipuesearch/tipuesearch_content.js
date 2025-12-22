@@ -39,7 +39,7 @@ var tipuesearch = {
       title:
         '<p>IMS Transaction Manager</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
       text: "Use IMS Transaction Manager to securely host applications and support billions of transactions.",
-      tags: "db managed_acbs ims_catalog self-provisioning ansible ddl_utility data_definition_utility dfs3id00",
+      tags: "tm otma transactions transaction_orchestration tpipe dbctl",
       url: "ims-tm.html",
     },
     {
@@ -100,7 +100,7 @@ var tipuesearch = {
     },
     {
       title:
-        '<p>IMS Arcade</p> <img class="search-icon" aria-label="Arcade" src="wp-content/search_education.svg"></img>',
+        '<p>IMS Arcade</p> <img class="search-icon" aria-label="Arcade" src="wp-content/icons/icon_game_console.svg"></img>',
       text: "Test your IMS knowledge with quick mini games.",
       tags: "learn",
       url: "ims-arcade.html",
@@ -114,14 +114,14 @@ var tipuesearch = {
     },
     {
       title:
-        '<p>Documentation</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
+        '<p>IMS Documentation</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
       text: "Find information on IMS, tools, and other IBM products. ",
       tags: "docs ims_docs documentation dfs sql abend parameters parm jcl logs release_planning pdf ims_tools",
       url: "ims-docs.html",
     },
     {
       title:
-        '<p>Support</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
+        '<p>IMS Support</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
       text: "Get help to resolve problems with IMS components, open cases, or request enhancements. ",
       tags: "support ims_support cases fix_central update software hardware operating_system forums rfe request_for_enhancement listserv stack_overflow",
       url: "ims-support.html",
