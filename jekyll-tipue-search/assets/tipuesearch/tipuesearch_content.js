@@ -100,6 +100,13 @@ var tipuesearch = {
     },
     {
       title:
+        '<p>IMS Arcade</p> <img class="search-icon" aria-label="Arcade" src="wp-content/search_education.svg"></img>',
+      text: "Test your IMS knowledge with quick mini games.",
+      tags: "learn",
+      url: "ims-arcade.html",
+    },
+    {
+      title:
         '<p>IMS Repos</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
       text: "Get code samples and tutorials on IMS components, workflows, Java, and more.",
       tags: "repos ims_repos git github resources fastpath_database dedb z/os_management_facility z/osmf workflow_samples java_sample springboot microservices tm_resource_adapter connection_pooling tomcat sample java_message_processing java jmp ims_catalog workflow managed_acbs rest_api connect_ee connect_enterprise_edition jee universal_drivers jdbc open_database cobol nodejs node.js labs jenkins open_source devops zowe ansible",
