@@ -65,6 +65,13 @@ var tipuesearch = {
     },
     {
       title:
+        '<p>IMS Customer Internship</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
+      text: "Take your skills to the next level with our annual, in-person, one-week training event.",
+      tags: "event labs ims_experts",
+      url: "ims-internship.html",
+    },
+    {
+      title:
         '<p>IMS Videos</p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
       text: "Choose from hundreds of educational videos on IMS components, functions, and tools.",
       tags: "education learn videos mediacenter",
@@ -86,14 +93,14 @@ var tipuesearch = {
     },
     {
       title:
-        '<p>IMS Documentation</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
+        '<p>Documentation</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
       text: "Find information on IMS, tools, and other IBM products. ",
       tags: "docs ims_docs documentation dfs sql abend parameters parm jcl logs release_planning pdf ims_tools",
       url: "ims-docs.html",
     },
     {
       title:
-        '<p>IMS Support</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
+        '<p>Support</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
       text: "Get help to resolve problems with IMS components, open cases, or request enhancements. ",
       tags: "support ims_support cases fix_central update software hardware operating_system forums rfe request_for_enhancement listserv stack_overflow",
       url: "ims-support.html",
