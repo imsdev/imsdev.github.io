@@ -58,6 +58,20 @@ var tipuesearch = {
     },
     {
       title:
+        '<p>IMS Developer Community</p> <img class="search-icon" aria-label="External page" src="wp-content/search_externalpage.svg"></img>',
+      text: "Connect with other developers in the IMS Community.",
+      tags: "community engage development",
+      url: "https://community.ibm.com/community/user/blogs/daleah-sampler/2025/09/09/ims-developer-community",
+    },
+    {
+      title:
+        '<p>IMS Product Page</p> <img class="search-icon" aria-label="External page" src="wp-content/search_externalpage.svg"></img>',
+      text: "Learn more about the latest IMS features and offerings.",
+      tags: "",
+      url: "https://www.ibm.com/products/ims",
+    },
+    {
+      title:
         '<p>IMS Advocates and Ideas</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
       text: "Request an IMS advocate to help you with all your IMS needs and submit ideas to enhance IMS.",
       tags: "ims_developers help business_need issues advocacy improve",
