@@ -39,7 +39,7 @@ var tipuesearch = {
       title:
         '<p>IMS Transaction Manager</p> <img class="search-icon" aria-label="Internal page" src="wp-content/search_internalpage.svg"></img>',
       text: "Use IMS Transaction Manager to securely host applications and support billions of transactions.",
-      tags: "tm otma transactions transaction_orchestration tpipe dbctl",
+      tags: "tm otma transactions transaction_orchestration tpipe transaction_pipe dbctl",
       url: "ims-tm.html",
     },
     {
@@ -164,6 +164,13 @@ var tipuesearch = {
     },
     {
       title:
+        '<p>Making an IMS Database Ready for Use </p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
+      text: "Watch these videos to learn how to prepare an IMS database and its primary index.",
+      tags: "dbdgen vsam esds ksds linear osam psbgen senseg procopt update_mode load_mode dfsddlt0 dl/i_test_program dbrc database_recovery_control",
+      url: "ims-videos.html#ims-prep-db",
+    },
+    {
+      title:
         '<p>IMS Managed ACBs</p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
       text: "Watch this video to learn about the advantages of allowing IMS to manage ACBs for databases and program views for you.",
       tags: "introduction mACB progress_report",
@@ -206,20 +213,6 @@ var tipuesearch = {
     },
     {
       title:
-        '<p>A beginner’s guide to making an IMS database ready for use</p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
-      text: "Watch these videos to learn how to prepare an IMS database and its primary index.",
-      tags: "dfsddlt0 dbdgen psbgen dli_test_program dbrc vsam osam database_recovery_control",
-      url: "ims-videos.html#ims-prep-db",
-    },
-    {
-      title:
-        '<p>IMS z/OS Native DDL Utility</p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
-      text: "Learn how to use the zDDL utility to submit DDL SQL statements without IMS Connect.",
-      tags: "zddl ddl simulate autocommit verbose rsclst ddltrace_dd_cards",
-      url: "https://mediacenter.ibm.com/playlist/details/1_4u3gq2f0/categoryId/122579632",
-    },
-    {
-      title:
         '<p>IMS DBDGEN and PSBGEN for Beginners</p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
       text: "Watch these videos to learn how to code DBDGEN and PSBGEN input.",
       tags: "dbdgen psbgen segm field senseg segment_storage hierarchical_database",
@@ -234,10 +227,10 @@ var tipuesearch = {
     },
     {
       title:
-        '<p>IMS Diagnostic Techniques</p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
-      text: "Watch these videos to learn how to resolve common problems during IMS restart.",
-      tags: "ims_diagnostic_techniques ims_problems tuning tmtransaction_manager ims_monitor performance_analyzer performance_evaluation tcb_structure itasks iwaits pools reca hiop dlisas_region message_processing_regions monitor_region ims_pa transit_time logger olds wads write-ahead_data_sets online_log_data_sets fixed_pool_manager variable_pool_manager vtam_message save_area_prefix saps message_format_service mfs message_queue buffer_pools multi_segmented_messages spanned_messages ims_connect parmlib hwscfgxx tcpip_statement configuration_member otma open_transaction_manager_access racf passticket xcf cross-coupling_facility",
-      url: "ims-videos.html#ims-dg-tech",
+        '<p>z/OS Logger Reports IMS Shared Queues</p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
+      text: "Learn to use the z/OS Logger so that you can monitor the performance of an IMS shared queues environment..",
+      tags: "",
+      url: "ims-videos.html#shared-queue-log-reports",
     },
     {
       title:
@@ -287,6 +280,13 @@ var tipuesearch = {
       text: "This video shows you how to make 31-bit COBOL interoperable with 64-bit Java applications.",
       tags: "introduction java modernize cobol demo",
       url: "ims-videos.html#ims-interop",
+    },
+    {
+      title:
+        '<p>IMS z/OS Native DDL Utility</p> <img class="search-icon" aria-label="Video" src="wp-content/search_video.svg"></img>',
+      text: "Learn how to use the zDDL utility to submit DDL SQL statements without IMS Connect.",
+      tags: "zddl ddl simulate autocommit verbose rsclst ddltrace_dd_cards",
+      url: "https://mediacenter.ibm.com/playlist/details/1_4u3gq2f0/categoryId/122579632",
     },
     // _____ COURSES _____
     {
