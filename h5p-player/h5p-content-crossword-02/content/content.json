@@ -4,22 +4,22 @@
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "This IMS feature uses DEDBs and MSDBs to achieve superior performance compared to full-function databases",
-      "answer": "Fastpath"
+      "clue": "It’s the I in a PHIDAM database organization.",
+      "answer": "Indexed"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "This IMS database type can be partitioned into multiple data set groups for improved availability and performance",
-      "answer": "HALDB"
+      "clue": "A subset of a data entry database (DEDB).",
+      "answer": "Area"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "This IMS hierarchic database physical organization type relates segments by physical adjacency",
-      "answer": "Sequential"
+      "clue": "When the database manager records internal status information about the log.",
+      "answer": "Checkpoint"
     },
     {
       "extraClue": { "params": {} },
@@ -32,29 +32,50 @@
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "The position of a segment in relation to the root",
-      "answer": "Level"
+      "clue": "To apply all the changes made during the current unit of recovery (UOR) or unit of work (UOW).",
+      "answer": "Commit"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "The first part of a segment",
-      "answer": "Prefix"
+      "clue": "A dialog between a terminal and a message processing program.",
+      "answer": "Conversation"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "It maintains information required for database recoveries",
-      "answer": "DBRC"
+      "clue": "An IMS system that does not use IMS Transaction Manager.",
+      "answer": "DBCTL"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "A time at which the database manager records internal status information about the log",
-      "answer": "Checkpoint"
+      "clue": "A repository for indirect pointers.",
+      "answer": "ILDS"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "A set of systems in an IMS network that work together as a unit.",
+      "answer": "IMSplex"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "A type of pointer used in a secondary index.",
+      "answer": "Target"
+    },
+    {
+      "extraClue": { "params": {} },
+      "fixWord": false,
+      "orientation": "across",
+      "clue": "A tree-like arrangement of segments in a database.",
+      "answer": "Hierarchy"
     }
   ],
   "overallFeedback": [{ "from": 0, "to": 100 }],

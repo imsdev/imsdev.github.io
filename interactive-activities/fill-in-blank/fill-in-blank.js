@@ -8,22 +8,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Define the words to be dragged and shuffled
   const words = [
-    "Field-level sensitivity",
-    "Segment-level sensitivity",
-    "Variable length segments",
-    "Fixed length segments",
-    "Logical relationships",
-    "Secondary index",
-    "Sparse secondary index",
-    "Pointer segment",
+    "IMS catalog",
+
+    "input message",
+    "logical relationship",
+    "ACB",
+    "IMSID",
+    "IMS command",
+    "node",
+    "secondary index",
+    "key field",
+    "pointer segment",
   ];
+  // Correct words in correct order
   const correctWords = [
-    "Logical relationships",
-    "Secondary index",
-    "Pointer segment",
-    "Sparse secondary index",
-    "Variable length segments",
-    "Field-level sensitivity",
+    "IMS catalog",
+    "IMSID",
+    "input message",
+    "key field",
+    "logical relationship",
+    "node",
   ];
 
   let draggedItem = null;

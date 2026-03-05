@@ -2,37 +2,30 @@
   "mode": "normal",
   "dialogs": [
     {
-      "text": "<p>What is another term for an IMS region on z/OS?</p>",
-      "answer": "<p>z/OS address space</p>",
+      "text": "<p>What status code would you receive if you issued a Get Unique (GU) call with the following SSA, and the NAME segment occurrence of SMITH did not exist in the IMS hierarchy?<br/>COURSEbb(CODE=U4200)<br/>NAMEbbbb(LASTNM=SMITH)</p>",
+      "answer": "<p>GE status</p>",
       "tips": {}
     },
     {
-      "text": "<p>In a DBCTL environment, what is the only main IMS component?&nbsp;</p>",
-      "answer": "<p>IMS Database Manager (or IMS DB)</p>",
+      "text": "<p>If an application programmer wants to restart an application from a specific commit point, what is the first DLI service call the application should make?</p>",
+      "answer": "<p>XRST</p>",
       "tips": {}
     },
     {
-      "text": "<p>What two region types are missing in this diagram?</p>",
-      "answer": "<p>IFP and JBP</p>",
+      "text": "<p>How many partitions can be defined for a HALDB?</p>",
+      "answer": "<p>1001</p>",
+      "tips": {}
+    },
+    {
+      "text": "<p>All of the items under the root segment in this illustration are multiple occurrences of the same segment type under the same parent occurrence. What’s the short name for these segments?</p>",
+      "answer": "<p>Twins</p>",
       "tips": {},
       "image": {
-        "path": "images/395a5c14ed134ca0a0542fd8e04a5807.png",
+        "path": "images/b5e0d9b8-983e-411c-8346-77d5c604973f.png",
         "mime": "image/png",
         "copyright": { "license": "U" },
         "width": 981,
         "height": 491
-      }
-    },
-    {
-      "text": "<p>What is the correct sequence of the numbers and letters that these segments will be accessed by a sequential \"get-next\" function?</p>",
-      "answer": "<p>1-11-X-Y-12-U-V-W-13-X1-X2-X3-2</p>",
-      "tips": {},
-      "image": {
-        "path": "images/e7363a0e89e50fa9b6ac62534ae8423c.png",
-        "mime": "image/png",
-        "copyright": { "license": "U" },
-        "width": 559,
-        "height": 367
       }
     }
   ],
