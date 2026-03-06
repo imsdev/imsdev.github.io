@@ -48,7 +48,7 @@ const questions = [
   },
   {
     question:
-      "Which type of pointer allows a Fast Path DEDB to get direct access to the middle of long twin chain? ",
+      "A call without an segment search argument (SSA) is called what? ",
     answers: [
       { text: "A qualified call", correct: false },
       { text: "A non-SSA call", correct: false },
