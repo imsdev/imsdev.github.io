@@ -52,8 +52,8 @@ const questions = [
     answers: [
       { text: "A qualified call", correct: false },
       { text: "A non-SSA call", correct: false },
-      { text: "An unqualified call", correct: false },
-      { text: "None of these", correct: true },
+      { text: "An unqualified call", correct: true },
+      { text: "None of these", correct: false },
     ],
   },
 ];
