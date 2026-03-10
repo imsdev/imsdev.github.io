@@ -67,8 +67,8 @@
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "A type of pointer used in a secondary index.",
-      "answer": "Target"
+      "clue": "A method (abbreviated) for managing multiple subsystems as if they were one system.",
+      "answer": "SPOC"
     },
     {
       "extraClue": { "params": {} },
