@@ -1,41 +1,45 @@
 // Questions
 const questions = [
   {
-    question:
-      "Which IMS region type would you use to run an application that is written in Java?",
+    question: "What are the advantages of having a database system?  ",
     answers: [
-      { text: "BMP", correct: false },
-      { text: "IFP", correct: false },
-      { text: "MPR", correct: false },
-      { text: "JMP", correct: true },
+      { text: "Centralized files for all applications", correct: false },
+      {
+        text: "Elimination of much duplicated space and effort",
+        correct: false,
+      },
+      {
+        text: "Single information source provides complete, accurate information processing",
+        correct: false,
+      },
+      { text: "All of these", correct: true },
     ],
   },
   {
-    question:
-      "What can you add to a DL/I call to find a specific instance of a segment?",
+    question: "Which of these items is not stored in the IMS catalog?",
     answers: [
-      { text: "PCB", correct: false },
-      { text: "AIB", correct: false },
-      { text: "Segment search argument (SSA)", correct: true },
-      { text: "COUNT parameter", correct: false },
+      { text: "ACBLIB", correct: true },
+      { text: "Metadata related to the PSB", correct: false },
+      { text: "Time stamps", correct: false },
+      { text: "Metadata related to the DBD", correct: false },
     ],
   },
   {
-    question: "What is a dependent segment?",
+    question: "Which of the following DL/I calls are not logged?",
     answers: [
-      { text: "A root segment", correct: false },
-      { text: "Any segment that is not the root segment", correct: true },
-      { text: "A parent segment only", correct: false },
-      { text: "None of these", correct: false },
+      { text: "Insert", correct: false },
+      { text: "Get", correct: true },
+      { text: "Replace", correct: false },
+      { text: "Delete", correct: false },
     ],
   },
   {
     question:
       "Each segment that is defined to an IMS database must contain which of these items?",
     answers: [
-      { text: "Segment name", correct: false },
-      { text: "Segment size", correct: false },
-      { text: "Fields", correct: false },
+      { text: "The function code", correct: false },
+      { text: "The PCB address", correct: false },
+      { text: "Working storage", correct: false },
       {
         text: "All of these",
         correct: true,
@@ -44,12 +48,12 @@ const questions = [
   },
   {
     question:
-      "Which type of pointer allows a Fast Path DEDB to get direct access to the middle of long twin chain? ",
+      "A call without an segment search argument (SSA) is called what? ",
     answers: [
-      { text: "Hierarchical pointer", correct: false },
-      { text: "Physical child pointer", correct: false },
-      { text: "Logical parent pointer", correct: false },
-      { text: "Subset pointer", correct: true },
+      { text: "A qualified call", correct: false },
+      { text: "A non-SSA call", correct: false },
+      { text: "An unqualified call", correct: true },
+      { text: "None of these", correct: false },
     ],
   },
 ];
