@@ -1,59 +1,93 @@
 // Questions
 const questions = [
   {
-    question: "What are the advantages of having a database system?  ",
-    answers: [
-      { text: "Centralized files for all applications", correct: false },
-      {
-        text: "Elimination of much duplicated space and effort",
-        correct: false,
-      },
-      {
-        text: "Single information source provides complete, accurate information processing",
-        correct: false,
-      },
-      { text: "All of these", correct: true },
-    ],
-  },
-  {
-    question: "Which of these items is not stored in the IMS catalog?",
-    answers: [
-      { text: "ACBLIB", correct: true },
-      { text: "Metadata related to the PSB", correct: false },
-      { text: "Time stamps", correct: false },
-      { text: "Metadata related to the DBD", correct: false },
-    ],
-  },
-  {
-    question: "Which of the following DL/I calls are not logged?",
-    answers: [
-      { text: "Insert", correct: false },
-      { text: "Get", correct: true },
-      { text: "Replace", correct: false },
-      { text: "Delete", correct: false },
-    ],
-  },
-  {
     question:
-      "Each segment that is defined to an IMS database must contain which of these items?",
+      "What is the main benefit of using logical (versus physical) database views?",
     answers: [
-      { text: "The function code", correct: false },
-      { text: "The PCB address", correct: false },
-      { text: "Working storage", correct: false },
       {
-        text: "All of these",
+        text: "This allows IMS to provide a way to present the data in several ways and to have any data redundancy be managed by IMS software.",
         correct: true,
       },
+      { text: "It makes the DBDGEN process easier.", correct: false },
+      { text: "It provides a way to store metadata.", correct: false },
+      { text: "It helps to encrypt data.", correct: false },
     ],
   },
   {
     question:
-      "A call without an segment search argument (SSA) is called what? ",
+      "Which of the following statements about secondary indexes is not true?",
     answers: [
-      { text: "A qualified call", correct: false },
-      { text: "A non-SSA call", correct: false },
-      { text: "An unqualified call", correct: true },
-      { text: "None of these", correct: false },
+      {
+        text: "They provide ordered entry to a database on values other than root key.",
+        correct: false,
+      },
+      {
+        text: "IMS permits up to 500 secondary indexes per database.",
+        correct: true,
+      },
+      {
+        text: "They provide efficient multiple entry values into a common database.",
+        correct: false,
+      },
+      {
+        text: "Secondary indexes are automatically maintained by the system.",
+        correct: false,
+      },
+    ],
+    explanation:
+      "There can be a maximum of 32 secondary indexes per segment and 255 secondary indexes per DEDB.",
+  },
+  {
+    question:
+      "Which two statements are true for HSAM (Hierarchical Sequential Access Method) databases?",
+    answers: [
+      {
+        text: "HSAM is characterized as having all data stored in a single data set.",
+        correct: true,
+      },
+      {
+        text: "HSAM is characterized as having data stored in two data sets on disk only.",
+        correct: false,
+      },
+      {
+        text: "Any access to segments in HSAM must be performed through a sequential search of the data set.",
+        correct: true,
+      },
+      {
+        text: "HSAM is used for a sequential input or output file and has no index.",
+        correct: false,
+      },
+    ],
+  },
+  {
+    question:
+      "By designating an IMS secondary index as a sparse index, how is IMS performance improved?",
+    answers: [
+      { 
+        text: "Reduces size of the secondary index on disk", 
+        correct: true,
+      },
+      { 
+        text: "Increases the number of pointer segments", 
+        correct: false 
+      },
+      {
+        text: "Reduces IMS index maintenance, so there is no overhead associated with creating useless index entries",
+        correct: true,
+      },
+      { 
+        text: "Reduces program complexity", 
+        correct: false },
+    ],
+  },
+  {
+    question:
+      "Which one of these is not part of the segment prefix of a Hierarchic Direct segment?",
+    answers: [
+      { text: "Pointer Area", correct: false },
+      { text: "Delete byte", correct: false },
+      { text: "Data", correct: true },
+      { text: "Segment Code", correct: false },
     ],
   },
 ];

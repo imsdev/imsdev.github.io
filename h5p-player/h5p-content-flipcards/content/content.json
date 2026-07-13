@@ -2,31 +2,24 @@
   "mode": "normal",
   "dialogs": [
     {
-      "text": "<p>What status code would you receive if you issued a Get Unique (GU) call with the following SSA, and the NAME segment occurrence of SMITH did not exist in the IMS hierarchy?<br/>COURSEbb(CODE=U4200)<br/>NAMEbbbb(LASTNM=SMITH)</p>",
-      "answer": "<p>GE status</p>",
+      "text": "<h3 style=\"position: absolute; top: -80px;\">Question</h3><p>What is stored in the primary index of a HIDAM and PHIDAM database?</p>",
+      "answer": "<h3 style=\"position: absolute; top: -80px;\">Answer</h3><p>The keys of the root segments in the database</p>",
       "tips": {}
     },
     {
-      "text": "<p>If an application programmer wants to restart an application from a specific commit point, what is the first DLI service call the application should make?</p>",
-      "answer": "<p>XRST</p>",
+      "text": "<h3 style=\"position: absolute; top: -80px;\">Question</h3><p>True or false: After you define physical databases through the DBDGEN process, you must also perform a DBDGEN for a logical database.</p>",
+      "answer": "<h3 style=\"position: absolute; top: -80px;\">Answer</h3><p>True</p>",
       "tips": {}
     },
     {
-      "text": "<p>How many partitions can be defined for a HALDB?</p>",
-      "answer": "<p>1001</p>",
+      "text": "<h3 style=\"position: absolute; top: -80px;\">Question</h3><p>What are the pointers used in secondary indexes?</p>",
+      "answer": "<h3 style=\"position: absolute; top: -80px;\">Answer</h3><p>pointer, target, and source</p>",
       "tips": {}
     },
     {
-      "text": "<p>All of the items under the root segment in this illustration are multiple occurrences of the same segment type under the same parent occurrence. What’s the short name for these segments?</p>",
-      "answer": "<p>Twins</p>",
-      "tips": {},
-      "image": {
-        "path": "images/b5e0d9b8-983e-411c-8346-77d5c604973f.png",
-        "mime": "image/png",
-        "copyright": { "license": "U" },
-        "width": 981,
-        "height": 491
-      }
+      "text": "<h3 style=\"position: absolute; top: -80px;\">Question</h3><p>What's the main difference between a call that uses a secondary index and one that does not?</p>",
+      "answer": "<h3 style=\"position: absolute; top: -80px;\">Answer</h3><p>For the call to use the secondary index, it must reference a PCB with the PROCSEQ= parameter.</p>",
+      "tips": {}
     }
   ],
   "behaviour": {

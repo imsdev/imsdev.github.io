@@ -4,78 +4,78 @@
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "It’s the I in a PHIDAM database organization.",
-      "answer": "Indexed"
+      "clue": "A segment that is dependent on another segment above it (its parent) in the hierarchy.",
+      "answer": "child"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "A subset of a data entry database (DEDB).",
-      "answer": "Area"
+      "clue": "You add it to a PCB that allows a program to see only specific fields within a segment but cannot be allowed to see other information within the same segment.",
+      "answer": "SENFLD"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "When the database manager records internal status information about the log.",
-      "answer": "Checkpoint"
+      "clue": "It's the parameter in a PCB that means you're calling a secondary index.",
+      "answer": "PROCSEQ"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "This IMS hierarchic database physical organization type relates segments by pointers",
-      "answer": "Direct"
+      "clue": "These are the only types of segments in the secondary index database.",
+      "answer": "pointer"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "To apply all the changes made during the current unit of recovery (UOR) or unit of work (UOW).",
-      "answer": "Commit"
+      "clue": "A secondary index is its own separate database and must use this access method.",
+      "answer": "VSAM"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "A dialog between a terminal and a message processing program.",
-      "answer": "Conversation"
+      "clue": "Different from fixed-length segments.",
+      "answer": "variable"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "An IMS system that does not use IMS Transaction Manager.",
-      "answer": "DBCTL"
+      "clue": "A routine that can be used for security encryption.",
+      "answer": "compression"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "A repository for indirect pointers.",
-      "answer": "ILDS"
+      "clue": "HDAM/PHDAM databases have no index; what do they use instead for direct access?",
+      "answer": "randomizer"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "A set of systems in an IMS network that work together as a unit.",
-      "answer": "IMSplex"
+      "clue": "It's used to define system configuration macros, application resource macros, and VTAM device macros.",
+      "answer": "SYSGEN"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "A method (abbreviated) for managing multiple subsystems as if they were one system.",
-      "answer": "SPOC"
+      "clue": "A region type that does not attach to the control region address space.",
+      "answer": "DLIBATCH"
     },
     {
       "extraClue": { "params": {} },
       "fixWord": false,
       "orientation": "across",
-      "clue": "A tree-like arrangement of segments in a database.",
-      "answer": "Hierarchy"
+      "clue": "A data set that contains information on the current status of the logging information.",
+      "answer": "RECON"
     }
   ],
   "overallFeedback": [{ "from": 0, "to": 100 }],

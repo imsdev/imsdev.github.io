@@ -8,26 +8,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Define the words to be dragged and shuffled
   const words = [
-    "IMS catalog",
-
-    "input message",
-    "logical relationship",
-    "ACB",
-    "IMSID",
-    "IMS command",
-    "node",
+    "PCB",
+    "Unqualified call",
+    "pointer",
+    "target",
+    "source",
+    "SSA",
     "secondary index",
-    "key field",
-    "pointer segment",
+    "GU call",
   ];
   // Correct words in correct order
   const correctWords = [
-    "IMS catalog",
-    "IMSID",
-    "input message",
-    "key field",
-    "logical relationship",
-    "node",
+    "PCB",
+    "Unqualified call",
+    "pointer",
+    "target",
+    "source",
   ];
 
   let draggedItem = null;
