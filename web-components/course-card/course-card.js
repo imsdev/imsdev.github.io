@@ -37,7 +37,7 @@ function createComponent(html) {
      * @param {boolean} shadow - A boolean indicating whether to use the shadow DOM for the element.
      * @returns {void}
      */
-    function setImage(cssSelector, image, name, imageInvert, shadow) {
+    function setImage(cssSelector, image, name, imageInvert, imageWidth, shadow) {
         const selector = shadow.querySelector(cssSelector);
         // Set image
         selector.src = image;
@@ -48,9 +48,14 @@ function createComponent(html) {
             const courseCard = shadow.querySelector('.course-card');
             courseCard.style.alignItems = 'flex-start';
         }
-        // Invert icon 
+        // Invert icon
         if (imageInvert == 'true') {
             selector.style.filter = 'invert(1)';
+        }
+        // Override image width
+        if (imageWidth != '') {
+            selector.style.width = imageWidth;
+            selector.style.maxWidth = 'none';
         }
     }
 
@@ -113,6 +118,7 @@ function createComponent(html) {
         constructor() {
             super();
             this.imginvert = "false";
+            this.imgwidth = "";
             this.selfpaced = "";
             this.level = "";
             this.cost = "";
@@ -131,7 +137,7 @@ function createComponent(html) {
          * @returns {Array} An array of property names.
         */
         static get observedAttributes() {
-            return ['name', 'session', 'desc', 'imgsrc', 'imginvert', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start', 
+            return ['name', 'session', 'desc', 'imgsrc', 'imginvert', 'imgwidth', 'selfpaced', 'level', 'cost', 'badge', 'time', 'start',
                 'end', 'hours', 'link', 'linktext', 'registerlink'];
         }
         // Course Card Options
@@ -168,7 +174,7 @@ function createComponent(html) {
             shadow.innerHTML = html;
             
             // Set course img
-            setImage('.course-img', this.imgsrc, this.name, this.imginvert, shadow);
+            setImage('.course-img', this.imgsrc, this.name, this.imginvert, this.imgwidth, shadow);
             // Set course name
             setContent('.course-name', this.name, shadow);
             // Set course desc
